@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="80" viewBox="0 0 260 80">
+<rect width="260" height="80" rx="14" fill="#0b0b0d"/>
+<path d="M35 20h58v11H72v33H56V31H35z" fill="#fff"/>
+<path d="M102 20h18l18 27 18-27h18v44h-15V41l-16 23h-10l-16-23v23h-15z" fill="#e11d2e"/>
+<text x="190" y="46" font-size="18" font-family="Arial" font-weight="700" fill="#fff">TONTON</text>
+<text x="190" y="62" font-size="9" font-family="Arial" fill="#aaa">FIGHTWEAR OEM</text>
+</svg>

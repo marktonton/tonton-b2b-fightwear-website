@@ -41,4 +41,7 @@ yarn-error.log*
 next-env.d.ts
 
 # Large Assets
-temp_extract/assets/factory-video.mp4
+assets/factory-video.mp4
+backup_nextjs/
+temp_extract/
+temp_zip/
