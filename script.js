@@ -37,6 +37,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
   function applyOrientation() {
     const width = video.videoWidth;
     const height = video.videoHeight;
+    console.log(`Video dimensions: ${width}x${height}`);
     if (width > 0 && height > 0) {
       if (width < height) {
         hero.classList.add('video-vertical');

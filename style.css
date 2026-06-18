@@ -253,8 +253,8 @@
 
 /* 1. HORIZONTAL VIDEO LAYOUT (Desktop & Large Screens) */
 .factory-hero.video-horizontal {
-  aspect-ratio: 16/9;
-  max-height: 80vh;
+  aspect-ratio: 1920/1072; /* Optimized for the new factory video */
+  max-height: 85vh;
   min-height: 480px;
   width: 100%;
   padding: 80px 6%;
