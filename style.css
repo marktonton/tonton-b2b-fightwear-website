@@ -548,21 +548,18 @@
 .btn-quote {
   display: block;
   width: 100%;
-  background: #d4af37;
+  background: #c5a059;
   color: #0b0b0d;
-  border-radius: 8px;
-  font-weight: 800;
+  border-radius: 6px;
+  font-weight: 900;
   text-align: center;
-  padding: 12px;
+  padding: 14px 20px;
   margin-top: 15px;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  font-size: 14px;
+  transition: background 0.3s ease;
+  font-size: 15px;
 }
 
 .btn-quote:hover {
-  background: #f1c40f;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+  background: #b38f4d;
   color: #0b0b0d;
 }
