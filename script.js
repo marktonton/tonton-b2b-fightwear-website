@@ -57,6 +57,14 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
     }
   }
 
+  // Safety fallback: Ensure text fades out even if video fails to load metadata
+  setTimeout(() => {
+    const textContainer = hero.querySelector('div');
+    if (textContainer && !textContainer.classList.contains('fade-out')) {
+      textContainer.classList.add('fade-out');
+    }
+  }, 5000);
+
   video.addEventListener('loadedmetadata', applyOrientation);
   
   // Fallback in case metadata is already loaded
