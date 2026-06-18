@@ -46,6 +46,14 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
         hero.classList.add('video-horizontal');
         hero.classList.remove('video-vertical');
       }
+      
+      // Start 3s fade-out timer for the text content
+      const textContainer = hero.querySelector('div');
+      if (textContainer) {
+        setTimeout(() => {
+          textContainer.classList.add('fade-out');
+        }, 3000);
+      }
     }
   }
 

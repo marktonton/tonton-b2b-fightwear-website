@@ -269,13 +269,14 @@
   z-index: 1;
 }
 
-/* Semi-transparent dark overlay to ensure text readability on background video */
+/* Removed mask as per user request */
 .factory-hero.video-horizontal::before {
   content: "";
   position: absolute;
   inset: 0;
   background: rgba(11, 11, 13, 0.65); /* dark mask */
   z-index: 2;
+  display: none;
 }
 
 .factory-hero.video-horizontal div {
@@ -283,6 +284,7 @@
   z-index: 3;
   max-width: 800px;
   text-align: center;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
 }
 
 .factory-hero.video-horizontal div p.eyebrow {
@@ -345,6 +347,13 @@
   z-index: 3;
   max-width: 600px;
   text-align: left;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+/* Fade out utility */
+.factory-hero div.fade-out {
+  opacity: 0;
+  visibility: hidden;
 }
 
 /* Right Column: Beautiful smartphone mockup container for vertical video */
