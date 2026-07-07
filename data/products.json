@@ -1,0 +1,57 @@
+{
+  "categories": [
+    {
+      "id": "sublimated-rash-guards",
+      "name": "Sublimated Rash Guards",
+      "description": "Premium full-sublimation rash guards with multi-panel construction and reinforced stitching.",
+      "image": "assets/products/rashguard-blue-main.png"
+    },
+    {
+      "id": "sublimated-training-shorts",
+      "name": "Sublimated Training Shorts",
+      "description": "Versatile high-performance training shorts with 4-way stretch and moisture-wicking technology.",
+      "image": "assets/products/shorts-black-v2.png"
+    },
+    {
+      "id": "sublimated-bjj-mma-shorts",
+      "name": "Sublimated BJJ MMA Shorts",
+      "description": "Professional competition-grade MMA and BJJ shorts with split side seams and low-profile closure.",
+      "image": "assets/products/shorts-custom-v2.png"
+    },
+    {
+      "id": "team-kits",
+      "name": "Team MMA Kits",
+      "description": "Matching rash guard and shorts packages for academies and fight teams.",
+      "image": "assets/products/kit-bw-v2.png"
+    }
+  ],
+  "products": [
+    {
+      "id": "pro-sublimated-rash-guard-v1",
+      "categoryId": "sublimated-rash-guards",
+      "name": "Pro Sublimated Rash Guard V1",
+      "price": "Contact for Quote",
+      "description": "Fully customizable sublimated rash guard. Professional grade compression fabric.",
+      "features": ["Full Sublimation", "Reinforced Seams", "10 PCS MOQ"],
+      "image": "assets/products/rashguard-blue-main.png"
+    },
+    {
+      "id": "elite-training-shorts",
+      "categoryId": "sublimated-training-shorts",
+      "name": "Elite Training Shorts",
+      "price": "Contact for Quote",
+      "description": "Optimized for mobility and durability. Full color sublimation available.",
+      "features": ["4-way stretch", "Quick-dry", "Internal Drawstring"],
+      "image": "assets/products/shorts-black-v2.png"
+    },
+    {
+      "id": "pro-bjj-mma-shorts",
+      "categoryId": "sublimated-bjj-mma-shorts",
+      "name": "Pro BJJ MMA Shorts",
+      "price": "Contact for Quote",
+      "description": "High-impact competition shorts. Designed for professional athletes.",
+      "features": ["Non-slip waistband", "Reinforced split seams", "Sublimated graphics"],
+      "image": "assets/products/shorts-custom-v2.png"
+    }
+  ]
+}
