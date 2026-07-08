@@ -6,21 +6,6 @@ export default function HomePage() {
     <div>
       {/* 1. HERO SECTION */}
       <section className="hero">
-        <div className="banner-slider">
-          <div className="slides">
-            <div className="slide active"><img src={resolveImage('assets/banners/banner-01-custom-fight-shorts.jpg')} alt="Custom fight shorts banner" /></div>
-            <div className="slide"><img src={resolveImage('assets/banners/banner-02-oem-odm-manufacturer.jpg')} alt="Professional OEM ODM manufacturer banner" /></div>
-            <div className="slide"><img src={resolveImage('assets/banners/banner-03-top-quality-oem.png')} alt="Top quality custom fightwear OEM ODM banner" /></div>
-            <div className="slide"><img src={resolveImage('assets/banners/banner-04-custom-wholesale.png')} alt="Top quality custom fightwear custom wholesale banner" /></div>
-          </div>
-          <div className="banner-dots">
-            <button className="dot active"></button>
-            <button className="dot"></button>
-            <button className="dot"></button>
-            <button className="dot"></button>
-          </div>
-        </div>
-
         <div className="hero-content">
           <p className="eyebrow">TONTON SMART FACTORY</p>
           <h1>Professional MMA & Fightwear Manufacturer</h1>
@@ -34,6 +19,21 @@ export default function HomePage() {
             <div><strong>300+</strong><span>Clients</span></div>
             <div><strong>100k+</strong><span>Monthly PCS</span></div>
             <div><strong>98.7%</strong><span>On-time</span></div>
+          </div>
+        </div>
+
+        <div className="banner-slider">
+          <div className="slides">
+            <div className="slide active"><img src={resolveImage('assets/banners/banner-01-custom-fight-shorts.jpg')} alt="Custom fight shorts banner" /></div>
+            <div className="slide"><img src={resolveImage('assets/banners/banner-02-oem-odm-manufacturer.jpg')} alt="Professional OEM ODM manufacturer banner" /></div>
+            <div className="slide"><img src={resolveImage('assets/banners/banner-03-top-quality-oem.png')} alt="Top quality custom fightwear OEM ODM banner" /></div>
+            <div className="slide"><img src={resolveImage('assets/banners/banner-04-custom-wholesale.png')} alt="Top quality custom fightwear custom wholesale banner" /></div>
+          </div>
+          <div className="banner-dots">
+            <button className="dot active"></button>
+            <button className="dot"></button>
+            <button className="dot"></button>
+            <button className="dot"></button>
           </div>
         </div>
       </section>
