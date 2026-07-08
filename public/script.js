@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         // Start 5s fade-out timer for the text content
-        const textContainer = hero.querySelector('div');
+        const textContainer = hero.querySelector('.video-overlay-content');
         if (textContainer) {
           setTimeout(() => {
             textContainer.classList.add('fade-out');
@@ -59,11 +59,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Safety fallback: Ensure text fades out even if video fails to load metadata
     setTimeout(() => {
-      const textContainer = hero.querySelector('div');
+      const textContainer = hero.querySelector('.video-overlay-content');
       if (textContainer && !textContainer.classList.contains('fade-out')) {
         textContainer.classList.add('fade-out');
       }
-    }, 5000);
+    }, 7000);
 
     video.addEventListener('loadedmetadata', applyOrientation);
     

@@ -71,14 +71,14 @@ export default function HomePage() {
               <span className="dot"></span>
               <span className="dot"></span>
             </div>
-          </div>
-          <div className="factory-overlay">
-            <p>SMART FACTORY</p>
-            <h2>OEM / ODM Fightwear Manufacturer</h2>
-            <div className="overlay-stats">
-              <span><b>10 PCS</b>MOQ</span>
-              <span><b>7 Days</b>Sample</span>
-              <span><b>15 Days</b>Bulk Delivery</span>
+            <div className="factory-overlay">
+              <p>SMART FACTORY</p>
+              <h2>OEM / ODM Fightwear Manufacturer</h2>
+              <div className="overlay-stats">
+                <span><b>10 PCS</b>MOQ</span>
+                <span><b>7 Days</b>Sample</span>
+                <span><b>15 Days</b>Bulk Delivery</span>
+              </div>
             </div>
           </div>
         </div>
@@ -168,12 +168,13 @@ export default function HomePage() {
       {/* 5. SMART MANUFACTURING */}
       <section className="factory-hero video-horizontal" id="factory">
         <video autoPlay loop muted playsInline poster={resolveImage('assets/factory/factory-01.jpg')} src={resolveImage('assets/factory-video.mp4')}></video>
-        <div>
+        <div className="video-overlay-content">
           <p className="eyebrow">Smart Manufacturing</p>
           <h2>Digital Hanging Production System</h2>
           <p>Modern sportswear production line for faster workflow, better order tracking and stable quality control.</p>
         </div>
       </section>
+
 
       <section className="section">
         <div className="factory-grid">
