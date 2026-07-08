@@ -1,4 +1,5 @@
 import React from 'react';
+import Script from 'next/script';
 import '../public/style.css';
 
 export default function RootLayout({
@@ -45,7 +46,7 @@ export default function RootLayout({
             </div>
             <a href="/collections">Collections</a>
             <a href="#factory">Factory</a>
-            <a className="nav-cta" href="#inquiry">Get Quote</a>
+            <a className="nav-cta" href="#inquiry">Send Inquiry</a>
           </nav>
         </header>
 
@@ -66,6 +67,8 @@ export default function RootLayout({
             <p>Privacy Policy | Terms of Service</p>
           </div>
         </footer>
+        
+        <Script src="/script.js" strategy="afterInteractive" />
       </body>
     </html>
   );
