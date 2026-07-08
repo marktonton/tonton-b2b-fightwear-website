@@ -47,12 +47,12 @@ document.addEventListener('DOMContentLoaded', function() {
           hero.classList.remove('video-vertical');
         }
         
-        // Start 3s fade-out timer for the text content
+        // Start 5s fade-out timer for the text content
         const textContainer = hero.querySelector('div');
         if (textContainer) {
           setTimeout(() => {
             textContainer.classList.add('fade-out');
-          }, 3000);
+          }, 5000);
         }
       }
     }
