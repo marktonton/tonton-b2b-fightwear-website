@@ -4,18 +4,38 @@ import { resolveImage } from '../lib/image-resolver';
 export default function HomePage() {
   return (
     <div>
-      <section className="hero banner-slider">
-        <div className="slides">
-          <div className="slide active"><img src={resolveImage('assets/banners/banner-01-custom-fight-shorts.jpg')} alt="Custom fight shorts banner" /></div>
-          <div className="slide"><img src={resolveImage('assets/banners/banner-02-oem-odm-manufacturer.jpg')} alt="Professional OEM ODM manufacturer banner" /></div>
-          <div className="slide"><img src={resolveImage('assets/banners/banner-03-top-quality-oem.png')} alt="Top quality custom fightwear OEM ODM banner" /></div>
-          <div className="slide"><img src={resolveImage('assets/banners/banner-04-custom-wholesale.png')} alt="Top quality custom fightwear custom wholesale banner" /></div>
+      {/* 1. HERO SECTION */}
+      <section className="hero">
+        <div className="hero-content">
+          <p className="eyebrow">TONTON SMART FACTORY</p>
+          <h1>Professional MMA & Fightwear Manufacturer</h1>
+          <p className="lead">Built for MMA gyms, BJJ academies, fight teams, distributors and sportswear brands that need stable OEM/ODM production with low MOQ and reliable delivery.</p>
+          <div className="hero-actions">
+            <a href="/collections" className="btn btn-red">View Collections</a>
+            <a href="#inquiry" className="btn btn-dark">Get Factory Quote</a>
+          </div>
+          <div className="proof-row" style={{ marginTop: '40px' }}>
+            <div><strong>10+</strong><span>Years Exp</span></div>
+            <div><strong>300+</strong><span>Clients</span></div>
+            <div><strong>100k+</strong><span>Monthly PCS</span></div>
+            <div><strong>98.7%</strong><span>On-time</span></div>
+          </div>
         </div>
-        <div className="banner-dots">
-          <button className="dot active" aria-label="Banner 1"></button>
-          <button className="dot" aria-label="Banner 2"></button>
-          <button className="dot" aria-label="Banner 3"></button>
-          <button className="dot" aria-label="Banner 4"></button>
+        <div className="hero-image">
+          <div className="banner-slider">
+            <div className="slides">
+              <div className="slide active"><img src={resolveImage('assets/banners/banner-01-custom-fight-shorts.jpg')} alt="Custom fight shorts banner" /></div>
+              <div className="slide"><img src={resolveImage('assets/banners/banner-02-oem-odm-manufacturer.jpg')} alt="Professional OEM ODM manufacturer banner" /></div>
+              <div className="slide"><img src={resolveImage('assets/banners/banner-03-top-quality-oem.png')} alt="Top quality custom fightwear OEM ODM banner" /></div>
+              <div className="slide"><img src={resolveImage('assets/banners/banner-04-custom-wholesale.png')} alt="Top quality custom fightwear custom wholesale banner" /></div>
+            </div>
+            <div className="banner-dots">
+              <button className="dot active"></button>
+              <button className="dot"></button>
+              <button className="dot"></button>
+              <button className="dot"></button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -26,6 +46,7 @@ export default function HomePage() {
         <a href="#factory"><span>04</span>Smart Factory</a>
       </section>
 
+      {/* 2. ADVANCED WHY SECTION */}
       <section className="section intro advanced-why">
         <div className="advanced-why-media">
           <div className="factory-slider">
@@ -39,17 +60,17 @@ export default function HomePage() {
               <img src={resolveImage('assets/factory/factory-slider-07.jpg')} alt="TONTON Smart Factory 07" />
             </div>
             <div className="slider-controls">
-              <button className="slider-prev" aria-label="Previous slide">&lt;</button>
-              <button className="slider-next" aria-label="Next slide">&gt;</button>
+              <button className="slider-prev">&lt;</button>
+              <button className="slider-next">&gt;</button>
             </div>
             <div className="slider-dots">
-              <span className="dot active" data-index="0"></span>
-              <span className="dot" data-index="1"></span>
-              <span className="dot" data-index="2"></span>
-              <span className="dot" data-index="3"></span>
-              <span className="dot" data-index="4"></span>
-              <span className="dot" data-index="5"></span>
-              <span className="dot" data-index="6"></span>
+              <span className="dot active"></span>
+              <span className="dot"></span>
+              <span className="dot"></span>
+              <span className="dot"></span>
+              <span className="dot"></span>
+              <span className="dot"></span>
+              <span className="dot"></span>
             </div>
           </div>
           <div className="factory-overlay">
@@ -86,6 +107,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* 3. PRODUCT CATALOG */}
       <section className="section" id="products">
         <div className="section-head">
           <p className="eyebrow">Product Catalog</p>
@@ -128,80 +150,9 @@ export default function HomePage() {
             </article>
           </div>
         </div>
-
-        <div className="collection-block elite">
-          <div className="collection-title">
-            <h3>Elite Long Sleeve Rash Guard Series</h3>
-            <p>High-impact sublimation artwork for fightwear brands and premium No-Gi collections.</p>
-          </div>
-          <div className="product-grid">
-            <article className="product-card">
-              <img src={resolveImage('assets/products/rashguard-long-samurai-v2.png')} alt="Samurai black white long sleeve rash guard" />
-              <div>
-                <span>Elite Series</span>
-                <h4>Samurai Graphic Rash Guard</h4>
-                <p>All-over artwork, long sleeve compression fit.</p>
-                <a href="https://wa.me/8617722438678?text=Hello,%20I'm%20interested%20in%20the%20Samurai%20Graphic%20Rash%20Guard" className="btn-quote" target="_blank" rel="noopener noreferrer">→ Quote This Product</a>
-              </div>
-            </article>
-            <article className="product-card">
-              <img src={resolveImage('assets/products/rashguard-long-fuji-v2.png')} alt="Fuji long sleeve rash guard" />
-              <div>
-                <span>Elite Series</span>
-                <h4>Fuji Art Rash Guard</h4>
-                <p>Premium print panel with detailed graphic placement.</p>
-                <a href="https://wa.me/8617722438678?text=Hello,%20I'm%20interested%20in%20the%20Fuji%20Art%20Rash%20Guard" className="btn-quote" target="_blank" rel="noopener noreferrer">→ Quote This Product</a>
-              </div>
-            </article>
-            <article className="product-card">
-              <img src={resolveImage('assets/products/rashguard-long-red-v2.png')} alt="Black gold long sleeve rash guard" />
-              <div>
-                <span>Elite Series</span>
-                <h4>Black Gold Signature Rash Guard</h4>
-                <p>High-end brand style for BJJ and MMA collections.</p>
-                <a href="https://wa.me/8617722438678?text=Hello,%20I'm%20interested%20in%20the%20Black%20Gold%20Signature%20Rash%20Guard" className="btn-quote" target="_blank" rel="noopener noreferrer">→ Quote This Product</a>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <div className="collection-block" id="kits">
-          <div className="collection-title">
-            <h3>OEM Brand Projects & MMA Kits</h3>
-            <p>Matching rash guard + shorts packages help gyms and brands increase order value.</p>
-          </div>
-          <div className="product-grid">
-            <article className="product-card">
-              <img src={resolveImage('assets/products/kit-bw-v2.png')} alt="MMA kit with rash guard and shorts" />
-              <div>
-                <span>Team Kit</span>
-                <h4>Black / White MMA Kit</h4>
-                <p>Matching rash guard and MMA shorts for teams.</p>
-                <a href="https://wa.me/8617722438678?text=Hello,%20I'm%20interested%20in%20the%20Black%20%2F%20White%20MMA%20Kit" className="btn-quote" target="_blank" rel="noopener noreferrer">→ Quote This Product</a>
-              </div>
-            </article>
-            <article className="product-card">
-              <img src={resolveImage('assets/products/shorts-custom-v2.png')} alt="MMA shorts close-up" />
-              <div>
-                <span>OEM Project</span>
-                <h4>Custom Logo Fight Shorts</h4>
-                <p>Elastic waistband, logo printing and reinforced sewing.</p>
-                <a href="https://wa.me/8617722438678?text=Hello,%20I'm%20interested%20in%20the%20Custom%20Logo%20Fight%20Shorts" className="btn-quote" target="_blank" rel="noopener noreferrer">→ Quote This Product</a>
-              </div>
-            </article>
-            <article className="product-card">
-              <img src={resolveImage('assets/products/shorts-black-v2.png')} alt="Black custom MMA shorts" />
-              <div>
-                <span>Fight Shorts</span>
-                <h4>Black Competition Shorts</h4>
-                <p>Lightweight fabric, private label and all-over print options.</p>
-                <a href="https://wa.me/8617722438678?text=Hello,%20I'm%20interested%20in%20the%20Black%20Competition%20Shorts" className="btn-quote" target="_blank" rel="noopener noreferrer">→ Quote This Product</a>
-              </div>
-            </article>
-          </div>
-        </div>
       </section>
 
+      {/* 4. CUSTOMIZATION OPTIONS */}
       <section className="section dark" id="custom">
         <div className="section-head">
           <p className="eyebrow">Customization Options</p>
@@ -215,6 +166,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* 5. SMART MANUFACTURING */}
       <section className="factory-hero" id="factory">
         <video autoPlay loop muted playsInline poster={resolveImage('assets/factory/factory-01.jpg')} src={resolveImage('assets/factory-video.mp4')}></video>
         <div>
@@ -233,6 +185,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* 6. COMPLIANCE & CERTIFICATES */}
       <section className="section certificates" id="certificates">
         <div className="certificates-container">
           <div className="cert-content">

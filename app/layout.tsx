@@ -1,6 +1,6 @@
 import React from 'react';
 import Script from 'next/script';
-import '../public/style.css';
+import './globals.css';
 
 export default function RootLayout({
   children,
@@ -27,21 +27,12 @@ export default function RootLayout({
           </a>
           <nav>
             <a href="/">Home</a>
-            <div className="nav-dropdown" style={{ position: 'relative', display: 'inline-block' }}>
-              <a href="/collections" style={{ cursor: 'pointer' }}>Customization ▼</a>
-              <div className="dropdown-content" style={{ 
-                display: 'none', 
-                position: 'absolute', 
-                backgroundColor: '#0a0a0c', 
-                minWidth: '220px', 
-                boxShadow: '0px 8px 16px 0px rgba(0,0,0,0.2)', 
-                zIndex: 100,
-                borderRadius: '8px',
-                padding: '10px 0'
-              }}>
-                <a href="/collections/sublimated-rash-guards" style={{ padding: '12px 16px', display: 'block', color: '#fff' }}>Sublimated Rash Guards</a>
-                <a href="/collections/sublimated-training-shorts" style={{ padding: '12px 16px', display: 'block', color: '#fff' }}>Sublimated Training Shorts</a>
-                <a href="/collections/sublimated-bjj-mma-shorts" style={{ padding: '12px 16px', display: 'block', color: '#fff' }}>Sublimated BJJ MMA Shorts</a>
+            <div className="nav-dropdown">
+              <a href="/collections" className="nav-link">Customization ▼</a>
+              <div className="dropdown-content">
+                <a href="/collections/sublimated-rash-guards">Sublimated Rash Guards</a>
+                <a href="/collections/sublimated-training-shorts">Sublimated Training Shorts</a>
+                <a href="/collections/sublimated-bjj-mma-shorts">Sublimated BJJ MMA Shorts</a>
               </div>
             </div>
             <a href="/collections">Collections</a>
@@ -49,11 +40,6 @@ export default function RootLayout({
             <a className="nav-cta" href="#inquiry">Send Inquiry</a>
           </nav>
         </header>
-
-        <style dangerouslySetInnerHTML={{ __html: `
-          .nav-dropdown:hover .dropdown-content { display: block !important; }
-          .dropdown-content a:hover { background-color: #e11d2e !important; }
-        ` }} />
 
         <main>{children}</main>
 
