@@ -167,7 +167,7 @@ export default function HomePage() {
       </section>
 
       {/* 5. SMART MANUFACTURING */}
-      <section className="factory-hero" id="factory">
+      <section className="factory-hero video-horizontal" id="factory">
         <video autoPlay loop muted playsInline poster={resolveImage('assets/factory/factory-01.jpg')} src={resolveImage('assets/factory-video.mp4')}></video>
         <div>
           <p className="eyebrow">Smart Manufacturing</p>
