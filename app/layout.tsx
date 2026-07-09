@@ -1,5 +1,4 @@
 import React from 'react';
-import Script from 'next/script';
 import './globals.css';
 
 export default function RootLayout({
@@ -53,8 +52,6 @@ export default function RootLayout({
             <p>Privacy Policy | Terms of Service</p>
           </div>
         </footer>
-        
-        <Script src="/script.js" strategy="afterInteractive" />
       </body>
     </html>
   );
