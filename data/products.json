@@ -3,23 +3,17 @@
     {
       "id": "sublimated-rash-guards",
       "name": "Sublimated Rash Guards",
-      "description": "Premium full-sublimation rash guards with multi-panel construction and reinforced stitching.",
+      "description": "Premium full-sublimation rash guards with multi-panel construction.",
       "image": "assets/products/rashguard-blue-main.png"
     },
     {
-      "id": "sublimated-training-shorts",
-      "name": "Sublimated Training Shorts",
-      "description": "Versatile high-performance training shorts with 4-way stretch and moisture-wicking technology.",
+      "id": "mma-fight-shorts",
+      "name": "MMA Fight Shorts",
+      "description": "Durable, flexible, and lightweight shorts designed for high-intensity training.",
       "image": "assets/products/shorts-black-v2.png"
     },
     {
-      "id": "sublimated-bjj-mma-shorts",
-      "name": "Sublimated BJJ MMA Shorts",
-      "description": "Professional competition-grade MMA and BJJ shorts with split side seams and low-profile closure.",
-      "image": "assets/products/shorts-custom-v2.png"
-    },
-    {
-      "id": "team-kits",
+      "id": "team-mma-kits",
       "name": "Team MMA Kits",
       "description": "Matching rash guard and shorts packages for academies and fight teams.",
       "image": "assets/products/kit-bw-v2.png"
@@ -27,31 +21,109 @@
   ],
   "products": [
     {
-      "id": "pro-sublimated-rash-guard-v1",
+      "id": "olive-basic-rash-guard",
       "categoryId": "sublimated-rash-guards",
-      "name": "Pro Sublimated Rash Guard V1",
-      "price": "Contact for Quote",
-      "description": "Fully customizable sublimated rash guard. Professional grade compression fabric.",
-      "features": ["Full Sublimation", "Reinforced Seams", "10 PCS MOQ"],
-      "image": "assets/products/rashguard-blue-main.png"
+      "name": "Olive Basic Rash Guard",
+      "image": "assets/products/rashguard-olive-main.png",
+      "description": "Minimal style for gym uniforms."
     },
     {
-      "id": "elite-training-shorts",
-      "categoryId": "sublimated-training-shorts",
-      "name": "Elite Training Shorts",
-      "price": "Contact for Quote",
-      "description": "Optimized for mobility and durability. Full color sublimation available.",
-      "features": ["4-way stretch", "Quick-dry", "Internal Drawstring"],
-      "image": "assets/products/shorts-black-v2.png"
+      "id": "blue-team-rash-guard",
+      "categoryId": "sublimated-rash-guards",
+      "name": "Blue Team Rash Guard",
+      "image": "assets/products/rashguard-blue-main.png",
+      "description": "Best for team color customization."
     },
     {
-      "id": "pro-bjj-mma-shorts",
-      "categoryId": "sublimated-bjj-mma-shorts",
-      "name": "Pro BJJ MMA Shorts",
-      "price": "Contact for Quote",
-      "description": "High-impact competition shorts. Designed for professional athletes.",
-      "features": ["Non-slip waistband", "Reinforced split seams", "Sublimated graphics"],
-      "image": "assets/products/shorts-custom-v2.png"
+      "id": "white-logo-rash-guard",
+      "categoryId": "sublimated-rash-guards",
+      "name": "White Logo Rash Guard",
+      "image": "assets/products/rashguard-white-main.png",
+      "description": "Clean white base for club logos."
+    },
+    {
+      "id": "samurai-graphic-rash-guard",
+      "categoryId": "sublimated-rash-guards",
+      "name": "Samurai Graphic Rash Guard",
+      "image": "assets/products/rashguard-long-samurai-v2.png",
+      "description": "Elite series with high-impact artwork."
+    },
+    {
+      "id": "fuji-art-rash-guard",
+      "categoryId": "sublimated-rash-guards",
+      "name": "Fuji Art Rash Guard",
+      "image": "assets/products/rashguard-long-fuji-v2.png",
+      "description": "Premium print panel with detailed graphics."
+    },
+    {
+      "id": "black-gold-rash-guard",
+      "categoryId": "sublimated-rash-guards",
+      "name": "Black Gold Rash Guard",
+      "image": "assets/products/rashguard-long-red-v2.png",
+      "description": "High-end brand style for BJJ."
+    },
+    {
+      "id": "black-competition-shorts",
+      "categoryId": "mma-fight-shorts",
+      "name": "Black Competition Shorts",
+      "image": "assets/products/shorts-black-v2.png",
+      "description": "Lightweight fabric for pro competition."
+    },
+    {
+      "id": "custom-logo-shorts",
+      "categoryId": "mma-fight-shorts",
+      "name": "Custom Logo Fight Shorts",
+      "image": "assets/products/shorts-custom-v2.png",
+      "description": "Elastic waistband with logo printing."
+    },
+    {
+      "id": "pro-mma-shorts-07",
+      "categoryId": "mma-fight-shorts",
+      "name": "Pro MMA Shorts v7",
+      "image": "assets/products/product-07.png",
+      "description": "Performance series MMA shorts."
+    },
+    {
+      "id": "pro-mma-shorts-08",
+      "categoryId": "mma-fight-shorts",
+      "name": "Pro MMA Shorts v8",
+      "image": "assets/products/product-08.png",
+      "description": "Performance series MMA shorts."
+    },
+    {
+      "id": "black-white-mma-kit",
+      "categoryId": "team-mma-kits",
+      "name": "Black / White MMA Kit",
+      "image": "assets/products/kit-bw-v2.png",
+      "description": "Matching rash guard and shorts set."
+    },
+    {
+      "id": "team-kit-13",
+      "categoryId": "team-mma-kits",
+      "name": "Elite Team Kit v13",
+      "image": "assets/products/product-13.png",
+      "description": "Full sublimation team kit."
+    },
+    {
+      "id": "team-kit-14",
+      "categoryId": "team-mma-kits",
+      "name": "Elite Team Kit v14",
+      "image": "assets/products/product-14.png",
+      "description": "Full sublimation team kit."
+    },
+    {
+      "id": "team-kit-15",
+      "categoryId": "team-mma-kits",
+      "name": "Elite Team Kit v15",
+      "image": "assets/products/product-15.png",
+      "description": "Full sublimation team kit."
+    },
+    {
+      "id": "pro-team-kit-17",
+      "categoryId": "team-mma-kits",
+      "name": "Pro Team Kit 17",
+      "image": "assets/products/17.png",
+      "description": "Customized team competition gear."
     }
   ]
 }
