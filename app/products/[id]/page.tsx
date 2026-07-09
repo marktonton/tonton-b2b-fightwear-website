@@ -32,7 +32,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
           
           <h3 style={{ fontSize: '24px', marginBottom: '15px' }}>Key Features:</h3>
           <ul style={{ marginBottom: '40px' }}>
-            {product.features.map((feature, index) => (
+            {(product.features || []).map((feature: any, index: number) => (
               <li key={index} style={{ marginBottom: '10px', display: 'flex', alignItems: 'center' }}>
                 <span style={{ color: '#e11d2e', marginRight: '10px' }}>✓</span> {feature}
               </li>
