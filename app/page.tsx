@@ -44,7 +44,7 @@ export default function HomePage() {
   return (
     <div>
       {/* 1. HERO SECTION - Cinematic Full Width */}
-      <section className="hero">
+      <section className="hero" style={{ borderBottom: '1px solid transparent' }}>
         <div className="banner-slider">
           <div className="slides">
             {BANNERS.map((src, i) => (
@@ -59,21 +59,6 @@ export default function HomePage() {
             {BANNERS.map((_, i) => (
               <button key={i} className={`dot ${i === currentBanner ? 'active' : ''}`} onClick={() => setCurrentBanner(i)}></button>
             ))}
-          </div>
-        </div>
-
-        {/* Content Overlay */}
-        <div className="hero-content-overlay">
-          <div style={{ maxWidth: '1400px', margin: '0 auto', padding: '0 6%' }}>
-            <p className="eyebrow" style={{ color: '#fff', textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}>TONTON SMART FACTORY</p>
-            <h1 style={{ color: '#fff', textShadow: '0 2px 10px rgba(0,0,0,0.5)', maxWidth: '800px' }}>Professional MMA & Fightwear Manufacturer</h1>
-            <p className="lead" style={{ color: '#fff', textShadow: '0 2px 5px rgba(0,0,0,0.5)', maxWidth: '650px', fontSize: '20px' }}>
-              Premium OEM/ODM production for MMA gyms, academies, and fight teams with 10 PCS MOQ and reliable delivery.
-            </p>
-            <div className="hero-actions" style={{ marginTop: '30px' }}>
-              <Link href="/collections" className="btn btn-red">View Collections</Link>
-              <a href="#inquiry" className="btn btn-dark" style={{ marginLeft: '15px' }}>Get Factory Quote</a>
-            </div>
           </div>
         </div>
       </section>
