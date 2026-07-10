@@ -1,78 +1,79 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { resolveImage } from '../lib/image-resolver';
 import productsData from '../data/products.json';
 
+const BANNERS = [
+  'assets/banners/banner-01-custom-fight-shorts.jpg',
+  'assets/banners/banner-02-oem-odm-manufacturer.jpg',
+  'assets/banners/banner-03-top-quality-oem.png',
+  'assets/banners/banner-04-custom-wholesale.png'
+];
+
+const FACTORY_IMAGES = [
+  'assets/factory/factory-slider-01.jpg',
+  'assets/factory/factory-slider-02.jpg',
+  'assets/factory/factory-slider-03.jpg',
+  'assets/factory/factory-slider-04.jpg',
+  'assets/factory/factory-slider-05.jpg',
+  'assets/factory/factory-slider-06.jpg',
+  'assets/factory/factory-slider-07.jpg'
+];
+
 export default function HomePage() {
-  // 1. Banner State
   const [currentBanner, setCurrentBanner] = useState(0);
-  const banners = [
-    'assets/banners/banner-01-custom-fight-shorts.jpg',
-    'assets/banners/banner-02-oem-odm-manufacturer.jpg',
-    'assets/banners/banner-03-top-quality-oem.png',
-    'assets/banners/banner-04-custom-wholesale.png'
-  ];
-
-  // 2. Factory Slider State
   const [currentFactory, setCurrentFactory] = useState(0);
-  const factoryImages = [
-    'assets/factory/factory-slider-01.jpg',
-    'assets/factory/factory-slider-02.jpg',
-    'assets/factory/factory-slider-03.jpg',
-    'assets/factory/factory-slider-04.jpg',
-    'assets/factory/factory-slider-05.jpg',
-    'assets/factory/factory-slider-06.jpg',
-    'assets/factory/factory-slider-07.jpg'
-  ];
-
-  // 3. Video Text State
   const [showVideoOverlay, setShowVideoOverlay] = useState(true);
 
-  // Auto-slide effect
   useEffect(() => {
     const bannerTimer = setInterval(() => {
-      setCurrentBanner((prev) => (prev + 1) % banners.length);
+      setCurrentBanner((prev) => (prev + 1) % BANNERS.length);
     }, 6000);
-
-    const videoTimer = setTimeout(() => {
-      setShowVideoOverlay(false);
-    }, 5000);
-
+    const videoTimer = setTimeout(() => setShowVideoOverlay(false), 5000);
     return () => {
       clearInterval(bannerTimer);
       clearTimeout(videoTimer);
     };
-  }, [banners.length]);
+  }, []);
 
-  const nextBanner = () => setCurrentBanner((prev) => (prev + 1) % banners.length);
-  const prevBanner = () => setCurrentBanner((prev) => (prev - 1 + banners.length) % banners.length);
+  const nextBanner = () => setCurrentBanner((prev) => (prev + 1) % BANNERS.length);
+  const prevBanner = () => setCurrentBanner((prev) => (prev - 1 + BANNERS.length) % BANNERS.length);
 
   return (
     <div>
-      {/* 1. HERO SECTION - Cinematic Full Width Style */}
+      {/* 1. HERO SECTION - Cinematic Full Width */}
       <section className="hero">
         <div className="banner-slider">
           <div className="slides">
-            {banners.map((src, i) => (
+            {BANNERS.map((src, i) => (
               <div key={i} className={`slide ${i === currentBanner ? 'active' : ''}`}>
                 <img src={resolveImage(src)} alt={`Banner ${i}`} />
               </div>
             ))}
           </div>
-          
-          {/* Navigation Arrows */}
           <div className="slider-arrow prev" onClick={prevBanner}>&lt;</div>
           <div className="slider-arrow next" onClick={nextBanner}>&gt;</div>
-
           <div className="banner-dots">
-            {banners.map((_, i) => (
-              <button 
-                key={i} 
-                className={`dot ${i === currentBanner ? 'active' : ''}`} 
-                onClick={() => setCurrentBanner(i)}
-              ></button>
+            {BANNERS.map((_, i) => (
+              <button key={i} className={`dot ${i === currentBanner ? 'active' : ''}`} onClick={() => setCurrentBanner(i)}></button>
             ))}
+          </div>
+        </div>
+
+        {/* Content Overlay */}
+        <div className="hero-content-overlay">
+          <div style={{ maxWidth: '1400px', margin: '0 auto', padding: '0 6%' }}>
+            <p className="eyebrow" style={{ color: '#fff', textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}>TONTON SMART FACTORY</p>
+            <h1 style={{ color: '#fff', textShadow: '0 2px 10px rgba(0,0,0,0.5)', maxWidth: '800px' }}>Professional MMA & Fightwear Manufacturer</h1>
+            <p className="lead" style={{ color: '#fff', textShadow: '0 2px 5px rgba(0,0,0,0.5)', maxWidth: '650px', fontSize: '20px' }}>
+              Premium OEM/ODM production for MMA gyms, academies, and fight teams with 10 PCS MOQ and reliable delivery.
+            </p>
+            <div className="hero-actions" style={{ marginTop: '30px' }}>
+              <Link href="/collections" className="btn btn-red">View Collections</Link>
+              <a href="#inquiry" className="btn btn-dark" style={{ marginLeft: '15px' }}>Get Factory Quote</a>
+            </div>
           </div>
         </div>
       </section>
@@ -89,57 +90,40 @@ export default function HomePage() {
         <div className="advanced-why-media">
           <div className="factory-slider">
             <div className="factory-slides">
-              {factoryImages.map((src, i) => (
-                <img key={i} src={resolveImage(src)} className={i === currentFactory ? 'active' : ''} alt={`Factory ${i}`} style={{ position: 'absolute', inset: 0, opacity: i === currentFactory ? 1 : 0, transition: 'opacity 0.8s ease' }} />
+              {FACTORY_IMAGES.map((src, i) => (
+                <img key={i} src={resolveImage(src)} className={i === currentFactory ? 'active' : ''} alt="Factory" style={{ position: 'absolute', inset: 0, opacity: i === currentFactory ? 1 : 0, transition: 'opacity 0.8s ease' }} />
               ))}
             </div>
             <div className="slider-controls" style={{ zIndex: 100 }}>
-              <button onClick={() => setCurrentFactory((prev) => (prev - 1 + factoryImages.length) % factoryImages.length)}>&lt;</button>
-              <button onClick={() => setCurrentFactory((prev) => (prev + 1) % factoryImages.length)}>&gt;</button>
+              <button onClick={() => setCurrentFactory((prev) => (prev - 1 + FACTORY_IMAGES.length) % FACTORY_IMAGES.length)}>&lt;</button>
+              <button onClick={() => setCurrentFactory((prev) => (prev + 1) % FACTORY_IMAGES.length)}>&gt;</button>
             </div>
             <div className="slider-dots">
-              {factoryImages.map((_, i) => (
+              {FACTORY_IMAGES.map((_, i) => (
                 <span key={i} className={`dot ${i === currentFactory ? 'active' : ''}`} onClick={() => setCurrentFactory(i)}></span>
               ))}
-            </div>
-            <div className="factory-overlay" style={{ pointerEvents: 'none' }}>
-              <p>SMART FACTORY</p>
-              <h2>OEM / ODM Fightwear Manufacturer</h2>
-              <div className="overlay-stats">
-                <span><b>10 PCS</b>MOQ</span>
-                <span><b>7 Days</b>Sample</span>
-                <span><b>15 Days</b>Bulk Delivery</span>
-              </div>
             </div>
           </div>
         </div>
 
         <div className="advanced-why-content">
           <p className="eyebrow">Why Global Brands Trust TONTON</p>
-          <h2>Smart Manufacturing + Premium Quality + Fast Delivery</h2>
-          <p className="why-lead">Built for MMA gyms, BJJ academies, fight teams, distributors and sportswear brands.</p>
-
+          <h2>Smart Manufacturing + Premium Quality</h2>
           <div className="why-card-grid">
-            <div><h3>Smart Hanging System</h3><p>Improve workflow, order tracking and production stability.</p></div>
-            <div><h3>10 PCS Low MOQ</h3><p>Flexible custom orders for gyms, teams and new brands.</p></div>
-            <div><h3>Free Mockup Design</h3><p>Professional artwork confirmation before sampling.</p></div>
-            <div><h3>OEM / ODM Service</h3><p>From concept, design, sampling to finished products.</p></div>
-            <div><h3>Embroidery & Sublimation</h3><p>3D puff, flat embroidery, patches and full sublimation.</p></div>
-            <div><h3>BSCI Audited Factory</h3><p>Social compliance verified manufacturing partner.</p></div>
+            <div><h3>Smart Hanging</h3><p>Improved workflow stability.</p></div>
+            <div><h3>10 PCS MOQ</h3><p>Flexible custom orders.</p></div>
+            <div><h3>Free Mockup</h3><p>Artwork confirmation.</p></div>
+            <div><h3>OEM / ODM</h3><p>From design to finish.</p></div>
+            <div><h3>Sublimation</h3><p>Full-color printing.</p></div>
+            <div><h3>BSCI Audited</h3><p>Verified partner.</p></div>
           </div>
         </div>
       </section>
 
       {/* 3. PRODUCT CATALOG */}
       <section className="section" id="products">
-        <div className="section-head">
-          <p className="eyebrow">Product Catalog</p>
-          <h2>Custom MMA Shorts & Rash Guard Collection</h2>
-        </div>
-
-        {/* Category Renderings from products.json */}
         {productsData.categories.map(cat => (
-          <div className="collection-block" id={cat.id} key={cat.id} style={{ marginTop: '40px' }}>
+          <div className="collection-block" id={cat.id} key={cat.id} style={{ marginTop: '50px' }}>
             <div className="collection-title">
               <h3>{cat.name}</h3>
               <p>{cat.description}</p>
@@ -160,34 +144,29 @@ export default function HomePage() {
         ))}
       </section>
 
-      {/* 4. SMART MANUFACTURING */}
+      {/* 4. SMART MANUFACTURING VIDEO */}
       <section className="factory-hero video-horizontal" id="factory">
         <video autoPlay loop muted playsInline poster={resolveImage('assets/factory/factory-01.jpg')} src={resolveImage('assets/factory-video.mp4')}></video>
         <div className={`video-overlay-content ${showVideoOverlay ? '' : 'fade-out'}`}>
           <p className="eyebrow">Smart Manufacturing</p>
           <h2>Digital Hanging Production System</h2>
-          <p>Modern sportswear production line for faster workflow.</p>
         </div>
       </section>
 
       <section className="section">
         <div className="factory-grid">
-          <article><img src={resolveImage('assets/factory/factory-03.jpg')} alt="Smart sewing production line" /><h3>Smart Sewing Line</h3><p>Organized hanging system supports efficient sewing.</p></article>
-          <article><img src={resolveImage('assets/factory/factory-05.jpg')} alt="Computerized embroidery machines" /><h3>Embroidery Workshop</h3><p>Computerized embroidery for custom logos.</p></article>
-          <article><img src={resolveImage('assets/factory/factory-08.jpg')} alt="Sublimation printing center" /><h3>Sublimation Center</h3><p>Full-color printing for rash guards.</p></article>
-          <article><img src={resolveImage('assets/factory/factory-06.jpg')} alt="Quality control area" /><h3>Inspection & Packing</h3><p>Bulk inspection and sorting.</p></article>
+          <article><img src={resolveImage('assets/factory/factory-03.jpg')} alt="Sewing" /><h3>Smart Sewing</h3></article>
+          <article><img src={resolveImage('assets/factory/factory-05.jpg')} alt="Embroidery" /><h3>Embroidery</h3></article>
+          <article><img src={resolveImage('assets/factory/factory-08.jpg')} alt="Sublimation" /><h3>Sublimation</h3></article>
+          <article><img src={resolveImage('assets/factory/factory-06.jpg')} alt="QC" /><h3>QC & Packing</h3></article>
         </div>
       </section>
 
       <section className="inquiry" id="inquiry">
-        <div className="inquiry-copy">
-          <p className="eyebrow">Start Your Custom Project</p>
-          <h2>Get Factory Direct Quotation & Free Mockup</h2>
-        </div>
         <form className="inquiry-form">
           <input name="name" placeholder="Name *" required />
           <input name="email" placeholder="Email / WhatsApp *" required />
-          <textarea name="message" placeholder="Tell us your design idea"></textarea>
+          <textarea name="message" placeholder="Design idea, logo, etc."></textarea>
           <button type="submit">Send Inquiry</button>
         </form>
       </section>
