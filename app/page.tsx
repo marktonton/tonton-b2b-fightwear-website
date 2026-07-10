@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
 import { resolveImage } from '../lib/image-resolver';
 import productsData from '../data/products.json';
 
@@ -51,7 +50,7 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* 1. HERO SECTION - Full Width Banner Style */}
+      {/* 1. HERO SECTION - Cinematic Full Width Style */}
       <section className="hero">
         <div className="banner-slider">
           <div className="slides">
@@ -63,8 +62,8 @@ export default function HomePage() {
           </div>
           
           {/* Navigation Arrows */}
-          <div className="banner-nav prev" onClick={prevBanner}>&lt;</div>
-          <div className="banner-nav next" onClick={nextBanner}>&gt;</div>
+          <div className="slider-arrow prev" onClick={prevBanner}>&lt;</div>
+          <div className="slider-arrow next" onClick={nextBanner}>&gt;</div>
 
           <div className="banner-dots">
             {banners.map((_, i) => (
@@ -72,7 +71,6 @@ export default function HomePage() {
                 key={i} 
                 className={`dot ${i === currentBanner ? 'active' : ''}`} 
                 onClick={() => setCurrentBanner(i)}
-                aria-label={`Slide ${i + 1}`}
               ></button>
             ))}
           </div>
@@ -127,7 +125,7 @@ export default function HomePage() {
             <div><h3>Free Mockup Design</h3><p>Professional artwork confirmation before sampling.</p></div>
             <div><h3>OEM / ODM Service</h3><p>From concept, design, sampling to finished products.</p></div>
             <div><h3>Embroidery & Sublimation</h3><p>3D puff, flat embroidery, patches and full sublimation.</p></div>
-            <div><h3>BSCI Audited Factory</h3><p>Social compliance verified manufacturing partner.</p></div>
+            <div><h3>BSCI Audited Factory</h3><p social="compliance verified manufacturing partner">Social compliance verified manufacturing partner.</p></div>
           </div>
         </div>
       </section>
@@ -137,68 +135,29 @@ export default function HomePage() {
         <div className="section-head">
           <p className="eyebrow">Product Catalog</p>
           <h2>Custom MMA Shorts & Rash Guard Collection</h2>
-          <p>Professional product structure for MMA gyms, BJJ academies, fight teams, distributors and sportswear brands.</p>
         </div>
 
-        <div className="collection-block" id="rashguard">
-          <div className="collection-title">
-            <h3>Custom Sublimated Rash Guards</h3>
-            <p>Compression fit, quick-dry stretch fabric, full sublimation.</p>
+        {/* Category Renderings from products.json */}
+        {productsData.categories.map(cat => (
+          <div className="collection-block" id={cat.id} key={cat.id} style={{ marginTop: '40px' }}>
+            <div className="collection-title">
+              <h3>{cat.name}</h3>
+              <p>{cat.description}</p>
+            </div>
+            <div className="product-grid">
+              {productsData.products.filter(p => p.categoryId === cat.id).map(product => (
+                <article className="product-card" key={product.id}>
+                  <img src={resolveImage(product.image)} alt={product.name} />
+                  <div>
+                    <span>Customization</span>
+                    <h4>{product.name}</h4>
+                    <a href={`https://wa.me/8617722438678?text=Hello,%20I'm%20interested%20in%20the%20${encodeURIComponent(product.name)}`} className="btn-quote" target="_blank" rel="noopener noreferrer">→ Quote This Product</a>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
-          <div className="product-grid">
-            {productsData.products.filter(p => p.categoryId === "sublimated-rash-guards").map(product => (
-              <article className="product-card" key={product.id}>
-                <img src={resolveImage(product.image)} alt={product.name} />
-                <div>
-                  <span>Customization</span>
-                  <h4>{product.name}</h4>
-                  <p>{product.description}</p>
-                  <a href={`https://wa.me/8617722438678?text=Hello,%20I'm%20interested%20in%20the%20${encodeURIComponent(product.name)}`} className="btn-quote" target="_blank" rel="noopener noreferrer">→ Quote This Product</a>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-
-        <div className="collection-block" id="shorts" style={{ marginTop: '60px' }}>
-          <div className="collection-title">
-            <h3>Professional MMA Fight Shorts</h3>
-            <p>Durable, flexible, and lightweight shorts designed for pro athletes.</p>
-          </div>
-          <div className="product-grid">
-            {productsData.products.filter(p => p.categoryId === "mma-fight-shorts").map(product => (
-              <article className="product-card" key={product.id}>
-                <img src={resolveImage(product.image)} alt={product.name} />
-                <div>
-                  <span>Customization</span>
-                  <h4>{product.name}</h4>
-                  <p>{product.description}</p>
-                  <a href={`https://wa.me/8617722438678?text=Hello,%20I'm%20interested%20in%20the%20${encodeURIComponent(product.name)}`} className="btn-quote" target="_blank" rel="noopener noreferrer">→ Quote This Product</a>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-
-        <div className="collection-block" id="kits" style={{ marginTop: '60px' }}>
-          <div className="collection-title">
-            <h3>OEM Brand Projects & MMA Kits</h3>
-            <p>Matching rash guard + shorts packages help gyms and brands increase order value.</p>
-          </div>
-          <div className="product-grid">
-            {productsData.products.filter(p => p.categoryId === "team-mma-kits").map(product => (
-              <article className="product-card" key={product.id}>
-                <img src={resolveImage(product.image)} alt={product.name} />
-                <div>
-                  <span>Customization</span>
-                  <h4>{product.name}</h4>
-                  <p>{product.description}</p>
-                  <a href={`https://wa.me/8617722438678?text=Hello,%20I'm%20interested%20in%20the%20${encodeURIComponent(product.name)}`} className="btn-quote" target="_blank" rel="noopener noreferrer">→ Quote This Product</a>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
+        ))}
       </section>
 
       {/* 4. SMART MANUFACTURING */}
@@ -207,16 +166,16 @@ export default function HomePage() {
         <div className={`video-overlay-content ${showVideoOverlay ? '' : 'fade-out'}`}>
           <p className="eyebrow">Smart Manufacturing</p>
           <h2>Digital Hanging Production System</h2>
-          <p>Modern sportswear production line for faster workflow, better order tracking and stable quality control.</p>
+          <p>Modern sportswear production line for faster workflow.</p>
         </div>
       </section>
 
       <section className="section">
         <div className="factory-grid">
-          <article><img src={resolveImage('assets/factory/factory-03.jpg')} alt="Smart sewing production line" /><h3>Smart Sewing Line</h3><p>Organized hanging system supports efficient sewing and bulk order management.</p></article>
-          <article><img src={resolveImage('assets/factory/factory-05.jpg')} alt="Computerized embroidery machines" /><h3>Embroidery Workshop</h3><p>Computerized embroidery for custom logos, patches and premium brand details.</p></article>
-          <article><img src={resolveImage('assets/factory/factory-08.jpg')} alt="Sublimation printing center" /><h3>Sublimation Center</h3><p>Full-color printing for rash guards, jerseys, shorts and custom teamwear.</p></article>
-          <article><img src={resolveImage('assets/factory/factory-06.jpg')} alt="Quality control area" /><h3>Inspection & Packing</h3><p>Bulk inspection, sorting and export packing for international orders.</p></article>
+          <article><img src={resolveImage('assets/factory/factory-03.jpg')} alt="Smart sewing production line" /><h3>Smart Sewing Line</h3><p>Organized hanging system supports efficient sewing.</p></article>
+          <article><img src={resolveImage('assets/factory/factory-05.jpg')} alt="Computerized embroidery machines" /><h3>Embroidery Workshop</h3><p>Computerized embroidery for custom logos.</p></article>
+          <article><img src={resolveImage('assets/factory/factory-08.jpg')} alt="Sublimation printing center" /><h3>Sublimation Center</h3><p>Full-color printing for rash guards.</p></article>
+          <article><img src={resolveImage('assets/factory/factory-06.jpg')} alt="Quality control area" /><h3>Inspection & Packing</h3><p>Bulk inspection and sorting.</p></article>
         </div>
       </section>
 
@@ -224,23 +183,11 @@ export default function HomePage() {
         <div className="inquiry-copy">
           <p className="eyebrow">Start Your Custom Project</p>
           <h2>Get Factory Direct Quotation & Free Mockup</h2>
-          <ul>
-            <li>10 PCS MOQ</li>
-            <li>Free mockup before sampling</li>
-            <li>OEM / ODM / private label</li>
-            <li>Fast sample and bulk production</li>
-          </ul>
         </div>
         <form className="inquiry-form">
           <input name="name" placeholder="Name *" required />
           <input name="email" placeholder="Email / WhatsApp *" required />
-          <select name="product">
-            <option>Product Type</option>
-            <option>Custom Rash Guard</option>
-            <option>MMA Shorts</option>
-            <option>Rash Guard + Shorts Kit</option>
-          </select>
-          <textarea name="message" placeholder="Tell us your design idea, logo, fabric request, size range and target delivery date"></textarea>
+          <textarea name="message" placeholder="Tell us your design idea"></textarea>
           <button type="submit">Send Inquiry</button>
         </form>
       </section>
