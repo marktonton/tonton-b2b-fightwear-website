@@ -125,7 +125,7 @@ export default function HomePage() {
             <div><h3>Free Mockup Design</h3><p>Professional artwork confirmation before sampling.</p></div>
             <div><h3>OEM / ODM Service</h3><p>From concept, design, sampling to finished products.</p></div>
             <div><h3>Embroidery & Sublimation</h3><p>3D puff, flat embroidery, patches and full sublimation.</p></div>
-            <div><h3>BSCI Audited Factory</h3><p social="compliance verified manufacturing partner">Social compliance verified manufacturing partner.</p></div>
+            <div><h3>BSCI Audited Factory</h3><p>Social compliance verified manufacturing partner.</p></div>
           </div>
         </div>
       </section>
