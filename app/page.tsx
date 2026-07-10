@@ -50,40 +50,23 @@ export default function HomePage() {
     <div>
       {/* 1. HERO SECTION */}
       <section className="hero">
-        <div className="hero-content">
-          <p className="eyebrow">TONTON SMART FACTORY</p>
-          <h1 style={{ textAlign: 'left' }}>Professional MMA & Fightwear Manufacturer</h1>
-          <p className="lead" style={{ textAlign: 'left' }}>Built for MMA gyms, BJJ academies, fight teams, distributors and sportswear brands that need stable OEM/ODM production with low MOQ and reliable delivery.</p>
-          <div className="hero-actions">
-            <Link href="/collections" className="btn btn-red">View Collections</Link>
-            <a href="#inquiry" className="btn btn-dark">Get Factory Quote</a>
+        <div className="banner-slider">
+          <div className="slides">
+            {banners.map((src, i) => (
+              <div key={i} className={`slide ${i === currentBanner ? 'active' : ''}`}>
+                <img src={resolveImage(src)} alt={`Banner ${i}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              </div>
+            ))}
           </div>
-          <div className="proof-row" style={{ marginTop: '40px' }}>
-            <div><strong>10+</strong><span>Years Exp</span></div>
-            <div><strong>300+</strong><span>Clients</span></div>
-            <div><strong>100k+</strong><span>Monthly PCS</span></div>
-            <div><strong>98.7%</strong><span>On-time</span></div>
-          </div>
-        </div>
-        <div className="hero-image">
-          <div className="banner-slider">
-            <div className="slides">
-              {banners.map((src, i) => (
-                <div key={i} className={`slide ${i === currentBanner ? 'active' : ''}`}>
-                  <img src={resolveImage(src)} alt={`Banner ${i}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                </div>
-              ))}
-            </div>
-            <div className="banner-dots">
-              {banners.map((_, i) => (
-                <button 
-                  key={i} 
-                  className={`dot ${i === currentBanner ? 'active' : ''}`} 
-                  onClick={() => setCurrentBanner(i)}
-                  aria-label={`Slide ${i + 1}`}
-                ></button>
-              ))}
-            </div>
+          <div className="banner-dots">
+            {banners.map((_, i) => (
+              <button 
+                key={i} 
+                className={`dot ${i === currentBanner ? 'active' : ''}`} 
+                onClick={() => setCurrentBanner(i)}
+                aria-label={`Slide ${i + 1}`}
+              ></button>
+            ))}
           </div>
         </div>
       </section>
