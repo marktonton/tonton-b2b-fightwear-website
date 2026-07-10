@@ -34,7 +34,7 @@ export default function HomePage() {
   useEffect(() => {
     const bannerTimer = setInterval(() => {
       setCurrentBanner((prev) => (prev + 1) % banners.length);
-    }, 5000);
+    }, 6000);
 
     const videoTimer = setTimeout(() => {
       setShowVideoOverlay(false);
@@ -46,18 +46,26 @@ export default function HomePage() {
     };
   }, [banners.length]);
 
+  const nextBanner = () => setCurrentBanner((prev) => (prev + 1) % banners.length);
+  const prevBanner = () => setCurrentBanner((prev) => (prev - 1 + banners.length) % banners.length);
+
   return (
     <div>
-      {/* 1. HERO SECTION */}
+      {/* 1. HERO SECTION - Full Width Banner Style */}
       <section className="hero">
         <div className="banner-slider">
           <div className="slides">
             {banners.map((src, i) => (
               <div key={i} className={`slide ${i === currentBanner ? 'active' : ''}`}>
-                <img src={resolveImage(src)} alt={`Banner ${i}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <img src={resolveImage(src)} alt={`Banner ${i}`} />
               </div>
             ))}
           </div>
+          
+          {/* Navigation Arrows */}
+          <div className="banner-nav prev" onClick={prevBanner}>&lt;</div>
+          <div className="banner-nav next" onClick={nextBanner}>&gt;</div>
+
           <div className="banner-dots">
             {banners.map((_, i) => (
               <button 
@@ -129,10 +137,9 @@ export default function HomePage() {
         <div className="section-head">
           <p className="eyebrow">Product Catalog</p>
           <h2>Custom MMA Shorts & Rash Guard Collection</h2>
-          <p>Professional product structure for MMA gyms, BJJ academies, wrestling clubs, fight teams, distributors and sportswear brands.</p>
+          <p>Professional product structure for MMA gyms, BJJ academies, fight teams, distributors and sportswear brands.</p>
         </div>
 
-        {/* Category: Sublimated Rash Guards */}
         <div className="collection-block" id="rashguard">
           <div className="collection-title">
             <h3>Custom Sublimated Rash Guards</h3>
@@ -153,7 +160,6 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Category: MMA Fight Shorts */}
         <div className="collection-block" id="shorts" style={{ marginTop: '60px' }}>
           <div className="collection-title">
             <h3>Professional MMA Fight Shorts</h3>
@@ -174,7 +180,6 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Category: Team MMA Kits */}
         <div className="collection-block" id="kits" style={{ marginTop: '60px' }}>
           <div className="collection-title">
             <h3>OEM Brand Projects & MMA Kits</h3>
