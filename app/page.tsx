@@ -41,7 +41,7 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* 1. HERO SECTION - Cinematic Full Width */}
+      {/* 1. HERO SECTION - Cinematic Full Width (Image 2 style) */}
       <section className="hero">
         <div className="banner-slider">
           <div className="slides">
@@ -52,7 +52,7 @@ export default function HomePage() {
             ))}
           </div>
           
-          {/* Navigation Arrows - Edge positioned */}
+          {/* Navigation Arrows - Far left/right edges */}
           <div className="slider-arrow prev" onClick={prevBanner}>&lt;</div>
           <div className="slider-arrow next" onClick={nextBanner}>&gt;</div>
 
@@ -134,7 +134,7 @@ export default function HomePage() {
               <p>{cat.description}</p>
             </div>
             <div className="product-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px' }}>
-              {productsData.products.filter(p => p.categoryId === cat.id).map(product => (
+              {(productsData.products || []).filter(p => p.categoryId === cat.id).map(product => (
                 <article className="product-card" key={product.id}>
                   <img src={resolveImage(product.image)} alt={product.name} />
                   <div>
