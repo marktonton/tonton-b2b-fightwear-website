@@ -1,13 +1,14 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
 import { resolveImage } from '../lib/image-resolver';
 import productsData from '../data/products.json';
 
 const BANNERS = [
   'assets/banners/banner-01-custom-fight-shorts.jpg',
-  'assets/banners/banner-02-oem-odm-manufacturer.jpg'
+  'assets/banners/banner-02-oem-odm-manufacturer.jpg',
+  'assets/banners/banner-03-top-quality-oem.png',
+  'assets/banners/banner-04-custom-wholesale.png'
 ];
 
 const FACTORY_IMAGES = [
@@ -41,8 +42,8 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* 1. HERO SECTION - Cinematic Full Width */}
-      <section className="hero" style={{ borderBottom: '1px solid transparent' }}>
+      {/* 1. HERO SECTION - Full Width Cinematic Banner */}
+      <section className="hero">
         <div className="banner-slider">
           <div className="slides">
             {BANNERS.map((src, i) => (
@@ -51,11 +52,19 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+          
+          {/* Navigation Arrows */}
           <div className="slider-arrow prev" onClick={prevBanner}>&lt;</div>
           <div className="slider-arrow next" onClick={nextBanner}>&gt;</div>
+
           <div className="banner-dots">
             {BANNERS.map((_, i) => (
-              <button key={i} className={`dot ${i === currentBanner ? 'active' : ''}`} onClick={() => setCurrentBanner(i)}></button>
+              <button 
+                key={i} 
+                className={`dot ${i === currentBanner ? 'active' : ''}`} 
+                onClick={() => setCurrentBanner(i)}
+                aria-label={`Slide ${i + 1}`}
+              ></button>
             ))}
           </div>
         </div>
@@ -74,7 +83,7 @@ export default function HomePage() {
           <div className="factory-slider">
             <div className="factory-slides">
               {FACTORY_IMAGES.map((src, i) => (
-                <img key={i} src={resolveImage(src)} className={i === currentFactory ? 'active' : ''} alt="Factory" style={{ position: 'absolute', inset: 0, opacity: i === currentFactory ? 1 : 0, transition: 'opacity 0.8s ease' }} />
+                <img key={i} src={resolveImage(src)} className={i === currentFactory ? 'active' : ''} alt={`Factory ${i}`} style={{ position: 'absolute', inset: 0, opacity: i === currentFactory ? 1 : 0, transition: 'opacity 0.8s ease' }} />
               ))}
             </div>
             <div className="slider-controls" style={{ zIndex: 100 }}>
@@ -85,6 +94,15 @@ export default function HomePage() {
               {FACTORY_IMAGES.map((_, i) => (
                 <span key={i} className={`dot ${i === currentFactory ? 'active' : ''}`} onClick={() => setCurrentFactory(i)}></span>
               ))}
+            </div>
+            <div className="factory-overlay" style={{ pointerEvents: 'none' }}>
+              <p>SMART FACTORY</p>
+              <h2>OEM / ODM Fightwear Manufacturer</h2>
+              <div className="overlay-stats">
+                <span><b>10 PCS</b>MOQ</span>
+                <span><b>7 Days</b>Sample</span>
+                <span><b>15 Days</b>Bulk Delivery</span>
+              </div>
             </div>
           </div>
         </div>
@@ -105,6 +123,11 @@ export default function HomePage() {
 
       {/* 3. PRODUCT CATALOG */}
       <section className="section" id="products">
+        <div className="section-head">
+          <p className="eyebrow">Product Catalog</p>
+          <h2>Custom MMA Shorts & Rash Guard Collection</h2>
+        </div>
+
         {productsData.categories.map(cat => (
           <div className="collection-block" id={cat.id} key={cat.id} style={{ marginTop: '50px' }}>
             <div className="collection-title">

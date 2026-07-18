@@ -23,7 +23,7 @@
     {
       "id": "olive-basic-rash-guard",
       "categoryId": "sublimated-rash-guards",
-      "name": "Olive Basic Rash Guard",
+      "name": "Essential Sublimated Rash Guard",
       "image": "assets/products/rashguard-olive-main.png",
       "description": "Minimal style for gym uniforms.",
       "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
@@ -31,7 +31,7 @@
     {
       "id": "blue-team-rash-guard",
       "categoryId": "sublimated-rash-guards",
-      "name": "Blue Team Rash Guard",
+      "name": "Elite Performance Team Rash Guard",
       "image": "assets/products/rashguard-blue-main.png",
       "description": "Best for team color customization.",
       "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
@@ -39,7 +39,7 @@
     {
       "id": "white-logo-rash-guard",
       "categoryId": "sublimated-rash-guards",
-      "name": "White Logo Rash Guard",
+      "name": "Pro-Series Club Logo Rash Guard",
       "image": "assets/products/rashguard-white-main.png",
       "description": "Clean white base for club logos.",
       "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
@@ -47,7 +47,7 @@
     {
       "id": "samurai-graphic-rash-guard",
       "categoryId": "sublimated-rash-guards",
-      "name": "Samurai Graphic Rash Guard",
+      "name": "Samurai Elite Graphic Rash Guard",
       "image": "assets/products/rashguard-long-samurai-v2.png",
       "description": "Elite series with high-impact artwork.",
       "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
@@ -55,7 +55,7 @@
     {
       "id": "fuji-art-rash-guard",
       "categoryId": "sublimated-rash-guards",
-      "name": "Fuji Art Rash Guard",
+      "name": "Fuji Art Performance Rash Guard",
       "image": "assets/products/rashguard-long-fuji-v2.png",
       "description": "Premium print panel with detailed graphics.",
       "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
@@ -63,7 +63,7 @@
     {
       "id": "black-gold-rash-guard",
       "categoryId": "sublimated-rash-guards",
-      "name": "Black Gold Rash Guard",
+      "name": "Black Gold Signature Rash Guard",
       "image": "assets/products/rashguard-long-red-v2.png",
       "description": "High-end brand style for BJJ.",
       "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
@@ -71,7 +71,7 @@
     {
       "id": "black-competition-shorts",
       "categoryId": "mma-fight-shorts",
-      "name": "Black Competition Shorts",
+      "name": "Pro-Series Sublimated Fight Shorts",
       "image": "assets/products/shorts-black-v2.png",
       "description": "Lightweight fabric for pro competition.",
       "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
@@ -79,7 +79,7 @@
     {
       "id": "custom-logo-shorts",
       "categoryId": "mma-fight-shorts",
-      "name": "Custom Logo Fight Shorts",
+      "name": "Ultimate Custom Competition Shorts",
       "image": "assets/products/shorts-custom-v2.png",
       "description": "Elastic waistband with logo printing.",
       "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
@@ -87,7 +87,7 @@
     {
       "id": "pro-mma-shorts-07",
       "categoryId": "mma-fight-shorts",
-      "name": "Pro MMA Shorts v7",
+      "name": "Elite Performance Training Shorts",
       "image": "assets/products/product-07.png",
       "description": "Performance series MMA shorts.",
       "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
@@ -95,7 +95,7 @@
     {
       "id": "pro-mma-shorts-08",
       "categoryId": "mma-fight-shorts",
-      "name": "Pro MMA Shorts v8",
+      "name": "Custom Sublimated Academy Shorts",
       "image": "assets/products/product-08.png",
       "description": "Performance series MMA shorts.",
       "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
@@ -103,7 +103,7 @@
     {
       "id": "black-white-mma-kit",
       "categoryId": "team-mma-kits",
-      "name": "Black / White MMA Kit",
+      "name": "Classic Custom MMA Team Kit",
       "image": "assets/products/kit-bw-v2.png",
       "description": "Matching rash guard and shorts set.",
       "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
@@ -111,7 +111,7 @@
     {
       "id": "team-kit-13",
       "categoryId": "team-mma-kits",
-      "name": "Elite Team Kit v13",
+      "name": "Sublimated Academy Training Kit",
       "image": "assets/products/product-13.png",
       "description": "Full sublimation team kit.",
       "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
@@ -119,7 +119,7 @@
     {
       "id": "team-kit-14",
       "categoryId": "team-mma-kits",
-      "name": "Elite Team Kit v14",
+      "name": "Elite Custom Teamwear Package",
       "image": "assets/products/product-14.png",
       "description": "Full sublimation team kit.",
       "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
@@ -127,7 +127,7 @@
     {
       "id": "team-kit-15",
       "categoryId": "team-mma-kits",
-      "name": "Elite Team Kit v15",
+      "name": "Elite Sublimated Performance Kit",
       "image": "assets/products/product-15.png",
       "description": "Full sublimation team kit.",
       "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
@@ -135,7 +135,7 @@
     {
       "id": "pro-team-kit-17",
       "categoryId": "team-mma-kits",
-      "name": "Pro Team Kit 17",
+      "name": "Ultimate Custom Competition Kit",
       "image": "assets/products/17.png",
       "description": "Customized team competition gear.",
       "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
