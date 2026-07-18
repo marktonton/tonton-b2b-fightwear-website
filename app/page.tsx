@@ -60,7 +60,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 2. FACTORY DUAL-COLUMN SECTION (IMAGE 3 STYLE) */}
+      {/* 2. FACTORY DUAL-COLUMN SECTION (IMAGE 3 STYLE) - v1.0.2 */}
       <section className="factory-container">
         {/* Left Column: Slider */}
         <div className="factory-slider">
