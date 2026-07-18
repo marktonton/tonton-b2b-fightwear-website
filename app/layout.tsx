@@ -46,6 +46,7 @@ export default function RootLayout({
           <div>
             <img src="/assets/logo.png" alt="TONTON" />
             <p>Professional MMA & Sportswear OEM Factory. Building premium fightwear brands since 2014.</p>
+            <p style={{ fontSize: '10px', color: '#333', marginTop: '10px' }}>Build: v1.0.5-React</p>
           </div>
           <div style={{ textAlign: 'right' }}>
             <p>© 2026 TONTON Sports. All rights reserved.</p>

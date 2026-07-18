@@ -50,8 +50,16 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-          <div className="slider-arrow prev" onClick={prevBanner}>&lt;</div>
-          <div className="slider-arrow next" onClick={nextBanner}>&gt;</div>
+          <div 
+            className="slider-arrow prev" 
+            onClick={prevBanner}
+            style={{ position: 'absolute', left: '20px', top: '50%', transform: 'translateY(-50%)', zIndex: 9999, cursor: 'pointer', background: 'rgba(0,0,0,0.5)', width: '50px', height: '50px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+          >&lt;</div>
+          <div 
+            className="slider-arrow next" 
+            onClick={nextBanner}
+            style={{ position: 'absolute', right: '20px', top: '50%', transform: 'translateY(-50%)', zIndex: 9999, cursor: 'pointer', background: 'rgba(0,0,0,0.5)', width: '50px', height: '50px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+          >&gt;</div>
           <div className="banner-dots">
             {BANNERS.map((_, i) => (
               <button key={i} className={`dot ${i === currentBanner ? 'active' : ''}`} onClick={() => setCurrentBanner(i)}></button>
@@ -74,10 +82,15 @@ export default function HomePage() {
               />
             ))}
           </div>
-          {/* Controls at the end of DOM for visibility */}
-          <div className="slider-controls">
-            <button onClick={() => setCurrentFactory((prev) => (prev - 1 + FACTORY_IMAGES.length) % FACTORY_IMAGES.length)}>&lt;</button>
-            <button onClick={() => setCurrentFactory((prev) => (prev + 1) % FACTORY_IMAGES.length)}>&gt;</button>
+          <div className="slider-controls" style={{ position: 'absolute', top: '50%', left: 0, right: 0, transform: 'translateY(-50%)', display: 'flex', justifyContent: 'space-between', padding: '0 15px', zIndex: 9999, pointerEvents: 'none' }}>
+            <button 
+              onClick={() => setCurrentFactory((prev) => (prev - 1 + FACTORY_IMAGES.length) % FACTORY_IMAGES.length)}
+              style={{ width: '45px', height: '45px', borderRadius: '50%', background: 'rgba(0,0,0,0.6)', color: '#fff', border: '1px solid rgba(255,255,255,0.3)', cursor: 'pointer', pointerEvents: 'auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+            >&lt;</button>
+            <button 
+              onClick={() => setCurrentFactory((prev) => (prev + 1) % FACTORY_IMAGES.length)}
+              style={{ width: '45px', height: '45px', borderRadius: '50%', background: 'rgba(0,0,0,0.6)', color: '#fff', border: '1px solid rgba(255,255,255,0.3)', cursor: 'pointer', pointerEvents: 'auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+            >&gt;</button>
           </div>
           <div className="factory-overlay">
             <p>SMART FACTORY</p>
