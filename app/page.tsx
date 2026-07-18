@@ -40,23 +40,8 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* 1. HERO SECTION */}
+      {/* 1. HERO SECTION - Cinematic Full Width */}
       <section className="hero">
-        <div className="hero-content">
-          <p className="eyebrow">TONTON SMART FACTORY</p>
-          <h1 style={{ textAlign: 'left' }}>Professional MMA & Fightwear Manufacturer</h1>
-          <p className="lead" style={{ textAlign: 'left' }}>Built for MMA gyms, academies, and fight teams with 10 PCS MOQ and reliable delivery.</p>
-          <div className="hero-actions">
-            <a href="/collections" className="btn btn-red">View Collections</a>
-            <a href="#inquiry" className="btn btn-dark" style={{ marginLeft: '15px' }}>Get Quote</a>
-          </div>
-          <div className="proof-row" style={{ marginTop: '30px' }}>
-            <div><strong>10+</strong><span>Years Exp</span></div>
-            <div><strong>300+</strong><span>Clients</span></div>
-            <div><strong>100k+</strong><span>Monthly</span></div>
-          </div>
-        </div>
-
         <div className="banner-slider">
           <div className="slides">
             {BANNERS.map((src, i) => (
@@ -75,60 +60,40 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="quick-cats">
-        <a href="#rashguard"><span>01</span>Rash Guards</a>
-        <a href="#shorts"><span>02</span>MMA Shorts</a>
-        <a href="#kits"><span>03</span>Team Kits</a>
-        <a href="#factory"><span>04</span>Smart Factory</a>
-      </section>
-
-      {/* 2. ADVANCED WHY SECTION */}
-      <section className="section intro advanced-why">
-        <div className="advanced-why-media">
-          <div className="factory-slider">
-            <div className="factory-slides">
-              {FACTORY_IMAGES.map((src, i) => (
-                <img 
-                  key={i} 
-                  src={resolveImage(src)} 
-                  className={i === currentFactory ? 'active' : ''} 
-                  alt={`Factory ${i}`} 
-                />
-              ))}
-            </div>
-            <div className="slider-controls">
-              <button onClick={() => setCurrentFactory((prev) => (prev - 1 + FACTORY_IMAGES.length) % FACTORY_IMAGES.length)}>&lt;</button>
-              <button onClick={() => setCurrentFactory((prev) => (prev + 1) % FACTORY_IMAGES.length)}>&gt;</button>
-            </div>
-            <div className="slider-dots">
-              {FACTORY_IMAGES.map((_, i) => (
-                <span 
-                  key={i} 
-                  className={`dot ${i === currentFactory ? 'active' : ''}`} 
-                  onClick={() => setCurrentFactory(i)}
-                ></span>
-              ))}
-            </div>
-            <div className="factory-overlay">
-              <p>SMART FACTORY</p>
-              <h2>OEM / ODM Fightwear Manufacturer</h2>
-              <div className="overlay-stats">
-                <span><b>10 PCS</b>MOQ</span>
-                <span><b>7 Days</b>Sample</span>
-                <span><b>15 Days</b>Bulk</span>
-              </div>
-            </div>
+      {/* 2. FACTORY DUAL-COLUMN SECTION (IMAGE 3 STYLE) */}
+      <section className="factory-container">
+        {/* Left Column: Slider */}
+        <div className="factory-slider">
+          <div className="factory-slides">
+            {FACTORY_IMAGES.map((src, i) => (
+              <img 
+                key={i} 
+                src={resolveImage(src)} 
+                className={i === currentFactory ? 'active' : ''} 
+                alt={`Factory ${i}`} 
+              />
+            ))}
+          </div>
+          {/* Controls at the end of DOM for visibility */}
+          <div className="slider-controls">
+            <button onClick={() => setCurrentFactory((prev) => (prev - 1 + FACTORY_IMAGES.length) % FACTORY_IMAGES.length)}>&lt;</button>
+            <button onClick={() => setCurrentFactory((prev) => (prev + 1) % FACTORY_IMAGES.length)}>&gt;</button>
+          </div>
+          <div className="factory-overlay">
+            <p>SMART FACTORY</p>
+            <h2>Manufacturing Partner</h2>
           </div>
         </div>
 
-        <div className="advanced-why-content">
-          <p className="eyebrow">Why Trust TONTON</p>
-          <h2>Smart Manufacturing + Quality</h2>
-          <div className="why-card-grid">
-            <div><h3>Smart Hanging</h3><p>Improved workflow.</p></div>
-            <div><h3>10 PCS MOQ</h3><p>Flexible orders.</p></div>
-            <div><h3>Free Mockup</h3><p>Confirmation.</p></div>
-            <div><h3>OEM / ODM</h3><p>Concept to finish.</p></div>
+        {/* Right Column: Features */}
+        <div className="factory-features">
+          <p className="eyebrow">Why Global Brands Trust TONTON</p>
+          <h2>Advanced Manufacturing + Premium Quality</h2>
+          <div className="why-card-grid-small">
+            <div><h3>Smart Hanging System</h3><p>Improved workflow stability.</p></div>
+            <div><h3>10 PCS Low MOQ</h3><p>Flexible custom orders.</p></div>
+            <div><h3>Free Mockup Design</h3><p>Professional artwork confirmation.</p></div>
+            <div><h3>OEM / ODM Service</h3><p>Concept to finished product.</p></div>
           </div>
         </div>
       </section>
@@ -161,50 +126,12 @@ export default function HomePage() {
         ))}
       </section>
 
-      {/* 4. SMART MANUFACTURING - RESTORED FULL SECTION */}
+      {/* 4. SMART MANUFACTURING VIDEO */}
       <section className="factory-hero video-horizontal" id="factory">
         <video autoPlay loop muted playsInline poster={resolveImage('assets/factory/factory-01.jpg')} src={resolveImage('assets/factory-video.mp4')}></video>
         <div className={`video-overlay-content ${showVideoOverlay ? '' : 'fade-out'}`}>
-          <p className="eyebrow">Smart Manufacturing</p>
-          <h2>Digital Hanging Production System</h2>
-          <p>Modern sportswear production line for faster workflow, better order tracking and stable quality control.</p>
-        </div>
-      </section>
-
-      {/* RESTORED FACTORY TILES GRID */}
-      <section className="section" style={{ background: '#f9f9f9' }}>
-        <div className="section-head">
-          <h2>Factory Production Lines</h2>
-        </div>
-        <div className="factory-grid">
-          <article className="product-card" style={{ padding: '0', background: '#fff' }}>
-            <img src={resolveImage('assets/factory/factory-03.jpg')} alt="Sewing Line" style={{ height: '240px' }} />
-            <div style={{ padding: '20px' }}>
-              <h3>Smart Sewing Line</h3>
-              <p>Organized hanging system supports efficient sewing and bulk order management.</p>
-            </div>
-          </article>
-          <article className="product-card" style={{ padding: '0', background: '#fff' }}>
-            <img src={resolveImage('assets/factory/factory-05.jpg')} alt="Embroidery Workshop" style={{ height: '240px' }} />
-            <div style={{ padding: '20px' }}>
-              <h3>Embroidery Workshop</h3>
-              <p>Computerized embroidery for custom logos, patches and premium brand details.</p>
-            </div>
-          </article>
-          <article className="product-card" style={{ padding: '0', background: '#fff' }}>
-            <img src={resolveImage('assets/factory/factory-08.jpg')} alt="Sublimation Center" style={{ height: '240px' }} />
-            <div style={{ padding: '20px' }}>
-              <h3>Sublimation Center</h3>
-              <p>Full-color printing for rash guards, jerseys, shorts and custom teamwear.</p>
-            </div>
-          </article>
-          <article className="product-card" style={{ padding: '0', background: '#fff' }}>
-            <img src={resolveImage('assets/factory/factory-06.jpg')} alt="QC & Packing" style={{ height: '240px' }} />
-            <div style={{ padding: '20px' }}>
-              <h3>Inspection & Packing</h3>
-              <p>Bulk inspection, sorting and export packing for international orders.</p>
-            </div>
-          </article>
+          <p className="eyebrow">Digital Hanging Production</p>
+          <h2>Modern Sportswear Production Line</h2>
         </div>
       </section>
 
@@ -212,7 +139,7 @@ export default function HomePage() {
         <form className="inquiry-form">
           <input name="name" placeholder="Name *" required />
           <input name="email" placeholder="Email / WhatsApp *" required />
-          <textarea name="message" placeholder="Design idea, logo, etc."></textarea>
+          <textarea name="message" placeholder="Design idea, logo, fabric request..."></textarea>
           <button type="submit">Send Inquiry</button>
         </form>
       </section>
