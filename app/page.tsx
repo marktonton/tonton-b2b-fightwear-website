@@ -7,7 +7,6 @@ import productsData from '../data/products.json';
 const BANNERS = [
   'assets/banners/banner-01-custom-fight-shorts.jpg',
   'assets/banners/banner-02-oem-odm-manufacturer.jpg',
-  'assets/banners/banner-03-top-quality-oem.png',
   'assets/banners/banner-04-custom-wholesale.png'
 ];
 
@@ -42,7 +41,7 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* 1. HERO SECTION - Full Width Cinematic Banner */}
+      {/* 1. HERO SECTION - Cinematic Full Width */}
       <section className="hero">
         <div className="banner-slider">
           <div className="slides">
@@ -53,7 +52,7 @@ export default function HomePage() {
             ))}
           </div>
           
-          {/* Navigation Arrows */}
+          {/* Navigation Arrows - Edge positioned */}
           <div className="slider-arrow prev" onClick={prevBanner}>&lt;</div>
           <div className="slider-arrow next" onClick={nextBanner}>&gt;</div>
 
@@ -86,16 +85,16 @@ export default function HomePage() {
                 <img key={i} src={resolveImage(src)} className={i === currentFactory ? 'active' : ''} alt={`Factory ${i}`} style={{ position: 'absolute', inset: 0, opacity: i === currentFactory ? 1 : 0, transition: 'opacity 0.8s ease' }} />
               ))}
             </div>
-            <div className="slider-controls" style={{ zIndex: 100 }}>
-              <button onClick={() => setCurrentFactory((prev) => (prev - 1 + FACTORY_IMAGES.length) % FACTORY_IMAGES.length)}>&lt;</button>
-              <button onClick={() => setCurrentFactory((prev) => (prev + 1) % FACTORY_IMAGES.length)}>&gt;</button>
+            <div className="slider-controls" style={{ zIndex: 100, position: 'relative' }}>
+              <button className="slider-prev" onClick={() => setCurrentFactory((prev) => (prev - 1 + FACTORY_IMAGES.length) % FACTORY_IMAGES.length)} style={{ pointerEvents: 'auto' }}>&lt;</button>
+              <button className="slider-next" onClick={() => setCurrentFactory((prev) => (prev + 1) % FACTORY_IMAGES.length)} style={{ pointerEvents: 'auto' }}>&gt;</button>
             </div>
             <div className="slider-dots">
               {FACTORY_IMAGES.map((_, i) => (
                 <span key={i} className={`dot ${i === currentFactory ? 'active' : ''}`} onClick={() => setCurrentFactory(i)}></span>
               ))}
             </div>
-            <div className="factory-overlay" style={{ pointerEvents: 'none' }}>
+            <div className="factory-overlay" style={{ pointerEvents: 'none', zIndex: 10 }}>
               <p>SMART FACTORY</p>
               <h2>OEM / ODM Fightwear Manufacturer</h2>
               <div className="overlay-stats">
@@ -110,7 +109,7 @@ export default function HomePage() {
         <div className="advanced-why-content">
           <p className="eyebrow">Why Global Brands Trust TONTON</p>
           <h2>Smart Manufacturing + Premium Quality</h2>
-          <div className="why-card-grid">
+          <div className="why-card-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '15px' }}>
             <div><h3>Smart Hanging</h3><p>Improved workflow stability.</p></div>
             <div><h3>10 PCS MOQ</h3><p>Flexible custom orders.</p></div>
             <div><h3>Free Mockup</h3><p>Artwork confirmation.</p></div>
@@ -134,7 +133,7 @@ export default function HomePage() {
               <h3>{cat.name}</h3>
               <p>{cat.description}</p>
             </div>
-            <div className="product-grid">
+            <div className="product-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px' }}>
               {productsData.products.filter(p => p.categoryId === cat.id).map(product => (
                 <article className="product-card" key={product.id}>
                   <img src={resolveImage(product.image)} alt={product.name} />
@@ -156,11 +155,12 @@ export default function HomePage() {
         <div className={`video-overlay-content ${showVideoOverlay ? '' : 'fade-out'}`}>
           <p className="eyebrow">Smart Manufacturing</p>
           <h2>Digital Hanging Production System</h2>
+          <p>Modern sportswear production line for faster workflow.</p>
         </div>
       </section>
 
       <section className="section">
-        <div className="factory-grid">
+        <div className="factory-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '30px' }}>
           <article><img src={resolveImage('assets/factory/factory-03.jpg')} alt="Sewing" /><h3>Smart Sewing</h3></article>
           <article><img src={resolveImage('assets/factory/factory-05.jpg')} alt="Embroidery" /><h3>Embroidery</h3></article>
           <article><img src={resolveImage('assets/factory/factory-08.jpg')} alt="Sublimation" /><h3>Sublimation</h3></article>
