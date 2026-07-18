@@ -6,8 +6,7 @@ import productsData from '../data/products.json';
 
 const BANNERS = [
   'assets/banners/banner-01-custom-fight-shorts.jpg',
-  'assets/banners/banner-02-oem-odm-manufacturer.jpg',
-  'assets/banners/banner-04-custom-wholesale.png'
+  'assets/banners/banner-02-oem-odm-manufacturer.jpg'
 ];
 
 const FACTORY_IMAGES = [
@@ -41,8 +40,23 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* 1. HERO SECTION - Cinematic Full Width (Image 2 style) */}
+      {/* 1. HERO SECTION - Side-by-Side Strict Grid */}
       <section className="hero">
+        <div className="hero-content">
+          <p className="eyebrow">TONTON SMART FACTORY</p>
+          <h1>Professional MMA & Fightwear Manufacturer</h1>
+          <p className="lead">Built for MMA gyms, academies, and fight teams with 10 PCS MOQ and reliable delivery.</p>
+          <div className="hero-actions">
+            <a href="/collections" className="btn btn-red">View Collections</a>
+            <a href="#inquiry" className="btn btn-dark" style={{ marginLeft: '15px' }}>Get Quote</a>
+          </div>
+          <div className="proof-row" style={{ marginTop: '30px' }}>
+            <div><strong>10+</strong><span>Years Exp</span></div>
+            <div><strong>300+</strong><span>Clients</span></div>
+            <div><strong>100k+</strong><span>Monthly</span></div>
+          </div>
+        </div>
+
         <div className="banner-slider">
           <div className="slides">
             {BANNERS.map((src, i) => (
@@ -51,19 +65,11 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-          
-          {/* Navigation Arrows - Far left/right edges */}
           <div className="slider-arrow prev" onClick={prevBanner}>&lt;</div>
           <div className="slider-arrow next" onClick={nextBanner}>&gt;</div>
-
           <div className="banner-dots">
             {BANNERS.map((_, i) => (
-              <button 
-                key={i} 
-                className={`dot ${i === currentBanner ? 'active' : ''}`} 
-                onClick={() => setCurrentBanner(i)}
-                aria-label={`Slide ${i + 1}`}
-              ></button>
+              <button key={i} className={`dot ${i === currentBanner ? 'active' : ''}`} onClick={() => setCurrentBanner(i)}></button>
             ))}
           </div>
         </div>
@@ -82,65 +88,58 @@ export default function HomePage() {
           <div className="factory-slider">
             <div className="factory-slides">
               {FACTORY_IMAGES.map((src, i) => (
-                <img key={i} src={resolveImage(src)} className={i === currentFactory ? 'active' : ''} alt={`Factory ${i}`} style={{ position: 'absolute', inset: 0, opacity: i === currentFactory ? 1 : 0, transition: 'opacity 0.8s ease' }} />
+                <img key={i} src={resolveImage(src)} className={i === currentFactory ? 'active' : ''} alt="Factory" />
               ))}
             </div>
-            <div className="slider-controls" style={{ zIndex: 100, position: 'relative' }}>
-              <button className="slider-prev" onClick={() => setCurrentFactory((prev) => (prev - 1 + FACTORY_IMAGES.length) % FACTORY_IMAGES.length)} style={{ pointerEvents: 'auto' }}>&lt;</button>
-              <button className="slider-next" onClick={() => setCurrentFactory((prev) => (prev + 1) % FACTORY_IMAGES.length)} style={{ pointerEvents: 'auto' }}>&gt;</button>
+            <div className="slider-controls">
+              <button onClick={() => setCurrentFactory((prev) => (prev - 1 + FACTORY_IMAGES.length) % FACTORY_IMAGES.length)}>&lt;</button>
+              <button onClick={() => setCurrentFactory((prev) => (prev + 1) % FACTORY_IMAGES.length)}>&gt;</button>
             </div>
             <div className="slider-dots">
               {FACTORY_IMAGES.map((_, i) => (
                 <span key={i} className={`dot ${i === currentFactory ? 'active' : ''}`} onClick={() => setCurrentFactory(i)}></span>
               ))}
             </div>
-            <div className="factory-overlay" style={{ pointerEvents: 'none', zIndex: 10 }}>
+            <div className="factory-overlay">
               <p>SMART FACTORY</p>
               <h2>OEM / ODM Fightwear Manufacturer</h2>
               <div className="overlay-stats">
                 <span><b>10 PCS</b>MOQ</span>
                 <span><b>7 Days</b>Sample</span>
-                <span><b>15 Days</b>Bulk Delivery</span>
+                <span><b>15 Days</b>Bulk</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="advanced-why-content">
-          <p className="eyebrow">Why Global Brands Trust TONTON</p>
-          <h2>Smart Manufacturing + Premium Quality</h2>
-          <div className="why-card-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '15px' }}>
-            <div><h3>Smart Hanging</h3><p>Improved workflow stability.</p></div>
-            <div><h3>10 PCS MOQ</h3><p>Flexible custom orders.</p></div>
-            <div><h3>Free Mockup</h3><p>Artwork confirmation.</p></div>
-            <div><h3>OEM / ODM</h3><p>From design to finish.</p></div>
-            <div><h3>Sublimation</h3><p>Full-color printing.</p></div>
-            <div><h3>BSCI Audited</h3><p>Verified partner.</p></div>
+          <p className="eyebrow">Why Trust TONTON</p>
+          <h2>Smart Manufacturing + Quality</h2>
+          <div className="why-card-grid">
+            <div><h3>Smart Hanging</h3><p>Improved workflow.</p></div>
+            <div><h3>10 PCS MOQ</h3><p>Flexible orders.</p></div>
+            <div><h3>Free Mockup</h3><p>Confirmation.</p></div>
+            <div><h3>OEM / ODM</h3><p>Concept to finish.</p></div>
           </div>
         </div>
       </section>
 
       {/* 3. PRODUCT CATALOG */}
       <section className="section" id="products">
-        <div className="section-head">
-          <p className="eyebrow">Product Catalog</p>
-          <h2>Custom MMA Shorts & Rash Guard Collection</h2>
-        </div>
-
         {productsData.categories.map(cat => (
           <div className="collection-block" id={cat.id} key={cat.id} style={{ marginTop: '50px' }}>
             <div className="collection-title">
               <h3>{cat.name}</h3>
               <p>{cat.description}</p>
             </div>
-            <div className="product-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px' }}>
-              {(productsData.products || []).filter(p => p.categoryId === cat.id).map(product => (
+            <div className="product-grid">
+              {productsData.products.filter(p => p.categoryId === cat.id).map(product => (
                 <article className="product-card" key={product.id}>
                   <img src={resolveImage(product.image)} alt={product.name} />
                   <div>
                     <span>Customization</span>
                     <h4>{product.name}</h4>
-                    <a href={`https://wa.me/8617722438678?text=Hello,%20I'm%20interested%20in%20the%20${encodeURIComponent(product.name)}`} className="btn-quote" target="_blank" rel="noopener noreferrer">→ Quote This Product</a>
+                    <a href={`https://wa.me/8617722438678?text=Interested%20in%20${encodeURIComponent(product.name)}`} className="btn-quote" target="_blank" rel="noopener noreferrer">→ Quote</a>
                   </div>
                 </article>
               ))}
@@ -155,16 +154,7 @@ export default function HomePage() {
         <div className={`video-overlay-content ${showVideoOverlay ? '' : 'fade-out'}`}>
           <p className="eyebrow">Smart Manufacturing</p>
           <h2>Digital Hanging Production System</h2>
-          <p>Modern sportswear production line for faster workflow.</p>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="factory-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '30px' }}>
-          <article><img src={resolveImage('assets/factory/factory-03.jpg')} alt="Sewing" /><h3>Smart Sewing</h3></article>
-          <article><img src={resolveImage('assets/factory/factory-05.jpg')} alt="Embroidery" /><h3>Embroidery</h3></article>
-          <article><img src={resolveImage('assets/factory/factory-08.jpg')} alt="Sublimation" /><h3>Sublimation</h3></article>
-          <article><img src={resolveImage('assets/factory/factory-06.jpg')} alt="QC" /><h3>QC & Packing</h3></article>
+          <p>Modern sportswear production line.</p>
         </div>
       </section>
 
@@ -172,7 +162,7 @@ export default function HomePage() {
         <form className="inquiry-form">
           <input name="name" placeholder="Name *" required />
           <input name="email" placeholder="Email / WhatsApp *" required />
-          <textarea name="message" placeholder="Design idea, logo, etc."></textarea>
+          <textarea name="message" placeholder="Design idea, etc."></textarea>
           <button type="submit">Send Inquiry</button>
         </form>
       </section>
