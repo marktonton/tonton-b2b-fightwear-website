@@ -88,7 +88,12 @@ export default function HomePage() {
           <div className="factory-slider">
             <div className="factory-slides">
               {FACTORY_IMAGES.map((src, i) => (
-                <img key={i} src={resolveImage(src)} className={i === currentFactory ? 'active' : ''} alt="Factory" />
+                <img 
+                  key={i} 
+                  src={resolveImage(src)} 
+                  className={i === currentFactory ? 'active' : ''} 
+                  alt={`Factory ${i}`} 
+                />
               ))}
             </div>
             <div className="slider-controls">
@@ -97,7 +102,11 @@ export default function HomePage() {
             </div>
             <div className="slider-dots">
               {FACTORY_IMAGES.map((_, i) => (
-                <span key={i} className={`dot ${i === currentFactory ? 'active' : ''}`} onClick={() => setCurrentFactory(i)}></span>
+                <span 
+                  key={i} 
+                  className={`dot ${i === currentFactory ? 'active' : ''}`} 
+                  onClick={() => setCurrentFactory(i)}
+                ></span>
               ))}
             </div>
             <div className="factory-overlay">
@@ -133,7 +142,7 @@ export default function HomePage() {
               <p>{cat.description}</p>
             </div>
             <div className="product-grid">
-              {productsData.products.filter(p => p.categoryId === cat.id).map(product => (
+              {(productsData.products || []).filter(p => p.categoryId === cat.id).map(product => (
                 <article className="product-card" key={product.id}>
                   <img src={resolveImage(product.image)} alt={product.name} />
                   <div>
