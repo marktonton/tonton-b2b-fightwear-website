@@ -40,12 +40,12 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* 1. HERO SECTION - Side-by-Side Strict Grid */}
+      {/* 1. HERO SECTION */}
       <section className="hero">
         <div className="hero-content">
           <p className="eyebrow">TONTON SMART FACTORY</p>
-          <h1>Professional MMA & Fightwear Manufacturer</h1>
-          <p className="lead">Built for MMA gyms, academies, and fight teams with 10 PCS MOQ and reliable delivery.</p>
+          <h1 style={{ textAlign: 'left' }}>Professional MMA & Fightwear Manufacturer</h1>
+          <p className="lead" style={{ textAlign: 'left' }}>Built for MMA gyms, academies, and fight teams with 10 PCS MOQ and reliable delivery.</p>
           <div className="hero-actions">
             <a href="/collections" className="btn btn-red">View Collections</a>
             <a href="#inquiry" className="btn btn-dark" style={{ marginLeft: '15px' }}>Get Quote</a>
@@ -135,6 +135,10 @@ export default function HomePage() {
 
       {/* 3. PRODUCT CATALOG */}
       <section className="section" id="products">
+        <div className="section-head">
+          <p className="eyebrow">Product Catalog</p>
+          <h2>Custom MMA Shorts & Rash Guard Collection</h2>
+        </div>
         {productsData.categories.map(cat => (
           <div className="collection-block" id={cat.id} key={cat.id} style={{ marginTop: '50px' }}>
             <div className="collection-title">
@@ -157,13 +161,50 @@ export default function HomePage() {
         ))}
       </section>
 
-      {/* 4. SMART MANUFACTURING VIDEO */}
+      {/* 4. SMART MANUFACTURING - RESTORED FULL SECTION */}
       <section className="factory-hero video-horizontal" id="factory">
         <video autoPlay loop muted playsInline poster={resolveImage('assets/factory/factory-01.jpg')} src={resolveImage('assets/factory-video.mp4')}></video>
         <div className={`video-overlay-content ${showVideoOverlay ? '' : 'fade-out'}`}>
           <p className="eyebrow">Smart Manufacturing</p>
           <h2>Digital Hanging Production System</h2>
-          <p>Modern sportswear production line.</p>
+          <p>Modern sportswear production line for faster workflow, better order tracking and stable quality control.</p>
+        </div>
+      </section>
+
+      {/* RESTORED FACTORY TILES GRID */}
+      <section className="section" style={{ background: '#f9f9f9' }}>
+        <div className="section-head">
+          <h2>Factory Production Lines</h2>
+        </div>
+        <div className="factory-grid">
+          <article className="product-card" style={{ padding: '0', background: '#fff' }}>
+            <img src={resolveImage('assets/factory/factory-03.jpg')} alt="Sewing Line" style={{ height: '240px' }} />
+            <div style={{ padding: '20px' }}>
+              <h3>Smart Sewing Line</h3>
+              <p>Organized hanging system supports efficient sewing and bulk order management.</p>
+            </div>
+          </article>
+          <article className="product-card" style={{ padding: '0', background: '#fff' }}>
+            <img src={resolveImage('assets/factory/factory-05.jpg')} alt="Embroidery Workshop" style={{ height: '240px' }} />
+            <div style={{ padding: '20px' }}>
+              <h3>Embroidery Workshop</h3>
+              <p>Computerized embroidery for custom logos, patches and premium brand details.</p>
+            </div>
+          </article>
+          <article className="product-card" style={{ padding: '0', background: '#fff' }}>
+            <img src={resolveImage('assets/factory/factory-08.jpg')} alt="Sublimation Center" style={{ height: '240px' }} />
+            <div style={{ padding: '20px' }}>
+              <h3>Sublimation Center</h3>
+              <p>Full-color printing for rash guards, jerseys, shorts and custom teamwear.</p>
+            </div>
+          </article>
+          <article className="product-card" style={{ padding: '0', background: '#fff' }}>
+            <img src={resolveImage('assets/factory/factory-06.jpg')} alt="QC & Packing" style={{ height: '240px' }} />
+            <div style={{ padding: '20px' }}>
+              <h3>Inspection & Packing</h3>
+              <p>Bulk inspection, sorting and export packing for international orders.</p>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -171,7 +212,7 @@ export default function HomePage() {
         <form className="inquiry-form">
           <input name="name" placeholder="Name *" required />
           <input name="email" placeholder="Email / WhatsApp *" required />
-          <textarea name="message" placeholder="Design idea, etc."></textarea>
+          <textarea name="message" placeholder="Design idea, logo, etc."></textarea>
           <button type="submit">Send Inquiry</button>
         </form>
       </section>
