@@ -8,7 +8,6 @@ import productsData from '../data/products.json';
 const BANNERS = [
   'assets/banners/banner-01-custom-fight-shorts.jpg',
   'assets/banners/banner-02-oem-odm-manufacturer.jpg',
-  'assets/banners/banner-03-top-quality-oem.png',
   'assets/banners/banner-04-custom-wholesale.png'
 ];
 
