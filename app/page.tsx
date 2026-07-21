@@ -86,7 +86,7 @@ export default function HomePage() {
       <section className="factory-container">
         {/* Left Column: Slider */}
         <div className="factory-slider">
-          <div className="factory-slides">
+          <div className="factory-slides" style={{ pointerEvents: 'none' }}>
             {FACTORY_IMAGES.map((src, i) => (
               <img 
                 key={i} 
@@ -95,6 +95,10 @@ export default function HomePage() {
                 alt={`Factory ${i}`} 
               />
             ))}
+          </div>
+          <div className="factory-overlay">
+            <p>SMART FACTORY</p>
+            <h2>Manufacturing Partner</h2>
           </div>
           <div className="slider-controls" style={{ position: 'absolute', top: '50%', left: 0, right: 0, transform: 'translateY(-50%)', display: 'flex', justifyContent: 'space-between', padding: '0 15px', zIndex: 9999, pointerEvents: 'none' }}>
             <button 
@@ -105,10 +109,6 @@ export default function HomePage() {
               onClick={() => setCurrentFactory((prev) => (prev + 1) % FACTORY_IMAGES.length)}
               style={{ width: '45px', height: '45px', borderRadius: '50%', background: 'rgba(0,0,0,0.6)', color: '#fff', border: '1px solid rgba(255,255,255,0.3)', cursor: 'pointer', pointerEvents: 'auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
             >&gt;</button>
-          </div>
-          <div className="factory-overlay">
-            <p>SMART FACTORY</p>
-            <h2>Manufacturing Partner</h2>
           </div>
         </div>
 
@@ -121,9 +121,19 @@ export default function HomePage() {
             <div><h3>10 PCS Low MOQ</h3><p>Flexible custom orders.</p></div>
             <div><h3>Free Mockup Design</h3><p>Professional artwork confirmation.</p></div>
             <div><h3>OEM / ODM Service</h3><p>Concept to finished product.</p></div>
+            <div><h3>Embroidery & Sublimation</h3><p>Full-spectrum custom branding.</p></div>
+            <div><h3>BSCI Audited Factory</h3><p>Ethical & compliant production.</p></div>
           </div>
         </div>
       </section>
+
+      {/* Factory Stats Bar */}
+      <div className="factory-stats-bar">
+        <div><strong>10+ Years</strong><p>Experience</p></div>
+        <div><strong>300+ Clients</strong><p>Served</p></div>
+        <div><strong>100,000+ PCS</strong><p>/ Month</p></div>
+        <div><strong>98.7%</strong><p>On-Time Delivery</p></div>
+      </div>
 
       {/* 3. PRODUCT CATALOG */}
       <section className="section" id="products">

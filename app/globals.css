@@ -107,12 +107,32 @@
   margin-top: 30px;
 }
 .why-card-grid-small div {
-  background: #fdfdfe;
+  background: #fff;
   padding: 24px;
-  border-radius: 20px;
+  border-radius: 16px;
   border: 1px solid #eee;
   box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  transition: 0.3s;
 }
+.why-card-grid-small div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+.why-card-grid-small h3 { font-size: 18px; margin-bottom: 8px; color: var(--dark); }
+.why-card-grid-small p { font-size: 14px; color: #666; margin: 0; }
+
+.factory-stats-bar {
+  display: flex;
+  justify-content: space-around;
+  background: #000;
+  color: #fff;
+  padding: 40px 6%;
+  margin-top: 40px;
+  border-radius: 20px;
+  text-align: center;
+}
+.factory-stats-bar strong { display: block; font-size: 28px; color: var(--red); margin-bottom: 5px; }
+.factory-stats-bar p { margin: 0; font-size: 14px; color: #888; text-transform: uppercase; letter-spacing: 1px; }
 
 /* === GRIDS & SECTIONS === */
 .section { padding: 90px 6%; }
