@@ -1,0 +1,141 @@
+{
+  "bannerDimensions": {
+    "fullWidth": false,
+    "viewportWidth": 1920,
+    "width": 1905
+  },
+  "factorySlider": {
+    "imageCount": 7,
+    "images": [
+      {
+        "alt": "Factory 0",
+        "display": "block",
+        "index": 0,
+        "opacity": "0"
+      },
+      {
+        "alt": "Factory 1",
+        "display": "block",
+        "index": 1,
+        "opacity": "1"
+      },
+      {
+        "alt": "Factory 2",
+        "display": "block",
+        "index": 2,
+        "opacity": "0"
+      },
+      {
+        "alt": "Factory 3",
+        "display": "block",
+        "index": 3,
+        "opacity": "0"
+      },
+      {
+        "alt": "Factory 4",
+        "display": "block",
+        "index": 4,
+        "opacity": "0"
+      },
+      {
+        "alt": "Factory 5",
+        "display": "block",
+        "index": 5,
+        "opacity": "0"
+      },
+      {
+        "alt": "Factory 6",
+        "display": "block",
+        "index": 6,
+        "opacity": "0"
+      }
+    ]
+  },
+  "heroOverlays": [
+    {
+      "bottom": "0px",
+      "className": "slide ",
+      "left": "0px",
+      "position": "absolute",
+      "rect": {
+        "h": 734,
+        "w": 1905,
+        "x": 0,
+        "y": -619
+      },
+      "right": "0px",
+      "tag": "DIV",
+      "text": "",
+      "top": "0px",
+      "zIndex": "auto"
+    },
+    {
+      "bottom": "0px",
+      "className": "slide active",
+      "left": "0px",
+      "position": "absolute",
+      "rect": {
+        "h": 734,
+        "w": 1905,
+        "x": 0,
+        "y": -619
+      },
+      "right": "0px",
+      "tag": "DIV",
+      "text": "",
+      "top": "0px",
+      "zIndex": "auto"
+    },
+    {
+      "bottom": "316.781px",
+      "className": "slider-arrow prev",
+      "left": "20px",
+      "position": "absolute",
+      "rect": {
+        "h": 50,
+        "w": 50,
+        "x": 20,
+        "y": -277
+      },
+      "right": "1835px",
+      "tag": "DIV",
+      "text": "<",
+      "top": "366.766px",
+      "zIndex": "9999"
+    },
+    {
+      "bottom": "316.781px",
+      "className": "slider-arrow next",
+      "left": "1835px",
+      "position": "absolute",
+      "rect": {
+        "h": 50,
+        "w": 50,
+        "x": 1835,
+        "y": -277
+      },
+      "right": "20px",
+      "tag": "DIV",
+      "text": ">",
+      "top": "366.766px",
+      "zIndex": "9999"
+    },
+    {
+      "bottom": "30px",
+      "className": "banner-dots",
+      "left": "952.5px",
+      "position": "absolute",
+      "rect": {
+        "h": 4,
+        "w": 122,
+        "x": 892,
+        "y": 81
+      },
+      "right": "830.5px",
+      "tag": "DIV",
+      "text": "",
+      "top": "699.547px",
+      "zIndex": "100"
+    }
+  ]
+}

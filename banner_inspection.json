@@ -1,0 +1,293 @@
+{
+  "arrows": [
+    {
+      "className": "dot ",
+      "cursor": "pointer",
+      "display": "block",
+      "index": 1,
+      "opacity": "1",
+      "pointerEvents": "auto",
+      "position": "static",
+      "rect": {
+        "h": 4,
+        "left": 968.5,
+        "top": 840.546875,
+        "w": 45,
+        "x": 968.5,
+        "y": 840.546875
+      },
+      "text": "",
+      "visibility": "visible",
+      "zIndex": "auto"
+    },
+    {
+      "className": "",
+      "cursor": "pointer",
+      "display": "flex",
+      "index": 2,
+      "opacity": "1",
+      "pointerEvents": "auto",
+      "position": "static",
+      "rect": {
+        "h": 45,
+        "left": 381.796875,
+        "top": 1168.921875,
+        "w": 45,
+        "x": 381.796875,
+        "y": 1168.921875
+      },
+      "text": "<",
+      "visibility": "visible",
+      "zIndex": "auto"
+    },
+    {
+      "className": "",
+      "cursor": "pointer",
+      "display": "flex",
+      "index": 3,
+      "opacity": "1",
+      "pointerEvents": "auto",
+      "position": "static",
+      "rect": {
+        "h": 45,
+        "left": 862.5,
+        "top": 1168.921875,
+        "w": 45,
+        "x": 862.5,
+        "y": 1168.921875
+      },
+      "text": ">",
+      "visibility": "visible",
+      "zIndex": "auto"
+    }
+  ],
+  "bannerImages": [
+    {
+      "alt": "Banner 0",
+      "display": "block",
+      "index": 0,
+      "opacity": "1",
+      "position": "static",
+      "rect": {
+        "h": 733.546875,
+        "w": 1905,
+        "x": 0,
+        "y": 141
+      },
+      "src": "https://www.tontongear.com/assets/banners/banner-01-custom-fight-shorts.jpg",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "Banner 1",
+      "display": "block",
+      "index": 1,
+      "opacity": "1",
+      "position": "static",
+      "rect": {
+        "h": 733.546875,
+        "w": 1905,
+        "x": 0,
+        "y": 141
+      },
+      "src": "https://www.tontongear.com/assets/banners/banner-02-oem-odm-manufacturer.jpg",
+      "zIndex": "auto"
+    }
+  ],
+  "overlappingText": [
+    {
+      "className": "",
+      "position": "static",
+      "rect": {
+        "h": 7023.5,
+        "w": 1905,
+        "x": 0,
+        "y": 141
+      },
+      "tag": "DIV",
+      "text": "<><>SMART FACTORYManufacturing PartnerWhy Global Brands Trus",
+      "zIndex": "auto"
+    },
+    {
+      "className": "factory-slider",
+      "position": "relative",
+      "rect": {
+        "h": 312.578125,
+        "w": 555.703125,
+        "x": 366.796875,
+        "y": 1035.140625
+      },
+      "tag": "DIV",
+      "text": "<>SMART FACTORYManufacturing Partner",
+      "zIndex": "auto"
+    },
+    {
+      "className": "factory-overlay",
+      "position": "absolute",
+      "rect": {
+        "h": 87,
+        "w": 495.703125,
+        "x": 396.796875,
+        "y": 1230.71875
+      },
+      "tag": "DIV",
+      "text": "SMART FACTORYManufacturing Partner",
+      "zIndex": "10"
+    },
+    {
+      "className": "",
+      "position": "static",
+      "rect": {
+        "h": 18,
+        "w": 495.703125,
+        "x": 396.796875,
+        "y": 1246.71875
+      },
+      "tag": "P",
+      "text": "SMART FACTORY",
+      "zIndex": "auto"
+    },
+    {
+      "className": "",
+      "position": "static",
+      "rect": {
+        "h": 37,
+        "w": 495.703125,
+        "x": 396.796875,
+        "y": 1280.71875
+      },
+      "tag": "H2",
+      "text": "Manufacturing Partner",
+      "zIndex": "auto"
+    },
+    {
+      "className": "factory-features",
+      "position": "static",
+      "rect": {
+        "h": 433.78125,
+        "w": 555.703125,
+        "x": 982.5,
+        "y": 974.546875
+      },
+      "tag": "DIV",
+      "text": "Why Global Brands Trust TONTONAdvanced Manufacturing + Premi",
+      "zIndex": "auto"
+    },
+    {
+      "className": "eyebrow",
+      "position": "static",
+      "rect": {
+        "h": 18,
+        "w": 555.703125,
+        "x": 982.5,
+        "y": 987.546875
+      },
+      "tag": "P",
+      "text": "Why Global Brands Trust TONTON",
+      "zIndex": "auto"
+    },
+    {
+      "className": "",
+      "position": "static",
+      "rect": {
+        "h": 28,
+        "w": 555.703125,
+        "x": 982.5,
+        "y": 1025.453125
+      },
+      "tag": "H2",
+      "text": "Advanced Manufacturing + Premium Quality",
+      "zIndex": "auto"
+    },
+    {
+      "className": "why-card-grid-small",
+      "position": "static",
+      "rect": {
+        "h": 324.875,
+        "w": 555.703125,
+        "x": 982.5,
+        "y": 1083.453125
+      },
+      "tag": "DIV",
+      "text": "Smart Hanging SystemImproved workflow stability.10 PCS Low M",
+      "zIndex": "auto"
+    },
+    {
+      "className": "",
+      "position": "static",
+      "rect": {
+        "h": 143.4375,
+        "w": 267.84375,
+        "x": 982.5,
+        "y": 1083.453125
+      },
+      "tag": "DIV",
+      "text": "Smart Hanging SystemImproved workflow stability.",
+      "zIndex": "auto"
+    },
+    {
+      "className": "",
+      "position": "static",
+      "rect": {
+        "h": 22,
+        "w": 217.84375,
+        "x": 1007.5,
+        "y": 1127.171875
+      },
+      "tag": "H3",
+      "text": "Smart Hanging System",
+      "zIndex": "auto"
+    },
+    {
+      "className": "",
+      "position": "static",
+      "rect": {
+        "h": 18,
+        "w": 217.84375,
+        "x": 1007.5,
+        "y": 1167.890625
+      },
+      "tag": "P",
+      "text": "Improved workflow stability.",
+      "zIndex": "auto"
+    },
+    {
+      "className": "",
+      "position": "static",
+      "rect": {
+        "h": 143.4375,
+        "w": 267.859375,
+        "x": 1270.34375,
+        "y": 1083.453125
+      },
+      "tag": "DIV",
+      "text": "10 PCS Low MOQFlexible custom orders.",
+      "zIndex": "auto"
+    },
+    {
+      "className": "",
+      "position": "static",
+      "rect": {
+        "h": 22,
+        "w": 217.859375,
+        "x": 1295.34375,
+        "y": 1127.171875
+      },
+      "tag": "H3",
+      "text": "10 PCS Low MOQ",
+      "zIndex": "auto"
+    },
+    {
+      "className": "",
+      "position": "static",
+      "rect": {
+        "h": 18,
+        "w": 217.859375,
+        "x": 1295.34375,
+        "y": 1167.890625
+      },
+      "tag": "P",
+      "text": "Flexible custom orders.",
+      "zIndex": "auto"
+    }
+  ]
+}

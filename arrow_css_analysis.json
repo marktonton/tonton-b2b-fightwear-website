@@ -1,0 +1,58 @@
+{
+  "bannerArrows": {
+    "next": {
+      "cursor": "pointer",
+      "display": "flex",
+      "hasClickHandler": true,
+      "height": "50px",
+      "inlineStyle": "position:absolute;right:20px;top:50%;transform:translateY(-50%);z-index:9999;cursor:pointer;background:rgba(0,0,0,0.5);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center",
+      "opacity": "1",
+      "pointerEvents": "auto",
+      "position": "absolute",
+      "visibility": "visible",
+      "width": "50px",
+      "zIndex": "9999"
+    },
+    "prev": {
+      "cursor": "pointer",
+      "display": "flex",
+      "hasClickHandler": true,
+      "height": "50px",
+      "inlineStyle": "position:absolute;left:20px;top:50%;transform:translateY(-50%);z-index:9999;cursor:pointer;background:rgba(0,0,0,0.5);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center",
+      "opacity": "1",
+      "pointerEvents": "auto",
+      "position": "absolute",
+      "visibility": "visible",
+      "width": "50px",
+      "zIndex": "9999"
+    }
+  },
+  "bannerImageText": {
+    "activeImageSrc": "https://www.tontongear.com/assets/banners/banner-02-oem-odm-manufacturer.jpg",
+    "note": "All hero text is part of the banner IMAGE itself (not HTML overlays)"
+  },
+  "factoryArrows": {
+    "next": {
+      "cursor": "pointer",
+      "display": "flex",
+      "opacity": "1",
+      "pointerEvents": "auto",
+      "visibility": "visible",
+      "zIndex": "auto"
+    },
+    "prev": {
+      "cursor": "pointer",
+      "display": "flex",
+      "opacity": "1",
+      "pointerEvents": "auto",
+      "visibility": "visible",
+      "zIndex": "auto"
+    }
+  },
+  "sliderJS": {
+    "customSliderScript": false,
+    "hasGlideJS": false,
+    "hasSlickJS": false,
+    "hasSwiperJS": false
+  }
+}

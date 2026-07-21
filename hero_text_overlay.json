@@ -1,0 +1,48 @@
+{
+  "bannerStyle": {
+    "bannerLeft": 0,
+    "bannerMarginLeft": "0px",
+    "bannerMarginRight": "0px",
+    "bannerMaxWidth": "none",
+    "bannerPaddingLeft": "0px",
+    "bannerWidth": 1905,
+    "bodyOverflow": "hidden",
+    "heroBackground": "rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "heroLeft": 0,
+    "heroMaxWidth": "none",
+    "heroOverflow": "hidden",
+    "heroWidth": 1905,
+    "viewportWidth": 1920
+  },
+  "heroAbsoluteTextElements": [
+    {
+      "class": "slider-arrow prev",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "24px",
+      "rect": {
+        "h": 50,
+        "w": 50,
+        "x": 20,
+        "y": 483
+      },
+      "tag": "DIV",
+      "text": "<",
+      "zIndex": "9999"
+    },
+    {
+      "class": "slider-arrow next",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "24px",
+      "rect": {
+        "h": 50,
+        "w": 50,
+        "x": 1835,
+        "y": 483
+      },
+      "tag": "DIV",
+      "text": ">",
+      "zIndex": "9999"
+    }
+  ],
+  "heroTextElements": []
+}

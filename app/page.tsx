@@ -50,19 +50,33 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-          <div 
+          <button 
             className="slider-arrow prev" 
             onClick={prevBanner}
-            style={{ position: 'absolute', left: '20px', top: '50%', transform: 'translateY(-50%)', zIndex: 9999, cursor: 'pointer', background: 'rgba(0,0,0,0.5)', width: '50px', height: '50px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-          >&lt;</div>
-          <div 
+            aria-label="Previous Slide"
+            style={{ 
+              position: 'absolute', left: '30px', top: '50%', transform: 'translateY(-50%)', 
+              zIndex: 9999, cursor: 'pointer', background: 'rgba(0,0,0,0.6)', 
+              width: '60px', height: '60px', borderRadius: '50%', border: '1px solid rgba(255,255,255,0.3)',
+              display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff',
+              fontSize: '24px', pointerEvents: 'auto'
+            }}
+          >&lt;</button>
+          <button 
             className="slider-arrow next" 
             onClick={nextBanner}
-            style={{ position: 'absolute', right: '20px', top: '50%', transform: 'translateY(-50%)', zIndex: 9999, cursor: 'pointer', background: 'rgba(0,0,0,0.5)', width: '50px', height: '50px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-          >&gt;</div>
+            aria-label="Next Slide"
+            style={{ 
+              position: 'absolute', right: '30px', top: '50%', transform: 'translateY(-50%)', 
+              zIndex: 9999, cursor: 'pointer', background: 'rgba(0,0,0,0.6)', 
+              width: '60px', height: '60px', borderRadius: '50%', border: '1px solid rgba(255,255,255,0.3)',
+              display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff',
+              fontSize: '24px', pointerEvents: 'auto'
+            }}
+          >&gt;</button>
           <div className="banner-dots">
             {BANNERS.map((_, i) => (
-              <button key={i} className={`dot ${i === currentBanner ? 'active' : ''}`} onClick={() => setCurrentBanner(i)}></button>
+              <button key={i} className={`dot ${i === currentBanner ? 'active' : ''}`} onClick={() => setCurrentBanner(i)} aria-label={`Go to slide ${i+1}`}></button>
             ))}
           </div>
         </div>

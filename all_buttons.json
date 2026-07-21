@@ -1,0 +1,233 @@
+{
+  "allButtons": [
+    {
+      "className": "dot active",
+      "display": "block",
+      "grandparentClass": "banner-slider",
+      "index": 0,
+      "parentClass": "banner-dots",
+      "pointerEvents": "auto",
+      "position": "static",
+      "rect": {
+        "h": 4,
+        "w": 65,
+        "x": 892,
+        "y": 841
+      },
+      "text": "",
+      "zIndex": "auto"
+    },
+    {
+      "className": "dot ",
+      "display": "block",
+      "grandparentClass": "banner-slider",
+      "index": 1,
+      "parentClass": "banner-dots",
+      "pointerEvents": "auto",
+      "position": "static",
+      "rect": {
+        "h": 4,
+        "w": 45,
+        "x": 969,
+        "y": 841
+      },
+      "text": "",
+      "zIndex": "auto"
+    },
+    {
+      "className": "",
+      "display": "flex",
+      "grandparentClass": "factory-slider",
+      "index": 2,
+      "parentClass": "slider-controls",
+      "pointerEvents": "auto",
+      "position": "static",
+      "rect": {
+        "h": 45,
+        "w": 45,
+        "x": 382,
+        "y": 1169
+      },
+      "text": "<",
+      "zIndex": "auto"
+    },
+    {
+      "className": "",
+      "display": "flex",
+      "grandparentClass": "factory-slider",
+      "index": 3,
+      "parentClass": "slider-controls",
+      "pointerEvents": "auto",
+      "position": "static",
+      "rect": {
+        "h": 45,
+        "w": 45,
+        "x": 863,
+        "y": 1169
+      },
+      "text": ">",
+      "zIndex": "auto"
+    },
+    {
+      "className": "",
+      "display": "block",
+      "grandparentClass": "inquiry",
+      "index": 4,
+      "parentClass": "inquiry-form",
+      "pointerEvents": "auto",
+      "position": "static",
+      "rect": {
+        "h": 49,
+        "w": 1676,
+        "x": 114,
+        "y": 6980
+      },
+      "text": "Send Inquiry",
+      "zIndex": "auto"
+    }
+  ],
+  "bannerArrows": [
+    {
+      "className": "slider-arrow prev",
+      "pointerEvents": "auto",
+      "rect": {
+        "h": 50,
+        "w": 50,
+        "x": 20,
+        "y": 483
+      },
+      "tag": "DIV",
+      "text": "<",
+      "zIndex": "9999"
+    },
+    {
+      "className": "slider-arrow next",
+      "pointerEvents": "auto",
+      "rect": {
+        "h": 50,
+        "w": 50,
+        "x": 1835,
+        "y": 483
+      },
+      "tag": "DIV",
+      "text": ">",
+      "zIndex": "9999"
+    },
+    {
+      "className": "dot active",
+      "pointerEvents": "auto",
+      "rect": {
+        "h": 4,
+        "w": 65,
+        "x": 892,
+        "y": 841
+      },
+      "tag": "BUTTON",
+      "text": "",
+      "zIndex": "auto"
+    },
+    {
+      "className": "dot ",
+      "pointerEvents": "auto",
+      "rect": {
+        "h": 4,
+        "w": 45,
+        "x": 969,
+        "y": 841
+      },
+      "tag": "BUTTON",
+      "text": "",
+      "zIndex": "auto"
+    }
+  ],
+  "sliderContainers": [
+    {
+      "children": 1,
+      "className": "hero",
+      "rect": {
+        "h": 734,
+        "w": 1905,
+        "x": 0,
+        "y": 141
+      },
+      "tag": "SECTION"
+    },
+    {
+      "children": 4,
+      "className": "banner-slider",
+      "rect": {
+        "h": 734,
+        "w": 1905,
+        "x": 0,
+        "y": 141
+      },
+      "tag": "DIV"
+    },
+    {
+      "children": 0,
+      "className": "slider-arrow prev",
+      "rect": {
+        "h": 50,
+        "w": 50,
+        "x": 20,
+        "y": 483
+      },
+      "tag": "DIV"
+    },
+    {
+      "children": 0,
+      "className": "slider-arrow next",
+      "rect": {
+        "h": 50,
+        "w": 50,
+        "x": 1835,
+        "y": 483
+      },
+      "tag": "DIV"
+    },
+    {
+      "children": 2,
+      "className": "banner-dots",
+      "rect": {
+        "h": 4,
+        "w": 122,
+        "x": 892,
+        "y": 841
+      },
+      "tag": "DIV"
+    },
+    {
+      "children": 3,
+      "className": "factory-slider",
+      "rect": {
+        "h": 313,
+        "w": 556,
+        "x": 367,
+        "y": 1035
+      },
+      "tag": "DIV"
+    },
+    {
+      "children": 2,
+      "className": "slider-controls",
+      "rect": {
+        "h": 45,
+        "w": 556,
+        "x": 367,
+        "y": 1169
+      },
+      "tag": "DIV"
+    },
+    {
+      "children": 2,
+      "className": "factory-hero video-horizontal",
+      "rect": {
+        "h": 600,
+        "w": 1905,
+        "x": 0,
+        "y": 6135
+      },
+      "tag": "SECTION"
+    }
+  ]
+}

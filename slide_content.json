@@ -1,0 +1,49 @@
+{
+  "bannerImage": {
+    "height": "733.547px",
+    "maxWidth": "100%",
+    "naturalHeight": 667,
+    "naturalWidth": 1920,
+    "objectFit": "cover",
+    "renderedHeight": 734,
+    "renderedWidth": 1905,
+    "width": "1905px"
+  },
+  "heroHTMLPreview": "<div class=\"banner-slider\"><div class=\"slides\"><div class=\"slide active\"><img src=\"/assets/banners/banner-01-custom-fight-shorts.jpg\" alt=\"Banner 0\"></div><div class=\"slide \"><img src=\"/assets/banners/banner-02-oem-odm-manufacturer.jpg\" alt=\"Banner 1\"></div></div><div class=\"slider-arrow prev\" style=\"position:absolute;left:20px;top:50%;transform:translateY(-50%);z-index:9999;cursor:pointer;background:rgba(0,0,0,0.5);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center\">&lt;</div><div class=\"slider-arrow next\" style=\"position:absolute;right:20px;top:50%;transform:translateY(-50%);z-index:9999;cursor:pointer;background:rgba(0,0,0,0.5);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center\">&gt;</div><div class=\"banner-dots\"><button class=\"dot active\"></button><button class=\"dot \"></button></div></div>",
+  "slides": [
+    {
+      "className": "slide active",
+      "display": "block",
+      "index": 0,
+      "innerHTMLPreview": "<img src=\"/assets/banners/banner-01-custom-fight-shorts.jpg\" alt=\"Banner 0\">",
+      "opacity": "0",
+      "rect": {
+        "h": 734,
+        "w": 1905,
+        "x": 0,
+        "y": 141
+      },
+      "textContent": "",
+      "transform": "none",
+      "visibility": "visible",
+      "zIndex": "auto"
+    },
+    {
+      "className": "slide ",
+      "display": "block",
+      "index": 1,
+      "innerHTMLPreview": "<img src=\"/assets/banners/banner-02-oem-odm-manufacturer.jpg\" alt=\"Banner 1\">",
+      "opacity": "1",
+      "rect": {
+        "h": 734,
+        "w": 1905,
+        "x": 0,
+        "y": 141
+      },
+      "textContent": "",
+      "transform": "none",
+      "visibility": "visible",
+      "zIndex": "auto"
+    }
+  ]
+}

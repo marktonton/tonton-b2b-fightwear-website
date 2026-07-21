@@ -10,6 +10,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>TONTON - B2B Fightwear Catalog</title>
+        <meta httpEquiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta httpEquiv="Pragma" content="no-cache" />
+        <meta httpEquiv="Expires" content="0" />
       </head>
       <body>
         <div className="topbar">
@@ -46,7 +49,7 @@ export default function RootLayout({
           <div>
             <img src="/assets/logo.png" alt="TONTON" />
             <p>Professional MMA & Sportswear OEM Factory. Building premium fightwear brands since 2014.</p>
-            <p style={{ fontSize: '10px', color: '#333', marginTop: '10px' }}>Build: v1.0.5-React</p>
+            <p style={{ fontSize: '10px', color: '#333', marginTop: '10px' }}>Build: v1.0.5-React-Hardened</p>
           </div>
           <div style={{ textAlign: 'right' }}>
             <p>© 2026 TONTON Sports. All rights reserved.</p>
