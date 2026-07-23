@@ -23,24 +23,24 @@
 .banner-dots .dot {width:45px; height:4px; border:0; border-radius:2px; background:rgba(255,255,255,0.3); cursor:pointer; transition:0.3s}
 .banner-dots .dot.active {background:#fff; width:65px}
 
-/* === FACTORY DUAL-COLUMN LAYOUT (Image 3 Style) === */
+/* === FACTORY DUAL-COLUMN LAYOUT (Image 2 Style) === */
 .factory-container {
   display: grid;
-  grid-template-columns: 1.45fr 0.55fr;
-  gap: 50px;
+  grid-template-columns: 1.6fr 0.4fr;
+  gap: 40px;
   align-items: center;
-  max-width: 1750px;
-  margin: 50px auto;
-  padding: 0 3%;
+  max-width: 1920px;
+  margin: 60px auto;
+  padding: 0 1.5%;
 }
 
 .factory-slider {
   position: relative;
   width: 100%;
   aspect-ratio: 16/9;
-  border-radius: 40px;
+  border-radius: 50px;
   overflow: hidden;
-  box-shadow: 0 40px 100px rgba(0,0,0,0.18);
+  box-shadow: 0 50px 120px rgba(0,0,0,0.2);
   background: #111;
 }
 
@@ -108,7 +108,7 @@
 }
 .why-card-grid-small div {
   background: #fcfcfc;
-  padding: 24px;
+  padding: 18px 22px;
   border-radius: 20px;
   border: 1px solid #eee;
   border-left: 4px solid var(--red);
@@ -117,7 +117,7 @@
 }
 .why-card-grid-small div:hover {
   transform: translateY(-5px);
-  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.12);
 }
 .why-card-grid-small h3 { font-size: 18px; margin-bottom: 8px; color: var(--dark); }
 .why-card-grid-small p { font-size: 14px; color: #666; margin: 0; }
@@ -153,16 +153,12 @@
 .fade-out { opacity: 0; visibility: hidden; pointer-events: none; }
 
 /* === RESPONSIVE === */
-@media (max-width: 1024px) {
-  .factory-container { grid-template-columns: 1fr; gap: 40px; }
-  .product-grid { grid-template-columns: repeat(2, 1fr); }
-}
-
 @media (max-width: 768px) {
   .hero {height:60vh}
   .product-grid, .why-card-grid-small {grid-template-columns:1fr}
   .header nav {display:none}
   .slider-arrow {display:none}
+  .factory-container { grid-template-columns: 1fr; gap: 40px; }
 }
 
 .eyebrow { color: var(--red); font-weight: 900; text-transform: uppercase; letter-spacing: 3px; font-size: 13px; }
