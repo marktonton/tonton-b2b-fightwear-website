@@ -61,7 +61,7 @@ export default function HomePage() {
               display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff',
               fontSize: '24px', pointerEvents: 'auto'
             }}
-          >&lt;</button>
+          ><</button>
           <button 
             className="slider-arrow next" 
             onClick={nextBanner}
@@ -73,7 +73,7 @@ export default function HomePage() {
               display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff',
               fontSize: '24px', pointerEvents: 'auto'
             }}
-          >&gt;</button>
+          >></button>
           <div className="banner-dots">
             {BANNERS.map((_, i) => (
               <button key={i} className={`dot ${i === currentBanner ? 'active' : ''}`} onClick={() => setCurrentBanner(i)} aria-label={`Go to slide ${i+1}`}></button>
@@ -104,11 +104,11 @@ export default function HomePage() {
             <button 
               onClick={() => setCurrentFactory((prev) => (prev - 1 + FACTORY_IMAGES.length) % FACTORY_IMAGES.length)}
               style={{ width: '45px', height: '45px', borderRadius: '50%', background: 'rgba(0,0,0,0.6)', color: '#fff', border: '1px solid rgba(255,255,255,0.3)', cursor: 'pointer', pointerEvents: 'auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-            >&lt;</button>
+            ><</button>
             <button 
               onClick={() => setCurrentFactory((prev) => (prev + 1) % FACTORY_IMAGES.length)}
               style={{ width: '45px', height: '45px', borderRadius: '50%', background: 'rgba(0,0,0,0.6)', color: '#fff', border: '1px solid rgba(255,255,255,0.3)', cursor: 'pointer', pointerEvents: 'auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-            >&gt;</button>
+            >>></button>
           </div>
         </div>
 
@@ -188,4 +188,4 @@ export default function HomePage() {
       </a>
     </div>
   );
-          }
+}
