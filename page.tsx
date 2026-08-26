@@ -2,28 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { resolveImage } from '../lib/image-resolver';
-import productsDataRaw from '../data/products.json';
-
-interface Product {
-  id: string;
-  categoryId: string;
-  name: string;
-  image: string;
-  description: string;
-  features?: string[];
-}
-
-interface Category {
-  id: string;
-  name: string;
-  description: string;
-  image: string;
-}
-
-const productsData = productsDataRaw as {
-  categories: Category[];
-  products: Product[];
-};
+import productsData from '../data/products.json';
 
 const BANNERS = [
   'assets/banners/banner-01-custom-fight-shorts.jpg',
@@ -82,7 +61,7 @@ export default function HomePage() {
               display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff',
               fontSize: '24px', pointerEvents: 'auto'
             }}
-          >{'<'}</button>
+          >&lt;</button>
           <button 
             className="slider-arrow next" 
             onClick={nextBanner}
@@ -94,7 +73,7 @@ export default function HomePage() {
               display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff',
               fontSize: '24px', pointerEvents: 'auto'
             }}
-          >{'>'}</button>
+          >&gt;</button>
           <div className="banner-dots">
             {BANNERS.map((_, i) => (
               <button key={i} className={`dot ${i === currentBanner ? 'active' : ''}`} onClick={() => setCurrentBanner(i)} aria-label={`Go to slide ${i+1}`}></button>
@@ -125,11 +104,11 @@ export default function HomePage() {
             <button 
               onClick={() => setCurrentFactory((prev) => (prev - 1 + FACTORY_IMAGES.length) % FACTORY_IMAGES.length)}
               style={{ width: '45px', height: '45px', borderRadius: '50%', background: 'rgba(0,0,0,0.6)', color: '#fff', border: '1px solid rgba(255,255,255,0.3)', cursor: 'pointer', pointerEvents: 'auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-            ><</button>
+            >&lt;</button>
             <button 
               onClick={() => setCurrentFactory((prev) => (prev + 1) % FACTORY_IMAGES.length)}
               style={{ width: '45px', height: '45px', borderRadius: '50%', background: 'rgba(0,0,0,0.6)', color: '#fff', border: '1px solid rgba(255,255,255,0.3)', cursor: 'pointer', pointerEvents: 'auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-            >>></button>
+            >&gt;</button>
           </div>
         </div>
 
