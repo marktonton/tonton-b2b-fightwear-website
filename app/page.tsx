@@ -125,11 +125,11 @@ export default function HomePage() {
             <button 
               onClick={() => setCurrentFactory((prev) => (prev - 1 + FACTORY_IMAGES.length) % FACTORY_IMAGES.length)}
               style={{ width: '45px', height: '45px', borderRadius: '50%', background: 'rgba(0,0,0,0.6)', color: '#fff', border: '1px solid rgba(255,255,255,0.3)', cursor: 'pointer', pointerEvents: 'auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-            ><</button>
+            >{'<'}</button>
             <button 
               onClick={() => setCurrentFactory((prev) => (prev + 1) % FACTORY_IMAGES.length)}
               style={{ width: '45px', height: '45px', borderRadius: '50%', background: 'rgba(0,0,0,0.6)', color: '#fff', border: '1px solid rgba(255,255,255,0.3)', cursor: 'pointer', pointerEvents: 'auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-            >>></button>
+            >{'>'}</button>
           </div>
         </div>
 
