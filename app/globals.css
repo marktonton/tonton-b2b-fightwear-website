@@ -117,11 +117,7 @@
 .why-card-grid-small {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-<<<<<<< HEAD
-  gap: 16px;
-=======
   gap: 24px;
->>>>>>> origin/feat/manufacturing-strength-layout
   margin-top: 30px;
 }
 .why-card-grid-small div {
