@@ -26,8 +26,16 @@ const productsData = productsDataRaw as {
 };
 
 const BANNERS = [
-  'assets/banners/banner-01-custom-fight-shorts.jpg',
-  'assets/banners/banner-02-oem-odm-manufacturer.jpg'
+  {
+    desktop: 'assets/banners/banner-dark-desktop.jpg',
+    mobile: 'assets/banners/banner-dark-mobile.jpg',
+    alt: 'Custom fightwear manufacturing for teams and brands',
+  },
+  {
+    desktop: 'assets/banners/banner-light-desktop.jpg',
+    mobile: 'assets/banners/banner-light-mobile.jpg',
+    alt: 'OEM and ODM custom sportswear production',
+  },
 ];
 
 const FACTORY_IMAGES = [
@@ -65,9 +73,12 @@ export default function HomePage() {
       <section className="hero">
         <div className="banner-slider">
           <div className="slides">
-            {BANNERS.map((src, i) => (
-              <div key={i} className={`slide ${i === currentBanner ? 'active' : ''}`}>
-                <img src={resolveImage(src)} alt={`Banner ${i}`} />
+            {BANNERS.map((banner, i) => (
+              <div key={banner.desktop} className={`slide ${i === currentBanner ? 'active' : ''}`}>
+                <picture>
+                  <source media="(max-width: 768px)" srcSet={resolveImage(banner.mobile)} />
+                  <img src={resolveImage(banner.desktop)} alt={banner.alt} />
+                </picture>
               </div>
             ))}
           </div>
