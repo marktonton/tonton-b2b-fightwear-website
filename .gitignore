@@ -6,6 +6,7 @@ node_modules
 *.bin
 *.b64
 *.sha
+*.tsbuildinfo
 *.js
 *.png
 !next.config.js
