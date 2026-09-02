@@ -1,11 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-import productsData from '../../data/products.json';
 import { resolveImage } from '../../lib/image-resolver';
+import { customizationCategories as categories } from '../../lib/customization-pages';
 
 export default function CollectionsPage() {
-  const { categories } = productsData;
-
   return (
     <div className="section">
       <div className="section-head">
@@ -21,7 +19,7 @@ export default function CollectionsPage() {
               <span>Collection</span>
               <h4>{category.name}</h4>
               <p>{category.description}</p>
-              <Link href={`/collections/${category.id}`} className="cert-btn" style={{ marginTop: '15px', display: 'inline-block' }}>
+              <Link href={`/customization/${category.id}`} className="cert-btn" style={{ marginTop: '15px', display: 'inline-block' }}>
                 View Details
               </Link>
             </div>

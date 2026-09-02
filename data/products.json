@@ -7,14 +7,14 @@
       "image": "assets/products/rashguard-blue-main.png"
     },
     {
-      "id": "mma-fight-shorts",
-      "name": "MMA Fight Shorts",
+      "id": "sublimated-training-shorts",
+      "name": "Sublimated Training Shorts",
       "description": "Durable, flexible, and lightweight shorts designed for high-intensity training.",
       "image": "assets/products/shorts-black-v2.png"
     },
     {
-      "id": "team-mma-kits",
-      "name": "Team MMA Kits",
+      "id": "sublimated-bjj-mma-shorts",
+      "name": "Sublimated BJJ MMA Shorts",
       "description": "Matching rash guard and shorts packages for academies and fight teams.",
       "image": "assets/products/kit-bw-v2.png"
     }
@@ -70,7 +70,7 @@
     },
     {
       "id": "black-competition-shorts",
-      "categoryId": "mma-fight-shorts",
+      "categoryId": "sublimated-training-shorts",
       "name": "Pro-Series Sublimated Fight Shorts",
       "image": "assets/products/shorts-black-v2.png",
       "description": "Lightweight fabric for pro competition.",
@@ -78,7 +78,7 @@
     },
     {
       "id": "custom-logo-shorts",
-      "categoryId": "mma-fight-shorts",
+      "categoryId": "sublimated-training-shorts",
       "name": "Ultimate Custom Competition Shorts",
       "image": "assets/products/shorts-custom-v2.png",
       "description": "Elastic waistband with logo printing.",
@@ -86,7 +86,7 @@
     },
     {
       "id": "pro-mma-shorts-07",
-      "categoryId": "mma-fight-shorts",
+      "categoryId": "sublimated-training-shorts",
       "name": "Elite Performance Training Shorts",
       "image": "assets/products/product-07.png",
       "description": "Performance series MMA shorts.",
@@ -94,7 +94,7 @@
     },
     {
       "id": "pro-mma-shorts-08",
-      "categoryId": "mma-fight-shorts",
+      "categoryId": "sublimated-training-shorts",
       "name": "Custom Sublimated Academy Shorts",
       "image": "assets/products/product-08.png",
       "description": "Performance series MMA shorts.",
@@ -102,7 +102,7 @@
     },
     {
       "id": "black-white-mma-kit",
-      "categoryId": "team-mma-kits",
+      "categoryId": "sublimated-bjj-mma-shorts",
       "name": "Classic Custom MMA Team Kit",
       "image": "assets/products/kit-bw-v2.png",
       "description": "Matching rash guard and shorts set.",
@@ -110,7 +110,7 @@
     },
     {
       "id": "team-kit-13",
-      "categoryId": "team-mma-kits",
+      "categoryId": "sublimated-bjj-mma-shorts",
       "name": "Sublimated Academy Training Kit",
       "image": "assets/products/product-13.png",
       "description": "Full sublimation team kit.",
@@ -118,7 +118,7 @@
     },
     {
       "id": "team-kit-14",
-      "categoryId": "team-mma-kits",
+      "categoryId": "sublimated-bjj-mma-shorts",
       "name": "Elite Custom Teamwear Package",
       "image": "assets/products/product-14.png",
       "description": "Full sublimation team kit.",
@@ -126,7 +126,7 @@
     },
     {
       "id": "team-kit-15",
-      "categoryId": "team-mma-kits",
+      "categoryId": "sublimated-bjj-mma-shorts",
       "name": "Elite Sublimated Performance Kit",
       "image": "assets/products/product-15.png",
       "description": "Full sublimation team kit.",
@@ -134,7 +134,7 @@
     },
     {
       "id": "pro-team-kit-17",
-      "categoryId": "team-mma-kits",
+      "categoryId": "sublimated-bjj-mma-shorts",
       "name": "Ultimate Custom Competition Kit",
       "image": "assets/products/17.png",
       "description": "Customized team competition gear.",

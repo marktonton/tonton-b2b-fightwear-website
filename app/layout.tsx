@@ -32,9 +32,9 @@ export default function RootLayout({
             <div className="nav-dropdown">
               <a href="/collections" className="nav-link">Customization ▼</a>
               <div className="dropdown-content">
-                <a href="/collections/sublimated-rash-guards">Sublimated Rash Guards</a>
-                <a href="/collections/sublimated-training-shorts">Sublimated Training Shorts</a>
-                <a href="/collections/sublimated-bjj-mma-shorts">Sublimated BJJ MMA Shorts</a>
+                <a href="/customization/sublimated-rash-guards">Sublimated Rash Guards</a>
+                <a href="/customization/sublimated-training-shorts">Sublimated Training Shorts</a>
+                <a href="/customization/sublimated-bjj-mma-shorts">Sublimated BJJ MMA Shorts</a>
               </div>
             </div>
             <a href="/collections">Collections</a>
