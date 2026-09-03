@@ -11,6 +11,7 @@ node_modules
 *.png
 !next.config.js
 !package.json
+!package-lock.json
 !data/*.json
 !app/**/*.tsx
 !app/**/*.css
