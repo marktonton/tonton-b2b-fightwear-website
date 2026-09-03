@@ -158,17 +158,31 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Right Column: Features */}
+        {/* Right Column: Company Introduction */}
         <div className="factory-features">
-          <p className="eyebrow">Why Global Brands Trust TONTON</p>
-          <h2>Advanced Manufacturing + Premium Quality</h2>
-          <div className="why-card-grid-small">
-            <div><h3>Smart Hanging System</h3><p>Improved workflow stability.</p></div>
-            <div><h3>10 PCS Low MOQ</h3><p>Flexible custom orders.</p></div>
-            <div><h3>Free Mockup Design</h3><p>Professional artwork confirmation.</p></div>
-            <div><h3>OEM / ODM Service</h3><p>Concept to finished product.</p></div>
-            <div><h3>Embroidery & Sublimation</h3><p>Full-spectrum custom branding.</p></div>
-            <div><h3>BSCI Audited Factory</h3><p>Ethical & compliant production.</p></div>
+          <p className="eyebrow">About TONTON</p>
+          <h2>TONTON SPORTSWEAR CO., LTD</h2>
+          <div className="factory-intro">
+            <p>
+              With more than 20 years of experience in fight wear and professional sportswear, TONTON brings together a strong design and production team for custom apparel projects.
+            </p>
+            <p>
+              We support custom sportswear companies, brand buyers, start-up retailers, sports clubs, and teams with fight, team, active, gym, and custom apparel concepts.
+            </p>
+          </div>
+          <div className="factory-contact">
+            <a
+              className="factory-whatsapp-cta"
+              href="https://wa.me/8617722438678?text=Hello%20TONTON%2C%20I%20would%20like%20to%20discuss%20a%20custom%20sportswear%20project."
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Send a custom sportswear inquiry on WhatsApp"
+            >
+              WhatsApp Inquiry
+            </a>
+            <p className="factory-email">
+              Email: <a href="mailto:gary@tontonsportswear.com">gary@tontonsportswear.com</a>
+            </p>
           </div>
         </div>
       </section>
