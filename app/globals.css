@@ -19,6 +19,13 @@
 .slider-arrow:hover {background:var(--red); border-color:var(--red)}
 .slider-arrow.prev {left:30px} .slider-arrow.next {right:30px}
 
+.banner-cta {position:absolute; bottom:76px; left:50%; transform:translateX(-50%); display:flex; gap:12px; align-items:center; justify-content:center; z-index:200; width:max-content; max-width:calc(100% - 160px)}
+.banner-cta a {display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:11px 20px; border-radius:999px; font-size:14px; font-weight:800; white-space:nowrap; transition:background .2s ease, color .2s ease, border-color .2s ease, transform .2s ease}
+.banner-cta a:hover {transform:translateY(-2px)}
+.banner-cta-whatsapp {background:#25d366; color:#071b0d !important}
+.banner-cta-whatsapp:hover {background:#54e58b}
+.banner-cta-email {background:rgba(0,0,0,.62); color:#fff !important; border:1px solid rgba(255,255,255,.7)}
+.banner-cta-email:hover {background:#fff; color:#111 !important}
 .banner-dots {position:absolute; bottom:30px; left:50%; transform:translateX(-50%); display:flex; gap:12px; z-index:100}
 .banner-dots .dot {width:45px; height:4px; border:0; border-radius:2px; background:rgba(255,255,255,0.3); cursor:pointer; transition:0.3s}
 .banner-dots .dot.active {background:#fff; width:65px}
@@ -170,6 +177,8 @@
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
   .hero {height:60vh}
+  .banner-cta {bottom:66px; gap:8px; max-width:calc(100% - 32px)}
+  .banner-cta a {min-height:40px; padding:9px 13px; font-size:12px}
   .product-grid, .why-card-grid-small {grid-template-columns:1fr}
   .header nav {display:none}
   .slider-arrow {display:none}
