@@ -181,6 +181,22 @@
 .factory-stats-bar strong { display: block; font-size: 28px; color: var(--red); margin-bottom: 5px; }
 .factory-stats-bar p { margin: 0; font-size: 14px; color: #888; text-transform: uppercase; letter-spacing: 1px; }
 
+.why-brands-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.36fr) minmax(0, 0.64fr);
+  align-items: center;
+  gap: clamp(28px, 5vw, 80px);
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 80px clamp(20px, 6vw, 96px);
+  overflow: hidden;
+}
+.why-brands-copy { min-width: 0; }
+.why-brands-copy h2 { max-width: 520px; margin: 12px 0 18px; font-size: clamp(30px, 3.2vw, 52px); line-height: 1.08; }
+.why-brands-copy > p:last-child { max-width: 500px; margin: 0; color: #555; font-size: 17px; line-height: 1.7; }
+.why-brands-visual { min-width: 0; width: 100%; }
+.why-brands-visual img { display: block; width: 100%; max-width: 100%; height: auto; border-radius: 24px; box-shadow: 0 24px 70px rgba(0,0,0,.12); }
+
 /* === GRIDS & SECTIONS === */
 .section { padding: 90px 6%; }
 .section-head { text-align: center; max-width: 850px; margin: 0 auto 50px; }
@@ -219,6 +235,14 @@
     grid-template-columns: 1fr;
     gap: 14px;
   }
+  .why-brands-section {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 56px 20px;
+  }
+  .why-brands-copy h2 { font-size: clamp(30px, 9vw, 42px); }
+  .why-brands-copy > p:last-child { font-size: 16px; }
+  .why-brands-visual img { border-radius: 18px; }
 }
 
 .eyebrow { color: var(--red); font-weight: 900; text-transform: uppercase; letter-spacing: 3px; font-size: 13px; }
