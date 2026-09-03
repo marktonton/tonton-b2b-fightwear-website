@@ -4,7 +4,7 @@
 /* === CINEMATIC HERO (Full Width) === */
 .hero {position:relative;width:100vw;height:85vh;overflow:hidden;background:#000;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
 .banner-slider {position:relative; width:100%; height:100%; z-index:1}
-.banner-slider .slides, .banner-slider .slide, .banner-slider .slide img {width:100%; height:100%; object-fit:cover}
+.banner-slider .slides, .banner-slider .slide, .banner-slider .slide picture, .banner-slider .slide img {width:100%; height:100%; object-fit:cover}
 .banner-slider .slide {position:absolute; inset:0; opacity:0; transition:opacity 0.8s ease}
 .banner-slider .slide.active {opacity:1}
 
