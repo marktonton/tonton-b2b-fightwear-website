@@ -195,6 +195,22 @@ export default function HomePage() {
         <div><strong>98.7%</strong><p>On-Time Delivery</p></div>
       </div>
 
+      {/* WHY BRANDS CHOOSE TONTON */}
+      <section className="why-brands-section" aria-labelledby="why-brands-title">
+        <div className="why-brands-copy">
+          <p className="eyebrow">Why Brands Choose TONTON</p>
+          <h2 id="why-brands-title">Four capabilities for custom sportswear projects</h2>
+          <p>From design coordination to production support, our team helps turn custom sportswear concepts into clear, production-ready orders.</p>
+        </div>
+        <div className="why-brands-visual">
+          <img
+            src="/assets/factory/why-brands-choose-tonton.jpg"
+            alt="Why brands choose TONTON capabilities"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
       {/* 3. PRODUCT CATALOG */}
       <section className="section" id="products">
         <div className="section-head">
