@@ -106,6 +106,20 @@ export default function HomePage() {
               fontSize: '24px', pointerEvents: 'auto'
             }}
           >{'>'}</button>
+          <div className="banner-cta" aria-label="Banner inquiry actions">
+            <a
+              className="banner-cta-whatsapp"
+              href={`https://wa.me/8617722438678?text=${encodeURIComponent(`Hello TONTON, I am interested in custom fightwear from the ${BANNERS[currentBanner].alt} banner.`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Send a custom fightwear inquiry on WhatsApp"
+            >WhatsApp Inquiry</a>
+            <a
+              className="banner-cta-email"
+              href={`mailto:gary@tontonsportswear.com?subject=${encodeURIComponent('Custom fightwear inquiry')}&body=${encodeURIComponent(`Hello Gary, I am interested in custom fightwear based on the ${BANNERS[currentBanner].alt} banner.`)}`}
+              aria-label="Send a custom fightwear inquiry by email"
+            >Email Inquiry</a>
+          </div>
           <div className="banner-dots">
             {BANNERS.map((_, i) => (
               <button key={i} className={`dot ${i === currentBanner ? 'active' : ''}`} onClick={() => setCurrentBanner(i)} aria-label={`Go to slide ${i+1}`}></button>
