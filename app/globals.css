@@ -337,3 +337,13 @@
 .nav-dropdown:hover .dropdown-content { display: block; }
 .nav-link { font-weight: 700; color: #fff !important; }
 .quick-cats{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;box-shadow:0 8px 30px rgba(0,0,0,.08)}.quick-cats a{padding:24px 6%;font-weight:900;border-right:1px solid #eee}.quick-cats span{color:var(--red);margin-right:12px}
+
+/* Footer layout guard: keep the shared footer horizontal on desktop. */
+.footer-main { display: grid !important; grid-template-columns: minmax(1.4fr, 1.8fr) repeat(2, minmax(150px, 1fr)) minmax(2fr, 2.2fr) !important; align-items: start; }
+.footer-column { display: flex; min-width: 0; flex-direction: column; align-items: flex-start; }
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer-main { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+}
+@media (max-width: 768px) {
+  .footer-main { grid-template-columns: 1fr !important; }
+}
