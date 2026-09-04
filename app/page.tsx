@@ -199,10 +199,10 @@ export default function HomePage() {
 
       {/* Factory Stats Bar */}
       <div className="factory-stats-bar">
-        <div><strong>10+ Years</strong><p>Experience</p></div>
+        <div><strong>20+ Years</strong><p>Experience</p></div>
         <div><strong>300+ Clients</strong><p>Served</p></div>
         <div><strong>100,000+ PCS</strong><p>/ Month</p></div>
-        <div><strong>98.7%</strong><p>On-Time Delivery</p></div>
+        <div><strong>100%</strong><p>On-Time Delivery</p></div>
       </div>
 
       {/* WHY BRANDS CHOOSE TONTON */}
