@@ -54,3 +54,4 @@
 - 保持审美统一：标题层级清晰、卡片比例/按钮/间距统一，桌面 4×2、平板 2 列、手机单列或合理双列，任何尺寸不横向溢出。
 - TOP PICKS 后必须紧接 `SEND YOUR INQUIRY`；字段顺序为 NAME/COMPANY、EMAIL/PHONE、PRODUCT/QUANTITY 两列，MESSAGE/FILES/SEND 全宽，移动端单列。
 - 首页工厂视频暂时隐藏；`#factory` 锚点固定在保留的工厂双栏区，`#inquiry` 锚点保留。
+- 首页 `SEND YOUR INQUIRY` 长期采用白/浅灰自然主题：浅灰外层、白色表单卡片、深色标题/标签/输入文字、浅边框和品牌红按钮；不要恢复黑色大背景。产品详情页的全局 `.inquiry` 样式不随首页主题调整。
