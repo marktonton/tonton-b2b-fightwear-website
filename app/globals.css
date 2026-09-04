@@ -311,7 +311,24 @@
 .inquiry-form { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 .inquiry-form * { padding: 15px; border-radius: 10px; border: 0; }
 .inquiry-form button { grid-column: 1/-1; background: var(--red); color: #fff; font-weight: 900; cursor: pointer; }
-.footer { padding: 50px 6%; background: #000; color: #888; display: flex; justify-content: space-between; }
+.footer { background: #090909; color: #a8a8a8; }
+.footer-main { display: grid; grid-template-columns: minmax(1.4fr, 1.8fr) repeat(2, minmax(150px, 1fr)) minmax(2fr, 2.2fr); gap: clamp(28px, 4vw, 72px); max-width: 1440px; margin: 0 auto; padding: clamp(56px, 7vw, 96px) clamp(20px, 6vw, 96px) clamp(44px, 5vw, 72px); }
+.footer-column { display: flex; min-width: 0; flex-direction: column; align-items: flex-start; gap: 12px; }
+.footer-brand { gap: 18px; }
+.footer-logo { display: block; width: 130px; height: auto; }
+.footer-column h2 { margin: 0 0 8px; color: #fff; font-size: 14px; font-weight: 900; letter-spacing: 1.8px; text-transform: uppercase; }
+.footer-column p, .footer-column a, .footer-column address { margin: 0; color: #a8a8a8; font-size: 14px; line-height: 1.65; }
+.footer-column a { text-decoration: none; transition: color .2s ease; }
+.footer-column a:hover, .footer-column a:focus-visible { color: #fff; }
+.footer-brand p { max-width: 280px; }
+.footer-contact address { max-width: 310px; font-style: normal; overflow-wrap: anywhere; }
+.footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 20px; max-width: 1440px; margin: 0 auto; padding: 20px clamp(20px, 6vw, 96px) 24px; border-top: 1px solid rgba(255, 255, 255, .12); }
+.footer-bottom p { margin: 0; color: #707070; font-size: 12px; line-height: 1.5; }
+@media (max-width: 768px) {
+  .footer-main { grid-template-columns: 1fr; gap: 34px; padding: 48px 20px 42px; }
+  .footer-column p, .footer-column a, .footer-column address { font-size: 14px; }
+  .footer-bottom { align-items: flex-start; flex-direction: column; gap: 6px; padding: 18px 20px 22px; }
+}
 .nav-dropdown { position: relative; display: inline-block; cursor: pointer; }
 .dropdown-content { display: none; position: absolute; background-color: #0a0a0c; min-width: 240px; box-shadow: 0px 20px 40px rgba(0,0,0,0.8); z-index: 99999; border-radius: 12px; padding: 10px 0; top: 100%; left: 0; border: 1px solid rgba(255,255,255,0.1); }
 .dropdown-content a { padding: 14px 20px; display: block; color: #fff !important; font-size: 14px; text-decoration: none; transition: 0.2s; border-bottom: 1px solid rgba(255,255,255,0.05); }
