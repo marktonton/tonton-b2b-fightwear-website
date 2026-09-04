@@ -230,6 +230,17 @@
 .top-picks-inquiry-form input[type="file"] { padding: 12px 14px; color: #555; }
 .top-picks-inquiry-form button { min-height: 52px; padding: 14px 22px; border: 0; border-radius: 999px; background: var(--red); color: #fff; font-size: 14px; font-weight: 900; letter-spacing: 1.5px; cursor: pointer; transition: background .2s ease, transform .2s ease; }
 .top-picks-inquiry-form button:hover { background: #c91628; transform: translateY(-2px); }
+.top-picks-faq { max-width: 1120px; margin: clamp(56px, 7vw, 96px) auto 0; }
+.top-picks-faq-heading { margin: 0 auto 28px; text-align: center; }
+.top-picks-faq-heading h2 { margin: 10px 0 0; color: #111; font-size: clamp(30px, 3.5vw, 48px); line-height: 1.08; }
+.top-picks-faq-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 20px; }
+.top-picks-faq-grid details { min-width: 0; border: 1px solid #e5e5e1; border-radius: 14px; background: #fff; box-shadow: 0 8px 24px rgba(20, 20, 20, .04); }
+.top-picks-faq-grid summary { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 20px 22px; color: #202020; font-size: 15px; font-weight: 800; line-height: 1.35; cursor: pointer; list-style: none; }
+.top-picks-faq-grid summary::-webkit-details-marker { display: none; }
+.top-picks-faq-grid summary::after { flex: 0 0 auto; color: var(--red); content: '+'; font-size: 24px; font-weight: 400; line-height: 1; }
+.top-picks-faq-grid details[open] summary::after { content: '−'; }
+.top-picks-faq-grid details[open] summary { border-bottom: 1px solid #eee; }
+.top-picks-faq-grid details p { margin: 0; padding: 0 22px 21px; color: #666; font-size: 14px; line-height: 1.65; }
 
 .section { padding: 90px 6%; }
 .section-head { text-align: center; max-width: 850px; margin: 0 auto 50px; }
@@ -265,6 +276,10 @@
   .top-picks-inquiry { padding: 56px 20px; }
   .top-picks-inquiry-form { grid-template-columns: 1fr; gap: 18px; }
   .top-picks-inquiry-full { grid-column: auto; }
+  .top-picks-faq-grid { grid-template-columns: 1fr; gap: 12px; }
+  .top-picks-faq { margin-top: 56px; }
+  .top-picks-faq-grid summary { padding: 18px; }
+  .top-picks-faq-grid details p { padding: 0 18px 18px; }
   .header nav {display:none}
   .slider-arrow {display:none}
   .factory-container {
