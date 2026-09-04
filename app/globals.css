@@ -197,7 +197,26 @@
 .why-brands-visual { min-width: 0; width: 100%; }
 .why-brands-visual img { display: block; width: 100%; max-width: none; height: auto; border-radius: 24px; box-shadow: 0 24px 70px rgba(0,0,0,.12); }
 
-/* === GRIDS & SECTIONS === */
+/* === TOP PICKS & GRIDS === */
+.top-picks-section { width: 100%; padding: clamp(64px, 7vw, 104px) clamp(20px, 6vw, 96px); background: #f7f7f5; }
+.top-picks-heading { max-width: 760px; margin: 0 auto 42px; text-align: center; }
+.top-picks-heading h2 { margin: 12px 0 16px; font-size: clamp(34px, 4vw, 58px); line-height: 1.05; letter-spacing: -0.025em; }
+.top-picks-heading > p:last-child { max-width: 580px; margin: 0 auto; color: #666; font-size: 17px; line-height: 1.65; }
+.top-picks-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px 22px; max-width: 1500px; margin: 0 auto; }
+.top-pick-card { min-width: 0; overflow: hidden; background: #fff; border: 1px solid #e8e8e5; border-radius: 18px; box-shadow: 0 14px 40px rgba(0,0,0,.06); transition: transform .25s ease, box-shadow .25s ease; }
+.top-pick-card:hover { transform: translateY(-6px); box-shadow: 0 22px 54px rgba(0,0,0,.12); }
+.top-pick-image { display: block; aspect-ratio: 1 / 1.08; overflow: hidden; background: #eee; }
+.top-pick-image img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
+.top-pick-card:hover .top-pick-image img { transform: scale(1.04); }
+.top-pick-content { display: flex; min-height: 190px; flex-direction: column; padding: 20px; }
+.top-pick-category { margin: 0 0 8px; color: var(--red); font-size: 11px; font-weight: 900; letter-spacing: 1.6px; text-transform: uppercase; }
+.top-pick-content h3 { min-height: 48px; margin: 0; color: var(--dark); font-size: 19px; line-height: 1.25; }
+.top-pick-description { display: -webkit-box; min-height: 42px; margin: 10px 0 18px; overflow: hidden; color: #666; font-size: 14px; line-height: 1.5; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.top-pick-actions { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: auto; }
+.top-pick-link, .top-pick-quote { font-size: 13px; font-weight: 800; }
+.top-pick-link { color: #222; text-decoration: underline; text-underline-offset: 4px; }
+.top-pick-quote { padding: 10px 13px; border-radius: 999px; background: var(--red); color: #fff !important; white-space: nowrap; }
+
 .section { padding: 90px 6%; }
 .section-head { text-align: center; max-width: 850px; margin: 0 auto 50px; }
 .section-head h2 { font-size: 48px; margin-bottom: 15px; letter-spacing: -1px; }
@@ -216,6 +235,7 @@
 
 /* === RESPONSIVE === */
 @media (min-width: 769px) and (max-width: 1024px) {
+  .top-picks-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
   .why-brands-section {
     grid-template-columns: minmax(240px, 0.34fr) minmax(0, 0.66fr);
     gap: 28px;
@@ -229,6 +249,11 @@
   .banner-cta {bottom:66px; gap:8px; max-width:calc(100% - 32px)}
   .banner-cta a {min-height:40px; padding:9px 13px; font-size:12px}
   .product-grid, .why-card-grid-small {grid-template-columns:1fr}
+  .top-picks-grid { grid-template-columns: 1fr; gap: 18px; }
+  .top-picks-section { padding: 56px 20px; }
+  .top-picks-heading { margin-bottom: 32px; }
+  .top-picks-heading h2 { font-size: clamp(32px, 9vw, 44px); }
+  .top-pick-image { aspect-ratio: 1 / 1; }
   .header nav {display:none}
   .slider-arrow {display:none}
   .factory-container {
