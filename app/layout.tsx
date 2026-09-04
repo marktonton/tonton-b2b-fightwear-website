@@ -46,12 +46,33 @@ export default function RootLayout({
         <main>{children}</main>
 
         <footer className="footer">
-          <div>
-            <img src="/assets/logo.png" alt="TONTON" />
-            <p>Professional MMA & Sportswear OEM Factory. Building premium fightwear brands since 2014.</p>
-            <p style={{ fontSize: '10px', color: '#333', marginTop: '10px' }}>Build: v1.0.5-React-Hardened</p>
+          <div className="footer-main">
+            <div className="footer-column footer-brand">
+              <img className="footer-logo" src="/assets/logo.png" alt="TONTON" />
+              <p>Professional MMA & Sportswear OEM Factory. Building premium fightwear brands since 2014.</p>
+            </div>
+            <div className="footer-column">
+              <h2>Quick Solutions</h2>
+              <a href="/collections">Product Collections</a>
+              <a href="/customization/sublimated-rash-guards">Custom Rash Guards</a>
+              <a href="/customization/sublimated-training-shorts">Custom Training Shorts</a>
+              <a href="/customization/sublimated-bjj-mma-shorts">Custom BJJ & MMA Shorts</a>
+            </div>
+            <div className="footer-column">
+              <h2>Top Picks</h2>
+              <a href="/#products">Featured Products</a>
+              <a href="/#inquiry">Send Your Inquiry</a>
+              <a href="/collections">Explore Collections</a>
+            </div>
+            <div className="footer-column footer-contact">
+              <h2>Contact Us</h2>
+              <a href="mailto:gary@tontonsportswear.com">gary@tontonsportswear.com</a>
+              <a href="tel:+8617722438678">+86 17722438678</a>
+              <a href="https://wa.me/8617722438678">WhatsApp: +86 17722438678</a>
+              <address>Jiewei, Shangmugu Community, Pinghu Street, Longgang District, Shenzhen 207, Building A, Industrial City Phase III Factory</address>
+            </div>
           </div>
-          <div style={{ textAlign: 'right' }}>
+          <div className="footer-bottom">
             <p>© 2026 TONTON Sports. All rights reserved.</p>
             <p>Privacy Policy | Terms of Service</p>
           </div>
