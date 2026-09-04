@@ -183,19 +183,19 @@
 
 .why-brands-section {
   display: grid;
-  grid-template-columns: minmax(0, 0.36fr) minmax(0, 0.64fr);
+  grid-template-columns: minmax(280px, 0.3fr) minmax(0, 0.7fr);
   align-items: center;
-  gap: clamp(28px, 5vw, 80px);
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 80px clamp(20px, 6vw, 96px);
+  gap: clamp(24px, 3.2vw, 56px);
+  width: 100%;
+  margin: 0;
+  padding: clamp(56px, 6vw, 88px) clamp(20px, 4vw, 64px);
   overflow: hidden;
 }
 .why-brands-copy { min-width: 0; }
-.why-brands-copy h2 { max-width: 520px; margin: 12px 0 18px; font-size: clamp(30px, 3.2vw, 52px); line-height: 1.08; }
-.why-brands-copy > p:last-child { max-width: 500px; margin: 0; color: #555; font-size: 17px; line-height: 1.7; }
+.why-brands-copy h2 { max-width: 520px; margin: 12px 0 18px; font-size: clamp(32px, 3.4vw, 58px); line-height: 1.06; letter-spacing: -0.02em; }
+.why-brands-copy > p:last-child { max-width: 520px; margin: 0; color: #555; font-size: 17px; line-height: 1.7; }
 .why-brands-visual { min-width: 0; width: 100%; }
-.why-brands-visual img { display: block; width: 100%; max-width: 100%; height: auto; border-radius: 24px; box-shadow: 0 24px 70px rgba(0,0,0,.12); }
+.why-brands-visual img { display: block; width: 100%; max-width: none; height: auto; border-radius: 24px; box-shadow: 0 24px 70px rgba(0,0,0,.12); }
 
 /* === GRIDS & SECTIONS === */
 .section { padding: 90px 6%; }
@@ -215,6 +215,15 @@
 .fade-out { opacity: 0; visibility: hidden; pointer-events: none; }
 
 /* === RESPONSIVE === */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .why-brands-section {
+    grid-template-columns: minmax(240px, 0.34fr) minmax(0, 0.66fr);
+    gap: 28px;
+    padding: 64px 28px;
+  }
+  .why-brands-copy h2 { font-size: clamp(32px, 4.8vw, 46px); }
+}
+
 @media (max-width: 768px) {
   .hero {height:60vh}
   .banner-cta {bottom:66px; gap:8px; max-width:calc(100% - 32px)}
