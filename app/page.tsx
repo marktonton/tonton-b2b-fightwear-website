@@ -66,17 +66,12 @@ const topPicks = TOP_PICK_IDS
 export default function HomePage() {
   const [currentBanner, setCurrentBanner] = useState(0);
   const [currentFactory, setCurrentFactory] = useState(0);
-  const [showVideoOverlay, setShowVideoOverlay] = useState(true);
 
   useEffect(() => {
     const bannerTimer = setInterval(() => {
       setCurrentBanner((prev) => (prev + 1) % BANNERS.length);
     }, 6000);
-    const videoTimer = setTimeout(() => setShowVideoOverlay(false), 5000);
-    return () => {
-      clearInterval(bannerTimer);
-      clearTimeout(videoTimer);
-    };
+    return () => clearInterval(bannerTimer);
   }, []);
 
   const nextBanner = () => setCurrentBanner((prev) => (prev + 1) % BANNERS.length);
@@ -144,7 +139,7 @@ export default function HomePage() {
       </section>
 
       {/* 2. FACTORY DUAL-COLUMN SECTION (IMAGE 3 STYLE) - v1.0.2 */}
-      <section className="factory-container">
+      <section className="factory-container" id="factory">
         {/* Left Column: Slider */}
         <div className="factory-slider">
           <div className="factory-slides" style={{ pointerEvents: 'none' }}>
@@ -251,21 +246,23 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. SMART MANUFACTURING VIDEO */}
-      <section className="factory-hero video-horizontal" id="factory">
-        <video autoPlay loop muted playsInline poster={resolveImage('assets/factory/factory-01.jpg')} src={resolveImage('assets/factory-video.mp4')}></video>
-        <div className={`video-overlay-content ${showVideoOverlay ? '' : 'fade-out'}`}>
-          <p className="eyebrow">Digital Hanging Production</p>
-          <h2>Modern Sportswear Production Line</h2>
+      {/* 4. SEND YOUR INQUIRY */}
+      <section className="top-picks-inquiry" id="inquiry" aria-labelledby="send-inquiry-title">
+        <div className="top-picks-inquiry-heading">
+          <p className="eyebrow">Start Your Project</p>
+          <h2 id="send-inquiry-title">SEND YOUR INQUIRY</h2>
+          <p>Share your project details and our team will help you plan the next step.</p>
         </div>
-      </section>
-
-      <section className="inquiry" id="inquiry">
-        <form className="inquiry-form">
-          <input name="name" placeholder="Name *" required />
-          <input name="email" placeholder="Email / WhatsApp *" required />
-          <textarea name="message" placeholder="Design idea, logo, fabric request..."></textarea>
-          <button type="submit">Send Inquiry</button>
+        <form className="top-picks-inquiry-form">
+          <label>Name<input name="name" placeholder="Your name" required /></label>
+          <label>Company<input name="company" placeholder="Company name" /></label>
+          <label>Email<input type="email" name="email" placeholder="you@company.com" required /></label>
+          <label>Phone<input name="phone" placeholder="WhatsApp or phone" /></label>
+          <label>Product<input name="product" placeholder="Product or category" /></label>
+          <label>Quantity<input name="quantity" placeholder="Estimated quantity" /></label>
+          <label className="top-picks-inquiry-full">Message<textarea name="message" placeholder="Tell us about your design, logo, fabric or timeline" rows={5}></textarea></label>
+          <label className="top-picks-inquiry-full">Files<input type="file" name="files" /></label>
+          <button className="top-picks-inquiry-full" type="submit">SEND INQUIRY</button>
         </form>
       </section>
 

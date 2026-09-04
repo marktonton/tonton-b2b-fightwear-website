@@ -52,3 +52,5 @@
 - 首页 TOP PICKS 严格展示 8 个现有产品，其余产品不在首页渲染；产品名称、ID、图片和链接必须来自 `data/products.json`。
 - 参考外部站点时只借鉴信息架构，不复制其文案、图片或其他资产。
 - 保持审美统一：标题层级清晰、卡片比例/按钮/间距统一，桌面 4×2、平板 2 列、手机单列或合理双列，任何尺寸不横向溢出。
+- TOP PICKS 后必须紧接 `SEND YOUR INQUIRY`；字段顺序为 NAME/COMPANY、EMAIL/PHONE、PRODUCT/QUANTITY 两列，MESSAGE/FILES/SEND 全宽，移动端单列。
+- 首页工厂视频暂时隐藏；`#factory` 锚点固定在保留的工厂双栏区，`#inquiry` 锚点保留。
