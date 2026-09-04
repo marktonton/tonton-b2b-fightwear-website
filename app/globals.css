@@ -344,6 +344,11 @@
 @media (min-width: 769px) and (max-width: 1024px) {
   .footer-main { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
 }
+[data-footer-layout="four-column"] { display: grid !important; grid-template-columns: repeat(4, minmax(0, 1fr)) !important; align-items: start !important; gap: clamp(28px, 4vw, 72px) !important; }
+[data-footer-layout="four-column"] > .footer-column { display: flex !important; min-width: 0 !important; flex-direction: column !important; align-items: flex-start !important; }
+@media (min-width: 601px) and (max-width: 1024px) {
+  [data-footer-layout="four-column"] { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+}
 @media (max-width: 600px) {
-  .footer-main { grid-template-columns: 1fr !important; }
+  [data-footer-layout="four-column"] { grid-template-columns: 1fr !important; }
 }
