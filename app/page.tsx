@@ -48,6 +48,21 @@ const FACTORY_IMAGES = [
   'assets/factory/factory-slider-07.jpg'
 ];
 
+const TOP_PICK_IDS = [
+  'blue-team-rash-guard',
+  'white-logo-rash-guard',
+  'samurai-graphic-rash-guard',
+  'black-competition-shorts',
+  'custom-logo-shorts',
+  'pro-mma-shorts-07',
+  'black-white-mma-kit',
+  'pro-team-kit-17',
+] as const;
+
+const topPicks = TOP_PICK_IDS
+  .map((id) => productsData.products.find((product) => product.id === id))
+  .filter((product): product is Product => Boolean(product));
+
 export default function HomePage() {
   const [currentBanner, setCurrentBanner] = useState(0);
   const [currentFactory, setCurrentFactory] = useState(0);
@@ -211,32 +226,31 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 3. PRODUCT CATALOG */}
-      <section className="section" id="products">
-        <div className="section-head">
-          <p className="eyebrow">Product Catalog</p>
-          <h2>Custom MMA Shorts & Rash Guard Collection</h2>
+      {/* 3. TOP PICKS */}
+      <section className="top-picks-section" id="products" aria-labelledby="top-picks-title">
+        <div className="top-picks-heading">
+          <p className="eyebrow">Top Picks</p>
+          <h2 id="top-picks-title">Start with our most requested custom styles</h2>
+          <p>Explore a focused selection of fightwear and teamwear designs ready for your next custom project.</p>
         </div>
-        {productsData.categories.map(cat => (
-          <div className="collection-block" id={cat.id} key={cat.id} style={{ marginTop: '50px' }}>
-            <div className="collection-title">
-              <h3>{cat.name}</h3>
-              <p>{cat.description}</p>
-            </div>
-            <div className="product-grid">
-              {(productsData.products || []).filter(p => p.categoryId === cat.id).map(product => (
-                <article className="product-card" key={product.id}>
-                  <img src={resolveImage(product.image)} alt={product.name} />
-                  <div>
-                    <span>Customization</span>
-                    <h4>{product.name}</h4>
-                    <a href={`https://wa.me/8617722438678?text=Interested%20in%20${encodeURIComponent(product.name)}`} className="btn-quote" target="_blank" rel="noopener noreferrer">→ Quote</a>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        ))}
+        <div className="top-picks-grid">
+          {topPicks.map((product) => (
+            <article className="top-pick-card" key={product.id}>
+              <a className="top-pick-image" href={`/products/${product.id}`} aria-label={`View ${product.name}`}>
+                <img src={resolveImage(product.image)} alt={product.name} loading="lazy" />
+              </a>
+              <div className="top-pick-content">
+                <p className="top-pick-category">Customization</p>
+                <h3>{product.name}</h3>
+                <p className="top-pick-description">{product.description}</p>
+                <div className="top-pick-actions">
+                  <a className="top-pick-link" href={`/products/${product.id}`}>View Details</a>
+                  <a className="top-pick-quote" href={`https://wa.me/8617722438678?text=Interested%20in%20${encodeURIComponent(product.name)}`} target="_blank" rel="noopener noreferrer">Get a Quote</a>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
       </section>
 
       {/* 4. SMART MANUFACTURING VIDEO */}
