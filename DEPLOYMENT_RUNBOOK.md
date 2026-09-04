@@ -57,4 +57,5 @@
 - 首页 `SEND YOUR INQUIRY` 长期采用白/浅灰自然主题：浅灰外层、白色表单卡片、深色标题/标签/输入文字、浅边框和品牌红按钮；不要恢复黑色大背景。产品详情页的全局 `.inquiry` 样式不随首页主题调整。
 - FAQ 必须位于 `SEND YOUR INQUIRY` 下方，沿用白/浅色背景和卡片排版，桌面双列、移动单列，并使用可展开/收起交互；问题和答案只使用 TONTON 已知业务事实或谨慎项目确认口径。
 - 首页 section 节奏应紧凑但不拥挤：TOP PICKS → SEND YOUR INQUIRY → FAQ 保持连续视觉衔接，使用适度上下留白，不恢复大块空白；详情页通用 `.section/.inquiry` 规则不修改。
-- 全站 footer 使用深色四列布局：品牌简介、Quick Solutions、Top Picks、Contact Us；Contact Us 保留可点击邮箱/电话/WhatsApp 和完整公司地址，底部单独显示版权条；移动端单列且不得横向溢出。
+- 全站 footer 使用深色四列布局：品牌简介、Quick Solutions、Top Picks、Contact Us；Contact Us 保留可点击邮箱/电话/WhatsApp 和完整公司地址，底部单独显示版权条；桌面端必须横向同排，移动端单列且不得横向溢出。
+- Footer 生效样式仅使用 `app/globals.css`；根目录 `final.css` / `new-globals.css` 为旧副本，禁止通过修改或加载旧副本解决布局问题。
