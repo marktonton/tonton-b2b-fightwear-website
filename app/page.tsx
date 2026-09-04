@@ -229,9 +229,7 @@ export default function HomePage() {
       {/* 3. TOP PICKS */}
       <section className="top-picks-section" id="products" aria-labelledby="top-picks-title">
         <div className="top-picks-heading">
-          <p className="eyebrow">Top Picks</p>
-          <h2 id="top-picks-title">Start with our most requested custom styles</h2>
-          <p>Explore a focused selection of fightwear and teamwear designs ready for your next custom project.</p>
+          <h2 id="top-picks-title">TOP PICKS</h2>
         </div>
         <div className="top-picks-grid">
           {topPicks.map((product) => (
