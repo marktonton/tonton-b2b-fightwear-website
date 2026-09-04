@@ -55,3 +55,4 @@
 - TOP PICKS 后必须紧接 `SEND YOUR INQUIRY`；字段顺序为 NAME/COMPANY、EMAIL/PHONE、PRODUCT/QUANTITY 两列，MESSAGE/FILES/SEND 全宽，移动端单列。
 - 首页工厂视频暂时隐藏；`#factory` 锚点固定在保留的工厂双栏区，`#inquiry` 锚点保留。
 - 首页 `SEND YOUR INQUIRY` 长期采用白/浅灰自然主题：浅灰外层、白色表单卡片、深色标题/标签/输入文字、浅边框和品牌红按钮；不要恢复黑色大背景。产品详情页的全局 `.inquiry` 样式不随首页主题调整。
+- FAQ 必须位于 `SEND YOUR INQUIRY` 下方，沿用白/浅色背景和卡片排版，桌面双列、移动单列，并使用可展开/收起交互；问题和答案只使用 TONTON 已知业务事实或谨慎项目确认口径。

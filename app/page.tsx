@@ -264,6 +264,46 @@ export default function HomePage() {
           <label className="top-picks-inquiry-full">Files<input type="file" name="files" /></label>
           <button className="top-picks-inquiry-full" type="submit">SEND INQUIRY</button>
         </form>
+        <section className="top-picks-faq" aria-labelledby="faq-title">
+          <div className="top-picks-faq-heading">
+            <p className="eyebrow">Helpful Answers</p>
+            <h2 id="faq-title">Frequently Asked Questions</h2>
+          </div>
+          <div className="top-picks-faq-grid">
+            <details>
+              <summary>What custom sportswear can TONTON produce?</summary>
+              <p>We work on custom fight wear, teamwear, activewear, gymwear and related sportswear projects. The exact product range is confirmed around your design and project brief.</p>
+            </details>
+            <details>
+              <summary>Can you add our logo and support OEM or ODM work?</summary>
+              <p>Yes. Share your logo, artwork and requirements so our design and production team can confirm the suitable customization route for your project.</p>
+            </details>
+            <details>
+              <summary>How do you confirm MOQ and repeat orders?</summary>
+              <p>MOQ and repeat-order terms depend on the product, customization details and production plan. We confirm them with you before the order is finalized.</p>
+            </details>
+            <details>
+              <summary>Can you help with colors, labels and packaging?</summary>
+              <p>We can review color direction, labels and packaging requirements as part of the project brief and confirm the available options for your order.</p>
+            </details>
+            <details>
+              <summary>What artwork files should we send?</summary>
+              <p>Please send your logo, design references and any available artwork files through the inquiry form. Our team will review the materials and advise on the next step.</p>
+            </details>
+            <details>
+              <summary>How are sampling and production timing confirmed?</summary>
+              <p>Sampling and bulk-production timing are confirmed after the product, artwork and order details are reviewed. We will provide a project-specific schedule.</p>
+            </details>
+            <details>
+              <summary>How will we receive progress updates?</summary>
+              <p>We keep project communication aligned around the confirmed production plan and share updates through the agreed contact channel.</p>
+            </details>
+            <details>
+              <summary>What happens if there is a delivery or after-sales issue?</summary>
+              <p>Contact our team with the order details and issue description. We will review the situation and advise on the appropriate next step.</p>
+            </details>
+          </div>
+        </section>
       </section>
 
       <a href="https://wa.me/8617722438678" className="whatsapp-float" target="_blank" rel="noopener noreferrer">
