@@ -1,5 +1,57 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import './globals.css';
+
+const SITE_URL = 'https://www.tontongear.com';
+const SITE_DESCRIPTION = 'TONTON Sportswear provides custom fightwear and professional sportswear manufacturing for brands, teams, clubs, and retailers.';
+
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: 'TONTON Sportswear | Custom Fightwear Manufacturer',
+    template: '%s | TONTON Sportswear',
+  },
+  description: SITE_DESCRIPTION,
+  alternates: { canonical: '/' },
+  openGraph: {
+    type: 'website',
+    url: SITE_URL,
+    siteName: 'TONTON Sportswear',
+    title: 'TONTON Sportswear | Custom Fightwear Manufacturer',
+    description: SITE_DESCRIPTION,
+    images: [{ url: '/assets/logo.png', alt: 'TONTON Sportswear' }],
+  },
+  twitter: {
+    card: 'summary',
+    title: 'TONTON Sportswear | Custom Fightwear Manufacturer',
+    description: SITE_DESCRIPTION,
+    images: ['/assets/logo.png'],
+  },
+};
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'TONTON Sportswear Co., Ltd.',
+  url: SITE_URL,
+  logo: `${SITE_URL}/assets/logo.png`,
+  email: 'gary@tontonsportswear.com',
+  telephone: '+86 17722438678',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Jiewei, Shangmugu Community, Pinghu Street, Longgang District, Shenzhen 207, Building A, Industrial City Phase III Factory',
+    addressLocality: 'Shenzhen',
+    addressCountry: 'CN',
+  },
+};
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'TONTON Sportswear',
+  url: SITE_URL,
+  description: SITE_DESCRIPTION,
+};
 
 export default function RootLayout({
   children,
@@ -9,12 +61,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>TONTON - B2B Fightwear Catalog</title>
         <meta httpEquiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
         <meta httpEquiv="Pragma" content="no-cache" />
         <meta httpEquiv="Expires" content="0" />
       </head>
       <body>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([organizationSchema, websiteSchema]) }} />
         <div className="topbar">
           <span>Custom MMA Fightwear Factory</span>
           <span>10 PCS MOQ</span>

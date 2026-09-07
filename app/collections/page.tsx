@@ -2,6 +2,21 @@ import React from 'react';
 import Link from 'next/link';
 import { resolveImage } from '../../lib/image-resolver';
 import { customizationCategories as categories } from '../../lib/customization-pages';
+import type { Metadata } from 'next';
+
+const SITE_URL = 'https://www.tontongear.com';
+
+export const metadata: Metadata = {
+  title: 'Customization Collections',
+  description: 'Explore TONTON custom sublimated rash guards, training shorts, and BJJ/MMA shorts for brands, teams, clubs, and retailers.',
+  alternates: { canonical: `${SITE_URL}/collections` },
+  openGraph: {
+    title: 'Customization Collections | TONTON Sportswear',
+    description: 'Explore TONTON custom sublimated fightwear categories for brands, teams, clubs, and retailers.',
+    url: `${SITE_URL}/collections`,
+    type: 'website',
+  },
+};
 
 export default function CollectionsPage() {
   return (

@@ -6,9 +6,31 @@ import {
   getCustomizationCategory,
   getCustomizationProducts,
 } from '../../../lib/customization-pages';
+import type { Metadata } from 'next';
+
+const SITE_URL = 'https://www.tontongear.com';
+
+type PageProps = { params: { slug: string } };
 
 export function generateStaticParams() {
   return customizationCategories.map((category) => ({ slug: category.id }));
+}
+
+export function generateMetadata({ params }: PageProps): Metadata {
+  const category = getCustomizationCategory(params.slug);
+  if (!category) return {};
+  const title = `${category.name} Customization`;
+  return {
+    title,
+    description: category.description,
+    alternates: { canonical: `${SITE_URL}/customization/${category.id}` },
+    openGraph: {
+      title: `${title} | TONTON Sportswear`,
+      description: category.description,
+      url: `${SITE_URL}/customization/${category.id}`,
+      type: 'website',
+    },
+  };
 }
 
 export default function CustomizationCategoryPage({ params }: { params: { slug: string } }) {
