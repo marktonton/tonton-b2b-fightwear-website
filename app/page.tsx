@@ -25,6 +25,41 @@ const productsData = productsDataRaw as {
   products: Product[];
 };
 
+const FAQ_ITEMS = [
+  {
+    question: 'What custom sportswear can TONTON produce?',
+    answer: 'We work on custom fight wear, teamwear, activewear, gymwear and related sportswear projects. The exact product range is confirmed around your design and project brief.',
+  },
+  {
+    question: 'Can you add our logo and support OEM or ODM work?',
+    answer: 'Yes. Share your logo, artwork and requirements so our design and production team can confirm the suitable customization route for your project.',
+  },
+  {
+    question: 'How do you confirm MOQ and repeat orders?',
+    answer: 'MOQ and repeat-order terms depend on the product, customization details and production plan. We confirm them with you before the order is finalized.',
+  },
+  {
+    question: 'Can you help with colors, labels and packaging?',
+    answer: 'We can review color direction, labels and packaging requirements as part of the project brief and confirm the available options for your order.',
+  },
+  {
+    question: 'What artwork files should we send?',
+    answer: 'Please send your logo, design references and any available artwork files through the inquiry form. Our team will review the materials and advise on the next step.',
+  },
+  {
+    question: 'How are sampling and production timing confirmed?',
+    answer: 'Sampling and bulk-production timing are confirmed after the product, artwork and order details are reviewed. We will provide a project-specific schedule.',
+  },
+  {
+    question: 'How will we receive progress updates?',
+    answer: 'We keep project communication aligned around the confirmed production plan and share updates through the agreed contact channel.',
+  },
+  {
+    question: 'What happens if there is a delivery or after-sales issue?',
+    answer: 'Contact our team with the order details and issue description. We will review the situation and advise on the appropriate next step.',
+  },
+];
+
 const BANNERS = [
   {
     desktop: 'assets/banners/banner-dark-desktop.jpg',
@@ -270,39 +305,22 @@ export default function HomePage() {
             <h2 id="faq-title">Frequently Asked Questions</h2>
           </div>
           <div className="top-picks-faq-grid">
-            <details>
-              <summary>What custom sportswear can TONTON produce?</summary>
-              <p>We work on custom fight wear, teamwear, activewear, gymwear and related sportswear projects. The exact product range is confirmed around your design and project brief.</p>
-            </details>
-            <details>
-              <summary>Can you add our logo and support OEM or ODM work?</summary>
-              <p>Yes. Share your logo, artwork and requirements so our design and production team can confirm the suitable customization route for your project.</p>
-            </details>
-            <details>
-              <summary>How do you confirm MOQ and repeat orders?</summary>
-              <p>MOQ and repeat-order terms depend on the product, customization details and production plan. We confirm them with you before the order is finalized.</p>
-            </details>
-            <details>
-              <summary>Can you help with colors, labels and packaging?</summary>
-              <p>We can review color direction, labels and packaging requirements as part of the project brief and confirm the available options for your order.</p>
-            </details>
-            <details>
-              <summary>What artwork files should we send?</summary>
-              <p>Please send your logo, design references and any available artwork files through the inquiry form. Our team will review the materials and advise on the next step.</p>
-            </details>
-            <details>
-              <summary>How are sampling and production timing confirmed?</summary>
-              <p>Sampling and bulk-production timing are confirmed after the product, artwork and order details are reviewed. We will provide a project-specific schedule.</p>
-            </details>
-            <details>
-              <summary>How will we receive progress updates?</summary>
-              <p>We keep project communication aligned around the confirmed production plan and share updates through the agreed contact channel.</p>
-            </details>
-            <details>
-              <summary>What happens if there is a delivery or after-sales issue?</summary>
-              <p>Contact our team with the order details and issue description. We will review the situation and advise on the appropriate next step.</p>
-            </details>
+            {FAQ_ITEMS.map((item) => (
+              <details key={item.question}>
+                <summary>{item.question}</summary>
+                <p>{item.answer}</p>
+              </details>
+            ))}
           </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: FAQ_ITEMS.map((item) => ({
+              '@type': 'Question',
+              name: item.question,
+              acceptedAnswer: { '@type': 'Answer', text: item.answer },
+            })),
+          }) }} />
         </section>
       </section>
 
