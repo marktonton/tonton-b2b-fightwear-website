@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>TONTON Sportswear</title>
+  <rect width="64" height="64" rx="14" fill="#0a0a0c"/>
+  <path d="M8 17h20v7h-6v23h-9V24H8z" fill="#fff"/>
+  <path d="M34 17h8l5 8 5-8h8v30h-9V31l-4 7-4-7v16h-9z" fill="#e11d2e"/>
+</svg>
