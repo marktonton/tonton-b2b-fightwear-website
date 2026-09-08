@@ -253,28 +253,34 @@ export default function FactoryPage() {
         </div>
         <div className="factory-page-certificate-grid">
           <article className="factory-page-certificate-card">
+            <div className="factory-page-certificate-image factory-page-certificate-preview">
+              <Image src="/assets/certificates/iso-9001-shenzhen-preview.png" alt="ISO 9001:2015 certificate preview" fill sizes="(max-width: 600px) 100vw, 33vw" />
+            </div>
             <p className="factory-page-certificate-type">ISO CERTIFICATE</p>
             <h3>ISO 9001:2015</h3>
-            <p><strong>主体：</strong>Tonton Sports (Shenzhen) Co., Ltd.</p>
-            <p><strong>有效期至：</strong>2029-04-20</p>
+            <p><strong>Certified Entity:</strong> Tonton Sports (Shenzhen) Co., Ltd.</p>
+            <p><strong>Valid Until:</strong> 2029-04-20</p>
             <a href="/assets/certificates/iso-9001-shenzhen.pdf" target="_blank" rel="noreferrer">VIEW ISO PDF</a>
           </article>
           <article className="factory-page-certificate-card">
+            <div className="factory-page-certificate-image factory-page-certificate-preview">
+              <Image src="/assets/certificates/bsci-monitoring-report-preview.png" alt="amfori BSCI social audit monitoring report preview" fill sizes="(max-width: 600px) 100vw, 33vw" />
+            </div>
             <p className="factory-page-certificate-type">AMFORI BSCI DOCUMENT</p>
             <h3>Social Audit Monitoring Report</h3>
-            <p><strong>主体：</strong>Tonton Sports (Shenzhen) Co., Ltd.</p>
-            <p><strong>有效期至：</strong>2027-04-20</p>
+            <p><strong>Certified Entity:</strong> Tonton Sports (Shenzhen) Co., Ltd.</p>
+            <p><strong>Valid Until:</strong> 2027-04-20</p>
             <p>This is an amfori BSCI social audit monitoring report, not a statement of “BSCI certified”.</p>
             <a href="/assets/certificates/bsci-monitoring-report.pdf" target="_blank" rel="noreferrer">VIEW BSCI REPORT PDF</a>
           </article>
           <article className="factory-page-certificate-card factory-page-certificate-card-image">
-            <div className="factory-page-certificate-image">
+            <div className="factory-page-certificate-image factory-page-certificate-preview">
               <Image src="/assets/certificates/rohs-soccer-uniform-hubei.png" alt="RoHS product compliance document for soccer uniforms" fill sizes="(max-width: 600px) 100vw, 33vw" />
             </div>
             <p className="factory-page-certificate-type">PRODUCT COMPLIANCE</p>
             <h3>RoHS Product Compliance</h3>
-            <p><strong>主体：</strong>TONTON SPORTSWEAR (HUBEI) CO., LTD.</p>
-            <p><strong>范围：</strong>Soccer uniform product compliance.</p>
+            <p><strong>Certified Entity:</strong> TONTON SPORTSWEAR (HUBEI) CO., LTD.</p>
+            <p><strong>Scope:</strong> Soccer uniform product compliance.</p>
           </article>
         </div>
       </section>
