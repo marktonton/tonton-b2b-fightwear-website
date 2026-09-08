@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import type { Metadata } from 'next';
 
 const SITE_URL = 'https://www.tontongear.com';
@@ -133,14 +134,16 @@ export default function FactoryPage() {
           </div>
         </div>
         <div className="factory-page-hero-media">
-          <img src="/assets/factory/overview/factory-exterior-01.JPG" alt="TONTON Sportswear factory exterior" />
+          <Image src="/assets/factory/overview/factory-exterior-01.JPG" alt="TONTON Sportswear factory exterior" fill priority sizes="(max-width: 820px) 100vw, 48vw" />
           <span>FACTORY OVERVIEW</span>
         </div>
       </section>
 
       <section className="factory-page-section factory-page-overview">
         <div className="factory-page-overview-media">
-          <img src="/assets/factory/overview/factory-exterior-02.JPG" alt="TONTON Sportswear production facility" loading="lazy" />
+          <div className="factory-page-media-frame factory-page-media-frame-overview">
+            <Image src="/assets/factory/overview/factory-exterior-02.JPG" alt="TONTON Sportswear production facility" fill sizes="(max-width: 820px) 100vw, 48vw" />
+          </div>
         </div>
         <div className="factory-page-overview-copy">
           <p className="factory-page-eyebrow">OVERVIEW</p>
@@ -196,7 +199,9 @@ export default function FactoryPage() {
           <div className="factory-page-stage-gallery">
             {stage.images.map(([src, alt]) => (
               <figure key={src}>
-                <img src={src} alt={alt} loading="lazy" />
+                <div className="factory-page-media-frame factory-page-media-frame-stage">
+                  <Image src={src} alt={alt} fill sizes="(max-width: 600px) 100vw, (max-width: 820px) 50vw, 33vw" />
+                </div>
                 <figcaption>{alt}</figcaption>
               </figure>
             ))}
@@ -206,7 +211,9 @@ export default function FactoryPage() {
 
       <section className="factory-page-section factory-page-quality">
         <div className="factory-page-quality-media">
-          <img src="/assets/factory/quality-control/quality-room-01.JPG" alt="TONTON quality inspection room" loading="lazy" />
+          <div className="factory-page-media-frame factory-page-media-frame-quality">
+            <Image src="/assets/factory/quality-control/quality-room-01.JPG" alt="TONTON quality inspection room" fill sizes="(max-width: 820px) 100vw, 48vw" />
+          </div>
         </div>
         <div className="factory-page-quality-copy">
           <p className="factory-page-eyebrow">QUALITY CONTROL</p>
@@ -229,7 +236,9 @@ export default function FactoryPage() {
             ['/assets/factory/packing/packing-detail-01.JPG', 'Active and gymwear packing'],
           ].map(([src, alt]) => (
             <figure key={src}>
-              <img src={src} alt={alt} loading="lazy" />
+                <div className="factory-page-media-frame factory-page-media-frame-gallery">
+                  <Image src={src} alt={alt} fill sizes="(max-width: 600px) 100vw, (max-width: 820px) 50vw, 33vw" />
+                </div>
               <figcaption>{alt}</figcaption>
             </figure>
           ))}
@@ -260,7 +269,7 @@ export default function FactoryPage() {
           </article>
           <article className="factory-page-certificate-card factory-page-certificate-card-image">
             <div className="factory-page-certificate-image">
-              <img src="/assets/certificates/rohs-soccer-uniform-hubei.png" alt="RoHS product compliance document for soccer uniforms" loading="lazy" />
+              <Image src="/assets/certificates/rohs-soccer-uniform-hubei.png" alt="RoHS product compliance document for soccer uniforms" fill sizes="(max-width: 600px) 100vw, 33vw" />
             </div>
             <p className="factory-page-certificate-type">PRODUCT COMPLIANCE</p>
             <h3>RoHS Product Compliance</h3>

@@ -439,3 +439,27 @@
   .factory-page-stage-gallery, .factory-page-certificate-grid { grid-template-columns: 1fr; }
   .factory-page-stage-gallery figure { height: 260px; }
 }
+
+/* Factory image performance: reserve space and keep loading states light. */
+.factory-page-hero-media, .factory-page-overview-media, .factory-page-quality-media, .factory-page-stage-gallery figure, .factory-page-gallery-grid figure, .factory-page-certificate-image { position: relative; overflow: hidden; background: #eef0f2; }
+.factory-page-hero-media { aspect-ratio: 1 / 1; min-height: 0; }
+.factory-page-overview-media { min-height: 0; aspect-ratio: 4 / 3; }
+.factory-page-quality-media { min-height: 0; aspect-ratio: 4 / 3; }
+.factory-page-media-frame { position: relative; width: 100%; height: 100%; overflow: hidden; background: #eef0f2; }
+.factory-page-media-frame-overview { aspect-ratio: 4 / 3; }
+.factory-page-media-frame-quality { aspect-ratio: 4 / 3; }
+.factory-page-media-frame-stage, .factory-page-media-frame-gallery { position: absolute; inset: 0; }
+.factory-page-stage-gallery figure { height: auto; aspect-ratio: 4 / 3; background: #eef0f2; }
+.factory-page-gallery-grid figure { height: auto; aspect-ratio: 4 / 3; background: #eef0f2; }
+.factory-page-stage-gallery img, .factory-page-gallery-grid img, .factory-page-hero-media img, .factory-page-overview-media img, .factory-page-quality-media img, .factory-page-certificate-image img { object-fit: cover; }
+.factory-page-certificate-image { position: relative; height: 180px; background: #eef0f2; }
+.factory-page-certificate-image img { object-fit: contain; }
+@media (max-width: 820px) {
+  .factory-page-hero-media { aspect-ratio: 16 / 10; }
+  .factory-page-overview-media, .factory-page-quality-media { aspect-ratio: 16 / 10; }
+}
+@media (max-width: 600px) {
+  .factory-page-hero-media { aspect-ratio: 4 / 3; }
+  .factory-page-overview-media, .factory-page-quality-media { aspect-ratio: 4 / 3; }
+  .factory-page-stage-gallery figure, .factory-page-gallery-grid figure { aspect-ratio: 4 / 3; }
+}
