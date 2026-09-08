@@ -336,6 +336,7 @@
 .dropdown-content a:hover { background-color: #e11d2e; color: #fff !important; }
 .nav-dropdown:hover .dropdown-content { display: block; }
 .nav-link { font-weight: 700; color: #fff !important; }
+.header nav, .header nav a, .header nav .dropdown-content a { text-transform: uppercase; }
 .quick-cats{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;box-shadow:0 8px 30px rgba(0,0,0,.08)}.quick-cats a{padding:24px 6%;font-weight:900;border-right:1px solid #eee}.quick-cats span{color:var(--red);margin-right:12px}
 
 /* Footer layout guard: keep the shared footer horizontal on desktop. */
