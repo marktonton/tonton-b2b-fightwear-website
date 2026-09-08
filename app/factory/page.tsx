@@ -42,6 +42,70 @@ const qualityPoints = [
   'Progress communication follows the agreed production plan and contact channel.',
 ];
 
+const factoryStages = [
+  {
+    eyebrow: 'EMBROIDERY',
+    title: 'DETAILS THAT MAKE THE PROGRAM YOURS.',
+    text: 'Embroidery and logo-work references show the detail-focused stage behind custom sportswear development.',
+    images: [
+      ['/assets/factory/embroidery/embroidery-detail-01.jpg', 'Embroidery detail'],
+      ['/assets/factory/embroidery/embroidery-line-01.JPG', 'Embroidery line'],
+      ['/assets/factory/embroidery/embroidery-worker-01.JPG', 'Embroidery operator'],
+    ],
+  },
+  {
+    eyebrow: 'SMART HANGING',
+    title: 'A VISIBLE PRODUCTION FLOW.',
+    text: 'The smart hanging line keeps garments moving through the workshop with a visible production dashboard and organized stations.',
+    images: [
+      ['/assets/factory/hanging/hanging-dashboard.jpg', 'Smart hanging production dashboard'],
+      ['/assets/factory/hanging/hanging-line-01.jpg', 'Smart hanging line'],
+      ['/assets/factory/hanging/hanging-worker-01.jpg', 'Smart hanging operator'],
+      ['/assets/factory/hanging/hanging-line-03.JPG', 'Smart hanging line detail'],
+    ],
+  },
+  {
+    eyebrow: 'SEWING',
+    title: 'CONSTRUCTION IN THE WORKSHOP.',
+    text: 'Sewing-line and construction details provide a closer look at the garment assembly stage.',
+    images: [
+      ['/assets/factory/sewing/sewing-detail-01.JPG', 'Sewing detail'],
+      ['/assets/factory/sewing/sewing-line-01.JPG', 'Sewing line'],
+      ['/assets/factory/sewing/sewing-worker-01.JPG', 'Sewing operator'],
+    ],
+  },
+  {
+    eyebrow: 'HEAT TRANSFER / LASER',
+    title: 'CUSTOMIZATION THROUGH THE FINISHING STAGE.',
+    text: 'Transfer and laser-cutting equipment support the customization and finishing requirements of sportswear projects.',
+    images: [
+      ['/assets/factory/transfer-laser/transfer-machine-01.JPG', 'Heat transfer machine'],
+      ['/assets/factory/transfer-laser/laser-cutting-01.JPG', 'Laser cutting workstation'],
+      ['/assets/factory/transfer-laser/transfer-workshop-01.JPG', 'Transfer workshop'],
+    ],
+  },
+  {
+    eyebrow: 'QUALITY CONTROL',
+    title: 'CHECKS BEFORE PACKING.',
+    text: 'Quality-check, line, and inspection-room references show the review stage before finished goods are packed.',
+    images: [
+      ['/assets/factory/quality-control/quality-check-01.JPG', 'Quality check'],
+      ['/assets/factory/quality-control/quality-line-01.JPG', 'Quality line'],
+      ['/assets/factory/quality-control/quality-room-01.JPG', 'Quality inspection room'],
+    ],
+  },
+  {
+    eyebrow: 'PACKING',
+    title: 'READY FOR THE NEXT STEP.',
+    text: 'Packing details complete the production story from workshop review to finished apparel preparation.',
+    images: [
+      ['/assets/factory/packing/DSC04811(1).JPG', 'Packing area'],
+      ['/assets/factory/packing/packing-02.JPG', 'Packing process'],
+      ['/assets/factory/packing/packing-detail-01.JPG', 'Packing detail'],
+    ],
+  },
+];
+
 const faqs = [
   {
     question: 'What does the factory page cover?',
@@ -69,17 +133,18 @@ export default function FactoryPage() {
           </div>
         </div>
         <div className="factory-page-hero-media">
-          <img src="/assets/factory/factory-01.jpg" alt="TONTON sportswear production workspace" />
+          <img src="/assets/factory/overview/factory-exterior-01.JPG" alt="TONTON Sportswear factory exterior" />
           <span>FACTORY OVERVIEW</span>
         </div>
       </section>
 
       <section className="factory-page-section factory-page-overview">
-        <div className="factory-page-section-heading">
-          <p className="factory-page-eyebrow">OVERVIEW</p>
-          <h2>BUILT AROUND YOUR PROJECT BRIEF.</h2>
+        <div className="factory-page-overview-media">
+          <img src="/assets/factory/overview/factory-exterior-02.JPG" alt="TONTON Sportswear production facility" loading="lazy" />
         </div>
         <div className="factory-page-overview-copy">
+          <p className="factory-page-eyebrow">OVERVIEW</p>
+          <h2>BUILT AROUND YOUR PROJECT BRIEF.</h2>
           <p>
             TONTON Sportswear brings more than 20 years of fightwear and professional sportswear experience to custom apparel projects.
           </p>
@@ -121,9 +186,27 @@ export default function FactoryPage() {
         </div>
       </section>
 
+      {factoryStages.map((stage) => (
+        <section className="factory-page-section factory-page-stage" key={stage.eyebrow}>
+          <div className="factory-page-stage-heading">
+            <p className="factory-page-eyebrow">{stage.eyebrow}</p>
+            <h2>{stage.title}</h2>
+            <p>{stage.text}</p>
+          </div>
+          <div className="factory-page-stage-gallery">
+            {stage.images.map(([src, alt]) => (
+              <figure key={src}>
+                <img src={src} alt={alt} loading="lazy" />
+                <figcaption>{alt}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </section>
+      ))}
+
       <section className="factory-page-section factory-page-quality">
         <div className="factory-page-quality-media">
-          <img src="/assets/factory/factory-04.jpg" alt="TONTON quality review and production detail" loading="lazy" />
+          <img src="/assets/factory/quality-control/quality-room-01.JPG" alt="TONTON quality inspection room" loading="lazy" />
         </div>
         <div className="factory-page-quality-copy">
           <p className="factory-page-eyebrow">QUALITY CONTROL</p>
@@ -140,22 +223,51 @@ export default function FactoryPage() {
           <h2>FIGHT, TEAM, ACTIVE, AND GYM APPAREL.</h2>
         </div>
         <div className="factory-page-gallery-grid">
-          {['factory-02.jpg', 'factory-06.jpg', 'factory-08.jpg'].map((image, index) => (
-            <figure key={image}>
-              <img src={`/assets/factory/${image}`} alt={`TONTON sportswear application ${index + 1}`} loading="lazy" />
-              <figcaption>{['FIGHTWEAR', 'TEAMWEAR', 'ACTIVE & GYMWEAR'][index]}</figcaption>
+          {[
+            ['/assets/factory/overview/showroom-01.jpg', 'Fightwear showroom'],
+            ['/assets/factory/overview/showroom-02.JPG', 'Teamwear showroom'],
+            ['/assets/factory/packing/packing-detail-01.JPG', 'Active and gymwear packing'],
+          ].map(([src, alt]) => (
+            <figure key={src}>
+              <img src={src} alt={alt} loading="lazy" />
+              <figcaption>{alt}</figcaption>
             </figure>
           ))}
         </div>
       </section>
 
       <section className="factory-page-section factory-page-certificates">
-        <div>
-          <p className="factory-page-eyebrow">CERTIFICATES</p>
-          <h2>DOCUMENTATION AREA.</h2>
-          <p>Certificates and supporting documentation will be added here after the materials are reviewed and approved.</p>
+        <div className="factory-page-section-heading">
+          <p className="factory-page-eyebrow">CERTIFICATES & DOCUMENTATION</p>
+          <h2>REAL DOCUMENTATION, CLEARLY IDENTIFIED.</h2>
+          <p>Download the relevant document or review the product-compliance image below. Each record is identified by its issuing subject and scope.</p>
         </div>
-        <div className="factory-page-placeholder">CERTIFICATES TO BE ADDED</div>
+        <div className="factory-page-certificate-grid">
+          <article className="factory-page-certificate-card">
+            <p className="factory-page-certificate-type">ISO CERTIFICATE</p>
+            <h3>ISO 9001:2015</h3>
+            <p><strong>主体：</strong>Tonton Sports (Shenzhen) Co., Ltd.</p>
+            <p><strong>有效期至：</strong>2029-04-20</p>
+            <a href="/assets/certificates/iso-9001-shenzhen.pdf" target="_blank" rel="noreferrer">VIEW ISO PDF</a>
+          </article>
+          <article className="factory-page-certificate-card">
+            <p className="factory-page-certificate-type">AMFORI BSCI DOCUMENT</p>
+            <h3>Social Audit Monitoring Report</h3>
+            <p><strong>主体：</strong>Tonton Sports (Shenzhen) Co., Ltd.</p>
+            <p><strong>有效期至：</strong>2027-04-20</p>
+            <p>This is an amfori BSCI social audit monitoring report, not a statement of “BSCI certified”.</p>
+            <a href="/assets/certificates/bsci-monitoring-report.pdf" target="_blank" rel="noreferrer">VIEW BSCI REPORT PDF</a>
+          </article>
+          <article className="factory-page-certificate-card factory-page-certificate-card-image">
+            <div className="factory-page-certificate-image">
+              <img src="/assets/certificates/rohs-soccer-uniform-hubei.png" alt="RoHS product compliance document for soccer uniforms" loading="lazy" />
+            </div>
+            <p className="factory-page-certificate-type">PRODUCT COMPLIANCE</p>
+            <h3>RoHS Product Compliance</h3>
+            <p><strong>主体：</strong>TONTON SPORTSWEAR (HUBEI) CO., LTD.</p>
+            <p><strong>范围：</strong>Soccer uniform product compliance.</p>
+          </article>
+        </div>
       </section>
 
       <section className="factory-page-section factory-page-faq">
