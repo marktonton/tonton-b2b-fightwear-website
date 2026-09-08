@@ -94,7 +94,7 @@ export default function RootLayout({
               </div>
             </div>
             <a href="/collections">Collections</a>
-            <a href="#factory">Factory</a>
+            <a href="/factory">Factory</a>
             <a className="nav-cta" href="#inquiry">Send Inquiry</a>
           </nav>
         </header>
