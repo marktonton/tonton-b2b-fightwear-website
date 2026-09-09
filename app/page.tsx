@@ -249,7 +249,7 @@ export default function HomePage() {
         </div>
         <div className="why-brands-visual">
           <img
-            src="/assets/factory/why-brands-choose-tonton.jpg"
+            src={resolveImage('/assets/factory/why-brands-choose-tonton.jpg')}
             alt="Why brands choose TONTON capabilities"
             loading="lazy"
           />

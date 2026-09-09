@@ -1,6 +1,8 @@
 node_modules
 .next
 .env*
+!.env.example
+.r2-migration/
 *.json
 *.txt
 *.bin

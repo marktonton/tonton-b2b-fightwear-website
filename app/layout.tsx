@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import './globals.css';
+import { resolveImage } from '../lib/image-resolver';
 
 const SITE_URL = 'https://www.tontongear.com';
 const SITE_DESCRIPTION = 'TONTON Sportswear provides custom fightwear and professional sportswear manufacturing for brands, teams, clubs, and retailers.';
@@ -23,13 +24,13 @@ export const metadata: Metadata = {
     siteName: 'TONTON Sportswear',
     title: 'TONTON Sportswear | Custom Fightwear Manufacturer',
     description: SITE_DESCRIPTION,
-    images: [{ url: '/assets/logo.png', alt: 'TONTON Sportswear' }],
+    images: [{ url: resolveImage('/assets/logo.png'), alt: 'TONTON Sportswear' }],
   },
   twitter: {
     card: 'summary',
     title: 'TONTON Sportswear | Custom Fightwear Manufacturer',
     description: SITE_DESCRIPTION,
-    images: ['/assets/logo.png'],
+    images: [resolveImage('/assets/logo.png')],
   },
 };
 
@@ -38,7 +39,7 @@ const organizationSchema = {
   '@type': 'Organization',
   name: 'TONTON Sportswear Co., Ltd.',
   url: SITE_URL,
-  logo: `${SITE_URL}/assets/logo.png`,
+  logo: resolveImage('/assets/logo.png'),
   email: 'gary@tontonsportswear.com',
   telephone: '+86 17722438678',
   address: {
@@ -76,7 +77,7 @@ export default function RootLayout({
 
         <header className="header">
           <a className="brand" href="/">
-            <img src="/assets/logo.png" alt="TONTON" style={{ width: '130px' }} />
+            <img src={resolveImage('/assets/logo.png')} alt="TONTON" style={{ width: '130px' }} />
             <span>OEM / ODM Manufacturer</span>
           </a>
           <nav>
@@ -100,7 +101,7 @@ export default function RootLayout({
         <footer className="footer">
           <div className="footer-main" data-footer-layout="four-column">
             <div className="footer-column footer-brand">
-              <img className="footer-logo" src="/assets/logo.png" alt="TONTON" />
+              <img className="footer-logo" src={resolveImage('/assets/logo.png')} alt="TONTON" />
               <p>Professional MMA & Sportswear OEM Factory. Building premium fightwear brands since 2014.</p>
             </div>
             <div className="footer-column">
