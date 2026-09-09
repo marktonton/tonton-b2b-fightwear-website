@@ -1,6 +1,7 @@
 {
-  "r2": {
-    "baseUrl": "https://pub-your-id.r2.dev",
-    "useR2": false
+  "assets": {
+    "pathPrefix": "assets",
+    "productionSource": "NEXT_PUBLIC_ASSET_BASE_URL",
+    "localFallback": "public"
   }
 }

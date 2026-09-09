@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import CertificatesSlider from './CertificatesSlider';
+import { resolveImage } from '../../lib/image-resolver';
 
 const SITE_URL = 'https://www.tontongear.com';
 
@@ -48,32 +49,32 @@ const certificates = [
   {
     type: 'ISO CERTIFICATE',
     title: 'ISO 9001:2015',
-    image: '/assets/certificates/iso-9001-shenzhen-portrait.png',
+    image: resolveImage('/assets/certificates/iso-9001-shenzhen-portrait.png'),
     imageAlt: 'ISO 9001:2015 certificate preview',
     entity: 'Tonton Sports (Shenzhen) Co., Ltd.',
     validity: '2029-04-20',
-    pdf: '/assets/certificates/iso-9001-shenzhen.pdf',
+    pdf: resolveImage('/assets/certificates/iso-9001-shenzhen.pdf'),
     pdfLabel: 'VIEW ISO PDF',
   },
   {
     type: 'AMFORI BSCI DOCUMENT',
     title: 'Social Audit Monitoring Report',
-    image: '/assets/certificates/bsci-monitoring-report-preview.png',
+    image: resolveImage('/assets/certificates/bsci-monitoring-report-preview.png'),
     imageAlt: 'amfori BSCI social audit monitoring report preview',
     entity: 'Tonton Sports (Shenzhen) Co., Ltd.',
     validity: '2027-04-20',
     note: 'This is an amfori BSCI social audit monitoring report, not a statement of “BSCI certified”.',
-    pdf: '/assets/certificates/bsci-monitoring-report.pdf',
+    pdf: resolveImage('/assets/certificates/bsci-monitoring-report.pdf'),
     pdfLabel: 'VIEW BSCI REPORT PDF',
   },
   {
     type: 'PRODUCT COMPLIANCE',
     title: 'RoHS Product Compliance',
-    image: '/assets/certificates/rohs-soccer-uniform-hubei.png',
+    image: resolveImage('/assets/certificates/rohs-soccer-uniform-hubei.png'),
     imageAlt: 'RoHS product compliance document for soccer uniforms',
     entity: 'TONTON SPORTSWEAR (HUBEI) CO., LTD.',
     scope: 'Soccer uniform product compliance.',
-    pdf: '/assets/certificates/rohs-soccer-uniform-hubei.png',
+    pdf: resolveImage('/assets/certificates/rohs-soccer-uniform-hubei.png'),
     pdfLabel: 'VIEW ROHS IMAGE',
   },
 ];
@@ -169,7 +170,7 @@ export default function FactoryPage() {
           </div>
         </div>
         <div className="factory-page-hero-media">
-          <Image src="/assets/factory/overview/factory-exterior-01.JPG" alt="TONTON Sportswear factory exterior" fill priority sizes="(max-width: 820px) 100vw, 48vw" />
+          <Image src={resolveImage('/assets/factory/overview/factory-exterior-01.JPG')} alt="TONTON Sportswear factory exterior" fill priority sizes="(max-width: 820px) 100vw, 48vw" />
           <span>FACTORY OVERVIEW</span>
         </div>
       </section>
@@ -177,7 +178,7 @@ export default function FactoryPage() {
       <section className="factory-page-section factory-page-overview">
         <div className="factory-page-overview-media">
           <div className="factory-page-media-frame factory-page-media-frame-overview">
-            <Image src="/assets/factory/overview/factory-exterior-02.JPG" alt="TONTON Sportswear production facility" fill sizes="(max-width: 820px) 100vw, 48vw" />
+            <Image src={resolveImage('/assets/factory/overview/factory-exterior-02.JPG')} alt="TONTON Sportswear production facility" fill sizes="(max-width: 820px) 100vw, 48vw" />
           </div>
         </div>
         <div className="factory-page-overview-copy">
@@ -235,7 +236,7 @@ export default function FactoryPage() {
             {stage.images.map(([src, alt]) => (
               <figure key={src}>
                 <div className="factory-page-media-frame factory-page-media-frame-stage">
-                  <Image src={src} alt={alt} fill sizes="(max-width: 600px) 100vw, (max-width: 820px) 50vw, 33vw" />
+                  <Image src={resolveImage(src)} alt={alt} fill sizes="(max-width: 600px) 100vw, (max-width: 820px) 50vw, 33vw" />
                 </div>
                 <figcaption>{alt}</figcaption>
               </figure>
@@ -247,7 +248,7 @@ export default function FactoryPage() {
       <section className="factory-page-section factory-page-quality">
         <div className="factory-page-quality-media">
           <div className="factory-page-media-frame factory-page-media-frame-quality">
-            <Image src="/assets/factory/quality-control/quality-room-01.JPG" alt="TONTON quality inspection room" fill sizes="(max-width: 820px) 100vw, 48vw" />
+            <Image src={resolveImage('/assets/factory/quality-control/quality-room-01.JPG')} alt="TONTON quality inspection room" fill sizes="(max-width: 820px) 100vw, 48vw" />
           </div>
         </div>
         <div className="factory-page-quality-copy">
@@ -272,7 +273,7 @@ export default function FactoryPage() {
           ].map(([src, alt]) => (
             <figure key={src}>
                 <div className="factory-page-media-frame factory-page-media-frame-gallery">
-                  <Image src={src} alt={alt} fill sizes="(max-width: 600px) 100vw, (max-width: 820px) 50vw, 33vw" />
+                  <Image src={resolveImage(src)} alt={alt} fill sizes="(max-width: 600px) 100vw, (max-width: 820px) 50vw, 33vw" />
                 </div>
               <figcaption>{alt}</figcaption>
             </figure>
