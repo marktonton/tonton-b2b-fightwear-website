@@ -13,26 +13,30 @@ type Certificate = {
   pdfLabel: string;
 };
 
-type CertificatesSliderProps = {
-  certificates: Certificate[];
-};
+type CertificatesSliderProps = { certificates: Certificate[] };
 
 export default function CertificatesSlider({ certificates }: CertificatesSliderProps) {
   return (
-    <div className="factory-certificates-grid" aria-label="Certificate documents">
-      {certificates.map((certificate) => (
-        <article className="factory-certificate-card" key={certificate.title}>
-          <div className="factory-certificate-card-document">
-            <Image src={certificate.image} alt={certificate.imageAlt} fill sizes="(max-width: 600px) 100vw, (max-width: 820px) 50vw, 33vw" />
+    <div className="factory-v2-certificate-grid" aria-label="TONTON factory documents">
+      {certificates.map((certificate, index) => (
+        <article className="factory-v2-certificate" key={certificate.title}>
+          <div className="factory-v2-certificate-document">
+            <Image src={certificate.image} alt={certificate.imageAlt} fill sizes="(max-width: 700px) 100vw, 33vw" />
+            <span>{String(index + 1).padStart(2, '0')}</span>
           </div>
-          <div className="factory-certificate-card-copy">
-            <p className="factory-page-certificate-type">{certificate.type}</p>
+          <div className="factory-v2-certificate-copy">
+            <p className="factory-v2-kicker">{certificate.type}</p>
             <h3>{certificate.title}</h3>
-            <p><strong>Certified Entity:</strong> {certificate.entity}</p>
-            {certificate.validity && <p><strong>Valid Until:</strong> {certificate.validity}</p>}
-            {certificate.scope && <p><strong>Scope:</strong> {certificate.scope}</p>}
-            {certificate.note && <p>{certificate.note}</p>}
-            <a href={certificate.pdf} target="_blank" rel="noreferrer">{certificate.pdfLabel}</a>
+            <dl>
+              <div><dt>ENTITY</dt><dd>{certificate.entity}</dd></div>
+              {certificate.validity && <div><dt>VALID UNTIL</dt><dd>{certificate.validity}</dd></div>}
+              {certificate.scope && <div><dt>SCOPE</dt><dd>{certificate.scope}</dd></div>}
+            </dl>
+            {certificate.note && <p className="factory-v2-certificate-note">{certificate.note}</p>}
+            <a href={certificate.pdf} target="_blank" rel="noreferrer">
+              {certificate.pdfLabel}
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            </a>
           </div>
         </article>
       ))}
