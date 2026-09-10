@@ -101,6 +101,19 @@
       "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
     },
     {
+      "id": "lightweight-quick-dry-training-shorts",
+      "categoryId": "sublimated-training-shorts",
+      "name": "Lightweight Quick-Dry Training Shorts",
+      "image": "assets/products/lightweight-training-shorts-main.webp",
+      "images": [
+        "assets/products/lightweight-training-shorts-main.webp",
+        "assets/products/lightweight-training-shorts-performance.webp",
+        "assets/products/lightweight-training-shorts-details.webp"
+      ],
+      "description": "Lightweight woven training shorts with an adjustable drawcord waist, soft inner lining, curved athletic hem, and reflective custom logo.",
+      "features": ["10 PCS MOQ", "Quick-Dry Fabric", "Custom Logo & Colors", "Soft Inner Lining", "Reinforced Double Stitching"]
+    },
+    {
       "id": "black-white-mma-kit",
       "categoryId": "sublimated-bjj-mma-shorts",
       "name": "Classic Custom MMA Team Kit",

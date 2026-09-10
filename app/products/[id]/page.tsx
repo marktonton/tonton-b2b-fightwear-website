@@ -15,12 +15,23 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
     );
   }
 
+  const galleryImages = 'images' in product ? product.images : [product.image];
+
   return (
     <div className="section">
       <div className="inquiry" style={{ background: 'none', color: '#151515', padding: '0', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px' }}>
         <div className="inquiry-copy">
           <Link href="/collections" style={{ color: '#e11d2e', marginBottom: '20px', display: 'block' }}>← Back to Collections</Link>
-          <img src={resolveImage(product.image)} alt={product.name} style={{ borderRadius: '24px', boxShadow: '0 20px 50px rgba(0,0,0,0.1)', width: '100%', marginBottom: '30px' }} />
+          <div className="product-detail-gallery">
+            {galleryImages.map((image, index) => (
+              <img
+                key={image}
+                src={resolveImage(image)}
+                alt={`${product.name}${index === 0 ? '' : ` — detail ${index + 1}`}`}
+                className={index === 0 ? 'product-detail-gallery-main' : ''}
+              />
+            ))}
+          </div>
         </div>
         
         <div style={{ padding: '0 20px' }}>
