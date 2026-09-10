@@ -233,6 +233,28 @@ export default function ServiceSupportPage() {
         </div>
       </section>
 
+      <section className="service-proof-board">
+        <div className="service-shell">
+          <div className="service-section-heading">
+            <div>
+              <p className="service-kicker">THE TEAM BEHIND THE SERVICE</p>
+              <h2>Support is only useful when the people behind it are connected.</h2>
+            </div>
+            <p>Consultation, development, production coordination, inspection, and delivery support work as one route—not as disconnected handoffs.</p>
+          </div>
+          <figure className="service-asset-board service-asset-board-team">
+            <Image
+              src={resolveImage('/assets/pages/service-about-team.webp')}
+              alt="TONTON team and four-part customer service route from consultation to delivery"
+              width={1920}
+              height={1071}
+              sizes="(max-width: 760px) 760px, 100vw"
+            />
+            <figcaption>Customer support backed by product, production, quality, and delivery teams.</figcaption>
+          </figure>
+        </div>
+      </section>
+
       <section className="service-order-map">
         <div className="service-shell">
           <div className="service-section-heading">
@@ -252,20 +274,16 @@ export default function ServiceSupportPage() {
               </article>
             ))}
           </div>
-          <div className="service-order-visuals">
-            <figure>
-              <Image src={resolveImage('/assets/products/rashguard-blue-main.png')} alt="Custom fightwear product and visual direction" fill sizes="(max-width: 760px) 100vw, 33vw" />
-              <figcaption><span>01</span><strong>PRODUCT &amp; ARTWORK</strong><small>Style, colors, logos, and placement</small></figcaption>
-            </figure>
-            <figure>
-              <Image src={resolveImage('/assets/factory/sewing/sewing-detail-01.JPG')} alt="Custom sportswear fabric and construction detail" fill sizes="(max-width: 760px) 100vw, 33vw" />
-              <figcaption><span>02</span><strong>MATERIAL &amp; CONSTRUCTION</strong><small>Fabric, stretch, fit, and seam details</small></figcaption>
-            </figure>
-            <figure>
-              <Image src={resolveImage('/assets/factory/quality-control/quality-check-01.JPG')} alt="TONTON sample review and quality confirmation" fill sizes="(max-width: 760px) 100vw, 33vw" />
-              <figcaption><span>03</span><strong>SAMPLE &amp; APPROVAL</strong><small>Workmanship, branding, and final feedback</small></figcaption>
-            </figure>
-          </div>
+          <figure className="service-asset-board service-process-board">
+            <Image
+              src={resolveImage('/assets/pages/service-production-process.webp')}
+              alt="TONTON 16-step sportswear production process from inquiry and design to quality control, packing, and delivery"
+              width={1920}
+              height={1280}
+              sizes="(max-width: 760px) 960px, 100vw"
+            />
+            <figcaption>Detailed production route: design, decoration, cutting, sewing, inspection, finishing, packing, and delivery.</figcaption>
+          </figure>
         </div>
       </section>
 

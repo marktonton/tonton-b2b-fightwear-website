@@ -209,6 +209,19 @@ export default function FactoryPage() {
         </div>
       </section>
 
+      <section className="factory-v2-proof-strip">
+        <figure className="factory-v2-asset-board">
+          <Image
+            src={resolveImage('/assets/pages/factory-smart-factory-overview.webp')}
+            alt="TONTON smart sportswear factory with intelligent hanging production and quality-control highlights"
+            width={1920}
+            height={720}
+            sizes="(max-width: 760px) 960px, 100vw"
+          />
+          <figcaption>Smart factory overview · OEM and ODM · Low MOQ · Multi-step quality control</figcaption>
+        </figure>
+      </section>
+
       <section className="factory-v2-smart">
         <div className="factory-v2-section-heading factory-v2-section-heading-light">
           <div>
@@ -217,6 +230,16 @@ export default function FactoryPage() {
           </div>
           <p>Garments move between organized stations while the production dashboard makes workflow progress more visible to the workshop team.</p>
         </div>
+        <figure className="factory-v2-asset-board factory-v2-asset-board-dark">
+          <Image
+            src={resolveImage('/assets/pages/factory-intelligent-hanging-workshop.webp')}
+            alt="TONTON intelligent hanging workshop with connected production stations"
+            width={1920}
+            height={767}
+            sizes="(max-width: 760px) 960px, 100vw"
+          />
+          <figcaption>Intelligent hanging workshop: automation, precision, efficiency, and organized production flow.</figcaption>
+        </figure>
         <div className="factory-v2-smart-grid">
           <figure className="factory-v2-smart-main">
             <Image src={resolveImage('/assets/factory/hanging/hanging-line-03.JPG')} alt="TONTON intelligent hanging line across the workshop" fill sizes="(max-width: 800px) 100vw, 66vw" />
@@ -243,6 +266,16 @@ export default function FactoryPage() {
           </div>
           <p>A curated view of the capabilities a buyer needs to verify—with fewer words, stronger real imagery, and no decorative claims.</p>
         </div>
+        <figure className="factory-v2-asset-board factory-v2-capability-overview">
+          <Image
+            src={resolveImage('/assets/pages/factory-built-for-performance.webp')}
+            alt="TONTON digital printing, precision sewing, embroidery, and cutting capabilities"
+            width={1920}
+            height={720}
+            sizes="(max-width: 760px) 960px, 100vw"
+          />
+          <figcaption>Core production capabilities for custom performance apparel.</figcaption>
+        </figure>
         <div className="factory-v2-capability-grid">
           {capabilities.map((item) => (
             <article className={`factory-v2-capability ${item.className}`} key={item.number}>
@@ -258,6 +291,16 @@ export default function FactoryPage() {
             </article>
           ))}
         </div>
+        <figure className="factory-v2-asset-board factory-v2-manufacturing-overview">
+          <Image
+            src={resolveImage('/assets/pages/factory-smart-manufacturing-center.webp')}
+            alt="TONTON smart manufacturing center covering design, production, quality control, and packing"
+            width={1920}
+            height={720}
+            sizes="(max-width: 760px) 960px, 100vw"
+          />
+          <figcaption>A connected view of design, sample development, production, quality review, and packing.</figcaption>
+        </figure>
       </section>
 
       <section className="factory-v2-process" id="factory-v2-process">
