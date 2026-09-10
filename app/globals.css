@@ -395,6 +395,13 @@
 .service-card-grid h3 { margin: 34px 0 12px; font-size: 20px; letter-spacing: -.02em; }
 .service-card-grid p { margin: 0; color: #66686b; font-size: 13px; line-height: 1.65; }
 
+.service-proof-board { padding: clamp(100px, 10vw, 150px) 0; background: #fff; }
+.service-asset-board { margin: 0; overflow-x: auto; scrollbar-width: thin; }
+.service-asset-board img { display: block; width: 100%; height: auto; }
+.service-asset-board figcaption { padding: 14px 0 0; color: #747679; font-size: 11px; letter-spacing: .06em; line-height: 1.55; text-transform: uppercase; }
+.service-asset-board-team { border-top: 1px solid var(--service-line); padding-top: 18px; }
+.service-process-board { margin-top: 54px; border-top: 1px solid rgba(17,18,20,.24); padding-top: 18px; }
+
 .service-order-map { padding: clamp(100px, 10vw, 150px) 0; background: #e5e3dc; }
 .service-order-flow { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid rgba(17,18,20,.24); border-left: 1px solid rgba(17,18,20,.24); }
 .service-order-flow article { position: relative; display: flex; min-width: 0; min-height: 310px; flex-direction: column; padding: 26px 26px 24px; border-right: 1px solid rgba(17,18,20,.24); border-bottom: 1px solid rgba(17,18,20,.24); }
@@ -493,7 +500,9 @@
   .service-card-grid article:first-child, .service-support-grid article:first-child { border-top: 0; }
   .service-section-heading { display: block; margin-bottom: 48px; }
   .service-section-heading > p { margin-top: 24px; font-size: 14px; }
-  .service-order-map, .service-process, .service-techniques, .service-support-band { padding: 82px 0; }
+  .service-order-map, .service-process, .service-techniques, .service-support-band, .service-proof-board { padding: 82px 0; }
+  .service-asset-board-team img { min-width: 760px; }
+  .service-process-board img { min-width: 960px; }
   .service-order-flow { grid-template-columns: 1fr; }
   .service-order-flow article { min-height: 0; padding: 26px 24px 30px; }
   .service-order-flow article .service-order-marker::after { display: none; }
@@ -677,6 +686,15 @@
 .factory-v2-intro-inset { position: absolute; bottom: 0; left: 0; width: 45%; aspect-ratio: 4 / 3; overflow: hidden; border: 12px solid var(--factory-paper); }
 .factory-v2-intro-media figcaption { position: absolute; right: 16px; bottom: 14px; padding: 8px 10px; background: rgba(10,11,13,.82); color: #fff; font-size: 9px; font-weight: 900; letter-spacing: .16em; }
 
+.factory-v2-proof-strip { padding: 0 max(40px, calc((100vw - 1440px) / 2)) clamp(100px, 10vw, 150px); }
+.factory-v2-asset-board { margin: 0; overflow-x: auto; border-top: 1px solid var(--factory-line); padding-top: 16px; scrollbar-width: thin; }
+.factory-v2-asset-board img { display: block; width: 100%; height: auto; }
+.factory-v2-asset-board figcaption { padding: 14px 0 0; color: #747679; font-size: 10px; font-weight: 700; letter-spacing: .08em; line-height: 1.55; text-transform: uppercase; }
+.factory-v2-asset-board-dark { margin-bottom: 44px; border-top-color: rgba(255,255,255,.2); }
+.factory-v2-asset-board-dark figcaption { color: rgba(255,255,255,.55); }
+.factory-v2-capability-overview { margin-bottom: 72px; }
+.factory-v2-manufacturing-overview { margin-top: 100px; }
+
 .factory-v2-smart { padding: clamp(96px, 10vw, 150px) max(40px, calc((100vw - 1440px) / 2)); background: #111316; color: #fff; }
 .factory-v2-section-heading { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(260px, .55fr); gap: clamp(44px, 9vw, 130px); margin-bottom: 52px; align-items: end; }
 .factory-v2-section-heading > p { max-width: 510px; padding-bottom: 6px; color: #626467; font-size: 16px; line-height: 1.72; }
@@ -761,7 +779,7 @@
   .factory-v2-scroll-note { display: none; }
   .factory-v2-intro { grid-template-columns: 1fr; }
   .factory-v2-intro-media { min-height: 620px; }
-  .factory-v2-smart, .factory-v2-process, .factory-v2-quality, .factory-v2-cta { padding-right: 24px; padding-left: 24px; }
+  .factory-v2-smart, .factory-v2-process, .factory-v2-quality, .factory-v2-cta, .factory-v2-proof-strip { padding-right: 24px; padding-left: 24px; }
   .factory-v2-smart-grid { grid-template-columns: 1fr; }
   .factory-v2-smart-main { min-height: 520px; }
   .factory-v2-smart-side { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: none; }
@@ -793,6 +811,10 @@
   .factory-v2-section-heading { display: block; margin-bottom: 34px; }
   .factory-v2-section-heading > p { margin-top: 20px; font-size: 14px; }
   .factory-v2-smart { padding-top: 82px; padding-bottom: 82px; }
+  .factory-v2-proof-strip { padding-right: 18px; padding-bottom: 82px; padding-left: 18px; }
+  .factory-v2-asset-board img { min-width: 960px; }
+  .factory-v2-capability-overview { margin-bottom: 54px; }
+  .factory-v2-manufacturing-overview { margin-top: 72px; }
   .factory-v2-smart-main { min-height: 340px; }
   .factory-v2-smart-side { grid-template-columns: 1fr; }
   .factory-v2-smart-side figure { min-height: 300px; }
