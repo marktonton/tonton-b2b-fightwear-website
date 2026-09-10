@@ -84,8 +84,9 @@ const steps = [
     eyebrow: 'Define the brief',
     title: 'Choose your product and project direction',
     text: 'Tell us what you are making, who will wear it, the expected quantities, target market, and required delivery window. Our team turns the initial request into a clear development brief.',
-    image: '/assets/banners/banner-03-top-quality-oem.png',
+    image: '/assets/banner3.png',
     alt: 'TONTON custom fightwear product range for OEM and ODM projects',
+    local: true,
   },
   {
     number: '02',
@@ -288,7 +289,7 @@ export default function ServiceSupportPage() {
                   <p>{step.text}</p>
                 </div>
                 <figure>
-                  <Image src={resolveImage(step.image)} alt={step.alt} fill sizes="(max-width: 800px) 100vw, 52vw" />
+                  <Image src={step.local ? step.image : resolveImage(step.image)} alt={step.alt} fill sizes="(max-width: 800px) 100vw, 52vw" />
                 </figure>
               </article>
             ))}
