@@ -102,7 +102,7 @@ export default function RootLayout({
           <div className="footer-main" data-footer-layout="four-column">
             <div className="footer-column footer-brand">
               <img className="footer-logo" src={resolveImage('/assets/logo.png')} alt="TONTON" />
-              <p>Professional MMA & Sportswear OEM Factory. Building premium fightwear brands since 2014.</p>
+              <p>Professional MMA & Sportswear OEM Factory. Building premium fightwear brands since 2004.</p>
             </div>
             <div className="footer-column">
               <h2>Quick Solutions</h2>
