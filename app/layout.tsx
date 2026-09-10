@@ -90,9 +90,9 @@ export default function RootLayout({
                 <a href="/customization/sublimated-bjj-mma-shorts">Sublimated BJJ MMA Shorts</a>
               </div>
             </div>
-            <a href="/collections">Collections</a>
+            <a href="/service-support">Service &amp; Support</a>
             <a href="/factory">Factory</a>
-            <a className="nav-cta" href="#inquiry">Send Inquiry</a>
+            <a className="nav-cta" href="/#inquiry">Send Inquiry</a>
           </nav>
         </header>
 
@@ -113,6 +113,7 @@ export default function RootLayout({
             </div>
             <div className="footer-column">
               <h2>Top Picks</h2>
+              <a href="/service-support">Service &amp; Support</a>
               <a href="/#products">Featured Products</a>
               <a href="/#inquiry">Send Your Inquiry</a>
               <a href="/collections">Explore Collections</a>
