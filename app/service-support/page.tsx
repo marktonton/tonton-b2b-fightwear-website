@@ -84,8 +84,8 @@ const steps = [
     eyebrow: 'Define the brief',
     title: 'Choose your product and project direction',
     text: 'Tell us what you are making, who will wear it, the expected quantities, target market, and required delivery window. Our team turns the initial request into a clear development brief.',
-    image: '/assets/products/rashguard-blue-main.png',
-    alt: 'Custom blue performance rash guard product direction',
+    image: '/assets/banners/banner-03-top-quality-oem.png',
+    alt: 'TONTON custom fightwear product range for OEM and ODM projects',
   },
   {
     number: '02',
