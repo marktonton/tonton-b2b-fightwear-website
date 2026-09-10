@@ -27,6 +27,57 @@ const services = [
   ['04', 'Sample development', 'Confirm construction, sizing, print placement, and finish before bulk production begins.'],
 ];
 
+const orderFlow = [
+  {
+    number: '01',
+    title: 'Send your inquiry',
+    text: 'Share the product type, quantity, target market, timing, and reference ideas.',
+    result: 'PROJECT BRIEF',
+  },
+  {
+    number: '02',
+    title: 'Select the product',
+    text: 'Confirm the garment category, intended use, fit direction, and key construction needs.',
+    result: 'STYLE CONFIRMED',
+  },
+  {
+    number: '03',
+    title: 'Share artwork',
+    text: 'Provide logos, brand colors, sketches, names, numbers, and placement requirements.',
+    result: 'ARTWORK RECEIVED',
+  },
+  {
+    number: '04',
+    title: 'Review mockup & quote',
+    text: 'Check the visual layout while we align scope, quantities, pricing, and project details.',
+    result: 'DIGITAL APPROVAL',
+  },
+  {
+    number: '05',
+    title: 'Choose fabric & technique',
+    text: 'Match material, stretch, weight, printing, embroidery, and construction to the product.',
+    result: 'SPECIFICATION SET',
+  },
+  {
+    number: '06',
+    title: 'Develop the sample',
+    text: 'Produce a physical sample for fit, color, workmanship, and branding review.',
+    result: '3–7 DAY TARGET',
+  },
+  {
+    number: '07',
+    title: 'Approve & produce',
+    text: 'Record final feedback and begin bulk work against the approved sample and details.',
+    result: 'BULK PRODUCTION',
+  },
+  {
+    number: '08',
+    title: 'Inspect, pack & ship',
+    text: 'Check finished garments, confirm packing, and prepare the order for delivery.',
+    result: 'ORDER READY',
+  },
+];
+
 const steps = [
   {
     number: '01',
@@ -79,11 +130,41 @@ const steps = [
 ];
 
 const techniques = [
-  ['Full sublimation', 'Vibrant, all-over graphics integrated into performance fabric.'],
-  ['Embroidery', 'A dimensional, professional finish for logos and identity details.'],
-  ['Heat transfer', 'Precise application for names, numbers, and selected branding.'],
-  ['Laser cutting', 'Accurate cutting for repeatable panels and construction details.'],
-  ['Performance sewing', 'Construction planned around stretch, movement, and durability.'],
+  {
+    number: '01',
+    title: 'Full sublimation',
+    text: 'Artwork is transferred across performance fabric for vivid, all-over graphics with no heavy surface layer.',
+    image: '/assets/factory/transfer-laser/transfer-machine-01.JPG',
+    alt: 'TONTON large-format sublimation and transfer printing equipment',
+  },
+  {
+    number: '02',
+    title: 'Embroidery',
+    text: 'Thread is stitched directly into the garment or panel for a dimensional, professional brand finish.',
+    image: '/assets/factory/embroidery/embroidery-detail-01.jpg',
+    alt: 'TONTON multi-head embroidery machine working on custom sportswear',
+  },
+  {
+    number: '03',
+    title: 'Heat transfer',
+    text: 'Controlled heat and pressure apply selected names, numbers, logos, and graphic details to the garment.',
+    image: '/assets/factory/transfer-laser/transfer-workshop-01.JPG',
+    alt: 'TONTON heat transfer and custom printing workshop',
+  },
+  {
+    number: '04',
+    title: 'Laser cutting',
+    text: 'Digital cutting supports clean, repeatable panels and precise components for customized construction.',
+    image: '/assets/factory/transfer-laser/laser-cutting-01.JPG',
+    alt: 'TONTON laser cutting machine preparing sportswear panels',
+  },
+  {
+    number: '05',
+    title: 'Performance sewing',
+    text: 'Operators assemble stretch panels, seams, waistbands, and functional details around movement and durability.',
+    image: '/assets/factory/sewing/sewing-worker-01.JPG',
+    alt: 'TONTON sewing operator assembling performance sportswear',
+  },
 ];
 
 const serviceSchema = {
@@ -151,6 +232,42 @@ export default function ServiceSupportPage() {
         </div>
       </section>
 
+      <section className="service-order-map">
+        <div className="service-shell">
+          <div className="service-section-heading">
+            <div>
+              <p className="service-kicker">ORDER PROCESS</p>
+              <h2>How your custom order moves forward.</h2>
+            </div>
+            <p>Each stage has a clear input and outcome, so your team knows what to prepare, what to review, and when production can move ahead.</p>
+          </div>
+          <div className="service-order-flow">
+            {orderFlow.map((item) => (
+              <article key={item.number}>
+                <div className="service-order-marker"><span>{item.number}</span></div>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+                <strong>{item.result}</strong>
+              </article>
+            ))}
+          </div>
+          <div className="service-order-visuals">
+            <figure>
+              <Image src={resolveImage('/assets/products/rashguard-blue-main.png')} alt="Custom fightwear product and visual direction" fill sizes="(max-width: 760px) 100vw, 33vw" />
+              <figcaption><span>01</span><strong>PRODUCT &amp; ARTWORK</strong><small>Style, colors, logos, and placement</small></figcaption>
+            </figure>
+            <figure>
+              <Image src={resolveImage('/assets/factory/sewing/sewing-detail-01.JPG')} alt="Custom sportswear fabric and construction detail" fill sizes="(max-width: 760px) 100vw, 33vw" />
+              <figcaption><span>02</span><strong>MATERIAL &amp; CONSTRUCTION</strong><small>Fabric, stretch, fit, and seam details</small></figcaption>
+            </figure>
+            <figure>
+              <Image src={resolveImage('/assets/factory/quality-control/quality-check-01.JPG')} alt="TONTON sample review and quality confirmation" fill sizes="(max-width: 760px) 100vw, 33vw" />
+              <figcaption><span>03</span><strong>SAMPLE &amp; APPROVAL</strong><small>Workmanship, branding, and final feedback</small></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
       <section className="service-process" id="service-process">
         <div className="service-shell">
           <div className="service-section-heading">
@@ -180,28 +297,27 @@ export default function ServiceSupportPage() {
       </section>
 
       <section className="service-techniques">
-        <div className="service-shell service-techniques-layout">
-          <div className="service-techniques-media">
-            <figure className="service-techniques-main">
-              <Image src={resolveImage('/assets/factory/embroidery/embroidery-detail-01.jpg')} alt="TONTON multi-head embroidery production detail" fill sizes="(max-width: 900px) 100vw, 48vw" />
-            </figure>
-            <figure className="service-techniques-inset">
-              <Image src={resolveImage('/assets/factory/transfer-laser/laser-cutting-01.JPG')} alt="TONTON laser cutting production technique" fill sizes="(max-width: 900px) 46vw, 21vw" />
-            </figure>
-          </div>
+        <div className="service-shell">
           <div className="service-techniques-copy">
-            <p className="service-kicker service-kicker-light">DECORATION &amp; CONSTRUCTION</p>
-            <h2>Choose the right technique for the product.</h2>
-            <p>Decoration is selected around the artwork, material, use case, finish, and order needs—not simply added at the end.</p>
-            <div className="service-technique-list">
-              {techniques.map(([title, text], index) => (
-                <div key={title}>
-                  <span>{String(index + 1).padStart(2, '0')}</span>
-                  <h3>{title}</h3>
-                  <p>{text}</p>
-                </div>
-              ))}
+            <div>
+              <p className="service-kicker service-kicker-light">DECORATION &amp; CONSTRUCTION</p>
+              <h2>Choose the right technique for the product.</h2>
             </div>
+            <p>Decoration is selected around the artwork, material, use case, finish, and order needs—not simply added at the end.</p>
+          </div>
+          <div className="service-technique-gallery">
+            {techniques.map((technique) => (
+              <article key={technique.number}>
+                <figure>
+                  <Image src={resolveImage(technique.image)} alt={technique.alt} fill sizes="(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 33vw" />
+                  <span>{technique.number}</span>
+                </figure>
+                <div>
+                  <h3>{technique.title}</h3>
+                  <p>{technique.text}</p>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
