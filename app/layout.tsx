@@ -9,7 +9,7 @@ const SITE_DESCRIPTION = 'TONTON Sportswear provides custom fightwear and profes
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'TONTON Sportswear | Custom Fightwear Manufacturer',
+    default: 'Custom Sportswear Manufacturer | TONTON OEM Factory',
     template: '%s | TONTON Sportswear',
   },
   description: SITE_DESCRIPTION,
@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     type: 'website',
     url: SITE_URL,
     siteName: 'TONTON Sportswear',
-    title: 'TONTON Sportswear | Custom Fightwear Manufacturer',
+    title: 'Custom Sportswear Manufacturer | TONTON OEM Factory',
     description: SITE_DESCRIPTION,
     images: [{ url: resolveImage('/assets/logo.png'), alt: 'TONTON Sportswear' }],
   },
   twitter: {
     card: 'summary',
-    title: 'TONTON Sportswear | Custom Fightwear Manufacturer',
+    title: 'Custom Sportswear Manufacturer | TONTON OEM Factory',
     description: SITE_DESCRIPTION,
     images: [resolveImage('/assets/logo.png')],
   },

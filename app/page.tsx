@@ -116,6 +116,7 @@ export default function HomePage() {
     <div>
       {/* 1. HERO SECTION - Cinematic Full Width */}
       <section className="hero">
+        <h1 className="sr-only">Custom Sportswear Manufacturer for Brands, Clubs and Teams</h1>
         <div className="banner-slider">
           <div className="slides">
             {BANNERS.map((banner, i) => (
