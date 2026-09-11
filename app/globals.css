@@ -937,6 +937,47 @@
 .customization-product-copy > span { margin-top: 12px; color: #66686b; font-size: 13px; line-height: 1.58; }
 .customization-product-copy .customization-card-link { margin-top: auto; padding-top: 25px; }
 
+.customization-sku-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.customization-sku-card { min-width: 0; border: 1px solid #deddd8; background: #fff; }
+.customization-sku-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2px; background: #deddd8; }
+.customization-sku-image { position: relative; aspect-ratio: 3 / 4; overflow: hidden; background: #e9e9e7; }
+.customization-sku-image-featured { grid-column: 1 / -1; aspect-ratio: 1 / 1.03; }
+.customization-sku-image img { object-fit: cover; transition: transform .35s ease; }
+.customization-sku-image:hover img { transform: scale(1.025); }
+.customization-sku-copy { display: grid; grid-template-columns: 18px 1fr; gap: 15px; padding: 24px; align-items: start; }
+.customization-sku-swatch { width: 14px; height: 14px; margin-top: 4px; border: 1px solid rgba(17,18,20,.2); border-radius: 50%; }
+.customization-sku-copy h3 { font-size: 20px; line-height: 1.2; }
+.customization-sku-copy p { margin-top: 9px; color: #66686b; font-size: 13px; line-height: 1.6; }
+.customization-product-links { display: flex; flex-wrap: wrap; gap: 13px 30px; align-items: center; margin-top: 30px; padding-top: 24px; border-top: 1px solid var(--custom-line); }
+.customization-product-links > span { color: #77797c; font-size: 10px; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; }
+.customization-product-links a { display: inline-flex; gap: 10px; align-items: center; color: var(--custom-red); font-size: 12px; font-weight: 800; }
+
+.customization-details { padding: clamp(90px, 9vw, 140px) 0; background: #131519; color: #fff; }
+.customization-details .customization-section-heading > p { color: rgba(255,255,255,.62); }
+.customization-detail-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.customization-detail-card { min-width: 0; border: 1px solid rgba(255,255,255,.16); }
+.customization-detail-card figure { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: #292b2f; }
+.customization-detail-card figure img { object-fit: cover; }
+.customization-detail-card > div { padding: 22px; }
+.customization-detail-card span { color: var(--custom-red); font-size: 9px; font-weight: 900; letter-spacing: .12em; }
+.customization-detail-card h3 { margin-top: 15px; font-size: 18px; }
+.customization-detail-card p { margin-top: 10px; color: rgba(255,255,255,.58); font-size: 13px; line-height: 1.62; }
+
+.customization-technical { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(56px, 9vw, 130px); padding-top: clamp(90px, 10vw, 150px); padding-bottom: clamp(90px, 10vw, 150px); }
+.customization-technical h2 { max-width: 650px; margin-top: 16px; font-size: clamp(32px, 3.2vw, 48px); font-weight: 900; letter-spacing: -.04em; line-height: 1.04; }
+.customization-technical-lead { max-width: 650px; margin-top: 24px !important; color: #5e6063; font-size: 15px; line-height: 1.74; }
+.customization-fabric-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 36px; border: 1px solid var(--custom-line); }
+.customization-fabric-grid article { min-width: 0; padding: 24px; }
+.customization-fabric-grid article:nth-child(even) { border-left: 1px solid var(--custom-line); }
+.customization-fabric-grid article:nth-child(n+3) { border-top: 1px solid var(--custom-line); }
+.customization-fabric-grid h3 { font-size: 16px; }
+.customization-fabric-grid p { margin-top: 9px; color: #686a6d; font-size: 13px; line-height: 1.62; }
+.customization-craft-list { margin-top: 35px; border-top: 1px solid var(--custom-line); }
+.customization-craft-list article { display: grid; grid-template-columns: 44px 1fr; gap: 12px; padding: 21px 0; border-bottom: 1px solid var(--custom-line); }
+.customization-craft-list article > span { padding-top: 4px; color: var(--custom-red); font-size: 9px; font-weight: 900; letter-spacing: .12em; }
+.customization-craft-list h3 { font-size: 16px; }
+.customization-craft-list p { margin-top: 7px; color: #686a6d; font-size: 13px; line-height: 1.62; }
+
 .customization-process { padding: clamp(90px, 10vw, 150px) 0; background: #e6e4dd; }
 .customization-process-grid { display: grid; grid-template-columns: minmax(280px, .7fr) minmax(0, 1.3fr); gap: clamp(62px, 11vw, 170px); }
 .customization-process-heading { align-self: start; }
@@ -989,6 +1030,11 @@
   .customization-options-media { min-height: 580px; }
   .customization-section-heading { grid-template-columns: 1fr; gap: 20px; }
   .customization-product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .customization-sku-grid { grid-template-columns: 1fr; }
+  .customization-sku-card { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(210px, .85fr); }
+  .customization-sku-copy { align-content: center; }
+  .customization-detail-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .customization-technical { grid-template-columns: 1fr; gap: 70px; }
   .customization-process-grid, .customization-faq, .customization-related-inner, .customization-cta-inner { grid-template-columns: 1fr; gap: 48px; }
   .customization-related-inner > .customization-kicker { grid-column: auto; }
 }
@@ -1004,6 +1050,13 @@
   .customization-facts div:nth-child(3) { border-left: 0; border-top: 1px solid rgba(255,255,255,.18); padding-left: 0; }
   .customization-facts div:nth-child(4) { border-top: 1px solid rgba(255,255,255,.18); }
   .customization-audience-grid, .customization-product-grid { grid-template-columns: 1fr; }
+  .customization-sku-card { display: block; }
+  .customization-sku-copy { padding: 21px; }
+  .customization-product-links { align-items: flex-start; flex-direction: column; }
+  .customization-detail-grid { grid-template-columns: 1fr; }
+  .customization-fabric-grid { grid-template-columns: 1fr; }
+  .customization-fabric-grid article:nth-child(even) { border-left: 0; }
+  .customization-fabric-grid article + article { border-top: 1px solid var(--custom-line); }
   .customization-options-media { min-height: 0; aspect-ratio: 1 / 1.06; }
   .customization-process-list article { grid-template-columns: 38px 1fr; gap: 10px; }
   .customization-process-list article p { grid-column: 2; }
