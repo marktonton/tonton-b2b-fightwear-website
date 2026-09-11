@@ -1068,13 +1068,19 @@
 
 /* Rash Guard page: tighter editorial rhythm and more readable buyer copy. */
 .customization-page-sublimated-rash-guards .customization-shell { width: min(1480px, calc(100% - 56px)); }
+.customization-page-sublimated-rash-guards h1,
+.customization-page-sublimated-rash-guards h2,
+.customization-page-sublimated-rash-guards h3 { text-wrap: wrap; }
+.customization-page-sublimated-rash-guards .customization-hero-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(44px, 4vw, 64px); }
+.customization-page-sublimated-rash-guards .customization-hero h1 { max-width: none; }
 .customization-page-sublimated-rash-guards .customization-hero-copy { padding-bottom: 48px; }
 .customization-page-sublimated-rash-guards .customization-breadcrumb { margin-bottom: clamp(48px, 5vw, 74px); font-size: 12px; }
 .customization-page-sublimated-rash-guards .customization-hero-media { min-height: 610px; }
 .customization-page-sublimated-rash-guards .customization-hero-lead { font-size: clamp(17px, 1.35vw, 20px); line-height: 1.58; }
 .customization-page-sublimated-rash-guards .customization-facts span { font-size: 12px; }
 
-.customization-page-sublimated-rash-guards .customization-overview { grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr); gap: clamp(42px, 5vw, 76px); padding-top: clamp(70px, 6vw, 94px); padding-bottom: clamp(70px, 6vw, 94px); }
+.customization-page-sublimated-rash-guards .customization-overview { grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr); gap: clamp(38px, 4vw, 64px); padding-top: clamp(70px, 6vw, 94px); padding-bottom: clamp(70px, 6vw, 94px); }
+.customization-page-sublimated-rash-guards .customization-overview-heading h2 { max-width: none; }
 .customization-page-sublimated-rash-guards .customization-overview-copy { padding-top: 18px; }
 .customization-page-sublimated-rash-guards .customization-overview-copy p { font-size: 16px; line-height: 1.68; }
 .customization-page-sublimated-rash-guards .customization-overview-copy .customization-overview-lead { margin-bottom: 15px; font-size: 20px; line-height: 1.42; }
@@ -1084,7 +1090,8 @@
 .customization-page-sublimated-rash-guards .customization-audience-grid p { margin-top: 10px; font-size: 15px; line-height: 1.55; }
 
 .customization-page-sublimated-rash-guards .customization-options { padding: clamp(72px, 6vw, 96px) 0; }
-.customization-page-sublimated-rash-guards .customization-options-grid { gap: clamp(46px, 5vw, 78px); }
+.customization-page-sublimated-rash-guards .customization-options-grid { grid-template-columns: minmax(0, .94fr) minmax(0, 1.06fr); gap: clamp(42px, 4vw, 64px); }
+.customization-page-sublimated-rash-guards .customization-options-copy > h2 { max-width: none; }
 .customization-page-sublimated-rash-guards .customization-options-media { min-height: 610px; }
 .customization-page-sublimated-rash-guards .customization-options-lead { margin-top: 20px !important; font-size: 16px; line-height: 1.62; }
 .customization-page-sublimated-rash-guards .customization-option-list { margin-top: 29px; }
