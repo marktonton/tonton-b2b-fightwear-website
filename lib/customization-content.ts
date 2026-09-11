@@ -3,6 +3,8 @@ export type CustomizationFaq = {
   answer: string;
 };
 
+const RASH_GUARD_ASSET_ROOT = 'https://assets.tontongear.com/assets/products/rash-guard-sku';
+
 export type CustomizationPageContent = {
   seoDescription: string;
   kicker: string;
@@ -22,15 +24,28 @@ export type CustomizationPageContent = {
   processProduct: string;
   faqTitle: string;
   faqs: CustomizationFaq[];
+  skuGroups?: Array<{
+    name: string;
+    color: string;
+    summary: string;
+    images: Array<{ src: string; alt: string }>;
+  }>;
+  productDetails?: Array<{ title: string; text: string; image: string; alt: string }>;
+  fabricGuide?: {
+    title: string;
+    intro: string;
+    items: Array<{ title: string; text: string }>;
+  };
+  craftSteps?: Array<{ title: string; text: string }>;
 };
 
 export const customizationPageContent: Record<string, CustomizationPageContent> = {
   'sublimated-rash-guards': {
-    seoDescription: 'Custom sublimated rash guards for BJJ, MMA, grappling, gyms and brands. Explore sleeve, fit, artwork and team-order options with TONTON OEM support.',
+    seoDescription: 'Custom Rash Guard manufacturer for BJJ, MMA and grappling brands. Explore three color SKUs, stretch fabric, sublimation, construction and OEM options.',
     kicker: 'CUSTOM RASH GUARD MANUFACTURING',
     heroLead: 'Develop short-sleeve or long-sleeve performance rash guards with your colors, artwork, sponsor marks, and team identity—supported from mockup through production.',
-    heroImage: 'assets/products/rashguard-blue-main.png',
-    heroAlt: 'Blue custom sublimated rash guard made for team and brand programs',
+    heroImage: `${RASH_GUARD_ASSET_ROOT}/rash-guard-02.webp`,
+    heroAlt: 'Blue short-sleeve custom Rash Guard shown from the front',
     overviewTitle: 'Build a rash guard around the way your customers train.',
     overviewLead: 'A strong custom rash guard program starts with use, fit, and artwork—not a generic blank garment.',
     overviewText: 'TONTON supports brands, BJJ academies, MMA gyms, grappling teams, and distributors with product development for custom sublimated rash guards. We help define sleeve length, panel direction, size requirements, fabric performance, artwork placement, and packaging before the order moves forward.',
@@ -41,8 +56,8 @@ export const customizationPageContent: Record<string, CustomizationPageContent> 
     ],
     optionsTitle: 'What can be customized on a sublimated rash guard?',
     optionsLead: 'Each decision is reviewed together so the visual design and garment construction support the same end use.',
-    optionsImage: 'assets/products/rashguard-long-samurai-v2.png',
-    optionsAlt: 'Long-sleeve custom graphic rash guard showing all-over sublimation artwork',
+    optionsImage: `${RASH_GUARD_ASSET_ROOT}/rash-guard-06.webp`,
+    optionsAlt: 'Olive short-sleeve Rash Guard showing contrast sleeve panels and athletic fit',
     options: [
       { title: 'Sleeve and fit direction', text: 'Choose short or long sleeves and define the intended fit and size range for your market.' },
       { title: 'All-over artwork', text: 'Apply team colors, patterns, logos, names, and sponsor graphics across the printable panels.' },
@@ -60,6 +75,68 @@ export const customizationPageContent: Record<string, CustomizationPageContent> 
       { question: 'Will sublimated graphics peel or create a heavy print layer?', answer: 'Sublimation transfers the artwork into compatible performance fabric rather than adding a thick surface print. It is suited to detailed, all-over graphics and avoids a heavy printed layer on the garment.' },
       { question: 'Can I review a mockup and sample before bulk production?', answer: 'Yes. A digital mockup is used to review the visual direction, and sample development can be used to confirm fit, construction, color, and branding before bulk production.' },
       { question: 'Which artwork files are best for production?', answer: 'Vector logo and artwork files are preferred because they support clean scaling and placement. Brand colors, fonts, sponsor marks, and reference images are also helpful when preparing the mockup.' },
+      { question: 'What fabric is used for a custom Rash Guard?', answer: 'A Rash Guard is typically developed with a smooth polyester-spandex performance fabric selected for stretch, recovery, print compatibility, and next-to-skin comfort. The exact fiber ratio and fabric weight are confirmed for the selected project rather than assumed from a generic specification.' },
+      { question: 'How is a sublimated Rash Guard manufactured?', answer: 'After the artwork and color direction are approved, the design is transferred into compatible fabric, the printed panels are cut, stretch seams and the neckline are assembled, and the finished Rash Guard is inspected for workmanship, measurements, color, and branding.' },
+    ],
+    skuGroups: [
+      {
+        name: 'Blue Rash Guard',
+        color: '#0759cc',
+        summary: 'A clean royal-blue direction shown from front, back, and side angles.',
+        images: [
+          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-01.webp`, alt: 'Blue short-sleeve Rash Guard front view' },
+          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-02.webp`, alt: 'Blue short-sleeve Rash Guard three-quarter front view' },
+          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-03.webp`, alt: 'Blue short-sleeve Rash Guard side view' },
+          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-04.webp`, alt: 'Blue short-sleeve Rash Guard back view' },
+        ],
+      },
+      {
+        name: 'Olive Rash Guard',
+        color: '#464331',
+        summary: 'An olive-and-black colorway with contrast panels and understated branding.',
+        images: [
+          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-05.webp`, alt: 'Olive and black short-sleeve Rash Guard front view' },
+          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-06.webp`, alt: 'Olive and black short-sleeve Rash Guard three-quarter front view' },
+          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-07.webp`, alt: 'Olive and black short-sleeve Rash Guard side view' },
+          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-08.webp`, alt: 'Olive and black short-sleeve Rash Guard back view' },
+        ],
+      },
+      {
+        name: 'White Rash Guard',
+        color: '#efefed',
+        summary: 'A white-and-black direction with front and back logo placement references.',
+        images: [
+          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-09.webp`, alt: 'White and black short-sleeve Rash Guard front view' },
+          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-10.webp`, alt: 'White and black short-sleeve Rash Guard three-quarter front view' },
+          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-11.webp`, alt: 'White and black short-sleeve Rash Guard side view' },
+          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-12.webp`, alt: 'White and black short-sleeve Rash Guard rear three-quarter view' },
+          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-13.webp`, alt: 'White and black short-sleeve Rash Guard back view' },
+          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-14.webp`, alt: 'White and black short-sleeve Rash Guard alternate back view' },
+        ],
+      },
+    ],
+    productDetails: [
+      { title: 'Neckline fit', text: 'A close neckline helps the Rash Guard sit cleanly while moving and can be reviewed during sampling.', image: `${RASH_GUARD_ASSET_ROOT}/detail-blue-neckline-fit.webp`, alt: 'Close-up of blue Rash Guard neckline and shoulder fit' },
+      { title: 'Contrast sleeve panel', text: 'Sleeve and shoulder panels create a controlled area for color blocking, artwork, or team identity.', image: `${RASH_GUARD_ASSET_ROOT}/detail-olive-sleeve-panel.webp`, alt: 'Close-up of olive Rash Guard sleeve and shoulder panel' },
+      { title: 'Front logo placement', text: 'Chest artwork is checked for scale, centering, and visibility against the garment construction.', image: `${RASH_GUARD_ASSET_ROOT}/detail-white-chest-logo.webp`, alt: 'Close-up of white Rash Guard front chest logo placement' },
+      { title: 'Back branding area', text: 'The back panel provides a broad printable area for academy marks, sponsor graphics, or private-label artwork.', image: `${RASH_GUARD_ASSET_ROOT}/detail-white-back-logo.webp`, alt: 'Close-up of white Rash Guard back logo area' },
+    ],
+    fabricGuide: {
+      title: 'Rash Guard fabric should balance stretch, recovery, and print clarity.',
+      intro: 'We commonly evaluate polyester-spandex performance directions for sublimated Rash Guards. Final composition, weight, hand feel, and stretch are confirmed against the approved sample and project requirements.',
+      items: [
+        { title: 'Multi-directional stretch', text: 'Supports close-fit movement for BJJ, MMA, grappling, and training applications.' },
+        { title: 'Shape recovery', text: 'Helps the garment return toward its intended fit after repeated movement and wear.' },
+        { title: 'Smooth print surface', text: 'Supports clear gradients, detailed graphics, sponsor marks, and team colors.' },
+        { title: 'Project-specific GSM', text: 'Fabric weight is selected and confirmed during development instead of being presented as one universal specification.' },
+      ],
+    },
+    craftSteps: [
+      { title: 'Artwork and color preparation', text: 'Logos, pattern scale, sponsor marks, and panel placements are organized in the digital mockup.' },
+      { title: 'Sublimation transfer', text: 'Approved artwork is transferred into compatible performance fabric for an integrated, lightweight graphic result.' },
+      { title: 'Panel cutting', text: 'Printed pieces are cut to the approved pattern with artwork position and panel direction in view.' },
+      { title: 'Stretch-garment sewing', text: 'The neckline, sleeves, body panels, and hems are assembled using construction suited to the selected stretch fabric.' },
+      { title: 'Finished-garment inspection', text: 'Measurements, seams, visual placement, color, labeling, and workmanship are reviewed before packing.' },
     ],
   },
   'sublimated-training-shorts': {
@@ -137,4 +214,3 @@ export const customizationPageContent: Record<string, CustomizationPageContent> 
     ],
   },
 };
-

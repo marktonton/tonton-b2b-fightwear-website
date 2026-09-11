@@ -28,7 +28,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
     };
   }
   const seoTitles: Record<string, string> = {
-    'sublimated-rash-guards': 'Custom Sublimated Rash Guards | OEM Sportswear Manufacturer',
+    'sublimated-rash-guards': 'Custom Rash Guard Manufacturer | BJJ & MMA OEM',
     'sublimated-training-shorts': 'Custom Sublimated Training Shorts | Sportswear OEM',
     'sublimated-bjj-mma-shorts': 'Custom BJJ & MMA Shorts | Fightwear Manufacturer',
   };
@@ -66,6 +66,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
   }
 
   const products = getCustomizationProducts(category.id);
+  const isRashGuardPage = category.id === 'sublimated-rash-guards';
   const categoryUrl = `${SITE_URL}/customization/${category.id}`;
   const collectionSchema = {
     '@context': 'https://schema.org',
@@ -142,7 +143,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
             </div>
           </div>
           <figure className="customization-hero-media">
-            <Image src={resolveImage(content.heroImage)} alt={content.heroAlt} fill priority sizes="(max-width: 900px) 100vw, 52vw" />
+            <Image src={resolveImage(content.heroImage)} alt={content.heroAlt} fill priority unoptimized={isRashGuardPage} sizes="(max-width: 900px) 100vw, 52vw" />
           </figure>
         </div>
         <div className="customization-shell customization-facts" aria-label="Project benefits">
@@ -176,7 +177,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
       <section className="customization-options">
         <div className="customization-shell customization-options-grid">
           <figure className="customization-options-media">
-            <Image src={resolveImage(content.optionsImage)} alt={content.optionsAlt} fill sizes="(max-width: 900px) 100vw, 50vw" />
+            <Image src={resolveImage(content.optionsImage)} alt={content.optionsAlt} fill unoptimized={isRashGuardPage} sizes="(max-width: 900px) 100vw, 50vw" />
           </figure>
           <div className="customization-options-copy">
             <p className="customization-kicker customization-kicker-light">CUSTOMIZATION OPTIONS</p>
@@ -196,25 +197,90 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
 
       <section className="customization-products customization-shell" id="custom-products">
         <div className="customization-section-heading">
-          <div><p className="customization-kicker">PRODUCT EXAMPLES</p><h2>Explore {category.name.toLowerCase()} directions</h2></div>
-          <p>Use these products as a starting point. Colors, artwork, sizing, and selected construction details can be reviewed for your project.</p>
+          <div><p className="customization-kicker">{isRashGuardPage ? 'COLOR SKU REFERENCES' : 'PRODUCT EXAMPLES'}</p><h2>{isRashGuardPage ? 'Compare three Rash Guard color directions.' : `Explore ${category.name.toLowerCase()} directions`}</h2></div>
+          <p>{isRashGuardPage ? 'Blue, olive, and white samples are shown from multiple angles so buyers can review fit, panel balance, and branding areas before defining a custom direction.' : 'Use these products as a starting point. Colors, artwork, sizing, and selected construction details can be reviewed for your project.'}</p>
         </div>
-        <div className="customization-product-grid">
-          {products.map((product) => (
-            <article className="customization-product-card" key={product.id}>
-              <Link className="customization-product-image" href={`/products/${product.id}`}>
-                <Image src={resolveImage(product.image)} alt={product.name} fill sizes="(max-width: 720px) 100vw, (max-width: 1100px) 50vw, 33vw" />
-              </Link>
-              <div className="customization-product-copy">
-                <p>Custom {category.name}</p>
-                <h3><Link href={`/products/${product.id}`}>{product.name}</Link></h3>
-                <span>{product.description}</span>
-                <Link className="customization-card-link" href={`/products/${product.id}`}>View product details <span aria-hidden="true">→</span></Link>
-              </div>
-            </article>
-          ))}
-        </div>
+        {content.skuGroups ? (
+          <>
+            <div className="customization-sku-grid">
+              {content.skuGroups.map((group) => (
+                <article className="customization-sku-card" key={group.name}>
+                  <div className="customization-sku-gallery">
+                    {group.images.map((image, index) => (
+                      <figure className={index === 0 ? 'customization-sku-image customization-sku-image-featured' : 'customization-sku-image'} key={image.src}>
+                        <Image src={resolveImage(image.src)} alt={image.alt} fill unoptimized sizes={index === 0 ? '(max-width: 660px) 100vw, (max-width: 1000px) 50vw, 33vw' : '(max-width: 660px) 33vw, 12vw'} />
+                      </figure>
+                    ))}
+                  </div>
+                  <div className="customization-sku-copy">
+                    <span className="customization-sku-swatch" style={{ backgroundColor: group.color }} aria-hidden="true" />
+                    <div><h3>{group.name}</h3><p>{group.summary}</p></div>
+                  </div>
+                </article>
+              ))}
+            </div>
+            <div className="customization-product-links" aria-label="Related Rash Guard product specifications">
+              <span>Related product specifications</span>
+              {products.map((product) => <Link href={`/products/${product.id}`} key={product.id}>{product.name}<span aria-hidden="true">→</span></Link>)}
+            </div>
+          </>
+        ) : (
+          <div className="customization-product-grid">
+            {products.map((product) => (
+              <article className="customization-product-card" key={product.id}>
+                <Link className="customization-product-image" href={`/products/${product.id}`}>
+                  <Image src={resolveImage(product.image)} alt={product.name} fill sizes="(max-width: 720px) 100vw, (max-width: 1100px) 50vw, 33vw" />
+                </Link>
+                <div className="customization-product-copy">
+                  <p>Custom {category.name}</p>
+                  <h3><Link href={`/products/${product.id}`}>{product.name}</Link></h3>
+                  <span>{product.description}</span>
+                  <Link className="customization-card-link" href={`/products/${product.id}`}>View product details <span aria-hidden="true">→</span></Link>
+                </div>
+              </article>
+            ))}
+          </div>
+        )}
       </section>
+
+      {content.productDetails && (
+        <section className="customization-details">
+          <div className="customization-shell">
+            <div className="customization-section-heading">
+              <div><p className="customization-kicker customization-kicker-light">PRODUCT DETAILS</p><h2>Review the areas that shape a custom Rash Guard.</h2></div>
+              <p>These direct crops use the original product photographs to make neckline, panel, and logo-placement decisions easier to inspect.</p>
+            </div>
+            <div className="customization-detail-grid">
+              {content.productDetails.map((detail, index) => (
+                <article className="customization-detail-card" key={detail.title}>
+                  <figure><Image src={resolveImage(detail.image)} alt={detail.alt} fill unoptimized sizes="(max-width: 660px) 100vw, (max-width: 1000px) 50vw, 25vw" /></figure>
+                  <div><span>0{index + 1}</span><h3>{detail.title}</h3><p>{detail.text}</p></div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {content.fabricGuide && content.craftSteps && (
+        <section className="customization-technical customization-shell">
+          <div className="customization-fabric-guide">
+            <p className="customization-kicker">FABRIC DIRECTION</p>
+            <h2>{content.fabricGuide.title}</h2>
+            <p className="customization-technical-lead">{content.fabricGuide.intro}</p>
+            <div className="customization-fabric-grid">
+              {content.fabricGuide.items.map((item) => <article key={item.title}><h3>{item.title}</h3><p>{item.text}</p></article>)}
+            </div>
+          </div>
+          <div className="customization-craft">
+            <p className="customization-kicker">RASH GUARD CRAFT</p>
+            <h2>How a sublimated Rash Guard moves from artwork to inspection.</h2>
+            <div className="customization-craft-list">
+              {content.craftSteps.map((step, index) => <article key={step.title}><span>0{index + 1}</span><div><h3>{step.title}</h3><p>{step.text}</p></div></article>)}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="customization-process">
         <div className="customization-shell customization-process-grid">
