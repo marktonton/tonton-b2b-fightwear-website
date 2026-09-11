@@ -7,7 +7,7 @@ import type { Metadata } from 'next';
 const SITE_URL = 'https://www.tontongear.com';
 
 export const metadata: Metadata = {
-  title: 'Customization Collections',
+  title: { absolute: 'Custom Fightwear Collections | Rash Guards & MMA Shorts' },
   description: 'Explore TONTON custom sublimated rash guards, training shorts, and BJJ/MMA shorts for brands, teams, clubs, and retailers.',
   alternates: { canonical: `${SITE_URL}/collections` },
   openGraph: {
@@ -19,10 +19,36 @@ export const metadata: Metadata = {
 };
 
 export default function CollectionsPage() {
+  const collectionSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'TONTON Custom Fightwear Collections',
+    url: `${SITE_URL}/collections`,
+    description: 'Custom sublimated rash guards, training shorts, and BJJ/MMA shorts for brands, gyms, clubs, and teams.',
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListElement: categories.map((category, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: category.name,
+        url: `${SITE_URL}/customization/${category.id}`,
+      })),
+    },
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Customization Collections', item: `${SITE_URL}/collections` },
+    ],
+  };
+
   return (
     <div className="section">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([collectionSchema, breadcrumbSchema]) }} />
       <div className="section-head">
-        <h2>Customization Collections</h2>
+        <h1>Customization Collections</h1>
         <p>Explore our specialized sublimated fightwear categories.</p>
       </div>
       

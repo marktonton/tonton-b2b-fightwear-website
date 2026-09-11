@@ -18,14 +18,24 @@ export function generateStaticParams() {
 
 export function generateMetadata({ params }: PageProps): Metadata {
   const category = getCustomizationCategory(params.slug);
-  if (!category) return {};
-  const title = `${category.name} Customization`;
+  if (!category) {
+    return {
+      title: { absolute: 'Customization Page Not Found | TONTON Sportswear' },
+      robots: { index: false, follow: false },
+    };
+  }
+  const seoTitles: Record<string, string> = {
+    'sublimated-rash-guards': 'Custom Sublimated Rash Guards | OEM Sportswear Manufacturer',
+    'sublimated-training-shorts': 'Custom Sublimated Training Shorts | Sportswear OEM',
+    'sublimated-bjj-mma-shorts': 'Custom BJJ & MMA Shorts | Fightwear Manufacturer',
+  };
+  const title = seoTitles[category.id] ?? `${category.name} Customization | TONTON Sportswear`;
   return {
-    title,
+    title: { absolute: title },
     description: category.description,
     alternates: { canonical: `${SITE_URL}/customization/${category.id}` },
     openGraph: {
-      title: `${title} | TONTON Sportswear`,
+      title,
       description: category.description,
       url: `${SITE_URL}/customization/${category.id}`,
       type: 'website',
@@ -41,9 +51,36 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
   }
 
   const products = getCustomizationProducts(category.id);
+  const categoryUrl = `${SITE_URL}/customization/${category.id}`;
+  const collectionSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: category.name,
+    url: categoryUrl,
+    description: category.description,
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListElement: products.map((product, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: product.name,
+        url: `${SITE_URL}/products/${product.id}`,
+      })),
+    },
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Customization', item: `${SITE_URL}/collections` },
+      { '@type': 'ListItem', position: 3, name: category.name, item: categoryUrl },
+    ],
+  };
 
   return (
     <div className="section">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([collectionSchema, breadcrumbSchema]) }} />
       <div className="section-head">
         <span style={{ color: '#e11d2e', fontWeight: '900', textTransform: 'uppercase', letterSpacing: '2px', fontSize: '12px' }}>
           Customization Collection

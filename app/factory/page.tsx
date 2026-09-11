@@ -6,7 +6,7 @@ import { resolveImage } from '../../lib/image-resolver';
 const SITE_URL = 'https://www.tontongear.com';
 
 export const metadata: Metadata = {
-  title: 'Custom Sportswear Factory | TONTON OEM & ODM Manufacturer',
+  title: { absolute: 'Custom Sportswear Factory | TONTON OEM & ODM Manufacturer' },
   description: 'See inside TONTON Sportswear: intelligent hanging production, embroidery, printing, sewing, quality control, packing, and OEM/ODM support for custom fightwear.',
   alternates: { canonical: `${SITE_URL}/factory` },
   openGraph: {
@@ -153,6 +153,15 @@ const faqSchema = {
   })),
 };
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Factory', item: `${SITE_URL}/factory` },
+  ],
+};
+
 function ArrowIcon() {
   return (
     <svg viewBox="0 0 20 20" aria-hidden="true">
@@ -164,7 +173,7 @@ function ArrowIcon() {
 export default function FactoryPage() {
   return (
     <div className="factory-v2">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([factorySchema, faqSchema]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([factorySchema, faqSchema, breadcrumbSchema]) }} />
 
       <section className="factory-v2-hero">
         <Image className="factory-v2-hero-image" src={resolveImage('/assets/factory/hanging/hanging-line-01.jpg')} alt="TONTON intelligent hanging production workshop" fill priority sizes="100vw" />

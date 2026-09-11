@@ -1,27 +1,128 @@
 import React from 'react';
 import productsData from '../../../data/products.json';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import type { Metadata } from 'next';
 import { resolveImage } from '../../../lib/image-resolver';
 
-export default function ProductDetailPage({ params }: { params: { id: string } }) {
-  const product = productsData.products.find(p => p.id === params.id);
+const SITE_URL = 'https://www.tontongear.com';
+const products = productsData.products;
+
+type PageProps = { params: { id: string } };
+
+function getProduct(id: string) {
+  return products.find((product) => product.id === id);
+}
+
+function getCategoryName(categoryId: string) {
+  return productsData.categories.find((category) => category.id === categoryId)?.name ?? 'Custom Sportswear';
+}
+
+function getProductTitle(product: (typeof products)[number]) {
+  const suffixes: Record<string, string> = {
+    'sublimated-rash-guards': 'Custom Rash Guard Manufacturer',
+    'sublimated-training-shorts': 'Custom Training Shorts OEM',
+    'sublimated-bjj-mma-shorts': 'Custom BJJ & MMA Teamwear',
+  };
+  return `${product.name} | ${suffixes[product.categoryId] ?? 'TONTON Sportswear'}`;
+}
+
+function getProductDescription(product: (typeof products)[number]) {
+  return `Custom ${product.name}: ${product.description} OEM/ODM colors, logos, and production support for brands, gyms, clubs, and teams.`;
+}
+
+export function generateStaticParams() {
+  return products.map((product) => ({ id: product.id }));
+}
+
+export function generateMetadata({ params }: PageProps): Metadata {
+  const product = getProduct(params.id);
+  if (!product) {
+    return {
+      title: { absolute: 'Product Not Found | TONTON Sportswear' },
+      robots: { index: false, follow: false },
+    };
+  }
+
+  const url = `${SITE_URL}/products/${product.id}`;
+  const title = getProductTitle(product);
+  const description = getProductDescription(product);
+  const image = resolveImage(product.image);
+
+  return {
+    title: { absolute: title },
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      type: 'website',
+      url,
+      siteName: 'TONTON Sportswear',
+      title,
+      description,
+      images: [{ url: image, alt: product.name }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [image],
+    },
+  };
+}
+
+export default function ProductDetailPage({ params }: PageProps) {
+  const product = getProduct(params.id);
 
   if (!product) {
-    return (
-      <div className="section" style={{ textAlign: 'center' }}>
-        <h2>Product Not Found</h2>
-        <Link href="/collections" className="cert-btn">Back to Collections</Link>
-      </div>
-    );
+    notFound();
   }
 
   const galleryImages = 'images' in product ? product.images : [product.image];
+  const categoryName = getCategoryName(product.categoryId);
+  const categoryUrl = `/customization/${product.categoryId}`;
+  const productUrl = `${SITE_URL}/products/${product.id}`;
+  const relatedProducts = products
+    .filter((item) => item.categoryId === product.categoryId && item.id !== product.id)
+    .slice(0, 3);
+  const productSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: product.name,
+    description: getProductDescription(product),
+    image: galleryImages.map((image) => resolveImage(image)),
+    sku: product.id,
+    category: categoryName,
+    url: productUrl,
+    brand: { '@type': 'Brand', name: 'TONTON' },
+    manufacturer: {
+      '@type': 'Organization',
+      name: 'TONTON Sportswear',
+      url: SITE_URL,
+    },
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+      { '@type': 'ListItem', position: 2, name: categoryName, item: `${SITE_URL}${categoryUrl}` },
+      { '@type': 'ListItem', position: 3, name: product.name, item: productUrl },
+    ],
+  };
 
   return (
     <div className="section">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([productSchema, breadcrumbSchema]) }} />
+      <nav aria-label="Breadcrumb" className="product-breadcrumb">
+        <Link href="/">Home</Link>
+        <span aria-hidden="true">/</span>
+        <Link href={categoryUrl}>{categoryName}</Link>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">{product.name}</span>
+      </nav>
       <div className="inquiry" style={{ background: 'none', color: '#151515', padding: '0', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px' }}>
         <div className="inquiry-copy">
-          <Link href="/collections" style={{ color: '#e11d2e', marginBottom: '20px', display: 'block' }}>← Back to Collections</Link>
+          <Link href={categoryUrl} style={{ color: '#e11d2e', marginBottom: '20px', display: 'block' }}>← Back to {categoryName}</Link>
           <div className="product-detail-gallery">
             {galleryImages.map((image, index) => (
               <img
@@ -61,6 +162,16 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
           </div>
         </div>
       </div>
+      {relatedProducts.length > 0 && (
+        <section className="product-related" aria-labelledby="related-products-title">
+          <h2 id="related-products-title">More {categoryName}</h2>
+          <div>
+            {relatedProducts.map((item) => (
+              <Link href={`/products/${item.id}`} key={item.id}>{item.name}</Link>
+            ))}
+          </div>
+        </section>
+      )}
     </div>
   );
 }

@@ -5,7 +5,7 @@ import { resolveImage } from '../../lib/image-resolver';
 const SITE_URL = 'https://www.tontongear.com';
 
 export const metadata: Metadata = {
-  title: 'Service & Support | Custom Fightwear Development',
+  title: { absolute: 'Service & Support | Custom Fightwear Development | TONTON' },
   description: 'Explore TONTON custom fightwear services—from product planning, artwork and sampling to production, quality control, packing, and delivery support.',
   alternates: { canonical: `${SITE_URL}/service-support` },
   openGraph: {
@@ -178,6 +178,15 @@ const serviceSchema = {
   areaServed: 'Worldwide',
 };
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Service & Support', item: `${SITE_URL}/service-support` },
+  ],
+};
+
 function ArrowIcon() {
   return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>;
 }
@@ -185,7 +194,7 @@ function ArrowIcon() {
 export default function ServiceSupportPage() {
   return (
     <div className="service-page">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([serviceSchema, breadcrumbSchema]) }} />
 
       <section className="service-hero">
         <Image
