@@ -180,7 +180,7 @@ export default function FactoryPage() {
         <div className="factory-v2-hero-shade" />
         <div className="factory-v2-hero-content">
           <p className="factory-v2-kicker factory-v2-kicker-light">INSIDE TONTON</p>
-          <h1>TONTON CUSTOM<br />SPORTSWEAR FACTORY</h1>
+          <h1>TONTON CUSTOM SPORTSWEAR FACTORY</h1>
           <p className="factory-v2-hero-lead">Real people. Real equipment. A connected production route for custom fightwear, teamwear, and performance apparel.</p>
           <div className="factory-v2-hero-actions">
             <a className="factory-v2-button factory-v2-button-red" href="#factory-v2-process">Explore our process <ArrowIcon /></a>
@@ -198,7 +198,7 @@ export default function FactoryPage() {
       <section className="factory-v2-intro">
         <div className="factory-v2-intro-copy">
           <p className="factory-v2-kicker">MANUFACTURING PARTNER</p>
-          <h2>MORE THAN A SUPPLIER.<br />A TEAM BEHIND YOUR PRODUCT.</h2>
+          <h2>MORE THAN A SUPPLIER. A TEAM BEHIND YOUR PRODUCT.</h2>
           <p className="factory-v2-intro-lead">Founded in 2004, TONTON combines sportswear development experience with an organized, technology-supported production environment. We work with brands, gyms, clubs, teams, and retailers to turn a product brief into a production-ready custom program.</p>
           <div className="factory-v2-intro-points">
             <div><span>01</span><p><strong>Product development</strong>Support from artwork and material direction through sample review.</p></div>
@@ -235,7 +235,7 @@ export default function FactoryPage() {
         <div className="factory-v2-section-heading factory-v2-section-heading-light">
           <div>
             <p className="factory-v2-kicker factory-v2-kicker-light">INTELLIGENT HANGING WORKSHOP</p>
-            <h2>A PRODUCTION FLOW<br />YOU CAN SEE.</h2>
+            <h2>A PRODUCTION FLOW YOU CAN SEE.</h2>
           </div>
           <p>Garments move between organized stations while the production dashboard makes workflow progress more visible to the workshop team.</p>
         </div>
@@ -271,7 +271,7 @@ export default function FactoryPage() {
         <div className="factory-v2-section-heading">
           <div>
             <p className="factory-v2-kicker">CRAFT & CAPABILITY</p>
-            <h2>FROM ARTWORK<br />TO FINISHED GARMENT.</h2>
+            <h2>FROM ARTWORK TO FINISHED GARMENT.</h2>
           </div>
           <p>A curated view of the capabilities a buyer needs to verify—with fewer words, stronger real imagery, and no decorative claims.</p>
         </div>
@@ -315,7 +315,7 @@ export default function FactoryPage() {
       <section className="factory-v2-process" id="factory-v2-process">
         <div className="factory-v2-process-heading">
           <p className="factory-v2-kicker">OEM / ODM WORKFLOW</p>
-          <h2>ONE CLEAR ROUTE.<br />SIX CONTROL POINTS.</h2>
+          <h2>ONE CLEAR ROUTE. SIX CONTROL POINTS.</h2>
           <p>Each step answers a question buyers ask before trusting a custom manufacturer: what happens next, what needs approval, and where quality is checked.</p>
         </div>
         <div className="factory-v2-process-list">
@@ -332,7 +332,7 @@ export default function FactoryPage() {
       <section className="factory-v2-quality">
         <div className="factory-v2-quality-copy">
           <p className="factory-v2-kicker factory-v2-kicker-light">QUALITY CONTROL & PACKING</p>
-          <h2>THE ORDER IS NOT FINISHED<br />WHEN SEWING STOPS.</h2>
+          <h2>THE ORDER IS NOT FINISHED WHEN SEWING STOPS.</h2>
           <p>Final review connects the approved project details with the finished garments. Workmanship, customization, quantity, and packing requirements are checked before shipment preparation.</p>
           <ul>
             <li>Specification and customization review</li>
@@ -351,7 +351,7 @@ export default function FactoryPage() {
         <div className="factory-v2-section-heading">
           <div>
             <p className="factory-v2-kicker">DOCUMENTED TRUST</p>
-            <h2>CLEAR DOCUMENTS.<br />CLEAR SCOPE.</h2>
+            <h2>CLEAR DOCUMENTS. CLEAR SCOPE.</h2>
           </div>
           <p>Every displayed document is identified by entity and scope. Buyers can open the source document instead of relying on decorative certificate badges.</p>
         </div>
@@ -361,7 +361,7 @@ export default function FactoryPage() {
       <section className="factory-v2-faq">
         <div className="factory-v2-faq-heading">
           <p className="factory-v2-kicker">FACTORY FAQ</p>
-          <h2>BEFORE YOU START<br />A CUSTOM PROJECT.</h2>
+          <h2>BEFORE YOU START A CUSTOM PROJECT.</h2>
         </div>
         <div className="factory-v2-faq-list">
           {faqs.map((faq, index) => (
@@ -378,7 +378,7 @@ export default function FactoryPage() {
         <div className="factory-v2-cta-shade" />
         <div className="factory-v2-cta-content">
           <p className="factory-v2-kicker factory-v2-kicker-light">YOUR NEXT CUSTOM PROGRAM</p>
-          <h2>BRING US THE IDEA.<br />LET’S BUILD THE PRODUCT.</h2>
+          <h2>BRING US THE IDEA. LET’S BUILD THE PRODUCT.</h2>
           <p>Tell us what you want to make, who it is for, and what matters most to your brand.</p>
           <a className="factory-v2-button factory-v2-button-red" href="/#inquiry">Request a project review <ArrowIcon /></a>
         </div>
