@@ -143,7 +143,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
             </div>
           </div>
           <figure className="customization-hero-media">
-            <Image src={resolveImage(content.heroImage)} alt={content.heroAlt} fill priority sizes="(max-width: 900px) 100vw, 52vw" />
+            <Image src={resolveImage(content.heroImage)} alt={content.heroAlt} fill priority unoptimized={isRashGuardPage} sizes="(max-width: 900px) 100vw, 52vw" />
           </figure>
         </div>
         <div className="customization-shell customization-facts" aria-label="Project benefits">
@@ -177,7 +177,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
       <section className="customization-options">
         <div className="customization-shell customization-options-grid">
           <figure className="customization-options-media">
-            <Image src={resolveImage(content.optionsImage)} alt={content.optionsAlt} fill sizes="(max-width: 900px) 100vw, 50vw" />
+            <Image src={resolveImage(content.optionsImage)} alt={content.optionsAlt} fill unoptimized={isRashGuardPage} sizes="(max-width: 900px) 100vw, 50vw" />
           </figure>
           <div className="customization-options-copy">
             <p className="customization-kicker customization-kicker-light">CUSTOMIZATION OPTIONS</p>
@@ -208,7 +208,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
                   <div className="customization-sku-gallery">
                     {group.images.map((image, index) => (
                       <figure className={index === 0 ? 'customization-sku-image customization-sku-image-featured' : 'customization-sku-image'} key={image.src}>
-                        <Image src={resolveImage(image.src)} alt={image.alt} fill sizes={index === 0 ? '(max-width: 660px) 100vw, (max-width: 1000px) 50vw, 33vw' : '(max-width: 660px) 33vw, 12vw'} />
+                        <Image src={resolveImage(image.src)} alt={image.alt} fill unoptimized sizes={index === 0 ? '(max-width: 660px) 100vw, (max-width: 1000px) 50vw, 33vw' : '(max-width: 660px) 33vw, 12vw'} />
                       </figure>
                     ))}
                   </div>
@@ -253,7 +253,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
             <div className="customization-detail-grid">
               {content.productDetails.map((detail, index) => (
                 <article className="customization-detail-card" key={detail.title}>
-                  <figure><Image src={resolveImage(detail.image)} alt={detail.alt} fill sizes="(max-width: 660px) 100vw, (max-width: 1000px) 50vw, 25vw" /></figure>
+                  <figure><Image src={resolveImage(detail.image)} alt={detail.alt} fill unoptimized sizes="(max-width: 660px) 100vw, (max-width: 1000px) 50vw, 25vw" /></figure>
                   <div><span>0{index + 1}</span><h3>{detail.title}</h3><p>{detail.text}</p></div>
                 </article>
               ))}
