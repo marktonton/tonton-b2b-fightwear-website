@@ -12,7 +12,7 @@ type Product = {
   features?: string[];
 };
 
-const FAQ_ITEMS = [
+const STANDARD_FAQ_ITEMS = [
   {
     question: 'What fabric is used for this custom Rash Guard?',
     answer: 'This Rash Guard uses 220gsm ultra-fine Lycra made from 85% polyester and 15% spandex. The fabric has a soft hand feel, high elasticity and opaque coverage.',
@@ -43,7 +43,17 @@ const FAQ_ITEMS = [
   },
 ];
 
-const DETAIL_CONTENT = [
+const SAMURAI_FAQ_ITEMS = [
+  { question: 'What fabric is used for the Samurai Rash Guard?', answer: 'It uses 220gsm ultra-fine Lycra with a soft hand feel, excellent elasticity and fully opaque coverage.' },
+  { question: 'Is the 220gsm fabric see-through when stretched?', answer: 'No. The fabric is selected for fully opaque coverage, and opacity, stretch recovery and fit are checked again on the approved sample before bulk production.' },
+  { question: 'Is this Rash Guard designed for BJJ and MMA?', answer: 'Yes. The close fit, long raglan sleeves and high-stretch fabric are suited to BJJ, MMA, grappling and other high-movement training.' },
+  { question: 'Can I customize the sleeve graphics and logos?', answer: 'Yes. Sleeve artwork, chest branding, back-neck logos, colors and panel graphics can be reviewed in a digital mockup before sampling.' },
+  { question: 'Can the artwork be produced without a heavy print layer?', answer: 'Yes. Sublimation integrates compatible artwork into the fabric surface, supporting detailed graphics without a thick raised print layer.' },
+  { question: 'Can I review a sample before bulk production?', answer: 'Yes. The sample is used to review fit, opacity, stretch, construction, color and artwork placement before bulk production begins.' },
+  { question: 'What should I send for a custom quote?', answer: 'Send the required quantity, size range, logo or artwork files, preferred colors and any labeling or packaging requirements.' },
+];
+
+const STANDARD_DETAIL_CONTENT = [
   {
     title: 'Silicone anti-slip elastic band',
     copy: 'Silicone grip lines inside the lower hem help reduce ride-up during grappling and repeated movement.',
@@ -61,10 +71,27 @@ const DETAIL_CONTENT = [
   },
 ];
 
+const SAMURAI_DETAIL_CONTENT = [
+  { title: 'Sculpted side-panel fit', copy: 'The close-fit body and side panel follow the torso while the fabric retains a smooth, supportive profile.', alt: 'Side panel and close-fit construction of a black and gold Samurai Rash Guard' },
+  { title: 'Coordinated waist construction', copy: 'The matching black-and-gold set shows a secure elastic waist and a consistent collection-level graphic direction.', alt: 'Elastic waist construction on a coordinated black and gold grappling set' },
+  { title: 'Overhead mobility', copy: 'Long raglan sleeves and high elasticity support reaching, framing and rotational movement during training.', alt: 'Athlete demonstrating overhead mobility in a long-sleeve Samurai Rash Guard' },
+  { title: 'All-over sleeve artwork', copy: 'Detailed gold graphics run across the printable sleeve panels without adding a heavy surface layer.', alt: 'Gold sublimated artwork detail on a black Rash Guard sleeve' },
+  { title: 'Bound neckline & chest logo', copy: 'A clean round neckline and centered chest mark create a controlled, production-ready branding layout.', alt: 'Round neckline and TONTON chest logo on a Samurai Rash Guard' },
+  { title: 'Rear panel alignment', copy: 'The solid back body and printed sleeves show how panel direction can balance brand impact and visual clarity.', alt: 'Back view of a black and gold long-sleeve Samurai Rash Guard' },
+  { title: 'Shoulder fit under movement', copy: 'The raglan seam direction follows the shoulder to help the garment move naturally with the athlete.', alt: 'Shoulder and sleeve fit on a black and gold BJJ Rash Guard' },
+  { title: 'Back-neck branding', copy: 'A focused back-neck logo provides a clear secondary brand position without crowding the main artwork.', alt: 'Back-neck logo detail on a custom long-sleeve Rash Guard' },
+];
+
 export default function RashGuardLanding({ product }: { product: Product }) {
   const content = RASH_GUARD_LANDING_CONTENT[product.id as RashGuardProductId];
   const gallery = product.images ?? [product.image];
-  const detailImages = gallery.slice(1, 4);
+  const isSamurai = product.id === 'samurai-graphic-rash-guard';
+  const detailImages = isSamurai ? gallery.slice(1) : gallery.slice(1, 4);
+  const detailContent = isSamurai ? SAMURAI_DETAIL_CONTENT : STANDARD_DETAIL_CONTENT;
+  const faqItems = isSamurai ? SAMURAI_FAQ_ITEMS : STANDARD_FAQ_ITEMS;
+  const materialCopy = isSamurai
+    ? 'This long-sleeve Rash Guard uses 220gsm ultra-fine Lycra with a soft hand feel, excellent elasticity and fully opaque coverage. The close-fit fabric supports BJJ, MMA and grappling movement while keeping the black-and-gold artwork crisp.'
+    : 'The 220gsm ultra-fine Lycra uses an 85% polyester and 15% spandex composition. It combines a smooth, soft touch with high elasticity and opaque coverage for BJJ, MMA and grappling use.';
 
   return (
     <div className="rg-product-page">
@@ -83,15 +110,10 @@ export default function RashGuardLanding({ product }: { product: Product }) {
           <h1>{content.headline}</h1>
           <p className="rg-lead">{content.intro}</p>
           <div className="rg-spec-strip" aria-label="Core product specifications">
-            <div><strong>220gsm</strong><span>Ultra-Fine Lycra</span></div>
-            <div><strong>85 / 15</strong><span>Polyester / Spandex</span></div>
-            <div><strong>Opaque</strong><span>High-Stretch Coverage</span></div>
+            {content.specs.map((spec) => <div key={spec.label}><strong>{spec.value}</strong><span>{spec.label}</span></div>)}
           </div>
           <ul className="rg-hero-features">
-            <li>Soft hand feel with excellent elasticity</li>
-            <li>Silicone anti-slip elastic band at the lower hem</li>
-            <li>Full-sublimation artwork and custom logo support</li>
-            <li>OEM / ODM development for brands, gyms and teams</li>
+            {content.features.map((feature) => <li key={feature}>{feature}</li>)}
           </ul>
           <div className="rg-hero-actions">
             <a className="rg-btn-primary" href={`https://wa.me/8617722438678?text=${encodeURIComponent(`I am interested in the ${product.name}.`)}`} target="_blank" rel="noopener noreferrer">Get Custom Pricing</a>
@@ -106,7 +128,7 @@ export default function RashGuardLanding({ product }: { product: Product }) {
           <h2>Built for close-fit movement without transparent stretch</h2>
         </div>
         <div className="rg-fit-copy">
-          <p>The 220gsm ultra-fine Lycra uses an 85% polyester and 15% spandex composition. It combines a smooth, soft touch with high elasticity and opaque coverage for BJJ, MMA and grappling use.</p>
+          <p>{materialCopy}</p>
           <dl>
             <div><dt>Recommended for</dt><dd>{content.audience}</dd></div>
             <div><dt>Customization direction</dt><dd>{content.designDirection}</dd></div>
@@ -119,13 +141,13 @@ export default function RashGuardLanding({ product }: { product: Product }) {
         <div className="rg-section-heading">
           <p className="rg-eyebrow">Real Product Details</p>
           <h2 id="rg-details-title">Fabric and construction you can inspect</h2>
-          <p>These close-up photos show the actual material composition, interior grip and stretch-garment construction.</p>
+          <p>{isSamurai ? 'These real product photos show the fit, panel construction, branding positions, artwork continuity and movement performance from multiple angles.' : 'These close-up photos show the actual material composition, interior grip and stretch-garment construction.'}</p>
         </div>
-        <div className="rg-detail-grid">
+        <div className={`rg-detail-grid${isSamurai ? ' is-extended' : ''}`}>
           {detailImages.map((image, index) => (
             <article key={image}>
-              <div className="rg-detail-image"><img src={resolveImage(image)} alt={DETAIL_CONTENT[index].alt} loading="lazy" /></div>
-              <div className="rg-detail-copy"><span>0{index + 1}</span><h3>{DETAIL_CONTENT[index].title}</h3><p>{DETAIL_CONTENT[index].copy}</p></div>
+              <div className="rg-detail-image"><img src={resolveImage(image)} alt={detailContent[index].alt} loading="lazy" /></div>
+              <div className="rg-detail-copy"><span>{String(index + 1).padStart(2, '0')}</span><h3>{detailContent[index].title}</h3><p>{detailContent[index].copy}</p></div>
             </article>
           ))}
         </div>
@@ -161,7 +183,7 @@ export default function RashGuardLanding({ product }: { product: Product }) {
       <section className="rg-faq-section">
         <div className="rg-faq-heading"><p className="rg-eyebrow">Buyer FAQ</p><h2>Custom Rash Guard questions</h2><p>Direct answers for brands, academies, gyms and teams preparing a custom order.</p></div>
         <div className="rg-faq-list">
-          {FAQ_ITEMS.map((item, index) => (
+          {faqItems.map((item, index) => (
             <details key={item.question} open={index === 0}>
               <summary><span>0{index + 1}</span>{item.question}</summary>
               <p>{item.answer}</p>

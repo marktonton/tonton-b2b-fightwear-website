@@ -60,9 +60,20 @@
       "id": "samurai-graphic-rash-guard",
       "categoryId": "sublimated-rash-guards",
       "name": "Samurai Elite Graphic Rash Guard",
-      "image": "assets/products/rashguard-long-samurai-v2.png",
-      "description": "Elite series with high-impact artwork.",
-      "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
+      "image": "assets/products/rash-guard-products/samurai-220gsm/samurai-rash-guard-main-white-v3.webp",
+      "images": [
+        "assets/products/rash-guard-products/samurai-220gsm/samurai-rash-guard-main-white-v3.webp",
+        "assets/products/rash-guard-products/samurai-220gsm/samurai-rash-guard-side-panel-v1.webp",
+        "assets/products/rash-guard-products/samurai-220gsm/samurai-rash-guard-hem-grip-v1.webp",
+        "assets/products/rash-guard-products/samurai-220gsm/samurai-rash-guard-mobility-v1.webp",
+        "assets/products/rash-guard-products/samurai-220gsm/samurai-rash-guard-sleeve-artwork-v1.webp",
+        "assets/products/rash-guard-products/samurai-220gsm/samurai-rash-guard-neckline-logo-v1.webp",
+        "assets/products/rash-guard-products/samurai-220gsm/samurai-rash-guard-back-view-v1.webp",
+        "assets/products/rash-guard-products/samurai-220gsm/samurai-rash-guard-shoulder-fit-v1.webp",
+        "assets/products/rash-guard-products/samurai-220gsm/samurai-rash-guard-back-neck-logo-v1.webp"
+      ],
+      "description": "220gsm ultra-fine Lycra long-sleeve Rash Guard with soft hand feel, excellent elasticity and fully opaque coverage.",
+      "features": ["220gsm Ultra-Fine Lycra", "Soft Hand Feel", "Excellent Elasticity", "Fully Opaque"]
     },
     {
       "id": "fuji-art-rash-guard",
