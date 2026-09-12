@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { resolveImage } from '../../../lib/image-resolver';
+import RashGuardLanding from './RashGuardLanding';
+import { isRashGuardLandingProduct, RASH_GUARD_LANDING_CONTENT } from '../../../lib/rash-guard-products';
 
 const SITE_URL = 'https://www.tontongear.com';
 const products = productsData.products;
@@ -16,6 +18,11 @@ function getProduct(id: string) {
 
 function getCategoryName(categoryId: string) {
   return productsData.categories.find((category) => category.id === categoryId)?.name ?? 'Custom Sportswear';
+}
+
+function getAbsoluteImage(path: string) {
+  const resolved = resolveImage(path);
+  return resolved.startsWith('/') ? `${SITE_URL}${resolved}` : resolved;
 }
 
 function getProductTitle(product: (typeof products)[number]) {
@@ -45,8 +52,11 @@ export function generateMetadata({ params }: PageProps): Metadata {
   }
 
   const url = `${SITE_URL}/products/${product.id}`;
-  const title = getProductTitle(product);
-  const description = getProductDescription(product);
+  const landingContent = isRashGuardLandingProduct(product.id)
+    ? RASH_GUARD_LANDING_CONTENT[product.id]
+    : null;
+  const title = landingContent?.seoTitle ?? getProductTitle(product);
+  const description = landingContent?.seoDescription ?? getProductDescription(product);
   const image = resolveImage(product.image);
 
   return {
@@ -77,6 +87,52 @@ export default function ProductDetailPage({ params }: PageProps) {
     notFound();
   }
 
+  if (isRashGuardLandingProduct(product.id)) {
+    const galleryImages = 'images' in product ? product.images : [product.image];
+    const content = RASH_GUARD_LANDING_CONTENT[product.id];
+    const productUrl = `${SITE_URL}/products/${product.id}`;
+    const productSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      name: product.name,
+      description: content.seoDescription,
+      image: galleryImages.map(getAbsoluteImage),
+      sku: product.id,
+      category: 'Custom Rash Guard',
+      material: '220gsm ultra-fine Lycra; 85% polyester, 15% spandex',
+      color: product.id === 'blue-team-rash-guard' ? 'Blue' : 'White',
+      url: productUrl,
+      brand: { '@type': 'Brand', name: 'TONTON' },
+      manufacturer: { '@type': 'Organization', name: 'TONTON Sportswear', url: SITE_URL },
+    };
+    const breadcrumbSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+        { '@type': 'ListItem', position: 2, name: 'Custom Rash Guards', item: `${SITE_URL}/customization/sublimated-rash-guards` },
+        { '@type': 'ListItem', position: 3, name: product.name, item: productUrl },
+      ],
+    };
+    const faqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        ['What fabric is used for this custom Rash Guard?', 'This Rash Guard uses 220gsm ultra-fine Lycra made from 85% polyester and 15% spandex. The fabric has a soft hand feel, high elasticity and opaque coverage.'],
+        ['Is the fabric see-through when stretched?', 'The 220gsm fabric is selected for opaque coverage. Fit, stretch recovery and opacity are checked again on the approved sample before bulk production.'],
+        ['What does the silicone anti-slip elastic band do?', 'The silicone anti-slip elastic band inside the lower hem helps the Rash Guard stay in position during grappling, drilling and high-movement training.'],
+        ['Can I customize the colors and logos?', 'Yes. Colors, logos, sponsor marks, names and panel artwork can be reviewed in the digital mockup before sampling.'],
+      ].map(([name, text]) => ({ '@type': 'Question', name, acceptedAnswer: { '@type': 'Answer', text } })),
+    };
+
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([productSchema, breadcrumbSchema, faqSchema]) }} />
+        <RashGuardLanding product={product} />
+      </>
+    );
+  }
+
   const galleryImages = 'images' in product ? product.images : [product.image];
   const categoryName = getCategoryName(product.categoryId);
   const categoryUrl = `/customization/${product.categoryId}`;
@@ -89,7 +145,7 @@ export default function ProductDetailPage({ params }: PageProps) {
     '@type': 'Product',
     name: product.name,
     description: getProductDescription(product),
-    image: galleryImages.map((image) => resolveImage(image)),
+    image: galleryImages.map(getAbsoluteImage),
     sku: product.id,
     category: categoryName,
     url: productUrl,

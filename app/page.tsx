@@ -265,7 +265,7 @@ export default function HomePage() {
         <div className="top-picks-grid">
           {topPicks.map((product) => (
             <article className="top-pick-card" key={product.id}>
-              <a className="top-pick-image" href={`/products/${product.id}`} aria-label={`View ${product.name}`}>
+              <a className={`top-pick-image ${product.id === 'blue-team-rash-guard' || product.id === 'white-logo-rash-guard' ? 'is-clean-product' : ''}`} href={`/products/${product.id}`} aria-label={`View ${product.name}`}>
                 <img src={resolveImage(product.image)} alt={product.name} loading="lazy" />
               </a>
               <div className="top-pick-content">
