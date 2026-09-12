@@ -99,8 +99,8 @@ export default function ProductDetailPage({ params }: PageProps) {
       image: galleryImages.map(getAbsoluteImage),
       sku: product.id,
       category: 'Custom Rash Guard',
-      material: '220gsm ultra-fine Lycra; 85% polyester, 15% spandex',
-      color: product.id === 'blue-team-rash-guard' ? 'Blue' : 'White',
+      material: content.material,
+      color: content.color,
       url: productUrl,
       brand: { '@type': 'Brand', name: 'TONTON' },
       manufacturer: { '@type': 'Organization', name: 'TONTON Sportswear', url: SITE_URL },
@@ -118,9 +118,9 @@ export default function ProductDetailPage({ params }: PageProps) {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
       mainEntity: [
-        ['What fabric is used for this custom Rash Guard?', 'This Rash Guard uses 220gsm ultra-fine Lycra made from 85% polyester and 15% spandex. The fabric has a soft hand feel, high elasticity and opaque coverage.'],
+        ['What fabric is used for this custom Rash Guard?', product.id === 'samurai-graphic-rash-guard' ? 'This Rash Guard uses 220gsm ultra-fine Lycra with a soft hand feel, excellent elasticity and fully opaque coverage.' : 'This Rash Guard uses 220gsm ultra-fine Lycra made from 85% polyester and 15% spandex. The fabric has a soft hand feel, high elasticity and opaque coverage.'],
         ['Is the fabric see-through when stretched?', 'The 220gsm fabric is selected for opaque coverage. Fit, stretch recovery and opacity are checked again on the approved sample before bulk production.'],
-        ['What does the silicone anti-slip elastic band do?', 'The silicone anti-slip elastic band inside the lower hem helps the Rash Guard stay in position during grappling, drilling and high-movement training.'],
+        ['Can the artwork and logo positions be customized?', 'Yes. Sleeve graphics, chest branding, back-neck logos, colors and panel artwork can be reviewed in the digital mockup before sampling.'],
         ['Can I customize the colors and logos?', 'Yes. Colors, logos, sponsor marks, names and panel artwork can be reviewed in the digital mockup before sampling.'],
       ].map(([name, text]) => ({ '@type': 'Question', name, acceptedAnswer: { '@type': 'Answer', text } })),
     };
