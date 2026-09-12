@@ -19,6 +19,11 @@ export function resolveImage(path: string): string {
   if (/^https?:\/\//i.test(path)) return path;
 
   const cleanPath = path.replace(/^\/+/, '');
+  // Versioned launch assets ship atomically with the website so a new page
+  // cannot reference an R2 object that has not been uploaded yet.
+  if (cleanPath.startsWith('assets/products/rash-guard-products/')) {
+    return withVersion(`/${cleanPath}`);
+  }
   const resolved = ASSET_BASE_URL
     ? `${ASSET_BASE_URL}/${cleanPath}`
     : `/${cleanPath}`;

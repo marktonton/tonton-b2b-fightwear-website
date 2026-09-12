@@ -31,18 +31,30 @@
     {
       "id": "blue-team-rash-guard",
       "categoryId": "sublimated-rash-guards",
-      "name": "Elite Performance Team Rash Guard",
-      "image": "assets/products/rashguard-blue-main.png",
-      "description": "Best for team color customization.",
-      "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
+      "name": "Blue Elite Team Rash Guard",
+      "image": "assets/products/rash-guard-products/blue-team-rash-guard-main-v2.webp",
+      "images": [
+        "assets/products/rash-guard-products/blue-team-rash-guard-main-v2.webp",
+        "assets/products/rash-guard-products/silicone-anti-slip-band-detail-v1.webp",
+        "assets/products/rash-guard-products/sublimation-seam-fabric-detail-v1.webp",
+        "assets/products/rash-guard-products/85-polyester-15-spandex-label-detail-v1.webp"
+      ],
+      "description": "220gsm ultra-fine Lycra team Rash Guard with soft hand feel, high elasticity and opaque coverage.",
+      "features": ["220gsm Ultra-Fine Lycra", "85% Polyester / 15% Spandex", "Silicone Anti-Slip Elastic Band", "10 PCS MOQ"]
     },
     {
       "id": "white-logo-rash-guard",
       "categoryId": "sublimated-rash-guards",
-      "name": "Pro-Series Club Logo Rash Guard",
-      "image": "assets/products/rashguard-white-main.png",
-      "description": "Clean white base for club logos.",
-      "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
+      "name": "White Pro Club Logo Rash Guard",
+      "image": "assets/products/rash-guard-products/white-club-rash-guard-main-v2.webp",
+      "images": [
+        "assets/products/rash-guard-products/white-club-rash-guard-main-v2.webp",
+        "assets/products/rash-guard-products/silicone-anti-slip-band-detail-v1.webp",
+        "assets/products/rash-guard-products/sublimation-seam-fabric-detail-v1.webp",
+        "assets/products/rash-guard-products/85-polyester-15-spandex-label-detail-v1.webp"
+      ],
+      "description": "Clean white 220gsm Rash Guard base developed for club logos, private labels and coordinated team orders.",
+      "features": ["220gsm Ultra-Fine Lycra", "85% Polyester / 15% Spandex", "Silicone Anti-Slip Elastic Band", "10 PCS MOQ"]
     },
     {
       "id": "samurai-graphic-rash-guard",

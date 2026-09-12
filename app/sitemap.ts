@@ -4,6 +4,7 @@ import { customizationCategories } from '../lib/customization-pages';
 
 const SITE_URL = 'https://www.tontongear.com';
 const SEO_RELEASE_DATE = new Date('2026-09-11T00:00:00.000Z');
+const PRODUCT_RELEASE_DATE = new Date('2026-09-12T00:00:00.000Z');
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
@@ -22,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const productRoutes = productsData.products.map((product) => ({
     url: `${SITE_URL}/products/${product.id}`,
-    lastModified: SEO_RELEASE_DATE,
+    lastModified: PRODUCT_RELEASE_DATE,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));
