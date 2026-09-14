@@ -21,7 +21,10 @@ export function resolveImage(path: string): string {
   const cleanPath = path.replace(/^\/+/, '');
   // Versioned launch assets ship atomically with the website so a new page
   // cannot reference an R2 object that has not been uploaded yet.
-  if (cleanPath.startsWith('assets/products/rash-guard-products/')) {
+  if (
+    cleanPath.startsWith('assets/products/rash-guard-products/') ||
+    cleanPath.startsWith('assets/products/grappling-shorts-products/')
+  ) {
     return withVersion(`/${cleanPath}`);
   }
   const resolved = ASSET_BASE_URL

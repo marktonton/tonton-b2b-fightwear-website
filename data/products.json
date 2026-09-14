@@ -92,12 +92,20 @@
       "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
     },
     {
-      "id": "black-competition-shorts",
-      "categoryId": "sublimated-training-shorts",
-      "name": "Pro-Series Sublimated Fight Shorts",
-      "image": "assets/products/shorts-black-v2.png",
-      "description": "Lightweight fabric for pro competition.",
-      "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
+      "id": "high-split-grappling-shorts",
+      "categoryId": "sublimated-bjj-mma-shorts",
+      "name": "High-Split 2-in-1 Grappling Shorts",
+      "image": "assets/products/grappling-shorts-products/high-split-2-in-1/high-split-grappling-shorts-main-v1.webp",
+      "images": [
+        "assets/products/grappling-shorts-products/high-split-2-in-1/high-split-grappling-shorts-main-v1.webp",
+        "assets/products/grappling-shorts-products/high-split-2-in-1/two-in-one-construction-v1.webp",
+        "assets/products/grappling-shorts-products/high-split-2-in-1/high-kick-mobility-v1.webp",
+        "assets/products/grappling-shorts-products/high-split-2-in-1/custom-printed-inner-layer-v1.webp",
+        "assets/products/grappling-shorts-products/high-split-2-in-1/grappling-training-action-v1.webp",
+        "assets/products/grappling-shorts-products/high-split-2-in-1/deep-side-split-detail-v1.webp"
+      ],
+      "description": "High-split 2-in-1 grappling shorts with a four-way stretch shell, 250gsm milk-silk liner and customizable inner graphics.",
+      "features": ["High Split Cut", "Four-Way Stretch Outer Shell", "250gsm Milk-Silk Inner Layer", "Custom Inner-Layer Artwork"]
     },
     {
       "id": "custom-logo-shorts",
