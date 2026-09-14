@@ -113,6 +113,11 @@ export default function ProductDetailPage({ params }: PageProps) {
         { '@type': 'PropertyValue', name: 'Cut', value: 'High Split Cut' },
         { '@type': 'PropertyValue', name: 'Construction', value: '2-in-1 grappling shorts' },
         { '@type': 'PropertyValue', name: 'Inner layer weight', value: '250gsm' },
+        { '@type': 'PropertyValue', name: 'Outer layer performance', value: 'Breathable quick-dry four-way stretch' },
+        { '@type': 'PropertyValue', name: 'Waistband', value: 'Adjustable drawstring with anti-slip silicone grip strip' },
+        { '@type': 'PropertyValue', name: 'Stitching', value: 'Reinforced stitching' },
+        { '@type': 'PropertyValue', name: 'Label', value: 'Tagless printed label' },
+        { '@type': 'PropertyValue', name: 'Recommended use', value: 'MMA, wrestling, grappling, boxing and functional training' },
         { '@type': 'PropertyValue', name: 'Customization', value: 'Custom printed inner-layer patterns and branding' },
       ],
     };
