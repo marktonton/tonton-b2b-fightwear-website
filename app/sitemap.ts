@@ -1,32 +1,42 @@
 import type { MetadataRoute } from 'next';
 import productsData from '../data/products.json';
 import { customizationCategories } from '../lib/customization-pages';
+import { getRouteModifiedDate } from '../lib/content-dates';
+import { RESOURCE_PAGES } from '../lib/resource-content';
 
 const SITE_URL = 'https://www.tontongear.com';
-const SEO_RELEASE_DATE = new Date('2026-09-11T00:00:00.000Z');
-const PRODUCT_RELEASE_DATE = new Date('2026-09-12T00:00:00.000Z');
+const modified = (pathname: string) => new Date(`${getRouteModifiedDate(pathname)}T00:00:00.000Z`);
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
-    { url: SITE_URL, lastModified: SEO_RELEASE_DATE, changeFrequency: 'weekly', priority: 1 },
-    { url: `${SITE_URL}/collections`, lastModified: SEO_RELEASE_DATE, changeFrequency: 'weekly', priority: 0.9 },
-    { url: `${SITE_URL}/service-support`, lastModified: SEO_RELEASE_DATE, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${SITE_URL}/factory`, lastModified: SEO_RELEASE_DATE, changeFrequency: 'monthly', priority: 0.8 },
+    { url: SITE_URL, lastModified: modified('/'), changeFrequency: 'weekly', priority: 1 },
+    { url: `${SITE_URL}/collections`, lastModified: modified('/collections'), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${SITE_URL}/service-support`, lastModified: modified('/service-support'), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${SITE_URL}/factory`, lastModified: modified('/factory'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${SITE_URL}/resources`, lastModified: modified('/resources'), changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${SITE_URL}/project-builder`, lastModified: modified('/project-builder'), changeFrequency: 'monthly', priority: 0.8 },
   ];
 
   const customizationRoutes = customizationCategories.map((category) => ({
     url: `${SITE_URL}/customization/${category.id}`,
-    lastModified: SEO_RELEASE_DATE,
+    lastModified: modified(`/customization/${category.id}`),
     changeFrequency: 'monthly' as const,
     priority: 0.8,
   }));
 
   const productRoutes = productsData.products.map((product) => ({
     url: `${SITE_URL}/products/${product.id}`,
-    lastModified: PRODUCT_RELEASE_DATE,
+    lastModified: modified(`/products/${product.id}`),
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...customizationRoutes, ...productRoutes];
+  const resourceRoutes = RESOURCE_PAGES.map((resource) => ({
+    url: `${SITE_URL}/resources/${resource.slug}`,
+    lastModified: new Date(`${resource.updated}T00:00:00.000Z`),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
+
+  return [...staticRoutes, ...customizationRoutes, ...productRoutes, ...resourceRoutes];
 }

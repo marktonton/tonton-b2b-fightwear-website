@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { resolveImage } from '../../../lib/image-resolver';
 import { HIGH_SPLIT_GRAPPLING_SHORTS_CONTENT, HIGH_SPLIT_GRAPPLING_SHORTS_FAQS } from '../../../lib/grappling-shorts-product';
+import ProductSpecificationTable from '../../../components/ProductSpecificationTable';
+import RelatedResources from '../../../components/RelatedResources';
 
 type Product = { id: string; name: string; image: string; images?: string[]; description: string; features?: string[] };
 
@@ -72,6 +74,15 @@ export default function GrapplingShortsLanding({ product }: { product: Product }
         </div>
       </section>
 
+      <ProductSpecificationTable title="Fight-short construction at a glance" intro="These verified specifications match the real sample imagery and the structured product data on this page." rows={[
+        ['Silhouette', 'Athletic 2-in-1 construction'],
+        ['Outer layer', 'Breathable, quick-dry four-way stretch fabric'],
+        ['Inner liner', 'Soft, supportive 250gsm milk-silk compression layer'],
+        ['Side cut', 'Ultra-high gladiator split'],
+        ['Waistband', 'Adjustable drawstring with anti-slip silicone grip strip'],
+        ['Finishing', 'Reinforced stitching and tagless printed label'],
+      ]} />
+
       <section className="gs-benefits-section" aria-labelledby="gs-benefits-title">
         <div className="rg-section-heading"><p className="rg-eyebrow">Combat Performance</p><h2 id="gs-benefits-title">Engineered for movement, support and hard training</h2><p>Every element is designed to keep the athlete mobile, covered and comfortable through striking, grappling and functional training.</p></div>
         <div className="gs-benefit-grid">
@@ -139,7 +150,9 @@ export default function GrapplingShortsLanding({ product }: { product: Product }
         <div className="rg-faq-list">{HIGH_SPLIT_GRAPPLING_SHORTS_FAQS.map((item, index) => <details key={item.question} open={index === 0}><summary><span>{String(index + 1).padStart(2, '0')}</span>{item.question}</summary><p>{item.answer}</p></details>)}</div>
       </section>
 
-      <section className="rg-final-cta"><p className="rg-eyebrow">Start Your Project</p><h2>Develop high-split grappling shorts for your brand</h2><p>Send your artwork, quantity, size range and target use for a project-specific review.</p><a href={whatsapp} target="_blank" rel="noopener noreferrer">Request a Quote</a></section>
+      <RelatedResources slugs={['high-split-grappling-shorts-specifications', 'custom-fightwear-sampling-moq']} />
+
+      <section className="rg-final-cta"><p className="rg-eyebrow">Start Your Project</p><h2>Develop high-split grappling shorts for your brand</h2><p>Send your artwork, quantity, size range and target use for a project-specific review.</p><div className="rg-final-actions"><Link href="/project-builder">Build Your Project Brief</Link><a href={whatsapp} target="_blank" rel="noopener noreferrer">Request a Quote</a></div></section>
     </div>
   );
 }

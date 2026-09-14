@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { resolveImage } from '../../../lib/image-resolver';
 import { RASH_GUARD_LANDING_CONTENT, type RashGuardProductId } from '../../../lib/rash-guard-products';
+import ProductSpecificationTable from '../../../components/ProductSpecificationTable';
+import RelatedResources from '../../../components/RelatedResources';
 
 type Product = {
   id: string;
@@ -92,6 +94,21 @@ export default function RashGuardLanding({ product }: { product: Product }) {
   const materialCopy = isSamurai
     ? 'This long-sleeve Rash Guard uses 220gsm ultra-fine Lycra with a soft hand feel, excellent elasticity and fully opaque coverage. The close-fit fabric supports BJJ, MMA and grappling movement while keeping the black-and-gold artwork crisp.'
     : 'The 220gsm ultra-fine Lycra uses an 85% polyester and 15% spandex composition. It combines a smooth, soft touch with high elasticity and opaque coverage for BJJ, MMA and grappling use.';
+  const specificationRows = isSamurai ? [
+    ['Fabric weight', '220gsm'],
+    ['Material', 'Ultra-fine Lycra'],
+    ['Hand feel', 'Soft touch with excellent elasticity'],
+    ['Coverage', 'Fully opaque under stretch'],
+    ['Construction', 'Long-sleeve raglan performance fit'],
+    ['Decoration', 'Custom sublimated panel graphics and logo placement'],
+  ] as const : [
+    ['Fabric weight', '220gsm'],
+    ['Composition', '85% polyester / 15% spandex'],
+    ['Performance', 'Soft touch, high elasticity and opaque coverage'],
+    ['Hem control', 'Silicone anti-slip elastic band'],
+    ['Decoration', 'Custom sublimated panel artwork'],
+    ['Recommended use', 'BJJ, MMA, grappling and team training'],
+  ] as const;
 
   return (
     <div className="rg-product-page">
@@ -121,6 +138,8 @@ export default function RashGuardLanding({ product }: { product: Product }) {
           </div>
         </div>
       </section>
+
+      <ProductSpecificationTable title="A specification buyers can compare" intro="The visible product data below matches the material and construction information used in this landing page and its structured data." rows={specificationRows} />
 
       <section className="rg-fit-section" id="product-details">
         <div>
@@ -192,11 +211,13 @@ export default function RashGuardLanding({ product }: { product: Product }) {
         </div>
       </section>
 
+      <RelatedResources slugs={['rash-guard-fabric-construction', 'custom-fightwear-sampling-moq']} />
+
       <section className="rg-final-cta">
         <p className="rg-eyebrow">Start Your Project</p>
         <h2>Ready to develop your custom Rash Guard?</h2>
         <p>Send your logo, quantity, size range and preferred color direction for a project-specific review.</p>
-        <a href={`https://wa.me/8617722438678?text=${encodeURIComponent(`Please quote the ${product.name}.`)}`} target="_blank" rel="noopener noreferrer">Request a Quote</a>
+        <div className="rg-final-actions"><Link href="/project-builder">Build Your Project Brief</Link><a href={`https://wa.me/8617722438678?text=${encodeURIComponent(`Please quote the ${product.name}.`)}`} target="_blank" rel="noopener noreferrer">Request a Quote</a></div>
       </section>
     </div>
   );

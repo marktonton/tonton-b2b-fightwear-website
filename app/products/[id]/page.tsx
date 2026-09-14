@@ -8,6 +8,8 @@ import RashGuardLanding from './RashGuardLanding';
 import { isRashGuardLandingProduct, RASH_GUARD_LANDING_CONTENT } from '../../../lib/rash-guard-products';
 import GrapplingShortsLanding from './GrapplingShortsLanding';
 import { HIGH_SPLIT_GRAPPLING_SHORTS_CONTENT, HIGH_SPLIT_GRAPPLING_SHORTS_FAQS, isHighSplitGrapplingShorts } from '../../../lib/grappling-shorts-product';
+import { getRouteModifiedDate } from '../../../lib/content-dates';
+import RelatedResources from '../../../components/RelatedResources';
 
 const SITE_URL = 'https://www.tontongear.com';
 const products = productsData.products;
@@ -121,6 +123,8 @@ export default function ProductDetailPage({ params }: PageProps) {
         { '@type': 'PropertyValue', name: 'Customization', value: 'Custom printed inner-layer patterns and branding' },
       ],
     };
+    const webPageSchema = { '@context': 'https://schema.org', '@type': 'WebPage', name: product.name, url: productUrl, dateModified: getRouteModifiedDate(`/products/${product.id}`), mainEntity: { '@id': `${productUrl}#product` } };
+    Object.assign(productSchema, { '@id': `${productUrl}#product` });
     const breadcrumbSchema = {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
@@ -142,7 +146,7 @@ export default function ProductDetailPage({ params }: PageProps) {
 
     return (
       <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([productSchema, breadcrumbSchema, faqSchema]) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([productSchema, webPageSchema, breadcrumbSchema, faqSchema]) }} />
         <GrapplingShortsLanding product={product} />
       </>
     );
@@ -165,7 +169,22 @@ export default function ProductDetailPage({ params }: PageProps) {
       url: productUrl,
       brand: { '@type': 'Brand', name: 'TONTON' },
       manufacturer: { '@type': 'Organization', name: 'TONTON Sportswear', url: SITE_URL },
+      additionalProperty: product.id === 'samurai-graphic-rash-guard' ? [
+        { '@type': 'PropertyValue', name: 'Fabric weight', value: '220gsm' },
+        { '@type': 'PropertyValue', name: 'Material', value: 'Ultra-fine Lycra' },
+        { '@type': 'PropertyValue', name: 'Coverage', value: 'Fully opaque under stretch' },
+        { '@type': 'PropertyValue', name: 'Construction', value: 'Long-sleeve raglan performance fit' },
+        { '@type': 'PropertyValue', name: 'Decoration', value: 'Custom sublimated panel graphics and logo placement' },
+      ] : [
+        { '@type': 'PropertyValue', name: 'Fabric weight', value: '220gsm' },
+        { '@type': 'PropertyValue', name: 'Composition', value: '85% polyester / 15% spandex' },
+        { '@type': 'PropertyValue', name: 'Coverage', value: 'Opaque under stretch' },
+        { '@type': 'PropertyValue', name: 'Hem control', value: 'Silicone anti-slip elastic band' },
+        { '@type': 'PropertyValue', name: 'Decoration', value: 'Custom sublimated panel artwork' },
+      ],
     };
+    const webPageSchema = { '@context': 'https://schema.org', '@type': 'WebPage', name: product.name, url: productUrl, dateModified: getRouteModifiedDate(`/products/${product.id}`), mainEntity: { '@id': `${productUrl}#product` } };
+    Object.assign(productSchema, { '@id': `${productUrl}#product` });
     const breadcrumbSchema = {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
@@ -188,7 +207,7 @@ export default function ProductDetailPage({ params }: PageProps) {
 
     return (
       <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([productSchema, breadcrumbSchema, faqSchema]) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([productSchema, webPageSchema, breadcrumbSchema, faqSchema]) }} />
         <RashGuardLanding product={product} />
       </>
     );
@@ -289,6 +308,7 @@ export default function ProductDetailPage({ params }: PageProps) {
           </div>
         </section>
       )}
+      <RelatedResources slugs={product.categoryId === 'sublimated-rash-guards' ? ['rash-guard-fabric-construction', 'custom-fightwear-sampling-moq'] : product.categoryId === 'sublimated-bjj-mma-shorts' ? ['high-split-grappling-shorts-specifications', 'custom-fightwear-sampling-moq'] : ['custom-fightwear-sampling-moq']} />
     </div>
   );
 }

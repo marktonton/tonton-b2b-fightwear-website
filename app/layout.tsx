@@ -92,6 +92,7 @@ export default function RootLayout({
             </div>
             <a href="/service-support">Service &amp; Support</a>
             <a href="/factory">Factory</a>
+            <a href="/resources">Resources</a>
             <a className="nav-cta" href="/#inquiry">Send Inquiry</a>
           </nav>
         </header>
@@ -114,6 +115,8 @@ export default function RootLayout({
             <div className="footer-column">
               <h2>Top Picks</h2>
               <a href="/service-support">Service &amp; Support</a>
+              <a href="/resources">Buyer Resources</a>
+              <a href="/project-builder">Project Builder</a>
               <a href="/#products">Featured Products</a>
               <a href="/#inquiry">Send Your Inquiry</a>
               <a href="/collections">Explore Collections</a>

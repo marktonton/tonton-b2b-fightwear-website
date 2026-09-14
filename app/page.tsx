@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { resolveImage } from '../lib/image-resolver';
 import productsDataRaw from '../data/products.json';
+import RelatedResources from '../components/RelatedResources';
 
 interface Product {
   id: string;
@@ -281,6 +282,8 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      <RelatedResources />
 
       {/* 4. SEND YOUR INQUIRY */}
       <section className="top-picks-inquiry" id="inquiry" aria-labelledby="send-inquiry-title">
