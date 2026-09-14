@@ -5,17 +5,35 @@ import { HIGH_SPLIT_GRAPPLING_SHORTS_CONTENT, HIGH_SPLIT_GRAPPLING_SHORTS_FAQS }
 type Product = { id: string; name: string; image: string; images?: string[]; description: string; features?: string[] };
 
 const DETAIL_CONTENT = [
-  { title: 'High-split 2-in-1 construction', copy: 'The stretch outer short and fitted inner layer work together as one fight-ready garment.', alt: 'High-split two-in-one grappling shorts construction' },
-  { title: 'More freedom for high kicks', copy: 'The deep side split opens through wide leg positions so the shell does not restrict kicking or scrambling.', alt: 'Athlete demonstrating high-kick mobility in high-split grappling shorts' },
-  { title: 'Custom printed inner layer', copy: 'The 250gsm milk-silk liner can carry custom colors, patterns and brand artwork after sample approval.', alt: 'Custom printed inner compression layer of grappling shorts' },
-  { title: 'Built for fight movement', copy: 'Four-way stretch supports stance changes, shots, guard work and rotational movement in BJJ and MMA training.', alt: 'High-split grappling shorts used in fight training' },
-  { title: 'Deep side-split detail', copy: 'The high-cut outer panel provides generous thigh clearance while the inner layer maintains coverage.', alt: 'Deep side-split detail on custom grappling shorts' },
+  { title: 'Athletic 2-in-1 construction', copy: 'A breathable four-way stretch outer short works with a soft, supportive compression liner for secure coverage.', alt: 'High-split two-in-one grappling shorts construction' },
+  { title: 'Ultra-high split mobility', copy: 'The gladiator-style side opening releases the thigh for high kicks, sprawls and wide grappling positions.', alt: 'Athlete demonstrating high-kick mobility in high-split grappling shorts' },
+  { title: 'Custom printed inner liner', copy: 'The 250gsm milk-silk liner can carry approved colors, patterns, logos and team artwork.', alt: 'Custom printed inner compression layer of grappling shorts' },
+  { title: 'Quick-dry fight performance', copy: 'Breathable stretch fabric supports fast transitions and helps manage moisture through demanding training.', alt: 'High-split grappling shorts used in fight training' },
+  { title: 'Coverage through every position', copy: 'The deep-cut shell maximizes leg clearance while the fitted inner layer maintains support and coverage.', alt: 'Deep side-split detail on custom grappling shorts' },
+] as const;
+
+const PERFORMANCE_BENEFITS = [
+  { title: '2-in-1 support', copy: 'A built-in compression liner adds soft support and reliable coverage beneath the high-split outer shell.' },
+  { title: 'Maximum mobility', copy: 'The ultra-high gladiator split opens freely for kicks, shots, sprawls and ground transitions.' },
+  { title: 'Breathable & quick-dry', copy: 'The performance outer layer releases heat and dries quickly through high-intensity sessions.' },
+  { title: 'Secure waistband', copy: 'An adjustable drawstring and anti-slip silicone grip strip help keep the shorts stable in motion.' },
+  { title: 'Reinforced construction', copy: 'Reinforced stitching supports repeated pulling, rotation and contact during combat training.' },
+  { title: 'Multi-sport performance', copy: 'Built for MMA, wrestling, grappling, boxing and demanding functional gym training.' },
+] as const;
+
+const SAMPLE_DETAIL_CONTENT = [
+  { title: 'Waistband, liner & split system', copy: 'A complete view of the internal drawstring, silicone grip, compression liner and ultra-high split construction.', alt: 'Technical view of the waistband, compression liner and high split construction' },
+  { title: 'Rear fit sample', copy: 'The finished sample shows the stable waistband, clean rear fit and the outer layer sitting over the inner liner.', alt: 'Rear view of blue and white two-in-one grappling shorts sample' },
+  { title: 'Tagless waistband finish', copy: 'Printed brand and size information keeps the inside clean and avoids a loose sewn-in neck-style label.', alt: 'Tagless printed label and reinforced waistband stitching detail' },
+  { title: 'Anti-slip silicone grip', copy: 'The internal silicone strip creates added grip against the inner layer to help control waistband movement.', alt: 'Close-up of the silicone anti-slip grip strip inside the waistband' },
+  { title: 'Production size reference', copy: 'An XS–3XL reference chart gives buyers a clear starting point; final measurements are confirmed with the approved specification.', alt: 'XS to 3XL custom grappling shorts size chart' },
 ] as const;
 
 export default function GrapplingShortsLanding({ product }: { product: Product }) {
   const content = HIGH_SPLIT_GRAPPLING_SHORTS_CONTENT;
   const gallery = product.images ?? [product.image];
-  const detailImages = gallery.slice(1);
+  const detailImages = gallery.slice(1, 6);
+  const sampleImages = gallery.slice(6);
   const whatsapp = `https://wa.me/8617722438678?text=${encodeURIComponent(`I am interested in the ${product.name}.`)}`;
 
   return (
@@ -36,14 +54,15 @@ export default function GrapplingShortsLanding({ product }: { product: Product }
           </h1>
           <p className="rg-lead">{content.intro}</p>
           <div className="rg-spec-strip" aria-label="Core product specifications">
-            <div><strong>High Split</strong><span>Unrestricted Leg Clearance</span></div>
-            <div><strong>4-Way</strong><span>Stretch Outer Shell</span></div>
-            <div><strong>250gsm</strong><span>Milk-Silk Inner Layer</span></div>
+            <div><strong>Ultra-High</strong><span>Gladiator Split Mobility</span></div>
+            <div><strong>4-Way</strong><span>Quick-Dry Stretch Shell</span></div>
+            <div><strong>250gsm</strong><span>Supportive Milk-Silk Liner</span></div>
           </div>
           <ul className="rg-hero-features">
-            <li>Deep side split for high kicks and wider grappling positions</li>
-            <li>Reinforced lightweight four-way stretch outer shell</li>
-            <li>Substantial 250gsm milk-silk compression liner</li>
+            <li>Built-in compression liner for support and coverage</li>
+            <li>Breathable, quick-dry four-way stretch outer layer</li>
+            <li>Drawstring waistband with anti-slip silicone grip</li>
+            <li>Reinforced stitching and a tagless printed label</li>
             <li>Custom inner-layer patterns, logos and team artwork</li>
           </ul>
           <div className="rg-hero-actions">
@@ -53,15 +72,35 @@ export default function GrapplingShortsLanding({ product }: { product: Product }
         </div>
       </section>
 
+      <section className="gs-benefits-section" aria-labelledby="gs-benefits-title">
+        <div className="rg-section-heading"><p className="rg-eyebrow">Combat Performance</p><h2 id="gs-benefits-title">Engineered for movement, support and hard training</h2><p>Every element is designed to keep the athlete mobile, covered and comfortable through striking, grappling and functional training.</p></div>
+        <div className="gs-benefit-grid">
+          {PERFORMANCE_BENEFITS.map((item, index) => <article key={item.title}><span>{String(index + 1).padStart(2, '0')}</span><h3>{item.title}</h3><p>{item.copy}</p></article>)}
+        </div>
+      </section>
+
       <section className="rg-fit-section" id="construction">
-        <div><p className="rg-eyebrow">Material &amp; Construction</p><h2>Two layers built for unrestricted fight movement</h2></div>
+        <div><p className="rg-eyebrow">Material &amp; Construction</p><h2>Fight-ready details from waistband to liner</h2></div>
         <div className="rg-fit-copy">
-          <p>The reinforced lightweight four-way stretch shell opens into a high side split, while the 250gsm milk-silk inner liner provides flexible coverage underneath. The result supports aggressive kicking and fast grappling transitions without exposing the leg.</p>
+          <p>The athletic 2-in-1 construction combines a breathable quick-dry shell with a soft 250gsm milk-silk compression liner. Secure waist control and reinforced finishing support high-intensity combat movement.</p>
           <dl>
-            <div><dt>Outer shell</dt><dd>Reinforced lightweight four-way stretch fabric</dd></div>
-            <div><dt>Inner layer</dt><dd>250gsm milk-silk fabric with customizable graphics</dd></div>
-            <div><dt>Cut</dt><dd>High split for leg clearance, high kicks and flexible grappling</dd></div>
+            <div><dt>Silhouette</dt><dd>Athletic 2-in-1 construction with a high-split outer short and fitted inner liner</dd></div>
+            <div><dt>Outer layer</dt><dd>Breathable, quick-dry four-way stretch performance fabric</dd></div>
+            <div><dt>Inner liner</dt><dd>Soft, supportive 250gsm milk-silk with customizable graphics</dd></div>
+            <div><dt>Waistband</dt><dd>Adjustable drawstring with anti-slip silicone grip strip</dd></div>
+            <div><dt>Side construction</dt><dd>Ultra-high gladiator split for unrestricted leg movement</dd></div>
+            <div><dt>Finishing</dt><dd>Reinforced stitching with a comfortable tagless printed label</dd></div>
           </dl>
+        </div>
+      </section>
+
+      <section className="gs-sample-section" aria-labelledby="gs-sample-title">
+        <div className="rg-section-heading"><p className="rg-eyebrow">Sample-Verified Details</p><h2 id="gs-sample-title">Construction you can inspect before bulk production</h2><p>Real sample and specification images make the waistband, fit, anti-slip system and size direction clear before approval.</p></div>
+        <div className="gs-sample-grid">
+          {sampleImages.map((image, index) => {
+            const item = SAMPLE_DETAIL_CONTENT[index];
+            return <figure key={image}><div className="gs-sample-image"><img src={resolveImage(image)} alt={item.alt} loading="lazy" /></div><figcaption><span>{String(index + 1).padStart(2, '0')}</span><h3>{item.title}</h3><p>{item.copy}</p></figcaption></figure>;
+          })}
         </div>
       </section>
 
@@ -80,7 +119,7 @@ export default function GrapplingShortsLanding({ product }: { product: Product }
         <ol>
           <li><span>01</span><div><h3>Inner-layer artwork</h3><p>Create custom printed patterns, colors and graphics on the fitted liner.</p></div></li>
           <li><span>02</span><div><h3>Outer-shell branding</h3><p>Place team logos, sponsor marks and brand graphics on the stretch shell.</p></div></li>
-          <li><span>03</span><div><h3>Waistband &amp; labels</h3><p>Review waistband branding, private labels and size identification.</p></div></li>
+          <li><span>03</span><div><h3>Waistband &amp; labels</h3><p>Review drawstring, silicone grip strip, waistband branding and tagless printed label details.</p></div></li>
           <li><span>04</span><div><h3>Fit &amp; split direction</h3><p>Confirm size range, fit and split height on the approved sample.</p></div></li>
         </ol>
       </section>
