@@ -6,6 +6,8 @@ import type { Metadata } from 'next';
 import { resolveImage } from '../../../lib/image-resolver';
 import RashGuardLanding from './RashGuardLanding';
 import { isRashGuardLandingProduct, RASH_GUARD_LANDING_CONTENT } from '../../../lib/rash-guard-products';
+import GrapplingShortsLanding from './GrapplingShortsLanding';
+import { HIGH_SPLIT_GRAPPLING_SHORTS_CONTENT, HIGH_SPLIT_GRAPPLING_SHORTS_FAQS, isHighSplitGrapplingShorts } from '../../../lib/grappling-shorts-product';
 
 const SITE_URL = 'https://www.tontongear.com';
 const products = productsData.products;
@@ -54,7 +56,9 @@ export function generateMetadata({ params }: PageProps): Metadata {
   const url = `${SITE_URL}/products/${product.id}`;
   const landingContent = isRashGuardLandingProduct(product.id)
     ? RASH_GUARD_LANDING_CONTENT[product.id]
-    : null;
+    : isHighSplitGrapplingShorts(product.id)
+      ? HIGH_SPLIT_GRAPPLING_SHORTS_CONTENT
+      : null;
   const title = landingContent?.seoTitle ?? getProductTitle(product);
   const description = landingContent?.seoDescription ?? getProductDescription(product);
   const image = resolveImage(product.image);
@@ -63,6 +67,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
     title: { absolute: title },
     description,
     alternates: { canonical: url },
+    robots: isHighSplitGrapplingShorts(product.id) ? { index: true, follow: true } : undefined,
     openGraph: {
       type: 'website',
       url,
@@ -85,6 +90,57 @@ export default function ProductDetailPage({ params }: PageProps) {
 
   if (!product) {
     notFound();
+  }
+
+  if (isHighSplitGrapplingShorts(product.id)) {
+    const galleryImages = 'images' in product ? product.images : [product.image];
+    const content = HIGH_SPLIT_GRAPPLING_SHORTS_CONTENT;
+    const productUrl = `${SITE_URL}/products/${product.id}`;
+    const productSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      name: product.name,
+      description: content.seoDescription,
+      image: galleryImages.map(getAbsoluteImage),
+      sku: product.id,
+      category: 'Custom Grappling Shorts',
+      material: content.material,
+      color: content.color,
+      url: productUrl,
+      brand: { '@type': 'Brand', name: 'TONTON' },
+      manufacturer: { '@type': 'Organization', name: 'TONTON Sportswear', url: SITE_URL },
+      additionalProperty: [
+        { '@type': 'PropertyValue', name: 'Cut', value: 'High Split Cut' },
+        { '@type': 'PropertyValue', name: 'Construction', value: '2-in-1 grappling shorts' },
+        { '@type': 'PropertyValue', name: 'Inner layer weight', value: '250gsm' },
+        { '@type': 'PropertyValue', name: 'Customization', value: 'Custom printed inner-layer patterns and branding' },
+      ],
+    };
+    const breadcrumbSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+        { '@type': 'ListItem', position: 2, name: 'Custom BJJ & MMA Shorts', item: `${SITE_URL}/customization/sublimated-bjj-mma-shorts` },
+        { '@type': 'ListItem', position: 3, name: product.name, item: productUrl },
+      ],
+    };
+    const faqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: HIGH_SPLIT_GRAPPLING_SHORTS_FAQS.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: { '@type': 'Answer', text: item.answer },
+      })),
+    };
+
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([productSchema, breadcrumbSchema, faqSchema]) }} />
+        <GrapplingShortsLanding product={product} />
+      </>
+    );
   }
 
   if (isRashGuardLandingProduct(product.id)) {
