@@ -9,6 +9,7 @@ import {
   getCustomizationProducts,
 } from '../../../lib/customization-pages';
 import type { Metadata } from 'next';
+import RelatedResources from '../../../components/RelatedResources';
 
 const SITE_URL = 'https://www.tontongear.com';
 
@@ -343,10 +344,12 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
         </div>
       </section>
 
+      <RelatedResources slugs={category.id === 'sublimated-rash-guards' ? ['rash-guard-fabric-construction', 'custom-fightwear-sampling-moq'] : category.id === 'sublimated-bjj-mma-shorts' ? ['high-split-grappling-shorts-specifications', 'custom-fightwear-sampling-moq'] : ['custom-fightwear-sampling-moq']} />
+
       <section className="customization-cta">
         <div className="customization-shell customization-cta-inner">
           <div><p className="customization-kicker customization-kicker-light">START YOUR PROJECT</p><h2>Tell us what you want to make.</h2></div>
-          <div><p>Share your product type, quantity, target market, size range, artwork, and reference ideas. We will use them to clarify the next development step.</p><Link className="customization-button customization-button-red" href="/#inquiry">Get Custom Pricing <span aria-hidden="true">→</span></Link></div>
+          <div><p>Share your product type, quantity, target market, size range, artwork, and reference ideas. We will use them to clarify the next development step.</p><Link className="customization-button customization-button-red" href="/project-builder">Build Your Project Brief <span aria-hidden="true">→</span></Link></div>
         </div>
       </section>
     </div>

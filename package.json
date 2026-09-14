@@ -10,6 +10,7 @@
     "typecheck": "tsc --noEmit",
     "verify": "node scripts/verify.mjs",
     "assets:audit": "node scripts/audit-assets.mjs",
+    "seo:audit": "node scripts/audit-seo-specs.mjs",
     "assets:manifest": "node scripts/build-r2-manifest.mjs",
     "assets:verify-r2": "node scripts/verify-r2-assets.mjs"
   },

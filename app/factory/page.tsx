@@ -2,6 +2,7 @@ import Image from 'next/image';
 import type { Metadata } from 'next';
 import CertificatesSlider from './CertificatesSlider';
 import { resolveImage } from '../../lib/image-resolver';
+import RelatedResources from '../../components/RelatedResources';
 
 const SITE_URL = 'https://www.tontongear.com';
 
@@ -373,6 +374,8 @@ export default function FactoryPage() {
         </div>
       </section>
 
+      <RelatedResources slugs={['custom-fightwear-sampling-moq', 'rash-guard-fabric-construction', 'high-split-grappling-shorts-specifications']} />
+
       <section className="factory-v2-cta" id="factory-inquiry">
         <Image src={resolveImage('/assets/factory/overview/showroom-01.jpg')} alt="TONTON custom sportswear showroom" fill sizes="100vw" />
         <div className="factory-v2-cta-shade" />
@@ -380,7 +383,7 @@ export default function FactoryPage() {
           <p className="factory-v2-kicker factory-v2-kicker-light">YOUR NEXT CUSTOM PROGRAM</p>
           <h2>BRING US THE IDEA. LET’S BUILD THE PRODUCT.</h2>
           <p>Tell us what you want to make, who it is for, and what matters most to your brand.</p>
-          <a className="factory-v2-button factory-v2-button-red" href="/#inquiry">Request a project review <ArrowIcon /></a>
+          <a className="factory-v2-button factory-v2-button-red" href="/project-builder">Build your project brief <ArrowIcon /></a>
         </div>
       </section>
     </div>
