@@ -321,6 +321,10 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
           <p className="customization-kicker">BUYER FAQ</p>
           <h2>{content.faqTitle}</h2>
           <p>Clear answers for brands, gyms, academies, teams, distributors, and private-label buyers.</p>
+          <div className="customization-faq-actions">
+            <Link href="/resources">Read Buyer Resources <span aria-hidden="true">→</span></Link>
+            <Link href="/project-builder">Build Your Project Brief <span aria-hidden="true">→</span></Link>
+          </div>
         </div>
         <div className="customization-faq-list">
           {content.faqs.map((faq, index) => (
