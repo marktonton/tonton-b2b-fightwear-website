@@ -30,7 +30,10 @@ export default function GrapplingShortsLanding({ product }: { product: Product }
         <div className="rg-product-hero-media"><img src={resolveImage(product.image)} alt={`${product.name} front view`} /></div>
         <div className="rg-product-hero-copy">
           <p className="rg-eyebrow">{content.eyebrow}</p>
-          <h1>{content.headline}</h1>
+          <h1 aria-label={content.headline}>
+            <span>High-Split 2-in-1</span>
+            <span>Custom Grappling Shorts</span>
+          </h1>
           <p className="rg-lead">{content.intro}</p>
           <div className="rg-spec-strip" aria-label="Core product specifications">
             <div><strong>High Split</strong><span>Unrestricted Leg Clearance</span></div>
