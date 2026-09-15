@@ -1505,6 +1505,8 @@
 .customization-page-sublimated-rash-guards .customization-hero-copy { padding-bottom: 48px; }
 .customization-page-sublimated-rash-guards .customization-breadcrumb { margin-bottom: clamp(48px, 5vw, 74px); font-size: 12px; }
 .customization-page-sublimated-rash-guards .customization-hero-media { min-height: 610px; }
+.customization-page-sublimated-rash-guards .customization-hero-media img,
+.customization-page-sublimated-rash-guards .customization-options-media img { object-position: center top; }
 .customization-page-sublimated-rash-guards .customization-hero-lead { font-size: clamp(17px, 1.35vw, 20px); line-height: 1.58; }
 .customization-page-sublimated-rash-guards .customization-facts span { font-size: 12px; }
 
@@ -1534,6 +1536,8 @@
 .customization-page-sublimated-rash-guards .customization-sku-copy { padding: 23px; }
 .customization-page-sublimated-rash-guards .customization-sku-copy h3 { font-size: 22px; }
 .customization-page-sublimated-rash-guards .customization-sku-copy p { font-size: 16px; line-height: 1.58; }
+.customization-page-sublimated-rash-guards .customization-sku-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.customization-page-sublimated-rash-guards .customization-sku-image img { object-position: center top; }
 .customization-page-sublimated-rash-guards .customization-product-links { margin-top: 24px; padding-top: 20px; }
 .customization-page-sublimated-rash-guards .customization-product-links > span { font-size: 12.5px; }
 .customization-page-sublimated-rash-guards .customization-product-links a { font-size: 14.5px; }
@@ -1577,10 +1581,13 @@
 
 @media (max-width: 1000px) {
   .customization-page-sublimated-rash-guards .customization-shell { width: min(100% - 48px, 940px); }
+  .customization-page-sublimated-rash-guards .customization-hero-grid,
+  .customization-page-sublimated-rash-guards .customization-options-grid { grid-template-columns: 1fr; }
   .customization-page-sublimated-rash-guards .customization-hero-media { min-height: 520px; }
   .customization-page-sublimated-rash-guards .customization-overview { grid-template-columns: 1fr; gap: 25px; }
   .customization-page-sublimated-rash-guards .customization-overview-copy { padding-top: 0; }
   .customization-page-sublimated-rash-guards .customization-options-media { min-height: 540px; }
+  .customization-page-sublimated-rash-guards .customization-sku-grid { grid-template-columns: 1fr; }
   .customization-page-sublimated-rash-guards .customization-technical { gap: 58px; }
 }
 
