@@ -3,7 +3,7 @@ export type CustomizationFaq = {
   answer: string;
 };
 
-const RASH_GUARD_ASSET_ROOT = 'https://assets.tontongear.com/assets/products/rash-guard-sku';
+const RASH_GUARD_NEW_SERIES_ROOT = '/assets/products/rash-guard-products/white-black-series';
 
 export type CustomizationPageContent = {
   seoDescription: string;
@@ -41,11 +41,11 @@ export type CustomizationPageContent = {
 
 export const customizationPageContent: Record<string, CustomizationPageContent> = {
   'sublimated-rash-guards': {
-    seoDescription: 'Custom Rash Guard manufacturer for BJJ, MMA and grappling brands. Explore three color SKUs, stretch fabric, sublimation, construction and OEM options.',
+    seoDescription: 'Custom Rash Guard manufacturer for BJJ, MMA and grappling brands. Review real white and black samples, branding areas, construction and OEM options.',
     kicker: 'CUSTOM RASH GUARD MANUFACTURING',
     heroLead: 'Develop short-sleeve or long-sleeve performance rash guards with your colors, artwork, sponsor marks, and team identity—supported from mockup through production.',
-    heroImage: `${RASH_GUARD_ASSET_ROOT}/rash-guard-02.webp`,
-    heroAlt: 'Blue short-sleeve custom Rash Guard shown from the front',
+    heroImage: `${RASH_GUARD_NEW_SERIES_ROOT}/white-rash-guard-three-quarter.webp`,
+    heroAlt: 'White short-sleeve custom Rash Guard shown from a three-quarter front angle',
     overviewTitle: 'Build a rash guard around the way your customers train.',
     overviewLead: 'A strong custom rash guard program starts with use, fit, and artwork—not a generic blank garment.',
     overviewText: 'TONTON supports brands, BJJ academies, MMA gyms, grappling teams, and distributors with product development for custom sublimated rash guards. We help define sleeve length, panel direction, size requirements, fabric performance, artwork placement, and packaging before the order moves forward.',
@@ -56,8 +56,8 @@ export const customizationPageContent: Record<string, CustomizationPageContent> 
     ],
     optionsTitle: 'What can be customized on a sublimated rash guard?',
     optionsLead: 'Each decision is reviewed together so the visual design and garment construction support the same end use.',
-    optionsImage: `${RASH_GUARD_ASSET_ROOT}/rash-guard-06.webp`,
-    optionsAlt: 'Olive short-sleeve Rash Guard showing contrast sleeve panels and athletic fit',
+    optionsImage: `${RASH_GUARD_NEW_SERIES_ROOT}/black-rash-guard-three-quarter.webp`,
+    optionsAlt: 'Black short-sleeve custom Rash Guard showing athletic fit, raglan panels and chest branding',
     options: [
       { title: 'Sleeve and fit direction', text: 'Choose short or long sleeves and define the intended fit and size range for your market.' },
       { title: 'All-over artwork', text: 'Apply team colors, patterns, logos, names, and sponsor graphics across the printable panels.' },
@@ -80,46 +80,34 @@ export const customizationPageContent: Record<string, CustomizationPageContent> 
     ],
     skuGroups: [
       {
-        name: 'Blue Rash Guard',
-        color: '#0759cc',
-        summary: 'A clean royal-blue direction shown from front, back, and side angles.',
+        name: 'White Performance Rash Guard',
+        color: '#f4f4f1',
+        summary: 'A clean white short-sleeve sample shown from front, rear, and close detail angles.',
         images: [
-          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-01.webp`, alt: 'Blue short-sleeve Rash Guard front view' },
-          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-02.webp`, alt: 'Blue short-sleeve Rash Guard three-quarter front view' },
-          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-03.webp`, alt: 'Blue short-sleeve Rash Guard side view' },
-          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-04.webp`, alt: 'Blue short-sleeve Rash Guard back view' },
+          { src: `${RASH_GUARD_NEW_SERIES_ROOT}/white-rash-guard-three-quarter.webp`, alt: 'White short-sleeve custom Rash Guard three-quarter front view' },
+          { src: `${RASH_GUARD_NEW_SERIES_ROOT}/white-rash-guard-front-fit.webp`, alt: 'White short-sleeve custom Rash Guard front fit view' },
+          { src: `${RASH_GUARD_NEW_SERIES_ROOT}/white-rash-guard-rear.webp`, alt: 'White short-sleeve custom Rash Guard rear view' },
+          { src: `${RASH_GUARD_NEW_SERIES_ROOT}/white-rash-guard-chest-logo-detail.webp`, alt: 'White custom Rash Guard chest logo and raglan seam detail' },
         ],
       },
       {
-        name: 'Olive Rash Guard',
-        color: '#464331',
-        summary: 'An olive-and-black colorway with contrast panels and understated branding.',
+        name: 'Black Performance Rash Guard',
+        color: '#111214',
+        summary: 'A tonal black short-sleeve sample with front, rear, fit, and branding references.',
         images: [
-          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-05.webp`, alt: 'Olive and black short-sleeve Rash Guard front view' },
-          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-06.webp`, alt: 'Olive and black short-sleeve Rash Guard three-quarter front view' },
-          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-07.webp`, alt: 'Olive and black short-sleeve Rash Guard side view' },
-          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-08.webp`, alt: 'Olive and black short-sleeve Rash Guard back view' },
-        ],
-      },
-      {
-        name: 'White Rash Guard',
-        color: '#efefed',
-        summary: 'A white-and-black direction with front and back logo placement references.',
-        images: [
-          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-09.webp`, alt: 'White and black short-sleeve Rash Guard front view' },
-          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-10.webp`, alt: 'White and black short-sleeve Rash Guard three-quarter front view' },
-          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-11.webp`, alt: 'White and black short-sleeve Rash Guard side view' },
-          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-12.webp`, alt: 'White and black short-sleeve Rash Guard rear three-quarter view' },
-          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-13.webp`, alt: 'White and black short-sleeve Rash Guard back view' },
-          { src: `${RASH_GUARD_ASSET_ROOT}/rash-guard-14.webp`, alt: 'White and black short-sleeve Rash Guard alternate back view' },
+          { src: `${RASH_GUARD_NEW_SERIES_ROOT}/black-rash-guard-front.webp`, alt: 'Black short-sleeve custom Rash Guard front view' },
+          { src: `${RASH_GUARD_NEW_SERIES_ROOT}/black-rash-guard-three-quarter.webp`, alt: 'Black short-sleeve custom Rash Guard three-quarter front view' },
+          { src: `${RASH_GUARD_NEW_SERIES_ROOT}/black-rash-guard-rear.webp`, alt: 'Black short-sleeve custom Rash Guard rear view' },
+          { src: `${RASH_GUARD_NEW_SERIES_ROOT}/black-rash-guard-size-fit.webp`, alt: 'Black short-sleeve custom Rash Guard fit reference on athlete' },
+          { src: `${RASH_GUARD_NEW_SERIES_ROOT}/black-rash-guard-back-logo-detail.webp`, alt: 'Black custom Rash Guard tonal back logo detail' },
         ],
       },
     ],
     productDetails: [
-      { title: 'Neckline fit', text: 'A close neckline helps the Rash Guard sit cleanly while moving and can be reviewed during sampling.', image: `${RASH_GUARD_ASSET_ROOT}/detail-blue-neckline-fit.webp`, alt: 'Close-up of blue Rash Guard neckline and shoulder fit' },
-      { title: 'Contrast sleeve panel', text: 'Sleeve and shoulder panels create a controlled area for color blocking, artwork, or team identity.', image: `${RASH_GUARD_ASSET_ROOT}/detail-olive-sleeve-panel.webp`, alt: 'Close-up of olive Rash Guard sleeve and shoulder panel' },
-      { title: 'Front logo placement', text: 'Chest artwork is checked for scale, centering, and visibility against the garment construction.', image: `${RASH_GUARD_ASSET_ROOT}/detail-white-chest-logo.webp`, alt: 'Close-up of white Rash Guard front chest logo placement' },
-      { title: 'Back branding area', text: 'The back panel provides a broad printable area for academy marks, sponsor graphics, or private-label artwork.', image: `${RASH_GUARD_ASSET_ROOT}/detail-white-back-logo.webp`, alt: 'Close-up of white Rash Guard back logo area' },
+      { title: 'Close athletic fit', text: 'The white sample shows how the body panels, short sleeves, and neckline sit together on an athlete.', image: `${RASH_GUARD_NEW_SERIES_ROOT}/white-rash-guard-front-fit.webp`, alt: 'White short-sleeve Rash Guard close athletic fit on model' },
+      { title: 'Raglan seam direction', text: 'The chest close-up makes the neckline, raglan seam path, sleeve finish, and front branding area easy to inspect.', image: `${RASH_GUARD_NEW_SERIES_ROOT}/white-rash-guard-chest-logo-detail.webp`, alt: 'Close-up of white Rash Guard neckline, raglan seam and chest logo' },
+      { title: 'Rear neck branding', text: 'A compact upper-back mark can keep the rear panel clean while maintaining a recognizable brand detail.', image: `${RASH_GUARD_NEW_SERIES_ROOT}/white-rash-guard-rear.webp`, alt: 'White Rash Guard rear view with upper-back logo placement' },
+      { title: 'Tonal back artwork', text: 'The black sample demonstrates a low-contrast print direction across the broad rear branding area.', image: `${RASH_GUARD_NEW_SERIES_ROOT}/black-rash-guard-back-logo-detail.webp`, alt: 'Close-up of tonal logo printed across a black Rash Guard back panel' },
       { title: 'Stretch seam construction', text: 'Parallel stitch rows secure the stretch fabric panels and make seam alignment easy to inspect on the physical sample.', image: '/assets/products/rash-guard-products/construction-details/stretch-fabric-seam.webp', alt: 'Close-up of stretch Rash Guard fabric and parallel seam construction' },
       { title: 'Breathable mesh transition', text: 'A perforated inset introduces a breathable panel direction with a clearly finished transition to the surrounding fabric.', image: '/assets/products/rash-guard-products/construction-details/breathable-mesh-panel.webp', alt: 'Close-up of breathable mesh panel joined to Rash Guard fabric' },
       { title: 'Reinforced seam junction', text: 'The close-up shows how multiple stitch lines meet at a high-movement panel junction for sample-level workmanship review.', image: '/assets/products/rash-guard-products/construction-details/reinforced-seam-junction.webp', alt: 'Close-up of reinforced Rash Guard seam intersection' },
