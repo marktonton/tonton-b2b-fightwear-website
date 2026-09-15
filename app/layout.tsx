@@ -2,9 +2,12 @@ import React from 'react';
 import type { Metadata } from 'next';
 import './globals.css';
 import { resolveImage } from '../lib/image-resolver';
+import SearchMeasurement from '../components/SearchMeasurement';
 
 const SITE_URL = 'https://www.tontongear.com';
 const SITE_DESCRIPTION = 'TONTON Sportswear provides custom fightwear and professional sportswear manufacturing for brands, teams, clubs, and retailers.';
+const googleVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
+const bingVerification = process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -31,6 +34,10 @@ export const metadata: Metadata = {
     title: 'Custom Sportswear Manufacturer | TONTON OEM Factory',
     description: SITE_DESCRIPTION,
     images: [resolveImage('/assets/logo.png')],
+  },
+  verification: {
+    ...(googleVerification ? { google: googleVerification } : {}),
+    ...(bingVerification ? { other: { 'msvalidate.01': bingVerification } } : {}),
   },
 };
 
@@ -67,6 +74,7 @@ export default function RootLayout({
     <html lang="en">
       <head />
       <body>
+        <SearchMeasurement />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([organizationSchema, websiteSchema]) }} />
         <div className="topbar">
           <span>Custom MMA Fightwear Factory</span>

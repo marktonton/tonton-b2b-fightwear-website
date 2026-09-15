@@ -51,7 +51,7 @@ if (conflicts.length) fail(`merge conflict markers found in: ${conflicts.join(',
 if (process.exitCode) process.exit(process.exitCode);
 
 const npm = process.platform === 'win32' ? 'npm.cmd' : 'npm';
-for (const args of [['run', 'seo:audit'], ['run', 'seo:content-audit'], ['run', 'typecheck'], ['run', 'build']]) {
+for (const args of [['run', 'seo:audit'], ['run', 'seo:content-audit'], ['run', 'typecheck'], ['run', 'build'], ['run', 'seo:indexability-audit']]) {
   const result = spawnSync(npm, args, { cwd: root, stdio: 'inherit' });
   if (result.error) {
     fail(`could not run ${npm} ${args.join(' ')}: ${result.error.message}`);
