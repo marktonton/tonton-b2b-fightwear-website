@@ -105,6 +105,17 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
       acceptedAnswer: { '@type': 'Answer', text: faq.answer },
     })),
   };
+  const videoSchema = isRashGuardPage ? {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'Custom Rash Guard product construction video',
+    description: 'Real product footage showing a custom long-sleeve Rash Guard, panel construction, breathable side panels, artwork placement, and finishing details.',
+    thumbnailUrl: `${SITE_URL}/assets/products/rash-guard-products/video/custom-rash-guard-product-video-poster.webp`,
+    uploadDate: '2026-09-15',
+    duration: 'PT43S',
+    contentUrl: `${SITE_URL}/assets/products/rash-guard-products/video/custom-rash-guard-product-video.mp4`,
+    embedUrl: `${categoryUrl}#rash-guard-video`,
+  } : null;
 
   const processSteps = [
     {
@@ -127,7 +138,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
 
   return (
     <div className={`customization-page customization-page-${category.id}`}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([collectionSchema, breadcrumbSchema, faqSchema]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([collectionSchema, breadcrumbSchema, faqSchema, ...(videoSchema ? [videoSchema] : [])]) }} />
 
       <section className="customization-hero">
         <div className="customization-shell customization-hero-grid">
@@ -243,6 +254,30 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
           </div>
         )}
       </section>
+
+      {isRashGuardPage && (
+        <section className="customization-video" id="rash-guard-video">
+          <div className="customization-shell customization-video-grid">
+            <div className="customization-video-copy">
+              <p className="customization-kicker">REAL PRODUCT VIDEO</p>
+              <h2>Inspect the Rash Guard construction in motion.</h2>
+              <p className="customization-video-lead">Real product footage gives buyers a closer view of how artwork, stretch panels, seams, and finishing details work together on a custom long-sleeve Rash Guard.</p>
+              <div className="customization-video-points">
+                <article><span>01</span><div><h3>Panel construction</h3><p>Review the neckline, raglan sleeve shape, side-panel direction, and visible seam transitions.</p></div></article>
+                <article><span>02</span><div><h3>Breathable side panel</h3><p>See the mesh-panel area and how it is integrated into the body construction.</p></div></article>
+                <article><span>03</span><div><h3>Custom artwork placement</h3><p>Check how full-body graphics, color blocking, and logo areas read on the finished sample.</p></div></article>
+              </div>
+            </div>
+            <figure className="customization-video-media">
+              <video controls playsInline preload="metadata" poster="/assets/products/rash-guard-products/video/custom-rash-guard-product-video-poster.webp" aria-label="Custom long-sleeve Rash Guard product video">
+                <source src="/assets/products/rash-guard-products/video/custom-rash-guard-product-video.mp4" type="video/mp4" />
+                Your browser does not support the video element.
+              </video>
+              <figcaption>Real product footage · Custom long-sleeve Rash Guard sample</figcaption>
+            </figure>
+          </div>
+        </section>
+      )}
 
       {content.productDetails && (
         <section className="customization-details">
