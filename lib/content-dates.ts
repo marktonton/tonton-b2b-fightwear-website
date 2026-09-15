@@ -1,4 +1,4 @@
-export const CONTENT_REVIEW_DATE = '2026-09-14';
+export const CONTENT_REVIEW_DATE = '2026-09-15';
 
 export const ROUTE_LAST_MODIFIED: Record<string, string> = {
   '/': CONTENT_REVIEW_DATE,

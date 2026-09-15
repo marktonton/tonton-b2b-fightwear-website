@@ -15,7 +15,7 @@ export default function ProductSpecificationTable({
         <p className="rg-eyebrow">Verified Product Specification</p>
         <h2 id="product-specification-title">{title}</h2>
         <p>{intro}</p>
-        <span>Last reviewed: September 14, 2026</span>
+        <span>Last reviewed: September 15, 2026</span>
       </div>
       <div className="product-specification-table-wrap">
         <table>
