@@ -17,8 +17,16 @@ for (const slug of resourceSlugs) {
   if (!read('public/llms.txt').includes(`/resources/${slug}`)) fail(`${slug} missing from llms.txt`);
 }
 
-for (const required of ['decisionRows:', 'notFor:', 'source:', 'resource.source', 'resource.notFor', 'resource.decisionRows']) {
+for (const required of ['cluster:', 'relatedGuides:', 'decisionRows:', 'notFor:', 'source:', 'resource.source', 'resource.notFor', 'resource.decisionRows']) {
   if (!`${resources}\n${resourcePage}`.includes(required)) fail(`resource decision evidence missing: ${required}`);
+}
+
+for (const slug of ['220gsm-rash-guard-fabric-guide', 'rash-guard-silicone-anti-slip-band', 'rash-guard-sublimation-logo-placement', 'high-split-vs-standard-grappling-shorts', '2-in-1-grappling-shorts-liner-construction', 'grappling-shorts-waistband-silicone-grip']) {
+  if (!resources.includes(`slug: '${slug}'`)) fail(`cluster guide missing: ${slug}`);
+}
+
+for (const image of ['stretch-fabric-seam.webp', 'breathable-mesh-panel.webp', 'reinforced-seam-junction.webp']) {
+  if (!existsSync(join(root, 'public/assets/products/rash-guard-products/construction-details', image))) fail(`Rash Guard evidence image missing: ${image}`);
 }
 
 for (const required of ['Construction direction:', 'Decoration / branding:', 'copy_specification', 'project_builder_action']) {

@@ -150,7 +150,7 @@ export default function GrapplingShortsLanding({ product }: { product: Product }
         <div className="rg-faq-list">{HIGH_SPLIT_GRAPPLING_SHORTS_FAQS.map((item, index) => <details key={item.question} open={index === 0}><summary><span>{String(index + 1).padStart(2, '0')}</span>{item.question}</summary><p>{item.answer}</p></details>)}</div>
       </section>
 
-      <RelatedResources slugs={['high-split-grappling-shorts-specifications', 'custom-fightwear-sampling-moq']} />
+      <RelatedResources slugs={['high-split-grappling-shorts-specifications', 'high-split-vs-standard-grappling-shorts', '2-in-1-grappling-shorts-liner-construction', 'grappling-shorts-waistband-silicone-grip']} />
 
       <section className="rg-final-cta"><p className="rg-eyebrow">Start Your Project</p><h2>Develop high-split grappling shorts for your brand</h2><p>Send your artwork, quantity, size range and target use for a project-specific review.</p><div className="rg-final-actions"><Link href="/project-builder">Build Your Project Brief</Link><a href={whatsapp} target="_blank" rel="noopener noreferrer">Request a Quote</a></div></section>
     </div>
