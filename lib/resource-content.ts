@@ -11,12 +11,15 @@ export type ResourcePage = {
   eyebrow: string;
   answer: string;
   updated: string;
+  cluster: 'rash-guard' | 'grappling-shorts' | 'project';
+  media?: Array<{ src: string; alt: string; caption: string }>;
   table: Array<[string, string]>;
   decisionRows: Array<[choice: string, bestFor: string, buyerCheck: string]>;
   notFor: string[];
   source: string;
   sections: ResourceSection[];
   relatedProduct: { label: string; href: string };
+  relatedGuides?: string[];
 };
 
 export const RESOURCE_PAGES: ResourcePage[] = [
@@ -27,6 +30,12 @@ export const RESOURCE_PAGES: ResourcePage[] = [
     eyebrow: 'RASH GUARD BUYER GUIDE',
     answer: 'A dependable custom Rash Guard specification connects fabric weight, composition, opacity, stretch recovery, seam construction and hem control. Selected TONTON styles use 220gsm ultra-fine Lycra; the Blue Team and White Pro Club examples use 85% polyester and 15% spandex with a silicone anti-slip elastic band.',
     updated: '2026-09-15',
+    cluster: 'rash-guard',
+    media: [
+      { src: '/assets/products/rash-guard-products/construction-details/stretch-fabric-seam.webp', alt: 'Close-up of stretch Rash Guard fabric and parallel seam construction', caption: 'Stretch fabric surface and multi-row seam construction on the real sample.' },
+      { src: '/assets/products/rash-guard-products/construction-details/breathable-mesh-panel.webp', alt: 'Close-up of breathable mesh panel joined to Rash Guard fabric', caption: 'Breathable mesh inset with a clean stitched transition between panels.' },
+      { src: '/assets/products/rash-guard-products/construction-details/reinforced-seam-junction.webp', alt: 'Close-up of reinforced Rash Guard seam intersection', caption: 'Reinforced seam intersection at a high-movement panel junction.' },
+    ],
     table: [
       ['Example fabric weight', '220gsm ultra-fine Lycra'],
       ['Verified composition', '85% polyester / 15% spandex on selected styles'],
@@ -52,6 +61,70 @@ export const RESOURCE_PAGES: ResourcePage[] = [
       { heading: 'Construction details worth specifying', bullets: ['Sleeve length and raglan panel direction', 'Seam placement and stretch compatibility', 'Lower-hem grip requirement', 'Logo, sponsor mark and panel-artwork positions', 'Size range, fit direction, private labels and packaging'] },
     ],
     relatedProduct: { label: 'View the Blue Team 220gsm Rash Guard', href: '/products/blue-team-rash-guard' },
+    relatedGuides: ['220gsm-rash-guard-fabric-guide', 'rash-guard-silicone-anti-slip-band', 'rash-guard-sublimation-logo-placement'],
+  },
+  {
+    slug: '220gsm-rash-guard-fabric-guide',
+    title: '220gsm Rash Guard Fabric: Weight, Stretch & Opacity',
+    description: 'How buyers should evaluate 220gsm Rash Guard fabric for hand feel, stretch recovery, opacity and sublimated performance wear.',
+    eyebrow: 'RASH GUARD MATERIAL GUIDE',
+    answer: 'A 220gsm fabric can provide a substantial, soft and opaque Rash Guard direction, but GSM alone is not a quality guarantee. Buyers should assess fabric composition, four-way movement, recovery, opacity under the intended fit, print surface and seam compatibility on the same physical sample.',
+    updated: '2026-09-15',
+    cluster: 'rash-guard',
+    table: [
+      ['Verified example', '220gsm ultra-fine Lycra'],
+      ['Selected composition', '85% polyester / 15% spandex on the Blue Team and White Pro styles'],
+      ['Buyer priorities', 'Soft hand feel, elasticity, recovery and opaque coverage'],
+      ['Print direction', 'Sublimation-compatible polyester surface on the verified 85/15 styles'],
+      ['Sample test', 'Stretch the garment at chest, shoulder and torso fit points'],
+      ['Use direction', 'BJJ, MMA, grappling and close-fit team training'],
+    ],
+    decisionRows: [
+      ['220gsm direction', 'Programs prioritizing substantial coverage and a close performance fit', 'Compare hand feel, recovery and heat management on the sample'],
+      ['Verified 85/15 blend', 'Selected styles requiring detailed sublimated graphics', 'Confirm the chosen SKU uses this exact composition'],
+      ['Lighter fabric direction', 'Projects prioritizing lower weight over the verified 220gsm feel', 'Request a separate sample; do not infer performance from GSM alone'],
+    ],
+    notFor: ['Do not use 220gsm as a universal specification for every Rash Guard style.', 'Do not call fabric opaque until it has been checked under the intended stretch and fit.', 'Do not reuse the verified 85/15 composition for a product whose composition has not been confirmed.'],
+    source: 'TONTON selected 220gsm Rash Guard specifications and physical-sample evaluation criteria.',
+    sections: [
+      { heading: 'What 220gsm tells a buyer—and what it does not', paragraphs: ['GSM describes fabric mass per square metre. It helps compare weight directions, but it does not independently prove softness, opacity, breathability or recovery. Those qualities need to be checked together on the selected material.'] },
+      { heading: 'A practical opacity and recovery check', bullets: ['Evaluate the fabric at the intended body fit', 'Stretch printed and solid-color areas under consistent light', 'Check whether the fabric returns smoothly after extension', 'Review shoulder, chest and torso zones where strain is highest'] },
+      { heading: 'Connect material approval to the finished garment', paragraphs: ['Approve the fabric together with seam direction, sleeve construction, lower-hem control and artwork placement. This prevents an acceptable fabric swatch from becoming a poorly balanced finished Rash Guard.'] },
+    ],
+    relatedProduct: { label: 'Compare the 220gsm Rash Guard sample', href: '/products/blue-team-rash-guard' },
+    relatedGuides: ['rash-guard-fabric-construction', 'rash-guard-silicone-anti-slip-band'],
+  },
+  {
+    slug: 'rash-guard-silicone-anti-slip-band',
+    title: 'Rash Guard Silicone Anti-Slip Band Guide',
+    description: 'A buyer guide to silicone anti-slip elastic bands, lower-hem control, placement and sample checks for custom Rash Guards.',
+    eyebrow: 'RASH GUARD CONSTRUCTION GUIDE',
+    answer: 'A silicone anti-slip elastic band is an interior lower-hem option designed to add grip and reduce ride-up during movement. Buyers should confirm band width, grip feel, stretch compatibility, seam finish and comfort on the worn sample rather than approving the component in isolation.',
+    updated: '2026-09-15',
+    cluster: 'rash-guard',
+    table: [['Component', 'Interior silicone anti-slip elastic band'], ['Position', 'Inside the lower Rash Guard hem'], ['Purpose', 'Add hem control during grappling and repeated movement'], ['Confirm', 'Width, placement, grip feel, stretch and seam comfort'], ['Related fit', 'Close performance fit'], ['Approval', 'Movement test on the physical sample']],
+    decisionRows: [['Silicone grip band', 'Training where lower-hem stability is a priority', 'Check grip without excessive pressure or irritation'], ['Standard stretch hem', 'Projects preferring a simpler lower edge', 'Compare ride-up and recovery during movement'], ['Coordinated set', 'Rash Guard and shorts programs sharing visual direction', 'Approve each garment’s waist and hem system separately']],
+    notFor: ['Do not describe a silicone band as preventing all garment movement.', 'Do not choose maximum grip without considering comfort and stretch.', 'Do not assume the option is included on every style.'],
+    source: 'TONTON selected Rash Guard sample details showing an interior silicone anti-slip elastic band.',
+    sections: [{ heading: 'Why lower-hem control matters', paragraphs: ['Grappling, framing and repeated torso rotation can pull a close-fit top upward. An interior grip band adds contact at the hem, helping the garment remain more stable through movement.'] }, { heading: 'What to put in the product brief', bullets: ['Required band width and position', 'Preferred grip intensity and hand feel', 'Hem circumference and stretch requirement', 'Seam finish at the band edge', 'Intended sport and fit direction'] }, { heading: 'How to approve the sample', paragraphs: ['Test the hem while reaching, rotating, sprawling and returning to stance. Review stability, pressure, comfort and whether the band recovers with the surrounding fabric.'] }],
+    relatedProduct: { label: 'View a Rash Guard with anti-slip hem', href: '/products/white-logo-rash-guard' },
+    relatedGuides: ['rash-guard-fabric-construction', '220gsm-rash-guard-fabric-guide'],
+  },
+  {
+    slug: 'rash-guard-sublimation-logo-placement',
+    title: 'Rash Guard Sublimation & Logo Placement Guide',
+    description: 'Plan custom Rash Guard panel artwork, sponsor logos, scale and placement for a cleaner sublimated sample and repeatable production brief.',
+    eyebrow: 'RASH GUARD ARTWORK GUIDE',
+    answer: 'Effective Rash Guard artwork is designed around the garment panels, seams and stretch zones. Supply vector logos where possible, identify priority marks, define front, back and sleeve positions, and approve scale and distortion on a worn sample before bulk production.',
+    updated: '2026-09-15',
+    cluster: 'rash-guard',
+    table: [['Decoration direction', 'Sublimated panel artwork'], ['Artwork input', 'Vector logos preferred where available'], ['Priority positions', 'Chest, sleeves, back and back neck'], ['Buyer check', 'Scale, contrast, seam crossing and stretch distortion'], ['Sample review', 'Flat view plus worn movement view'], ['Production control', 'Approved mockup and product specification']],
+    decisionRows: [['Large panel artwork', 'Bold collection graphics and team identity', 'Check continuity across seams and size grading'], ['Focused logo system', 'Cleaner brand and sponsor hierarchy', 'Confirm minimum readable size and contrast'], ['Mixed solid and printed panels', 'Balancing clarity with visual impact', 'Approve panel boundaries and color consistency']],
+    notFor: ['Do not place critical text directly across a seam without reviewing distortion.', 'Do not rely on a screen mockup to prove printed color or worn placement.', 'Do not enlarge every sponsor mark equally; define a visual hierarchy.'],
+    source: 'TONTON Rash Guard mockup workflow and real sample review of chest, sleeve, back and neck branding positions.',
+    sections: [{ heading: 'Design to the panel map', paragraphs: ['The front, back, sleeve and side panels behave differently when worn. Artwork should respect seam boundaries and reserve cleaner zones for names, sponsor marks and small text.'] }, { heading: 'Prepare production-ready artwork', bullets: ['Provide vector logo files where available', 'Name required colors or supply brand references', 'List priority and secondary marks', 'Show intended placement rather than sending an unstructured logo folder', 'Identify artwork that must remain aligned across panels'] }, { heading: 'Approve the worn result', paragraphs: ['Review artwork from front, back and side angles while the garment is on-body. Check scale, readability, stretch distortion and whether the brand hierarchy remains clear across the requested size range.'] }],
+    relatedProduct: { label: 'Inspect a full graphic Rash Guard', href: '/products/samurai-graphic-rash-guard' },
+    relatedGuides: ['rash-guard-fabric-construction', '220gsm-rash-guard-fabric-guide'],
   },
   {
     slug: 'high-split-grappling-shorts-specifications',
@@ -60,6 +133,7 @@ export const RESOURCE_PAGES: ResourcePage[] = [
     eyebrow: 'GRAPPLING SHORTS BUYER GUIDE',
     answer: 'A high-split 2-in-1 grappling short should balance unrestricted leg clearance with secure inner-layer coverage. TONTON’s current sample combines a breathable quick-dry four-way stretch shell, ultra-high gladiator split and a soft 250gsm milk-silk compression liner.',
     updated: '2026-09-15',
+    cluster: 'grappling-shorts',
     table: [
       ['Silhouette', 'Athletic 2-in-1 construction'],
       ['Outer layer', 'Breathable, quick-dry four-way stretch'],
@@ -85,6 +159,52 @@ export const RESOURCE_PAGES: ResourcePage[] = [
       { heading: 'Recommended sample checks', paragraphs: ['Review waistband stability, split height, liner coverage, stretch recovery, reinforced seams and graphic placement during sport-specific movement before bulk production is approved.'] },
     ],
     relatedProduct: { label: 'View the High-Split 2-in-1 Shorts', href: '/products/high-split-grappling-shorts' },
+    relatedGuides: ['high-split-vs-standard-grappling-shorts', '2-in-1-grappling-shorts-liner-construction', 'grappling-shorts-waistband-silicone-grip'],
+  },
+  {
+    slug: 'high-split-vs-standard-grappling-shorts',
+    title: 'High-Split vs Standard-Split Grappling Shorts',
+    description: 'Compare high-split and standard-split grappling shorts for kicking clearance, coverage, silhouette and combat-sport movement.',
+    eyebrow: 'GRAPPLING SHORTS FIT GUIDE',
+    answer: 'Choose split height from the athlete’s movement and coverage requirements. An ultra-high split maximizes thigh clearance for kicks, shots, sprawls and wide positions; a standard split creates a more conventional outer silhouette. A fitted inner liner can preserve support and coverage beneath a high-split shell.',
+    updated: '2026-09-15', cluster: 'grappling-shorts',
+    table: [['High-split direction', 'Maximum leg clearance and gladiator-style silhouette'], ['Standard-split direction', 'More conventional outer coverage'], ['Coverage system', 'Review outer opening together with the inner liner'], ['Movement test', 'High kick, shot, sprawl and wide stance'], ['Fit control', 'Waist stability and shell recovery'], ['Approval', 'Sport-specific worn sample']],
+    decisionRows: [['Ultra-high split', 'MMA, grappling and movement-led training', 'Confirm opening height and liner coverage'], ['Standard split', 'Buyers preferring a more conventional outer short', 'Check whether the shell restricts the target range'], ['No liner direction', 'Projects requiring a separate base layer', 'Clarify coverage, seam and waistband requirements']],
+    notFor: ['Do not select split height from appearance alone.', 'Do not evaluate outer coverage without the intended inner layer.', 'Do not assume one split shape fits every sport or target customer.'],
+    source: 'TONTON high-split 2-in-1 sample construction and movement review criteria.',
+    sections: [{ heading: 'Start with the required range of motion', paragraphs: ['High kicks, guard entries, shots and wide grappling positions place different demands on the thigh opening. The selected cut should release the leg without making the waistband or remaining shell carry unnecessary tension.'] }, { heading: 'Balance mobility and coverage', paragraphs: ['A deep outer split increases clearance. In a 2-in-1 construction, the fitted liner becomes the coverage layer and should be checked for length, opacity, support and seam comfort.'] }, { heading: 'Record the approval points', bullets: ['Split height and curve', 'Outer-short length', 'Liner length and fit', 'Waistband position', 'Movement result from front, side and rear views'] }],
+    relatedProduct: { label: 'View the high-split sample', href: '/products/high-split-grappling-shorts' },
+    relatedGuides: ['high-split-grappling-shorts-specifications', '2-in-1-grappling-shorts-liner-construction'],
+  },
+  {
+    slug: '2-in-1-grappling-shorts-liner-construction',
+    title: '2-in-1 Grappling Shorts Liner Construction Guide',
+    description: 'How to specify a supportive compression liner, outer shell, coverage and custom inner artwork for 2-in-1 grappling shorts.',
+    eyebrow: 'GRAPPLING SHORTS CONSTRUCTION GUIDE',
+    answer: 'A 2-in-1 grappling short combines a mobile outer shell with a fitted compression liner. The current TONTON high-split sample uses a breathable quick-dry four-way stretch shell and a soft 250gsm milk-silk liner; buyers should confirm liner length, opacity, support, seam comfort and artwork stretch on the physical sample.',
+    updated: '2026-09-15', cluster: 'grappling-shorts',
+    table: [['Construction', 'Athletic 2-in-1'], ['Outer shell', 'Breathable quick-dry four-way stretch'], ['Verified liner', '250gsm milk-silk on the current high-split sample'], ['Liner purpose', 'Support and coverage beneath the split shell'], ['Customization', 'Approved liner colors, patterns, logos and team artwork'], ['Sample check', 'Length, opacity, seams, recovery and graphic distortion']],
+    decisionRows: [['250gsm fitted liner', 'Supportive coverage in the verified high-split sample', 'Check heat, hand feel and compression level'], ['Custom printed liner', 'Brands using the inner layer as a visible design feature', 'Review artwork stretch and placement'], ['Separate compression base', 'Programs not requiring an integrated liner', 'Rebuild the waistband and coverage brief accordingly']],
+    notFor: ['Do not treat 250gsm as universal across all shorts.', 'Do not approve liner artwork only from a flat mockup.', 'Do not ignore liner seam placement in high-friction movement zones.'],
+    source: 'TONTON High-Split 2-in-1 Grappling Shorts sample with verified 250gsm milk-silk liner.',
+    sections: [{ heading: 'Give each layer a clear job', paragraphs: ['The outer shell supplies the athletic silhouette, split mobility and breathable quick-dry direction. The inner liner stays closer to the body to provide support and coverage as the outer layer opens through movement.'] }, { heading: 'Treat the liner as a product, not an accessory', bullets: ['Confirm liner length and leg opening', 'Review compression and recovery', 'Check opacity under movement', 'Inspect seam comfort and attachment at the waist', 'Approve custom graphics at worn stretch'] }, { heading: 'Test the complete two-layer system', paragraphs: ['The layers should move together without bunching, twisting or pulling the waistband. Approve the garment through kicking, stance changes, sprawls and ground transitions.'] }],
+    relatedProduct: { label: 'Inspect the 2-in-1 construction', href: '/products/high-split-grappling-shorts' },
+    relatedGuides: ['high-split-grappling-shorts-specifications', 'grappling-shorts-waistband-silicone-grip'],
+  },
+  {
+    slug: 'grappling-shorts-waistband-silicone-grip',
+    title: 'Grappling Shorts Waistband & Silicone Grip Guide',
+    description: 'Plan drawstring adjustment, anti-slip silicone grip, waistband stability and finishing for custom grappling shorts.',
+    eyebrow: 'GRAPPLING SHORTS WAIST GUIDE',
+    answer: 'A combat-sport waistband should remain stable through rotation, pulling and level changes. The verified high-split sample combines an adjustable drawstring with an interior anti-slip silicone grip strip. Buyers should approve waist pressure, grip, drawstring access, recovery and liner attachment together.',
+    updated: '2026-09-15', cluster: 'grappling-shorts',
+    table: [['Verified system', 'Adjustable drawstring plus anti-slip silicone grip'], ['Purpose', 'Waist stability during combat movement'], ['Related layer', 'Outer shell and integrated compression liner'], ['Comfort check', 'Pressure, grip feel and skin contact'], ['Construction check', 'Stitching, recovery and liner attachment'], ['Movement test', 'Rotation, shot, sprawl and repeated stance change']],
+    decisionRows: [['Drawstring + silicone grip', 'High-movement use requiring two control methods', 'Review pressure and grip on the worn sample'], ['Drawstring-led waist', 'Projects preferring less interior grip', 'Test stability through repeated movement'], ['Branded waistband direction', 'Programs emphasizing visible waist identity', 'Confirm branding does not compromise stretch or adjustment']],
+    notFor: ['Do not assume more silicone always means better stability.', 'Do not approve waistband measurements without the attached liner.', 'Do not leave drawstring position and end finishing undefined.'],
+    source: 'TONTON high-split grappling shorts waistband sample showing drawstring adjustment and an interior silicone grip strip.',
+    sections: [{ heading: 'Build a system around movement', paragraphs: ['The waistband, drawstring, silicone surface and liner attachment work as one system. Stability should be assessed while the athlete rotates, changes level and returns to stance—not only while standing still.'] }, { heading: 'Specify the details buyers can feel', bullets: ['Waist height and finished circumference', 'Drawstring route and access', 'Silicone strip width and position', 'Grip intensity and comfort', 'Liner attachment and reinforced stitching', 'Tagless label placement'] }, { heading: 'Approve security without over-compression', paragraphs: ['The waist should feel secure without excessive pressure. Check whether the silicone catches comfortably, whether the drawstring adjusts evenly and whether the full waistband recovers after training movement.'] }],
+    relatedProduct: { label: 'See the verified waistband system', href: '/products/high-split-grappling-shorts' },
+    relatedGuides: ['high-split-grappling-shorts-specifications', '2-in-1-grappling-shorts-liner-construction'],
   },
   {
     slug: 'custom-fightwear-sampling-moq',
@@ -93,6 +213,7 @@ export const RESOURCE_PAGES: ResourcePage[] = [
     eyebrow: 'OEM / ODM PROJECT GUIDE',
     answer: 'Start with the product type, estimated quantity, intended use, size range, artwork status and destination market. The applicable MOQ, sample route and production timing are confirmed after the selected product, material and construction requirements are reviewed.',
     updated: '2026-09-15',
+    cluster: 'project',
     table: [
       ['Starting information', 'Product, quantity, use, sizes, artwork and destination'],
       ['MOQ', 'Confirmed for the selected product, quantity and specification'],

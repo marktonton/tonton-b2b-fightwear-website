@@ -348,7 +348,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
         </div>
       </section>
 
-      <RelatedResources slugs={category.id === 'sublimated-rash-guards' ? ['rash-guard-fabric-construction', 'custom-fightwear-sampling-moq'] : category.id === 'sublimated-bjj-mma-shorts' ? ['high-split-grappling-shorts-specifications', 'custom-fightwear-sampling-moq'] : ['custom-fightwear-sampling-moq']} />
+      <RelatedResources slugs={category.id === 'sublimated-rash-guards' ? ['rash-guard-fabric-construction', '220gsm-rash-guard-fabric-guide', 'rash-guard-silicone-anti-slip-band', 'rash-guard-sublimation-logo-placement'] : category.id === 'sublimated-bjj-mma-shorts' ? ['high-split-grappling-shorts-specifications', 'high-split-vs-standard-grappling-shorts', '2-in-1-grappling-shorts-liner-construction', 'grappling-shorts-waistband-silicone-grip'] : ['custom-fightwear-sampling-moq']} />
 
       <section className="customization-cta">
         <div className="customization-shell customization-cta-inner">

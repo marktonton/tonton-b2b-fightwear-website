@@ -2,7 +2,9 @@ import Link from 'next/link';
 import { RESOURCE_PAGES } from '../lib/resource-content';
 
 export default function RelatedResources({ slugs }: { slugs?: string[] }) {
-  const resources = slugs?.length ? RESOURCE_PAGES.filter((item) => slugs.includes(item.slug)) : RESOURCE_PAGES;
+  const featured = ['rash-guard-fabric-construction', 'high-split-grappling-shorts-specifications', 'custom-fightwear-sampling-moq'];
+  const selected = slugs?.length ? slugs : featured;
+  const resources = RESOURCE_PAGES.filter((item) => selected.includes(item.slug));
   return (
     <section className="related-resources" aria-labelledby="related-resources-title">
       <div className="related-resources-heading">

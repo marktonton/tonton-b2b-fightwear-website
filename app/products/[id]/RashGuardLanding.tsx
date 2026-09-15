@@ -84,6 +84,12 @@ const SAMURAI_DETAIL_CONTENT = [
   { title: 'Back-neck branding', copy: 'A focused back-neck logo provides a clear secondary brand position without crowding the main artwork.', alt: 'Back-neck logo detail on a custom long-sleeve Rash Guard' },
 ];
 
+const CONSTRUCTION_EVIDENCE = [
+  { image: '/assets/products/rash-guard-products/construction-details/stretch-fabric-seam.webp', title: 'Stretch fabric & seam control', copy: 'The real sample shows the smooth stretch surface and parallel stitch rows that stabilize the joined panels.', alt: 'Close-up of stretch Rash Guard fabric and parallel seam construction' },
+  { image: '/assets/products/rash-guard-products/construction-details/breathable-mesh-panel.webp', title: 'Breathable panel transition', copy: 'A perforated mesh inset is joined cleanly to the surrounding fabric for targeted airflow and a controlled panel edge.', alt: 'Close-up of breathable mesh panel joined to Rash Guard fabric' },
+  { image: '/assets/products/rash-guard-products/construction-details/reinforced-seam-junction.webp', title: 'Reinforced panel junction', copy: 'Multiple seam lines meet at a high-movement junction, making alignment and finishing visible before sample approval.', alt: 'Close-up of reinforced Rash Guard seam intersection' },
+] as const;
+
 export default function RashGuardLanding({ product }: { product: Product }) {
   const content = RASH_GUARD_LANDING_CONTENT[product.id as RashGuardProductId];
   const gallery = product.images ?? [product.image];
@@ -172,6 +178,11 @@ export default function RashGuardLanding({ product }: { product: Product }) {
         </div>
       </section>
 
+      <section className="rg-evidence-section" aria-labelledby="rg-evidence-title">
+        <div className="rg-section-heading"><p className="rg-eyebrow">Added Sample Evidence</p><h2 id="rg-evidence-title">See the seams, panel transition and fabric surface</h2><p>Three original close-up photographs document construction details that buyers can review alongside fit, opacity and artwork.</p></div>
+        <div className="rg-evidence-grid">{CONSTRUCTION_EVIDENCE.map((item, index) => <figure key={item.image}><div><img src={item.image} alt={item.alt} width="1152" height="2048" loading="lazy" /></div><figcaption><span>{String(index + 1).padStart(2, '0')}</span><h3>{item.title}</h3><p>{item.copy}</p></figcaption></figure>)}</div>
+      </section>
+
       <section className="rg-custom-section">
         <div>
           <p className="rg-eyebrow">Customization Options</p>
@@ -211,7 +222,7 @@ export default function RashGuardLanding({ product }: { product: Product }) {
         </div>
       </section>
 
-      <RelatedResources slugs={['rash-guard-fabric-construction', 'custom-fightwear-sampling-moq']} />
+      <RelatedResources slugs={['rash-guard-fabric-construction', '220gsm-rash-guard-fabric-guide', 'rash-guard-silicone-anti-slip-band', 'rash-guard-sublimation-logo-placement']} />
 
       <section className="rg-final-cta">
         <p className="rg-eyebrow">Start Your Project</p>
