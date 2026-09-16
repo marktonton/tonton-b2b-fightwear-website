@@ -4,6 +4,7 @@ export type CustomizationFaq = {
 };
 
 const RASH_GUARD_NEW_SERIES_ROOT = '/assets/products/rash-guard-products/white-black-series';
+const RASH_GUARD_REFERENCE_GALLERY_ROOT = '/assets/products/rash-guard-products/reference-gallery-v2';
 
 export type CustomizationPageContent = {
   seoDescription: string;
@@ -81,26 +82,25 @@ export const customizationPageContent: Record<string, CustomizationPageContent> 
     ],
     skuGroups: [
       {
-        name: 'White Performance Rash Guard',
+        name: 'Sublimated Long-Sleeve Rash Guard',
         color: '#f4f4f1',
-        summary: 'A clean white short-sleeve sample shown from front, rear, and close detail angles.',
+        summary: 'A white-and-taupe long-sleeve sample shown with garment, printed-fabric, label, and seam references.',
         images: [
-          { src: `${RASH_GUARD_NEW_SERIES_ROOT}/white-rash-guard-three-quarter.webp`, alt: 'White short-sleeve custom Rash Guard three-quarter front view' },
-          { src: `${RASH_GUARD_NEW_SERIES_ROOT}/white-rash-guard-front-fit.webp`, alt: 'White short-sleeve custom Rash Guard front fit view' },
-          { src: `${RASH_GUARD_NEW_SERIES_ROOT}/white-rash-guard-rear.webp`, alt: 'White short-sleeve custom Rash Guard rear view' },
-          { src: `${RASH_GUARD_NEW_SERIES_ROOT}/white-rash-guard-chest-logo-detail.webp`, alt: 'White custom Rash Guard chest logo and raglan seam detail' },
+          { src: `${RASH_GUARD_REFERENCE_GALLERY_ROOT}/taupe-graphic-rash-guard-front.webp`, alt: 'White and taupe long-sleeve custom sublimated Rash Guard front view' },
+          { src: `${RASH_GUARD_REFERENCE_GALLERY_ROOT}/taupe-graphic-rash-guard-three-quarter.webp`, alt: 'White and taupe long-sleeve Rash Guard three-quarter view showing raglan sleeve construction' },
+          { src: `${RASH_GUARD_REFERENCE_GALLERY_ROOT}/taupe-rash-guard-printed-label-detail.webp`, alt: 'Printed internal label and finished stitching inside a custom Rash Guard' },
+          { src: `${RASH_GUARD_REFERENCE_GALLERY_ROOT}/taupe-sublimated-fabric-detail.webp`, alt: 'Close-up of taupe sublimated performance fabric with a repeating custom pattern' },
         ],
       },
       {
         name: 'Black Performance Rash Guard',
         color: '#111214',
-        summary: 'A tonal black short-sleeve sample with front, rear, fit, and branding references.',
+        summary: 'A tonal black short-sleeve compression sample with front, rear, fit, seam, and branding references.',
         images: [
-          { src: `${RASH_GUARD_NEW_SERIES_ROOT}/black-rash-guard-front.webp`, alt: 'Black short-sleeve custom Rash Guard front view' },
-          { src: `${RASH_GUARD_NEW_SERIES_ROOT}/black-rash-guard-three-quarter.webp`, alt: 'Black short-sleeve custom Rash Guard three-quarter front view' },
-          { src: `${RASH_GUARD_NEW_SERIES_ROOT}/black-rash-guard-rear.webp`, alt: 'Black short-sleeve custom Rash Guard rear view' },
-          { src: `${RASH_GUARD_NEW_SERIES_ROOT}/black-rash-guard-size-fit.webp`, alt: 'Black short-sleeve custom Rash Guard fit reference on athlete' },
-          { src: `${RASH_GUARD_NEW_SERIES_ROOT}/black-rash-guard-back-logo-detail.webp`, alt: 'Black custom Rash Guard tonal back logo detail' },
+          { src: `${RASH_GUARD_REFERENCE_GALLERY_ROOT}/black-compression-rash-guard-three-quarter.webp`, alt: 'Black short-sleeve compression Rash Guard three-quarter front view' },
+          { src: `${RASH_GUARD_REFERENCE_GALLERY_ROOT}/black-compression-rash-guard-chest-detail.webp`, alt: 'Close-up of black Rash Guard chest, raglan seam, and tonal branding' },
+          { src: `${RASH_GUARD_REFERENCE_GALLERY_ROOT}/black-compression-rash-guard-rear.webp`, alt: 'Black short-sleeve custom Rash Guard rear fit and back panel view' },
+          { src: `${RASH_GUARD_REFERENCE_GALLERY_ROOT}/black-compression-rash-guard-front.webp`, alt: 'Black short-sleeve compression Rash Guard full front fit' },
         ],
       },
     ],
