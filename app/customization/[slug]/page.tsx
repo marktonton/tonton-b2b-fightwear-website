@@ -29,7 +29,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
     };
   }
   const seoTitles: Record<string, string> = {
-    'sublimated-rash-guards': 'Custom Rash Guard Manufacturer | BJJ & MMA OEM',
+    'sublimated-rash-guards': 'Custom Sublimated Rash Guard Manufacturer | OEM',
     'sublimated-training-shorts': 'Custom Sublimated Training Shorts | Sportswear OEM',
     'sublimated-bjj-mma-shorts': 'Custom BJJ & MMA Shorts | Fightwear Manufacturer',
   };
@@ -77,6 +77,14 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
     description: content.seoDescription,
     primaryImageOfPage: resolveImage(content.heroImage),
     about: content.projectTypes.map((item) => ({ '@type': 'Thing', name: item.title })),
+    ...(isRashGuardPage && content.productDetails ? {
+      hasPart: content.productDetails.map((detail) => ({
+        '@type': 'ImageObject',
+        name: detail.title,
+        description: detail.text,
+        contentUrl: new URL(resolveImage(detail.image), SITE_URL).toString(),
+      })),
+    } : {}),
     mainEntity: {
       '@type': 'ItemList',
       itemListElement: products.map((product, index) => ({
@@ -147,7 +155,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
               <Link href="/">Home</Link><span>/</span><Link href="/collections">Customization</Link><span>/</span><span>{category.name}</span>
             </nav>
             <p className="customization-kicker">{content.kicker}</p>
-            <h1>Custom {category.name}</h1>
+            <h1>{isRashGuardPage ? 'Custom Sublimated Graphic Rash Guards' : `Custom ${category.name}`}</h1>
             <p className="customization-hero-lead">{content.heroLead}</p>
             <div className="customization-hero-actions">
               <Link className="customization-button customization-button-red" href="/#inquiry">Request a Quote <span aria-hidden="true">→</span></Link>
@@ -283,9 +291,17 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
         <section className="customization-details">
           <div className="customization-shell">
             <div className="customization-section-heading">
-              <div><p className="customization-kicker customization-kicker-light">PRODUCT DETAILS</p><h2>Review the areas that shape a custom Rash Guard.</h2></div>
-              <p>These direct crops use the original product photographs to make neckline, panel, and logo-placement decisions easier to inspect.</p>
+              <div><p className="customization-kicker customization-kicker-light">PERFORMANCE CONSTRUCTION</p><h2>Inspect the fabric, seams, mesh, and finishing details.</h2></div>
+              <p>Real sample photography shows the product areas a buyer should review before approving a custom sublimated graphic Rash Guard for BJJ, MMA, grappling, or training.</p>
             </div>
+            {isRashGuardPage && (
+              <dl className="customization-detail-specs" aria-label="Custom sublimated Rash Guard construction summary">
+                <div><dt>Fabric direction</dt><dd>Polyester-spandex stretch performance fabric</dd></div>
+                <div><dt>Ventilation option</dt><dd>Underarm and side mesh panel</dd></div>
+                <div><dt>Seam direction</dt><dd>Low-profile flatlock construction</dd></div>
+                <div><dt>Hem option</dt><dd>Silicone anti-slip grip</dd></div>
+              </dl>
+            )}
             <div className="customization-detail-grid">
               {content.productDetails.map((detail, index) => (
                 <article className="customization-detail-card" key={detail.title}>
