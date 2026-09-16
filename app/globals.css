@@ -1608,7 +1608,10 @@
 .customization-page-sublimated-rash-guards .customization-process-list h3 { font-size: 19px; }
 .customization-page-sublimated-rash-guards .customization-process-list p { font-size: 16px; line-height: 1.62; }
 
-.customization-page-sublimated-rash-guards .customization-proof { gap: clamp(50px, 6vw, 90px); padding-top: clamp(72px, 6vw, 96px); padding-bottom: clamp(72px, 6vw, 96px); }
+.customization-page-sublimated-rash-guards .customization-proof { grid-template-columns: minmax(0, 1.3fr) minmax(360px, .7fr); gap: clamp(38px, 4vw, 64px); padding-top: clamp(60px, 5vw, 78px); padding-bottom: clamp(60px, 5vw, 78px); }
+.customization-page-sublimated-rash-guards .customization-proof-media { aspect-ratio: 1848 / 851; background: #fff; }
+.customization-page-sublimated-rash-guards .customization-proof-media img { object-fit: contain; }
+.customization-page-sublimated-rash-guards .customization-proof h2 { max-width: 18ch; font-size: clamp(32px, 2.55vw, 42px); letter-spacing: -.025em; line-height: 1.08; }
 .customization-page-sublimated-rash-guards .customization-proof-copy > p:not(.customization-kicker) { margin-top: 20px; font-size: 17px; line-height: 1.64; }
 .customization-page-sublimated-rash-guards .customization-faq { gap: clamp(50px, 7vw, 106px); padding-top: 0; padding-bottom: clamp(72px, 6vw, 96px); }
 .customization-page-sublimated-rash-guards .customization-faq-heading > p:not(.customization-kicker) { margin-top: 20px; font-size: 17px; line-height: 1.62; }
@@ -1646,6 +1649,8 @@
   .customization-page-sublimated-rash-guards .customization-overview,
   .customization-page-sublimated-rash-guards .customization-technical,
   .customization-page-sublimated-rash-guards .customization-proof { padding-top: 60px; padding-bottom: 60px; }
+  .customization-page-sublimated-rash-guards .customization-proof { grid-template-columns: 1fr; }
+  .customization-page-sublimated-rash-guards .customization-proof h2 { max-width: 20ch; }
   .customization-page-sublimated-rash-guards .customization-options,
   .customization-page-sublimated-rash-guards .customization-products,
   .customization-page-sublimated-rash-guards .customization-details,

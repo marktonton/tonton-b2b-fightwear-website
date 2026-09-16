@@ -354,7 +354,12 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
 
       <section className="customization-proof customization-shell">
         <figure className="customization-proof-media">
-          <Image src={resolveImage('/assets/pages/factory-built-for-performance.webp')} alt="TONTON sportswear manufacturing team and production environment" fill sizes="(max-width: 900px) 100vw, 52vw" />
+          <Image
+            src={resolveImage(isRashGuardPage ? '/assets/products/rash-guard-products/rash-guard-3-features.webp' : '/assets/pages/factory-built-for-performance.webp')}
+            alt={isRashGuardPage ? 'Rash Guard 3.0 construction features showing neck label, breathable underarm mesh, flatlock sleeve seams, and silicone nonslip hem band' : 'TONTON sportswear manufacturing team and production environment'}
+            fill
+            sizes="(max-width: 900px) 100vw, 52vw"
+          />
         </figure>
         <div className="customization-proof-copy">
           <p className="customization-kicker">PRODUCTION SUPPORT</p>
