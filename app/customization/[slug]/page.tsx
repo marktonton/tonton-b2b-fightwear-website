@@ -217,8 +217,8 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
 
       <section className="customization-products customization-shell" id="custom-products">
         <div className="customization-section-heading">
-          <div><p className="customization-kicker">{isRashGuardPage ? 'REAL PRODUCT REFERENCES' : 'PRODUCT EXAMPLES'}</p><h2>{isRashGuardPage ? 'Compare two short-sleeve Rash Guard directions.' : `Explore ${category.name.toLowerCase()} directions`}</h2></div>
-          <p>{isRashGuardPage ? 'White and tonal-black samples are shown from multiple angles so buyers can review fit, panel balance, seam direction, and branding areas before defining a custom product.' : 'Use these products as a starting point. Colors, artwork, sizing, and selected construction details can be reviewed for your project.'}</p>
+          <div><p className="customization-kicker">{isRashGuardPage ? 'REAL PRODUCT REFERENCES' : 'PRODUCT EXAMPLES'}</p><h2>{isRashGuardPage ? 'Compare two custom Rash Guard directions.' : `Explore ${category.name.toLowerCase()} directions`}</h2></div>
+          <p>{isRashGuardPage ? 'A long-sleeve sublimated graphic sample and a tonal black short-sleeve sample are shown from multiple angles so buyers can review fit, fabric, seam direction, labeling, and branding areas.' : 'Use these products as a starting point. Colors, artwork, sizing, and selected construction details can be reviewed for your project.'}</p>
         </div>
         {content.skuGroups ? (
           <>
