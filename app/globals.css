@@ -1397,6 +1397,11 @@
 
 .customization-details { padding: clamp(90px, 9vw, 140px) 0; background: #131519; color: #fff; }
 .customization-details .customization-section-heading > p { color: rgba(255,255,255,.62); }
+.customization-detail-specs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 0 0 34px; border: 1px solid rgba(255,255,255,.17); }
+.customization-detail-specs > div { min-width: 0; padding: 20px 22px; }
+.customization-detail-specs > div + div { border-left: 1px solid rgba(255,255,255,.17); }
+.customization-detail-specs dt { color: rgba(255,255,255,.48); font-size: 10px; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; }
+.customization-detail-specs dd { margin: 9px 0 0; color: #fff; font-size: 15px; font-weight: 750; line-height: 1.45; }
 .customization-detail-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
 .customization-detail-card { min-width: 0; border: 1px solid rgba(255,255,255,.16); }
 .customization-detail-card figure { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: #292b2f; }
@@ -1522,9 +1527,9 @@
 .customization-page-sublimated-rash-guards .customization-shell { width: min(1480px, calc(100% - 56px)); }
 .customization-page-sublimated-rash-guards h1,
 .customization-page-sublimated-rash-guards h2,
-.customization-page-sublimated-rash-guards h3 { text-wrap: wrap; }
+.customization-page-sublimated-rash-guards h3 { overflow-wrap: normal; word-break: normal; hyphens: none; text-wrap: balance; }
 .customization-page-sublimated-rash-guards .customization-hero-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(44px, 4vw, 64px); }
-.customization-page-sublimated-rash-guards .customization-hero h1 { max-width: none; }
+.customization-page-sublimated-rash-guards .customization-hero h1 { max-width: 760px; font-size: clamp(46px, 4.25vw, 64px); letter-spacing: -.035em; line-height: 1.04; }
 .customization-page-sublimated-rash-guards .customization-hero-copy { padding-bottom: 48px; }
 .customization-page-sublimated-rash-guards .customization-breadcrumb { margin-bottom: clamp(48px, 5vw, 74px); font-size: 12px; }
 .customization-page-sublimated-rash-guards .customization-hero-media { min-height: 610px; }
@@ -1565,10 +1570,23 @@
 .customization-page-sublimated-rash-guards .customization-product-links > span { font-size: 12.5px; }
 .customization-page-sublimated-rash-guards .customization-product-links a { font-size: 14.5px; }
 
-.customization-page-sublimated-rash-guards .customization-details { padding: clamp(72px, 6vw, 96px) 0; }
-.customization-page-sublimated-rash-guards .customization-detail-card > div { padding: 20px; }
-.customization-page-sublimated-rash-guards .customization-detail-card h3 { font-size: 19px; }
-.customization-page-sublimated-rash-guards .customization-detail-card p { font-size: 15.5px; line-height: 1.6; }
+.customization-page-sublimated-rash-guards .customization-details { padding: clamp(72px, 6vw, 96px) 0; background: #101216; }
+.customization-page-sublimated-rash-guards .customization-details .customization-section-heading { margin-bottom: 30px; align-items: end; }
+.customization-page-sublimated-rash-guards .customization-details .customization-section-heading h2 { max-width: 780px; font-size: clamp(36px, 3.4vw, 52px); letter-spacing: -.035em; line-height: 1.06; }
+.customization-page-sublimated-rash-guards .customization-detail-specs { margin-bottom: 18px; background: rgba(255,255,255,.025); }
+.customization-page-sublimated-rash-guards .customization-detail-grid { grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 18px; }
+.customization-page-sublimated-rash-guards .customization-detail-card { display: flex; min-width: 0; flex-direction: column; overflow: hidden; background: #171a1f; border-color: rgba(255,255,255,.12); }
+.customization-page-sublimated-rash-guards .customization-detail-card:nth-child(1) { grid-column: span 5; }
+.customization-page-sublimated-rash-guards .customization-detail-card:nth-child(2) { grid-column: span 7; }
+.customization-page-sublimated-rash-guards .customization-detail-card:nth-child(n+3) { grid-column: span 3; }
+.customization-page-sublimated-rash-guards .customization-detail-card:nth-child(-n+2) figure { height: clamp(380px, 33vw, 500px); aspect-ratio: auto; }
+.customization-page-sublimated-rash-guards .customization-detail-card:nth-child(n+3) figure { aspect-ratio: 4 / 3; }
+.customization-page-sublimated-rash-guards .customization-detail-card figure img { object-position: center; transition: transform .4s ease; }
+.customization-page-sublimated-rash-guards .customization-detail-card:nth-child(1) figure img { object-position: center 15%; }
+.customization-page-sublimated-rash-guards .customization-detail-card:hover figure img { transform: scale(1.02); }
+.customization-page-sublimated-rash-guards .customization-detail-card > div { flex: 1; padding: 23px; }
+.customization-page-sublimated-rash-guards .customization-detail-card h3 { margin-top: 13px; font-size: 19px; line-height: 1.3; }
+.customization-page-sublimated-rash-guards .customization-detail-card p { margin-top: 9px; color: rgba(255,255,255,.67); font-size: 15px; line-height: 1.62; }
 
 .customization-page-sublimated-rash-guards .customization-technical { gap: clamp(52px, 6vw, 90px); padding-top: clamp(72px, 6vw, 96px); padding-bottom: clamp(72px, 6vw, 96px); }
 .customization-page-sublimated-rash-guards .customization-technical-lead { margin-top: 20px !important; font-size: 18px; line-height: 1.62; }
@@ -1611,11 +1629,17 @@
   .customization-page-sublimated-rash-guards .customization-overview-copy { padding-top: 0; }
   .customization-page-sublimated-rash-guards .customization-options-media { min-height: 540px; }
   .customization-page-sublimated-rash-guards .customization-sku-grid { grid-template-columns: 1fr; }
+  .customization-page-sublimated-rash-guards .customization-detail-specs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .customization-page-sublimated-rash-guards .customization-detail-specs > div:nth-child(3) { border-left: 0; }
+  .customization-page-sublimated-rash-guards .customization-detail-specs > div:nth-child(n+3) { border-top: 1px solid rgba(255,255,255,.17); }
+  .customization-page-sublimated-rash-guards .customization-detail-card:nth-child(n) { grid-column: span 6; }
+  .customization-page-sublimated-rash-guards .customization-detail-card:nth-child(n) figure { height: auto; aspect-ratio: 4 / 3; }
   .customization-page-sublimated-rash-guards .customization-technical { gap: 58px; }
 }
 
 @media (max-width: 660px) {
   .customization-page-sublimated-rash-guards .customization-shell { width: calc(100% - 32px); }
+  .customization-page-sublimated-rash-guards .customization-hero h1 { max-width: 14ch; font-size: clamp(38px, 11vw, 49px); letter-spacing: -.03em; line-height: 1.05; }
   .customization-page-sublimated-rash-guards .customization-hero-copy { padding-bottom: 30px; }
   .customization-page-sublimated-rash-guards .customization-hero-media,
   .customization-page-sublimated-rash-guards .customization-options-media { min-height: 0; }
@@ -1631,6 +1655,10 @@
   .customization-page-sublimated-rash-guards .customization-audience-grid article { padding: 24px; }
   .customization-page-sublimated-rash-guards .customization-overview-copy p,
   .customization-page-sublimated-rash-guards .customization-section-heading > p { font-size: 16px; }
+  .customization-page-sublimated-rash-guards .customization-detail-specs { grid-template-columns: 1fr; }
+  .customization-page-sublimated-rash-guards .customization-detail-specs > div + div { border-top: 1px solid rgba(255,255,255,.17); border-left: 0; }
+  .customization-page-sublimated-rash-guards .customization-detail-card:nth-child(n) { grid-column: 1 / -1; }
+  .customization-page-sublimated-rash-guards .customization-detail-card > div { padding: 21px; }
   .customization-page-sublimated-rash-guards .customization-technical-lead { font-size: 17px; }
   .customization-page-sublimated-rash-guards .customization-faq-list summary { font-size: 17px; }
   .customization-page-sublimated-rash-guards .customization-faq-list details > p { font-size: 16px; }

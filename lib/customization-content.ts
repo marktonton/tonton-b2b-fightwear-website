@@ -41,9 +41,9 @@ export type CustomizationPageContent = {
 
 export const customizationPageContent: Record<string, CustomizationPageContent> = {
   'sublimated-rash-guards': {
-    seoDescription: 'Custom Rash Guard manufacturer for BJJ, MMA and grappling brands. Review real white and black samples, branding areas, construction and OEM options.',
-    kicker: 'CUSTOM RASH GUARD MANUFACTURING',
-    heroLead: 'Develop short-sleeve or long-sleeve performance rash guards with your colors, artwork, sponsor marks, and team identity—supported from mockup through production.',
+    seoDescription: 'Custom sublimated graphic Rash Guard manufacturer for BJJ, MMA and grappling brands. Inspect real fabric, mesh, flatlock seams, silicone grip and OEM options.',
+    kicker: 'CUSTOM SUBLIMATED RASH GUARD MANUFACTURER',
+    heroLead: 'Develop custom sublimated graphic Rash Guards with your colors, all-over artwork, sponsor marks, and team identity—with fabric, mesh panels, seams, and finishing details reviewed before production.',
     heroImage: `${RASH_GUARD_NEW_SERIES_ROOT}/white-rash-guard-three-quarter.webp`,
     heroAlt: 'White short-sleeve custom Rash Guard shown from a three-quarter front angle',
     overviewTitle: 'Build a rash guard around the way your customers train.',
@@ -62,7 +62,7 @@ export const customizationPageContent: Record<string, CustomizationPageContent> 
       { title: 'Sleeve and fit direction', text: 'Choose short or long sleeves and define the intended fit and size range for your market.' },
       { title: 'All-over artwork', text: 'Apply team colors, patterns, logos, names, and sponsor graphics across the printable panels.' },
       { title: 'Fabric performance', text: 'Review stretch, hand feel, weight, and intended training conditions before sampling.' },
-      { title: 'Construction details', text: 'Confirm panel layout, neckline direction, seams, labels, and other brand-specific requirements.' },
+      { title: 'Construction details', text: 'Confirm panel layout, breathable mesh, flatlock seam direction, neckline, silicone hem grip, printed labels, and other brand-specific requirements.' },
     ],
     processLead: 'A practical OEM route for custom BJJ and MMA rash guards, with key decisions confirmed before bulk work begins.',
     processProduct: 'rash guard style, sleeve length, fit direction, quantity, and target user',
@@ -77,6 +77,7 @@ export const customizationPageContent: Record<string, CustomizationPageContent> 
       { question: 'Which artwork files are best for production?', answer: 'Vector logo and artwork files are preferred because they support clean scaling and placement. Brand colors, fonts, sponsor marks, and reference images are also helpful when preparing the mockup.' },
       { question: 'What fabric is used for a custom Rash Guard?', answer: 'A Rash Guard is typically developed with a smooth polyester-spandex performance fabric selected for stretch, recovery, print compatibility, and next-to-skin comfort. The exact fiber ratio and fabric weight are confirmed for the selected project rather than assumed from a generic specification.' },
       { question: 'How is a sublimated Rash Guard manufactured?', answer: 'After the artwork and color direction are approved, the design is transferred into compatible fabric, the printed panels are cut, stretch seams and the neckline are assembled, and the finished Rash Guard is inspected for workmanship, measurements, color, and branding.' },
+      { question: 'Can a custom Rash Guard include mesh panels, flatlock seams, and a silicone hem grip?', answer: 'Yes. These construction directions can be reviewed during development. Mesh placement, seam type, hem finish, and anti-slip silicone grip should be confirmed against the intended fit, fabric, and approved sample before bulk production.' },
     ],
     skuGroups: [
       {
@@ -104,13 +105,12 @@ export const customizationPageContent: Record<string, CustomizationPageContent> 
       },
     ],
     productDetails: [
-      { title: 'Close athletic fit', text: 'The white sample shows how the body panels, short sleeves, and neckline sit together on an athlete.', image: `${RASH_GUARD_NEW_SERIES_ROOT}/white-rash-guard-front-fit.webp`, alt: 'White short-sleeve Rash Guard close athletic fit on model' },
-      { title: 'Raglan seam direction', text: 'The chest close-up makes the neckline, raglan seam path, sleeve finish, and front branding area easy to inspect.', image: `${RASH_GUARD_NEW_SERIES_ROOT}/white-rash-guard-chest-logo-detail.webp`, alt: 'Close-up of white Rash Guard neckline, raglan seam and chest logo' },
-      { title: 'Rear neck branding', text: 'A compact upper-back mark can keep the rear panel clean while maintaining a recognizable brand detail.', image: `${RASH_GUARD_NEW_SERIES_ROOT}/white-rash-guard-rear.webp`, alt: 'White Rash Guard rear view with upper-back logo placement' },
-      { title: 'Tonal back artwork', text: 'The black sample demonstrates a low-contrast print direction across the broad rear branding area.', image: `${RASH_GUARD_NEW_SERIES_ROOT}/black-rash-guard-back-logo-detail.webp`, alt: 'Close-up of tonal logo printed across a black Rash Guard back panel' },
-      { title: 'Stretch seam construction', text: 'Parallel stitch rows secure the stretch fabric panels and make seam alignment easy to inspect on the physical sample.', image: '/assets/products/rash-guard-products/construction-details/stretch-fabric-seam.webp', alt: 'Close-up of stretch Rash Guard fabric and parallel seam construction' },
-      { title: 'Breathable mesh transition', text: 'A perforated inset introduces a breathable panel direction with a clearly finished transition to the surrounding fabric.', image: '/assets/products/rash-guard-products/construction-details/breathable-mesh-panel.webp', alt: 'Close-up of breathable mesh panel joined to Rash Guard fabric' },
-      { title: 'Reinforced seam junction', text: 'The close-up shows how multiple stitch lines meet at a high-movement panel junction for sample-level workmanship review.', image: '/assets/products/rash-guard-products/construction-details/reinforced-seam-junction.webp', alt: 'Close-up of reinforced Rash Guard seam intersection' },
+      { title: 'Performance fabric and panel fit', text: 'The complete sample shows a smooth stretch body, raglan sleeve direction, close neckline, and clean areas for custom sublimated graphics or logos.', image: '/assets/products/rash-guard-products/performance-details/custom-rash-guard-front-construction.webp', alt: 'Front view of a custom short-sleeve Rash Guard showing performance fabric, raglan panels and athletic fit' },
+      { title: 'Breathable side mesh panel', text: 'A perforated side insert can add ventilation through the underarm and torso area while preserving a close performance silhouette.', image: '/assets/products/rash-guard-products/performance-details/breathable-side-mesh-panel.webp', alt: 'Close view of a breathable mesh side panel on a custom Rash Guard sample' },
+      { title: 'Flatlock raglan seam', text: 'Low-profile stretch stitching follows the sleeve and body panel lines to create a clean construction direction for high-movement training use.', image: '/assets/products/rash-guard-products/performance-details/raglan-flatlock-seam.webp', alt: 'Close-up of flatlock stitching joining the raglan sleeve, body and mesh panel of a Rash Guard' },
+      { title: 'Mesh-to-fabric transition', text: 'The sample makes the alignment between solid stretch fabric, ventilating mesh, vertical joining seam, and lower hem easy to inspect.', image: '/assets/products/rash-guard-products/performance-details/mesh-panel-hem-seam.webp', alt: 'Rash Guard mesh panel joined to stretch body fabric with aligned seams and lower hem' },
+      { title: 'Silicone anti-slip hem option', text: 'A silicone grip at the inside hem can help limit ride-up. Grip width, placement, and final construction are confirmed during sampling.', image: '/assets/products/rash-guard-products/performance-details/silicone-anti-slip-hem.webp', alt: 'Inside Rash Guard hem with silicone anti-slip grip, mesh panel and finished stitching' },
+      { title: 'Tagless printed neck label', text: 'The physical sample shows an 85% polyester and 15% spandex fabric label printed inside the neck. Composition and care copy are finalized for each approved project.', image: '/assets/products/rash-guard-products/performance-details/printed-neck-label.webp', alt: 'Printed neck label on a Rash Guard sample showing 85 percent polyester and 15 percent spandex' },
     ],
     fabricGuide: {
       title: 'Rash Guard fabric should balance stretch, recovery, and print clarity.',
