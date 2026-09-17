@@ -143,7 +143,7 @@ export default function HomePage() {
             </ul>
             <div className="hero-actions">
               <a className="hero-cta-primary" href="#inquiry">GET CUSTOM PRICING</a>
-              <a className="hero-cta-secondary" href="/project-builder">BUILD YOUR PROJECT BRIEF</a>
+              <a className="hero-cta-secondary" href="/project-builder?source=homepage-hero">BUILD YOUR PROJECT BRIEF</a>
             </div>
           </div>
 
