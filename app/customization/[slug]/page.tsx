@@ -68,6 +68,15 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
 
   const products = getCustomizationProducts(category.id);
   const isRashGuardPage = category.id === 'sublimated-rash-guards';
+  const builderProduct = category.id === 'sublimated-rash-guards'
+    ? 'Rash Guard'
+    : category.id === 'sublimated-training-shorts'
+      ? 'Training Shorts'
+      : 'BJJ / MMA Shorts';
+  const builderHref = {
+    pathname: '/project-builder',
+    query: { product: builderProduct, reference: category.name, source: 'customization-page' },
+  };
   const categoryUrl = `${SITE_URL}/customization/${category.id}`;
   const collectionSchema = {
     '@context': 'https://schema.org',
@@ -158,7 +167,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
             <h1>{isRashGuardPage ? 'Custom Sublimated Graphic Rash Guards' : `Custom ${category.name}`}</h1>
             <p className="customization-hero-lead">{content.heroLead}</p>
             <div className="customization-hero-actions">
-              <Link className="customization-button customization-button-red" href="/#inquiry">Request a Quote <span aria-hidden="true">→</span></Link>
+              <Link className="customization-button customization-button-red" href={builderHref}>Build Your Project <span aria-hidden="true">→</span></Link>
               <Link className="customization-text-link" href="/service-support">View Customization Process <span aria-hidden="true">→</span></Link>
             </div>
           </div>
@@ -379,7 +388,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
           <p>Clear answers for brands, gyms, academies, teams, distributors, and private-label buyers.</p>
           <div className="customization-faq-actions">
             <Link href="/resources">Read Buyer Resources <span aria-hidden="true">→</span></Link>
-            <Link href="/project-builder">Build Your Project Brief <span aria-hidden="true">→</span></Link>
+            <Link href={builderHref}>Build Your Project Brief <span aria-hidden="true">→</span></Link>
           </div>
         </div>
         <div className="customization-faq-list">
@@ -409,7 +418,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
       <section className="customization-cta">
         <div className="customization-shell customization-cta-inner">
           <div><p className="customization-kicker customization-kicker-light">START YOUR PROJECT</p><h2>Tell us what you want to make.</h2></div>
-          <div><p>Share your product type, quantity, target market, size range, artwork, and reference ideas. We will use them to clarify the next development step.</p><Link className="customization-button customization-button-red" href="/project-builder">Build Your Project Brief <span aria-hidden="true">→</span></Link></div>
+          <div><p>Share your product type, quantity, target market, size range, artwork, and reference ideas. We will use them to clarify the next development step.</p><Link className="customization-button customization-button-red" href={builderHref}>Build Your Project Brief <span aria-hidden="true">→</span></Link></div>
         </div>
       </section>
     </div>

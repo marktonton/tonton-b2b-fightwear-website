@@ -68,7 +68,7 @@ export default function GrapplingShortsLanding({ product }: { product: Product }
             <li>Custom inner-layer patterns, logos and team artwork</li>
           </ul>
           <div className="rg-hero-actions">
-            <a className="rg-btn-primary" href={whatsapp} target="_blank" rel="noopener noreferrer">Get Custom Pricing</a>
+            <Link className="rg-btn-primary" href={{ pathname: '/project-builder', query: { product: 'High-Split Grappling Shorts', reference: product.name, source: 'product-page' } }}>Build This Product Brief</Link>
             <a className="rg-btn-secondary" href="#construction">View Construction</a>
           </div>
         </div>
@@ -152,7 +152,7 @@ export default function GrapplingShortsLanding({ product }: { product: Product }
 
       <RelatedResources slugs={['high-split-grappling-shorts-specifications', 'high-split-vs-standard-grappling-shorts', '2-in-1-grappling-shorts-liner-construction', 'grappling-shorts-waistband-silicone-grip']} />
 
-      <section className="rg-final-cta"><p className="rg-eyebrow">Start Your Project</p><h2>Develop high-split grappling shorts for your brand</h2><p>Send your artwork, quantity, size range and target use for a project-specific review.</p><div className="rg-final-actions"><Link href="/project-builder">Build Your Project Brief</Link><a href={whatsapp} target="_blank" rel="noopener noreferrer">Request a Quote</a></div></section>
+      <section className="rg-final-cta"><p className="rg-eyebrow">Start Your Project</p><h2>Develop high-split grappling shorts for your brand</h2><p>Send your artwork, quantity, size range and target use for a project-specific review.</p><div className="rg-final-actions"><Link href={{ pathname: '/project-builder', query: { product: 'High-Split Grappling Shorts', reference: product.name, source: 'product-page' } }}>Build Your Project Brief</Link><a href={whatsapp} target="_blank" rel="noopener noreferrer">Request a Quote</a></div></section>
     </div>
   );
 }

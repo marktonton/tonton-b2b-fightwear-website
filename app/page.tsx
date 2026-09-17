@@ -99,6 +99,23 @@ const topPicks = TOP_PICK_IDS
   .map((id) => productsData.products.find((product) => product.id === id))
   .filter((product): product is Product => Boolean(product));
 
+function getBuilderProductType(product: Product) {
+  if (product.id === 'high-split-grappling-shorts') return 'High-Split Grappling Shorts';
+  if (product.categoryId === 'sublimated-rash-guards') return 'Rash Guard';
+  if (product.categoryId === 'sublimated-training-shorts') return 'Training Shorts';
+  if (product.name.toLowerCase().includes('kit')) return 'Coordinated Team Kit';
+  return 'BJJ / MMA Shorts';
+}
+
+function getProductBuilderHref(product: Product) {
+  const params = new URLSearchParams({
+    product: getBuilderProductType(product),
+    reference: product.name,
+    source: 'homepage-product',
+  });
+  return `/project-builder?${params.toString()}`;
+}
+
 export default function HomePage() {
   const [currentBanner, setCurrentBanner] = useState(0);
   const [currentFactory, setCurrentFactory] = useState(0);
@@ -143,7 +160,7 @@ export default function HomePage() {
             </ul>
             <div className="hero-actions">
               <a className="hero-cta-primary" href="#inquiry">GET CUSTOM PRICING</a>
-              <a className="hero-cta-secondary" href="/project-builder">BUILD YOUR PROJECT BRIEF</a>
+              <a className="hero-cta-secondary" href="/project-builder?source=homepage-hero">BUILD YOUR PROJECT BRIEF</a>
             </div>
           </div>
 
@@ -268,7 +285,7 @@ export default function HomePage() {
                 <p className="top-pick-description">{product.description}</p>
                 <div className="top-pick-actions">
                   <a className="top-pick-link" href={`/products/${product.id}`}>View Details</a>
-                  <a className="top-pick-quote" href={`https://wa.me/8617722438678?text=Interested%20in%20${encodeURIComponent(product.name)}`} target="_blank" rel="noopener noreferrer">Get a Quote</a>
+                  <a className="top-pick-quote" href={getProductBuilderHref(product)}>Build Brief</a>
                 </div>
               </div>
             </article>

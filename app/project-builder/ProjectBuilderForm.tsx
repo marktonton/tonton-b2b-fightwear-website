@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 
 type FormState = {
   product: string; quantity: string; use: string; artwork: string; construction: string;
@@ -43,15 +43,61 @@ const initial: FormState = {
   decoration: 'Full sublimation artwork', priorities: [], sizes: '', destination: '', notes: '',
 };
 
-function recordBuilderEvent(action: string, product: string) {
+const productAliases: Record<string, string> = {
+  'sublimated-rash-guards': 'Rash Guard',
+  'rash guard': 'Rash Guard',
+  'sublimated-training-shorts': 'Training Shorts',
+  'training shorts': 'Training Shorts',
+  'sublimated-bjj-mma-shorts': 'BJJ / MMA Shorts',
+  'bjj / mma shorts': 'BJJ / MMA Shorts',
+  'high-split-grappling-shorts': 'High-Split Grappling Shorts',
+  'high-split grappling shorts': 'High-Split Grappling Shorts',
+  'coordinated team kit': 'Coordinated Team Kit',
+};
+
+function resolveBuilderProduct(value: string | null) {
+  if (!value) return null;
+  const normalized = value.trim().toLowerCase();
+  return Object.keys(productConfigs).find((product) => product.toLowerCase() === normalized)
+    ?? productAliases[normalized]
+    ?? null;
+}
+
+function formatSource(value: string | null) {
+  if (!value) return 'Direct visit';
+  return value.replace(/[-_]+/g, ' ').replace(/\b\w/g, (letter) => letter.toUpperCase());
+}
+
+function recordBuilderEvent(action: string, product: string, source: string) {
   const analyticsWindow = window as typeof window & { dataLayer?: Array<Record<string, string>>; gtag?: (...args: unknown[]) => void };
-  if (analyticsWindow.gtag) analyticsWindow.gtag('event', 'project_builder_action', { action, product_type: product });
-  else analyticsWindow.dataLayer?.push({ event: 'project_builder_action', action, product_type: product });
+  if (analyticsWindow.gtag) analyticsWindow.gtag('event', 'project_builder_action', { action, product_type: product, entry_source: source });
+  else analyticsWindow.dataLayer?.push({ event: 'project_builder_action', action, product_type: product, entry_source: source });
 }
 
 export default function ProjectBuilderForm() {
   const [form, setForm] = useState(initial);
   const [copyState, setCopyState] = useState('Copy specification');
+  const [referenceProduct, setReferenceProduct] = useState('');
+  const [entrySource, setEntrySource] = useState('Direct visit');
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const requestedProduct = resolveBuilderProduct(params.get('product'));
+    const reference = params.get('reference')?.trim() ?? '';
+    const source = formatSource(params.get('source'));
+
+    if (requestedProduct) {
+      setForm((current) => ({
+        ...current,
+        product: requestedProduct,
+        construction: productConfigs[requestedProduct].constructionOptions[0],
+        priorities: [],
+      }));
+    }
+    setReferenceProduct(reference);
+    setEntrySource(source);
+  }, []);
+
   const config = productConfigs[form.product];
   const setValue = (key: keyof FormState, value: string) => setForm((current) => ({ ...current, [key]: value }));
   const setProduct = (product: string) => setForm((current) => ({ ...current, product, construction: productConfigs[product].constructionOptions[0], priorities: [] }));
@@ -59,6 +105,8 @@ export default function ProjectBuilderForm() {
   const summary = useMemo(() => [
     'Hello TONTON, I would like a custom fightwear project review.',
     `Product: ${form.product}`,
+    `Reference product: ${referenceProduct || 'Not specified'}`,
+    `Entry source: ${entrySource}`,
     `Estimated quantity: ${form.quantity}`,
     `Intended use: ${form.use}`,
     `Construction direction: ${form.construction}`,
@@ -68,7 +116,7 @@ export default function ProjectBuilderForm() {
     `Size range: ${form.sizes || 'To be confirmed'}`,
     `Destination: ${form.destination || 'To be confirmed'}`,
     `Additional notes: ${form.notes || 'None'}`,
-  ].join('\n'), [form]);
+  ].join('\n'), [form, referenceProduct, entrySource]);
   const whatsapp = `https://wa.me/8617722438678?text=${encodeURIComponent(summary)}`;
   const email = `mailto:gary@tontonsportswear.com?subject=${encodeURIComponent(`Custom ${form.product} project brief`)}&body=${encodeURIComponent(summary)}`;
 
@@ -76,13 +124,20 @@ export default function ProjectBuilderForm() {
     try {
       await navigator.clipboard.writeText(summary);
       setCopyState('Specification copied');
-      recordBuilderEvent('copy_specification', form.product);
+      recordBuilderEvent('copy_specification', form.product, entrySource);
       window.setTimeout(() => setCopyState('Copy specification'), 2200);
     } catch { setCopyState('Copy unavailable — use email'); }
   };
 
   return <div className="project-builder-layout">
     <form className="project-builder-form" onSubmit={(event) => event.preventDefault()}>
+      {(referenceProduct || entrySource !== 'Direct visit') && (
+        <div className="project-builder-context" role="status">
+          <span>PROJECT CONTEXT</span>
+          <strong>{referenceProduct || form.product}</strong>
+          <p>Started from {entrySource}. The product type below has been preselected and can still be changed.</p>
+        </div>
+      )}
       <label>Product type<select value={form.product} onChange={(event) => setProduct(event.target.value)} required>{Object.keys(productConfigs).map((product) => <option key={product}>{product}</option>)}</select></label>
       <label>Estimated quantity<select value={form.quantity} onChange={(event) => setValue('quantity', event.target.value)} required><option>Under 50 PCS</option><option>50–99 PCS</option><option>100–299 PCS</option><option>300+ PCS</option></select></label>
       <label>Intended use<select value={form.use} onChange={(event) => setValue('use', event.target.value)} required><option>BJJ / grappling</option><option>MMA / combat training</option><option>Boxing / striking</option><option>Gym / functional training</option><option>Retail / private label</option><option>Team / academy uniform</option></select></label>
@@ -94,6 +149,6 @@ export default function ProjectBuilderForm() {
       <label>Destination country <span>optional</span><input value={form.destination} onChange={(event) => setValue('destination', event.target.value)} placeholder="Country or sales market" /></label>
       <label className="project-builder-wide">Additional requirements <span>optional</span><textarea value={form.notes} onChange={(event) => setValue('notes', event.target.value)} rows={5} placeholder="Fabric, colors, labels, packaging, timing or reference-product notes" /></label>
     </form>
-    <aside className="project-builder-summary"><p>YOUR PROJECT BRIEF</p><h2>{form.product}</h2><dl><div><dt>Quantity</dt><dd>{form.quantity}</dd></div><div><dt>Use</dt><dd>{form.use}</dd></div><div><dt>Build</dt><dd>{form.construction}</dd></div><div><dt>Branding</dt><dd>{form.decoration}</dd></div><div><dt>Priorities</dt><dd>{form.priorities.join(', ') || 'To be discussed'}</dd></div></dl><p className="project-builder-note">The team will confirm the applicable MOQ, materials, sample route and schedule against this brief.</p><button type="button" className="project-builder-copy" onClick={copySummary} aria-live="polite">{copyState}</button><a href={whatsapp} target="_blank" rel="noopener noreferrer" onClick={() => recordBuilderEvent('whatsapp', form.product)}>Send by WhatsApp</a><a className="project-builder-email" href={email} onClick={() => recordBuilderEvent('email', form.product)}>Send by email</a></aside>
+    <aside className="project-builder-summary"><p>YOUR PROJECT BRIEF</p><h2>{form.product}</h2><dl>{referenceProduct && <div><dt>Reference</dt><dd>{referenceProduct}</dd></div>}<div><dt>Quantity</dt><dd>{form.quantity}</dd></div><div><dt>Use</dt><dd>{form.use}</dd></div><div><dt>Build</dt><dd>{form.construction}</dd></div><div><dt>Branding</dt><dd>{form.decoration}</dd></div><div><dt>Priorities</dt><dd>{form.priorities.join(', ') || 'To be discussed'}</dd></div></dl><p className="project-builder-note">The team will confirm the applicable MOQ, materials, sample route and schedule against this brief.</p><button type="button" className="project-builder-copy" onClick={copySummary} aria-live="polite">{copyState}</button><a href={whatsapp} target="_blank" rel="noopener noreferrer" onClick={() => recordBuilderEvent('whatsapp', form.product, entrySource)}>Send by WhatsApp</a><a className="project-builder-email" href={email} onClick={() => recordBuilderEvent('email', form.product, entrySource)}>Send by email</a></aside>
   </div>;
 }
