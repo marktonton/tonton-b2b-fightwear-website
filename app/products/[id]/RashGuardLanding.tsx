@@ -139,7 +139,7 @@ export default function RashGuardLanding({ product }: { product: Product }) {
             {content.features.map((feature) => <li key={feature}>{feature}</li>)}
           </ul>
           <div className="rg-hero-actions">
-            <a className="rg-btn-primary" href={`https://wa.me/8617722438678?text=${encodeURIComponent(`I am interested in the ${product.name}.`)}`} target="_blank" rel="noopener noreferrer">Get Custom Pricing</a>
+            <Link className="rg-btn-primary" href={{ pathname: '/project-builder', query: { product: 'Rash Guard', reference: product.name, source: 'product-page' } }}>Build This Product Brief</Link>
             <a className="rg-btn-secondary" href="#product-details">View Product Details</a>
           </div>
         </div>
@@ -228,7 +228,7 @@ export default function RashGuardLanding({ product }: { product: Product }) {
         <p className="rg-eyebrow">Start Your Project</p>
         <h2>Ready to develop your custom Rash Guard?</h2>
         <p>Send your logo, quantity, size range and preferred color direction for a project-specific review.</p>
-        <div className="rg-final-actions"><Link href="/project-builder">Build Your Project Brief</Link><a href={`https://wa.me/8617722438678?text=${encodeURIComponent(`Please quote the ${product.name}.`)}`} target="_blank" rel="noopener noreferrer">Request a Quote</a></div>
+        <div className="rg-final-actions"><Link href={{ pathname: '/project-builder', query: { product: 'Rash Guard', reference: product.name, source: 'product-page' } }}>Build Your Project Brief</Link><a href={`https://wa.me/8617722438678?text=${encodeURIComponent(`Please quote the ${product.name}.`)}`} target="_blank" rel="noopener noreferrer">Request a Quote</a></div>
       </section>
     </div>
   );
