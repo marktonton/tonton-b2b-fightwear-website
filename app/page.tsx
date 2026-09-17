@@ -114,20 +114,44 @@ const FACTORY_IMAGES = [
   'assets/factory/factory-slider-07.jpg'
 ];
 
-const TOP_PICK_IDS = [
-  'blue-team-rash-guard',
-  'white-logo-rash-guard',
-  'samurai-graphic-rash-guard',
-  'high-split-grappling-shorts',
-  'custom-logo-shorts',
-  'pro-mma-shorts-07',
-  'black-white-mma-kit',
-  'pro-team-kit-17',
+const PRODUCT_DETAIL_ENTRIES = [
+  {
+    id: 'blue-team-rash-guard',
+    buyer: 'Academies, fightwear brands and coordinated team programs',
+    specs: ['220gsm Ultra-Fine Lycra', '85% Polyester / 15% Spandex', 'Silicone Anti-Slip Hem'],
+    customization: 'Full sublimation, colors, logos, sleeves, labels and hem details',
+  },
+  {
+    id: 'samurai-graphic-rash-guard',
+    buyer: 'Brands developing premium long-sleeve competition collections',
+    specs: ['220gsm Ultra-Fine Lycra', 'Long-Sleeve Compression Fit', 'Opaque Four-Way Stretch'],
+    customization: 'Full-body artwork, panel graphics, sleeve branding and neckline logos',
+  },
+  {
+    id: 'custom-logo-shorts',
+    buyer: 'Clubs and brands needing a clear entry-level competition short',
+    specs: ['Elastic Waistband', 'Full-Color Sublimation', 'Custom Logo Placement'],
+    customization: 'Colors, logos, waistband direction, labels and artwork layout',
+  },
+  {
+    id: 'pro-mma-shorts-07',
+    buyer: 'Gyms and teams building lightweight training uniform programs',
+    specs: ['Lightweight Training Construction', 'Sublimation Printing', 'Team Logo Placement'],
+    customization: 'Colors, leg graphics, waistband branding and private labels',
+  },
+  {
+    id: 'high-split-grappling-shorts',
+    buyer: 'Grappling and MMA brands requiring mobility and layered construction',
+    specs: ['Quick-Dry Four-Way Stretch Shell', '250gsm Milk-Silk Liner', 'Anti-Slip Waistband'],
+    customization: 'High-split shape, liner artwork, waistband, labels and team graphics',
+  },
+  {
+    id: 'black-white-mma-kit',
+    buyer: 'Teams ordering a coordinated rash guard and shorts program',
+    specs: ['Matching Rash Guard + Shorts', 'Coordinated Sublimation Artwork', 'Team-Ready Set'],
+    customization: 'Shared color system, logos, athlete names, labels and set packaging',
+  },
 ] as const;
-
-const topPicks = TOP_PICK_IDS
-  .map((id) => productsData.products.find((product) => product.id === id))
-  .filter((product): product is Product => Boolean(product));
 
 function getBuilderProductType(product: Product) {
   if (product.id === 'high-split-grappling-shorts') return 'High-Split Grappling Shorts';
@@ -287,6 +311,52 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* 4. REAL PRODUCT DETAILS */}
+      <section className="product-details-section" id="products" aria-labelledby="product-details-title">
+        <header className="product-details-heading">
+          <div>
+            <p>REAL PRODUCT DETAILS</p>
+            <h2 id="product-details-title">Compare a practical starting point for your project.</h2>
+          </div>
+          <p>Review product construction, buyer fit and customization scope before opening a product-specific brief.</p>
+        </header>
+
+        <div className="product-details-grid">
+          {PRODUCT_DETAIL_ENTRIES.map((entry) => {
+            const product = productsData.products.find((item) => item.id === entry.id);
+            if (!product) return null;
+
+            return (
+              <article className="product-detail-card" key={entry.id}>
+                <a className="product-detail-media" href={`/products/${product.id}`} aria-label={`View ${product.name} details`}>
+                  <img src={resolveImage(product.image)} alt={product.name} loading="lazy" />
+                </a>
+                <div className="product-detail-copy">
+                  <p className="product-detail-audience">{entry.buyer}</p>
+                  <h3>{product.name}</h3>
+                  <dl className="product-detail-baseline">
+                    <div><dt>MOQ</dt><dd>From 10 pcs*</dd></div>
+                    <div><dt>Target Sample</dt><dd>3–7 days*</dd></div>
+                  </dl>
+                  <ul aria-label={`${product.name} specifications`}>
+                    {entry.specs.map((spec) => <li key={spec}>{spec}</li>)}
+                  </ul>
+                  <div className="product-detail-customization">
+                    <span>Customization</span>
+                    <p>{entry.customization}</p>
+                  </div>
+                  <div className="product-detail-actions">
+                    <a className="product-detail-primary" href={getProductBuilderHref(product)}>Get Pricing for This Product</a>
+                    <a className="product-detail-secondary" href={`/products/${product.id}`}>View Details <span aria-hidden="true">→</span></a>
+                  </div>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+        <p className="product-details-note">*MOQ and target sampling windows apply to selected styles and begin after product details and usable artwork are confirmed.</p>
+      </section>
+
       {/* 3. FACTORY DUAL-COLUMN SECTION (IMAGE 3 STYLE) - v1.0.2 */}
       <section className="factory-container" id="factory">
         {/* Left Column: Slider */}
@@ -359,31 +429,6 @@ export default function HomePage() {
             alt="Why brands choose TONTON capabilities"
             loading="lazy"
           />
-        </div>
-      </section>
-
-      {/* 3. TOP PICKS */}
-      <section className="top-picks-section" id="products" aria-labelledby="top-picks-title">
-        <div className="top-picks-heading">
-          <h2 id="top-picks-title">TOP PICKS</h2>
-        </div>
-        <div className="top-picks-grid">
-          {topPicks.map((product) => (
-            <article className="top-pick-card" key={product.id}>
-              <a className={`top-pick-image ${product.id === 'blue-team-rash-guard' || product.id === 'white-logo-rash-guard' || product.id === 'samurai-graphic-rash-guard' || product.id === 'high-split-grappling-shorts' ? 'is-clean-product' : ''}`} href={`/products/${product.id}`} aria-label={`View ${product.name}`}>
-                <img src={resolveImage(product.image)} alt={product.name} loading="lazy" />
-              </a>
-              <div className="top-pick-content">
-                <p className="top-pick-category">Customization</p>
-                <h3>{product.name}</h3>
-                <p className="top-pick-description">{product.description}</p>
-                <div className="top-pick-actions">
-                  <a className="top-pick-link" href={`/products/${product.id}`}>View Details</a>
-                  <a className="top-pick-quote" href={getProductBuilderHref(product)}>Build Brief</a>
-                </div>
-              </div>
-            </article>
-          ))}
         </div>
       </section>
 
