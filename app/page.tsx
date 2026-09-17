@@ -357,6 +357,93 @@ export default function HomePage() {
         <p className="product-details-note">*MOQ and target sampling windows apply to selected styles and begin after product details and usable artwork are confirmed.</p>
       </section>
 
+      {/* 5. OEM / ODM PROCESS */}
+      <section className="oem-process-section" id="custom-process" aria-labelledby="oem-process-title">
+        <header className="oem-process-heading">
+          <div>
+            <p>CUSTOM OEM / ODM PROCESS</p>
+            <h2 id="oem-process-title">From project brief to bulk production.</h2>
+          </div>
+          <p>Know what to prepare, what our team confirms and what happens next at every stage of a custom fightwear project.</p>
+        </header>
+
+        <div className="oem-process-list">
+          <article className="oem-process-step">
+            <div className="oem-process-media">
+              <figure className="oem-process-media-main"><img src={resolveImage('assets/process/01-project-brief-design.webp')} alt="TONTON designers preparing custom sportswear artwork on computers" loading="lazy" /></figure>
+              <figure className="oem-process-media-side"><img src={resolveImage('assets/process/01-requirements-confirmation.webp')} alt="TONTON team reviewing artwork and project requirements" loading="lazy" /></figure>
+            </div>
+            <div className="oem-process-copy">
+              <span className="oem-process-number">01</span>
+              <p className="oem-process-kicker">START YOUR PROJECT</p>
+              <h3>Send Your Project Brief</h3>
+              <p className="oem-process-lead">Final artwork is not required to start. Share the direction you have, and our team will organize the next questions around your product.</p>
+              <div className="oem-process-details">
+                <div><strong>Helpful to share</strong><ul><li>Product type and estimated quantity</li><li>Logo or reference images</li><li>Target colors and required timing</li></ul></div>
+                <div><strong>We review</strong><ul><li>Product fit and customization route</li><li>Missing specifications or artwork</li><li>Practical next step for the brief</li></ul></div>
+              </div>
+              <a className="oem-process-link" href="/project-builder?source=homepage-process-step-1">Start Your Project Brief <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article className="oem-process-step">
+            <div className="oem-process-media">
+              <figure className="oem-process-media-main"><img src={resolveImage('assets/process/02-sublimation-printing.webp')} alt="TONTON sublimation printing equipment producing custom sportswear panels" loading="lazy" /></figure>
+              <figure className="oem-process-media-side"><img src={resolveImage('assets/process/02-pattern-cutting.webp')} alt="TONTON worker cutting printed garment panels for a custom sample" loading="lazy" /></figure>
+            </div>
+            <div className="oem-process-copy">
+              <span className="oem-process-number">02</span>
+              <p className="oem-process-kicker">ALIGN THE SPECIFICATION</p>
+              <h3>Confirm Design, Specifications &amp; Quote</h3>
+              <p className="oem-process-lead">Before sampling, we align the product construction, fabric direction, artwork placement and commercial terms for the selected style.</p>
+              <div className="oem-process-details">
+                <div><strong>We confirm</strong><ul><li>Logo, colors and artwork layout</li><li>Fabric and construction direction</li><li>MOQ and sample route</li></ul></div>
+                <div><strong>You receive</strong><ul><li>Mockup or design direction</li><li>Product-specific recommendation</li><li>Project quotation for review</li></ul></div>
+              </div>
+            </div>
+          </article>
+
+          <article className="oem-process-step">
+            <div className="oem-process-media">
+              <figure className="oem-process-media-main"><img src={resolveImage('assets/process/03-finished-garment-qc.webp')} alt="TONTON quality control staff checking finished custom garments" loading="lazy" /></figure>
+              <figure className="oem-process-media-side"><img src={resolveImage('assets/process/03-stitching-size-inspection.webp')} alt="Close inspection of stitching and garment construction at TONTON" loading="lazy" /></figure>
+            </div>
+            <div className="oem-process-copy">
+              <span className="oem-process-number">03</span>
+              <p className="oem-process-kicker">CHECK BEFORE BULK</p>
+              <h3>Review &amp; Approve the Sample</h3>
+              <p className="oem-process-lead">The target sampling window is 3–7 days after product details and usable artwork are confirmed. Exact timing depends on the selected construction.</p>
+              <div className="oem-process-details">
+                <div><strong>Review points</strong><ul><li>Fit, sizing and construction</li><li>Colors, logos and print placement</li><li>Labels, waistband and detail options</li></ul></div>
+                <div><strong>Approval</strong><ul><li>Record requested revisions</li><li>Confirm the approved specification</li><li>Authorize bulk-production planning</li></ul></div>
+              </div>
+            </div>
+          </article>
+
+          <article className="oem-process-step">
+            <div className="oem-process-media">
+              <figure className="oem-process-media-main"><img src={resolveImage('assets/process/04-smart-hanging-line.webp')} alt="TONTON smart hanging production line for custom sportswear manufacturing" loading="lazy" /></figure>
+              <figure className="oem-process-media-side"><img src={resolveImage('assets/process/04-folding-packing.webp')} alt="TONTON staff folding and packing completed custom sportswear orders" loading="lazy" /></figure>
+            </div>
+            <div className="oem-process-copy">
+              <span className="oem-process-number">04</span>
+              <p className="oem-process-kicker">MAKE, CHECK &amp; SHIP</p>
+              <h3>Bulk Production, QC &amp; Shipping</h3>
+              <p className="oem-process-lead">Bulk production follows the approved sample and confirmed schedule, with inspection and shipping coordination based on the final order requirements.</p>
+              <div className="oem-process-details">
+                <div><strong>Production control</strong><ul><li>Fabric, printing and construction checks</li><li>Size, stitching and detail inspection</li><li>Packaging against confirmed requirements</li></ul></div>
+                <div><strong>Order handover</strong><ul><li>Progress updates through the agreed channel</li><li>Final QC before packing</li><li>Shipping method confirmed by destination</li></ul></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div className="oem-process-cta">
+          <div><p>READY TO DEFINE YOUR PRODUCT?</p><h3>Start with a clear brief. We will help organize the production details.</h3></div>
+          <a href="/project-builder?source=homepage-process-cta">Build Your Project Brief <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+
       {/* 3. FACTORY DUAL-COLUMN SECTION (IMAGE 3 STYLE) - v1.0.2 */}
       <section className="factory-container" id="factory">
         {/* Left Column: Slider */}
