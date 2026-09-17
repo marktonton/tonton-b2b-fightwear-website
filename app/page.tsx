@@ -251,6 +251,42 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* 3. PROCUREMENT TRUST STRIP */}
+      <section className="procurement-trust-strip" aria-labelledby="procurement-trust-title">
+        <header className="procurement-trust-heading">
+          <p>BUYER CONFIDENCE</p>
+          <h2 id="procurement-trust-title">Clear starting points before production.</h2>
+          <span>Review the usual project baseline, then confirm the exact terms for your product brief.</span>
+        </header>
+
+        <div className="procurement-trust-grid">
+          <article>
+            <strong>10 PCS</strong>
+            <h3>Low MOQ</h3>
+            <p>Available for selected styles; the final size and color breakdown is confirmed with your brief.</p>
+            <a href="/resources/custom-fightwear-sampling-moq">Read MOQ Guide <span aria-hidden="true">→</span></a>
+          </article>
+          <article>
+            <strong>FREE</strong>
+            <h3>Design Mockup</h3>
+            <p>Review colors, logo placement and artwork direction before the sampling route is confirmed.</p>
+            <a href="/service-support">View Service Process <span aria-hidden="true">→</span></a>
+          </article>
+          <article>
+            <strong>3–7 DAYS</strong>
+            <h3>Target Sample Lead Time</h3>
+            <p>Target window after product details and usable artwork files have been confirmed.</p>
+            <a href="/service-support">Plan a Sample <span aria-hidden="true">→</span></a>
+          </article>
+          <article>
+            <strong>OEM / ODM</strong>
+            <h3>Factory Support</h3>
+            <p>Design, sampling, production and QC support for brands, gyms and team programs.</p>
+            <a href="/factory">Explore Factory <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </section>
+
       {/* 3. FACTORY DUAL-COLUMN SECTION (IMAGE 3 STYLE) - v1.0.2 */}
       <section className="factory-container" id="factory">
         {/* Left Column: Slider */}
@@ -309,14 +345,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* Factory Stats Bar */}
-      <div className="factory-stats-bar">
-        <div><strong>20+ Years</strong><p>Experience</p></div>
-        <div><strong>300+ Clients</strong><p>Served</p></div>
-        <div><strong>100,000+ PCS</strong><p>/ Month</p></div>
-        <div><strong>100%</strong><p>On-Time Delivery</p></div>
-      </div>
 
       {/* WHY BRANDS CHOOSE TONTON */}
       <section className="why-brands-section" aria-labelledby="why-brands-title">
