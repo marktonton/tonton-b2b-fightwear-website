@@ -74,6 +74,36 @@ const BANNERS = [
   },
 ];
 
+const CUSTOMIZATION_ENTRIES = [
+  {
+    number: '01',
+    title: 'Custom Rash Guards',
+    description: 'Full-sublimation Rash Guards for academies, fightwear brands and coordinated team programs.',
+    image: 'assets/products/rash-guard-products/blue-team-rash-guard-main-v2.webp',
+    alt: 'Blue custom short-sleeve Rash Guard on a model',
+    categoryHref: '/customization/sublimated-rash-guards',
+    builderProduct: 'Rash Guard',
+  },
+  {
+    number: '02',
+    title: 'Custom Training Shorts',
+    description: 'Lightweight training shorts with custom colors, logos, waistband and construction options.',
+    image: 'assets/products/product-14.png',
+    alt: 'Black custom training shorts with branded waistband and leg graphics',
+    categoryHref: '/customization/sublimated-training-shorts',
+    builderProduct: 'Training Shorts',
+  },
+  {
+    number: '03',
+    title: 'Custom BJJ & MMA Shorts',
+    description: 'Custom grappling and fight shorts with split, liner, waistband and artwork directions.',
+    image: 'assets/products/grappling-shorts-products/high-split-2-in-1/high-split-grappling-shorts-main-v1.webp',
+    alt: 'High-split two-in-one custom grappling shorts construction',
+    categoryHref: '/customization/sublimated-bjj-mma-shorts',
+    builderProduct: 'BJJ / MMA Shorts',
+  },
+] as const;
+
 const FACTORY_IMAGES = [
   'assets/factory/factory-slider-01.jpg',
   'assets/factory/factory-slider-02.jpg',
@@ -185,7 +215,43 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 2. FACTORY DUAL-COLUMN SECTION (IMAGE 3 STYLE) - v1.0.2 */}
+      {/* 2. CUSTOMIZATION ENTRY CARDS */}
+      <section className="custom-entry-section" aria-labelledby="custom-entry-title">
+        <header className="custom-entry-heading">
+          <div>
+            <p>START WITH YOUR PRODUCT</p>
+            <h2 id="custom-entry-title">Three routes into a custom fightwear project.</h2>
+          </div>
+          <p>Choose the product family closest to your idea. Review real product directions or open a preselected project brief.</p>
+        </header>
+
+        <div className="custom-entry-grid">
+          {CUSTOMIZATION_ENTRIES.map((entry) => (
+            <article className="custom-entry-card" key={entry.title}>
+              <a className="custom-entry-media" href={entry.categoryHref} aria-label={`Explore ${entry.title}`}>
+                <img src={resolveImage(entry.image)} alt={entry.alt} loading="lazy" />
+                <span aria-hidden="true">{entry.number}</span>
+              </a>
+              <div className="custom-entry-copy">
+                <p>PRODUCT CATEGORY</p>
+                <h3>{entry.title}</h3>
+                <span>{entry.description}</span>
+                <div className="custom-entry-actions">
+                  <a
+                    className="custom-entry-primary"
+                    href={`/project-builder?product=${encodeURIComponent(entry.builderProduct)}&reference=${encodeURIComponent(entry.title)}&source=homepage-category`}
+                  >
+                    Build This Project
+                  </a>
+                  <a className="custom-entry-secondary" href={entry.categoryHref}>View Products <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* 3. FACTORY DUAL-COLUMN SECTION (IMAGE 3 STYLE) - v1.0.2 */}
       <section className="factory-container" id="factory">
         {/* Left Column: Slider */}
         <div className="factory-slider">
