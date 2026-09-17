@@ -2113,11 +2113,10 @@
 
 @media (max-width: 520px) {
   .banner-slider {
-    padding-top: 72vw;
+    padding-top: max(270px, 72vw);
   }
   .banner-slider .slides {
-    height: 72vw;
-    min-height: 270px;
+    height: max(270px, 72vw);
   }
   .banner-slider .slide img {
     object-position: 74% center;
