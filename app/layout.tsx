@@ -101,7 +101,7 @@ export default function RootLayout({
             <a href="/service-support">Service &amp; Support</a>
             <a href="/factory">Factory</a>
             <a href="/resources">Resources</a>
-            <a className="nav-cta" href="/#inquiry">Send Inquiry</a>
+            <a className="nav-cta" href="/project-builder?source=global-navigation">Build Your Project</a>
           </nav>
         </header>
 
