@@ -116,60 +116,53 @@ export default function HomePage() {
   return (
     <div>
       {/* 1. HERO SECTION - Cinematic Full Width */}
-      <section className="hero">
-        <h1 className="sr-only">Custom Sportswear Manufacturer for Brands, Clubs and Teams</h1>
-        <div className="banner-slider">
-          <div className="slides">
+      <section className={`hero hero--${currentBanner === 0 ? 'dark' : 'light'}`} aria-labelledby="homepage-hero-title">
+        <div className="banner-slider" role="region" aria-roledescription="carousel" aria-label="TONTON custom fightwear">
+          <div className="slides" aria-live="off">
             {BANNERS.map((banner, i) => (
-              <div key={banner.desktop} className={`slide ${i === currentBanner ? 'active' : ''}`}>
-                <picture>
-                  <source media="(max-width: 768px)" srcSet={resolveImage(banner.mobile)} />
-                  <img src={resolveImage(banner.desktop)} alt={banner.alt} />
-                </picture>
+              <div
+                key={banner.desktop}
+                className={`slide ${i === currentBanner ? 'active' : ''}`}
+                aria-hidden={i !== currentBanner}
+              >
+                <img src={resolveImage(banner.desktop)} alt="" />
               </div>
             ))}
           </div>
-          <button 
-            className="slider-arrow prev" 
-            onClick={prevBanner}
-            aria-label="Previous Slide"
-            style={{ 
-              position: 'absolute', left: '30px', top: '50%', transform: 'translateY(-50%)', 
-              zIndex: 9999, cursor: 'pointer', background: 'rgba(0,0,0,0.6)', 
-              width: '60px', height: '60px', borderRadius: '50%', border: '1px solid rgba(255,255,255,0.3)',
-              display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff',
-              fontSize: '24px', pointerEvents: 'auto'
-            }}
-          >{'<'}</button>
-          <button 
-            className="slider-arrow next" 
-            onClick={nextBanner}
-            aria-label="Next Slide"
-            style={{ 
-              position: 'absolute', right: '30px', top: '50%', transform: 'translateY(-50%)', 
-              zIndex: 9999, cursor: 'pointer', background: 'rgba(0,0,0,0.6)', 
-              width: '60px', height: '60px', borderRadius: '50%', border: '1px solid rgba(255,255,255,0.3)',
-              display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff',
-              fontSize: '24px', pointerEvents: 'auto'
-            }}
-          >{'>'}</button>
-          <div className="banner-cta" aria-label="Banner inquiry actions">
-            <a
-              className="banner-cta-whatsapp"
-              href={`https://wa.me/8617722438678?text=${encodeURIComponent(`Hello TONTON, I am interested in custom fightwear from the ${BANNERS[currentBanner].alt} banner.`)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Send a custom fightwear inquiry on WhatsApp"
-            >WhatsApp Inquiry</a>
-            <a
-              className="banner-cta-email"
-              href={`mailto:gary@tontonsportswear.com?subject=${encodeURIComponent('Custom fightwear inquiry')}&body=${encodeURIComponent(`Hello Gary, I am interested in custom fightwear based on the ${BANNERS[currentBanner].alt} banner.`)}`}
-              aria-label="Send a custom fightwear inquiry by email"
-            >Email Inquiry</a>
+
+          <div className="hero-copy">
+            <p className="hero-eyebrow">OEM / ODM FIGHTWEAR FACTORY</p>
+            <h1 id="homepage-hero-title">CUSTOM MMA &amp; BJJ FIGHTWEAR MANUFACTURER</h1>
+            <p className="hero-description">
+              Custom sublimated rash guards, training shorts and BJJ/MMA shorts for brands, gyms and teams.
+            </p>
+            <ul className="hero-benefits" aria-label="Project benefits">
+              <li>LOW MOQ 10 PCS</li>
+              <li>FREE DESIGN MOCKUP</li>
+              <li>OEM / ODM SUPPORT</li>
+            </ul>
+            <div className="hero-actions">
+              <a className="hero-cta-primary" href="#inquiry">GET CUSTOM PRICING</a>
+              <a className="hero-cta-secondary" href="/project-builder">BUILD YOUR PROJECT BRIEF</a>
+            </div>
           </div>
-          <div className="banner-dots">
+
+          <button className="slider-arrow prev" onClick={prevBanner} aria-label="Previous slide">
+            <span aria-hidden="true">‹</span>
+          </button>
+          <button className="slider-arrow next" onClick={nextBanner} aria-label="Next slide">
+            <span aria-hidden="true">›</span>
+          </button>
+
+          <div className="banner-dots" aria-label="Choose banner slide">
             {BANNERS.map((_, i) => (
-              <button key={i} className={`dot ${i === currentBanner ? 'active' : ''}`} onClick={() => setCurrentBanner(i)} aria-label={`Go to slide ${i+1}`}></button>
+              <button
+                key={i}
+                className={`dot ${i === currentBanner ? 'active' : ''}`}
+                onClick={() => setCurrentBanner(i)}
+                aria-label={`Go to slide ${i + 1}`}
+                aria-current={i === currentBanner ? 'true' : undefined}
+              />
             ))}
           </div>
         </div>
