@@ -2156,3 +2156,100 @@
   }
 }
 
+/* === PROJECT BUILDER: global conversion entry and carried product context === */
+.project-builder-context {
+  grid-column: 1 / -1;
+  padding: 20px 22px;
+  border-left: 4px solid #ed1b2f;
+  background: #f3f2ed;
+}
+.project-builder-context span {
+  display: block;
+  margin-bottom: 7px;
+  color: #ed1b2f;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .16em;
+}
+.project-builder-context strong {
+  display: block;
+  color: #111317;
+  font-size: 20px;
+  line-height: 1.3;
+}
+.project-builder-context p {
+  margin: 7px 0 0;
+  color: #5a5d61;
+  font-size: 14px;
+  line-height: 1.55;
+}
+.product-project-entry {
+  padding: clamp(28px, 3vw, 40px);
+  border: 1px solid #d8d6cf;
+  background: #f4f3ef;
+}
+.product-project-entry > p {
+  margin: 0 0 10px;
+  color: #e11d2e;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .16em;
+}
+.product-project-entry h2 {
+  margin: 0;
+  font-size: clamp(27px, 2.5vw, 38px);
+  line-height: 1.08;
+  letter-spacing: -.035em;
+}
+.product-project-entry > span {
+  display: block;
+  margin-top: 17px;
+  color: #5a5d61;
+  font-size: 15px;
+  line-height: 1.65;
+}
+.product-project-entry > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+.product-project-entry a {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 17px;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .055em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.product-project-primary {
+  background: #e11d2e;
+  color: #fff !important;
+}
+.product-project-primary:hover {
+  background: #c91628;
+}
+.product-project-secondary {
+  border: 1px solid #1a1b1e;
+  color: #1a1b1e !important;
+}
+.product-project-secondary:hover {
+  background: #1a1b1e;
+  color: #fff !important;
+}
+@media (max-width: 620px) {
+  .project-builder-context {
+    grid-column: auto;
+  }
+  .product-project-entry > div {
+    display: grid;
+  }
+  .product-project-entry a {
+    width: 100%;
+  }
+}
+
