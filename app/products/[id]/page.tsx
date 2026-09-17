@@ -24,6 +24,15 @@ function getCategoryName(categoryId: string) {
   return productsData.categories.find((category) => category.id === categoryId)?.name ?? 'Custom Sportswear';
 }
 
+function getBuilderProduct(categoryId: string) {
+  const builderProducts: Record<string, string> = {
+    'sublimated-rash-guards': 'Rash Guard',
+    'sublimated-training-shorts': 'Training Shorts',
+    'sublimated-bjj-mma-shorts': 'Coordinated Team Kit',
+  };
+  return builderProducts[categoryId] ?? 'Rash Guard';
+}
+
 function getAbsoluteImage(path: string) {
   const resolved = resolveImage(path);
   return resolved.startsWith('/') ? `${SITE_URL}${resolved}` : resolved;
@@ -217,6 +226,15 @@ export default function ProductDetailPage({ params }: PageProps) {
   const categoryName = getCategoryName(product.categoryId);
   const categoryUrl = `/customization/${product.categoryId}`;
   const productUrl = `${SITE_URL}/products/${product.id}`;
+  const builderHref = {
+    pathname: '/project-builder',
+    query: {
+      product: getBuilderProduct(product.categoryId),
+      reference: product.name,
+      source: 'product-page',
+    },
+  };
+  const quickQuoteUrl = `https://wa.me/8617722438678?text=${encodeURIComponent(`Hello TONTON, I would like to discuss ${product.name}.`)}`;
   const relatedProducts = products
     .filter((item) => item.categoryId === product.categoryId && item.id !== product.id)
     .slice(0, 3);
@@ -287,13 +305,13 @@ export default function ProductDetailPage({ params }: PageProps) {
             ))}
           </ul>
           
-          <div className="inquiry-form" style={{ background: '#f7f7f8', border: '1px solid #eee', padding: '30px', borderRadius: '20px' }}>
-            <h3 style={{ marginBottom: '20px' }}>Request a Quotation</h3>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px' }}>
-              <input type="text" placeholder="Your Name" style={{ padding: '12px', borderRadius: '8px', border: '1px solid #ddd' }} />
-              <input type="email" placeholder="Your Email" style={{ padding: '12px', borderRadius: '8px', border: '1px solid #ddd' }} />
-              <textarea placeholder="Tell us about your project (Quantity, Logo, etc.)" style={{ gridColumn: '1/-1', padding: '12px', borderRadius: '8px', border: '1px solid #ddd', minHeight: '100px' }}></textarea>
-              <button className="btn-red" style={{ gridColumn: '1/-1', padding: '15px', borderRadius: '8px', border: 'none', background: '#e11d2e', color: '#fff', fontWeight: 'bold', cursor: 'pointer' }}>Send Inquiry</button>
+          <div className="product-project-entry">
+            <p>START WITH THIS PRODUCT</p>
+            <h2>Turn this reference into a production-ready brief.</h2>
+            <span>Product type and reference will be carried into the Project Builder. Add quantity, artwork status, construction and performance priorities there.</span>
+            <div>
+              <Link className="product-project-primary" href={builderHref}>Build This Product Brief</Link>
+              <a className="product-project-secondary" href={quickQuoteUrl} target="_blank" rel="noopener noreferrer">Quick WhatsApp Question</a>
             </div>
           </div>
         </div>
