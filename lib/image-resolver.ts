@@ -23,7 +23,8 @@ export function resolveImage(path: string): string {
   // cannot reference an R2 object that has not been uploaded yet.
   if (
     cleanPath.startsWith('assets/products/rash-guard-products/') ||
-    cleanPath.startsWith('assets/products/grappling-shorts-products/')
+    cleanPath.startsWith('assets/products/grappling-shorts-products/') ||
+    cleanPath.startsWith('assets/process/')
   ) {
     return withVersion(`/${cleanPath}`);
   }
