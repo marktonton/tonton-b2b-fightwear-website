@@ -3267,3 +3267,30 @@
     padding-bottom: 48px;
   }
 }
+
+
+/* Preserve the established single-column tablet flow after desktop overrides. */
+@media (max-width: 1050px) {
+  .custom-entry-heading,
+  .product-details-heading,
+  .oem-process-heading,
+  .oem-process-step {
+    grid-template-columns: 1fr;
+  }
+
+  .custom-entry-heading,
+  .product-details-heading,
+  .oem-process-heading {
+    gap: 22px;
+  }
+
+  .oem-process-step {
+    gap: 38px;
+  }
+}
+
+@media (max-width: 660px) {
+  .oem-process-step {
+    gap: 28px;
+  }
+}
