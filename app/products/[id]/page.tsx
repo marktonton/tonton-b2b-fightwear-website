@@ -10,6 +10,7 @@ import GrapplingShortsLanding from './GrapplingShortsLanding';
 import { HIGH_SPLIT_GRAPPLING_SHORTS_CONTENT, HIGH_SPLIT_GRAPPLING_SHORTS_FAQS, isHighSplitGrapplingShorts } from '../../../lib/grappling-shorts-product';
 import { getRouteModifiedDate } from '../../../lib/content-dates';
 import RelatedResources from '../../../components/RelatedResources';
+import ProductLandingLinks from '../../../components/ProductLandingLinks';
 
 const SITE_URL = 'https://www.tontongear.com';
 const products = productsData.products;
@@ -235,9 +236,6 @@ export default function ProductDetailPage({ params }: PageProps) {
     },
   };
   const quickQuoteUrl = `https://wa.me/8617722438678?text=${encodeURIComponent(`Hello TONTON, I would like to discuss ${product.name}.`)}`;
-  const relatedProducts = products
-    .filter((item) => item.categoryId === product.categoryId && item.id !== product.id)
-    .slice(0, 3);
   const productSchema = {
     '@context': 'https://schema.org',
     '@type': 'Product',
@@ -316,17 +314,8 @@ export default function ProductDetailPage({ params }: PageProps) {
           </div>
         </div>
       </div>
-      {relatedProducts.length > 0 && (
-        <section className="product-related" aria-labelledby="related-products-title">
-          <h2 id="related-products-title">More {categoryName}</h2>
-          <div>
-            {relatedProducts.map((item) => (
-              <Link href={`/products/${item.id}`} key={item.id}>{item.name}</Link>
-            ))}
-          </div>
-        </section>
-      )}
       <RelatedResources slugs={product.categoryId === 'sublimated-rash-guards' ? ['rash-guard-fabric-construction', '220gsm-rash-guard-fabric-guide', 'rash-guard-sublimation-logo-placement'] : product.categoryId === 'sublimated-bjj-mma-shorts' ? ['high-split-grappling-shorts-specifications', 'high-split-vs-standard-grappling-shorts', '2-in-1-grappling-shorts-liner-construction'] : ['custom-fightwear-sampling-moq']} />
+      <ProductLandingLinks productId={product.id} />
     </div>
   );
 }

@@ -3,6 +3,7 @@ import { resolveImage } from '../../../lib/image-resolver';
 import { HIGH_SPLIT_GRAPPLING_SHORTS_CONTENT, HIGH_SPLIT_GRAPPLING_SHORTS_FAQS } from '../../../lib/grappling-shorts-product';
 import ProductSpecificationTable from '../../../components/ProductSpecificationTable';
 import RelatedResources from '../../../components/RelatedResources';
+import ProductLandingLinks from '../../../components/ProductLandingLinks';
 
 type Product = { id: string; name: string; image: string; images?: string[]; description: string; features?: string[] };
 
@@ -36,7 +37,6 @@ export default function GrapplingShortsLanding({ product }: { product: Product }
   const gallery = product.images ?? [product.image];
   const detailImages = gallery.slice(1, 6);
   const sampleImages = gallery.slice(6);
-  const whatsapp = `https://wa.me/8617722438678?text=${encodeURIComponent(`I am interested in the ${product.name}.`)}`;
 
   return (
     <div className="rg-product-page gs-product-page">
@@ -152,7 +152,7 @@ export default function GrapplingShortsLanding({ product }: { product: Product }
 
       <RelatedResources slugs={['high-split-grappling-shorts-specifications', 'high-split-vs-standard-grappling-shorts', '2-in-1-grappling-shorts-liner-construction', 'grappling-shorts-waistband-silicone-grip']} />
 
-      <section className="rg-final-cta"><p className="rg-eyebrow">Start Your Project</p><h2>Develop high-split grappling shorts for your brand</h2><p>Send your artwork, quantity, size range and target use for a project-specific review.</p><div className="rg-final-actions"><Link href={{ pathname: '/project-builder', query: { product: 'High-Split Grappling Shorts', reference: product.name, source: 'product-page' } }}>Build Your Project Brief</Link><a href={whatsapp} target="_blank" rel="noopener noreferrer">Request a Quote</a></div></section>
+      <ProductLandingLinks productId={product.id} />
     </div>
   );
 }

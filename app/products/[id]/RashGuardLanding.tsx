@@ -3,6 +3,7 @@ import { resolveImage } from '../../../lib/image-resolver';
 import { RASH_GUARD_LANDING_CONTENT, type RashGuardProductId } from '../../../lib/rash-guard-products';
 import ProductSpecificationTable from '../../../components/ProductSpecificationTable';
 import RelatedResources from '../../../components/RelatedResources';
+import ProductLandingLinks from '../../../components/ProductLandingLinks';
 
 type Product = {
   id: string;
@@ -224,12 +225,7 @@ export default function RashGuardLanding({ product }: { product: Product }) {
 
       <RelatedResources slugs={['rash-guard-fabric-construction', '220gsm-rash-guard-fabric-guide', 'rash-guard-silicone-anti-slip-band', 'rash-guard-sublimation-logo-placement']} />
 
-      <section className="rg-final-cta">
-        <p className="rg-eyebrow">Start Your Project</p>
-        <h2>Ready to develop your custom Rash Guard?</h2>
-        <p>Send your logo, quantity, size range and preferred color direction for a project-specific review.</p>
-        <div className="rg-final-actions"><Link href={{ pathname: '/project-builder', query: { product: 'Rash Guard', reference: product.name, source: 'product-page' } }}>Build Your Project Brief</Link><a href={`https://wa.me/8617722438678?text=${encodeURIComponent(`Please quote the ${product.name}.`)}`} target="_blank" rel="noopener noreferrer">Request a Quote</a></div>
-      </section>
+      <ProductLandingLinks productId={product.id} />
     </div>
   );
 }
