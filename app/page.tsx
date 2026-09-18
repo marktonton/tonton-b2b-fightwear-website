@@ -170,6 +170,11 @@ function getProductBuilderHref(product: Product) {
   return `/project-builder?${params.toString()}`;
 }
 
+function getProductWhatsAppHref(product: Product) {
+  const message = `Hello TONTON, I would like to request a quote for ${product.name}. Please send me more information about customization, MOQ and sampling.`;
+  return `https://wa.me/8617722438678?text=${encodeURIComponent(message)}`;
+}
+
 export default function HomePage() {
   const [currentBanner, setCurrentBanner] = useState(0);
   const [currentFactory, setCurrentFactory] = useState(0);
@@ -347,7 +352,18 @@ export default function HomePage() {
                   </div>
                   <div className="product-detail-actions">
                     <a className="product-detail-primary" href={getProductBuilderHref(product)}>Get Pricing for This Product</a>
-                    <a className="product-detail-secondary" href={`/products/${product.id}`}>View Details <span aria-hidden="true">→</span></a>
+                    <div className="product-detail-quick-actions">
+                      <a className="product-detail-secondary" href={`/products/${product.id}`}>View Details <span aria-hidden="true">→</span></a>
+                      <a
+                        className="product-detail-whatsapp"
+                        href={getProductWhatsAppHref(product)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Request a WhatsApp quote for ${product.name}`}
+                      >
+                        <span aria-hidden="true">→</span> Quote on WhatsApp
+                      </a>
+                    </div>
                   </div>
                 </div>
               </article>
