@@ -48,6 +48,9 @@ export function generateMetadata({ params }: PageProps): Metadata {
     'sublimated-bjj-mma-shorts': 'Custom BJJ & MMA Shorts | Fightwear Manufacturer',
   };
   const title = seoTitles[category.id] ?? `${category.name} Customization | TONTON Sportswear`;
+  const socialImage = category.id === 'sublimated-bjj-mma-shorts'
+    ? `${SITE_URL}${content.heroImage}`
+    : resolveImage(content.heroImage);
   return {
     title: { absolute: title },
     description: content.seoDescription,
@@ -57,13 +60,13 @@ export function generateMetadata({ params }: PageProps): Metadata {
       description: content.seoDescription,
       url: `${SITE_URL}/customization/${category.id}`,
       type: 'website',
-      images: [{ url: resolveImage(content.heroImage), alt: content.heroAlt }],
+      images: [{ url: socialImage, alt: content.heroAlt }],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description: content.seoDescription,
-      images: [resolveImage(content.heroImage)],
+      images: [socialImage],
     },
   };
 }
@@ -99,7 +102,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
     name: category.name,
     url: categoryUrl,
     description: content.seoDescription,
-    primaryImageOfPage: resolveImage(content.heroImage),
+    primaryImageOfPage: isFightShortsPage ? `${SITE_URL}${content.heroImage}` : resolveImage(content.heroImage),
     about: content.projectTypes.map((item) => ({ '@type': 'Thing', name: item.title })),
     ...(isRashGuardPage && content.productDetails ? {
       hasPart: content.productDetails.map((detail) => ({
@@ -187,7 +190,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
             </div>
           </div>
           <figure className="customization-hero-media">
-            <Image src={resolveImage(content.heroImage)} alt={content.heroAlt} fill priority unoptimized={isRashGuardPage} sizes="(max-width: 900px) 100vw, 52vw" />
+            <Image src={isFightShortsPage ? content.heroImage : resolveImage(content.heroImage)} alt={content.heroAlt} fill priority unoptimized={isRashGuardPage || isFightShortsPage} sizes="(max-width: 900px) 100vw, 52vw" />
           </figure>
         </div>
         <div className="customization-shell customization-facts" aria-label="Project benefits">
@@ -221,7 +224,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
       <section className="customization-options">
         <div className="customization-shell customization-options-grid">
           <figure className="customization-options-media">
-            <Image src={resolveImage(content.optionsImage)} alt={content.optionsAlt} fill unoptimized={isRashGuardPage} sizes="(max-width: 900px) 100vw, 50vw" />
+            <Image src={isFightShortsPage ? content.optionsImage : resolveImage(content.optionsImage)} alt={content.optionsAlt} fill unoptimized={isRashGuardPage || isFightShortsPage} sizes="(max-width: 900px) 100vw, 50vw" />
           </figure>
           <div className="customization-options-copy">
             <p className="customization-kicker customization-kicker-light">CUSTOMIZATION OPTIONS</p>
