@@ -5,6 +5,7 @@ export type CustomizationFaq = {
 
 const RASH_GUARD_NEW_SERIES_ROOT = '/assets/products/rash-guard-products/white-black-series';
 const RASH_GUARD_REFERENCE_GALLERY_ROOT = '/assets/products/rash-guard-products/reference-gallery-v2';
+const FIGHT_SHORTS_CATEGORY_ROOT = '/assets/products/grappling-shorts-category';
 
 export type CustomizationPageContent = {
   seoDescription: string;
@@ -170,26 +171,26 @@ export const customizationPageContent: Record<string, CustomizationPageContent> 
   'sublimated-bjj-mma-shorts': {
     seoDescription: 'Custom BJJ, MMA and grappling shorts for academies, fight teams and brands. Explore fit, side-split, waistband, artwork and OEM team-kit options.',
     kicker: 'CUSTOM BJJ & MMA SHORTS MANUFACTURING',
-    heroLead: 'Develop custom fight shorts and coordinated team kits for BJJ, MMA, and grappling—with movement, fit, artwork, and academy identity considered together.',
-    heroImage: 'assets/products/kit-bw-v2.png',
-    heroAlt: 'Custom BJJ and MMA team kit with branded fight shorts',
-    overviewTitle: 'Fight shorts need freedom of movement and a clear team identity.',
-    overviewLead: 'The product direction should reflect how the shorts will be used—from daily grappling sessions to academy uniforms and branded collections.',
-    overviewText: 'TONTON supports custom BJJ shorts, MMA fight shorts, grappling shorts, and coordinated rash guard sets. We help buyers define length, fit, waistband, side movement, material direction, lining options, artwork, and team branding before the design is sampled.',
+    heroLead: 'Develop custom 2-in-1 high-split fight shorts for MMA, grappling, wrestling, boxing, and high-intensity training—with mobility, inner support, waistband security, and brand artwork reviewed together.',
+    heroImage: `${FIGHT_SHORTS_CATEGORY_ROOT}/hero-high-split-white-liner.webp`,
+    heroAlt: 'Black 2-in-1 high-split fight shorts with a supportive white compression liner in motion',
+    overviewTitle: 'Freedom outside. Support inside.',
+    overviewLead: 'A breathable quick-dry shell, supportive compression liner, and ultra-high gladiator split work together for demanding combat movement.',
+    overviewText: 'TONTON develops custom 2-in-1 high-split shorts for MMA, UFC-style training, wrestling, boxing, grappling, and functional gym sessions. Buyers can review outer-fabric stretch, inner-liner support, side-split height, waistband security, stitching, labels, artwork, and size grading before sampling.',
     projectTypes: [
       { title: 'BJJ academies', text: 'Create consistent academy shorts and coordinated rash guards for members, teams, and events.' },
       { title: 'MMA & grappling teams', text: 'Plan fightwear around mobility, secure fit, sponsor visibility, and repeat training use.' },
       { title: 'Fightwear brands', text: 'Develop distinctive private-label shorts, capsule collections, or matching performance sets.' },
     ],
-    optionsTitle: 'What can be customized on BJJ and MMA shorts?',
-    optionsLead: 'Fit, movement, construction, and artwork are reviewed as one system rather than isolated decoration choices.',
-    optionsImage: 'assets/products/product-13.png',
-    optionsAlt: 'Custom black fight shorts and rash guard for a BJJ academy team kit',
+    optionsTitle: 'Customize the high-split structure around your fightwear brand.',
+    optionsLead: 'The outer shell, inner compression layer, split height, waistband, labels, colors, and artwork are reviewed as one connected product specification.',
+    optionsImage: `${FIGHT_SHORTS_CATEGORY_ROOT}/customization-performance-scene.webp`,
+    optionsAlt: 'Athlete wearing black and white 2-in-1 high-split MMA fight shorts during training',
     options: [
-      { title: 'Fight-short silhouette', text: 'Define the length, leg shape, side opening, and range of movement required for BJJ, MMA, or grappling.' },
-      { title: 'Waist construction', text: 'Review elastic, closure, drawcord, and comfort direction according to the selected style.' },
-      { title: 'Outer fabric and lining', text: 'Match flexibility, weight, hand feel, and optional layer construction to the intended use.' },
-      { title: 'Team and sponsor artwork', text: 'Place academy marks, athlete names, sponsor graphics, colors, and coordinated kit artwork.' },
+      { title: 'Ultra-high-split silhouette', text: 'Confirm the gladiator-style opening, outer-short length, and freedom required for kicks, shots, sprawls, and ground movement.' },
+      { title: 'Secure waistband system', text: 'Review the elastic waistband, adjustable drawstring, silicone anti-slip grip strip, and branded waist label.' },
+      { title: 'Outer shell and inner liner', text: 'Match a breathable quick-dry four-way-stretch shell with the required compression-liner support, weight, coverage, and artwork.' },
+      { title: 'Branding and finishing', text: 'Place team and sponsor graphics, confirm reinforced stitching, and add an approved tagless printed label.' },
     ],
     processLead: 'A supported route from fight-short concept to an approved BJJ, MMA, or grappling teamwear program.',
     processProduct: 'BJJ, MMA, or grappling use, fit, length, waistband, quantity, and artwork direction',
