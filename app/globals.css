@@ -2746,6 +2746,12 @@
   color: #fff !important;
 }
 .product-detail-primary:hover { background: #c91628; }
+.product-detail-quick-actions {
+  display: grid;
+  grid-template-columns: minmax(0, .86fr) minmax(176px, 1.14fr);
+  gap: 12px;
+  align-items: stretch;
+}
 .product-detail-secondary {
   justify-content: space-between !important;
   padding: 11px 0 6px;
@@ -2753,6 +2759,27 @@
   color: #1a1b1e !important;
 }
 .product-detail-secondary span { font-size: 16px; }
+.product-detail-whatsapp {
+  gap: 7px;
+  padding: 11px 14px;
+  border: 1px solid #cdaa4d;
+  background: #1a1b22;
+  color: #e0bd5d !important;
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease, transform .12s ease;
+}
+.product-detail-whatsapp span { font-size: 15px; }
+.product-detail-whatsapp:hover,
+.product-detail-whatsapp:focus-visible {
+  border-color: #d7b452;
+  background: #d7b452;
+  color: #111217 !important;
+}
+.product-detail-whatsapp:active {
+  transform: translateY(1px);
+  border-color: #bd9637;
+  background: #bd9637;
+  color: #111217 !important;
+}
 .product-details-note {
   margin: 22px 0 0;
   color: #707378;
@@ -2770,6 +2797,7 @@
   .product-details-heading > p { font-size: 15px; }
   .product-details-grid { grid-template-columns: 1fr; }
   .product-detail-audience { min-height: 0; }
+  .product-detail-quick-actions { grid-template-columns: 1fr; }
 }
 
 /* === HOMEPAGE: four-step OEM / ODM process with real factory photography === */
