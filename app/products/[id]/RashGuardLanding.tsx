@@ -91,10 +91,42 @@ const CONSTRUCTION_EVIDENCE = [
   { image: '/assets/products/rash-guard-products/construction-details/reinforced-seam-junction.webp', title: 'Reinforced panel junction', copy: 'Multiple seam lines meet at a high-movement junction, making alignment and finishing visible before sample approval.', alt: 'Close-up of reinforced Rash Guard seam intersection' },
 ] as const;
 
+const BLUE_TEAM_PRODUCT_VIEWS = [
+  {
+    image: '/assets/products/rash-guard-products/blue-team-gallery/front-fit.webp',
+    label: '01 / Front',
+    title: 'Front fit & chest branding',
+    copy: 'Review the close athletic fit, round neckline and centered chest logo position.',
+    alt: 'Front view of the blue short-sleeve Elite Team Rash Guard worn by an athlete',
+  },
+  {
+    image: '/assets/products/rash-guard-products/blue-team-gallery/front-reference.webp',
+    label: '02 / Fit reference',
+    title: 'Production fit reference',
+    copy: 'A second front angle makes the sleeve length, torso proportion and hem position easier to compare.',
+    alt: 'Full front fit reference for the blue Elite Team Rash Guard',
+  },
+  {
+    image: '/assets/products/rash-guard-products/blue-team-gallery/three-quarter-fit.webp',
+    label: '03 / Angle',
+    title: 'Shoulder & side-panel direction',
+    copy: 'The angled view shows how the raglan sleeve and side construction follow the upper body.',
+    alt: 'Three-quarter view showing the shoulder and side construction of the blue Elite Team Rash Guard',
+  },
+  {
+    image: '/assets/products/rash-guard-products/blue-team-gallery/back-panel.webp',
+    label: '04 / Back',
+    title: 'Rear panel & back-neck mark',
+    copy: 'Confirm the clean rear body, shoulder logo balance and secondary branding position.',
+    alt: 'Back view of the blue Elite Team Rash Guard showing rear panel and neck branding',
+  },
+] as const;
+
 export default function RashGuardLanding({ product }: { product: Product }) {
   const content = RASH_GUARD_LANDING_CONTENT[product.id as RashGuardProductId];
   const gallery = product.images ?? [product.image];
   const isSamurai = product.id === 'samurai-graphic-rash-guard';
+  const isBlueTeam = product.id === 'blue-team-rash-guard';
   const detailImages = isSamurai ? gallery.slice(1) : gallery.slice(1, 4);
   const detailContent = isSamurai ? SAMURAI_DETAIL_CONTENT : STANDARD_DETAIL_CONTENT;
   const faqItems = isSamurai ? SAMURAI_FAQ_ITEMS : STANDARD_FAQ_ITEMS;
@@ -147,6 +179,30 @@ export default function RashGuardLanding({ product }: { product: Product }) {
       </section>
 
       <ProductSpecificationTable title="A specification buyers can compare" intro="The visible product data below matches the material and construction information used in this landing page and its structured data." rows={specificationRows} />
+
+      {isBlueTeam && (
+        <section className="rg-angle-section" aria-labelledby="rg-angle-title">
+          <div className="rg-section-heading">
+            <p className="rg-eyebrow">Multi-Angle Product Review</p>
+            <h2 id="rg-angle-title">Inspect the production fit from every side</h2>
+            <p>Four original product photographs let buyers compare the front, shoulder, side and rear construction before opening a custom brief.</p>
+          </div>
+          <div className="rg-angle-grid">
+            {BLUE_TEAM_PRODUCT_VIEWS.map((item) => (
+              <figure key={item.image}>
+                <div className="rg-angle-image">
+                  <img src={item.image} alt={item.alt} width="800" height="1067" loading="lazy" />
+                </div>
+                <figcaption>
+                  <span>{item.label}</span>
+                  <h3>{item.title}</h3>
+                  <p>{item.copy}</p>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="rg-fit-section" id="product-details">
         <div>
