@@ -3671,3 +3671,246 @@
     padding: 28px 20px;
   }
 }
+
+
+/* BJJ / MMA CATEGORY — 2-IN-1 HIGH-SPLIT FEATURE */
+.customization-page-sublimated-bjj-mma-shorts .customization-hero-media img {
+  object-position: center 42%;
+}
+
+.fight-shorts-construction,
+.fight-shorts-size {
+  padding-top: clamp(62px, 7vw, 94px);
+  padding-bottom: clamp(62px, 7vw, 94px);
+}
+
+.fight-shorts-section-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(300px, .72fr);
+  align-items: end;
+  gap: clamp(34px, 6vw, 84px);
+  margin-bottom: 34px;
+}
+
+.fight-shorts-section-heading h2 {
+  max-width: 820px;
+  margin: 14px 0 0;
+  color: #111317;
+  font-size: clamp(36px, 4.4vw, 60px);
+  line-height: 1.02;
+  letter-spacing: -.045em;
+}
+
+.fight-shorts-section-heading > p {
+  margin: 0;
+  color: #5f6267;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.fight-shorts-spec-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid #cfcfc9;
+  border-bottom: 1px solid #cfcfc9;
+}
+
+.fight-shorts-spec-grid article {
+  min-width: 0;
+  padding: 24px 20px 24px 0;
+}
+
+.fight-shorts-spec-grid article + article {
+  padding-left: 20px;
+  border-left: 1px solid #cfcfc9;
+}
+
+.fight-shorts-spec-grid strong,
+.fight-shorts-spec-grid span {
+  display: block;
+}
+
+.fight-shorts-spec-grid strong {
+  color: #ed1b2f;
+  font-size: clamp(20px, 2.1vw, 29px);
+  line-height: 1;
+}
+
+.fight-shorts-spec-grid span {
+  margin-top: 9px;
+  color: #4d5055;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.fight-shorts-evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.fight-shorts-evidence-grid figure {
+  margin: 0;
+  border: 1px solid #deddd8;
+  background: #fff;
+}
+
+.fight-shorts-evidence-grid figure > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+  background: #f1f2f4;
+}
+
+.fight-shorts-evidence-grid figcaption {
+  padding: 24px 26px 28px;
+}
+
+.fight-shorts-evidence-grid figcaption > span {
+  color: #ed1b2f;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .15em;
+}
+
+.fight-shorts-evidence-grid h3 {
+  margin: 9px 0 10px;
+  font-size: clamp(22px, 2.3vw, 31px);
+  line-height: 1.12;
+}
+
+.fight-shorts-evidence-grid p {
+  margin: 0;
+  color: #5f6267;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.fight-shorts-movement {
+  padding: clamp(62px, 7vw, 94px) 0;
+  background: #111317;
+  color: #fff;
+}
+
+.fight-shorts-section-heading-light h2 {
+  color: #fff;
+}
+
+.fight-shorts-section-heading-light > p {
+  color: #b9bbc0;
+}
+
+.fight-shorts-scene-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.fight-shorts-scene-grid figure {
+  margin: 0;
+  background: #1c1e22;
+}
+
+.fight-shorts-scene-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.fight-shorts-scene-grid figcaption {
+  padding: 22px 22px 26px;
+}
+
+.fight-shorts-scene-grid h3 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(21px, 2vw, 28px);
+  line-height: 1.12;
+}
+
+.fight-shorts-scene-grid p {
+  margin: 10px 0 0;
+  color: #b9bbc0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.fight-shorts-size {
+  border-bottom: 1px solid #d8d6d0;
+}
+
+.fight-shorts-size > figure {
+  margin: 0;
+  overflow: hidden;
+  background: #0c0d10;
+}
+
+.fight-shorts-size > figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .fight-shorts-section-heading {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .fight-shorts-spec-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .fight-shorts-spec-grid article:nth-child(3) {
+    padding-left: 0;
+    border-top: 1px solid #cfcfc9;
+    border-left: 0;
+  }
+
+  .fight-shorts-spec-grid article:nth-child(4) {
+    border-top: 1px solid #cfcfc9;
+  }
+
+  .fight-shorts-scene-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fight-shorts-scene-grid figure {
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+    align-items: center;
+  }
+}
+
+@media (max-width: 660px) {
+  .fight-shorts-construction,
+  .fight-shorts-size {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  .fight-shorts-evidence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fight-shorts-evidence-grid figure > img {
+    aspect-ratio: auto;
+  }
+
+  .fight-shorts-scene-grid figure {
+    display: block;
+  }
+
+  .fight-shorts-spec-grid article {
+    padding: 20px 14px 20px 0;
+  }
+
+  .fight-shorts-spec-grid article + article {
+    padding-left: 14px;
+  }
+}

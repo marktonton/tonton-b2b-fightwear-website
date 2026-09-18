@@ -12,6 +12,20 @@ import type { Metadata } from 'next';
 import RelatedResources from '../../../components/RelatedResources';
 
 const SITE_URL = 'https://www.tontongear.com';
+const FIGHT_SHORTS_CATEGORY_ROOT = '/assets/products/grappling-shorts-category';
+
+const FIGHT_SHORTS_SPECS = [
+  { value: '2-IN-1', label: 'Athletic shell + compression liner' },
+  { value: '4-WAY', label: 'Stretch for unrestricted movement' },
+  { value: 'ULTRA-HIGH', label: 'Gladiator side split' },
+  { value: 'ANTI-SLIP', label: 'Silicone grip + drawstring waist' },
+] as const;
+
+const FIGHT_SHORTS_SCENES = [
+  { image: 'combat-scene-full-range.webp', title: 'Full-range movement', text: 'The ultra-high split releases the outer shell for kicks, shots, sprawls, and wide grappling positions.', alt: 'Athlete demonstrating full-range movement in black and white high-split fight shorts' },
+  { image: 'combat-scene-kick-high.webp', title: 'Freedom without excess fabric', text: 'A lightweight four-way-stretch shell moves independently while the inner liner maintains support and coverage.', alt: 'Athlete performing a high kick in black 2-in-1 MMA shorts' },
+  { image: 'combat-scene-train.webp', title: 'Combat-training coverage', text: 'The fitted inner layer stays close through striking, wrestling, grappling, and functional training.', alt: 'Athlete training in white and black 2-in-1 high-split MMA shorts' },
+] as const;
 
 type PageProps = { params: { slug: string } };
 
@@ -68,6 +82,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
 
   const products = getCustomizationProducts(category.id);
   const isRashGuardPage = category.id === 'sublimated-rash-guards';
+  const isFightShortsPage = category.id === 'sublimated-bjj-mma-shorts';
   const builderProduct = category.id === 'sublimated-rash-guards'
     ? 'Rash Guard'
     : category.id === 'sublimated-training-shorts'
@@ -223,6 +238,60 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
           </div>
         </div>
       </section>
+
+      {isFightShortsPage && (
+        <>
+          <section className="fight-shorts-construction customization-shell" aria-labelledby="fight-shorts-construction-title">
+            <div className="fight-shorts-section-heading">
+              <div>
+                <p className="customization-kicker">2-IN-1 HIGH-SPLIT CONSTRUCTION</p>
+                <h2 id="fight-shorts-construction-title">Support inside. Unrestricted movement outside.</h2>
+              </div>
+              <p>These men&apos;s gladiator shorts combine a breathable quick-dry outer layer with a soft, supportive inner compression liner. The ultra-high split is designed for MMA, wrestling, grappling, boxing, and high-intensity gym training.</p>
+            </div>
+            <div className="fight-shorts-spec-grid" aria-label="Core fight-short specifications">
+              {FIGHT_SHORTS_SPECS.map((spec) => <article key={spec.value}><strong>{spec.value}</strong><span>{spec.label}</span></article>)}
+            </div>
+            <div className="fight-shorts-evidence-grid">
+              <figure>
+                <Image src={`${FIGHT_SHORTS_CATEGORY_ROOT}/construction-overview.webp`} alt="2-in-1 high-split MMA shorts construction overview with outer fabric, inner liner, stitching, and waistband details" width={864} height={1821} unoptimized />
+                <figcaption><span>CONSTRUCTION OVERVIEW</span><h3>Review the shell, liner, split, and waistband as one system.</h3><p>The outer shell uses a thick-yet-lightweight four-way-stretch direction, while the inner layer provides coverage and can carry approved custom artwork.</p></figcaption>
+              </figure>
+              <figure>
+                <Image src={`${FIGHT_SHORTS_CATEGORY_ROOT}/detail-performance-board.webp`} alt="Close-up product details showing elastic waistband, reinforced seams, inner liner, side split, and quick-dry fabric" width={1360} height={2048} unoptimized />
+                <figcaption><span>REAL PRODUCT DETAILS</span><h3>Inspect the areas that matter before sampling.</h3><p>Review reinforced stitching, the built-in liner, quick-dry fabric, side-split hem, elastic waist, drawstring direction, silicone grip, and tagless label requirements.</p></figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section className="fight-shorts-movement">
+            <div className="customization-shell">
+              <div className="fight-shorts-section-heading fight-shorts-section-heading-light">
+                <div><p className="customization-kicker customization-kicker-light">COMBAT MOVEMENT</p><h2>Built for kicks, sprawls, shots, and hard training.</h2></div>
+                <p>The outer short opens freely through the leg while the fitted compression layer maintains secure coverage underneath.</p>
+              </div>
+              <div className="fight-shorts-scene-grid">
+                {FIGHT_SHORTS_SCENES.map((scene) => (
+                  <figure key={scene.image}>
+                    <Image src={`${FIGHT_SHORTS_CATEGORY_ROOT}/${scene.image}`} alt={scene.alt} width={1254} height={1254} unoptimized />
+                    <figcaption><h3>{scene.title}</h3><p>{scene.text}</p></figcaption>
+                  </figure>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section className="fight-shorts-size customization-shell" aria-labelledby="fight-shorts-size-title">
+            <div className="fight-shorts-section-heading">
+              <div><p className="customization-kicker">SIZE & FIT REFERENCE</p><h2 id="fight-shorts-size-title">Use the XS–5XL chart as a starting point.</h2></div>
+              <p>The supplied EU and US regular-fit guide shows waist circumference and outer-short length. Final grading, tolerance, and size assortment are confirmed against the approved project specification.</p>
+            </div>
+            <figure>
+              <Image src={`${FIGHT_SHORTS_CATEGORY_ROOT}/high-split-size-guide.webp`} alt="Men's 2-in-1 high-split MMA shorts size guide from XS to 5XL with waist and outseam measurements" width={1536} height={1024} unoptimized />
+            </figure>
+          </section>
+        </>
+      )}
 
       <section className="customization-products customization-shell" id="custom-products">
         <div className="customization-section-heading">
