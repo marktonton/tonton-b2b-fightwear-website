@@ -114,11 +114,18 @@
     },
     {
       "id": "custom-logo-shorts",
-      "categoryId": "sublimated-training-shorts",
-      "name": "Ultimate Custom Competition Shorts",
+      "categoryId": "sublimated-bjj-mma-shorts",
+      "name": "Men’s Custom MMA Fight Shorts",
       "image": "assets/products/grappling-shorts-products/custom-competition-shorts-main-v3.webp",
-      "description": "Elastic waistband with logo printing.",
-      "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
+      "images": [
+        "assets/products/grappling-shorts-products/custom-competition-shorts-main-v3.webp",
+        "assets/products/grappling-shorts-products/mma-fight-shorts/matte-stretch-fabric-detail-v1.webp",
+        "assets/products/grappling-shorts-products/mma-fight-shorts/elastic-waistband-crotch-detail-v1.webp",
+        "assets/products/grappling-shorts-products/mma-fight-shorts/articulated-front-crotch-detail-v1.webp",
+        "assets/products/grappling-shorts-products/mma-fight-shorts/reinforced-hem-logo-detail-v1.webp"
+      ],
+      "description": "Short, mobility-focused outer fight shorts with a broad elastic waist, articulated front-crotch construction and reinforced stitching for MMA, BJJ, Sanda and boxing training.",
+      "features": ["10 PCS MOQ", "Short Athletic Cut", "Stretch-Woven Fabric Direction", "Articulated Front Crotch", "Reinforced Contrast Stitching", "Custom Waist & Leg Branding"]
     },
     {
       "id": "pro-mma-shorts-07",

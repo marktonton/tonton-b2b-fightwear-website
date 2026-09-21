@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: { absolute: 'Service & Support | Custom Fightwear Development | TONTON' },
   description: 'Explore TONTON custom fightwear services—from product planning, artwork and sampling to production, quality control, packing, and delivery support.',
   alternates: { canonical: `${SITE_URL}/service-support` },
+  robots: { index: true, follow: true },
   openGraph: {
     title: 'Service & Support | TONTON Sportswear',
     description: 'A clear, supported route from your first product brief to finished custom fightwear.',
