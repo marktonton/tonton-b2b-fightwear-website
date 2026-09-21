@@ -13,6 +13,11 @@ const CURATED_RELATED: Record<string, string[]> = {
     'custom-logo-shorts',
     'pro-mma-shorts-08',
   ],
+  'custom-logo-shorts': [
+    'lightweight-quick-dry-training-shorts',
+    'high-split-grappling-shorts',
+    'pro-mma-shorts-07',
+  ],
 };
 
 function getBuilderProduct(productId: string, categoryId: string) {
