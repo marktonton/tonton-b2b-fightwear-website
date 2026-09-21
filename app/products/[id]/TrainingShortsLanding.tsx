@@ -67,15 +67,15 @@ export default function TrainingShortsLanding({ product }: { product: Product })
         <section className="rg-detail-section" aria-labelledby="training-details-title">
           <div className="rg-section-heading"><p className="rg-eyebrow">Real Product Details</p><h2 id="training-details-title">Inspect the product from overview to finishing</h2><p>The available product boards show the garment, waistband, lining, hem construction and logo direction.</p></div>
           <div className="rg-detail-grid">
-            {gallery.map((image, index) => <article key={image}><div className="rg-detail-image training-detail-image"><img src={resolveImage(image)} alt={`${product.name} ${index === 0 ? 'overview' : `detail ${index + 1}`}`} loading={index === 0 ? undefined : 'lazy'} /></div><div className="rg-detail-copy"><span>{String(index + 1).padStart(2, '0')}</span><h3>{index === 0 ? 'Complete product direction' : index === 1 ? 'Performance features' : 'Construction details'}</h3><p>{index === 0 ? 'Review the complete silhouette and the main development baseline.' : index === 1 ? 'Compare the logo, lining, waistband and curved-hem performance direction.' : 'Inspect the waist, fabric, lining and finishing details before sampling.'}</p></div></article>)}
+            {gallery.map((image, index) => <article key={image}><div className="rg-detail-image" style={{ aspectRatio: '1 / 1', background: '#f3f3f1' }}><img src={resolveImage(image)} alt={`${product.name} ${index === 0 ? 'overview' : `detail ${index + 1}`}`} loading={index === 0 ? undefined : 'lazy'} style={{ objectFit: 'contain' }} /></div><div className="rg-detail-copy"><span>{String(index + 1).padStart(2, '0')}</span><h3>{index === 0 ? 'Complete product direction' : index === 1 ? 'Performance features' : 'Construction details'}</h3><p>{index === 0 ? 'Review the complete silhouette and the main development baseline.' : index === 1 ? 'Compare the logo, lining, waistband and curved-hem performance direction.' : 'Inspect the waist, fabric, lining and finishing details before sampling.'}</p></div></article>)}
           </div>
         </section>
       )}
 
       {!isLightweight && (
-        <section className="training-single-image-proof" aria-label="Competition shorts product evidence">
+        <section className="rg-fit-section" aria-label="Competition shorts product evidence">
           <div><p className="rg-eyebrow">Real Sample</p><h2>One verified product image. No invented material claims.</h2><p>The current image clearly confirms the athletic silhouette, elastic waist, front-waist branding and leg logo placement. Exact composition, GSM and stretch are kept as project decisions until a sample is approved.</p></div>
-          <img src={resolveImage(product.image)} alt="Front detail of black custom competition shorts with waistband and leg branding" loading="lazy" />
+          <div className="rg-fit-copy"><img src={resolveImage(product.image)} alt="Front detail of black custom competition shorts with waistband and leg branding" loading="lazy" style={{ display: 'block', width: '100%', maxHeight: '720px', objectFit: 'contain', borderRadius: '22px', background: '#fff' }} /></div>
         </section>
       )}
 
