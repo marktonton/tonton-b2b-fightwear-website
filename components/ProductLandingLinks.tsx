@@ -22,6 +22,7 @@ const CURATED_RELATED: Record<string, string[]> = {
 
 function getBuilderProduct(productId: string, categoryId: string) {
   if (productId === 'high-split-grappling-shorts') return 'High-Split Grappling Shorts';
+  if (productId === 'custom-logo-shorts') return 'BJJ / MMA Shorts';
 
   const builderProducts: Record<string, string> = {
     'sublimated-rash-guards': 'Rash Guard',

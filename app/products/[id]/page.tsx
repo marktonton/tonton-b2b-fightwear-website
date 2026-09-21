@@ -112,6 +112,8 @@ export default function ProductDetailPage({ params }: PageProps) {
     const content = TRAINING_SHORTS_LANDING_CONTENT[product.id];
     const galleryImages = 'images' in product ? product.images : [product.image];
     const productUrl = `${SITE_URL}/products/${product.id}`;
+    const categoryName = getCategoryName(product.categoryId);
+    const categoryUrl = `/customization/${product.categoryId}`;
     const productSchema = {
       '@context': 'https://schema.org',
       '@type': 'Product',
@@ -120,7 +122,7 @@ export default function ProductDetailPage({ params }: PageProps) {
       description: content.seoDescription,
       image: galleryImages.map(getAbsoluteImage),
       sku: product.id,
-      category: 'Custom Training Shorts',
+      category: categoryName,
       url: productUrl,
       brand: { '@type': 'Brand', name: 'TONTON' },
       manufacturer: { '@type': 'Organization', name: 'TONTON Sportswear', url: SITE_URL },
@@ -139,7 +141,7 @@ export default function ProductDetailPage({ params }: PageProps) {
       '@type': 'BreadcrumbList',
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
-        { '@type': 'ListItem', position: 2, name: 'Custom Training Shorts', item: `${SITE_URL}/customization/sublimated-training-shorts` },
+        { '@type': 'ListItem', position: 2, name: categoryName, item: `${SITE_URL}${categoryUrl}` },
         { '@type': 'ListItem', position: 3, name: product.name, item: productUrl },
       ],
     };

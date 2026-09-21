@@ -7,6 +7,7 @@ import { TRAINING_SHORTS_LANDING_CONTENT, type TrainingShortsProductId } from '.
 
 type Product = {
   id: string;
+  categoryId: string;
   name: string;
   image: string;
   images?: string[];
@@ -17,13 +18,17 @@ export default function TrainingShortsLanding({ product }: { product: Product })
   const productId = product.id as TrainingShortsProductId;
   const content = TRAINING_SHORTS_LANDING_CONTENT[productId];
   const gallery = product.images ?? [product.image];
-  const isLightweight = product.id === 'lightweight-quick-dry-training-shorts';
+  const isMmaFightShorts = product.id === 'custom-logo-shorts';
+  const categoryHref = isMmaFightShorts ? '/customization/sublimated-bjj-mma-shorts' : '/customization/sublimated-training-shorts';
+  const categoryLabel = isMmaFightShorts ? 'Custom BJJ & MMA Shorts' : 'Custom Training Shorts';
+  const builderProduct = isMmaFightShorts ? 'BJJ / MMA Shorts' : 'Training Shorts';
+  const detailImages = isMmaFightShorts ? gallery.slice(1) : gallery;
 
   return (
     <div className="rg-product-page training-shorts-page">
       <nav aria-label="Breadcrumb" className="rg-breadcrumb">
         <Link href="/">Home</Link><span>/</span>
-        <Link href="/customization/sublimated-training-shorts">Custom Training Shorts</Link><span>/</span>
+        <Link href={categoryHref}>{categoryLabel}</Link><span>/</span>
         <span aria-current="page">{product.name}</span>
       </nav>
 
@@ -40,13 +45,13 @@ export default function TrainingShortsLanding({ product }: { product: Product })
             {content.features.map((feature) => <li key={feature}>{feature}</li>)}
           </ul>
           <div className="rg-hero-actions">
-            <Link className="rg-btn-primary" href={{ pathname: '/project-builder', query: { product: 'Training Shorts', reference: product.name, source: 'product-page' } }}>Build This Product Brief</Link>
+            <Link className="rg-btn-primary" href={{ pathname: '/project-builder', query: { product: builderProduct, reference: product.name, source: 'product-page' } }}>Build This Product Brief</Link>
             <a className="rg-btn-secondary" href="#construction">Review Construction</a>
           </div>
         </div>
       </section>
 
-      <ProductSpecificationTable title="Training-short construction at a glance" intro="The page separates what is visible in the current sample from material values that must be confirmed during development." rows={content.materialRows} />
+      <ProductSpecificationTable title={isMmaFightShorts ? 'MMA fight-short construction at a glance' : 'Training-short construction at a glance'} intro="The page separates what is visible in the current sample from material values that must be confirmed during development." rows={content.materialRows} />
 
       <section className="gs-benefits-section" aria-labelledby="training-benefits-title">
         <div className="rg-section-heading"><p className="rg-eyebrow">Product Direction</p><h2 id="training-benefits-title">A clearer starting point for buyers and product teams</h2><p>Use the sample to align fit, function, branding and the questions that still need to be confirmed before production.</p></div>
@@ -63,19 +68,15 @@ export default function TrainingShortsLanding({ product }: { product: Product })
         </div>
       </section>
 
-      {gallery.length > 1 && (
+      {detailImages.length > 0 && (
         <section className="rg-detail-section" aria-labelledby="training-details-title">
-          <div className="rg-section-heading"><p className="rg-eyebrow">Real Product Details</p><h2 id="training-details-title">Inspect the product from overview to finishing</h2><p>The available product boards show the garment, waistband, lining, hem construction and logo direction.</p></div>
-          <div className="rg-detail-grid">
-            {gallery.map((image, index) => <article key={image}><div className="rg-detail-image" style={{ aspectRatio: '1 / 1', background: '#f3f3f1' }}><img src={resolveImage(image)} alt={`${product.name} ${index === 0 ? 'overview' : `detail ${index + 1}`}`} loading={index === 0 ? undefined : 'lazy'} style={{ objectFit: 'contain' }} /></div><div className="rg-detail-copy"><span>{String(index + 1).padStart(2, '0')}</span><h3>{index === 0 ? 'Complete product direction' : index === 1 ? 'Performance features' : 'Construction details'}</h3><p>{index === 0 ? 'Review the complete silhouette and the main development baseline.' : index === 1 ? 'Compare the logo, lining, waistband and curved-hem performance direction.' : 'Inspect the waist, fabric, lining and finishing details before sampling.'}</p></div></article>)}
+          <div className="rg-section-heading"><p className="rg-eyebrow">Real Product Details</p><h2 id="training-details-title">{isMmaFightShorts ? 'Inspect the fabric, waist, crotch and reinforced hem' : 'Inspect the product from overview to finishing'}</h2><p>{isMmaFightShorts ? 'Each close-up is tied to a visible construction detail; unverified fiber, weight and print values remain sampling decisions.' : 'The available product boards show the garment, waistband, lining, hem construction and logo direction.'}</p></div>
+          <div className={`rg-detail-grid${detailImages.length === 4 ? ' is-extended' : ''}`}>
+            {detailImages.map((image, index) => {
+              const detail = content.detailCards[index];
+              return <article key={image}><div className="rg-detail-image" style={{ aspectRatio: '1 / 1', background: '#f3f3f1' }}><img src={resolveImage(image)} alt={detail?.alt ?? `${product.name} detail ${index + 1}`} loading="lazy" style={{ objectFit: 'cover' }} /></div><div className="rg-detail-copy"><span>{String(index + 1).padStart(2, '0')}</span><h3>{detail?.title ?? 'Construction detail'}</h3><p>{detail?.copy ?? 'Inspect this product detail before sampling.'}</p></div></article>;
+            })}
           </div>
-        </section>
-      )}
-
-      {!isLightweight && (
-        <section className="rg-fit-section" aria-label="Competition shorts product evidence">
-          <div><p className="rg-eyebrow">Real Sample</p><h2>One verified product image. No invented material claims.</h2><p>The current image clearly confirms the athletic silhouette, elastic waist, front-waist branding and leg logo placement. Exact composition, GSM and stretch are kept as project decisions until a sample is approved.</p></div>
-          <div className="rg-fit-copy"><img src={resolveImage(product.image)} alt="Front detail of black custom competition shorts with waistband and leg branding" loading="lazy" style={{ display: 'block', width: '100%', maxHeight: '720px', objectFit: 'contain', borderRadius: '22px', background: '#fff' }} /></div>
         </section>
       )}
 
@@ -85,7 +86,7 @@ export default function TrainingShortsLanding({ product }: { product: Product })
       </section>
 
       <section className="rg-process-section">
-        <div className="rg-section-heading"><p className="rg-eyebrow">OEM / ODM Process</p><h2>From product reference to approved training shorts</h2></div>
+        <div className="rg-section-heading"><p className="rg-eyebrow">OEM / ODM Process</p><h2>From product reference to approved {isMmaFightShorts ? 'MMA fight shorts' : 'training shorts'}</h2></div>
         <div className="rg-process-grid">
           <article><span>01</span><h3>Share the brief</h3><p>Send intended use, quantity, size range, logos and reference products.</p></article>
           <article><span>02</span><h3>Align the specification</h3><p>Confirm fit, fabric direction, waistband, lining, colors and decoration.</p></article>
@@ -99,7 +100,7 @@ export default function TrainingShortsLanding({ product }: { product: Product })
         <div className="rg-faq-list">{content.faqs.map((item, index) => <details key={item.question} open={index === 0}><summary><span>{String(index + 1).padStart(2, '0')}</span>{item.question}</summary><p>{item.answer}</p></details>)}</div>
       </section>
 
-      <RelatedResources slugs={['custom-fightwear-sampling-moq']} />
+      <RelatedResources slugs={isMmaFightShorts ? ['high-split-grappling-shorts-specifications', 'high-split-vs-standard-grappling-shorts', 'custom-fightwear-sampling-moq'] : ['custom-fightwear-sampling-moq']} />
       <ProductLandingLinks productId={product.id} />
     </div>
   );

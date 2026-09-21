@@ -16,58 +16,67 @@ type LandingContent = {
   benefits: { title: string; copy: string }[];
   materialLead: string;
   materialRows: [string, string][];
+  detailCards: { title: string; copy: string; alt: string }[];
   customization: { title: string; copy: string }[];
   faqs: { question: string; answer: string }[];
 };
 
 export const TRAINING_SHORTS_LANDING_CONTENT: Record<TrainingShortsProductId, LandingContent> = {
   'custom-logo-shorts': {
-    seoTitle: 'Custom Competition Training Shorts Manufacturer | TONTON',
-    seoDescription: 'Develop custom competition and gym shorts with an elastic waist, clean athletic cut, logo placement and OEM production support. MOQ starts from 10 pieces.',
-    eyebrow: 'CUSTOM COMPETITION SHORTS',
-    headline: 'Ultimate Custom Competition Shorts',
-    intro: 'A clean athletic short for clubs, teams and private-label programs that need an easy-fitting elastic waist, practical movement and visible custom branding.',
+    seoTitle: 'Men’s Custom MMA Fight Shorts Manufacturer | TONTON',
+    seoDescription: 'Develop short-cut custom MMA fight shorts for BJJ, Sanda, boxing and combat training with stretch-woven fabric direction, articulated crotch construction and reinforced stitching. MOQ from 10 pieces.',
+    eyebrow: 'CUSTOM MMA FIGHT SHORTS',
+    headline: 'Men’s Custom MMA Fight Shorts',
+    intro: 'Short, mobility-focused outer fight shorts for MMA, BJJ, Sanda, boxing and functional combat training, with a broad elastic waist, articulated front-crotch construction and reinforced contrast stitching.',
     specs: [
       ['MOQ', 'From 10 pieces'],
-      ['Waist', 'Elastic waistband'],
-      ['Branding', 'Custom logo placement'],
+      ['Short cut', 'Athlete mobility'],
+      ['Outer short', 'Compression layer is separate'],
     ],
     features: [
-      'Clean athletic silhouette for training and competition programs',
-      'Elastic waistband developed for a secure, uncomplicated fit',
-      'Custom colors, logo positions and label direction',
-      'Sample review before bulk production',
-      'OEM and ODM support for brands, clubs, gyms and teams',
+      'Short athletic cut designed for kicks, sprawls and ground movement',
+      'Broad elastic waistband with an optional internal drawcord direction',
+      'Curved front-crotch construction for additional movement space',
+      'Reinforced contrast topstitching at high-use seams and hems',
+      'Custom waist patch, leg logo, colors and private-label finishing',
     ],
     benefits: [
-      { title: 'Clear team identity', copy: 'Front-waist and leg branding give clubs and labels visible positions without crowding the product.' },
-      { title: 'Practical fit direction', copy: 'The clean silhouette creates a flexible starting point for training, teamwear and competition-oriented programs.' },
-      { title: 'Project-specific materials', copy: 'Fabric weight, stretch, hand feel and drying performance are confirmed against the intended use and approved sample.' },
-      { title: 'Controlled artwork', copy: 'Logo scale, colors, labels and placement are organized in a digital mockup before sampling.' },
-      { title: 'Low-MOQ development', copy: 'Custom projects can begin from 10 pieces, subject to the selected construction, color and size breakdown.' },
-      { title: 'Repeat-order ready', copy: 'Approved specifications and artwork create a clearer reference for future team or collection replenishment.' },
+      { title: 'High-mobility short cut', copy: 'A compact leg length reduces excess fabric for kicking, grappling, sprawls and high-intensity conditioning.' },
+      { title: 'Articulated crotch area', copy: 'The visible curved front construction creates a more movement-oriented starting point than a flat casual-short block.' },
+      { title: 'Stretch fabric direction', copy: 'A polyester-spandex stretch-woven option can be evaluated for recovery, hand feel and unrestricted movement.' },
+      { title: 'Reinforced wear zones', copy: 'Multiple rows of visible topstitching support the waistband, front seam and hem areas exposed to repeated movement.' },
+      { title: 'Two branding positions', copy: 'A sewn waist patch and lower-leg logo area give brands clear identity without covering the entire garment.' },
+      { title: 'Flexible layering', copy: 'The garment is developed as an outer fight short, so athletes can pair it with their preferred separate compression tights.' },
     ],
-    materialLead: 'The current sample confirms the silhouette, elastic waist, seam direction and logo-placement possibilities. Exact fabric composition and GSM are selected for the project and confirmed on the approved sample.',
+    materialLead: 'The photographs verify the short outer-shell silhouette, broad elastic waist, curved front-crotch construction, contrast topstitching, finished hem and two branding positions. A four-way-stretch polyester-spandex woven fabric around 130–180gsm is a practical development range, not a confirmed specification; composition, GSM, stretch recovery and drying performance must be checked on the selected fabric and approved sample.',
     materialRows: [
-      ['Silhouette', 'Clean athletic competition and training short'],
-      ['Waistband', 'Elastic waist with customizable branding direction'],
-      ['Fabric', 'Project-specific woven performance fabric; composition and GSM confirmed during sampling'],
-      ['Construction', 'Panel and seam direction reviewed against movement and intended use'],
-      ['Decoration', 'Custom logo placement, colors, labels and approved print method'],
-      ['Buying baseline', 'MOQ from 10 pieces with mockup and sample review available'],
+      ['Product type', 'Short-cut outer MMA fight short for combat sports and functional training'],
+      ['Main fabric direction', 'Smooth matte polyester-spandex stretch woven; exact composition requires confirmation'],
+      ['Development weight', 'Approximately 130–180gsm for evaluation; final GSM confirmed by swatch and sample'],
+      ['Waistband', 'Broad elastic waist; hidden drawcord can be developed if required'],
+      ['Crotch & seams', 'Curved front construction with visible multi-row reinforcement stitching'],
+      ['Layering note', 'Compression tights shown in the image are a separate garment, not a built-in liner'],
+      ['Branding', 'Sewn waist patch plus leg print; final transfer, screen or silicone method depends on artwork and fabric'],
+    ],
+    detailCards: [
+      { title: 'Smooth matte fabric surface', copy: 'The close-up shows a lightweight-looking, low-shine surface. Fiber content, four-way stretch and the 130–180gsm development range still require swatch and sample confirmation.', alt: 'Close-up of smooth matte black fabric used as a custom MMA fight shorts development reference' },
+      { title: 'Broad elastic waist & sewn patch', copy: 'The waist detail verifies an elastic construction, visible TONTON patch stitching and the start of the curved front-crotch seam.', alt: 'Elastic waistband, sewn TONTON patch and reinforced crotch detail on black MMA fight shorts' },
+      { title: 'Articulated front-crotch construction', copy: 'Curved panel lines and multiple rows of contrast stitching create a movement-focused structure for kicks, squats and ground work.', alt: 'Curved front-crotch panel and contrast topstitching on short-cut MMA fight shorts' },
+      { title: 'Reinforced hem & leg branding', copy: 'The folded or bound hem and lower-leg logo position are clearly visible. The compression tights underneath are a separate layer.', alt: 'Reinforced hem, grey leg logo and separate compression tights beneath black MMA fight shorts' },
     ],
     customization: [
-      { title: 'Colors and artwork', copy: 'Apply club colors, logos, sponsor marks and collection graphics to approved printable areas.' },
-      { title: 'Waistband direction', copy: 'Review elastic construction, external branding and the preferred internal finish.' },
-      { title: 'Length and fit', copy: 'Confirm overall length, leg opening and intended athletic silhouette during product development.' },
-      { title: 'Labels and packing', copy: 'Add approved size marks, private labels and project-specific packing requirements.' },
+      { title: 'Fabric & stretch', copy: 'Compare stretch-woven swatches for weight, recovery, abrasion, hand feel and quick-dry direction before sampling.' },
+      { title: 'Short cut & crotch fit', copy: 'Confirm rise, inseam, leg opening and crotch volume against kicking, grappling and gym movement.' },
+      { title: 'Waist & reinforcement', copy: 'Review elastic width, optional hidden drawcord and the exact topstitching or reinforcement route.' },
+      { title: 'Branding & labels', copy: 'Set the waist patch, leg logo method, colors, size marks, private labels and packing requirements.' },
     ],
     faqs: [
-      { question: 'What material is used for these competition shorts?', answer: 'The sample establishes the product direction, but the exact fabric composition and GSM are confirmed for the intended activity, price position and approved sample. We do not present one unverified universal material specification.' },
-      { question: 'Can the waistband and logo placement be customized?', answer: 'Yes. Waistband branding, leg logos, colors, labels and artwork positions can be reviewed in the digital mockup before sampling.' },
-      { question: 'What is the MOQ?', answer: 'Custom projects can start from 10 pieces. The final order structure depends on the selected fabric, construction, colors, artwork and size breakdown.' },
-      { question: 'Can I approve a sample before bulk production?', answer: 'Yes. The sample is used to confirm fit, material, waistband, workmanship and branding before bulk production.' },
-      { question: 'What should I send for a quote?', answer: 'Send the quantity, target use, size range, logo files, preferred colors, reference images and any requirements for labels or packing.' },
+      { question: 'Are the black compression tights built into the MMA shorts?', answer: 'No. The tight layer visible below the hem is a separate compression garment. This product is presented as an outer fight short; a built-in liner would require a separate 2-in-1 construction brief.' },
+      { question: 'What fabric and GSM do you recommend?', answer: 'A four-way-stretch polyester-spandex woven direction around 130–180gsm can be evaluated for this short-cut style. Those values are a development range, not a verified specification; final composition, weight, stretch recovery and drying performance are confirmed using the chosen fabric and approved sample.' },
+      { question: 'Can the waistband include a hidden drawcord?', answer: 'Yes, a hidden drawcord can be developed if required. The current photos verify the broad elastic waistband but do not prove an internal drawcord, so that detail must be specified and sampled.' },
+      { question: 'How can the logos be applied?', answer: 'The waist branding appears as a sewn patch. The leg logo can be developed with a suitable heat-transfer, screen-print or silicone-print method depending on the artwork, fabric and required hand feel; the final process is confirmed before bulk production.' },
+      { question: 'Which activities are these shorts designed for?', answer: 'The short cut and articulated crotch direction suit MMA, BJJ, Sanda, boxing, wrestling, combat training and high-intensity gym work. Final fit and movement should be approved on the sample.' },
+      { question: 'What is the MOQ and approval process?', answer: 'Custom projects can start from 10 pieces. We align the fabric, fit, waist, reinforcement, branding, colors and size breakdown, then use the sample to approve the construction before bulk production.' },
     ],
   },
   'lightweight-quick-dry-training-shorts': {
@@ -104,6 +113,11 @@ export const TRAINING_SHORTS_LANDING_CONTENT: Record<TrainingShortsProductId, La
       ['Waistband', 'Elastic waistband with adjustable drawcord'],
       ['Stitching', 'Reinforced double stitching at the curved hem'],
       ['Decoration', 'Reflective heat-transfer logo plus custom colors and labels'],
+    ],
+    detailCards: [
+      { title: 'Complete product direction', copy: 'Review the complete silhouette and the main development baseline.', alt: 'Lightweight quick-dry custom training shorts overview' },
+      { title: 'Performance features', copy: 'Compare the logo, lining, waistband and curved-hem performance direction.', alt: 'Lightweight training shorts performance features and construction details' },
+      { title: 'Construction details', copy: 'Inspect the waist, fabric, lining and finishing details before sampling.', alt: 'Lightweight training shorts waistband, lining, fabric and hem details' },
     ],
     customization: [
       { title: 'Fabric and lining', copy: 'Confirm shell hand feel, quick-dry direction, lining, composition and GSM against the approved sample.' },
