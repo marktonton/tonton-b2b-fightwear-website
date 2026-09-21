@@ -3715,6 +3715,347 @@
 }
 
 
+/* TRAINING SHORTS CATEGORY — FUNCTIONAL / TACTICAL PRODUCT STORY */
+.training-shorts-banner {
+  display: block;
+  overflow: hidden;
+  background: #0c1409;
+}
+
+.training-shorts-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform .45s ease;
+}
+
+.training-shorts-banner:hover img {
+  transform: scale(1.006);
+}
+
+.customization-page-sublimated-training-shorts .customization-hero-grid {
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  gap: clamp(44px, 6vw, 92px);
+}
+
+.customization-page-sublimated-training-shorts .customization-hero-media {
+  min-height: 650px;
+  background: #e8ebed;
+}
+
+.customization-page-sublimated-training-shorts .customization-hero-media img {
+  object-position: center 48%;
+}
+
+.training-shorts-construction,
+.training-shorts-use {
+  padding-top: clamp(68px, 7.5vw, 108px);
+  padding-bottom: clamp(68px, 7.5vw, 108px);
+}
+
+.training-shorts-section-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(300px, .72fr);
+  align-items: end;
+  gap: clamp(34px, 6vw, 84px);
+  margin-bottom: 34px;
+}
+
+.training-shorts-section-heading h2 {
+  max-width: 820px;
+  margin: 14px 0 0;
+  color: #111317;
+  font-size: clamp(36px, 4.2vw, 58px);
+  line-height: 1.03;
+  letter-spacing: -.045em;
+}
+
+.training-shorts-section-heading > p {
+  margin: 0;
+  color: #5f6267;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.training-shorts-spec-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid #cfcfc9;
+  border-bottom: 1px solid #cfcfc9;
+}
+
+.training-shorts-spec-grid article {
+  min-width: 0;
+  padding: 23px 20px 24px 0;
+}
+
+.training-shorts-spec-grid article + article {
+  padding-left: 20px;
+  border-left: 1px solid #cfcfc9;
+}
+
+.training-shorts-spec-grid strong,
+.training-shorts-spec-grid span {
+  display: block;
+}
+
+.training-shorts-spec-grid strong {
+  color: #ed1b2f;
+  font-size: clamp(19px, 1.9vw, 27px);
+  line-height: 1;
+}
+
+.training-shorts-spec-grid span {
+  margin-top: 9px;
+  color: #4d5055;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.training-shorts-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.training-shorts-overview-grid figure {
+  overflow: hidden;
+  border: 1px solid #deddd8;
+  background: #fff;
+}
+
+.training-shorts-overview-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.training-shorts-overview-grid figcaption {
+  padding: 24px 26px 28px;
+}
+
+.training-shorts-overview-grid figcaption > span,
+.training-shorts-detail-grid article > div > span,
+.training-shorts-use-grid article > span {
+  color: #ed1b2f;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .15em;
+}
+
+.training-shorts-overview-grid h3 {
+  margin: 9px 0 10px;
+  font-size: clamp(22px, 2.3vw, 31px);
+  line-height: 1.12;
+}
+
+.training-shorts-overview-grid p {
+  color: #5f6267;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.training-shorts-details {
+  padding: clamp(68px, 7.5vw, 108px) 0;
+  background: #111317;
+  color: #fff;
+}
+
+.training-shorts-section-heading-light h2 {
+  color: #fff;
+}
+
+.training-shorts-section-heading-light > p {
+  color: #b9bbc0;
+}
+
+.training-shorts-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.training-shorts-detail-grid article {
+  min-width: 0;
+  border: 1px solid rgba(255,255,255,.16);
+  background: #1b1e22;
+}
+
+.training-shorts-detail-grid figure {
+  overflow: hidden;
+  background: #080a0c;
+}
+
+.training-shorts-detail-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.training-shorts-detail-grid article > div {
+  padding: 22px;
+}
+
+.training-shorts-detail-grid h3 {
+  margin-top: 14px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.training-shorts-detail-grid p {
+  margin-top: 10px;
+  color: #b9bbc0;
+  font-size: 14px;
+  line-height: 1.62;
+}
+
+.training-shorts-use {
+  border-bottom: 1px solid #d8d6d0;
+}
+
+.training-shorts-use-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border: 1px solid #d7d6d1;
+}
+
+.training-shorts-use-grid article {
+  min-width: 0;
+  padding: 28px 24px 30px;
+}
+
+.training-shorts-use-grid article + article {
+  border-left: 1px solid #d7d6d1;
+}
+
+.training-shorts-use-grid h3 {
+  margin-top: 28px;
+  font-size: 21px;
+  line-height: 1.2;
+}
+
+.training-shorts-use-grid p {
+  margin-top: 11px;
+  color: #62656a;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.training-shorts-verification {
+  display: grid;
+  grid-template-columns: minmax(260px, .72fr) minmax(0, 1.28fr);
+  gap: clamp(38px, 7vw, 98px);
+  margin-top: 22px;
+  padding: clamp(28px, 4vw, 48px);
+  background: #e7e6e1;
+}
+
+.training-shorts-verification h3 {
+  max-width: 500px;
+  margin-top: 13px;
+  font-size: clamp(24px, 2.6vw, 36px);
+  line-height: 1.1;
+}
+
+.training-shorts-verification ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 13px 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.training-shorts-verification li {
+  position: relative;
+  padding-left: 17px;
+  color: #4f5257;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.training-shorts-verification li::before {
+  position: absolute;
+  top: .58em;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background: #ed1b2f;
+  content: '';
+}
+
+@media (max-width: 1000px) {
+  .customization-page-sublimated-training-shorts .customization-hero-grid,
+  .training-shorts-section-heading,
+  .training-shorts-verification {
+    grid-template-columns: 1fr;
+  }
+
+  .customization-page-sublimated-training-shorts .customization-hero-media {
+    min-height: 600px;
+  }
+
+  .training-shorts-spec-grid,
+  .training-shorts-use-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .training-shorts-spec-grid article:nth-child(3),
+  .training-shorts-use-grid article:nth-child(3) {
+    padding-left: 0;
+    border-top: 1px solid #cfcfc9;
+    border-left: 0;
+  }
+
+  .training-shorts-spec-grid article:nth-child(4),
+  .training-shorts-use-grid article:nth-child(4) {
+    border-top: 1px solid #cfcfc9;
+  }
+
+  .training-shorts-detail-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 660px) {
+  .customization-page-sublimated-training-shorts .customization-hero-media {
+    min-height: 0;
+    aspect-ratio: 4 / 5;
+  }
+
+  .training-shorts-construction,
+  .training-shorts-use,
+  .training-shorts-details {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  .training-shorts-overview-grid,
+  .training-shorts-detail-grid,
+  .training-shorts-use-grid,
+  .training-shorts-verification ul {
+    grid-template-columns: 1fr;
+  }
+
+  .training-shorts-use-grid article + article {
+    border-top: 1px solid #d7d6d1;
+    border-left: 0;
+  }
+
+  .training-shorts-spec-grid article {
+    padding: 20px 14px 20px 0;
+  }
+
+  .training-shorts-spec-grid article + article {
+    padding-left: 14px;
+  }
+}
+
 /* BJJ / MMA CATEGORY — 2-IN-1 HIGH-SPLIT FEATURE */
 .customization-page-sublimated-bjj-mma-shorts .customization-hero-media img {
   object-position: center 42%;

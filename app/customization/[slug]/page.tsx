@@ -13,6 +13,48 @@ import RelatedResources from '../../../components/RelatedResources';
 
 const SITE_URL = 'https://www.tontongear.com';
 const FIGHT_SHORTS_CATEGORY_ROOT = '/assets/products/grappling-shorts-category';
+const TRAINING_SHORTS_CATEGORY_ROOT = '/assets/products/training-shorts-category';
+
+const TRAINING_SHORTS_SPECS = [
+  { value: 'WOVEN', label: 'Lightweight performance fabric direction' },
+  { value: 'SECURE', label: 'Zip pocket for small essentials' },
+  { value: 'VENTED', label: 'Perforated side ventilation' },
+  { value: 'ADJUSTABLE', label: 'Elastic, hook-and-loop and drawcord waist' },
+] as const;
+
+const TRAINING_SHORTS_DETAILS = [
+  {
+    image: 'ventilation-zip-pocket.webp',
+    title: 'Ventilation + secure storage',
+    text: 'The side panel combines an organized perforation pattern with a zip-pocket opening. Hole finish, pocket depth, zipper security, and placement are confirmed during sampling.',
+    alt: 'Close-up of perforated ventilation and zip pocket on olive functional training shorts',
+  },
+  {
+    image: 'side-opening-ventilation.webp',
+    title: 'Side opening + reinforced hem',
+    text: 'The curved side opening supports stride and training movement, while multiple rows of topstitching reinforce the lower edge and create a technical finish.',
+    alt: 'Close-up of side opening, perforated panel and reinforced hem stitching on training shorts',
+  },
+  {
+    image: 'adjustable-waistband.webp',
+    title: 'Adjustable waist support',
+    text: 'Elastic support and hook-and-loop adjustment help tune the fit. Edge softness, holding strength, and skin contact should be checked on the approved sample.',
+    alt: 'Close-up of elastic and hook-and-loop adjustable waistband on olive training shorts',
+  },
+  {
+    image: 'inner-drawcord-branding.webp',
+    title: 'Internal drawcord + branding',
+    text: 'The inside waist shows a secondary drawcord and branded elastic direction. Logo method, stretch behavior, and wash durability are finalized after material review.',
+    alt: 'Inside waistband with drawcord and TONTON branding on functional training shorts',
+  },
+] as const;
+
+const TRAINING_SHORTS_USES = [
+  { title: 'Gym & HIIT', text: 'Squats, lunges, kettlebells, battle ropes, box jumps, and everyday strength sessions.' },
+  { title: 'Combat conditioning', text: 'MMA fitness work, boxing footwork, bag drills, pad work, and training warm-ups—not presented as certified competition apparel.' },
+  { title: 'Outdoor fitness', text: 'Urban workouts, light hiking, obstacle training, travel, and active outdoor use.' },
+  { title: 'Utility activewear', text: 'A tactical, functional, and streetwear-ready direction built around practical details and a clean athletic silhouette.' },
+] as const;
 
 const FIGHT_SHORTS_SPECS = [
   { value: '2-IN-1', label: 'Athletic shell + compression liner' },
@@ -44,7 +86,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
   }
   const seoTitles: Record<string, string> = {
     'sublimated-rash-guards': 'Custom Sublimated Rash Guard Manufacturer | OEM',
-    'sublimated-training-shorts': 'Custom Sublimated Training Shorts | Sportswear OEM',
+    'sublimated-training-shorts': 'Custom Functional Training Shorts Manufacturer | OEM',
     'sublimated-bjj-mma-shorts': 'Custom BJJ & MMA Shorts | Fightwear Manufacturer',
   };
   const title = seoTitles[category.id] ?? `${category.name} Customization | TONTON Sportswear`;
@@ -86,6 +128,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
 
   const products = getCustomizationProducts(category.id);
   const isRashGuardPage = category.id === 'sublimated-rash-guards';
+  const isTrainingShortsPage = category.id === 'sublimated-training-shorts';
   const isFightShortsPage = category.id === 'sublimated-bjj-mma-shorts';
   const builderProduct = category.id === 'sublimated-rash-guards'
     ? 'Rash Guard'
@@ -105,12 +148,12 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
     description: content.seoDescription,
     primaryImageOfPage: isFightShortsPage ? `${SITE_URL}${content.heroImage}` : resolveImage(content.heroImage),
     about: content.projectTypes.map((item) => ({ '@type': 'Thing', name: item.title })),
-    ...(isRashGuardPage && content.productDetails ? {
-      hasPart: content.productDetails.map((detail) => ({
+    ...((isRashGuardPage && content.productDetails) || isTrainingShortsPage ? {
+      hasPart: (isTrainingShortsPage ? TRAINING_SHORTS_DETAILS : content.productDetails ?? []).map((detail) => ({
         '@type': 'ImageObject',
         name: detail.title,
         description: detail.text,
-        contentUrl: new URL(resolveImage(detail.image), SITE_URL).toString(),
+        contentUrl: new URL(resolveImage(isTrainingShortsPage ? `${TRAINING_SHORTS_CATEGORY_ROOT}/${detail.image}` : detail.image), SITE_URL).toString(),
       })),
     } : {}),
     mainEntity: {
@@ -176,6 +219,12 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
     <div className={`customization-page customization-page-${category.id}`}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([collectionSchema, breadcrumbSchema, faqSchema, ...(videoSchema ? [videoSchema] : [])]) }} />
 
+      {isTrainingShortsPage && (
+        <Link className="training-shorts-banner" href={builderHref} aria-label="Start a custom functional training shorts project">
+          <Image src={`${TRAINING_SHORTS_CATEGORY_ROOT}/training-shorts-banner.webp`} alt="Olive, black and burgundy functional training shorts for gym, combat conditioning and everyday movement" width={2048} height={712} priority unoptimized />
+        </Link>
+      )}
+
       <section className="customization-hero">
         <div className="customization-shell customization-hero-grid">
           <div className="customization-hero-copy">
@@ -183,7 +232,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
               <Link href="/">Home</Link><span>/</span><Link href="/collections">Customization</Link><span>/</span><span>{category.name}</span>
             </nav>
             <p className="customization-kicker">{content.kicker}</p>
-            <h1>{isRashGuardPage ? 'Custom Sublimated Graphic Rash Guards' : `Custom ${category.name}`}</h1>
+            <h1>{isRashGuardPage ? 'Custom Sublimated Graphic Rash Guards' : isTrainingShortsPage ? 'Custom Functional Training Shorts' : `Custom ${category.name}`}</h1>
             <p className="customization-hero-lead">{content.heroLead}</p>
             <div className="customization-hero-actions">
               <Link className="customization-button customization-button-red" href={builderHref}>Build Your Project <span aria-hidden="true">→</span></Link>
@@ -191,7 +240,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
             </div>
           </div>
           <figure className="customization-hero-media">
-            <Image src={isFightShortsPage ? content.heroImage : resolveImage(content.heroImage)} alt={content.heroAlt} fill priority unoptimized={isRashGuardPage || isFightShortsPage} sizes="(max-width: 900px) 100vw, 52vw" />
+            <Image src={isFightShortsPage ? content.heroImage : resolveImage(content.heroImage)} alt={content.heroAlt} fill priority unoptimized={isRashGuardPage || isTrainingShortsPage || isFightShortsPage} sizes="(max-width: 900px) 100vw, 52vw" />
           </figure>
         </div>
         <div className="customization-shell customization-facts" aria-label="Project benefits">
@@ -242,6 +291,71 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
           </div>
         </div>
       </section>
+
+      {isTrainingShortsPage && (
+        <>
+          <section className="training-shorts-construction customization-shell" aria-labelledby="training-shorts-construction-title">
+            <div className="training-shorts-section-heading">
+              <div>
+                <p className="customization-kicker">FUNCTIONAL PRODUCT CONSTRUCTION</p>
+                <h2 id="training-shorts-construction-title">Technical details built for movement and everyday utility.</h2>
+              </div>
+              <p>This reference combines a light, structured woven direction with adjustable waist support, secure storage, airflow details, shaped panel lines, and reinforced finishing. Final composition, weight, stretch, and trim specifications are confirmed against the approved sample.</p>
+            </div>
+            <div className="training-shorts-spec-grid" aria-label="Functional training shorts development points">
+              {TRAINING_SHORTS_SPECS.map((spec) => <article key={spec.value}><strong>{spec.value}</strong><span>{spec.label}</span></article>)}
+            </div>
+            <div className="training-shorts-overview-grid">
+              <figure>
+                <Image src={`${TRAINING_SHORTS_CATEGORY_ROOT}/training-shorts-flatlay.webp`} alt="Front overview of olive functional training shorts with adjustable waist, ventilation and contrast panels" width={1600} height={1600} unoptimized />
+                <figcaption><span>FRONT CONSTRUCTION</span><h3>Review the complete functional system.</h3><p>Check the athletic silhouette, front shaping, perforated side details, curved hem, contrast stretch zones, waistband adjustment, and branding placement together.</p></figcaption>
+              </figure>
+              <figure>
+                <Image src={`${TRAINING_SHORTS_CATEGORY_ROOT}/training-shorts-back.webp`} alt="Back overview of olive functional training shorts with shaped seams and side pocket opening" width={1600} height={1600} unoptimized />
+                <figcaption><span>BACK & SIDE CONSTRUCTION</span><h3>Inspect panel shaping and movement areas.</h3><p>The rear and side views make seam direction, pocket integration, hem reinforcement, stretch-panel placement, and overall balance easier to approve before bulk production.</p></figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section className="training-shorts-details">
+            <div className="customization-shell">
+              <div className="training-shorts-section-heading training-shorts-section-heading-light">
+                <div><p className="customization-kicker customization-kicker-light">REAL PRODUCT DETAILS</p><h2>Inspect the pocket, ventilation, waist, and finishing before sampling.</h2></div>
+                <p>These close-ups show the visible product direction. Exact stitch type, fabric composition, perforation method, zipper specification, and logo process remain project-specific until confirmed.</p>
+              </div>
+              <div className="training-shorts-detail-grid">
+                {TRAINING_SHORTS_DETAILS.map((detail, index) => (
+                  <article key={detail.image}>
+                    <figure><Image src={`${TRAINING_SHORTS_CATEGORY_ROOT}/${detail.image}`} alt={detail.alt} width={1600} height={1600} unoptimized /></figure>
+                    <div><span>0{index + 1}</span><h3>{detail.title}</h3><p>{detail.text}</p></div>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section className="training-shorts-use customization-shell" aria-labelledby="training-shorts-use-title">
+            <div className="training-shorts-section-heading">
+              <div><p className="customization-kicker">USE CASES</p><h2 id="training-shorts-use-title">A hybrid direction across training, outdoor activity, and functional style.</h2></div>
+              <p>The silhouette can support several markets without making an unsupported competition-rule claim. Final product copy should follow the approved fabric, construction, and test results.</p>
+            </div>
+            <div className="training-shorts-use-grid">
+              {TRAINING_SHORTS_USES.map((use, index) => <article key={use.title}><span>0{index + 1}</span><h3>{use.title}</h3><p>{use.text}</p></article>)}
+            </div>
+            <aside className="training-shorts-verification">
+              <div><p className="customization-kicker">DEVELOPMENT CHECKPOINTS</p><h3>Confirm the specification before making performance claims.</h3></div>
+              <ul>
+                <li>Fabric composition, GSM, stretch, and recovery</li>
+                <li>Abrasion, pilling, and colorfastness</li>
+                <li>Perforation edge stability and tear resistance</li>
+                <li>Zip-pocket strength and pull security</li>
+                <li>Waist adjustment comfort and holding power</li>
+                <li>Crotch, hem, logo, wash, and rub durability</li>
+              </ul>
+            </aside>
+          </section>
+        </>
+      )}
 
       {isFightShortsPage && (
         <>

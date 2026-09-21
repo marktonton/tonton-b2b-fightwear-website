@@ -24,6 +24,7 @@ export function resolveImage(path: string): string {
   if (
     cleanPath.startsWith('assets/products/rash-guard-products/') ||
     cleanPath.startsWith('assets/products/grappling-shorts-products/') ||
+    cleanPath.startsWith('assets/products/training-shorts-category/') ||
     cleanPath.startsWith('assets/process/')
   ) {
     return withVersion(`/${cleanPath}`);
