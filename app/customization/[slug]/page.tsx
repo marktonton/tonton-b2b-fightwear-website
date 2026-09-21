@@ -55,6 +55,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
     title: { absolute: title },
     description: content.seoDescription,
     alternates: { canonical: `${SITE_URL}/customization/${category.id}` },
+    robots: { index: true, follow: true },
     openGraph: {
       title,
       description: content.seoDescription,
