@@ -11,6 +11,8 @@ import { HIGH_SPLIT_GRAPPLING_SHORTS_CONTENT, HIGH_SPLIT_GRAPPLING_SHORTS_FAQS, 
 import { getRouteModifiedDate } from '../../../lib/content-dates';
 import RelatedResources from '../../../components/RelatedResources';
 import ProductLandingLinks from '../../../components/ProductLandingLinks';
+import TrainingShortsLanding from './TrainingShortsLanding';
+import { isTrainingShortsLandingProduct, TRAINING_SHORTS_LANDING_CONTENT } from '../../../lib/training-shorts-products';
 
 const SITE_URL = 'https://www.tontongear.com';
 const products = productsData.products;
@@ -70,6 +72,8 @@ export function generateMetadata({ params }: PageProps): Metadata {
     ? RASH_GUARD_LANDING_CONTENT[product.id]
     : isHighSplitGrapplingShorts(product.id)
       ? HIGH_SPLIT_GRAPPLING_SHORTS_CONTENT
+      : isTrainingShortsLandingProduct(product.id)
+        ? TRAINING_SHORTS_LANDING_CONTENT[product.id]
       : null;
   const title = landingContent?.seoTitle ?? getProductTitle(product);
   const description = landingContent?.seoDescription ?? getProductDescription(product);
@@ -79,7 +83,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
     title: { absolute: title },
     description,
     alternates: { canonical: url },
-    robots: isHighSplitGrapplingShorts(product.id) ? { index: true, follow: true } : undefined,
+    robots: isHighSplitGrapplingShorts(product.id) || isTrainingShortsLandingProduct(product.id) ? { index: true, follow: true } : undefined,
     openGraph: {
       type: 'website',
       url,
@@ -102,6 +106,59 @@ export default function ProductDetailPage({ params }: PageProps) {
 
   if (!product) {
     notFound();
+  }
+
+  if (isTrainingShortsLandingProduct(product.id)) {
+    const content = TRAINING_SHORTS_LANDING_CONTENT[product.id];
+    const galleryImages = 'images' in product ? product.images : [product.image];
+    const productUrl = `${SITE_URL}/products/${product.id}`;
+    const productSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      '@id': `${productUrl}#product`,
+      name: product.name,
+      description: content.seoDescription,
+      image: galleryImages.map(getAbsoluteImage),
+      sku: product.id,
+      category: 'Custom Training Shorts',
+      url: productUrl,
+      brand: { '@type': 'Brand', name: 'TONTON' },
+      manufacturer: { '@type': 'Organization', name: 'TONTON Sportswear', url: SITE_URL },
+      additionalProperty: content.materialRows.map(([name, value]) => ({ '@type': 'PropertyValue', name, value })),
+    };
+    const webPageSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: product.name,
+      url: productUrl,
+      dateModified: getRouteModifiedDate(`/products/${product.id}`),
+      mainEntity: { '@id': `${productUrl}#product` },
+    };
+    const breadcrumbSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+        { '@type': 'ListItem', position: 2, name: 'Custom Training Shorts', item: `${SITE_URL}/customization/sublimated-training-shorts` },
+        { '@type': 'ListItem', position: 3, name: product.name, item: productUrl },
+      ],
+    };
+    const faqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: content.faqs.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: { '@type': 'Answer', text: item.answer },
+      })),
+    };
+
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([productSchema, webPageSchema, breadcrumbSchema, faqSchema]) }} />
+        <TrainingShortsLanding product={product} />
+      </>
+    );
   }
 
   if (isHighSplitGrapplingShorts(product.id)) {
