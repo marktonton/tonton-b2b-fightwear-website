@@ -104,6 +104,11 @@ const CUSTOMIZATION_ENTRIES = [
   },
 ] as const;
 
+function getCategoryWhatsAppHref(entry: (typeof CUSTOMIZATION_ENTRIES)[number]) {
+  const message = `Hello TONTON, I would like to request a quote for ${entry.title}. Please send me more information about customization, MOQ and sampling.`;
+  return `https://wa.me/8617722438678?text=${encodeURIComponent(message)}`;
+}
+
 const FACTORY_IMAGES = [
   'assets/factory/factory-slider-01.jpg',
   'assets/factory/factory-slider-02.jpg',
@@ -272,7 +277,18 @@ export default function HomePage() {
                   >
                     Build This Project
                   </a>
-                  <a className="custom-entry-secondary" href={entry.categoryHref}>View Products <span aria-hidden="true">→</span></a>
+                  <div className="product-detail-quick-actions">
+                    <a className="custom-entry-secondary" href={entry.categoryHref}>View Products <span aria-hidden="true">→</span></a>
+                    <a
+                      className="product-detail-whatsapp"
+                      href={getCategoryWhatsAppHref(entry)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Request a WhatsApp quote for ${entry.title}`}
+                    >
+                      <span aria-hidden="true">→</span> Quote on WhatsApp
+                    </a>
+                  </div>
                 </div>
               </div>
             </article>
