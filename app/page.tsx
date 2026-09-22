@@ -140,9 +140,9 @@ const PRODUCT_DETAIL_ENTRIES = [
   },
   {
     id: 'pro-mma-shorts-07',
-    buyer: 'Gyms and teams building lightweight training uniform programs',
-    specs: ['Lightweight Training Construction', 'Sublimation Printing', 'Team Logo Placement'],
-    customization: 'Colors, leg graphics, waistband branding and private labels',
+    buyer: 'MMA gyms and fightwear brands developing short, fitted combat-training shorts',
+    specs: ['88% Polyester / 12% Spandex', 'Hook-and-Loop Waist + Drawcord', 'Reinforced Side Split'],
+    customization: 'Sublimated camo, colors, logos, waistband direction and private labels',
   },
   {
     id: 'high-split-grappling-shorts',

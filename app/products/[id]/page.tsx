@@ -13,6 +13,8 @@ import RelatedResources from '../../../components/RelatedResources';
 import ProductLandingLinks from '../../../components/ProductLandingLinks';
 import TrainingShortsLanding from './TrainingShortsLanding';
 import { isTrainingShortsLandingProduct, TRAINING_SHORTS_LANDING_CONTENT } from '../../../lib/training-shorts-products';
+import CamoMmaShortsLanding from './CamoMmaShortsLanding';
+import { CAMO_MMA_SHORTS_CONTENT, CAMO_MMA_SHORTS_FAQS, isCamoMmaShorts } from '../../../lib/camo-mma-shorts-product';
 
 const SITE_URL = 'https://www.tontongear.com';
 const products = productsData.products;
@@ -74,7 +76,9 @@ export function generateMetadata({ params }: PageProps): Metadata {
       ? HIGH_SPLIT_GRAPPLING_SHORTS_CONTENT
       : isTrainingShortsLandingProduct(product.id)
         ? TRAINING_SHORTS_LANDING_CONTENT[product.id]
-      : null;
+        : isCamoMmaShorts(product.id)
+          ? CAMO_MMA_SHORTS_CONTENT
+          : null;
   const title = landingContent?.seoTitle ?? getProductTitle(product);
   const description = landingContent?.seoDescription ?? getProductDescription(product);
   const image = resolveImage(product.image);
@@ -83,7 +87,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
     title: { absolute: title },
     description,
     alternates: { canonical: url },
-    robots: isHighSplitGrapplingShorts(product.id) || isTrainingShortsLandingProduct(product.id) ? { index: true, follow: true } : undefined,
+    robots: isHighSplitGrapplingShorts(product.id) || isTrainingShortsLandingProduct(product.id) || isCamoMmaShorts(product.id) ? { index: true, follow: true } : undefined,
     openGraph: {
       type: 'website',
       url,
@@ -106,6 +110,36 @@ export default function ProductDetailPage({ params }: PageProps) {
 
   if (!product) {
     notFound();
+  }
+
+  if (isCamoMmaShorts(product.id)) {
+    const galleryImages = 'images' in product ? product.images : [product.image];
+    const productUrl = `${SITE_URL}/products/${product.id}`;
+    const productSchema = {
+      '@context': 'https://schema.org', '@type': 'Product', '@id': `${productUrl}#product`,
+      name: product.name, description: CAMO_MMA_SHORTS_CONTENT.seoDescription,
+      image: galleryImages.map(getAbsoluteImage), sku: product.id, category: 'Custom MMA Fight Shorts',
+      material: CAMO_MMA_SHORTS_CONTENT.material, color: CAMO_MMA_SHORTS_CONTENT.color, url: productUrl,
+      brand: { '@type': 'Brand', name: 'TONTON' },
+      manufacturer: { '@type': 'Organization', name: 'TONTON Sportswear', url: SITE_URL },
+      additionalProperty: [
+        { '@type': 'PropertyValue', name: 'Composition', value: '88% polyester / 12% spandex' },
+        { '@type': 'PropertyValue', name: 'Waist closure', value: 'Elastic waistband, hook-and-loop fly and internal drawcord' },
+        { '@type': 'PropertyValue', name: 'Leg construction', value: 'Reinforced short side split' },
+        { '@type': 'PropertyValue', name: 'Decoration', value: 'Sublimated graphics' },
+        { '@type': 'PropertyValue', name: 'Pockets', value: 'No exposed storage pockets' },
+        { '@type': 'PropertyValue', name: 'Recommended use', value: 'MMA, kickboxing, martial-arts training and conditioning' },
+      ],
+    };
+    const webPageSchema = { '@context': 'https://schema.org', '@type': 'WebPage', name: product.name, url: productUrl, dateModified: getRouteModifiedDate(`/products/${product.id}`), mainEntity: { '@id': `${productUrl}#product` } };
+    const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Custom BJJ & MMA Shorts', item: `${SITE_URL}/customization/sublimated-bjj-mma-shorts` },
+      { '@type': 'ListItem', position: 3, name: product.name, item: productUrl },
+    ] };
+    const faqSchema = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: CAMO_MMA_SHORTS_FAQS.map((item) => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })) };
+
+    return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([productSchema, webPageSchema, breadcrumbSchema, faqSchema]) }} /><CamoMmaShortsLanding product={product} /></>;
   }
 
   if (isTrainingShortsLandingProduct(product.id)) {

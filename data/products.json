@@ -129,11 +129,18 @@
     },
     {
       "id": "pro-mma-shorts-07",
-      "categoryId": "sublimated-training-shorts",
-      "name": "Black Logo Sublimated Training Shorts",
+      "categoryId": "sublimated-bjj-mma-shorts",
+      "name": "Custom Camo Side-Split MMA Fight Shorts",
       "image": "assets/products/grappling-shorts-products/black-tonton-training-shorts-main-v1.webp",
-      "description": "Lightweight black training shorts with custom logo placement.",
-      "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
+      "images": [
+        "assets/products/grappling-shorts-products/black-tonton-training-shorts-main-v1.webp",
+        "assets/products/grappling-shorts-products/camo-side-split/fight-shorts-banner.webp",
+        "assets/products/grappling-shorts-products/camo-side-split/black-camo-construction.webp",
+        "assets/products/grappling-shorts-products/camo-side-split/waist-and-inner-structure.webp",
+        "assets/products/grappling-shorts-products/camo-side-split/training-applications.webp"
+      ],
+      "description": "Men's custom camo MMA fight shorts in 88% polyester and 12% spandex with a hook-and-loop waist, internal drawcord, reinforced side split and sublimated graphics.",
+      "features": ["88% Polyester / 12% Spandex", "Hook-and-Loop Waist + Drawcord", "Reinforced Side Split", "Sublimated Graphics", "No Exposed Pockets"]
     },
     {
       "id": "pro-mma-shorts-08",

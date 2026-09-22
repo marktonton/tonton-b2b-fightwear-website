@@ -4,10 +4,12 @@ export default function ProductSpecificationTable({
   title,
   intro,
   rows,
+  reviewedDate = 'September 15, 2026',
 }: {
   title: string;
   intro: string;
   rows: readonly SpecificationRow[];
+  reviewedDate?: string;
 }) {
   return (
     <section className="product-specification" aria-labelledby="product-specification-title">
@@ -15,7 +17,7 @@ export default function ProductSpecificationTable({
         <p className="rg-eyebrow">Verified Product Specification</p>
         <h2 id="product-specification-title">{title}</h2>
         <p>{intro}</p>
-        <span>Last reviewed: September 15, 2026</span>
+        <span>Last reviewed: {reviewedDate}</span>
       </div>
       <div className="product-specification-table-wrap">
         <table>
