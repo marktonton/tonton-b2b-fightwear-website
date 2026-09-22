@@ -15,6 +15,7 @@ export const ROUTE_LAST_MODIFIED: Record<string, string> = {
   '/products/samurai-graphic-rash-guard': CONTENT_REVIEW_DATE,
   '/products/high-split-grappling-shorts': CONTENT_REVIEW_DATE,
   '/products/custom-logo-shorts': '2026-09-21',
+  '/products/pro-mma-shorts-07': '2026-09-22',
   '/products/lightweight-quick-dry-training-shorts': '2026-09-21',
 };
 

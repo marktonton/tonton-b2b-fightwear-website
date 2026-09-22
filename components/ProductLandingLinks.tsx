@@ -18,11 +18,17 @@ const CURATED_RELATED: Record<string, string[]> = {
     'high-split-grappling-shorts',
     'pro-mma-shorts-07',
   ],
+  'pro-mma-shorts-07': [
+    'high-split-grappling-shorts',
+    'custom-logo-shorts',
+    'black-white-mma-kit',
+  ],
 };
 
 function getBuilderProduct(productId: string, categoryId: string) {
   if (productId === 'high-split-grappling-shorts') return 'High-Split Grappling Shorts';
   if (productId === 'custom-logo-shorts') return 'BJJ / MMA Shorts';
+  if (productId === 'pro-mma-shorts-07') return 'MMA Fight Shorts';
 
   const builderProducts: Record<string, string> = {
     'sublimated-rash-guards': 'Rash Guard',
