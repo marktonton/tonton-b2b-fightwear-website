@@ -108,7 +108,7 @@ export default function TrainingShortsLanding({ product }: { product: Product })
         <div className="rg-faq-list">{content.faqs.map((item, index) => <details key={item.question} open={index === 0}><summary><span>{String(index + 1).padStart(2, '0')}</span>{item.question}</summary><p>{item.answer}</p></details>)}</div>
       </section>
 
-      <RelatedResources slugs={isMmaFightShorts ? ['high-split-grappling-shorts-specifications', 'high-split-vs-standard-grappling-shorts', 'custom-fightwear-sampling-moq'] : ['custom-fightwear-sampling-moq']} />
+      <RelatedResources slugs={isMmaFightShorts ? ['high-split-grappling-shorts-specifications', 'high-split-vs-standard-grappling-shorts', 'fightwear-quality-inspection-checklist', 'custom-fightwear-sampling-moq'] : ['training-shorts-fabric-ventilation-pocket-guide', 'fightwear-quality-inspection-checklist', 'prepare-artwork-for-sublimation', 'custom-fightwear-sampling-moq']} />
       <ProductLandingLinks productId={product.id} />
     </div>
   );

@@ -1,8 +1,8 @@
 export const CAMO_MMA_SHORTS_ID = 'pro-mma-shorts-07';
 
 export const CAMO_MMA_SHORTS_CONTENT = {
-  seoTitle: 'Custom Camo Side-Split MMA Fight Shorts Manufacturer | TONTON',
-  seoDescription: "Custom men's camo side-split MMA fight shorts in 88% polyester and 12% spandex, with a hook-and-loop waist, inner drawcord, sublimated graphics and reinforced construction.",
+  seoTitle: "Men's Custom MMA Fight Shorts Manufacturer | TONTON",
+  seoDescription: "Men's custom MMA fight shorts in lightweight stretch-woven fabric with an adjustable elastic waist, reinforced side split and hem, and sublimated graphics for MMA, BJJ No-Gi, grappling, kickboxing and functional training.",
   material: '88% polyester / 12% spandex stretch woven performance fabric',
   color: 'Custom sublimated camouflage and team colors',
 } as const;
@@ -22,7 +22,7 @@ export const CAMO_MMA_SHORTS_FAQS = [
   },
   {
     question: 'Can the camouflage graphics and logos be customized?',
-    answer: 'Yes. Sublimation supports custom camouflage, team colors, logos and sponsor artwork without the thick raised layer associated with some surface-print methods.',
+    answer: 'Yes. Sublimation supports tonal camouflage, asymmetric black-and-red graphics, team colors, logos and sponsor artwork without the thick raised layer associated with some surface-print methods.',
   },
   {
     question: 'Do the shorts have storage pockets?',
@@ -30,7 +30,7 @@ export const CAMO_MMA_SHORTS_FAQS = [
   },
   {
     question: 'Can these shorts be used in formal competition?',
-    answer: 'They are developed for MMA, kickboxing, martial-arts and conditioning use. Before ordering for formal competition or grappling, confirm the relevant equipment rules and approve the fit and performance on a physical sample.',
+    answer: 'They are developed for MMA, BJJ No-Gi training, grappling drills, kickboxing, boxing fitness and functional training. Before ordering for formal competition, confirm the relevant equipment rules and approve fit and performance on a physical sample.',
   },
 ] as const;
 

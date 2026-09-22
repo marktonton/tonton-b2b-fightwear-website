@@ -11,10 +11,10 @@ type Product = { id: string; name: string; image: string; images?: string[]; des
 const ASSET_ROOT = 'assets/products/grappling-shorts-products/camo-side-split';
 
 const BENEFITS = [
-  { title: 'Fight-focused silhouette', copy: 'A short, fitted profile with no exposed storage pockets keeps the exterior clean for combat training.' },
+  { title: 'Fight-focused athletic cut', copy: 'A short athletic profile with room through the thigh and no exposed storage pockets keeps the exterior clean for combat training.' },
   { title: 'Stretch mobility', copy: 'The polyester-spandex body moves through kicks, hip rotation, sprawls, squats and lunges.' },
   { title: 'Triple waist control', copy: 'Elastic support, a hook-and-loop fly and an internal drawcord work together for an adjustable hold.' },
-  { title: 'Reinforced side split', copy: 'A short outer-leg opening releases the thigh while reinforcement supports repeated high-mobility use.' },
+  { title: 'Reinforced split & hem', copy: 'A short outer-leg opening releases the thigh while a reinforced hem with clean topstitching supports repeated high-mobility use.' },
   { title: 'Smooth sublimation', copy: 'Artwork is dyed into the synthetic fibers for complex graphics without a thick raised print layer.' },
   { title: 'Panelled construction', copy: 'Front, back, side and crotch panels shape the shorts around the hips, seat and upper leg.' },
 ] as const;
@@ -45,7 +45,7 @@ export default function CamoMmaShortsLanding({ product }: { product: Product }) 
         <div className="rg-product-hero-copy">
           <p className="rg-eyebrow">Custom MMA Fight Shorts</p>
           <h1>Men&apos;s Camo Side-Split MMA Fight Shorts</h1>
-          <p className="rg-lead">A short, fitted fight-short construction made for kicks, hip rotation and conditioning—not a tactical storage short. Smooth stretch fabric, a secure three-part waist and a reinforced side split support high-output combat movement.</p>
+          <p className="rg-lead">Men&apos;s MMA fight shorts made from lightweight woven performance fabric with a short athletic cut, adjustable elastic waist, reinforced side split and clean topstitched hem. Developed for MMA, BJJ No-Gi training, grappling drills, kickboxing, boxing fitness and functional training—not as a tactical storage short.</p>
           <div className="rg-spec-strip" aria-label="Core product specifications">
             <div><strong>88 / 12</strong><span>Polyester / Spandex</span></div>
             <div><strong>3-Part</strong><span>Waist Adjustment</span></div>
@@ -55,7 +55,8 @@ export default function CamoMmaShortsLanding({ product }: { product: Product }) 
             <li>Lightweight, smooth stretch performance fabric</li>
             <li>Elastic waist, hook-and-loop fly and internal drawcord</li>
             <li>Short reinforced split for kicks, knees and wide stances</li>
-            <li>Sublimated camo, logo and sponsor artwork</li>
+            <li>Reinforced hem with clean parallel topstitching</li>
+            <li>Sublimated camo, asymmetric black-and-red, logo and sponsor artwork options</li>
             <li>No exposed storage pockets</li>
           </ul>
           <div className="rg-hero-actions">
@@ -75,10 +76,11 @@ export default function CamoMmaShortsLanding({ product }: { product: Product }) 
         ['Main body', '88% polyester / 12% spandex stretch performance fabric'],
         ['Waist system', 'Broad elastic waist, hook-and-loop fly and internal drawcord'],
         ['Leg opening', 'Short reinforced side split'],
+        ['Hem finish', 'Reinforced folded or bound hem with clean topstitching'],
         ['Graphics', 'Full-color sublimation for camo, logos and team artwork'],
         ['Construction', 'Panelled front, back, side and crotch shaping with reinforced stitching'],
         ['Pockets', 'No exposed storage pockets specified'],
-        ['Recommended use', 'MMA, kickboxing, bag work, martial-arts practice and conditioning'],
+        ['Recommended use', 'MMA, BJJ No-Gi training, grappling drills, kickboxing, boxing fitness and functional training'],
       ]} />
 
       <section className="gs-benefits-section" aria-labelledby="mf-benefits-title">
@@ -89,11 +91,12 @@ export default function CamoMmaShortsLanding({ product }: { product: Product }) 
       <section className="rg-fit-section" id="construction">
         <div><p className="rg-eyebrow">Material &amp; Construction</p><h2>Light, smooth and shaped for rotation</h2></div>
         <div className="rg-fit-copy">
-          <p>The 88% polyester and 12% spandex body balances low weight, strength and stretch. Its smooth surface is suited to repeated training contact, while panelled shaping and the side split reduce pull across the hip, crotch and thigh.</p>
+          <p>The lightweight woven body uses 88% polyester and 12% spandex to balance low weight, strength and stretch. Its smooth surface is suited to repeated training contact, while the short athletic cut, panelled shaping and side split reduce pull across the hip, crotch and thigh.</p>
           <dl>
             <div><dt>Fabric behavior</dt><dd>Lightweight stretch with a smooth hand and less water weight than bulky traditional satin constructions</dd></div>
             <div><dt>Waist control</dt><dd>Elastic support plus hook-and-loop closure and an internal drawcord for adjustable security</dd></div>
             <div><dt>Mobility</dt><dd>A reinforced short split creates extra clearance for kicks, knee strikes, lunges and deep squats</dd></div>
+            <div><dt>Hem finish</dt><dd>Reinforced hem construction with clean topstitching for a stable lower edge through repeated training</dd></div>
             <div><dt>Panel shaping</dt><dd>Separated front, back, side and crotch areas follow the hips, seat and upper leg through rotation</dd></div>
             <div><dt>Artwork</dt><dd>Sublimated graphics enter the synthetic fibers, avoiding a thick raised surface and reducing large-area cracking</dd></div>
             <div><dt>Sample checks</dt><dd>Confirm abrasion, stretch recovery, seam strength, hook-and-loop comfort and logo color on the approved sample</dd></div>
@@ -109,7 +112,7 @@ export default function CamoMmaShortsLanding({ product }: { product: Product }) 
       <section className="rg-custom-section">
         <div><p className="rg-eyebrow">Customization Scope</p><h2>Turn the base construction into your team short</h2><p>Use the product as a starting point, then confirm artwork, fit and construction on the digital mockup and physical sample.</p></div>
         <ol>
-          <li><span>01</span><div><h3>Camo &amp; artwork direction</h3><p>Develop custom camouflage, solid colors, team graphics, sponsor marks and logo placement through sublimation.</p></div></li>
+          <li><span>01</span><div><h3>Camo &amp; artwork direction</h3><p>Develop custom camouflage, asymmetric black-and-red graphics, solid colors, team graphics, sponsor marks and logo placement through sublimation.</p></div></li>
           <li><span>02</span><div><h3>Waist presentation</h3><p>Review waistband color, hook-and-loop tab, inner drawcord and branding direction.</p></div></li>
           <li><span>03</span><div><h3>Fit &amp; split height</h3><p>Confirm short length, leg opening and split position against the intended training use and size range.</p></div></li>
           <li><span>04</span><div><h3>Labels &amp; packaging</h3><p>Add approved private labels, size identification and packing requirements for the production brief.</p></div></li>
@@ -119,8 +122,8 @@ export default function CamoMmaShortsLanding({ product }: { product: Product }) 
       <section className="mf-use-section" aria-labelledby="mf-use-title">
         <div className="rg-section-heading"><p className="rg-eyebrow">Recommended Applications</p><h2 id="mf-use-title">Combat training first, conditioning second</h2><p>Designed around MMA and striking movement, with useful crossover into strength and high-intensity training.</p></div>
         <div className="mf-use-grid">
-          <article><h3>Combat training</h3><p>MMA drills, kickboxing, bag work, pad sessions, karate practice and general martial-arts training.</p></article>
-          <article><h3>Strength &amp; conditioning</h3><p>Squats, lunges, mobility work, gym sessions and HIIT where a secure waist and free leg movement matter.</p></article>
+          <article><h3>Combat training</h3><p>MMA drills, BJJ No-Gi training, grappling movement, kickboxing, bag work, pad sessions and general martial-arts practice.</p></article>
+          <article><h3>Boxing fitness &amp; conditioning</h3><p>Boxing fitness, squats, lunges, mobility work, gym sessions and HIIT where a secure waist and free leg movement matter.</p></article>
           <article><h3>Competition check</h3><p>For formal competition or grappling, verify the relevant equipment rules and approve real-wear performance before bulk production.</p></article>
         </div>
       </section>

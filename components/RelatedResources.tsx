@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { RESOURCE_PAGES } from '../lib/resource-content';
 
 export default function RelatedResources({ slugs }: { slugs?: string[] }) {
-  const featured = ['rash-guard-fabric-construction', 'high-split-grappling-shorts-specifications', 'custom-fightwear-sampling-moq'];
+  const featured = ['rash-guard-fabric-construction', 'training-shorts-fabric-ventilation-pocket-guide', 'high-split-grappling-shorts-specifications', 'custom-fightwear-sampling-moq'];
   const selected = slugs?.length ? slugs : featured;
   const resources = RESOURCE_PAGES.filter((item) => selected.includes(item.slug));
   return (
