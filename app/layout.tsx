@@ -44,7 +44,10 @@ export const metadata: Metadata = {
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'TONTON Sportswear Co., Ltd.',
+  name: 'TONTON Sportswear',
+  legalName: 'Tontonsports (Shenzhen) Co., Ltd.',
+  alternateName: ['TONTON', 'TONTON Fightwear Manufacturer'],
+  foundingDate: '2004',
   url: SITE_URL,
   logo: resolveImage('/assets/logo.png'),
   email: 'gary@tontonsportswear.com',

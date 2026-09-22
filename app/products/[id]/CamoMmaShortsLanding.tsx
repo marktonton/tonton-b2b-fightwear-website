@@ -4,6 +4,7 @@ import { CAMO_MMA_SHORTS_FAQS } from '../../../lib/camo-mma-shorts-product';
 import ProductSpecificationTable from '../../../components/ProductSpecificationTable';
 import RelatedResources from '../../../components/RelatedResources';
 import ProductLandingLinks from '../../../components/ProductLandingLinks';
+import AnswerEvidencePanel from '../../../components/AnswerEvidencePanel';
 
 type Product = { id: string; name: string; image: string; images?: string[]; description: string; features?: string[] };
 
@@ -63,6 +64,11 @@ export default function CamoMmaShortsLanding({ product }: { product: Product }) 
           </div>
         </div>
       </section>
+
+      <AnswerEvidencePanel
+        question="What defines these camo side-split MMA fight shorts?"
+        answer="The confirmed construction uses 88% polyester and 12% spandex, an elastic waist with hook-and-loop fly and internal drawcord, a reinforced side split and sublimated graphics. Competition requirements and real-wear movement remain separate checks for the buyer and approved sample."
+      />
 
       <ProductSpecificationTable title="Fight-short construction at a glance" intro="Confirmed materials and visible construction are separated from performance checks that should be completed on the approved sample." reviewedDate="September 22, 2026" rows={[
         ['Product type', "Men's camo side-split MMA fight shorts"],

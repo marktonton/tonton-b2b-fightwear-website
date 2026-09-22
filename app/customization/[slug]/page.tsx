@@ -10,6 +10,7 @@ import {
 } from '../../../lib/customization-pages';
 import type { Metadata } from 'next';
 import RelatedResources from '../../../components/RelatedResources';
+import AnswerEvidencePanel from '../../../components/AnswerEvidencePanel';
 
 const SITE_URL = 'https://www.tontongear.com';
 const FIGHT_SHORTS_CATEGORY_ROOT = '/assets/products/grappling-shorts-category';
@@ -146,6 +147,11 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
     name: category.name,
     url: categoryUrl,
     description: content.seoDescription,
+    reviewedBy: {
+      '@type': 'Organization',
+      name: 'TONTON Product Development & Quality Control Team',
+      parentOrganization: { '@type': 'Organization', name: 'Tontonsports (Shenzhen) Co., Ltd.', url: SITE_URL },
+    },
     primaryImageOfPage: isFightShortsPage ? `${SITE_URL}${content.heroImage}` : resolveImage(content.heroImage),
     about: content.projectTypes.map((item) => ({ '@type': 'Thing', name: item.title })),
     ...((isRashGuardPage && content.productDetails) || isTrainingShortsPage ? {
@@ -250,6 +256,8 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
           <div><strong>2004</strong><span>Sportswear experience</span></div>
         </div>
       </section>
+
+      <AnswerEvidencePanel question={content.quickAnswerQuestion} answer={content.quickAnswer} />
 
       <section className="customization-overview customization-shell">
         <div className="customization-overview-heading">

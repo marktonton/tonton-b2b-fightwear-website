@@ -9,6 +9,8 @@ const FIGHT_SHORTS_CATEGORY_ROOT = '/assets/products/grappling-shorts-category';
 
 export type CustomizationPageContent = {
   seoDescription: string;
+  quickAnswerQuestion: string;
+  quickAnswer: string;
   kicker: string;
   heroLead: string;
   heroImage: string;
@@ -44,6 +46,8 @@ export type CustomizationPageContent = {
 export const customizationPageContent: Record<string, CustomizationPageContent> = {
   'sublimated-rash-guards': {
     seoDescription: 'Custom sublimated graphic Rash Guard manufacturer for BJJ, MMA and grappling brands. Inspect real fabric, mesh, flatlock seams, silicone grip and OEM options.',
+    quickAnswerQuestion: 'What should buyers specify for a custom sublimated Rash Guard?',
+    quickAnswer: 'A custom Rash Guard brief should define the intended sport, fit, sleeve length, size range, artwork, panel layout, seam direction, fabric requirements and optional hem grip. TONTON reviews these decisions together, then confirms the final composition, weight, measurements and construction against the approved sample.',
     kicker: 'CUSTOM SUBLIMATED RASH GUARD MANUFACTURER',
     heroLead: 'Develop custom sublimated graphic Rash Guards with your colors, all-over artwork, sponsor marks, and team identity—with fabric, mesh panels, seams, and finishing details reviewed before production.',
     heroImage: `${RASH_GUARD_NEW_SERIES_ROOT}/white-rash-guard-three-quarter.webp`,
@@ -133,6 +137,8 @@ export const customizationPageContent: Record<string, CustomizationPageContent> 
   },
   'sublimated-training-shorts': {
     seoDescription: 'Custom men’s functional training shorts for gym, HIIT, combat conditioning and outdoor fitness. Explore woven fabric, zip pockets, ventilation and OEM options.',
+    quickAnswerQuestion: 'What defines a custom functional training short?',
+    quickAnswer: 'A functional training short combines the intended fit and length with a suitable stretch-woven fabric, secure waistband, pocket direction, ventilation, crotch mobility and reinforced finishing. TONTON confirms the final material, construction, logo method and performance checks on the approved sample instead of assuming one universal specification.',
     kicker: 'FUNCTIONAL TRAINING SHORTS MANUFACTURER',
     heroLead: 'Develop versatile men’s training shorts with lightweight woven performance fabric, an adjustable waistband, a secure zip pocket, perforated ventilation, and reinforced construction.',
     heroImage: 'assets/products/grappling-shorts-products/home-training-shorts-model-v2.webp',
@@ -170,6 +176,8 @@ export const customizationPageContent: Record<string, CustomizationPageContent> 
   },
   'sublimated-bjj-mma-shorts': {
     seoDescription: 'Custom BJJ, MMA and grappling shorts for academies, fight teams and brands. Explore fit, side-split, waistband, artwork and OEM team-kit options.',
+    quickAnswerQuestion: 'What should buyers confirm for custom BJJ and MMA shorts?',
+    quickAnswer: 'Buyers should confirm the intended combat use, shell and liner construction, split height, waistband security, fit, size range, artwork and reinforcement points. TONTON uses the product brief and physical sample to verify movement, coverage, material direction and branding before bulk production.',
     kicker: 'CUSTOM BJJ & MMA SHORTS MANUFACTURING',
     heroLead: 'Develop custom 2-in-1 high-split fight shorts for MMA, grappling, wrestling, boxing, and high-intensity training—with mobility, inner support, waistband security, and brand artwork reviewed together.',
     heroImage: `${FIGHT_SHORTS_CATEGORY_ROOT}/hero-high-split-white-liner.webp`,

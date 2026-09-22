@@ -4,6 +4,7 @@ import { HIGH_SPLIT_GRAPPLING_SHORTS_CONTENT, HIGH_SPLIT_GRAPPLING_SHORTS_FAQS }
 import ProductSpecificationTable from '../../../components/ProductSpecificationTable';
 import RelatedResources from '../../../components/RelatedResources';
 import ProductLandingLinks from '../../../components/ProductLandingLinks';
+import AnswerEvidencePanel from '../../../components/AnswerEvidencePanel';
 
 type Product = { id: string; name: string; image: string; images?: string[]; description: string; features?: string[] };
 
@@ -73,6 +74,11 @@ export default function GrapplingShortsLanding({ product }: { product: Product }
           </div>
         </div>
       </section>
+
+      <AnswerEvidencePanel
+        question="What defines these high-split 2-in-1 grappling shorts?"
+        answer="The confirmed construction combines a four-way-stretch outer layer, a supportive 250gsm milk-silk compression liner, an ultra-high gladiator split, reinforced stitching and an adjustable waistband with silicone grip. Final fit, graphics, sizing and movement performance are checked on the approved sample."
+      />
 
       <ProductSpecificationTable title="Fight-short construction at a glance" intro="These verified specifications match the real sample imagery and the structured product data on this page." rows={[
         ['Silhouette', 'Athletic 2-in-1 construction'],
