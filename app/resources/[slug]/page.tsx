@@ -20,7 +20,7 @@ export default function ResourceArticlePage({ params }: PageProps) {
   const url = `${SITE_URL}/resources/${resource.slug}`;
   const reviewed = new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${resource.updated}T00:00:00Z`));
   const schema = [
-    { '@context': 'https://schema.org', '@type': 'Article', headline: resource.title, description: resource.description, datePublished: resource.updated, dateModified: resource.updated, mainEntityOfPage: url, image: resource.media?.map((item) => `${SITE_URL}${item.src}`), author: { '@type': 'Organization', name: 'TONTON Sportswear' }, publisher: { '@type': 'Organization', name: 'TONTON Sportswear', url: SITE_URL } },
+    { '@context': 'https://schema.org', '@type': 'Article', headline: resource.title, description: resource.description, datePublished: resource.updated, dateModified: resource.updated, mainEntityOfPage: url, image: resource.media?.map((item) => `${SITE_URL}${item.src}`), author: { '@type': 'Organization', name: 'TONTON Sportswear' }, reviewedBy: { '@type': 'Organization', name: 'TONTON Product Development & Quality Control Team', parentOrganization: { '@type': 'Organization', name: 'Tontonsports (Shenzhen) Co., Ltd.', url: SITE_URL } }, publisher: { '@type': 'Organization', name: 'TONTON Sportswear', url: SITE_URL } },
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL }, { '@type': 'ListItem', position: 2, name: 'Resources', item: `${SITE_URL}/resources` }, { '@type': 'ListItem', position: 3, name: resource.title, item: url }] },
   ];
   return (
@@ -40,7 +40,7 @@ export default function ResourceArticlePage({ params }: PageProps) {
       </section>
       <div className="resource-sections">{resource.sections.map((section, index) => <section key={section.heading}><span>0{index + 1}</span><div><h2>{section.heading}</h2>{section.paragraphs?.map((text) => <p key={text}>{text}</p>)}{section.bullets && <ul>{section.bullets.map((text) => <li key={text}>{text}</li>)}</ul>}</div></section>)}</div>
       <section className="resource-boundaries"><div><p>WHEN NOT TO USE THIS DIRECTION</p><h2>Limits buyers should confirm</h2></div><ul>{resource.notFor.map((item) => <li key={item}>{item}</li>)}</ul></section>
-      <aside className="resource-source" aria-label="Source and review note"><strong>Source basis</strong><span>{resource.source}</span><span>Last reviewed: {reviewed}</span></aside>
+      <aside className="resource-source" aria-label="Source and review note"><strong>Source basis</strong><span>{resource.source}</span><span>Reviewed by: TONTON Product Development &amp; Quality Control Team</span><span>Last reviewed: {reviewed}</span></aside>
       {resource.relatedGuides?.length ? <nav className="resource-cluster-links" aria-label="Related buyer guides"><strong>Continue this topic</strong><div>{resource.relatedGuides.map((slug) => { const item = getResource(slug); return item ? <Link href={`/resources/${item.slug}`} key={item.slug}>{item.title} <span aria-hidden="true">→</span></Link> : null; })}</div></nav> : null}
       <section className="resource-article-cta"><div><p>NEXT STEP</p><h2>Turn the guide into a product brief</h2></div><div><Link href={resource.relatedProduct.href}>{resource.relatedProduct.label} <span aria-hidden="true">→</span></Link><Link href="/project-builder">Open the Project Builder <span aria-hidden="true">→</span></Link></div></section>
     </article>

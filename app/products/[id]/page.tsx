@@ -18,6 +18,15 @@ import { CAMO_MMA_SHORTS_CONTENT, CAMO_MMA_SHORTS_FAQS, isCamoMmaShorts } from '
 
 const SITE_URL = 'https://www.tontongear.com';
 const products = productsData.products;
+const CONTENT_REVIEWER = {
+  '@type': 'Organization',
+  name: 'TONTON Product Development & Quality Control Team',
+  parentOrganization: {
+    '@type': 'Organization',
+    name: 'Tontonsports (Shenzhen) Co., Ltd.',
+    url: SITE_URL,
+  },
+};
 
 type PageProps = { params: { id: string } };
 
@@ -131,7 +140,7 @@ export default function ProductDetailPage({ params }: PageProps) {
         { '@type': 'PropertyValue', name: 'Recommended use', value: 'MMA, kickboxing, martial-arts training and conditioning' },
       ],
     };
-    const webPageSchema = { '@context': 'https://schema.org', '@type': 'WebPage', name: product.name, url: productUrl, dateModified: getRouteModifiedDate(`/products/${product.id}`), mainEntity: { '@id': `${productUrl}#product` } };
+    const webPageSchema = { '@context': 'https://schema.org', '@type': 'WebPage', name: product.name, url: productUrl, dateModified: getRouteModifiedDate(`/products/${product.id}`), reviewedBy: CONTENT_REVIEWER, mainEntity: { '@id': `${productUrl}#product` } };
     const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
       { '@type': 'ListItem', position: 2, name: 'Custom BJJ & MMA Shorts', item: `${SITE_URL}/customization/sublimated-bjj-mma-shorts` },
@@ -168,6 +177,7 @@ export default function ProductDetailPage({ params }: PageProps) {
       name: product.name,
       url: productUrl,
       dateModified: getRouteModifiedDate(`/products/${product.id}`),
+      reviewedBy: CONTENT_REVIEWER,
       mainEntity: { '@id': `${productUrl}#product` },
     };
     const breadcrumbSchema = {
@@ -226,7 +236,7 @@ export default function ProductDetailPage({ params }: PageProps) {
         { '@type': 'PropertyValue', name: 'Customization', value: 'Custom printed inner-layer patterns and branding' },
       ],
     };
-    const webPageSchema = { '@context': 'https://schema.org', '@type': 'WebPage', name: product.name, url: productUrl, dateModified: getRouteModifiedDate(`/products/${product.id}`), mainEntity: { '@id': `${productUrl}#product` } };
+    const webPageSchema = { '@context': 'https://schema.org', '@type': 'WebPage', name: product.name, url: productUrl, dateModified: getRouteModifiedDate(`/products/${product.id}`), reviewedBy: CONTENT_REVIEWER, mainEntity: { '@id': `${productUrl}#product` } };
     Object.assign(productSchema, { '@id': `${productUrl}#product` });
     const breadcrumbSchema = {
       '@context': 'https://schema.org',
@@ -286,7 +296,7 @@ export default function ProductDetailPage({ params }: PageProps) {
         { '@type': 'PropertyValue', name: 'Decoration', value: 'Custom sublimated panel artwork' },
       ],
     };
-    const webPageSchema = { '@context': 'https://schema.org', '@type': 'WebPage', name: product.name, url: productUrl, dateModified: getRouteModifiedDate(`/products/${product.id}`), mainEntity: { '@id': `${productUrl}#product` } };
+    const webPageSchema = { '@context': 'https://schema.org', '@type': 'WebPage', name: product.name, url: productUrl, dateModified: getRouteModifiedDate(`/products/${product.id}`), reviewedBy: CONTENT_REVIEWER, mainEntity: { '@id': `${productUrl}#product` } };
     Object.assign(productSchema, { '@id': `${productUrl}#product` });
     const breadcrumbSchema = {
       '@context': 'https://schema.org',

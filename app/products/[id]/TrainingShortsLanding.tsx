@@ -2,6 +2,7 @@ import Link from 'next/link';
 import ProductLandingLinks from '../../../components/ProductLandingLinks';
 import ProductSpecificationTable from '../../../components/ProductSpecificationTable';
 import RelatedResources from '../../../components/RelatedResources';
+import AnswerEvidencePanel from '../../../components/AnswerEvidencePanel';
 import { resolveImage } from '../../../lib/image-resolver';
 import { TRAINING_SHORTS_LANDING_CONTENT, type TrainingShortsProductId } from '../../../lib/training-shorts-products';
 
@@ -50,6 +51,13 @@ export default function TrainingShortsLanding({ product }: { product: Product })
           </div>
         </div>
       </section>
+
+      <AnswerEvidencePanel
+        question={isMmaFightShorts ? 'What should buyers confirm for these custom MMA fight shorts?' : 'What should buyers confirm for these custom training shorts?'}
+        answer={isMmaFightShorts
+          ? 'This style uses a short athletic cut, a stretch-woven direction, a broad elastic waist, an articulated crotch, reinforced stitching and custom branding. Fiber content, fabric weight, decoration method and movement performance remain approval points unless they are documented in the confirmed specification.'
+          : 'Buyers should align the fit, length, waistband, fabric direction, lining, hem construction and logo method before sampling. This page separates details visible in the current product reference from material and performance values that still require confirmation.'}
+      />
 
       <ProductSpecificationTable title={isMmaFightShorts ? 'MMA fight-short construction at a glance' : 'Training-short construction at a glance'} intro="The page separates what is visible in the current sample from material values that must be confirmed during development." rows={content.materialRows} />
 

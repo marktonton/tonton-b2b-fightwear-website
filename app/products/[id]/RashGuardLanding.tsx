@@ -4,6 +4,7 @@ import { RASH_GUARD_LANDING_CONTENT, type RashGuardProductId } from '../../../li
 import ProductSpecificationTable from '../../../components/ProductSpecificationTable';
 import RelatedResources from '../../../components/RelatedResources';
 import ProductLandingLinks from '../../../components/ProductLandingLinks';
+import AnswerEvidencePanel from '../../../components/AnswerEvidencePanel';
 
 type Product = {
   id: string;
@@ -177,6 +178,11 @@ export default function RashGuardLanding({ product }: { product: Product }) {
           </div>
         </div>
       </section>
+
+      <AnswerEvidencePanel
+        question={`What should buyers know about ${product.name}?`}
+        answer={`${product.name} is a custom sublimated Rash Guard reference for buyers comparing fit, performance fabric, panel construction, seams, artwork placement and hem control. The visible specification and physical sample evidence on this page provide the starting point; final measurements, colors and project-specific construction are confirmed before bulk production.`}
+      />
 
       <ProductSpecificationTable title="A specification buyers can compare" intro="The visible product data below matches the material and construction information used in this landing page and its structured data." rows={specificationRows} />
 
