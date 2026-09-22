@@ -417,7 +417,7 @@ export default function ProductDetailPage({ params }: PageProps) {
           </div>
         </div>
       </div>
-      <RelatedResources slugs={product.categoryId === 'sublimated-rash-guards' ? ['rash-guard-fabric-construction', '220gsm-rash-guard-fabric-guide', 'rash-guard-sublimation-logo-placement'] : product.categoryId === 'sublimated-bjj-mma-shorts' ? ['high-split-grappling-shorts-specifications', 'high-split-vs-standard-grappling-shorts', '2-in-1-grappling-shorts-liner-construction'] : ['custom-fightwear-sampling-moq']} />
+      <RelatedResources slugs={product.categoryId === 'sublimated-rash-guards' ? ['rash-guard-fabric-construction', 'flatlock-vs-overlock-rash-guard-seams', 'rash-guard-sublimation-logo-placement'] : product.categoryId === 'sublimated-bjj-mma-shorts' ? ['high-split-grappling-shorts-specifications', 'high-split-vs-standard-grappling-shorts', '2-in-1-grappling-shorts-liner-construction'] : ['training-shorts-fabric-ventilation-pocket-guide', 'fightwear-quality-inspection-checklist', 'custom-fightwear-sampling-moq']} />
       <ProductLandingLinks productId={product.id} />
     </div>
   );

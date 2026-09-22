@@ -11,13 +11,14 @@ export type ResourcePage = {
   eyebrow: string;
   answer: string;
   updated: string;
-  cluster: 'rash-guard' | 'grappling-shorts' | 'project';
+  cluster: 'rash-guard' | 'training-shorts' | 'grappling-shorts' | 'project';
   media?: Array<{ src: string; alt: string; caption: string }>;
   table: Array<[string, string]>;
   decisionRows: Array<[choice: string, bestFor: string, buyerCheck: string]>;
   notFor: string[];
   source: string;
   sections: ResourceSection[];
+  faqs?: Array<[question: string, answer: string]>;
   relatedProduct: { label: string; href: string };
   relatedGuides?: string[];
 };
@@ -61,7 +62,7 @@ export const RESOURCE_PAGES: ResourcePage[] = [
       { heading: 'Construction details worth specifying', bullets: ['Sleeve length and raglan panel direction', 'Seam placement and stretch compatibility', 'Lower-hem grip requirement', 'Logo, sponsor mark and panel-artwork positions', 'Size range, fit direction, private labels and packaging'] },
     ],
     relatedProduct: { label: 'View the Blue Team 220gsm Rash Guard', href: '/products/blue-team-rash-guard' },
-    relatedGuides: ['220gsm-rash-guard-fabric-guide', 'rash-guard-silicone-anti-slip-band', 'rash-guard-sublimation-logo-placement'],
+    relatedGuides: ['220gsm-rash-guard-fabric-guide', 'flatlock-vs-overlock-rash-guard-seams', 'rash-guard-silicone-anti-slip-band', 'rash-guard-sublimation-logo-placement'],
   },
   {
     slug: '220gsm-rash-guard-fabric-guide',
@@ -108,7 +109,47 @@ export const RESOURCE_PAGES: ResourcePage[] = [
     source: 'TONTON selected Rash Guard sample details showing an interior silicone anti-slip elastic band.',
     sections: [{ heading: 'Why lower-hem control matters', paragraphs: ['Grappling, framing and repeated torso rotation can pull a close-fit top upward. An interior grip band adds contact at the hem, helping the garment remain more stable through movement.'] }, { heading: 'What to put in the product brief', bullets: ['Required band width and position', 'Preferred grip intensity and hand feel', 'Hem circumference and stretch requirement', 'Seam finish at the band edge', 'Intended sport and fit direction'] }, { heading: 'How to approve the sample', paragraphs: ['Test the hem while reaching, rotating, sprawling and returning to stance. Review stability, pressure, comfort and whether the band recovers with the surrounding fabric.'] }],
     relatedProduct: { label: 'View a Rash Guard with anti-slip hem', href: '/products/white-logo-rash-guard' },
-    relatedGuides: ['rash-guard-fabric-construction', '220gsm-rash-guard-fabric-guide'],
+    relatedGuides: ['rash-guard-fabric-construction', '220gsm-rash-guard-fabric-guide', 'prepare-artwork-for-sublimation'],
+  },
+  {
+    slug: 'flatlock-vs-overlock-rash-guard-seams',
+    title: 'Flatlock vs Overlock Seams for Rash Guards',
+    description: 'Compare flatlock and overlock seam directions for custom Rash Guards, including profile, stretch, comfort, reinforcement and sample approval checks.',
+    eyebrow: 'RASH GUARD SEAM GUIDE',
+    answer: 'Flatlock and overlock are different seam directions, not interchangeable quality labels. Flatlock can create a lower-profile seam against the body, while overlock joins cut edges efficiently and may be combined with cover stitching or reinforcement. The right choice depends on panel position, stretch, skin contact, intended use and the approved physical sample.',
+    updated: '2026-09-22',
+    cluster: 'rash-guard',
+    media: [
+      { src: '/assets/products/rash-guard-products/construction-details/stretch-fabric-seam.webp', alt: 'Close-up of stretch Rash Guard fabric with parallel seam construction', caption: 'Real sample close-up showing a stretch-compatible multi-row seam.' },
+      { src: '/assets/products/rash-guard-products/construction-details/reinforced-seam-junction.webp', alt: 'Reinforced Rash Guard seam junction on a real garment sample', caption: 'Panel junction where seam profile, reinforcement and stretch must work together.' },
+    ],
+    table: [
+      ['Flatlock direction', 'Lower-profile seam with thread visible across the joined edges'],
+      ['Overlock direction', 'Joined cut edges; may be paired with cover stitching or topstitching'],
+      ['Primary checks', 'Profile, stretch, recovery, abrasion and seam comfort'],
+      ['High-movement zones', 'Shoulders, underarms, side panels and torso junctions'],
+      ['Approval method', 'Inside and outside inspection plus worn movement test'],
+      ['Final control', 'Record seam type and position in the approved specification'],
+    ],
+    decisionRows: [
+      ['Flatlock direction', 'Close-fit panels where a lower seam profile is preferred', 'Check stretch, thread coverage and comfort against skin'],
+      ['Overlock + cover direction', 'Efficient panel joining with a controlled outer finish', 'Confirm bulk, recovery and the exact cover-stitch route'],
+      ['Reinforced junction', 'High-load panel intersections and repeated movement zones', 'Inspect backtacking, thread tension and stretch compatibility'],
+    ],
+    notFor: ['Do not call every visible multi-row seam flatlock without checking the reverse construction.', 'Do not select a seam only by appearance; thread, fabric and panel direction affect performance.', 'Do not approve seam comfort from a flat sample without a worn movement test.'],
+    source: 'TONTON physical Rash Guard sample review and production checks for stretch seams, panel junctions and close-contact construction.',
+    sections: [
+      { heading: 'Understand the construction before naming it', paragraphs: ['A finished seam can look similar from the outside while using a different joining method underneath. Buyers should review both sides of the garment and record the actual stitch direction used at each panel.'] },
+      { heading: 'Match seam direction to the body zone', bullets: ['Use a low-profile direction where the garment stays close to skin', 'Review underarm and shoulder stretch through full reach', 'Reinforce panel junctions without creating a hard contact point', 'Keep thread and stitch density compatible with fabric recovery'] },
+      { heading: 'Approve the complete seam system', paragraphs: ['Inspect skipped stitches, waviness, exposed cut edges, thread tension and recovery. Then wear-test reaching, rotation and grappling movement before bulk approval.'] },
+    ],
+    faqs: [
+      ['Is flatlock always better for a Rash Guard?', 'No. Flatlock can offer a low-profile direction, but the best construction depends on the panel, fabric, thread, intended fit and approved sample.'],
+      ['Can overlock be used on stretch performance fabric?', 'Yes. It can join stretch panels effectively when stitch balance, thread and reinforcement are specified for the material and use.'],
+      ['How should buyers confirm a seam type?', 'Review the inside and outside construction, identify the stitch route in the specification and approve it through a worn movement test.'],
+    ],
+    relatedProduct: { label: 'Explore custom Rash Guards', href: '/customization/sublimated-rash-guards' },
+    relatedGuides: ['rash-guard-fabric-construction', '220gsm-rash-guard-fabric-guide', 'fightwear-quality-inspection-checklist'],
   },
   {
     slug: 'rash-guard-sublimation-logo-placement',
@@ -207,6 +248,129 @@ export const RESOURCE_PAGES: ResourcePage[] = [
     relatedGuides: ['high-split-grappling-shorts-specifications', '2-in-1-grappling-shorts-liner-construction'],
   },
   {
+    slug: 'training-shorts-fabric-ventilation-pocket-guide',
+    title: 'Training Shorts Fabric, Ventilation & Pocket Guide',
+    description: 'A buyer guide to lightweight stretch woven fabric, perforated ventilation, zip pockets, adjustable waistbands and reinforced construction for functional training shorts.',
+    eyebrow: 'TRAINING SHORTS BUYER GUIDE',
+    answer: 'Functional training shorts should balance movement, airflow, secure storage and waist stability. A practical specification starts with lightweight stretch woven fabric, then defines perforated ventilation, zip-pocket construction, waistband adjustment, crotch mobility and reinforced stitching for the intended gym, HIIT, combat-training or outdoor use.',
+    updated: '2026-09-22',
+    cluster: 'training-shorts',
+    media: [
+      { src: '/assets/products/training-shorts-category/ventilation-zip-pocket.webp', alt: 'Training shorts side ventilation and zip pocket detail', caption: 'Real sample detail showing perforated ventilation beside a secure zip pocket.' },
+      { src: '/assets/products/training-shorts-category/adjustable-waistband.webp', alt: 'Adjustable waistband construction on functional training shorts', caption: 'Adjustable waistband area with reinforced topstitching.' },
+      { src: '/assets/products/training-shorts-category/inner-drawcord-branding.webp', alt: 'Interior drawcord and waistband branding on training shorts', caption: 'Interior adjustment and branding details that should be confirmed on the sample.' },
+    ],
+    table: [
+      ['Fabric direction', 'Lightweight polyester- or nylon-based stretch woven performance fabric'],
+      ['Movement', 'Confirm lateral and recovery stretch for squats, lunges and kicks'],
+      ['Ventilation', 'Perforated side detail; hole method and edge stability require confirmation'],
+      ['Storage', 'Secure side zip pocket for small items'],
+      ['Waist control', 'Elastic and adjustable construction; confirm drawcord or tab route'],
+      ['Use direction', 'Gym, HIIT, functional fitness, combat training and outdoor activity'],
+    ],
+    decisionRows: [
+      ['Polyester stretch woven', 'Quick-dry training programs and custom color directions', 'Confirm composition, weight, recovery and abrasion performance'],
+      ['Nylon stretch woven', 'Buyers prioritizing a smooth hand feel and abrasion direction', 'Confirm actual composition and colorfastness before claiming performance'],
+      ['Perforation + zip pocket', 'Multi-use training shorts needing airflow and secure storage', 'Check hole-edge stability, pocket bag, zipper and skin contact'],
+    ],
+    notFor: ['Do not call a zip pocket waterproof unless its zipper, seam and pocket construction have been verified.', 'Do not publish a fabric composition or GSM until it belongs to the selected approved style.', 'Do not assume a utility training short automatically meets combat-sport competition rules.'],
+    source: 'TONTON functional training shorts sample details covering ventilation, zip-pocket, waistband and reinforced construction review.',
+    sections: [
+      { heading: 'Start with movement and recovery', paragraphs: ['The shell should release the hips and thighs during squats, lunges, jumps and kicking drills, then recover without bagging. Confirm stretch direction and finished-garment mobility together.'] },
+      { heading: 'Specify ventilation and storage as constructions', bullets: ['Define perforation position, spacing and edge quality', 'Confirm zipper type, opening length and puller direction', 'Inspect pocket-bag depth and attachment', 'Check whether internal components rub during movement', 'Record reinforcement at the pocket ends and high-load seams'] },
+      { heading: 'Approve the intended use honestly', paragraphs: ['This direction suits gym, HIIT, cross-training, combat conditioning and light outdoor use. Competition eligibility and water resistance require separate evidence and should not be inferred from appearance.'] },
+    ],
+    faqs: [
+      ['What fabric is suitable for functional training shorts?', 'A lightweight stretch woven polyester or nylon direction is common, but composition, GSM, stretch and recovery should be confirmed on the selected sample.'],
+      ['Are perforated holes the same as mesh panels?', 'No. Perforation creates openings in a panel, while mesh is a separate open-structure material. Each requires different edge and seam checks.'],
+      ['Can these shorts be used for MMA training?', 'They can suit conditioning, bag work and general combat training, but formal competition or grappling use should be confirmed against equipment rules and real wear testing.'],
+    ],
+    relatedProduct: { label: 'Explore custom Training Shorts', href: '/customization/sublimated-training-shorts' },
+    relatedGuides: ['fightwear-quality-inspection-checklist', 'custom-fightwear-sampling-moq'],
+  },
+  {
+    slug: 'fightwear-quality-inspection-checklist',
+    title: 'Custom Fightwear Quality Inspection Checklist',
+    description: 'A practical QC checklist for custom Rash Guards and fight shorts covering material, print, measurements, seams, waist systems, labels and packing.',
+    eyebrow: 'QUALITY CONTROL GUIDE',
+    answer: 'A useful fightwear inspection compares the finished order with the approved sample and specification. Check material identity, color and print placement, measurements, stretch seams, waist and closure systems, labels, workmanship and packing using recorded tolerances and an agreed sampling plan.',
+    updated: '2026-09-22',
+    cluster: 'project',
+    media: [
+      { src: '/assets/process/03-stitching-size-inspection.webp', alt: 'TONTON staff inspecting garment stitching and measurements', caption: 'Stitching, construction and measurement checks against the approved specification.' },
+      { src: '/assets/process/03-finished-garment-qc.webp', alt: 'TONTON quality control inspection of finished custom sportswear', caption: 'Finished-garment review before packing and order handover.' },
+      { src: '/assets/process/04-folding-packing.webp', alt: 'Finished custom sportswear being folded and packed', caption: 'Packing review after final product checks are completed.' },
+    ],
+    table: [
+      ['Reference', 'Approved sample, artwork and product specification'],
+      ['Material', 'Composition/weight where confirmed, hand feel, color and stretch direction'],
+      ['Construction', 'Seams, reinforcement, waistband, closure, liner and hems'],
+      ['Branding', 'Artwork scale, placement, color direction, labels and logo finish'],
+      ['Measurements', 'Agreed points of measure and tolerances across requested sizes'],
+      ['Packing', 'Labels, folding, bagging, quantity and carton requirements'],
+    ],
+    decisionRows: [
+      ['Pre-production approval', 'New products, fits, materials and artwork', 'Freeze the sample and specification before bulk work'],
+      ['In-line inspection', 'Orders needing process checks before completion', 'Confirm checkpoints, quantity stage and issue escalation'],
+      ['Final inspection', 'Finished orders before packing or shipment', 'Use the agreed sampling plan, tolerances and packing brief'],
+    ],
+    notFor: ['A checklist does not replace product-specific tolerances and an approved sample.', 'Do not claim a laboratory result without a corresponding test report.', 'Do not accept appearance-only inspection where size, stretch, closure or seam function matters.'],
+    source: 'TONTON production workflow covering print, stitching, measurement, finished-garment QC and packing review.',
+    sections: [
+      { heading: 'Freeze the inspection reference', paragraphs: ['Before inspection begins, identify the approved sample, artwork version, size specification, labels, packaging and any accepted revisions. A checklist without a controlled reference cannot prove conformity.'] },
+      { heading: 'Inspect product-specific risk points', bullets: ['Rash Guard opacity, recovery, stretch seams and lower-hem control', 'Fight-short waistband, drawstring, hook-and-loop closure and split reinforcement', '2-in-1 liner length, opacity, seam comfort and attachment', 'Print alignment, logo position and visible color variation', 'Skipped stitches, open seams, puckering and loose thread'] },
+      { heading: 'Record issues for corrective action', paragraphs: ['Record the affected style, size, defect location, quantity and severity. Recheck corrected goods against the same approved reference before packing or shipment.'] },
+    ],
+    faqs: [
+      ['What should be used as the main QC reference?', 'Use the approved sample together with the latest artwork, measurement specification, construction notes, labels and packing requirements.'],
+      ['Is final inspection enough for a new product?', 'Not always. New materials, prints or constructions may benefit from pre-production and in-line checks so issues are found before the order is complete.'],
+      ['Should every product use the same checklist?', 'The inspection framework can be shared, but risk points and tolerances must be adjusted for each product and approved specification.'],
+    ],
+    relatedProduct: { label: 'Review TONTON factory and QC', href: '/factory' },
+    relatedGuides: ['custom-fightwear-sampling-moq', 'prepare-artwork-for-sublimation', 'flatlock-vs-overlock-rash-guard-seams'],
+  },
+  {
+    slug: 'prepare-artwork-for-sublimation',
+    title: 'How to Prepare Artwork for Sublimation',
+    description: 'Prepare logos, colors, panel artwork and approval notes for custom sublimated Rash Guards, fight shorts and teamwear.',
+    eyebrow: 'SUBLIMATION ARTWORK GUIDE',
+    answer: 'Prepare sublimation artwork by supplying vector logos where available, naming brand colors, separating priority and secondary marks, identifying placement by garment panel and noting any alignment requirement across seams. Final production artwork should be confirmed on the supplier template and approved through a mockup and physical sample.',
+    updated: '2026-09-22',
+    cluster: 'project',
+    media: [
+      { src: '/assets/process/01-project-brief-design.webp', alt: 'Designer preparing custom sportswear artwork and product layout', caption: 'Artwork and layout preparation before the production file is finalized.' },
+      { src: '/assets/process/01-requirements-confirmation.webp', alt: 'TONTON team confirming custom product design requirements', caption: 'Product, logo, color and construction requirements are confirmed as one brief.' },
+      { src: '/assets/process/02-sublimation-printing.webp', alt: 'Sublimation printing process for custom sportswear panels', caption: 'Approved artwork moves into the sublimation printing stage before cutting and sewing.' },
+    ],
+    table: [
+      ['Preferred logo input', 'Vector AI, EPS, SVG or editable PDF where available'],
+      ['Raster references', 'Supply the highest available resolution at intended use size'],
+      ['Color direction', 'Provide Pantone or brand references when color matching matters'],
+      ['Placement map', 'Identify front, back, sleeve, side and waistband positions'],
+      ['Panel control', 'Confirm bleed, seam crossings, alignment and safe zones on the supplier template'],
+      ['Approval route', 'Mockup review followed by physical sample confirmation'],
+    ],
+    decisionRows: [
+      ['Vector logo', 'Scalable sponsor and brand marks', 'Check outlines, transparency and the approved color reference'],
+      ['High-resolution raster art', 'Textures and photographic-style graphics', 'Confirm resolution at production size and panel bleed'],
+      ['Panel-to-panel artwork', 'Designs that visually continue across seams', 'Set alignment expectations and review size grading on the mockup'],
+    ],
+    notFor: ['Do not assume a low-resolution screenshot can be enlarged cleanly for production.', 'Do not treat screen color as proof of printed color; confirm the physical sample.', 'Do not place critical text or small marks on seam allowances or high-distortion zones.'],
+    source: 'TONTON design-confirmation and sublimation workflow from project brief through artwork layout, print and sample review.',
+    sections: [
+      { heading: 'Send an organized artwork package', bullets: ['Separate logos from visual references', 'Name each mark and intended position', 'Identify mandatory brand colors', 'List priority, secondary and optional artwork', 'Provide editable files and font information where permitted'] },
+      { heading: 'Design around garment panels', paragraphs: ['Sublimation is applied to panels before the garment is sewn. Important text, faces, small sponsor marks and alignment features need safe space from seam allowances and high-stretch zones.'] },
+      { heading: 'Approve both mockup and physical result', paragraphs: ['The mockup controls layout and hierarchy. The sample confirms printed color direction, scale, seam interaction and how artwork appears on the worn garment. Record every accepted revision before bulk production.'] },
+    ],
+    faqs: [
+      ['Do I need final artwork before requesting a quote?', 'No. A product direction, logos and references can start the discussion, but production-ready artwork is required before print approval.'],
+      ['Which logo format is best for sublimation?', 'Vector AI, EPS, SVG or editable PDF is preferred because it can scale cleanly. High-resolution raster files may work for suitable graphics.'],
+      ['Why can printed color differ from a monitor?', 'Screens emit light while fabric printing depends on ink, material, heat and viewing conditions. Approve critical colors on a physical sample.'],
+    ],
+    relatedProduct: { label: 'Start a structured artwork brief', href: '/project-builder' },
+    relatedGuides: ['rash-guard-sublimation-logo-placement', 'custom-fightwear-sampling-moq', 'fightwear-quality-inspection-checklist'],
+  },
+  {
     slug: 'custom-fightwear-sampling-moq',
     title: 'Custom Fightwear Sampling & MOQ Guide',
     description: 'A practical guide to preparing artwork, specifications, samples and quantity information for a custom fightwear project.',
@@ -238,7 +402,13 @@ export const RESOURCE_PAGES: ResourcePage[] = [
       { heading: 'Why MOQ and timing are project-specific', paragraphs: ['Materials, printing method, construction, size assortment, artwork readiness and packaging can change the production route. A supplier should confirm the schedule and applicable MOQ against the actual brief instead of treating one number as universal.'] },
       { heading: 'What the approved sample controls', paragraphs: ['The approved sample is the practical reference for fit, color direction, material, artwork placement, seam construction, labels and other confirmed details before bulk work begins.'] },
     ],
+    faqs: [
+      ['Is one MOQ used for every custom fightwear product?', 'No. The applicable MOQ depends on the selected product, material, construction, artwork, quantity mix and project requirements.'],
+      ['Can a digital mockup replace a physical sample?', 'A mockup helps approve layout, but it cannot confirm fit, hand feel, opacity, stretch, seam comfort or finished workmanship.'],
+      ['What information is needed to start?', 'Provide the product type, estimated quantity, intended use, sizes, artwork status, destination and any construction priorities.'],
+    ],
     relatedProduct: { label: 'Build a structured project brief', href: '/project-builder' },
+    relatedGuides: ['prepare-artwork-for-sublimation', 'fightwear-quality-inspection-checklist', 'training-shorts-fabric-ventilation-pocket-guide'],
   },
 ];
 
