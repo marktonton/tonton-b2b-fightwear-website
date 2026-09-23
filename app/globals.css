@@ -42,6 +42,22 @@
 .entity-card-grid h3 { margin: 52px 0 15px; font-size: 28px; }
 .entity-card-grid p { margin: 0; color: #555961; line-height: 1.7; }
 .entity-card-grid a { margin-top: auto; padding-top: 30px; color: #d7192d; font-weight: 800; }
+.entity-history { background: #111318; color: #fff; }
+.entity-history header > p:last-child { color: #c3c5c9; }
+.entity-timeline { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); max-width: 1500px; margin: 0 auto; border-top: 1px solid #555860; border-bottom: 1px solid #555860; }
+.entity-timeline article { min-width: 0; padding: 28px 24px 32px 0; }
+.entity-timeline article + article { padding-left: 24px; border-left: 1px solid #555860; }
+.entity-timeline strong { color: #ed1b2f; font-size: clamp(24px, 2.2vw, 34px); }
+.entity-timeline p { margin: 18px 0 0; color: #d5d6d8; font-size: 15px; line-height: 1.65; }
+.entity-coverage { background: #fff; }
+.entity-coverage-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 1500px; margin: 0 auto; border-top: 1px solid #c9c6bf; border-left: 1px solid #c9c6bf; }
+.entity-coverage-grid article { display: flex; min-width: 0; min-height: 330px; flex-direction: column; padding: 30px; border-right: 1px solid #c9c6bf; border-bottom: 1px solid #c9c6bf; }
+.entity-coverage-grid article > div { display: flex; justify-content: space-between; gap: 16px; color: #74777c; font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.entity-coverage-grid article > div span { color: #ed1b2f; }
+.entity-coverage-grid h3 { margin: 44px 0 14px; font-size: clamp(22px, 2vw, 29px); line-height: 1.15; }
+.entity-coverage-grid p { margin: 0; color: #555961; font-size: 15px; line-height: 1.65; }
+.entity-coverage-grid a { align-self: flex-start; margin-top: auto; padding-top: 28px; border-bottom: 1px solid #111318; color: #111318; font-size: 12px; font-weight: 900; letter-spacing: .06em; text-transform: uppercase; }
+.entity-source-note { max-width: 1500px; margin: 24px auto 0; color: #74777c; font-size: 13px; line-height: 1.65; }
 .entity-faq-list { max-width: 1500px; margin: 0 auto; border-top: 1px solid #c9c6bf; }
 .entity-faq-list details { border-bottom: 1px solid #c9c6bf; }
 .entity-faq-list summary { padding: 24px 0; cursor: pointer; font-size: 20px; font-weight: 800; }
@@ -53,6 +69,11 @@
   .entity-section header > p:last-child { margin-top: 20px; }
   .entity-card-grid { grid-template-columns: 1fr; }
   .entity-card-grid article { min-height: 270px; }
+  .entity-timeline { grid-template-columns: 1fr; }
+  .entity-timeline article { padding: 24px 0; }
+  .entity-timeline article + article { padding-left: 0; border-top: 1px solid #555860; border-left: 0; }
+  .entity-coverage-grid { grid-template-columns: 1fr; }
+  .entity-coverage-grid article { min-height: 0; }
   .entity-fact-table > div { grid-template-columns: 1fr; padding: 16px 0; }
   .entity-fact-table strong, .entity-fact-table span { padding: 3px 0; }
 }
