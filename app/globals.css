@@ -1124,6 +1124,11 @@
 .factory-v2-smart figure:hover img { transform: scale(1.025); }
 .factory-v2-smart figcaption { position: absolute; right: 0; bottom: 0; left: 0; padding: 40px 22px 20px; background: linear-gradient(transparent, rgba(0,0,0,.78)); color: #fff; font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 .factory-v2-smart figcaption span { margin-right: 14px; color: var(--factory-red); }
+.factory-v2-digital-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 54px; border-top: 1px solid rgba(255,255,255,.2); border-left: 1px solid rgba(255,255,255,.2); }
+.factory-v2-digital-grid article { min-width: 0; padding: 28px; border-right: 1px solid rgba(255,255,255,.2); border-bottom: 1px solid rgba(255,255,255,.2); }
+.factory-v2-digital-grid span { color: var(--factory-red); font-size: 10px; font-weight: 900; letter-spacing: .14em; }
+.factory-v2-digital-grid h3 { margin-top: 38px !important; font-size: clamp(20px, 1.8vw, 28px); line-height: 1.05; }
+.factory-v2-digital-grid p { margin-top: 18px !important; color: rgba(255,255,255,.6); font-size: 13px; line-height: 1.68; }
 
 .factory-v2-capabilities { padding: clamp(100px, 10vw, 160px) 0; }
 .factory-v2-capability-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 72px 20px; }
@@ -1197,6 +1202,7 @@
   .factory-v2-intro-media { min-height: 620px; }
   .factory-v2-smart, .factory-v2-process, .factory-v2-quality, .factory-v2-cta, .factory-v2-proof-strip { padding-right: 24px; padding-left: 24px; }
   .factory-v2-smart-grid { grid-template-columns: 1fr; }
+  .factory-v2-digital-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .factory-v2-smart-main { min-height: 520px; }
   .factory-v2-smart-side { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: none; }
   .factory-v2-process, .factory-v2-quality, .factory-v2-faq { grid-template-columns: 1fr; gap: 56px; }
@@ -1233,6 +1239,9 @@
   .factory-v2-manufacturing-overview { margin-top: 72px; }
   .factory-v2-smart-main { min-height: 340px; }
   .factory-v2-smart-side { grid-template-columns: 1fr; }
+  .factory-v2-digital-grid { grid-template-columns: 1fr; margin-top: 38px; }
+  .factory-v2-digital-grid article { padding: 24px; }
+  .factory-v2-digital-grid h3 { margin-top: 24px !important; }
   .factory-v2-smart-side figure { min-height: 300px; }
   .factory-v2-capability-grid { grid-template-columns: 1fr; gap: 54px; }
   .factory-v2-capability:nth-child(even) { margin-top: 0; }
