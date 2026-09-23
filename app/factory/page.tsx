@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import CertificatesSlider from './CertificatesSlider';
 import { resolveImage } from '../../lib/image-resolver';
 import RelatedResources from '../../components/RelatedResources';
+import { ORGANIZATION_ID } from '../../lib/site-entity';
 
 const SITE_URL = 'https://www.tontongear.com';
 
@@ -138,9 +139,7 @@ const factorySchema = {
   url: `${SITE_URL}/factory`,
   description: 'TONTON custom sportswear factory capabilities, production workflow, quality control, and documentation.',
   mainEntity: {
-    '@type': 'Organization',
-    name: 'TONTON Sportswear',
-    url: SITE_URL,
+    '@id': ORGANIZATION_ID,
   },
 };
 

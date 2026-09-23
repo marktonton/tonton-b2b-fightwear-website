@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import { resolveImage } from '../../lib/image-resolver';
+import { ORGANIZATION_ID } from '../../lib/site-entity';
 
 const SITE_URL = 'https://www.tontongear.com';
 
@@ -173,7 +174,7 @@ const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Custom Fightwear Development and Production Support',
-  provider: { '@type': 'Organization', name: 'TONTON Sportswear' },
+  provider: { '@id': ORGANIZATION_ID },
   url: `${SITE_URL}/service-support`,
   description: 'OEM and ODM custom fightwear support from product planning and sampling through production, quality control, packing, and delivery preparation.',
   areaServed: 'Worldwide',

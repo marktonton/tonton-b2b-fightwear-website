@@ -11,6 +11,7 @@ import {
 import type { Metadata } from 'next';
 import RelatedResources from '../../../components/RelatedResources';
 import AnswerEvidencePanel from '../../../components/AnswerEvidencePanel';
+import { ORGANIZATION_ID } from '../../../lib/site-entity';
 
 const SITE_URL = 'https://www.tontongear.com';
 const FIGHT_SHORTS_CATEGORY_ROOT = '/assets/products/grappling-shorts-category';
@@ -150,7 +151,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
     reviewedBy: {
       '@type': 'Organization',
       name: 'TONTON Product Development & Quality Control Team',
-      parentOrganization: { '@type': 'Organization', name: 'Tontonsports (Shenzhen) Co., Ltd.', url: SITE_URL },
+      parentOrganization: { '@id': ORGANIZATION_ID },
     },
     primaryImageOfPage: isFightShortsPage ? `${SITE_URL}${content.heroImage}` : resolveImage(content.heroImage),
     about: content.projectTypes.map((item) => ({ '@type': 'Thing', name: item.title })),

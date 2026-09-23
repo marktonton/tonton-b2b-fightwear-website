@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { ORGANIZATION_ID } from '../../../lib/site-entity';
 import type { Metadata } from 'next';
 import { getResource, RESOURCE_PAGES } from '../../../lib/resource-content';
 
@@ -20,7 +21,7 @@ export default function ResourceArticlePage({ params }: PageProps) {
   const url = `${SITE_URL}/resources/${resource.slug}`;
   const reviewed = new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${resource.updated}T00:00:00Z`));
   const schema = [
-    { '@context': 'https://schema.org', '@type': 'Article', headline: resource.title, description: resource.description, datePublished: resource.updated, dateModified: resource.updated, mainEntityOfPage: url, image: resource.media?.map((item) => `${SITE_URL}${item.src}`), author: { '@type': 'Organization', name: 'TONTON Sportswear' }, reviewedBy: { '@type': 'Organization', name: 'TONTON Product Development & Quality Control Team', parentOrganization: { '@type': 'Organization', name: 'Tontonsports (Shenzhen) Co., Ltd.', url: SITE_URL } }, publisher: { '@type': 'Organization', name: 'TONTON Sportswear', url: SITE_URL } },
+    { '@context': 'https://schema.org', '@type': 'Article', headline: resource.title, description: resource.description, datePublished: resource.updated, dateModified: resource.updated, mainEntityOfPage: url, image: resource.media?.map((item) => `${SITE_URL}${item.src}`), author: { '@id': ORGANIZATION_ID }, reviewedBy: { '@type': 'Organization', name: 'TONTON Product Development & Quality Control Team', parentOrganization: { '@id': ORGANIZATION_ID } }, publisher: { '@id': ORGANIZATION_ID } },
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL }, { '@type': 'ListItem', position: 2, name: 'Resources', item: `${SITE_URL}/resources` }, { '@type': 'ListItem', position: 3, name: resource.title, item: url }] },
     ...(resource.faqs?.length ? [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: resource.faqs.map(([question, answer]) => ({ '@type': 'Question', name: question, acceptedAnswer: { '@type': 'Answer', text: answer } })) }] : []),
   ];

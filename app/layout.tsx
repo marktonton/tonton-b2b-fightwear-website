@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { resolveImage } from '../lib/image-resolver';
 import SearchMeasurement from '../components/SearchMeasurement';
+import { ORGANIZATION_SCHEMA, SITE_URL, WEBSITE_SCHEMA } from '../lib/site-entity';
 
-const SITE_URL = 'https://www.tontongear.com';
 const SITE_DESCRIPTION = 'TONTON Sportswear provides custom fightwear and professional sportswear manufacturing for brands, teams, clubs, and retailers.';
 const googleVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
 const bingVerification = process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION;
@@ -41,33 +41,6 @@ export const metadata: Metadata = {
   },
 };
 
-const organizationSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Organization',
-  name: 'TONTON Sportswear',
-  legalName: 'Tontonsports (Shenzhen) Co., Ltd.',
-  alternateName: ['TONTON', 'TONTON Fightwear Manufacturer'],
-  foundingDate: '2004',
-  url: SITE_URL,
-  logo: resolveImage('/assets/logo.png'),
-  email: 'gary@tontonsportswear.com',
-  telephone: '+86 17722438678',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: 'Jiewei, Shangmugu Community, Pinghu Street, Longgang District, Shenzhen 207, Building A, Industrial City Phase III Factory',
-    addressLocality: 'Shenzhen',
-    addressCountry: 'CN',
-  },
-};
-
-const websiteSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'WebSite',
-  name: 'TONTON Sportswear',
-  url: SITE_URL,
-  description: SITE_DESCRIPTION,
-};
-
 export default function RootLayout({
   children,
 }: {
@@ -78,7 +51,7 @@ export default function RootLayout({
       <head />
       <body>
         <SearchMeasurement />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([organizationSchema, websiteSchema]) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([ORGANIZATION_SCHEMA, { ...WEBSITE_SCHEMA, description: SITE_DESCRIPTION }]) }} />
         <div className="topbar">
           <span>Custom MMA Fightwear Factory</span>
           <span>10 PCS MOQ</span>
@@ -103,6 +76,7 @@ export default function RootLayout({
             </div>
             <a href="/service-support">Service &amp; Support</a>
             <a href="/factory">Factory</a>
+            <a href="/about">About</a>
             <a href="/resources">Resources</a>
             <a className="nav-cta" href="/project-builder?source=global-navigation">Build Your Project</a>
           </nav>
@@ -126,6 +100,7 @@ export default function RootLayout({
             <div className="footer-column">
               <h2>Top Picks</h2>
               <a href="/service-support">Service &amp; Support</a>
+              <a href="/about">About TONTON</a>
               <a href="/resources">Buyer Resources</a>
               <a href="/project-builder?source=footer">Project Builder</a>
               <a href="/#products">Featured Products</a>

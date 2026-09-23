@@ -5,6 +5,7 @@ export const ROUTE_LAST_MODIFIED: Record<string, string> = {
   '/collections': CONTENT_REVIEW_DATE,
   '/service-support': '2026-09-21',
   '/factory': CONTENT_REVIEW_DATE,
+  '/about': '2026-09-23',
   '/resources': CONTENT_REVIEW_DATE,
   '/project-builder': CONTENT_REVIEW_DATE,
   '/customization/sublimated-rash-guards': '2026-09-22',
