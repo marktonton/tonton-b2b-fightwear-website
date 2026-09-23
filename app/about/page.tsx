@@ -13,11 +13,71 @@ const facts = [
   ['Company', 'Tontonsports (Shenzhen) Co., Ltd.'],
   ['Public brand', 'TONTON Sportswear'],
   ['Founded', '2004'],
+  ['Operating structure', 'Shenzhen business and brand operations with a smart-production base in Xiantao, Hubei'],
   ['Business model', 'B2B custom sportswear manufacturing; OEM and ODM development'],
   ['Core product focus', 'Rash guards, MMA and BJJ shorts, grappling shorts, training shorts, teamwear and related performance apparel'],
   ['Typical buyers', 'Fightwear brands, gyms, academies, clubs, teams and retailers'],
   ['Manufacturing scope', 'Product development, artwork support, sampling, printing, embroidery, cutting, sewing, quality review and packing'],
   ['Sales contact', 'gary@tontonsportswear.com · +86 17722438678'],
+];
+
+const milestones = [
+  ['2004', 'TONTON began in Shenzhen with a focus on custom sportswear and international B2B orders.'],
+  ['2014', 'The team took part in the Chinese supplier network that completed 130,000 Alibaba listing commemorative garments in 12 days.'],
+  ['2023', 'TONTON established its Hubei manufacturing company and expanded production in Xiantao.'],
+  ['2025', 'Hubei Daily reported the launch of an intelligent production system using AI-assisted design, QR-tracked panels, smart sorting and hanging lines.'],
+  ['2026', 'Public reporting documented further AI-supported manufacturing development and university-industry work on smart sizing and virtual fitting.'],
+];
+
+const officialReports = [
+  {
+    source: 'Hubei Daily',
+    date: '20 Mar 2025',
+    isoDate: '2025-03-20',
+    title: 'TONTON custom apparel ships within two days',
+    summary: 'A factory report covering AI-assisted design, QR-tracked garment panels, smart sorting, four hanging lines and 200 intelligent devices.',
+    href: 'https://epaper.hubeidaily.net/pad/content/202503/20/content_308570.html',
+  },
+  {
+    source: 'Xiantao Municipal Government',
+    date: '12 Sep 2024',
+    isoDate: '2024-09-12',
+    title: 'TONTON uses intelligent manufacturing to raise output',
+    summary: 'A government report on intelligent design, automated panel checking, digital operations and the company\'s manufacturing upgrade.',
+    href: 'https://www.xiantao.gov.cn/zwgk/xtyw/202409/t20240912_5334264.shtml',
+  },
+  {
+    source: 'Hubei Daily',
+    date: '7 May 2025',
+    isoDate: '2025-05-07',
+    title: 'From Guangdong to a smart factory in Hubei',
+    summary: 'Reporting on TONTON\'s return investment in Hubei, smart-factory development and high-tech enterprise recognition.',
+    href: 'https://epaper.hubeidaily.net/pad/content/202505/07/content_313625.html',
+  },
+  {
+    source: 'Hubei Daily · Xiantao Government',
+    date: '10 Apr 2026',
+    isoDate: '2026-04-10',
+    title: 'AI-supported manufacturing accelerates production',
+    summary: 'Coverage of the company\'s material database, AI design workflow, connected equipment and digitally identified production pieces.',
+    href: 'https://www.xiantao.gov.cn/zwgk/xtyw/202604/t20260410_5911323_app.shtml',
+  },
+  {
+    source: 'Xiantao Daily',
+    date: '8 Apr 2026',
+    isoDate: '2026-04-08',
+    title: 'Interview with TONTON chairman Hu Xinzhen',
+    summary: 'A long-form profile covering the company\'s founding, cross-border e-commerce development, manufacturing history and community work.',
+    href: 'http://www.cnxiantao.com/2026xtxw/202604/t20260408_474794.shtml',
+  },
+  {
+    source: 'Xiantao Daily',
+    date: '19 May 2026',
+    isoDate: '2026-05-19',
+    title: 'Wuhan Textile University team visits TONTON',
+    summary: 'A report on industry-university discussions around digital transformation, smart measurement and virtual fitting technology.',
+    href: 'http://www.cnxiantao.com/2026xtxw/202605/t20260519_477231.shtml',
+  },
 ];
 
 const faqs = [
@@ -53,6 +113,13 @@ const aboutSchema = {
   dateModified: '2026-09-23',
   mainEntity: { '@id': ORGANIZATION_ID },
   isPartOf: { '@id': `${SITE_URL}/#website` },
+  citation: officialReports.map((report) => ({
+    '@type': 'NewsArticle',
+    headline: report.title,
+    url: report.href,
+    datePublished: report.isoDate,
+    publisher: { '@type': 'Organization', name: report.source },
+  })),
 };
 
 const faqSchema = {
@@ -115,6 +182,41 @@ export default function AboutPage() {
           <article><span>02</span><h3>Product evidence</h3><p>Compare visible construction, material notes, customization limits and sample questions on individual product pages.</p><Link href="/collections">Review Product Examples →</Link></article>
           <article><span>03</span><h3>Technical guidance</h3><p>Use reviewed buyer guides for fabric, seams, waistbands, liners, sublimation, sampling and quality inspection.</p><Link href="/resources">Read Buyer Guides →</Link></article>
         </div>
+      </section>
+
+      <section className="entity-section entity-history" aria-labelledby="entity-history-title">
+        <header>
+          <p>COMPANY DEVELOPMENT</p>
+          <h2 id="entity-history-title">From a Shenzhen sportswear business to connected manufacturing</h2>
+          <p>A concise timeline based on company records and published reporting. It explains how TONTON's commercial operations and Hubei production base fit together.</p>
+        </header>
+        <div className="entity-timeline">
+          {milestones.map(([year, text]) => (
+            <article key={year}>
+              <strong>{year}</strong>
+              <p>{text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="entity-section entity-coverage" aria-labelledby="entity-coverage-title">
+        <header>
+          <p>INDEPENDENT SOURCES</p>
+          <h2 id="entity-coverage-title">Official reporting about TONTON</h2>
+          <p>These third-party reports provide source-level evidence for TONTON's history, factory digitization and manufacturing development. Links open the original Chinese-language reports.</p>
+        </header>
+        <div className="entity-coverage-grid">
+          {officialReports.map((report) => (
+            <article key={report.href}>
+              <div><span>{report.source}</span><time>{report.date}</time></div>
+              <h3>{report.title}</h3>
+              <p>{report.summary}</p>
+              <a href={report.href} target="_blank" rel="noopener noreferrer">Read original report ↗</a>
+            </article>
+          ))}
+        </div>
+        <p className="entity-source-note">Source note: figures and statements above are attributed to the linked publishers. Current project specifications, capacity and delivery timing are confirmed separately for each order.</p>
       </section>
 
       <section className="entity-section" aria-labelledby="entity-faq-title">
