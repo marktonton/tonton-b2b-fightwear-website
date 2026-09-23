@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
+import { resolveImage } from '../../lib/image-resolver';
 import { ORGANIZATION_ID, SITE_URL } from '../../lib/site-entity';
 
 export const metadata: Metadata = {
@@ -147,13 +149,32 @@ export default function AboutPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([aboutSchema, faqSchema, breadcrumbSchema]) }} />
 
       <section className="entity-hero">
-        <p>VERIFIED COMPANY PROFILE</p>
-        <h1>About TONTON Sportswear</h1>
-        <p>TONTON Sportswear is a B2B custom fightwear and performance-apparel manufacturer founded in 2004. We help brands, gyms, academies, clubs, teams and retailers develop products from the initial brief through sampling, production review and packing.</p>
-        <div>
-          <Link href="/factory">Inspect the Factory</Link>
-          <Link href="/project-builder?source=about-page">Build Your Project Brief</Link>
+        <div className="entity-hero-copy">
+          <p>VERIFIED COMPANY PROFILE</p>
+          <h1>About TONTON Sportswear</h1>
+          <p>TONTON Sportswear is a B2B custom fightwear and performance-apparel manufacturer founded in 2004. We help brands, gyms, academies, clubs, teams and retailers develop products from the initial brief through sampling, production review and packing.</p>
+          <div>
+            <Link href="/factory">Inspect the Factory</Link>
+            <Link href="/project-builder?source=about-page">Build Your Project Brief</Link>
+          </div>
         </div>
+        <figure className="entity-hero-banner" aria-label="TONTON Sportswear company and manufacturing summary">
+          <Image
+            src={resolveImage('/assets/factory/hanging/hanging-line-01.jpg')}
+            alt="TONTON intelligent hanging workshop for custom fightwear and performance apparel"
+            fill
+            priority
+            sizes="(max-width: 900px) 100vw, 52vw"
+          />
+          <div className="entity-hero-banner-shade" />
+          <figcaption>
+            <span>TONTON SPORTSWEAR</span>
+            <h2>B2B CUSTOM FIGHTWEAR &amp; PERFORMANCE APPAREL MANUFACTURER</h2>
+            <strong>FOUNDED IN 2004</strong>
+            <p>For brands, gyms, academies, clubs, teams and retailers.</p>
+            <p>From project brief to sampling, production review and packing.</p>
+          </figcaption>
+        </figure>
       </section>
 
       <section className="entity-section" aria-labelledby="company-facts-title">
