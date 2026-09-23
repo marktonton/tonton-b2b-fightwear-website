@@ -74,9 +74,14 @@ export default function RootLayout({
                 <a href="/customization/sublimated-bjj-mma-shorts">Sublimated BJJ MMA Shorts</a>
               </div>
             </div>
-            <a href="/service-support">Service &amp; Support</a>
-            <a href="/factory">Factory</a>
-            <a href="/about">About</a>
+            <div className="nav-dropdown">
+              <a href="/about" className="nav-link">ABOUT TONTON ▼</a>
+              <div className="dropdown-content">
+                <a href="/about">Company Profile</a>
+                <a href="/factory">Factory &amp; Capabilities</a>
+                <a href="/service-support">Service &amp; Support</a>
+              </div>
+            </div>
             <a href="/resources">Resources</a>
             <a className="nav-cta" href="/project-builder?source=global-navigation">Build Your Project</a>
           </nav>
