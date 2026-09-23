@@ -12,6 +12,7 @@
     "assets:audit": "node scripts/audit-assets.mjs",
     "seo:audit": "node scripts/audit-seo-specs.mjs",
     "seo:content-audit": "node scripts/audit-content-quality.mjs",
+    "seo:geo-audit": "node scripts/audit-geo-readiness.mjs",
     "seo:indexability-audit": "node scripts/audit-built-indexability.mjs",
     "seo:live-audit": "node scripts/audit-live-indexability.mjs",
     "seo:indexnow": "node scripts/submit-indexnow.mjs",

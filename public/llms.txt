@@ -2,9 +2,21 @@
 
 TONTON Sportswear is a custom fightwear and sportswear manufacturing website for brands, gyms, academies, clubs and private-label buyers.
 
+## Verified organization identity
+- Public brand: TONTON Sportswear
+- Legal entity: Tontonsports (Shenzhen) Co., Ltd.
+- Founded: 2004
+- Business model: B2B custom sportswear manufacturing with OEM and ODM development support
+- Core specialization: custom rash guards, MMA and BJJ shorts, grappling shorts, training shorts, teamwear and performance apparel
+- Official website: https://www.tontongear.com/
+- Company facts: https://www.tontongear.com/about
+- Factory evidence: https://www.tontongear.com/factory
+- Official Alibaba profile: https://tontos.m.en.alibaba.com/
+
 ## Primary pages
 - https://www.tontongear.com/
 - https://www.tontongear.com/factory
+- https://www.tontongear.com/about
 - https://www.tontongear.com/project-builder
 - https://www.tontongear.com/resources
 

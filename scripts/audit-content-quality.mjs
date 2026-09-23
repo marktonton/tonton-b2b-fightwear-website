@@ -46,6 +46,7 @@ for (const date of dates) {
 }
 
 if (!existsSync(join(root, 'public/llms.txt'))) fail('public/llms.txt is missing');
+if (!existsSync(join(root, 'public/llms-full.txt'))) fail('public/llms-full.txt is missing');
 
 if (failures) process.exit(1);
 console.log(`CONTENT QUALITY AUDIT PASSED: ${resourceSlugs.length} buyer guides, Project Builder outputs, freshness and no unverified Offer schema.`);

@@ -15,6 +15,7 @@ import TrainingShortsLanding from './TrainingShortsLanding';
 import { isTrainingShortsLandingProduct, TRAINING_SHORTS_LANDING_CONTENT } from '../../../lib/training-shorts-products';
 import CamoMmaShortsLanding from './CamoMmaShortsLanding';
 import { CAMO_MMA_SHORTS_CONTENT, CAMO_MMA_SHORTS_FAQS, isCamoMmaShorts } from '../../../lib/camo-mma-shorts-product';
+import { ORGANIZATION_REFERENCE } from '../../../lib/site-entity';
 
 const SITE_URL = 'https://www.tontongear.com';
 const products = productsData.products;
@@ -22,9 +23,7 @@ const CONTENT_REVIEWER = {
   '@type': 'Organization',
   name: 'TONTON Product Development & Quality Control Team',
   parentOrganization: {
-    '@type': 'Organization',
-    name: 'Tontonsports (Shenzhen) Co., Ltd.',
-    url: SITE_URL,
+    ...ORGANIZATION_REFERENCE,
   },
 };
 
@@ -130,7 +129,7 @@ export default function ProductDetailPage({ params }: PageProps) {
       image: galleryImages.map(getAbsoluteImage), sku: product.id, category: 'Custom MMA Fight Shorts',
       material: CAMO_MMA_SHORTS_CONTENT.material, color: CAMO_MMA_SHORTS_CONTENT.color, url: productUrl,
       brand: { '@type': 'Brand', name: 'TONTON' },
-      manufacturer: { '@type': 'Organization', name: 'TONTON Sportswear', url: SITE_URL },
+      manufacturer: { '@id': ORGANIZATION_REFERENCE['@id'] },
       additionalProperty: [
         { '@type': 'PropertyValue', name: 'Composition', value: '88% polyester / 12% spandex' },
         { '@type': 'PropertyValue', name: 'Waist closure', value: 'Elastic waistband, hook-and-loop fly and internal drawcord' },
@@ -168,7 +167,7 @@ export default function ProductDetailPage({ params }: PageProps) {
       category: categoryName,
       url: productUrl,
       brand: { '@type': 'Brand', name: 'TONTON' },
-      manufacturer: { '@type': 'Organization', name: 'TONTON Sportswear', url: SITE_URL },
+      manufacturer: { '@id': ORGANIZATION_REFERENCE['@id'] },
       additionalProperty: content.materialRows.map(([name, value]) => ({ '@type': 'PropertyValue', name, value })),
     };
     const webPageSchema = {
@@ -223,7 +222,7 @@ export default function ProductDetailPage({ params }: PageProps) {
       color: content.color,
       url: productUrl,
       brand: { '@type': 'Brand', name: 'TONTON' },
-      manufacturer: { '@type': 'Organization', name: 'TONTON Sportswear', url: SITE_URL },
+      manufacturer: { '@id': ORGANIZATION_REFERENCE['@id'] },
       additionalProperty: [
         { '@type': 'PropertyValue', name: 'Cut', value: 'High Split Cut' },
         { '@type': 'PropertyValue', name: 'Construction', value: '2-in-1 grappling shorts' },
@@ -281,7 +280,7 @@ export default function ProductDetailPage({ params }: PageProps) {
       color: content.color,
       url: productUrl,
       brand: { '@type': 'Brand', name: 'TONTON' },
-      manufacturer: { '@type': 'Organization', name: 'TONTON Sportswear', url: SITE_URL },
+      manufacturer: { '@id': ORGANIZATION_REFERENCE['@id'] },
       additionalProperty: product.id === 'samurai-graphic-rash-guard' ? [
         { '@type': 'PropertyValue', name: 'Fabric weight', value: '220gsm' },
         { '@type': 'PropertyValue', name: 'Material', value: 'Ultra-fine Lycra' },
@@ -349,11 +348,7 @@ export default function ProductDetailPage({ params }: PageProps) {
     category: categoryName,
     url: productUrl,
     brand: { '@type': 'Brand', name: 'TONTON' },
-    manufacturer: {
-      '@type': 'Organization',
-      name: 'TONTON Sportswear',
-      url: SITE_URL,
-    },
+    manufacturer: { '@id': ORGANIZATION_REFERENCE['@id'] },
   };
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
