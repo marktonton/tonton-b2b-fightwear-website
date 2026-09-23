@@ -9,7 +9,7 @@ const SITE_URL = 'https://www.tontongear.com';
 
 export const metadata: Metadata = {
   title: { absolute: 'Custom Sportswear Factory | TONTON OEM & ODM Manufacturer' },
-  description: 'See inside TONTON Sportswear: intelligent hanging production, embroidery, printing, sewing, quality control, packing, and OEM/ODM support for custom fightwear.',
+  description: 'Explore TONTON\'s 15,000 m² custom sportswear factory, digital production tracking, printing, cutting, sewing, seven quality checkpoints, packing, and OEM/ODM support.',
   alternates: { canonical: `${SITE_URL}/factory` },
   openGraph: {
     title: 'Custom Sportswear Factory | TONTON OEM & ODM Manufacturer',
@@ -58,12 +58,45 @@ const certificates = [
 ];
 
 const productionSteps = [
-  ['01', 'Choose the product', 'Define the garment, fit, quantities, and intended use.'],
-  ['02', 'Share your artwork', 'Send logos, brand guidelines, colors, and reference ideas.'],
-  ['03', 'Review mockup & sample', 'Align construction, placement, fabric, and branding details.'],
-  ['04', 'Plan production', 'Confirm the approved specification before bulk work begins.'],
-  ['05', 'Inspect the order', 'Review workmanship, customization details, and packing requirements.'],
-  ['06', 'Pack & deliver', 'Prepare the finished order for the agreed shipping route.'],
+  ['01', 'Project brief', 'Define the product, quantity, deadline, market, sizing, artwork, and intended use.'],
+  ['02', 'Manufacturability review', 'Align the fit, fabric, construction, decoration, MOQ, and production route.'],
+  ['03', 'Digital design approval', 'Review the mockup, colors, logo placement, names, numbers, and roster data.'],
+  ['04', 'Sample approval', 'Verify fit, hand feel, construction, and decoration before bulk production.'],
+  ['05', 'Production setup', 'Build the BOM, patterns, process sheet, size data, and QR-linked production record.'],
+  ['06', 'Printing & cutting', 'Prepare printed panels through layout, alignment, and controlled cutting.'],
+  ['07', 'Sorting & sewing', 'Match panels to the order, move work through organized stations, and inspect construction.'],
+  ['08', 'Decoration & finishing', 'Complete embroidery, transfers, labels, pressing, and garment finishing as specified.'],
+  ['09', 'Final inspection & packing', 'Check quantities, measurements, artwork, workmanship, labels, packing, and carton marks.'],
+  ['10', 'Dispatch & archive', 'Release the agreed shipping route and retain approved project records for reorders.'],
+];
+
+const digitalCapabilities = [
+  {
+    title: 'QR-linked panel identity',
+    text: 'Production records can connect garment panels with the approved order, size, player data, and process route to reduce mix-ups.',
+  },
+  {
+    title: 'Intelligent layout',
+    text: 'Digital layout prepares approved artwork and pattern pieces for controlled printing and cutting before sewing begins.',
+  },
+  {
+    title: 'Scan-assisted sorting',
+    text: 'Panel identification supports order matching and organized handoff from cutting to sewing for complex personalized runs.',
+  },
+  {
+    title: 'Hanging-line visibility',
+    text: 'Four intelligent hanging lines and workshop dashboards help the production team see work moving between stations.',
+  },
+];
+
+const qualityChecks = [
+  'Incoming material and batch review',
+  'Artwork, color, logo, and roster check',
+  'Printing alignment and surface review',
+  'Cut-panel size, direction, and order matching',
+  'In-line sewing and reinforcement inspection',
+  'Finished-garment measurement and appearance check',
+  'Quantity, label, packing, and carton-mark confirmation',
 ];
 
 const capabilities = [
@@ -124,7 +157,7 @@ const faqs = [
   },
   {
     question: 'How is quality checked?',
-    answer: 'The team aligns approved specifications before production and reviews workmanship, customization details, quantity, and packing requirements before shipment preparation.',
+    answer: 'Quality control is organized around seven checkpoints: incoming materials, pre-print artwork, printing, cut panels, in-line sewing, finished garments, and final packing. The exact inspection plan is confirmed against the product and approved specification.',
   },
   {
     question: 'Can you support repeat orders?',
@@ -188,9 +221,9 @@ export default function FactoryPage() {
           </div>
         </div>
         <div className="factory-v2-hero-facts" aria-label="Factory highlights">
-          <div><strong>SINCE 2004</strong><span>Sportswear experience</span></div>
-          <div><strong>OEM / ODM</strong><span>Custom project support</span></div>
-          <div><strong>SMART FLOW</strong><span>Intelligent hanging system</span></div>
+          <div><strong>15,000 M²</strong><span>Xiantao manufacturing base</span></div>
+          <div><strong>200+ DEVICES</strong><span>Smart production equipment</span></div>
+          <div><strong>4 LINES</strong><span>Intelligent hanging production</span></div>
         </div>
         <span className="factory-v2-scroll-note">SCROLL TO EXPLORE</span>
       </section>
@@ -199,7 +232,7 @@ export default function FactoryPage() {
         <div className="factory-v2-intro-copy">
           <p className="factory-v2-kicker">MANUFACTURING PARTNER</p>
           <h2>MORE THAN A SUPPLIER. A TEAM BEHIND YOUR PRODUCT.</h2>
-          <p className="factory-v2-intro-lead">Founded in 2004, TONTON combines sportswear development experience with an organized, technology-supported production environment. We work with brands, gyms, clubs, teams, and retailers to turn a product brief into a production-ready custom program.</p>
+          <p className="factory-v2-intro-lead">Founded in 2004, TONTON is a direct custom sportswear manufacturer with in-house design, pattern development, printing, cutting, sewing, quality control, and order-management capabilities. We work with brands, gyms, clubs, teams, and retailers to turn a product brief into a production-ready custom program. Selected materials and specialist processes may involve approved partners.</p>
           <div className="factory-v2-intro-points">
             <div><span>01</span><p><strong>Product development</strong>Support from artwork and material direction through sample review.</p></div>
             <div><span>02</span><p><strong>Connected production</strong>Clear movement from printing and cutting to sewing, inspection, and packing.</p></div>
@@ -265,6 +298,15 @@ export default function FactoryPage() {
             </figure>
           </div>
         </div>
+        <div className="factory-v2-digital-grid" aria-label="Digital manufacturing capabilities">
+          {digitalCapabilities.map((item, index) => (
+            <article key={item.title}>
+              <span>{String(index + 1).padStart(2, '0')}</span>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </article>
+          ))}
+        </div>
       </section>
 
       <section className="factory-v2-capabilities">
@@ -315,8 +357,8 @@ export default function FactoryPage() {
       <section className="factory-v2-process" id="factory-v2-process">
         <div className="factory-v2-process-heading">
           <p className="factory-v2-kicker">OEM / ODM WORKFLOW</p>
-          <h2>ONE CLEAR ROUTE. SIX CONTROL POINTS.</h2>
-          <p>Each step answers a question buyers ask before trusting a custom manufacturer: what happens next, what needs approval, and where quality is checked.</p>
+          <h2>ONE CLEAR ROUTE. TEN CONNECTED STAGES.</h2>
+          <p>From project brief to dispatch, each stage identifies the input, approval, production task, or quality check that moves a custom order forward.</p>
         </div>
         <div className="factory-v2-process-list">
           {productionSteps.map(([number, title, text]) => (
@@ -333,11 +375,9 @@ export default function FactoryPage() {
         <div className="factory-v2-quality-copy">
           <p className="factory-v2-kicker factory-v2-kicker-light">QUALITY CONTROL & PACKING</p>
           <h2>THE ORDER IS NOT FINISHED WHEN SEWING STOPS.</h2>
-          <p>Final review connects the approved project details with the finished garments. Workmanship, customization, quantity, and packing requirements are checked before shipment preparation.</p>
+          <p>Quality is not a single inspection at the end. The control route follows the order from incoming materials and artwork through printing, cutting, sewing, finished-garment review, and packing.</p>
           <ul>
-            <li>Specification and customization review</li>
-            <li>Finished-garment workmanship check</li>
-            <li>Order and packing-detail confirmation</li>
+            {qualityChecks.map((check) => <li key={check}>{check}</li>)}
           </ul>
         </div>
         <div className="factory-v2-quality-gallery">
