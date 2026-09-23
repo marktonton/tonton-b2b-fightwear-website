@@ -145,10 +145,14 @@
     {
       "id": "pro-mma-shorts-08",
       "categoryId": "sublimated-training-shorts",
-      "name": "Grey Logo Sublimated Training Shorts",
-      "image": "assets/products/product-15.png",
-      "description": "Flexible grey training shorts designed for custom team branding.",
-      "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
+      "name": "Black Custom Combat Training Shorts",
+      "image": "assets/products/product-14.png",
+      "images": [
+        "assets/products/product-14.png",
+        "assets/products/product-15.png"
+      ],
+      "description": "Short-cut black combat training shorts with a broad elastic waistband, panelled crotch, reinforced hem and custom logo positions for MMA conditioning, boxing fitness and functional training.",
+      "features": ["10 PCS MOQ", "Short Athletic Cut", "Elastic Waistband", "Panelled Crotch", "Reinforced Hem", "Custom Branding"]
     },
     {
       "id": "lightweight-quick-dry-training-shorts",
@@ -169,38 +173,6 @@
       "name": "Classic Custom MMA Team Kit",
       "image": "assets/products/kit-bw-v2.png",
       "description": "Matching rash guard and shorts set.",
-      "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
-    },
-    {
-      "id": "team-kit-13",
-      "categoryId": "sublimated-bjj-mma-shorts",
-      "name": "Sublimated Academy Training Kit",
-      "image": "assets/products/product-13.png",
-      "description": "Full sublimation team kit.",
-      "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
-    },
-    {
-      "id": "team-kit-14",
-      "categoryId": "sublimated-bjj-mma-shorts",
-      "name": "Elite Custom Teamwear Package",
-      "image": "assets/products/product-14.png",
-      "description": "Full sublimation team kit.",
-      "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
-    },
-    {
-      "id": "team-kit-15",
-      "categoryId": "sublimated-bjj-mma-shorts",
-      "name": "Elite Sublimated Performance Kit",
-      "image": "assets/products/product-15.png",
-      "description": "Full sublimation team kit.",
-      "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
-    },
-    {
-      "id": "pro-team-kit-17",
-      "categoryId": "sublimated-bjj-mma-shorts",
-      "name": "Ultimate Custom Competition Kit",
-      "image": "assets/products/17.png",
-      "description": "Customized team competition gear.",
       "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
     }
   ]
