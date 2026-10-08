@@ -6,6 +6,7 @@ import RelatedResources from '../../../components/RelatedResources';
 import ProductLandingLinks from '../../../components/ProductLandingLinks';
 import CustomerProjectProof from '../../../components/CustomerProjectProof';
 import AnswerEvidencePanel from '../../../components/AnswerEvidencePanel';
+import CustomerReviewEvidence from '../../../components/CustomerReviewEvidence';
 
 type Product = {
   id: string;
@@ -133,6 +134,41 @@ const CUSTOMER_RASH_GUARD_PROOF = [{
   signals: ['Close athletic torso fit', 'Short raglan-style sleeve direction', 'High-contrast chest branding'],
 }] as const;
 
+const CUSTOMER_RASH_GUARD_REVIEWS = {
+  'blue-team-rash-guard': {
+    screenshot: '/assets/products/customer-reviews/academy-team-repeat-buyer-review.png',
+    screenshotAlt: 'Alibaba.com five-star repeat-buyer review dated January 23, 2026 with an academy team wearing coordinated custom Rash Guards and shorts',
+    buyer: 'g***d',
+    date: '2026-01-23',
+    dateLabel: 'January 23, 2026',
+    title: 'An academy team order used in heavy weekly training',
+    quote: 'We bought rashguards and shorts for our academy and couldn’t be happier. The quality is excellent, the fit works across all body types, and they hold up to heavy weekly training. Our members love how comfortable they are, and they still look sharp after plenty of washes. It’s great having kit we’re genuinely proud to put our academy name on.',
+    summary: 'This repeat buyer describes a coordinated academy order, comfortable fit across different body types and continued use through heavy weekly training and repeated washing.',
+    project: 'Coordinated short-sleeve academy Rash Guards and training shorts with a shared club identity.',
+    evidence: [
+      'Academy members photographed wearing the delivered team kit',
+      'Buyer reports fit across multiple body types and comfort in weekly training',
+      'Buyer reports that the kit continued to look sharp after repeated washing',
+    ],
+  },
+  'white-logo-rash-guard': {
+    screenshot: '/assets/products/customer-reviews/white-rash-guard-repeat-buyer-review.png',
+    screenshotAlt: 'Alibaba.com five-star repeat-buyer review dated August 31, 2025 with a white short-sleeve custom Rash Guard and matching shorts',
+    buyer: 'H***l',
+    date: '2025-08-31',
+    dateLabel: 'August 31, 2025',
+    title: 'A private-label Rash Guard project backed by product feedback',
+    quote: 'These rash guards have been a huge success with my business. Gary was able to develop my ideas perfectly — the production of the rashguards is fast, and the quality is brilliant — the rubber strip at the bottom allows for the rashguard to not ride up when in use, and the stitching quality is amazing. I would highly recommend working with Gary and his design team for all of your rashguard needs.',
+    summary: 'This repeat buyer connects the finished product with business success and specifically comments on design development, production speed, stitching quality and the lower-hem grip strip.',
+    project: 'White short-sleeve private-label Rash Guard with matching shorts, contrast panels, custom branding and a lower-hem grip strip.',
+    evidence: [
+      'Finished Rash Guard and matching shorts shown in the buyer photograph',
+      'Buyer specifically identifies the lower-hem grip strip as helping reduce ride-up',
+      'Buyer praises idea development, production speed and stitching quality',
+    ],
+  },
+} as const;
+
 const CUSTOMER_RASH_GUARD_CASES: Record<RashGuardProductId, {
   eyebrow: string;
   title: string;
@@ -235,6 +271,7 @@ export default function RashGuardLanding({ product }: { product: Product }) {
   const isSamurai = product.id === 'samurai-graphic-rash-guard';
   const isBlueTeam = product.id === 'blue-team-rash-guard';
   const customerCases = CUSTOMER_RASH_GUARD_CASES[product.id as RashGuardProductId];
+  const customerReview = CUSTOMER_RASH_GUARD_REVIEWS[product.id as keyof typeof CUSTOMER_RASH_GUARD_REVIEWS];
   const detailImages = isSamurai ? gallery.slice(1) : gallery.slice(1, 4);
   const detailContent = isSamurai ? SAMURAI_DETAIL_CONTENT : STANDARD_DETAIL_CONTENT;
   const faqItems = isSamurai ? SAMURAI_FAQ_ITEMS : STANDARD_FAQ_ITEMS;
@@ -360,6 +397,8 @@ export default function RashGuardLanding({ product }: { product: Product }) {
           items={CUSTOMER_RASH_GUARD_PROOF}
         />
       )}
+
+      {customerReview && <CustomerReviewEvidence review={customerReview} />}
 
       <section className="rg-customer-case-section" aria-labelledby="rg-customer-case-title">
         <div className="rg-section-heading">
