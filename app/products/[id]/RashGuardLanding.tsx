@@ -133,11 +133,108 @@ const CUSTOMER_RASH_GUARD_PROOF = [{
   signals: ['Close athletic torso fit', 'Short raglan-style sleeve direction', 'High-contrast chest branding'],
 }] as const;
 
+const CUSTOMER_RASH_GUARD_CASES: Record<RashGuardProductId, {
+  eyebrow: string;
+  title: string;
+  intro: string;
+  note: string;
+  items: Array<{
+    image: string;
+    label: string;
+    title: string;
+    copy: string;
+    alt: string;
+    evidence: string[];
+  }>;
+}> = {
+  'blue-team-rash-guard': {
+    eyebrow: 'Customer-Supplied Production Reference',
+    title: 'A finished short-sleeve team Rash Guard, front and back',
+    intro: 'These original customer-supplied photographs document a completed short-sleeve project with coordinated front, sleeve and rear artwork. They help buyers evaluate layout possibilities before preparing an academy or team brief.',
+    note: 'This is a related custom production reference. Colors, graphics, fabric specifications and construction are confirmed separately for each order.',
+    items: [
+      {
+        image: '/assets/products/customer-production-proof/rash-guard-cases/satori-short-sleeve-front.webp',
+        label: 'Delivered Project / Front',
+        title: 'Honeycomb artwork with controlled chest branding',
+        copy: 'The front view shows how a dark all-over pattern, contrast side panels and a centered wordmark can be organized within a short-sleeve team design.',
+        alt: 'Customer-supplied front photograph of a finished Satori short-sleeve custom Rash Guard with honeycomb sublimation artwork',
+        evidence: ['Short raglan-style sleeve direction', 'All-over torso and sleeve artwork', 'Contrast side panels and seam lines'],
+      },
+      {
+        image: '/assets/products/customer-production-proof/rash-guard-cases/satori-short-sleeve-back.webp',
+        label: 'Delivered Project / Back',
+        title: 'Continuous rear artwork and secondary logo position',
+        copy: 'The rear view makes the back-panel graphic continuity, sleeve treatment and lower-back branding position visible for production review.',
+        alt: 'Customer-supplied back photograph of a finished Satori short-sleeve custom Rash Guard with honeycomb sublimation artwork',
+        evidence: ['Full rear-panel print direction', 'Sleeve-to-body color coordination', 'Lower-back secondary brand placement'],
+      },
+    ],
+  },
+  'white-logo-rash-guard': {
+    eyebrow: 'Customer-Supplied Production Reference',
+    title: 'A clean short-sleeve private-label colorway',
+    intro: 'This original customer-supplied photograph shows how a simple high-contrast identity can be applied to a short-sleeve Rash Guard without overcrowding the garment.',
+    note: 'This pink project is shown as a branding and color-layout reference; it is not the exact white-base product specification shown above.',
+    items: [
+      {
+        image: '/assets/products/customer-production-proof/rash-guard-cases/kuzushi-pink-short-sleeve-front.webp',
+        label: 'Delivered Project / Front',
+        title: 'Single-color base with high-contrast club branding',
+        copy: 'A bright base color, large centered chest mark and printed inside-neck information create a direct private-label presentation for clubs and team programs.',
+        alt: 'Customer-supplied photograph of a finished pink Kuzushi short-sleeve custom Rash Guard with white chest branding',
+        evidence: ['Short-sleeve close-fit silhouette', 'High-contrast centered chest logo', 'Printed inside-neck brand information'],
+      },
+    ],
+  },
+  'samurai-graphic-rash-guard': {
+    eyebrow: 'Customer-Supplied Production References',
+    title: 'Two completed long-sleeve Rash Guard directions',
+    intro: 'These original front-and-back photographs show two different long-sleeve projects: a restrained color-block layout and a full-body contour graphic. Together they demonstrate how panel artwork and brand positions can change while the performance silhouette remains consistent.',
+    note: 'These are related custom production references, not universal specifications. Final material, fit, print color, seams and labels are approved through the project sample.',
+    items: [
+      {
+        image: '/assets/products/customer-production-proof/rash-guard-cases/scarz-long-sleeve-front.webp',
+        label: 'Delivered Project / Front',
+        title: 'Color-block front with team identity',
+        copy: 'The front uses a solid center body, contrast sleeves and direct chest branding for a clean academy or national-team visual direction.',
+        alt: 'Customer-supplied front photograph of a finished white and purple Scarz long-sleeve custom Rash Guard',
+        evidence: ['Long raglan-style sleeves', 'Contrast body and sleeve panels', 'Centered chest and sleeve branding'],
+      },
+      {
+        image: '/assets/products/customer-production-proof/rash-guard-cases/scarz-long-sleeve-back.webp',
+        label: 'Delivered Project / Back',
+        title: 'Rear identity and sleeve mark continuity',
+        copy: 'The back view documents the large rear identifier, sleeve logo positions and consistent color blocking across the garment.',
+        alt: 'Customer-supplied back photograph of a finished white and purple Scarz long-sleeve custom Rash Guard with Argentina graphics',
+        evidence: ['Large rear team identifier', 'Repeated sleeve brand positions', 'Front-to-back color consistency'],
+      },
+      {
+        image: '/assets/products/customer-production-proof/rash-guard-cases/athleta-long-sleeve-front.webp',
+        label: 'Delivered Project / Front',
+        title: 'Contour-line all-over graphic treatment',
+        copy: 'This project uses continuous contour artwork across the torso and sleeves with a contrasting upper-chest panel for a more graphic private-label direction.',
+        alt: 'Customer-supplied front photograph of a finished black and white Athleta long-sleeve custom Rash Guard with contour-line graphics',
+        evidence: ['All-over contour sublimation direction', 'Contrasting upper-chest panel', 'Front chest and sleeve logo placement'],
+      },
+      {
+        image: '/assets/products/customer-production-proof/rash-guard-cases/athleta-long-sleeve-back.webp',
+        label: 'Delivered Project / Back',
+        title: 'Full rear pattern with controlled brand zone',
+        copy: 'The rear view shows how the repeating line pattern can continue across the main body while a dedicated upper panel preserves logo clarity.',
+        alt: 'Customer-supplied back photograph of a finished black and white Athleta long-sleeve custom Rash Guard with contour-line graphics',
+        evidence: ['Continuous rear-body artwork', 'Defined upper-back logo zone', 'Visible panel and seam alignment'],
+      },
+    ],
+  },
+};
+
 export default function RashGuardLanding({ product }: { product: Product }) {
   const content = RASH_GUARD_LANDING_CONTENT[product.id as RashGuardProductId];
   const gallery = product.images ?? [product.image];
   const isSamurai = product.id === 'samurai-graphic-rash-guard';
   const isBlueTeam = product.id === 'blue-team-rash-guard';
+  const customerCases = CUSTOMER_RASH_GUARD_CASES[product.id as RashGuardProductId];
   const detailImages = isSamurai ? gallery.slice(1) : gallery.slice(1, 4);
   const detailContent = isSamurai ? SAMURAI_DETAIL_CONTENT : STANDARD_DETAIL_CONTENT;
   const faqItems = isSamurai ? SAMURAI_FAQ_ITEMS : STANDARD_FAQ_ITEMS;
@@ -263,6 +360,32 @@ export default function RashGuardLanding({ product }: { product: Product }) {
           items={CUSTOMER_RASH_GUARD_PROOF}
         />
       )}
+
+      <section className="rg-customer-case-section" aria-labelledby="rg-customer-case-title">
+        <div className="rg-section-heading">
+          <p className="rg-eyebrow">{customerCases.eyebrow}</p>
+          <h2 id="rg-customer-case-title">{customerCases.title}</h2>
+          <p>{customerCases.intro}</p>
+        </div>
+        <div className={`rg-customer-case-grid${customerCases.items.length === 1 ? ' is-single' : ''}`}>
+          {customerCases.items.map((item) => (
+            <article key={item.image}>
+              <div className="rg-customer-case-image">
+                <img src={item.image} alt={item.alt} width="1600" height="1200" loading="lazy" />
+              </div>
+              <div className="rg-customer-case-copy">
+                <span>{item.label}</span>
+                <h3>{item.title}</h3>
+                <p>{item.copy}</p>
+                <ul aria-label="Visible project evidence">
+                  {item.evidence.map((evidence) => <li key={evidence}>{evidence}</li>)}
+                </ul>
+              </div>
+            </article>
+          ))}
+        </div>
+        <p className="rg-customer-case-note"><strong>Project context:</strong> {customerCases.note}</p>
+      </section>
 
       <section className="rg-custom-section">
         <div>
