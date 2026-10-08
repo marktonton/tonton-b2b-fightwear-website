@@ -25,8 +25,30 @@ const DETAIL_PANELS = [
   { image: `${ASSET_ROOT}/training-applications.webp`, eyebrow: 'TRAINING APPLICATIONS', title: 'Built around high-output movement', copy: 'Illustrated scenarios show the intended movement range across combat drills, squats, lunges and HIIT conditioning.', alt: 'Illustrated MMA, gym squat and HIIT lunge training scenarios for side-split fight shorts' },
 ] as const;
 
+const CUSTOMER_PROOF = [
+  {
+    image: 'assets/products/customer-production-proof/customer-layered-shorts-construction.webp',
+    title: 'Layered shorts construction',
+    copy: 'A customer-supplied close-up shows the inner layer, finished shell hem and seam execution on a completed custom project.',
+    alt: 'Customer-supplied close-up of layered custom fight shorts construction',
+  },
+  {
+    image: 'assets/products/customer-production-proof/customer-coordinated-training-set.webp',
+    title: 'Coordinated training set',
+    copy: 'A delivered set demonstrates how shorts, compression layers and a matching top can share one approved color and branding direction.',
+    alt: 'Customer-supplied photograph of a coordinated custom training shorts and top set',
+  },
+  {
+    image: 'assets/products/customer-production-proof/customer-sublimated-rash-guard.webp',
+    title: 'Related fightwear program',
+    copy: 'The finished Rash Guard shows how panel artwork, contrast seams and team identity can extend across a coordinated fightwear program.',
+    alt: 'Customer-supplied photograph of a finished custom sublimated Rash Guard',
+  },
+] as const;
+
 export default function CamoMmaShortsLanding({ product }: { product: Product }) {
-  const whatsappHref = `https://wa.me/8617722438678?text=${encodeURIComponent(`Hello TONTON, I would like a quote for ${product.name}. Please advise MOQ, sample timing and customization options.`)}`;
+  const builderHref = { pathname: '/project-builder', query: { product: 'MMA Fight Shorts', reference: product.name, source: 'product-page' } };
+  const whatsappHref = `https://wa.me/8617722438678?text=${encodeURIComponent(`Hello TONTON, I would like pricing and a sample plan for ${product.name}. My estimated quantity is: `)}`;
 
   return (
     <div className="rg-product-page mf-product-page">
@@ -39,6 +61,11 @@ export default function CamoMmaShortsLanding({ product }: { product: Product }) 
         <Link href="/customization/sublimated-bjj-mma-shorts">Custom BJJ &amp; MMA Shorts</Link><span>/</span>
         <span aria-current="page">{product.name}</span>
       </nav>
+
+      <section className="procurement-banner" aria-label="Custom MMA shorts project entry">
+        <div><p>FOR FIGHTWEAR BRANDS, GYMS &amp; TEAMS</p><strong>Align fabric, fit, side split, artwork and packing before sampling.</strong></div>
+        <div><Link href={builderHref}>Start Your Product Brief</Link><a href={whatsappHref} target="_blank" rel="noopener noreferrer">Quote on WhatsApp</a></div>
+      </section>
 
       <section className="rg-product-hero mf-product-hero">
         <div className="rg-product-hero-media mf-hero-media"><img src={resolveImage(`${ASSET_ROOT}/black-camo-construction.webp`)} alt="Men's custom camo side-split MMA fight shorts construction" /></div>
@@ -60,7 +87,7 @@ export default function CamoMmaShortsLanding({ product }: { product: Product }) 
             <li>No exposed storage pockets</li>
           </ul>
           <div className="rg-hero-actions">
-            <Link className="rg-btn-primary" href={{ pathname: '/project-builder', query: { product: 'MMA Fight Shorts', reference: product.name, source: 'product-page' } }}>Build This Product Brief</Link>
+            <Link className="rg-btn-primary" href={builderHref}>Build This Product Brief</Link>
             <a className="rg-btn-secondary" href={whatsappHref} target="_blank" rel="noopener noreferrer">Quote on WhatsApp</a>
           </div>
         </div>
@@ -109,6 +136,17 @@ export default function CamoMmaShortsLanding({ product }: { product: Product }) 
         <div className="mf-detail-grid">{DETAIL_PANELS.map((item, index) => <figure key={item.image}><div><img src={resolveImage(item.image)} alt={item.alt} loading="lazy" /></div><figcaption><span>{String(index + 1).padStart(2, '0')} / {item.eyebrow}</span><h3>{item.title}</h3><p>{item.copy}</p></figcaption></figure>)}</div>
       </section>
 
+      <section className="customer-proof-section" aria-labelledby="customer-proof-title">
+        <div className="rg-section-heading">
+          <p className="rg-eyebrow">Customer-Supplied Product Proof</p>
+          <h2 id="customer-proof-title">Real custom work, photographed after delivery</h2>
+          <p>These are customer-supplied photographs from completed custom projects. They demonstrate actual construction and coordinated development capability; each project has its own approved specification.</p>
+        </div>
+        <div className="customer-proof-grid">
+          {CUSTOMER_PROOF.map((item, index) => <figure key={item.image}><div><img src={resolveImage(item.image)} alt={item.alt} loading="lazy" /></div><figcaption><span>REAL PROJECT {String(index + 1).padStart(2, '0')}</span><h3>{item.title}</h3><p>{item.copy}</p></figcaption></figure>)}
+        </div>
+      </section>
+
       <section className="rg-custom-section">
         <div><p className="rg-eyebrow">Customization Scope</p><h2>Turn the base construction into your team short</h2><p>Use the product as a starting point, then confirm artwork, fit and construction on the digital mockup and physical sample.</p></div>
         <ol>
@@ -117,6 +155,15 @@ export default function CamoMmaShortsLanding({ product }: { product: Product }) 
           <li><span>03</span><div><h3>Fit &amp; split height</h3><p>Confirm short length, leg opening and split position against the intended training use and size range.</p></div></li>
           <li><span>04</span><div><h3>Labels &amp; packaging</h3><p>Add approved private labels, size identification and packing requirements for the production brief.</p></div></li>
         </ol>
+      </section>
+
+      <section className="buyer-brief-section" aria-labelledby="buyer-brief-title">
+        <div className="buyer-brief-heading"><p className="rg-eyebrow">START WITHOUT FINAL ARTWORK</p><h2 id="buyer-brief-title">What to send—and what you receive next</h2><p>A clear brief lets our team check construction, artwork and commercial requirements together instead of treating the quotation as a price-only request.</p></div>
+        <div className="buyer-brief-columns">
+          <article><span>YOU SEND</span><ul><li>Estimated quantity and size range</li><li>Logo, artwork or reference images</li><li>Target colors and intended use</li><li>Destination and required timing</li><li>Label and packaging requirements</li></ul></article>
+          <article><span>WE REVIEW</span><ul><li>Fit, fabric and side-split direction</li><li>Waist, reinforcement and construction</li><li>Sublimation artwork placement</li><li>Sample route and project quotation</li><li>Open specification questions before sampling</li></ul></article>
+        </div>
+        <div className="buyer-brief-actions"><Link href={builderHref}>Build This MMA Shorts Brief</Link><a href={whatsappHref} target="_blank" rel="noopener noreferrer">Quote on WhatsApp</a></div>
       </section>
 
       <section className="mf-use-section" aria-labelledby="mf-use-title">
