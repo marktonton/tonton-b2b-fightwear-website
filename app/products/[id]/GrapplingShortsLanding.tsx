@@ -5,6 +5,7 @@ import ProductSpecificationTable from '../../../components/ProductSpecificationT
 import RelatedResources from '../../../components/RelatedResources';
 import ProductLandingLinks from '../../../components/ProductLandingLinks';
 import AnswerEvidencePanel from '../../../components/AnswerEvidencePanel';
+import CustomerProjectProof from '../../../components/CustomerProjectProof';
 
 type Product = { id: string; name: string; image: string; images?: string[]; description: string; features?: string[] };
 
@@ -32,6 +33,15 @@ const SAMPLE_DETAIL_CONTENT = [
   { title: 'Anti-slip silicone grip', copy: 'The internal silicone strip creates added grip against the inner layer to help control waistband movement.', alt: 'Close-up of the silicone anti-slip grip strip inside the waistband' },
   { title: 'Production size reference', copy: 'An XS–3XL reference chart gives buyers a clear starting point; final measurements are confirmed with the approved specification.', alt: 'XS to 3XL custom grappling shorts size chart' },
 ] as const;
+
+const CUSTOMER_LAYERED_SHORTS_PROOF = [{
+  image: 'assets/products/customer-production-proof/customer-honeycomb-2in1-shorts-flatlay.webp',
+  label: 'DELIVERED PROJECT',
+  title: 'Layered 2-in-1 shorts with high side clearance',
+  description: 'This customer-supplied flat-lay documents a related two-layer short with a printed outer shell, visible inner layer and adjustable drawcord waist.',
+  alt: 'Customer-supplied grey honeycomb print two-in-one grappling shorts with white inner liner and drawstring waistband',
+  signals: ['Visible inner compression layer', 'Drawcord and elastic waist control', 'High side opening with finished edge'],
+}] as const;
 
 export default function GrapplingShortsLanding({ product }: { product: Product }) {
   const content = HIGH_SPLIT_GRAPPLING_SHORTS_CONTENT;
@@ -130,6 +140,12 @@ export default function GrapplingShortsLanding({ product }: { product: Product }
           })}
         </div>
       </section>
+
+      <CustomerProjectProof
+        title="A delivered 2-in-1 construction reference"
+        intro="The photograph provides a real finished-product reference for buyers comparing liner coverage, waist control and side-opening construction before sampling."
+        items={CUSTOMER_LAYERED_SHORTS_PROOF}
+      />
 
       <section className="rg-custom-section">
         <div><p className="rg-eyebrow">Customization Options</p><h2>Build the shorts around your fightwear brand</h2><p>As a custom grappling shorts manufacturer, TONTON develops the visual direction and garment specification together before sampling.</p></div>

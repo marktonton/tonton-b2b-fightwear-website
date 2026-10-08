@@ -5,6 +5,7 @@ import ProductSpecificationTable from '../../../components/ProductSpecificationT
 import RelatedResources from '../../../components/RelatedResources';
 import ProductLandingLinks from '../../../components/ProductLandingLinks';
 import AnswerEvidencePanel from '../../../components/AnswerEvidencePanel';
+import CustomerProjectProof from '../../../components/CustomerProjectProof';
 
 type Product = { id: string; name: string; image: string; images?: string[]; description: string; features?: string[] };
 
@@ -43,6 +44,25 @@ const CUSTOMER_PROOF = [
     title: 'Related fightwear program',
     copy: 'The finished Rash Guard shows how panel artwork, contrast seams and team identity can extend across a coordinated fightwear program.',
     alt: 'Customer-supplied photograph of a finished custom sublimated Rash Guard',
+  },
+] as const;
+
+const CUSTOMER_WEAR_PROOF = [
+  {
+    image: 'assets/products/customer-production-proof/customer-mindcore-mma-shorts-front-wear.webp',
+    label: 'REAL-WORLD FIT 01',
+    title: 'Short athletic cut in use',
+    description: 'A customer-supplied front view shows a finished short-length MMA training short worn in a combat-sport setting.',
+    alt: 'Customer athlete wearing grey Mindcore MMA training shorts with a broad elastic waistband',
+    signals: ['Broad elastic waistband', 'Short, movement-focused leg length', 'Clean exterior logo placement'],
+  },
+  {
+    image: 'assets/products/customer-production-proof/customer-mindcore-mma-kit-cage-wear.webp',
+    label: 'REAL-WORLD FIT 02',
+    title: 'Coordinated MMA training kit',
+    description: 'A related customer project pairs the shorts with a matching short-sleeve Rash Guard for a consistent gym or fight-team identity.',
+    alt: 'Customer athlete wearing a coordinated grey Mindcore MMA Rash Guard and training shorts beside a cage',
+    signals: ['Matching top-and-shorts color direction', 'Close-fit short-sleeve Rash Guard', 'Team branding across the set'],
   },
 ] as const;
 
@@ -146,6 +166,12 @@ export default function CamoMmaShortsLanding({ product }: { product: Product }) 
           {CUSTOMER_PROOF.map((item, index) => <figure key={item.image}><div><img src={resolveImage(item.image)} alt={item.alt} loading="lazy" /></div><figcaption><span>REAL PROJECT {String(index + 1).padStart(2, '0')}</span><h3>{item.title}</h3><p>{item.copy}</p></figcaption></figure>)}
         </div>
       </section>
+
+      <CustomerProjectProof
+        title="See related MMA shorts in a real training environment"
+        intro="These customer-supplied wear photographs add fit and use-context evidence beyond studio product views. They show related custom programs, not a universal specification for every short."
+        items={CUSTOMER_WEAR_PROOF}
+      />
 
       <section className="rg-custom-section">
         <div><p className="rg-eyebrow">Customization Scope</p><h2>Turn the base construction into your team short</h2><p>Use the product as a starting point, then confirm artwork, fit and construction on the digital mockup and physical sample.</p></div>

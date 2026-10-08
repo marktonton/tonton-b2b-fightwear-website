@@ -4,6 +4,7 @@ import { RASH_GUARD_LANDING_CONTENT, type RashGuardProductId } from '../../../li
 import ProductSpecificationTable from '../../../components/ProductSpecificationTable';
 import RelatedResources from '../../../components/RelatedResources';
 import ProductLandingLinks from '../../../components/ProductLandingLinks';
+import CustomerProjectProof from '../../../components/CustomerProjectProof';
 import AnswerEvidencePanel from '../../../components/AnswerEvidencePanel';
 
 type Product = {
@@ -122,6 +123,15 @@ const BLUE_TEAM_PRODUCT_VIEWS = [
     alt: 'Back view of the blue Elite Team Rash Guard showing rear panel and neck branding',
   },
 ] as const;
+
+const CUSTOMER_RASH_GUARD_PROOF = [{
+  image: 'assets/products/customer-production-proof/customer-kuzushi-rash-guard-event-wear.webp',
+  label: 'EVENT WEAR REFERENCE',
+  title: 'Private-label short-sleeve Rash Guard in use',
+  description: 'A customer-supplied event photograph shows a related short-sleeve team Rash Guard worn in a live combat-sport environment.',
+  alt: 'Customer athlete wearing a black Kuzushi short-sleeve private-label Rash Guard at a combat sports event',
+  signals: ['Close athletic torso fit', 'Short raglan-style sleeve direction', 'High-contrast chest branding'],
+}] as const;
 
 export default function RashGuardLanding({ product }: { product: Product }) {
   const content = RASH_GUARD_LANDING_CONTENT[product.id as RashGuardProductId];
@@ -245,6 +255,14 @@ export default function RashGuardLanding({ product }: { product: Product }) {
         <div className="rg-section-heading"><p className="rg-eyebrow">Added Sample Evidence</p><h2 id="rg-evidence-title">See the seams, panel transition and fabric surface</h2><p>Three original close-up photographs document construction details that buyers can review alongside fit, opacity and artwork.</p></div>
         <div className="rg-evidence-grid">{CONSTRUCTION_EVIDENCE.map((item, index) => <figure key={item.image}><div><img src={item.image} alt={item.alt} width="1152" height="2048" loading="lazy" /></div><figcaption><span>{String(index + 1).padStart(2, '0')}</span><h3>{item.title}</h3><p>{item.copy}</p></figcaption></figure>)}</div>
       </section>
+
+      {product.id === 'white-logo-rash-guard' && (
+        <CustomerProjectProof
+          title="See a related private-label Rash Guard in a real event setting"
+          intro="This field image supports the private-label use case with visible fit and branding evidence. It documents a separate customer project rather than the exact white base style shown above."
+          items={CUSTOMER_RASH_GUARD_PROOF}
+        />
+      )}
 
       <section className="rg-custom-section">
         <div>
