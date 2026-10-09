@@ -16,6 +16,8 @@ import { isTrainingShortsLandingProduct, TRAINING_SHORTS_LANDING_CONTENT } from 
 import CamoMmaShortsLanding from './CamoMmaShortsLanding';
 import { CAMO_MMA_SHORTS_CONTENT, CAMO_MMA_SHORTS_FAQS, isCamoMmaShorts } from '../../../lib/camo-mma-shorts-product';
 import { ORGANIZATION_REFERENCE } from '../../../lib/site-entity';
+import CatalogProductLanding from './CatalogProductLanding';
+import { CATALOG_PRODUCT_CONTENT, isCatalogProduct } from '../../../lib/catalog-product-content';
 
 const SITE_URL = 'https://www.tontongear.com';
 const products = productsData.products;
@@ -86,6 +88,8 @@ export function generateMetadata({ params }: PageProps): Metadata {
         ? TRAINING_SHORTS_LANDING_CONTENT[product.id]
         : isCamoMmaShorts(product.id)
           ? CAMO_MMA_SHORTS_CONTENT
+          : isCatalogProduct(product.id)
+            ? CATALOG_PRODUCT_CONTENT[product.id]
           : null;
   const title = landingContent?.seoTitle ?? getProductTitle(product);
   const description = landingContent?.seoDescription ?? getProductDescription(product);
@@ -95,7 +99,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
     title: { absolute: title },
     description,
     alternates: { canonical: url },
-    robots: isHighSplitGrapplingShorts(product.id) || isTrainingShortsLandingProduct(product.id) || isCamoMmaShorts(product.id) ? { index: true, follow: true } : undefined,
+    robots: isHighSplitGrapplingShorts(product.id) || isTrainingShortsLandingProduct(product.id) || isCamoMmaShorts(product.id) || isCatalogProduct(product.id) ? { index: true, follow: true } : undefined,
     openGraph: {
       type: 'website',
       url,
@@ -321,6 +325,63 @@ export default function ProductDetailPage({ params }: PageProps) {
       <>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([productSchema, webPageSchema, breadcrumbSchema, faqSchema]) }} />
         <RashGuardLanding product={product} />
+      </>
+    );
+  }
+
+  if (isCatalogProduct(product.id)) {
+    const content = CATALOG_PRODUCT_CONTENT[product.id];
+    const galleryImages = 'images' in product ? product.images : [product.image];
+    const productUrl = `${SITE_URL}/products/${product.id}`;
+    const productSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      '@id': `${productUrl}#product`,
+      name: content.headline,
+      description: content.seoDescription,
+      image: galleryImages.map(getAbsoluteImage),
+      sku: product.id,
+      category: content.categoryLabel,
+      material: content.material,
+      color: content.color,
+      url: productUrl,
+      brand: { '@type': 'Brand', name: 'TONTON' },
+      manufacturer: { '@id': ORGANIZATION_REFERENCE['@id'] },
+      additionalProperty: content.specificationRows.map(([name, value]) => ({ '@type': 'PropertyValue', name, value })),
+    };
+    const webPageSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: content.headline,
+      description: content.seoDescription,
+      url: productUrl,
+      dateModified: getRouteModifiedDate(`/products/${product.id}`),
+      reviewedBy: CONTENT_REVIEWER,
+      mainEntity: { '@id': `${productUrl}#product` },
+    };
+    const breadcrumbSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+        { '@type': 'ListItem', position: 2, name: content.categoryLabel, item: `${SITE_URL}${content.categoryHref}` },
+        { '@type': 'ListItem', position: 3, name: content.headline, item: productUrl },
+      ],
+    };
+    const faqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: content.faqs.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: { '@type': 'Answer', text: item.answer },
+      })),
+    };
+
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([productSchema, webPageSchema, breadcrumbSchema, faqSchema]) }} />
+        <CatalogProductLanding product={product} />
       </>
     );
   }

@@ -23,10 +23,10 @@
     {
       "id": "olive-basic-rash-guard",
       "categoryId": "sublimated-rash-guards",
-      "name": "Essential Sublimated Rash Guard",
+      "name": "Olive Short-Sleeve Team Rash Guard",
       "image": "assets/products/rashguard-olive-main.png",
-      "description": "Minimal style for gym uniforms.",
-      "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
+      "description": "Clean olive short-sleeve Rash Guard direction for BJJ academies and MMA gyms building repeatable team uniforms.",
+      "features": ["10 PCS MOQ", "Short-Sleeve Team Fit", "Custom Colors & Logos", "Fabric Confirmed by Sample"]
     },
     {
       "id": "blue-team-rash-guard",
@@ -80,16 +80,16 @@
       "categoryId": "sublimated-rash-guards",
       "name": "Fuji Art Performance Rash Guard",
       "image": "assets/products/rashguard-long-fuji-v2.png",
-      "description": "Premium print panel with detailed graphics.",
-      "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
+      "description": "Long-sleeve custom Rash Guard direction with large-format sleeve graphics, contrast panels and private-label branding.",
+      "features": ["10 PCS MOQ", "Long-Sleeve Coverage", "Full-Sleeve Artwork", "Panel-Aware Mockup"]
     },
     {
       "id": "black-gold-rash-guard",
       "categoryId": "sublimated-rash-guards",
-      "name": "Black Gold Signature Rash Guard",
+      "name": "Signature Long-Sleeve Team Rash Guard",
       "image": "assets/products/rashguard-long-red-v2.png",
-      "description": "High-end brand style for BJJ.",
-      "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
+      "description": "Clean color-block long-sleeve Rash Guard direction with direct chest branding for academies and private-label teams.",
+      "features": ["10 PCS MOQ", "Long-Sleeve Team Fit", "Color-Block Panels", "Private Label Options"]
     },
     {
       "id": "high-split-grappling-shorts",
@@ -172,8 +172,8 @@
       "categoryId": "sublimated-bjj-mma-shorts",
       "name": "Classic Custom MMA Team Kit",
       "image": "assets/products/kit-bw-v2.png",
-      "description": "Matching rash guard and shorts set.",
-      "features": ["10 PCS MOQ", "Free Mockup", "Sublimation Printing"]
+      "description": "Coordinated MMA academy ordering direction for matching Rash Guard and fight shorts artwork, team sizing and repeat-order specifications.",
+      "features": ["10 SET MOQ", "Coordinated Team Artwork", "Mixed Athlete Sizing", "Sample Approval"]
     }
   ]
 }
