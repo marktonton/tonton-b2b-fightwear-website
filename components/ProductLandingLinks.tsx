@@ -3,6 +3,26 @@ import productsData from '../data/products.json';
 import { resolveImage } from '../lib/image-resolver';
 
 const CURATED_RELATED: Record<string, string[]> = {
+  'olive-basic-rash-guard': [
+    'blue-team-rash-guard',
+    'white-logo-rash-guard',
+    'fuji-art-rash-guard',
+  ],
+  'fuji-art-rash-guard': [
+    'samurai-graphic-rash-guard',
+    'black-gold-rash-guard',
+    'olive-basic-rash-guard',
+  ],
+  'black-gold-rash-guard': [
+    'olive-basic-rash-guard',
+    'fuji-art-rash-guard',
+    'white-logo-rash-guard',
+  ],
+  'black-white-mma-kit': [
+    'pro-mma-shorts-07',
+    'high-split-grappling-shorts',
+    'custom-logo-shorts',
+  ],
   'high-split-grappling-shorts': [
     'lightweight-quick-dry-training-shorts',
     'custom-logo-shorts',
