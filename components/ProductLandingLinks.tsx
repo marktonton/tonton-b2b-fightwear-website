@@ -119,6 +119,7 @@ export default function ProductLandingLinks({ productId }: { productId: string }
         </div>
       )}
 
+      {['blue-team-rash-guard', 'white-logo-rash-guard', 'high-split-grappling-shorts'].includes(productId) && <nav className="product-order-guides" aria-label="Size and kit procurement guides"><strong>Planning an academy or brand order?</strong><Link href="/resources/custom-fightwear-size-quantity-planning">Plan sizes & quantities →</Link><Link href="/resources/custom-rash-guard-shorts-team-kit-guide">Plan a Rash Guard & shorts kit →</Link></nav>}
       <div className="product-link-hub-cta">
         <div>
           <p>PROJECT BUILDER</p>

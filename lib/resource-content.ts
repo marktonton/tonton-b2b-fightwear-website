@@ -12,6 +12,10 @@ export type ResourcePage = {
   answer: string;
   updated: string;
   cluster: 'rash-guard' | 'training-shorts' | 'grappling-shorts' | 'project';
+  snapshotHeading?: string;
+  planningTable?: { heading: string; note: string; columns: string[]; rows: string[][]; after: string };
+  builderHref?: string;
+  relatedSolutions?: boolean;
   media?: Array<{ src: string; alt: string; caption: string }>;
   table: Array<[string, string]>;
   decisionRows: Array<[choice: string, bestFor: string, buyerCheck: string]>;
@@ -24,6 +28,102 @@ export type ResourcePage = {
 };
 
 export const RESOURCE_PAGES: ResourcePage[] = [
+  {
+    slug: 'custom-fightwear-size-quantity-planning',
+    title: 'Custom Fightwear Size & Quantity Planning Guide',
+    description: 'Prepare separate Rash Guard and shorts size allocations, distinguish body and garment measurements, and plan adult or youth academy orders with a worked quantity example.',
+    eyebrow: 'TEAMWEAR SIZE & ORDER PLANNING',
+    answer: 'Plan custom fightwear quantities from a confirmed member or customer list, not a universal size ratio. Record Rash Guard and shorts sizes separately, distinguish body measurements from finished-garment measurements, and check the selected pattern on a fit sample. Adult and youth fits need separate review. Any spare stock is an explicit purchasing decision, not an assumed allowance.',
+    updated: '2026-10-15', cluster: 'project',
+    snapshotHeading: 'Prepare the size information before ordering',
+    table: [
+      ['Body measurements', 'Measurements taken on the wearer; identify the measuring points and units'],
+      ['Garment measurements', 'Measurements taken on the selected garment laid flat, without stretching unless the method says otherwise'],
+      ['Rash Guard size list', 'Quantity per approved top size and sleeve direction'],
+      ['Shorts size list', 'Quantity per approved shorts size, cut and liner direction'],
+      ['Youth requirements', 'Separate fit review and approved measurement chart; do not simply scale adult sizes'],
+      ['Order approval', 'Confirm the chart version, quantities, units and permitted measurement tolerances with TONTON'],
+    ],
+    decisionRows: [
+      ['Known academy members', 'A named roster with an agreed fit reference', 'Collect top and shorts size independently; reconcile the order totals'],
+      ['Retail collection', 'An independent brand allocating stock by style and size', 'Use your own sales or preorder evidence; no standard size ratio is assumed'],
+      ['Adult and youth program', 'A club serving more than one fit group', 'Keep patterns, size lists and sample approvals separate'],
+    ],
+    planningTable: {
+      heading: 'Worked example: 24 members, two separate size lists',
+      note: 'Illustration only: these are invented order quantities for explaining the arithmetic, not a recommended size ratio or a TONTON size chart. Assume one Rash Guard and one pair of shorts per member, using size labels already confirmed for this example.',
+      columns: ['Illustrative size label', 'Rash Guards', 'Shorts'],
+      rows: [['XS', '2', '1'], ['S', '5', '4'], ['M', '8', '9'], ['L', '6', '7'], ['XL', '3', '3'], ['Total garment units', '24', '24']],
+      after: 'The order contains 24 coordinated sets and 48 garment units. Top and shorts allocations differ because the same person may wear different sizes. List spares, extra tops, colorways or sleeve variants separately; confirm how MOQ applies to each actual order configuration.',
+    },
+    notFor: ['This guide is not a garment measurement chart or a recommendation to order fixed percentages in each size.', 'A body chest circumference cannot be compared directly with a flat garment chest width. Even doubling a flat width does not determine the correct compression fit.', 'One brand’s M, L or XL does not establish the equivalent size in a different pattern.'],
+    source: 'TONTON project-brief fields and sample-review workflow. The 24-member allocation is a clearly labeled illustrative calculation; no unverified body or garment dimensions are published.',
+    sections: [
+      { heading: 'Use one measuring method and one unit system', paragraphs: ['For body measurements, follow the measuring points requested for the selected pattern, with the tape level and without pulling it tight. Record the intended close or relaxed fit alongside the measurements. For a reference garment, lay it flat and identify exactly where each width or length is measured.', 'Ask for the measurement chart and method for the actual style before converting member measurements into order sizes. Confirm whether a waist value is relaxed, stretched, flat width or circumference. Keep centimeters and inches clearly labeled and agree the tolerance before sample approval.'] },
+      { heading: 'Check the complete kit during movement', bullets: ['Try the selected Rash Guard and shorts together on the intended wearer.', 'Review reaching, rotation, sitting and squatting; check opacity and seam comfort under the intended fit.', 'Check the Rash Guard hem, shorts waistband and liner together for unwanted overlap or pressure.', 'Record the sample size and chart version, and resolve fit changes before collecting the final size allocation.'] },
+      { heading: 'Reconcile the roster before the order is approved', paragraphs: ['Use one row per wearer or one consolidated size list, then total each garment separately. Check sleeve variants, adult or youth groups, colors and any names or numbers against the approved artwork list. Remove duplicate member entries and keep personal details out of files that do not need them.', 'Mark the quantities as confirmed or still being collected. If you choose spare stock, state its sizes and quantity explicitly. TONTON reviews the applicable minimums and development requirements against the complete brief.'] },
+      { heading: 'Keep a clear record for new members and reorders', paragraphs: ['Retain the approved measurement chart, fit sample, style reference and artwork version. A reorder should specify what stays the same and which quantities or sizes change. Confirm material availability, color references, MOQ and schedule again rather than assuming an earlier order automatically sets the new terms.'] },
+    ],
+    faqs: [
+      ['Should Rash Guards and shorts use the same size allocation?', 'Not automatically. Collect the top and shorts sizes separately because fit preferences and body proportions can differ. If you are ordering one set per member, both garment totals should match the member count, even when the size distribution differs.'],
+      ['Can I use another brand’s size chart?', 'Use it as a clearly identified reference only. Confirm the actual TONTON pattern, measuring method and sample fit before selecting order sizes; size labels are not universal.'],
+      ['Does this guide provide a TONTON size chart?', 'No. It explains measurement and quantity planning. Request the approved chart for the selected style, adult or youth fit and sample version before committing to dimensions or sizes.'],
+      ['How many garments are in an order for 24 matching sets?', 'If every set contains one Rash Guard and one pair of shorts, 24 sets contain 24 Rash Guards plus 24 pairs of shorts: 48 garment units. Extra garments and spares are counted separately.'],
+    ],
+    relatedProduct: { label: 'Inspect the Blue Team Rash Guard fit reference', href: '/products/blue-team-rash-guard' },
+    relatedGuides: ['custom-rash-guard-shorts-team-kit-guide', 'custom-fightwear-sampling-moq', 'fightwear-quality-inspection-checklist'],
+    builderHref: '/project-builder?product=Coordinated+Team+Kit&use=Team+%2F+academy+uniform&reference=Size+and+quantity+planning&source=size-quantity-guide',
+    relatedSolutions: true,
+  },
+  {
+    slug: 'custom-rash-guard-shorts-team-kit-guide',
+    title: 'Custom Rash Guard & Shorts Team Kit Buying Guide',
+    description: 'Plan a coordinated Rash Guard and shorts set: compare garment specifications, align artwork and colors, approve the worn kit and prepare a clear academy or private-label brief.',
+    eyebrow: 'COORDINATED FIGHTWEAR KIT PROCUREMENT',
+    answer: 'A custom Rash Guard and shorts kit is two garments developed as one coordinated project. Specify the fit, fabric and construction of each garment separately, then approve shared colors, artwork placement and the worn combination together. A matching graphic does not imply matching fabric, the same size label or identical order minimums.',
+    updated: '2026-10-15', cluster: 'project',
+    snapshotHeading: 'Define both garments and their shared identity',
+    table: [
+      ['Rash Guard', 'Sleeve length, fit, fabric direction, opacity, seams and lower-hem requirement'],
+      ['Shorts', 'Length, side split, shell, liner option, waistband and intended use'],
+      ['Shared artwork', 'Logo files, color references and placement approved on each garment'],
+      ['Size allocation', 'Separate top and shorts size quantities, linked to the same kit program'],
+      ['Branding and packing', 'Neck branding, labels, individual names and packing requirements when included'],
+      ['Approval', 'Review both garments together; record artwork and specification versions separately'],
+    ],
+    decisionRows: [
+      ['Academy uniform kit', 'A coordinated identity for members and training teams', 'Confirm top and shorts allocations, names and repeat-order records'],
+      ['Private-label collection', 'A brand offering a coordinated Rash Guard and shorts range', 'Confirm fit, style variants, labels, packing and quantity by SKU'],
+      ['High-split 2-in-1 shorts direction', 'Buyers comparing a high side opening with an inner layer', 'Inspect liner coverage, waistband comfort and the worn combination; review event requirements separately'],
+    ],
+    planningTable: {
+      heading: 'Example brief: coordinated identity, separate specifications',
+      note: 'This is a planning checklist, not a bundled SKU, fixed price or confirmed compatibility claim. The linked garments are reference directions; TONTON reviews the actual pairing on samples.',
+      columns: ['Review point', 'Rash Guard brief', 'Shorts brief'],
+      rows: [['Silhouette', 'Short or long sleeve; intended close fit', 'Leg length, side split and liner preference'], ['Material', 'Weight, composition, stretch and opacity for review', 'Shell and liner materials for review'], ['Artwork', 'Chest, sleeve and back placement', 'Leg panels, waistband and liner artwork where applicable'], ['Size order', 'Top quantity per approved size', 'Shorts quantity per approved size'], ['Worn sample', 'Hem control and upper-body movement', 'Waist security, liner coverage and leg movement']],
+      after: 'Send a shared color reference and separate front/back artwork notes. Confirm material-specific color reproduction on physical samples, then approve the kit as a whole before bulk production.',
+    },
+    notFor: ['A shared color name or screen image is not a physical color-approval standard across different materials.', 'Do not apply a verified Rash Guard fabric composition to a shorts shell or liner.', 'Do not treat an academy training kit as automatically compliant with a particular competition rule set.'],
+    source: 'TONTON published Blue Team and White Pro Rash Guard references, High-Split 2-in-1 Grappling Shorts product evidence, and the existing sampling and QC workflow. Kit pairings remain subject to project-specific sample review.',
+    sections: [
+      { heading: 'Start with the wearer and buying route', paragraphs: ['For an academy, define the members, adult or youth fit groups and whether the kit is for everyday training or a particular event. For a retail brand, define the target wearer, style count and intended collection identity. Use those requirements to choose the products rather than selecting a matching print first.'] },
+      { heading: 'Compare real product references before choosing the set', paragraphs: ['The Blue Team and White Pro Rash Guard pages provide published 220gsm product references, construction photographs and silicone lower-hem details. The High-Split 2-in-1 Grappling Shorts page shows a separate shorts construction with a high-split shell, inner layer and waistband details.', 'Use these pages to describe your preferred direction. Their individual evidence does not prove that a new pairing is already approved as a kit. Confirm the selected fabrics, measurements and worn combination on your project sample.'] },
+      { heading: 'Approve color and logo placement across both garments', bullets: ['Use the same identified logo and artwork version for the kit.', 'Specify color references and approve reproduction on each selected fabric.', 'Review chest, sleeve, back and leg placements at the intended size and seam boundaries.', 'Confirm how graphics meet at the waist and whether any artwork is hidden by the Rash Guard hem.', 'Keep customer case photographs as production evidence; use your own permitted branding and artwork.'] },
+      { heading: 'Test the worn combination, then record the order', paragraphs: ['Review reaching, rotation and lower-body movement in the complete sample. Check the Rash Guard hem against the shorts waistband, liner coverage, skin-contact areas, opacity and seam comfort. Record changes separately for the top and shorts, then confirm the complete kit again if a change affects their interaction.', 'List the quantity per garment and size, labels, packing, delivery destination and target date. If each wearer receives one top and one pair of shorts, check that both garment totals agree; refer to the size and quantity guide for a worked example.'] },
+      { heading: 'Prepare the next production discussion', paragraphs: ['Send the style references, quantities, artwork status and destination through the Project Builder. TONTON reviews material options, sample requirements and the quotation scope before confirming the applicable MOQ and schedule. A coordinated kit does not imply a fixed package price or a guaranteed shared minimum across all variants.'] },
+    ],
+    faqs: [
+      ['Can I order custom Rash Guards and shorts as a coordinated set?', 'Yes. Choose Coordinated Team Kit in the Project Builder and list both garments, size quantities, artwork and construction requirements. The project review and sample approval confirm the actual pairing.'],
+      ['Will matching colors look identical on different fabrics?', 'Do not assume so from a screen reference. Review the shared color target on the selected Rash Guard, shorts shell and liner materials, and agree the physical samples used for approval.'],
+      ['Can one top size be paired with a different shorts size?', 'Record the two size choices separately in your quantity list. Confirm the measurement charts, fit and any packing requirements for mixed-size sets before approving the order.'],
+      ['How is the price for a custom fightwear kit confirmed?', 'The quote depends on each garment’s material, construction, artwork, quantities, labels and packing, along with delivery requirements. Request a project-specific quote for the complete brief rather than inferring a kit price from a product photograph.'],
+    ],
+    relatedProduct: { label: 'Inspect the High-Split 2-in-1 Shorts reference', href: '/products/high-split-grappling-shorts' },
+    relatedGuides: ['custom-fightwear-size-quantity-planning', 'rash-guard-fabric-construction', 'high-split-grappling-shorts-specifications', 'prepare-artwork-for-sublimation'],
+    builderHref: '/project-builder?product=Coordinated+Team+Kit&reference=Rash+Guard+and+shorts+kit+planning&source=team-kit-guide',
+    relatedSolutions: true,
+  },
+
   {
     slug: 'rash-guard-fabric-construction',
     title: 'Rash Guard Fabric & Construction Guide',

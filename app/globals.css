@@ -4712,3 +4712,10 @@
   .buyer-checklist th, .buyer-checklist td { padding: 12px; font-size: 14px; overflow-wrap: anywhere; }
   .buyer-primary { line-height: 1.5; }
 }
+
+/* Keep worked procurement examples distinct from verified product dimensions. */
+.resource-order-planning > div:first-child > p:last-child { grid-column: 1 / -1; color: #4f5256; font-size: 16px; line-height: 1.7; font-weight: 400; letter-spacing: normal; text-transform: none; }
+.resource-order-planning .resource-decision-table-wrap > p { font-size: 16px; line-height: 1.7; padding: 20px 0 0; color: #4f5256; }
+.resource-order-planning table { min-width: 540px; }
+.product-order-guides { display: flex; gap: 18px; flex-wrap: wrap; align-items: center; padding: 24px 0; line-height: 1.6; }
+.product-order-guides a { text-decoration: underline; text-underline-offset: 4px; font-weight: 700; }
