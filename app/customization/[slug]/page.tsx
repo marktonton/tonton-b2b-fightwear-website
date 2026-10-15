@@ -203,6 +203,22 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
     embedUrl: `${categoryUrl}#rash-guard-video`,
   } : null;
 
+  const brandVideoSchema = isRashGuardPage ? {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    '@id': `${categoryUrl}#rash-guard-brand-video`,
+    name: 'Custom Rash Guard branding and OEM development overview',
+    description: 'A 15-second promotional visualization of Rash Guard neckline labeling, garment details and sublimation design direction for private-label brands, gyms and teams. Final materials and construction are confirmed through the approved sample.',
+    thumbnailUrl: `${SITE_URL}/assets/products/rash-guard-products/video/rash-guard-brand-customization-v2.webp`,
+    uploadDate: '2026-10-15T10:16:56+08:00',
+    duration: 'PT15.084S',
+    contentUrl: `${SITE_URL}/assets/products/rash-guard-products/video/rash-guard-brand-customization-v2.mp4`,
+    embedUrl: `${categoryUrl}#rash-guard-brand-video`,
+    inLanguage: 'en',
+    publisher: { '@id': ORGANIZATION_ID },
+    isPartOf: { '@id': categoryUrl },
+  } : null;
+
   const processSteps = [
     {
       title: 'Define the product brief',
@@ -224,7 +240,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
 
   return (
     <div className={`customization-page customization-page-${category.id}`}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([collectionSchema, breadcrumbSchema, faqSchema, ...(videoSchema ? [videoSchema] : [])]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([collectionSchema, breadcrumbSchema, faqSchema, ...(videoSchema ? [videoSchema] : []), ...(brandVideoSchema ? [brandVideoSchema] : [])]) }} />
 
       {isTrainingShortsPage && (
         <Link className="training-shorts-banner" href={builderHref} aria-label="Start a custom functional training shorts project">
@@ -467,6 +483,28 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
           </div>
         )}
       </section>
+
+      {isRashGuardPage && (
+        <section className="customization-brand-video" id="rash-guard-brand-video" aria-labelledby="brand-video-title">
+          <div className="customization-shell">
+            <div className="customization-section-heading">
+              <div><p className="customization-kicker">CUSTOM RASH GUARD / OEM &amp; ODM</p><h2 id="brand-video-title">Bring your Rash Guard brand direction into focus.</h2></div>
+              <p>A 15-second overview for fightwear brands, BJJ academies and MMA teams exploring custom labeling, garment details and sublimation design.</p>
+            </div>
+            <figure className="customization-brand-video-media">
+              <video controls playsInline preload="none" width="1280" height="720" poster="/assets/products/rash-guard-products/video/rash-guard-brand-customization-v2.webp" aria-label="Custom Rash Guard branding and OEM development overview" aria-describedby="brand-video-caption">
+                <source src="/assets/products/rash-guard-products/video/rash-guard-brand-customization-v2.mp4" type="video/mp4" />
+                <a href="/assets/products/rash-guard-products/video/rash-guard-brand-customization-v2.mp4">Watch the Rash Guard customization overview</a>
+              </video>
+              <figcaption id="brand-video-caption">Promotional visualization of custom Rash Guard development. Confirm fabric, labels, artwork and construction on your approved sample before bulk production.</figcaption>
+            </figure>
+            <div className="customization-brand-video-footer">
+              <p>Share your logo, preferred colors, quantity and size range to discuss a private-label Rash Guard project.</p>
+              <Link className="rg-btn-primary" href={builderHref}>Start Your Rash Guard Project</Link>
+            </div>
+          </div>
+        </section>
+      )}
 
       {isRashGuardPage && (
         <section className="customization-video" id="rash-guard-video">
