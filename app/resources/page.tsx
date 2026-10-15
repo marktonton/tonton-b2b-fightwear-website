@@ -1,3 +1,4 @@
+import BuyerSolutionsLinks from '../../components/BuyerSolutionsLinks';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { RESOURCE_PAGES } from '../../lib/resource-content';
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 export default function ResourcesPage() {
-  const schema = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Custom Fightwear Buyer Resources', url: `${SITE_URL}/resources`, dateModified: '2026-09-22', hasPart: RESOURCE_PAGES.map((item) => ({ '@type': 'Article', name: item.title, url: `${SITE_URL}/resources/${item.slug}`, dateModified: item.updated })) };
+  const schema = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Custom Fightwear Buyer Resources', url: `${SITE_URL}/resources`, dateModified: '2026-10-15', hasPart: RESOURCE_PAGES.map((item) => ({ '@type': 'Article', name: item.title, url: `${SITE_URL}/resources/${item.slug}`, dateModified: item.updated })) };
   return (
     <div className="resource-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
@@ -20,6 +21,7 @@ export default function ResourcesPage() {
         <h1>Build a clearer custom fightwear specification</h1>
         <div><p>Practical, product-linked guidance for brands, gyms, academies and private-label buyers preparing materials, artwork, samples and production requirements.</p><Link href="/project-builder">Build your project brief <span aria-hidden="true">→</span></Link></div>
       </header>
+      <BuyerSolutionsLinks />
       {[
         { id: 'rash-guard', title: 'Rash Guard buyer cluster', copy: 'Material, hem construction and artwork decisions linked to real Rash Guard product examples.' },
         { id: 'training-shorts', title: 'Training Shorts buyer cluster', copy: 'Fabric, ventilation, secure storage and waist-construction guidance for functional training programs.' },

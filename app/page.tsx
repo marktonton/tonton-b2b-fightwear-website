@@ -1,5 +1,7 @@
 'use client';
 
+import BuyerSolutionsLinks from '../components/BuyerSolutionsLinks';
+
 import React, { useState, useEffect } from 'react';
 import { resolveImage } from '../lib/image-resolver';
 import productsDataRaw from '../data/products.json';
@@ -551,6 +553,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      <BuyerSolutionsLinks />
       <RelatedResources />
 
       {/* 4. SEND YOUR INQUIRY */}

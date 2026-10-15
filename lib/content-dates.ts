@@ -1,13 +1,13 @@
 export const CONTENT_REVIEW_DATE = '2026-09-15';
 
 export const ROUTE_LAST_MODIFIED: Record<string, string> = {
-  '/': CONTENT_REVIEW_DATE,
+  '/': '2026-10-15',
   '/collections': CONTENT_REVIEW_DATE,
   '/service-support': '2026-09-21',
   '/factory': CONTENT_REVIEW_DATE,
   '/about': '2026-09-23',
-  '/resources': CONTENT_REVIEW_DATE,
-  '/project-builder': CONTENT_REVIEW_DATE,
+  '/resources': '2026-10-15',
+  '/project-builder': '2026-10-15',
   '/customization/sublimated-rash-guards': '2026-10-15',
   '/customization/sublimated-training-shorts': '2026-09-22',
   '/customization/sublimated-bjj-mma-shorts': '2026-10-15',

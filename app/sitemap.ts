@@ -4,6 +4,8 @@ import { customizationCategories } from '../lib/customization-pages';
 import { getRouteModifiedDate } from '../lib/content-dates';
 import { RESOURCE_PAGES } from '../lib/resource-content';
 
+import { BUYER_SOLUTIONS } from '../lib/buyer-solutions';
+
 const SITE_URL = 'https://www.tontongear.com';
 const modified = (pathname: string) => new Date(`${getRouteModifiedDate(pathname)}T00:00:00.000Z`);
 
@@ -39,5 +41,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...customizationRoutes, ...productRoutes, ...resourceRoutes];
+  const solutionRoutes = BUYER_SOLUTIONS.map((item) => ({ url: `${SITE_URL}/solutions/${item.slug}`, lastModified: new Date('2026-10-15T00:00:00.000Z'), changeFrequency: 'monthly' as const, priority: 0.8 }));
+  return [...solutionRoutes, ...staticRoutes, ...customizationRoutes, ...productRoutes, ...resourceRoutes];
 }
