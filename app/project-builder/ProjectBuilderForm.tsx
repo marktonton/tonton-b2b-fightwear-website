@@ -49,6 +49,7 @@ const initial: FormState = {
 const initialContact: ContactState = { name: '', company: '', email: '', phone: '' };
 
 const MAX_FILE_SIZE = 4 * 1024 * 1024;
+const ALLOWED_EXTENSIONS = new Set(['png', 'jpg', 'jpeg', 'webp', 'pdf', 'ai']);
 
 const productAliases: Record<string, string> = {
   'sublimated-rash-guards': 'Rash Guard',
@@ -75,10 +76,10 @@ function formatSource(value: string | null) {
   return value.replace(/[-_]+/g, ' ').replace(/\b\w/g, (letter) => letter.toUpperCase());
 }
 
-function recordBuilderEvent(action: string, product: string, source: string) {
+function recordBuilderEvent(action: string, product: string, source: string, reference: string) {
   const analyticsWindow = window as typeof window & { dataLayer?: Array<Record<string, string>>; gtag?: (...args: unknown[]) => void };
-  if (analyticsWindow.gtag) analyticsWindow.gtag('event', 'project_builder_action', { action, product_type: product, entry_source: source });
-  else analyticsWindow.dataLayer?.push({ event: 'project_builder_action', action, product_type: product, entry_source: source });
+  if (analyticsWindow.gtag) analyticsWindow.gtag('event', 'project_builder_action', { action, product_type: product, entry_source: source, reference_product: reference });
+  else analyticsWindow.dataLayer?.push({ event: 'project_builder_action', action, product_type: product, entry_source: source, reference_product: reference });
 }
 
 export default function ProjectBuilderForm() {
@@ -89,14 +90,16 @@ export default function ProjectBuilderForm() {
   const [contact, setContact] = useState(initialContact);
   const [attachment, setAttachment] = useState<File | null>(null);
   const [website, setWebsite] = useState('');
+  const [fileError, setFileError] = useState('');
+  const attachmentInput = useRef<HTMLInputElement>(null);
   const [submitStatus, setSubmitStatus] = useState<SubmitStatus>({ state: 'idle', message: '' });
   const startedRef = useRef(false);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const requestedProduct = resolveBuilderProduct(params.get('product'));
-    const reference = params.get('reference')?.trim() ?? '';
-    const source = formatSource(params.get('source'));
+    const reference = params.get('reference')?.trim().slice(0, 240) ?? '';
+    const source = formatSource(params.get('source')?.slice(0, 160) ?? null);
 
     if (requestedProduct) {
       setForm((current) => ({
@@ -137,9 +140,10 @@ export default function ProjectBuilderForm() {
   const email = `mailto:gary@tontonsportswear.com?subject=${encodeURIComponent(`Custom ${form.product} project brief`)}&body=${encodeURIComponent(summary)}`;
 
   const markStarted = () => {
+    if (submitStatus.state === 'success') setSubmitStatus({ state: 'idle', message: '' });
     if (startedRef.current) return;
     startedRef.current = true;
-    recordBuilderEvent('start_form', form.product, entrySource);
+    recordBuilderEvent('start_form', form.product, entrySource, referenceProduct);
   };
 
   const setContactValue = (key: keyof ContactState, value: string) => {
@@ -147,22 +151,25 @@ export default function ProjectBuilderForm() {
   };
 
   const selectAttachment = (file: File | null) => {
-    if (file && file.size > MAX_FILE_SIZE) {
-      setAttachment(null);
-      setSubmitStatus({ state: 'error', message: 'Please choose a file smaller than 4MB.' });
-      return;
-    }
-    setAttachment(file);
+    const extension = file?.name.split('.').pop()?.toLowerCase() ?? '';
+    const error = file && file.size > MAX_FILE_SIZE
+      ? 'Please choose a file no larger than 4MB.'
+      : file && (!file.size || !ALLOWED_EXTENSIONS.has(extension))
+        ? 'Please choose a non-empty PNG, JPG, WEBP, PDF or AI file.'
+        : '';
+    setFileError(error);
+    setAttachment(error ? null : file);
     setSubmitStatus({ state: 'idle', message: '' });
-    if (file) recordBuilderEvent('upload_attachment', form.product, entrySource);
+    if (error && attachmentInput.current) attachmentInput.current.value = '';
+    if (file && !error) recordBuilderEvent('upload_attachment', form.product, entrySource, referenceProduct);
   };
 
   const submitRfq = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (submitStatus.state === 'submitting') return;
+    if (submitStatus.state === 'submitting' || submitStatus.state === 'success' || fileError) return;
 
     setSubmitStatus({ state: 'submitting', message: 'Sending your project brief…' });
-    recordBuilderEvent('submit_attempt', form.product, entrySource);
+    recordBuilderEvent('submit_attempt', form.product, entrySource, referenceProduct);
 
     const payload = new FormData();
     payload.set('name', contact.name.trim());
@@ -195,13 +202,13 @@ export default function ProjectBuilderForm() {
         message: 'Your project brief has been sent. TONTON will review the details and confirm the practical next step.',
         reference: result.reference,
       });
-      recordBuilderEvent('submit_success', form.product, entrySource);
+      recordBuilderEvent('submit_success', form.product, entrySource, referenceProduct);
     } catch (error) {
       setSubmitStatus({
         state: 'error',
         message: error instanceof Error ? error.message : 'Unable to send the project brief. Please use WhatsApp or email below.',
       });
-      recordBuilderEvent('submit_error', form.product, entrySource);
+      recordBuilderEvent('submit_error', form.product, entrySource, referenceProduct);
     }
   };
 
@@ -209,7 +216,7 @@ export default function ProjectBuilderForm() {
     try {
       await navigator.clipboard.writeText(summary);
       setCopyState('Specification copied');
-      recordBuilderEvent('copy_specification', form.product, entrySource);
+      recordBuilderEvent('copy_specification', form.product, entrySource, referenceProduct);
       window.setTimeout(() => setCopyState('Copy specification'), 2200);
     } catch { setCopyState('Copy unavailable — use email'); }
   };
@@ -244,11 +251,11 @@ export default function ProjectBuilderForm() {
           <label>Company <span>optional</span><input value={contact.company} onChange={(event) => setContactValue('company', event.target.value)} autoComplete="organization" placeholder="Brand, gym or company" /></label>
           <label>Email<input type="email" value={contact.email} onChange={(event) => setContactValue('email', event.target.value)} autoComplete="email" placeholder="you@company.com" required /></label>
           <label>WhatsApp / phone <span>optional</span><input type="tel" value={contact.phone} onChange={(event) => setContactValue('phone', event.target.value)} autoComplete="tel" placeholder="+1 234 567 8900" /></label>
-          <label className="project-builder-contact-file">Logo or reference file <span>optional · PNG, JPG, WEBP, PDF or AI · max 4MB</span><input type="file" accept=".png,.jpg,.jpeg,.webp,.pdf,.ai,image/png,image/jpeg,image/webp,application/pdf,application/postscript" onChange={(event) => selectAttachment(event.target.files?.[0] ?? null)} /></label>
+          <label className="project-builder-contact-file">Logo or reference file <span>optional · PNG, JPG, WEBP, PDF or AI · max 4MB</span><input ref={attachmentInput} type="file" aria-invalid={!!fileError} aria-describedby={fileError ? 'project-builder-file-error' : undefined} accept=".png,.jpg,.jpeg,.webp,.pdf,.ai,image/png,image/jpeg,image/webp,application/pdf,application/postscript" onChange={(event) => selectAttachment(event.target.files?.[0] ?? null)} />{attachment && <span>Selected: {attachment.name}</span>}{fileError && <span id="project-builder-file-error" role="alert">{fileError}</span>}{(attachment || fileError) && <button type="button" onClick={() => { if (attachmentInput.current) attachmentInput.current.value = ''; selectAttachment(null); }}>Remove file</button>}</label>
           <label className="project-builder-honeypot" aria-hidden="true">Website<input value={website} onChange={(event) => setWebsite(event.target.value)} tabIndex={-1} autoComplete="off" /></label>
         </div>
       </section>
     </form>
-    <aside className="project-builder-summary"><p>YOUR PROJECT BRIEF</p><h2>{form.product}</h2><dl>{referenceProduct && <div><dt>Reference</dt><dd>{referenceProduct}</dd></div>}<div><dt>Quantity</dt><dd>{form.quantity}</dd></div><div><dt>Use</dt><dd>{form.use}</dd></div><div><dt>Build</dt><dd>{form.construction}</dd></div><div><dt>Branding</dt><dd>{form.decoration}</dd></div><div><dt>Priorities</dt><dd>{form.priorities.join(', ') || 'To be discussed'}</dd></div></dl><p className="project-builder-note">The team will confirm the applicable MOQ, materials, sample route and schedule against this brief.</p><button form="project-builder-rfq" type="submit" className="project-builder-submit" disabled={submitStatus.state === 'submitting'}>{submitStatus.state === 'submitting' ? 'SENDING PROJECT BRIEF…' : 'SEND PROJECT BRIEF'}</button>{submitStatus.message && <div className={`project-builder-status project-builder-status-${submitStatus.state}`} role="status" aria-live="polite"><strong>{submitStatus.state === 'success' ? 'PROJECT RECEIVED' : submitStatus.state === 'error' ? 'SEND FAILED' : 'SENDING'}</strong><p>{submitStatus.message}</p>{submitStatus.reference && <span>Reference: {submitStatus.reference}</span>}</div>}<p className="project-builder-privacy">Your details are used only to review and respond to this project request.</p><button type="button" className="project-builder-copy" onClick={copySummary} aria-live="polite">{copyState}</button><a href={whatsapp} target="_blank" rel="noopener noreferrer" onClick={() => recordBuilderEvent('whatsapp', form.product, entrySource)}>Send by WhatsApp</a><a className="project-builder-email" href={email} onClick={() => recordBuilderEvent('email', form.product, entrySource)}>Send by email</a></aside>
+    <aside className="project-builder-summary"><p>YOUR PROJECT BRIEF</p><h2>{form.product}</h2><dl>{referenceProduct && <div><dt>Reference</dt><dd>{referenceProduct}</dd></div>}<div><dt>Quantity</dt><dd>{form.quantity}</dd></div><div><dt>Use</dt><dd>{form.use}</dd></div><div><dt>Build</dt><dd>{form.construction}</dd></div><div><dt>Branding</dt><dd>{form.decoration}</dd></div><div><dt>Priorities</dt><dd>{form.priorities.join(', ') || 'To be discussed'}</dd></div></dl><p className="project-builder-note">The team will confirm the applicable MOQ, materials, sample route and schedule against this brief.</p><button form="project-builder-rfq" type="submit" className="project-builder-submit" disabled={submitStatus.state === 'submitting' || submitStatus.state === 'success' || !!fileError}>{submitStatus.state === 'submitting' ? 'SENDING PROJECT BRIEF…' : submitStatus.state === 'success' ? 'PROJECT BRIEF SENT' : 'SEND PROJECT BRIEF'}</button>{submitStatus.message && <div className={`project-builder-status project-builder-status-${submitStatus.state}`} role="status" aria-live="polite"><strong>{submitStatus.state === 'success' ? 'PROJECT RECEIVED' : submitStatus.state === 'error' ? 'SEND FAILED' : 'SENDING'}</strong><p>{submitStatus.message}</p>{submitStatus.reference && <span>Reference: {submitStatus.reference}</span>}{submitStatus.state === 'success' && <p>Keep this reference for follow-up. We will review your specification and contact you using the details provided to clarify materials, artwork, sampling and quotation. Edit the form to prepare another request.</p>}</div>}<p className="project-builder-privacy">Your details are used only to review and respond to this project request.</p><button type="button" className="project-builder-copy" onClick={copySummary} aria-live="polite">{copyState}</button><a href={whatsapp} target="_blank" rel="noopener noreferrer" onClick={() => recordBuilderEvent('whatsapp', form.product, entrySource, referenceProduct)}>Send by WhatsApp</a><a className="project-builder-email" href={email} onClick={() => recordBuilderEvent('email', form.product, entrySource, referenceProduct)}>Send by email</a></aside>
   </div>;
 }

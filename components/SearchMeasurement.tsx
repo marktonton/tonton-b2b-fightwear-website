@@ -35,11 +35,20 @@ function ConversionTracker() {
       if (!target) return;
       const href = target.getAttribute('href') ?? '';
       const linkText = target.textContent?.trim().slice(0, 100) ?? '';
-      if (href.includes('wa.me/')) sendEvent('contact_whatsapp', { link_text: linkText });
-      else if (href.startsWith('mailto:')) sendEvent('contact_email', { link_text: linkText });
-      else if (href.startsWith('tel:')) sendEvent('contact_phone', { link_text: linkText });
-      else if (href.includes('#inquiry')) sendEvent('inquiry_view', { link_text: linkText });
-      else if (href.startsWith('/project-builder')) sendEvent('project_builder_open', { link_text: linkText });
+      const context = { link_text: linkText, page_path: window.location.pathname };
+      if (href.includes('wa.me/')) sendEvent('contact_whatsapp', context);
+      else if (href.startsWith('mailto:')) sendEvent('contact_email', context);
+      else if (href.startsWith('tel:')) sendEvent('contact_phone', context);
+      else if (href.includes('#inquiry')) sendEvent('inquiry_view', context);
+      else if (href.startsWith('/project-builder')) {
+        const destination = new URL(href, window.location.origin);
+        sendEvent('project_builder_open', {
+          ...context,
+          product_type: destination.searchParams.get('product')?.slice(0, 160) ?? '',
+          reference_product: destination.searchParams.get('reference')?.slice(0, 240) ?? '',
+          entry_source: destination.searchParams.get('source')?.slice(0, 160) ?? '',
+        });
+      }
     };
     document.addEventListener('click', handleClick);
     return () => {
