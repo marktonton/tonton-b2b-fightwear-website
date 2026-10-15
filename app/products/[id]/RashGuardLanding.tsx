@@ -1,3 +1,5 @@
+import RashGuardSiliconeHem from '../../../components/RashGuardSiliconeHem';
+import { SILICONE_HEM_FAQS } from '../../../lib/rash-guard-silicone-hem';
 import Link from 'next/link';
 import { resolveImage } from '../../../lib/image-resolver';
 import { RASH_GUARD_LANDING_CONTENT, type RashGuardProductId } from '../../../lib/rash-guard-products';
@@ -19,6 +21,7 @@ type Product = {
 };
 
 const STANDARD_FAQ_ITEMS = [
+  ...SILICONE_HEM_FAQS,
   {
     question: 'What fabric is used for this custom Rash Guard?',
     answer: 'This Rash Guard uses 220gsm ultra-fine Lycra made from 85% polyester and 15% spandex. The fabric has a soft hand feel, high elasticity and opaque coverage.',
@@ -327,6 +330,8 @@ export default function RashGuardLanding({ product }: { product: Product }) {
         question={`What should buyers know about ${product.name}?`}
         answer={`${product.name} is a custom sublimated Rash Guard reference for buyers comparing fit, performance fabric, panel construction, seams, artwork placement and hem control. The visible specification and physical sample evidence on this page provide the starting point; final measurements, colors and project-specific construction are confirmed before bulk production.`}
       />
+
+      {!isSamurai && <RashGuardSiliconeHem productName={product.name} />}
 
       <ProductSpecificationTable title="A specification buyers can compare" intro="The visible product data below matches the material and construction information used in this landing page and its structured data." rows={specificationRows} />
 

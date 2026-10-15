@@ -1,3 +1,4 @@
+import { SILICONE_HEM_VIDEO, SILICONE_HEM_PHOTOS, SILICONE_HEM_FAQS } from '../../../lib/rash-guard-silicone-hem';
 import React from 'react';
 import productsData from '../../../data/products.json';
 import Link from 'next/link';
@@ -341,9 +342,44 @@ export default function ProductDetailPage({ params }: PageProps) {
       ].map(([name, text]) => ({ '@type': 'Question', name, acceptedAnswer: { '@type': 'Answer', text } })),
     };
 
+    const hasSiliconeDetails = product.id !== 'samurai-graphic-rash-guard';
+    const siliconeSchemas = hasSiliconeDetails ? [{
+      '@context': 'https://schema.org',
+      '@type': 'VideoObject',
+      '@id': `${productUrl}#${SILICONE_HEM_VIDEO.id}`,
+      name: SILICONE_HEM_VIDEO.title,
+      description: SILICONE_HEM_VIDEO.description,
+      thumbnailUrl: `${SITE_URL}${SILICONE_HEM_VIDEO.poster}`,
+      contentUrl: `${SITE_URL}${SILICONE_HEM_VIDEO.src}`,
+      embedUrl: `${productUrl}#${SILICONE_HEM_VIDEO.id}`,
+      uploadDate: SILICONE_HEM_VIDEO.uploadDate,
+      duration: SILICONE_HEM_VIDEO.duration,
+      width: 1920,
+      height: 1080,
+      inLanguage: 'en',
+      publisher: { '@id': ORGANIZATION_REFERENCE['@id'] },
+      about: { '@type': 'Thing', name: 'Rash Guard silicone anti-slip elastic band' },
+      isPartOf: { '@type': 'WebPage', url: productUrl },
+    }, ...SILICONE_HEM_PHOTOS.map((photo) => ({
+      '@context': 'https://schema.org',
+      '@type': 'ImageObject',
+      name: photo.title,
+      caption: photo.copy,
+      description: photo.alt,
+      contentUrl: `${SITE_URL}${photo.src}`,
+      width: photo.width,
+      height: photo.height,
+      about: { '@type': 'Thing', name: 'Rash Guard silicone gripper hem construction reference' },
+    }))] : [];
+    if (hasSiliconeDetails) {
+      faqSchema.mainEntity.push(...SILICONE_HEM_FAQS.map(({ question, answer }) => ({ '@type': 'Question', name: question, acceptedAnswer: { '@type': 'Answer', text: answer } })));
+      Object.assign(productSchema, { subjectOf: { '@id': `${productUrl}#${SILICONE_HEM_VIDEO.id}` } });
+      Object.assign(webPageSchema, { video: { '@id': `${productUrl}#${SILICONE_HEM_VIDEO.id}` } });
+    }
+
     return (
       <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([productSchema, webPageSchema, breadcrumbSchema, faqSchema]) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([productSchema, webPageSchema, breadcrumbSchema, faqSchema, ...siliconeSchemas]) }} />
         <RashGuardLanding product={product} />
       </>
     );
