@@ -14,7 +14,7 @@ export const ROUTE_LAST_MODIFIED: Record<string, string> = {
   '/products/blue-team-rash-guard': '2026-10-08',
   '/products/white-logo-rash-guard': '2026-10-08',
   '/products/samurai-graphic-rash-guard': '2026-10-08',
-  '/products/high-split-grappling-shorts': '2026-10-08',
+  '/products/high-split-grappling-shorts': '2026-10-15',
   '/products/custom-logo-shorts': '2026-09-22',
   '/products/pro-mma-shorts-07': '2026-10-08',
   '/products/pro-mma-shorts-08': '2026-09-23',
