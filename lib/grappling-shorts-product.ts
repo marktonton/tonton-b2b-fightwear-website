@@ -26,3 +26,13 @@ export const HIGH_SPLIT_GRAPPLING_SHORTS_FAQS = [
 export function isHighSplitGrapplingShorts(id: string) {
   return id === HIGH_SPLIT_GRAPPLING_SHORTS_ID;
 }
+
+export const HIGH_SPLIT_SHORTS_VIDEO = {
+  id: 'high-split-shorts-video',
+  title: 'Custom 2-in-1 High-Split Grappling Shorts | Product Overview',
+  description: 'A 15-second promotional visualization showing the inner liner, high-split silhouette, training movement and private-label development direction for custom 2-in-1 MMA and BJJ grappling shorts. Final construction and branding are confirmed on the approved sample.',
+  src: '/assets/products/grappling-shorts-products/high-split-2-in-1/video/high-split-2-in-1-grappling-shorts-v1.mp4',
+  poster: '/assets/products/grappling-shorts-products/high-split-2-in-1/video/high-split-2-in-1-grappling-shorts-v1.webp',
+  uploadDate: '2026-10-15T10:47:21+08:00',
+  duration: 'PT15.084S',
+} as const;

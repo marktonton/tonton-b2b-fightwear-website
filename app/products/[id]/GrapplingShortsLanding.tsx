@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { resolveImage } from '../../../lib/image-resolver';
-import { HIGH_SPLIT_GRAPPLING_SHORTS_CONTENT, HIGH_SPLIT_GRAPPLING_SHORTS_FAQS } from '../../../lib/grappling-shorts-product';
+import { HIGH_SPLIT_GRAPPLING_SHORTS_CONTENT, HIGH_SPLIT_GRAPPLING_SHORTS_FAQS, HIGH_SPLIT_SHORTS_VIDEO } from '../../../lib/grappling-shorts-product';
 import ProductSpecificationTable from '../../../components/ProductSpecificationTable';
 import RelatedResources from '../../../components/RelatedResources';
 import ProductLandingLinks from '../../../components/ProductLandingLinks';
@@ -82,6 +82,25 @@ export default function GrapplingShortsLanding({ product }: { product: Product }
             <Link className="rg-btn-primary" href={{ pathname: '/project-builder', query: { product: 'High-Split Grappling Shorts', reference: product.name, source: 'product-page' } }}>Build This Product Brief</Link>
             <a className="rg-btn-secondary" href="#construction">View Construction</a>
           </div>
+        </div>
+      </section>
+
+      <section className="gs-product-video" id={HIGH_SPLIT_SHORTS_VIDEO.id} aria-labelledby="gs-video-title">
+        <div className="rg-section-heading">
+          <p className="rg-eyebrow">CUSTOM 2-IN-1 MMA &amp; BJJ SHORTS</p>
+          <h2 id="gs-video-title">See the high-split design and inner liner in motion</h2>
+          <p>Explore custom high-split grappling shorts for fightwear brands, BJJ academies and MMA teams. This short overview introduces the layered construction, leg clearance and private-label direction.</p>
+        </div>
+        <figure>
+          <video controls playsInline preload="none" width="1920" height="1080" poster={HIGH_SPLIT_SHORTS_VIDEO.poster} aria-label={HIGH_SPLIT_SHORTS_VIDEO.title} aria-describedby="gs-video-summary">
+            <source src={HIGH_SPLIT_SHORTS_VIDEO.src} type="video/mp4" />
+            <a href={HIGH_SPLIT_SHORTS_VIDEO.src}>Watch the high-split 2-in-1 grappling shorts video</a>
+          </video>
+          <figcaption>Promotional visualization · High-split 2-in-1 grappling shorts. Review the physical sample and confirmed specifications before bulk approval.</figcaption>
+        </figure>
+        <div className="gs-video-summary" id="gs-video-summary">
+          <div><h3>What the video shows</h3><p>A close view introduces the inner liner and its 250gsm milk-silk label, followed by the high-split silhouette in training and a private-label production concept. Use the specification table and sample photos below to review this product in detail.</p></div>
+          <div><h3>Plan your OEM / ODM order</h3><p>For custom 2-in-1 MMA shorts or BJJ grappling shorts, share quantity, size range, outer-shell colors, inner-layer artwork and waistband requirements. Fit, printing, labels and packing are confirmed during sampling.</p><Link className="rg-btn-primary" href={{ pathname: '/project-builder', query: { product: 'High-Split Grappling Shorts', reference: product.name, source: 'product-video' } }}>Request Custom Grappling Shorts Pricing</Link></div>
         </div>
       </section>
 

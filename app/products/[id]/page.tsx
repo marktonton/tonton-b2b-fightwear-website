@@ -7,7 +7,7 @@ import { resolveImage } from '../../../lib/image-resolver';
 import RashGuardLanding from './RashGuardLanding';
 import { isRashGuardLandingProduct, RASH_GUARD_LANDING_CONTENT } from '../../../lib/rash-guard-products';
 import GrapplingShortsLanding from './GrapplingShortsLanding';
-import { HIGH_SPLIT_GRAPPLING_SHORTS_CONTENT, HIGH_SPLIT_GRAPPLING_SHORTS_FAQS, isHighSplitGrapplingShorts } from '../../../lib/grappling-shorts-product';
+import { HIGH_SPLIT_GRAPPLING_SHORTS_CONTENT, HIGH_SPLIT_GRAPPLING_SHORTS_FAQS, HIGH_SPLIT_SHORTS_VIDEO, isHighSplitGrapplingShorts } from '../../../lib/grappling-shorts-product';
 import { getRouteModifiedDate } from '../../../lib/content-dates';
 import RelatedResources from '../../../components/RelatedResources';
 import ProductLandingLinks from '../../../components/ProductLandingLinks';
@@ -260,9 +260,29 @@ export default function ProductDetailPage({ params }: PageProps) {
       })),
     };
 
+    const videoSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'VideoObject',
+      '@id': `${productUrl}#${HIGH_SPLIT_SHORTS_VIDEO.id}`,
+      name: HIGH_SPLIT_SHORTS_VIDEO.title,
+      description: HIGH_SPLIT_SHORTS_VIDEO.description,
+      thumbnailUrl: `${SITE_URL}${HIGH_SPLIT_SHORTS_VIDEO.poster}`,
+      contentUrl: `${SITE_URL}${HIGH_SPLIT_SHORTS_VIDEO.src}`,
+      embedUrl: `${productUrl}#${HIGH_SPLIT_SHORTS_VIDEO.id}`,
+      uploadDate: HIGH_SPLIT_SHORTS_VIDEO.uploadDate,
+      duration: HIGH_SPLIT_SHORTS_VIDEO.duration,
+      inLanguage: 'en',
+      width: 1920,
+      height: 1080,
+      publisher: { '@id': ORGANIZATION_REFERENCE['@id'] },
+      about: { '@id': `${productUrl}#product` },
+    };
+    Object.assign(productSchema, { subjectOf: { '@id': videoSchema['@id'] } });
+    Object.assign(webPageSchema, { video: { '@id': videoSchema['@id'] } });
+
     return (
       <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([productSchema, webPageSchema, breadcrumbSchema, faqSchema]) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([productSchema, webPageSchema, breadcrumbSchema, faqSchema, videoSchema]) }} />
         <GrapplingShortsLanding product={product} />
       </>
     );

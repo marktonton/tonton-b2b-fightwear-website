@@ -4639,3 +4639,13 @@
   .customization-brand-video-footer { align-items: stretch; flex-direction: column; gap: 16px; }
   .customization-brand-video-footer a { text-align: center; }
 }
+
+.gs-product-video { padding: clamp(28px, 4vw, 48px) 0; }
+.gs-product-video .rg-section-heading { margin-bottom: 22px; }
+.gs-product-video figure { margin: 0; }
+.gs-product-video video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: #111; border-radius: 8px; }
+.gs-product-video figcaption { margin-top: 12px; color: #57595c; font-size: 16px; line-height: 1.6; }
+.gs-video-summary { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 22px; }
+.gs-video-summary h3 { font-size: 22px; line-height: 1.3; }
+.gs-video-summary p { margin: 10px 0 16px; font-size: 18px; line-height: 1.65; color: #53565b; }
+@media (max-width: 720px) { .gs-video-summary { grid-template-columns: 1fr; gap: 18px; } .gs-video-summary .rg-btn-primary { display: block; text-align: center; } }
