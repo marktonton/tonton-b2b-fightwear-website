@@ -175,7 +175,7 @@ export const customizationPageContent: Record<string, CustomizationPageContent> 
     ],
   },
   'sublimated-bjj-mma-shorts': {
-    seoDescription: 'Custom BJJ, MMA and grappling shorts for academies, fight teams and brands. Explore fit, side-split, waistband, artwork and OEM team-kit options.',
+    seoDescription: 'Custom BJJ and sublimated MMA shorts manufacturer for brands and academies. Review private-label artwork, shell and liner options, samples and bulk-order checks.',
     quickAnswerQuestion: 'What should buyers confirm for custom BJJ and MMA shorts?',
     quickAnswer: 'Buyers should confirm the intended combat use, shell and liner construction, split height, waistband security, fit, size range, artwork and reinforcement points. TONTON uses the product brief and physical sample to verify movement, coverage, material direction and branding before bulk production.',
     kicker: 'CUSTOM BJJ & MMA SHORTS MANUFACTURING',
@@ -204,6 +204,9 @@ export const customizationPageContent: Record<string, CustomizationPageContent> 
     processProduct: 'BJJ, MMA, or grappling use, fit, length, waistband, quantity, and artwork direction',
     faqTitle: 'Custom BJJ and MMA shorts questions buyers ask before ordering',
     faqs: [
+      { question: 'Can TONTON manufacture sublimated MMA shorts for a private-label brand?', answer: 'Yes. TONTON supports OEM and ODM development of custom sublimated MMA shorts for fightwear brands, gyms and teams. Share the shell and liner direction, fit, size range, graphics, labels and quantity. Artwork placement and material compatibility are reviewed before sampling, and bulk production follows the approved sample and specification.' },
+      { question: 'What should I compare when choosing a BJJ shorts manufacturer?', answer: 'Compare intended use, outer-short length, split height, waistband closure, optional liner, fabric direction, stitching, size grading and branding. Request the same specification and quantity breakdown from each supplier, then review a physical sample. Competition requirements should be checked for the intended event rather than assumed from a product name.' },
+      { question: 'What information is needed for wholesale MMA shorts pricing and repeat orders?', answer: 'Send the style reference, quantity by color and size, fabric and liner requirements, artwork status, label and packing needs, delivery destination and target date. Keep the approved artwork, size chart, construction notes and sample reference for repeat orders. MOQ, price and lead time are confirmed for the actual project.' },
       { question: 'What is the difference between a BJJ shorts project and an MMA shorts project?', answer: 'The development priorities can differ by preferred fit, length, side movement, waistband, and competition or training use. We start by confirming the intended activity instead of treating every fight short as the same product.' },
       { question: 'Can TONTON make matching rash guard and shorts sets?', answer: 'Yes. Academy colors, logos, sponsor marks, and graphic direction can be coordinated across rash guards and shorts while the construction of each garment is developed separately.' },
       { question: 'What is the MOQ for custom BJJ and MMA shorts?', answer: 'Custom projects can start from 10 pieces. The final order structure is confirmed after reviewing the style, size and color breakdown, artwork, and construction requirements.' },

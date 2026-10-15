@@ -296,6 +296,25 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
         </div>
       </section>
 
+      {isFightShortsPage && (
+        <section className="customization-overview customization-shell" aria-labelledby="fight-short-sourcing-title">
+          <div className="customization-overview-heading">
+            <p className="customization-kicker">PRIVATE LABEL / WHOLESALE SOURCING</p>
+            <h2 id="fight-short-sourcing-title">A sublimated MMA shorts manufacturer brief that buyers can compare.</h2>
+          </div>
+          <div className="customization-overview-copy">
+            <p className="customization-overview-lead">Start with the same product specification when comparing custom BJJ shorts, grappling shorts and private-label MMA shorts suppliers.</p>
+            <p>Separate the visual design from the construction requirements. The high-split 2-in-1 style on this page is one reference; your intended sport, coverage, closure and liner requirements guide the final sample.</p>
+          </div>
+          <div className="customization-audience-grid">
+            <article><span>01</span><h3>Define the garment</h3><p>Record short length, side split, outer fabric, optional compression liner, waistband system, size chart and reinforcement points.</p><Link className="customization-card-link" href="/products/high-split-grappling-shorts">Inspect the 2-in-1 product reference →</Link></article>
+            <article><span>02</span><h3>Align brand artwork</h3><p>Share vector logos, panel artwork, color references, sponsor placements, labels and packing requirements before confirming the mockup.</p><Link className="customization-card-link" href="/resources/prepare-artwork-for-sublimation">Prepare sublimation artwork →</Link></article>
+            <article><span>03</span><h3>Compare the order basis</h3><p>Use the same quantity by size and color, sample requirements, destination and delivery target. Confirm project-specific MOQ, pricing and timing in the quote.</p><Link className="customization-card-link" href="/resources/custom-fightwear-sampling-moq">Review sampling and order planning →</Link></article>
+          </div>
+          <div className="customization-overview-copy"><p>Before bulk approval, check movement, coverage, waistband comfort, measurements, seams and artwork against the physical sample. Retain the approved specification for repeat orders.</p><Link className="customization-card-link" href={builderHref}>Request a custom fight-shorts quote →</Link></div>
+        </section>
+      )}
+
       <section className="customization-options">
         <div className="customization-shell customization-options-grid">
           <figure className="customization-options-media">
