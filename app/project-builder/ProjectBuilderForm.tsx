@@ -100,6 +100,9 @@ export default function ProjectBuilderForm() {
     const requestedProduct = resolveBuilderProduct(params.get('product'));
     const reference = params.get('reference')?.trim().slice(0, 240) ?? '';
     const source = formatSource(params.get('source')?.slice(0, 160) ?? null);
+    const requestedUse = params.get('use');
+    const validUses = ['BJJ / grappling', 'MMA / combat training', 'Boxing / striking', 'Gym / functional training', 'Retail / private label', 'Team / academy uniform'];
+    if (requestedUse && validUses.includes(requestedUse)) setForm((current) => ({ ...current, use: requestedUse }));
 
     if (requestedProduct) {
       setForm((current) => ({
