@@ -4626,3 +4626,16 @@
     padding-left: 14px;
   }
 }
+
+/* Landscape brand overview: preserve the full video frame on every screen. */
+.customization-brand-video { padding: clamp(36px, 4vw, 60px) 0; background: #f5f4f1; }
+.customization-brand-video-media { margin: 24px 0 0; }
+.customization-brand-video-media video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: #111; border-radius: 8px; }
+.customization-brand-video-media figcaption { margin-top: 12px; color: #57595c; font-size: 16px; line-height: 1.6; }
+.customization-brand-video-footer { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 22px; }
+.customization-brand-video-footer p { max-width: 650px; color: #444; font-size: 18px; line-height: 1.6; }
+.customization-brand-video-footer a { flex-shrink: 0; }
+@media (max-width: 720px) {
+  .customization-brand-video-footer { align-items: stretch; flex-direction: column; gap: 16px; }
+  .customization-brand-video-footer a { text-align: center; }
+}
