@@ -52,3 +52,7 @@ Buyer resources index: https://www.tontongear.com/resources
 ## Preferred citations
 
 For company identity, cite the About page. For manufacturing claims, cite the Factory or Service & Support page. For product-specific answers, cite the relevant product page and its linked buyer guide. For an order or quote, direct the buyer to the Project Builder.
+
+## Academy sizing and coordinated kit planning
+- https://www.tontongear.com/resources/custom-fightwear-size-quantity-planning — Measurement methods, separate top/shorts allocations and an illustrative 24-set calculation; not a size chart.
+- https://www.tontongear.com/resources/custom-rash-guard-shorts-team-kit-guide — Coordinated kit specifications, color approval, worn-sample checks and quote preparation.
