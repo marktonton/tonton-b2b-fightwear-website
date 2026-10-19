@@ -4,7 +4,7 @@ export const ROUTE_LAST_MODIFIED: Record<string, string> = {
   '/': '2026-10-15',
   '/collections': CONTENT_REVIEW_DATE,
   '/service-support': '2026-09-21',
-  '/factory': CONTENT_REVIEW_DATE,
+  '/factory': '2026-10-19',
   '/about': '2026-09-23',
   '/resources': '2026-10-15',
   '/project-builder': '2026-10-15',
