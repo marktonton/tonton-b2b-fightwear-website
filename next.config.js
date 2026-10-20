@@ -1,6 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  async headers() {
+    return ['hd', '720'].map((quality) => ({
+      source: `/assets/factory/multi-head-embroidery/embroidery-brand-film-${quality}.mp4`,
+      headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
+    }));
+  },
   async redirects() {
     return [
       {
