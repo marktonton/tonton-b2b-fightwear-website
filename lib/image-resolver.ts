@@ -28,7 +28,8 @@ export function resolveImage(path: string): string {
     cleanPath.startsWith('assets/products/customer-production-proof/') ||
     cleanPath.startsWith('assets/process/') ||
     cleanPath.startsWith('assets/factory/overview-2026/') ||
-    cleanPath.startsWith('assets/factory/digital-sublimation/')
+    cleanPath.startsWith('assets/factory/digital-sublimation/') ||
+    cleanPath.startsWith('assets/factory/multi-head-embroidery/')
   ) {
     return withVersion(`/${cleanPath}`);
   }
