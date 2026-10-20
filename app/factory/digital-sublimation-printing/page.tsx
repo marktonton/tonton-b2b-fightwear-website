@@ -29,14 +29,6 @@ const videos = [
   { file: 'printing-142.mp4', poster: 'printing-142-poster.webp', title: 'Printing equipment in operation', text: 'A wider operating view of the printer and printed sportswear graphics.', duration: 'PT5.733S' },
 ];
 
-const workflow = [
-  ['Artwork & order review', 'Confirm the design version, garment panels, logo placement, names, numbers and size quantities. Prepare the approved file for the selected printing route.'],
-  ['Print to transfer paper', 'The industrial roll-to-roll printer outputs the design onto sublimation transfer paper. This is the printing stage shown in the photographs and videos on this page.'],
-  ['Roller heat transfer', 'The printed paper and suitable polyester fabric pass through separate roller heat-transfer equipment. Heat transfers the dye from the paper into the polyester fibers.'],
-  ['Cut & match panels', 'After transfer, the printed fabric is cut into the required garment components. Panels are organized by order, size and personalized design before assembly.'],
-  ['Sew, inspect & pack', 'The garment is sewn and finished, then reviewed against the approved specification, personalization list and packing requirements.'],
-];
-
 const faqs = [
   { q: 'What does TONTON’s digital sublimation printer do?', a: 'Our in-house industrial roll-to-roll printer prints full-color sportswear artwork, logos, names and numbers onto sublimation transfer paper. Separate roller heat-transfer equipment then transfers that design onto suitable polyester fabric before cutting and sewing.' },
   { q: 'Is this direct-to-fabric printing?', a: 'The process described here prints onto transfer paper first. The paper-to-polyester transfer is a separate heat-transfer stage. The printer itself does not cut, sew or embroider the garment.' },
@@ -103,8 +95,9 @@ export default function SublimationPrintingPage() {
         <figure><Photo file="printer-front.webp" alt="Front view of a TONTON roll-to-roll sublimation printer producing sportswear graphics" /><figcaption><strong>Continuous roll-to-roll printing.</strong> Sportswear panel artwork moves through the printer.</figcaption></figure>
         <figure><Photo file="paper-output.webp" alt="Full-color sportswear designs on the output roll of a TONTON sublimation printer" /><figcaption><strong>Full-color pattern output.</strong> Large graphic areas, panel layouts and contrasting colors.</figcaption></figure>
         <figure><Photo file="printhead-detail.webp" alt="Close view of the printer carriage and rail in TONTON’s sublimation printing department" /><figcaption><strong>Equipment detail.</strong> A closer look at the carriage and printing area.</figcaption></figure>
+        <figure><Photo file="operator-workstation.webp" alt="TONTON printing equipment with a team member working at the adjacent computer station" /><figcaption><strong>Workstation coordination.</strong> Printing equipment and the adjacent operator station.</figcaption></figure>
       </div>
-      <p className="sub-note">These are actual workshop photographs. Equipment brands, models, print width, speed and resolution are not specified here; ask the team for the information relevant to your project.</p>
+      <p className="sub-note">Actual workshop photographs. Ask our team for equipment details relevant to your project.</p>
     </section>
 
     <section id="workshop-videos" className="sub-section sub-tinted">
@@ -116,9 +109,15 @@ export default function SublimationPrintingPage() {
       </figure>)}</div>
     </section>
 
+    <figure className="sub-workshop-break"><Photo file="workshop-aisle.webp" alt="Central aisle through the TONTON digital printing workshop with equipment on both sides" /><figcaption>Inside the printing department · A wider view of our production environment</figcaption></figure>
+
     <section id="printing-process" className="sub-section">
       <div className="sub-heading"><p className="sub-kicker">03 / PRINTING TO GARMENT</p><h2>How the sublimation production route works</h2><p>Digital artwork → transfer-paper printing → roller heat transfer to polyester → cutting → sewing and inspection.</p></div>
-      <ol className="sub-process">{workflow.map(([title, text], i) => <li key={title}><span>{String(i + 1).padStart(2, '0')}</span><div><h3>{title}</h3><p>{text}</p></div></li>)}</ol>
+      <div className="sub-process-stories">
+        <article><figure><Photo file="operator-printing.webp" alt="TONTON operator seated beside a roll-to-roll printer producing patterned transfer paper" /><figcaption>Paper printing · Operator and equipment at work</figcaption></figure><div><p className="sub-kicker">01–02 / APPROVE & PRINT</p><h3>Confirm the artwork, then print to paper</h3><p>Approve the design version, logos, roster and size allocation. The printer outputs the garment artwork onto sublimation transfer paper.</p><p>The printed roll is an intermediate output; final color approval happens after transfer to the selected fabric.</p></div></article>
+        <article><figure><Photo file="roller-transfer.webp" alt="TONTON team working around roll-fed heat-transfer equipment in the workshop" /><figcaption>Separate roller-transfer equipment · Workshop team at work</figcaption></figure><div><p className="sub-kicker">03 / TRANSFER TO POLYESTER</p><h3>Bring the design from paper into the fabric</h3><p>The printed paper and suitable polyester fabric pass through the separate roller heat-transfer stage. Heat transfers the dye into the polyester fibers.</p><p>Review color, clarity and fabric appearance on the transferred material.</p></div></article>
+        <article><figure><Image src={resolveImage('/assets/factory/overview-2026/panel-cutting.webp')} alt="Cutting equipment positioned over printed sportswear panels at TONTON" width={2048} height={1365} sizes="(max-width: 760px) 100vw, 50vw" /><figcaption>Printed panel preparation · Cutting detail</figcaption></figure><div><p className="sub-kicker">04–05 / CUT, SEW & REVIEW</p><h3>Keep the right panels with the right order</h3><p>Cut the transferred fabric into garment components and match panels by order, size and personalization before sewing.</p><p>Review the finished garment against the approved specification, roster and packing requirements.</p><a href="/factory#workflow">See the complete factory workflow →</a></div></article>
+      </div>
       <div className="sub-callout"><h3>Approve color on the transferred fabric</h3><p>The printed paper is an intermediate output. Screen colors and paper appearance are not the final garment approval reference. Review the design after transfer onto the selected fabric, then check the relevant garment sample.</p></div>
     </section>
 
@@ -129,12 +128,13 @@ export default function SublimationPrintingPage() {
         <div><h3>Performance sportswear</h3><p>Cycling, running and training apparel, sports sets, leggings and other styles where the selected polyester material and garment construction suit sublimation.</p></div>
         <div><h3>Samples & custom runs</h3><p>Develop complex prints and test personalized designs before bulk production. Confirm the complete garment MOQ, sample plan and timing for your project.</p></div>
       </div>
-      <div className="sub-personalization"><h3>What can change from garment to garment?</h3><p>Player names · numbers · team crests · sponsor logos · approved color combinations.</p><p>Size and fit are handled through the garment patterns and order allocation, alongside the print artwork. A different printed number does not require a new fit; a different cut or silhouette requires its own development review.</p></div>
+      <div className="sub-visual-pair"><figure><Photo file="color-output.webp" alt="Contrasting red, blue and white artwork emerging from a TONTON sublimation printer" /><figcaption>Full-color output · Contrasting graphics and panel artwork</figcaption></figure><div><p className="sub-kicker">ONE TEAM · INDIVIDUAL DETAILS</p><h3>What can change from garment to garment?</h3><p>Player names · numbers · team crests · sponsor logos · approved color combinations.</p><p>Size and fit are confirmed through garment patterns and the order allocation. A different cut or silhouette needs its own development review.</p></div></div>
       <p className="sub-note">Material suitability comes first: confirm polyester content, fabric color, stretch, heat tolerance and the final transferred result. Do not assume this paper-transfer route is suitable for untreated cotton or every fabric blend.</p>
     </section>
 
     <section id="print-quality" className="sub-section">
       <div className="sub-heading"><p className="sub-kicker">05 / QUALITY REVIEW</p><h2>The details to confirm before a print becomes an order</h2><p>Use the approved artwork and sample as the reference. The following points form a practical review checklist to agree with the production team.</p></div>
+      <div className="sub-visual-pair sub-quality-picture"><figure><Photo file="printhead-closeup.webp" alt="Close-up of a TONTON printer carriage above paper carrying colored sportswear graphics" /><figcaption>Printhead detail · A closer view of the paper-printing stage</figcaption></figure><div><p className="sub-kicker">ARTWORK → PAPER → FABRIC → GARMENT</p><h3>Follow the result through each stage</h3><p>Start with the correct artwork and personalization list. Review the printed output, then the transferred fabric, and finally the assembled garment.</p><p>The checklist below helps align the review with your approved sample.</p></div></div>
       <div className="sub-table-wrap"><table><caption>Review points for your sublimation project</caption><thead><tr><th scope="col">Stage</th><th scope="col">Review focus</th><th scope="col">Why it matters</th></tr></thead><tbody>
         <tr><th scope="row">Artwork & roster</th><td>Version, spelling, numbers, sponsor logos, sizes and panel placement.</td><td>A clearly printed design still needs to match the correct person and order.</td></tr>
         <tr><th scope="row">Paper output</th><td>Visible banding, missing image areas, sharpness, alignment and consistent feed.</td><td>Identify print defects before the separate transfer stage.</td></tr>
@@ -147,7 +147,7 @@ export default function SublimationPrintingPage() {
 
     <section id="buyer-checklist" className="sub-section sub-tinted">
       <div className="sub-heading"><p className="sub-kicker">06 / BUYER PREPARATION</p><h2>What to send for a custom sublimation project</h2></div>
-      <div className="sub-checklist"><div><h3>Artwork & personalization</h3><ul><li>Design files or clear visual references.</li><li>Logo files, sponsor marks and placement instructions.</li><li>Color targets or an existing physical reference.</li><li>Final names and numbers, matched to garment sizes.</li></ul></div><div><h3>Garment & delivery brief</h3><ul><li>Product type, intended activity and fabric direction.</li><li>Fit or pattern references and quantities by size.</li><li>Destination and requested delivery date.</li><li>Sample approval and any testing requirements.</li></ul></div></div>
+      <div className="sub-preparation-layout"><figure><Photo file="equipment-overview.webp" alt="Roll-to-roll printing equipment and paper rolls in the TONTON workshop" /><figcaption>Your project brief guides the artwork and printing setup.</figcaption></figure><div className="sub-checklist"><div><h3>Artwork & personalization</h3><ul><li>Design files or clear visual references.</li><li>Logo files, sponsor marks and placement instructions.</li><li>Color targets or an existing physical reference.</li><li>Final names and numbers, matched to garment sizes.</li></ul></div><div><h3>Garment & delivery brief</h3><ul><li>Product type, intended activity and fabric direction.</li><li>Fit or pattern references and quantities by size.</li><li>Destination and requested delivery date.</li><li>Sample approval and any testing requirements.</li></ul></div></div></div>
       <p>Final artwork is not required for the first discussion. Before bulk printing, confirm the final artwork version and personalization list, plus the relevant transferred-fabric or garment sample.</p>
       <div className="sub-actions"><a className="sub-button" href="/project-builder?source=factory-sublimation-checklist">Start your project brief →</a><a href="/resources/prepare-artwork-for-sublimation">Read the artwork preparation guide →</a></div>
     </section>
