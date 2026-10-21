@@ -155,7 +155,7 @@ export default function SublimationPrintingPage() {
     <section className="sub-section sub-related"><div className="sub-heading"><p className="sub-kicker">07 / CONNECT THE PROCESS TO YOUR PRODUCT</p><h2>Explore the next detail</h2></div><div className="sub-cards">
       <a href="/customization/sublimated-rash-guards"><h3>Custom sublimated rash guards</h3><p>Develop artwork around the approved stretch fabric and garment panels.</p><span>Explore the product program →</span></a>
       <a href="/customization/sublimated-bjj-mma-shorts"><h3>Custom BJJ & MMA shorts</h3><p>Connect print layout with shell, liner and construction choices.</p><span>Explore the product program →</span></a>
-      <a href="/factory#workflow"><h3>The complete factory route</h3><p>See how printing connects with cutting, sewing, quality review and packing.</p><span>Return to Factory →</span></a>
+      <a href="/factory/rotary-heat-transfer"><h3>Rotary sublimation heat transfer</h3><p>See how printed paper transfers its artwork to polyester fabric before cutting and sewing.</p><span>Explore rotary transfer &amp; videos →</span></a>
     </div></section>
 
     <section className="sub-section sub-faq"><div className="sub-heading"><p className="sub-kicker">PRINTING FAQ</p><h2>Questions buyers ask</h2></div>{faqs.map(({ q, a }) => <details key={q}><summary>{q}</summary><p>{a}</p></details>)}</section>
