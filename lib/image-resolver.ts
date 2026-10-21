@@ -32,7 +32,8 @@ export function resolveImage(path: string): string {
     cleanPath.startsWith('assets/factory/multi-head-embroidery/') ||
     cleanPath.startsWith('assets/factory/computerized-cutting/') ||
     cleanPath.startsWith('assets/factory/straight-knife/') ||
-    cleanPath.startsWith('assets/factory/rotary-transfer/')
+    cleanPath.startsWith('assets/factory/rotary-transfer/') ||
+    cleanPath.startsWith('assets/factory/intelligent-hanging/')
   ) {
     return withVersion(`/${cleanPath}`);
   }

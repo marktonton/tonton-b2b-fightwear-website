@@ -1,6 +1,7 @@
 export const CONTENT_REVIEW_DATE = '2026-09-15';
 
 export const ROUTE_LAST_MODIFIED: Record<string, string> = {
+  '/factory/intelligent-garment-hanging-system': '2026-10-21',
   '/factory/rotary-heat-transfer': '2026-10-21',
   '/factory/electric-straight-knife-cutting': '2026-10-21',
   '/factory/computerized-fabric-cutting': '2026-10-21',
