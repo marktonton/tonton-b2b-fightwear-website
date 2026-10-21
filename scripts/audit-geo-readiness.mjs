@@ -19,7 +19,7 @@ const sitemap = read('app/sitemap.ts');
 const products = read('app/products/[id]/page.tsx');
 const resources = read('app/resources/[slug]/page.tsx');
 
-for (const required of ['ORGANIZATION_ID', "legalName: 'Tontonsports (Shenzhen) Co., Ltd.'", 'sameAs:', 'knowsAbout:', 'contactPoint:']) {
+for (const required of ['ORGANIZATION_ID', "COMPANY_NAME = 'Tontonsports (Shenzhen) Co., Ltd.'", "legalName: COMPANY_NAME", "BRAND_NAME = 'TONTON'", 'sameAs:', 'knowsAbout:', 'contactPoint:']) {
   if (!entity.includes(required)) fail(`organization entity is missing ${required}`);
 }
 

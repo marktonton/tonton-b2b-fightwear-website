@@ -1,5 +1,7 @@
 'use client';
 
+import { sendAnalyticsEvent } from '../../lib/analytics';
+
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { FormEvent } from 'react';
 
@@ -77,9 +79,9 @@ function formatSource(value: string | null) {
 }
 
 function recordBuilderEvent(action: string, product: string, source: string, reference: string) {
-  const analyticsWindow = window as typeof window & { dataLayer?: Array<Record<string, string>>; gtag?: (...args: unknown[]) => void };
-  if (analyticsWindow.gtag) analyticsWindow.gtag('event', 'project_builder_action', { action, product_type: product, entry_source: source, reference_product: reference });
-  else analyticsWindow.dataLayer?.push({ event: 'project_builder_action', action, product_type: product, entry_source: source, reference_product: reference });
+  const context = { action, product_type: product, entry_source: source, reference_product: reference };
+  sendAnalyticsEvent('project_builder_action', context);
+  if (action === 'submit_success') sendAnalyticsEvent('generate_lead', { product_type: product, entry_source: source });
 }
 
 export default function ProjectBuilderForm() {
@@ -94,6 +96,16 @@ export default function ProjectBuilderForm() {
   const attachmentInput = useRef<HTMLInputElement>(null);
   const [submitStatus, setSubmitStatus] = useState<SubmitStatus>({ state: 'idle', message: '' });
   const startedRef = useRef(false);
+  const [onlineSubmissionAvailable, setOnlineSubmissionAvailable] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    const controller = new AbortController();
+    fetch('/api/rfq', { cache: 'no-store', signal: controller.signal })
+      .then((response) => response.ok ? response.json() : Promise.reject())
+      .then((result) => setOnlineSubmissionAvailable(result.onlineSubmissionAvailable === true))
+      .catch(() => { if (!controller.signal.aborted) setOnlineSubmissionAvailable(false); });
+    return () => controller.abort();
+  }, []);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -169,6 +181,7 @@ export default function ProjectBuilderForm() {
 
   const submitRfq = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    if (onlineSubmissionAvailable !== true) return;
     if (submitStatus.state === 'submitting' || submitStatus.state === 'success' || fileError) return;
 
     setSubmitStatus({ state: 'submitting', message: 'Sending your project brief…' });
@@ -259,6 +272,6 @@ export default function ProjectBuilderForm() {
         </div>
       </section>
     </form>
-    <aside className="project-builder-summary"><p>YOUR PROJECT BRIEF</p><h2>{form.product}</h2><dl>{referenceProduct && <div><dt>Reference</dt><dd>{referenceProduct}</dd></div>}<div><dt>Quantity</dt><dd>{form.quantity}</dd></div><div><dt>Use</dt><dd>{form.use}</dd></div><div><dt>Build</dt><dd>{form.construction}</dd></div><div><dt>Branding</dt><dd>{form.decoration}</dd></div><div><dt>Priorities</dt><dd>{form.priorities.join(', ') || 'To be discussed'}</dd></div></dl><p className="project-builder-note">The team will confirm the applicable MOQ, materials, sample route and schedule against this brief.</p><button form="project-builder-rfq" type="submit" className="project-builder-submit" disabled={submitStatus.state === 'submitting' || submitStatus.state === 'success' || !!fileError}>{submitStatus.state === 'submitting' ? 'SENDING PROJECT BRIEF…' : submitStatus.state === 'success' ? 'PROJECT BRIEF SENT' : 'SEND PROJECT BRIEF'}</button>{submitStatus.message && <div className={`project-builder-status project-builder-status-${submitStatus.state}`} role="status" aria-live="polite"><strong>{submitStatus.state === 'success' ? 'PROJECT RECEIVED' : submitStatus.state === 'error' ? 'SEND FAILED' : 'SENDING'}</strong><p>{submitStatus.message}</p>{submitStatus.reference && <span>Reference: {submitStatus.reference}</span>}{submitStatus.state === 'success' && <p>Keep this reference for follow-up. We will review your specification and contact you using the details provided to clarify materials, artwork, sampling and quotation. Edit the form to prepare another request.</p>}</div>}<p className="project-builder-privacy">Your details are used only to review and respond to this project request.</p><button type="button" className="project-builder-copy" onClick={copySummary} aria-live="polite">{copyState}</button><a href={whatsapp} target="_blank" rel="noopener noreferrer" onClick={() => recordBuilderEvent('whatsapp', form.product, entrySource, referenceProduct)}>Send by WhatsApp</a><a className="project-builder-email" href={email} onClick={() => recordBuilderEvent('email', form.product, entrySource, referenceProduct)}>Send by email</a></aside>
+    <aside className="project-builder-summary"><p>YOUR PROJECT BRIEF</p><h2>{form.product}</h2><dl>{referenceProduct && <div><dt>Reference</dt><dd>{referenceProduct}</dd></div>}<div><dt>Quantity</dt><dd>{form.quantity}</dd></div><div><dt>Use</dt><dd>{form.use}</dd></div><div><dt>Build</dt><dd>{form.construction}</dd></div><div><dt>Branding</dt><dd>{form.decoration}</dd></div><div><dt>Priorities</dt><dd>{form.priorities.join(', ') || 'To be discussed'}</dd></div></dl><p className="project-builder-note">The team will confirm the applicable MOQ, materials, sample route and schedule against this brief.</p><button form="project-builder-rfq" type="submit" className="project-builder-submit" disabled={onlineSubmissionAvailable !== true || submitStatus.state === 'submitting' || submitStatus.state === 'success' || !!fileError}>{onlineSubmissionAvailable === null ? 'CHECKING ONLINE SUBMISSION…' : onlineSubmissionAvailable === false ? 'USE WHATSAPP OR EMAIL BELOW' : submitStatus.state === 'submitting' ? 'SENDING PROJECT BRIEF…' : submitStatus.state === 'success' ? 'PROJECT BRIEF SENT' : 'SEND PROJECT BRIEF'}</button>{onlineSubmissionAvailable === false && <p role="status">Send your prepared brief using WhatsApp or email below. Your details are prefilled; attach reference files in that conversation. Online form delivery is currently unavailable.</p>}{submitStatus.message && <div className={`project-builder-status project-builder-status-${submitStatus.state}`} role="status" aria-live="polite"><strong>{submitStatus.state === 'success' ? 'PROJECT RECEIVED' : submitStatus.state === 'error' ? 'SEND FAILED' : 'SENDING'}</strong><p>{submitStatus.message}</p>{submitStatus.reference && <span>Reference: {submitStatus.reference}</span>}{submitStatus.state === 'success' && <p>Keep this reference for follow-up. We will review your specification and contact you using the details provided to clarify materials, artwork, sampling and quotation. Edit the form to prepare another request.</p>}</div>}<p className="project-builder-privacy">Your details are used only to review and respond to this project request.</p><button type="button" className="project-builder-copy" onClick={copySummary} aria-live="polite">{copyState}</button><a href={whatsapp} target="_blank" rel="noopener noreferrer" onClick={() => recordBuilderEvent('whatsapp', form.product, entrySource, referenceProduct)}>Send by WhatsApp</a><a className="project-builder-email" href={email} onClick={() => recordBuilderEvent('email', form.product, entrySource, referenceProduct)}>Send by email</a></aside>
   </div>;
 }

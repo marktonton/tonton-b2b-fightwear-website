@@ -3,6 +3,14 @@ import { NextResponse } from 'next/server';
 
 export const runtime = 'nodejs';
 export const maxDuration = 15;
+export const dynamic = 'force-dynamic';
+
+export async function GET() {
+  return NextResponse.json(
+    { onlineSubmissionAvailable: Boolean(process.env.RESEND_API_KEY && process.env.RFQ_FROM_EMAIL) },
+    { headers: { 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex' } },
+  );
+}
 
 const MAX_FILE_SIZE = 4 * 1024 * 1024;
 const MAX_TEXT_LENGTH = 4000;

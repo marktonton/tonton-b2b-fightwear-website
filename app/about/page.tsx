@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 
 const facts = [
   ['Company', 'Tontonsports (Shenzhen) Co., Ltd.'],
-  ['Public brand', 'TONTON Sportswear'],
-  ['Founded', '2004'],
+  ['Public brand', 'TONTON'],
+  ['Brand history', 'TONTON began in Shenzhen in 2004'],
   ['Operating structure', 'Shenzhen business and brand operations with a smart-production base in Xiantao, Hubei'],
   ['Business model', 'B2B custom sportswear manufacturing; OEM and ODM development'],
   ['Core product focus', 'Rash guards, MMA and BJJ shorts, grappling shorts, training shorts, teamwear and related performance apparel'],
@@ -84,8 +84,8 @@ const officialReports = [
 
 const faqs = [
   {
-    question: 'What is TONTON Sportswear?',
-    answer: 'TONTON Sportswear is the public brand of Tontonsports (Shenzhen) Co., Ltd., a B2B custom fightwear and sportswear manufacturer founded in 2004.',
+    question: 'What is TONTON?',
+    answer: 'TONTON is the public brand. The company presented on this website is Tontonsports (Shenzhen) Co., Ltd. TONTON began in Shenzhen in 2004 and supports B2B custom fightwear and sportswear projects.',
   },
   {
     question: 'What products does TONTON specialize in?',
@@ -151,8 +151,8 @@ export default function AboutPage() {
       <section className="entity-hero">
         <div className="entity-hero-copy">
           <p>VERIFIED COMPANY PROFILE</p>
-          <h1>About TONTON Sportswear</h1>
-          <p>TONTON Sportswear is a B2B custom fightwear and performance-apparel manufacturer founded in 2004. We help brands, gyms, academies, clubs, teams and retailers develop products from the initial brief through sampling, production review and packing.</p>
+          <h1>About TONTON</h1>
+          <p>TONTON is our brand. Our public-facing company name is Tontonsports (Shenzhen) Co., Ltd. Our business began in Shenzhen in 2004. We help brands, gyms, academies, clubs, teams and retailers develop products from the initial brief through sampling, production review and packing.</p>
           <div>
             <Link href="/factory">Inspect the Factory</Link>
             <Link href="/project-builder?source=about-page">Build Your Project Brief</Link>
