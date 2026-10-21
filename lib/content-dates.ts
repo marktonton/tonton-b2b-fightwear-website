@@ -1,6 +1,7 @@
 export const CONTENT_REVIEW_DATE = '2026-09-15';
 
 export const ROUTE_LAST_MODIFIED: Record<string, string> = {
+  '/factory/rotary-heat-transfer': '2026-10-21',
   '/factory/electric-straight-knife-cutting': '2026-10-21',
   '/factory/computerized-fabric-cutting': '2026-10-21',
   '/': '2026-10-15',
@@ -8,7 +9,7 @@ export const ROUTE_LAST_MODIFIED: Record<string, string> = {
   '/service-support': '2026-09-21',
   '/factory': '2026-10-21',
   '/factory/multi-head-embroidery': '2026-10-20',
-  '/factory/digital-sublimation-printing': '2026-10-20',
+  '/factory/digital-sublimation-printing': '2026-10-21',
   '/about': '2026-09-23',
   '/resources': '2026-10-15',
   '/project-builder': '2026-10-15',
