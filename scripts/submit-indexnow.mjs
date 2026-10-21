@@ -1,8 +1,9 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
-const host = process.env.INDEXNOW_HOST || 'www.tontongear.com';
-const key = process.env.INDEXNOW_KEY;
+const config = JSON.parse(readFileSync(new URL('../data/search-submission.json', import.meta.url), 'utf8'));
+const host = process.env.INDEXNOW_HOST || config.host;
+const key = process.env.INDEXNOW_KEY || config.indexNowKey;
 const siteUrl = `https://${host}`;
 const requestedUrls = process.argv.slice(2);
 
@@ -24,6 +25,9 @@ const urlList = (requestedUrls.length ? requestedUrls : defaults).map((path) => 
   return url.toString();
 });
 
+const keyResponse = await fetch(`${siteUrl}/${key}.txt`, { signal: AbortSignal.timeout(15000) });
+if (!keyResponse.ok || (await keyResponse.text()).trim() !== key) throw new Error('INDEXNOW NOT SENT: production key file is not yet accessible or does not match.');
+
 const response = await fetch('https://api.indexnow.org/indexnow', {
   method: 'POST',
   headers: { 'content-type': 'application/json; charset=utf-8' },
@@ -35,4 +39,4 @@ if (!response.ok) {
   process.exit(1);
 }
 
-console.log(`INDEXNOW SENT: ${urlList.length} URL(s) submitted for fresh discovery.`);
+console.log(`INDEXNOW RECEIVED: HTTP ${response.status}; ${urlList.length} URL(s). ${response.status === 202 ? 'Key validation is pending.' : 'This confirms receipt, not indexing.'}`);

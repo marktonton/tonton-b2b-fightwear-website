@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { resolveImage } from '../lib/image-resolver';
 import SearchMeasurement from '../components/SearchMeasurement';
-import { ORGANIZATION_SCHEMA, SITE_URL, WEBSITE_SCHEMA } from '../lib/site-entity';
+import { BRAND_NAME, COMPANY_NAME, ORGANIZATION_SCHEMA, SITE_URL, WEBSITE_SCHEMA } from '../lib/site-entity';
 
 const SITE_DESCRIPTION = 'TONTON Sportswear provides custom fightwear and professional sportswear manufacturing for brands, teams, clubs, and retailers.';
 const googleVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: SITE_URL,
-    siteName: 'TONTON Sportswear',
+    siteName: BRAND_NAME,
     title: 'Custom Sportswear Manufacturer | TONTON OEM Factory',
     description: SITE_DESCRIPTION,
     images: [{ url: resolveImage('/assets/logo.png'), alt: 'TONTON Sportswear' }],
@@ -93,6 +93,7 @@ export default function RootLayout({
           <div className="footer-main" data-footer-layout="four-column">
             <div className="footer-column footer-brand">
               <img className="footer-logo" src={resolveImage('/assets/logo.png')} alt="TONTON" />
+              <p><strong>{COMPANY_NAME}</strong></p>
               <p>Professional MMA & Sportswear OEM Factory. Building premium fightwear brands since 2004.</p>
             </div>
             <div className="footer-column">
@@ -121,7 +122,7 @@ export default function RootLayout({
             </div>
           </div>
           <div className="footer-bottom">
-            <p>© 2026 TONTON Sports. All rights reserved.</p>
+            <p>© 2026 {BRAND_NAME}. All rights reserved.</p>
             <p>Privacy Policy | Terms of Service</p>
           </div>
         </footer>

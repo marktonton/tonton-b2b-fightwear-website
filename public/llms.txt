@@ -3,7 +3,7 @@
 TONTON Sportswear is a custom fightwear and sportswear manufacturing website for brands, gyms, academies, clubs and private-label buyers.
 
 ## Verified organization identity
-- Public brand: TONTON Sportswear
+- Public brand: TONTON
 - Legal entity: Tontonsports (Shenzhen) Co., Ltd.
 - Founded: 2004
 - Business model: B2B custom sportswear manufacturing with OEM and ODM development support

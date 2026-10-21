@@ -38,7 +38,7 @@ Optional HTML verification can be supplied as `NEXT_PUBLIC_GOOGLE_SITE_VERIFICAT
 
 1. Import the verified Search Console property or verify `www.tontongear.com` directly.
 2. Submit the canonical sitemap.
-3. Create a real IndexNow key, put the exact key in `public/<key>.txt`, and configure the same value as `INDEXNOW_KEY` in the secure deployment environment.
+3. The domain ownership key is configured in `data/search-submission.json` with its matching `public/<key>.txt`. The submission script verifies the live key file before sending. `INDEXNOW_KEY` remains an optional override.
 4. Submit only new, updated, or deleted URLs:
 
 ```bash
@@ -59,6 +59,7 @@ Set `NEXT_PUBLIC_GA_MEASUREMENT_ID` in Vercel only after the production GA4 prop
 - `inquiry_view`
 - `project_builder_open`
 - `project_builder_action`
+- `generate_lead` (only after the RFQ API accepts delivery; a WhatsApp click is not a lead)
 
 Use GA4 DebugView to confirm one test event for each live interaction. A script loading successfully is not proof that data is being collected. Do not record an inquiry as a lead until a real form-delivery success response exists.
 
@@ -71,3 +72,13 @@ Record only values copied from the named platform and date range:
 | YYYY-MM-DD |  |  |  |  |  |  |  |  |  |
 
 Escalate for investigation when index coverage declines, sitemap URLs return non-200 responses, canonical URLs diverge, or “crawled/discovered — currently not indexed” grows materially. Diagnose page quality and duplication before repeatedly requesting indexing.
+
+## Release verification — 2026-10-21
+
+- Brand: TONTON. Public-facing company: Tontonsports (Shenzhen) Co., Ltd. Source certificate entity names remain as printed.
+- Production RFQ probe returned HTTP 503 before this release: the email delivery environment is not configured. The form now checks readiness and points to WhatsApp/email when unavailable. GET `/api/rfq` exposes only a boolean configuration status, not credentials or recipient details.
+- GA4 was not loaded in the production browser. Confirm the existing GA4 property and set its real `NEXT_PUBLIC_GA_MEASUREMENT_ID` in Production, then redeploy. No ID is invented.
+- After enabling GA4, disable Enhanced Measurement history-based page views when using our manual route page views, to avoid duplicates.
+- Confirm GA4 page_view, contact_whatsapp, project_builder_open and generate_lead in DebugView/Realtime. Only mark generate_lead as a key event after validating a real successful form delivery.
+- Configure RESEND_API_KEY and a verified RFQ_FROM_EMAIL in Vercel; confirm the intended RFQ_TO_EMAIL. Send one clearly labelled test and confirm actual inbox delivery/provider status before claiming end-to-end completion.
+- GSC/Bing authenticated index counts and Google URL-inspection submission remain unverified until account access is available. IndexNow HTTP 200 is receipt only; HTTP 202 additionally means key validation is pending.

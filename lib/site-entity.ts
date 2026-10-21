@@ -4,18 +4,21 @@ export const SITE_URL = 'https://www.tontongear.com';
 export const ORGANIZATION_ID = `${SITE_URL}/#organization`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
 
+export const BRAND_NAME = 'TONTON';
+export const COMPANY_NAME = 'Tontonsports (Shenzhen) Co., Ltd.';
+
 export const ORGANIZATION_REFERENCE = {
   '@type': 'Organization',
   '@id': ORGANIZATION_ID,
-  name: 'TONTON Sportswear',
-  legalName: 'Tontonsports (Shenzhen) Co., Ltd.',
+  name: BRAND_NAME,
+  legalName: COMPANY_NAME,
   url: SITE_URL,
 };
 
 export const ORGANIZATION_SCHEMA = {
   '@context': 'https://schema.org',
   ...ORGANIZATION_REFERENCE,
-  alternateName: ['TONTON', 'TONTON Fightwear Manufacturer'],
+  alternateName: ['TONTON Sportswear', 'TONTON Fightwear Manufacturer'],
   foundingDate: '2004',
   description: 'Custom fightwear and sportswear manufacturer supporting OEM and ODM development for brands, gyms, academies, clubs, teams, and retailers.',
   logo: {
@@ -54,7 +57,7 @@ export const WEBSITE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   '@id': WEBSITE_ID,
-  name: 'TONTON Sportswear',
+  name: BRAND_NAME,
   url: SITE_URL,
   publisher: { '@id': ORGANIZATION_ID },
   inLanguage: 'en',

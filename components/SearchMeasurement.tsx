@@ -4,19 +4,7 @@ import Script from 'next/script';
 import { usePathname } from 'next/navigation';
 import { useEffect } from 'react';
 
-declare global {
-  interface Window {
-    dataLayer?: Array<Record<string, unknown> | IArguments>;
-    gtag?: (...args: unknown[]) => void;
-  }
-}
-
-const measurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
-
-function sendEvent(name: string, parameters: Record<string, string> = {}) {
-  if (!measurementId || !window.gtag) return;
-  window.gtag('event', name, parameters);
-}
+import { analyticsMeasurementId as measurementId, sendAnalyticsEvent as sendEvent } from '../lib/analytics';
 
 function ConversionTracker() {
   const pathname = usePathname();
@@ -63,13 +51,6 @@ export default function SearchMeasurement() {
   if (!measurementId) return null;
   return <>
     <Script src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`} strategy="afterInteractive" />
-    <Script id="tonton-ga4" strategy="afterInteractive">{`
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      window.gtag = gtag;
-      gtag('js', new Date());
-      gtag('config', '${measurementId}', { send_page_view: false });
-    `}</Script>
     <ConversionTracker />
   </>;
 }

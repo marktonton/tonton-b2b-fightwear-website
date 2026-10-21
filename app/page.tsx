@@ -511,7 +511,7 @@ export default function HomePage() {
         {/* Right Column: Company Introduction */}
         <div className="factory-features">
           <p className="eyebrow">About TONTON</p>
-          <h2>TONTON SPORTSWEAR CO., LTD</h2>
+          <h2>Tontonsports (Shenzhen) Co., Ltd.</h2>
           <div className="factory-intro">
             <p>
               With more than 20 years of experience in fight wear and professional sportswear, TONTON brings together a strong design and production team for custom apparel projects.
