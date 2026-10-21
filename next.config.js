@@ -2,10 +2,13 @@
 const nextConfig = {
   reactStrictMode: true,
   async headers() {
-    return ['hd', '720'].map((quality) => ({
+    return [{
+      source: '/assets/factory/straight-knife/:path*',
+      headers: [{ key: 'Cache-Control', value: 'public, max-age=86400, stale-while-revalidate=604800' }],
+    }, ...['hd', '720'].map((quality) => ({
       source: `/assets/factory/multi-head-embroidery/embroidery-brand-film-${quality}.mp4`,
       headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
-    }));
+    }))];
   },
   async redirects() {
     return [
