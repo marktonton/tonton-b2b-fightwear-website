@@ -1,6 +1,7 @@
 export const CONTENT_REVIEW_DATE = '2026-09-15';
 
 export const ROUTE_LAST_MODIFIED: Record<string, string> = {
+  '/factory/electric-straight-knife-cutting': '2026-10-21',
   '/factory/computerized-fabric-cutting': '2026-10-21',
   '/': '2026-10-15',
   '/collections': CONTENT_REVIEW_DATE,
