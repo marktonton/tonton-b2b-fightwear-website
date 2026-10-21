@@ -4,4 +4,16 @@
 /* Equipment detail links stay distinct from descriptive copy. */
 #equipment .fo-cards>article{display:flex;flex-direction:column;min-width:0}#equipment .fo-cards>article>p{margin-bottom:18px}#equipment .fo-equipment-link{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:12px;margin-top:auto;padding:13px 16px;min-height:58px;box-sizing:border-box;border:2px solid #d20b2c;border-radius:5px;background:#d20b2c;color:#fff;text-decoration:none;font-size:15px;font-weight:700;line-height:1.4;transition:background-color .18s ease,border-color .18s ease,box-shadow .18s ease,transform .18s ease}#equipment .fo-equipment-link>span:last-child{font-size:22px;line-height:1}#equipment .fo-equipment-link:hover{background:#96071f;border-color:#96071f;color:#fff;box-shadow:0 5px 14px #142a3126;transform:translateY(-2px)}#equipment .fo-equipment-link:active{transform:translateY(0);box-shadow:none}@media(prefers-reduced-motion:reduce){#equipment .fo-equipment-link{transition:none}#equipment .fo-equipment-link:hover{transform:none}}
 
-#equipment .fo-cards{grid-template-columns:repeat(2,minmax(0,1fr))}@media(max-width:760px){#equipment .fo-cards{grid-template-columns:1fr}}
+/* Full-width equipment gallery: three cards across on desktop. */
+.fo-section#equipment{display:block}
+#equipment .fo-heading{margin-bottom:24px}
+#equipment .fo-heading h2{font-size:32px;margin-bottom:8px}
+#equipment .fo-heading p{margin:0;max-width:900px}
+#equipment .fo-cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+#equipment .fo-cards>article{padding:16px;border:1px solid #dce2e3;border-radius:8px;background:#fff}
+#equipment .fo-cards img{aspect-ratio:8/5;max-height:none;object-fit:cover;border-radius:4px}
+#equipment .fo-cards h3{font-size:22px;min-height:52px;margin:16px 0 10px}
+#equipment .fo-cards p{font-size:16px;line-height:1.6}
+#equipment .fo-equipment-link{font-size:14px;min-height:54px;padding:12px 14px}
+@media(max-width:1000px){#equipment .fo-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}}
+@media(max-width:640px){#equipment .fo-heading{margin-bottom:20px}#equipment .fo-heading h2{font-size:27px}#equipment .fo-cards{grid-template-columns:1fr;gap:18px}#equipment .fo-cards>article{padding:14px}#equipment .fo-cards h3{min-height:0;font-size:21px}}
