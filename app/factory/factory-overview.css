@@ -17,3 +17,5 @@
 #equipment .fo-equipment-link{font-size:14px;min-height:54px;padding:12px 14px}
 @media(max-width:1000px){#equipment .fo-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}}
 @media(max-width:640px){#equipment .fo-heading{margin-bottom:20px}#equipment .fo-heading h2{font-size:27px}#equipment .fo-cards{grid-template-columns:1fr;gap:18px}#equipment .fo-cards>article{padding:14px}#equipment .fo-cards h3{min-height:0;font-size:21px}}
+
+.fo-section#fabrics{display:block}#fabrics .fo-heading{margin-bottom:24px}.fo-fabric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.fo-fabric-grid article{border:1px solid #dce2e3;border-radius:8px;overflow:hidden;background:white}.fo-fabric-grid article>div{padding:20px}.fo-fabric-grid img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}.fo-fabric-grid h3{font-size:24px;margin:12px 0}.fo-fabric-grid p{font-size:16px;line-height:1.65}.fo-fabric-help{margin-top:22px;font-size:16px}@media(max-width:1000px){.fo-fabric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:640px){.fo-fabric-grid{grid-template-columns:1fr}}

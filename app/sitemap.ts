@@ -11,6 +11,7 @@ const modified = (pathname: string) => new Date(`${getRouteModifiedDate(pathname
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
+    { url: `${SITE_URL}/fabrics/220-gsm-stretch-knit`, lastModified: modified('/fabrics/220-gsm-stretch-knit'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE_URL}/factory/intelligent-garment-hanging-system`, lastModified: modified('/factory/intelligent-garment-hanging-system'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE_URL}/factory/rotary-heat-transfer`, lastModified: modified('/factory/rotary-heat-transfer'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE_URL}/factory/electric-straight-knife-cutting`, lastModified: modified('/factory/electric-straight-knife-cutting'), changeFrequency: 'monthly', priority: 0.8 },

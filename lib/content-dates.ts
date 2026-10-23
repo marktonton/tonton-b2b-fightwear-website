@@ -1,6 +1,7 @@
 export const CONTENT_REVIEW_DATE = '2026-09-15';
 
 export const ROUTE_LAST_MODIFIED: Record<string, string> = {
+  '/fabrics/220-gsm-stretch-knit': '2026-10-23',
   '/factory/intelligent-garment-hanging-system': '2026-10-21',
   '/factory/rotary-heat-transfer': '2026-10-21',
   '/factory/electric-straight-knife-cutting': '2026-10-21',
@@ -8,7 +9,7 @@ export const ROUTE_LAST_MODIFIED: Record<string, string> = {
   '/': '2026-10-21',
   '/collections': CONTENT_REVIEW_DATE,
   '/service-support': '2026-09-21',
-  '/factory': '2026-10-21',
+  '/factory': '2026-10-23',
   '/factory/multi-head-embroidery': '2026-10-20',
   '/factory/digital-sublimation-printing': '2026-10-21',
   '/about': '2026-10-21',
