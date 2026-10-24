@@ -141,7 +141,7 @@ export const TRAINING_SHORTS_LANDING_CONTENT: Record<TrainingShortsProductId, La
     seoDescription: 'Custom lightweight quick-dry training shorts with drawcord waist, soft inner lining, curved hem, double stitching and reflective logo options. MOQ from 10 pieces.',
     eyebrow: 'LIGHTWEIGHT TRAINING SHORTS',
     headline: 'Lightweight Quick-Dry Training Shorts',
-    intro: 'A light woven training short with a secure drawcord waist, soft inner lining and curved athletic hem for gym, conditioning, running and team programs.',
+    intro: 'A light woven training short with a secure drawcord waist, soft inner lining and curved athletic hem for gym, conditioning, running and team programs. TONTON provides OEM / ODM manufacturing for this style. Request a project-specific quote based on quantity, fabric, branding and size breakdown.',
     specs: [
       ['MOQ', 'From 10 pieces'],
       ['Fabric', 'Lightweight quick-dry woven'],

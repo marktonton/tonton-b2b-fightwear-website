@@ -25,7 +25,7 @@ export const ROUTE_LAST_MODIFIED: Record<string, string> = {
   '/products/custom-logo-shorts': '2026-09-22',
   '/products/pro-mma-shorts-07': '2026-10-08',
   '/products/pro-mma-shorts-08': '2026-09-23',
-  '/products/lightweight-quick-dry-training-shorts': '2026-09-22',
+  '/products/lightweight-quick-dry-training-shorts': '2026-10-24',
 };
 
 export function getRouteModifiedDate(pathname: string) {

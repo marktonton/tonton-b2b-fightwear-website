@@ -175,6 +175,22 @@ export default function ProductDetailPage({ params }: PageProps) {
       manufacturer: { '@id': ORGANIZATION_REFERENCE['@id'] },
       additionalProperty: content.materialRows.map(([name, value]) => ({ '@type': 'PropertyValue', name, value })),
     };
+    // This quote-only OEM page describes a manufacturing service, not a
+    // publicly priced retail offer. Keep Product markup for the other styles.
+    const isQuoteOnlyService = product.id === 'lightweight-quick-dry-training-shorts';
+    const entitySchema = isQuoteOnlyService ? {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      '@id': `${productUrl}#service`,
+      name: 'Custom Lightweight Quick-Dry Training Shorts Manufacturing',
+      description: content.seoDescription,
+      serviceType: 'OEM / ODM custom training shorts manufacturing',
+      provider: { '@id': ORGANIZATION_REFERENCE['@id'] },
+      areaServed: 'Worldwide',
+      category: categoryName,
+      image: galleryImages.map(getAbsoluteImage),
+      url: productUrl,
+    } : productSchema;
     const webPageSchema = {
       '@context': 'https://schema.org',
       '@type': 'WebPage',
@@ -182,7 +198,7 @@ export default function ProductDetailPage({ params }: PageProps) {
       url: productUrl,
       dateModified: getRouteModifiedDate(`/products/${product.id}`),
       reviewedBy: CONTENT_REVIEWER,
-      mainEntity: { '@id': `${productUrl}#product` },
+      mainEntity: { '@id': `${productUrl}#${isQuoteOnlyService ? 'service' : 'product'}` },
     };
     const breadcrumbSchema = {
       '@context': 'https://schema.org',
@@ -205,7 +221,7 @@ export default function ProductDetailPage({ params }: PageProps) {
 
     return (
       <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([productSchema, webPageSchema, breadcrumbSchema, faqSchema]) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([entitySchema, webPageSchema, breadcrumbSchema, faqSchema]) }} />
         <TrainingShortsLanding product={product} />
       </>
     );
