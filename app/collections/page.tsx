@@ -1,4 +1,5 @@
 import React from 'react';
+import BuyerFacts from '../../components/BuyerFacts';
 import './collections.css';
 import Link from 'next/link';
 import { resolveImage } from '../../lib/image-resolver';
@@ -59,15 +60,16 @@ export default function CollectionsPage() {
             <div className={`collection-product-photo collection-product-photo-${category.id}`}><img src={resolveImage(category.image)} alt={category.name} /></div>
             <div>
               <span>Collection</span>
-              <h4>{category.name}</h4>
+              <h2>{category.name}</h2>
               <p>{category.description}</p>
               <Link href={`/customization/${category.id}`} className="cert-btn" style={{ marginTop: '15px', display: 'inline-block' }}>
-                View Details
+                Explore {category.name}
               </Link>
             </div>
           </div>
         ))}
       </div>
+      <BuyerFacts />
     </div>
   );
 }

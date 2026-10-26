@@ -1,4 +1,4 @@
-import { notFound, redirect } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
 import {
   customizationCategories,
   getCustomizationCategory,
@@ -15,5 +15,5 @@ export default function LegacyCollectionRedirect({ params }: { params: { slug: s
     notFound();
   }
 
-  redirect(`/customization/${category.id}`);
+  permanentRedirect(`/customization/${category.id}`);
 }

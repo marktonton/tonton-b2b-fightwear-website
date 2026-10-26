@@ -1,6 +1,7 @@
 'use client';
 import './home-product-media.css';
 
+import BuyerFacts from '../components/BuyerFacts';
 import BuyerSolutionsLinks from '../components/BuyerSolutionsLinks';
 
 import React, { useState, useEffect } from 'react';
@@ -554,6 +555,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      <BuyerFacts />
       <BuyerSolutionsLinks />
       <RelatedResources />
 
