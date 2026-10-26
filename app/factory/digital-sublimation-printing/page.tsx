@@ -1,3 +1,4 @@
+import { serializeStructuredData } from '../../../lib/structured-data';
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import { resolveImage } from '../../../lib/image-resolver';
@@ -78,7 +79,7 @@ export default function SublimationPrintingPage() {
   ];
 
   return <article className="sublimation-page">
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData(schema) }} />
     <nav className="sub-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/factory">Factory</a><span>/</span><span>Digital Sublimation Printing</span></nav>
     <header className="sub-hero">
       <div><p className="sub-kicker">INSIDE OUR FACTORY · PRINTING DEPARTMENT</p><h1>Digital Sublimation Printing for Custom Sportswear</h1><p className="sub-lead">Your artwork. Printed on paper. Transferred into polyester.</p><p>At TONTON’s Xiantao production base, our in-house industrial roll-to-roll printing equipment outputs full-color designs, team logos, player names and numbers onto sublimation transfer paper. Separate heat-transfer equipment brings the design onto the selected polyester fabric.</p><div className="sub-actions"><a className="sub-button" href="/project-builder?source=factory-sublimation">Discuss your custom project →</a><a className="sub-button sub-outline" href="#workshop-videos">Watch the machines run ↓</a></div></div>

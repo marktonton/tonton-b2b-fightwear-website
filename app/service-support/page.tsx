@@ -1,3 +1,5 @@
+import { serializeStructuredData } from '../../lib/structured-data';
+import PlanningLinks from '../../components/PlanningLinks';
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import { resolveImage } from '../../lib/image-resolver';
@@ -173,6 +175,7 @@ const techniques = [
 const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
+  '@id': `${SITE_URL}/service-support#service`,
   name: 'Custom Fightwear Development and Production Support',
   provider: { '@id': ORGANIZATION_ID },
   url: `${SITE_URL}/service-support`,
@@ -196,7 +199,7 @@ function ArrowIcon() {
 export default function ServiceSupportPage() {
   return (
     <div className="service-page">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([serviceSchema, breadcrumbSchema]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData([serviceSchema, breadcrumbSchema, { '@context': 'https://schema.org', '@type': 'WebPage', url: `${SITE_URL}/service-support`, name: 'Service & Support', description: serviceSchema.description, mainEntity: { '@id': `${SITE_URL}/service-support#service` } }]) }} />
 
       <section className="service-hero">
         <Image
@@ -370,6 +373,7 @@ export default function ServiceSupportPage() {
         </div>
       </section>
 
+      <PlanningLinks />
       <section className="service-cta">
         <Image src={resolveImage('/assets/factory/overview/showroom-01.jpg')} alt="TONTON custom sportswear showroom and project support" fill sizes="100vw" />
         <div className="service-cta-shade" />

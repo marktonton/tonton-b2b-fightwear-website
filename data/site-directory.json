@@ -1,0 +1,296 @@
+[
+  {
+    "path": "/fabrics/four-way-stretch-woven",
+    "title": "4-Way Stretch Shell. Soft 250 GSM Inner Layer.",
+    "description": "A structured, lightweight outer shell paired with a soft milk-silk inner layer.",
+    "group": "Materials"
+  },
+  {
+    "path": "/fabrics/compression-liner-knit",
+    "title": "Compression Liner Knit",
+    "description": "For fitted inner layers, compression shorts and coordinated fightwear.",
+    "group": "Materials"
+  },
+  {
+    "path": "/fabrics/stretch-mesh",
+    "title": "Stretch Mesh",
+    "description": "For rash guard side panels, underarms and selected garment inserts.",
+    "group": "Materials"
+  },
+  {
+    "path": "/solutions/bjj-academy-uniforms",
+    "title": "Custom BJJ academy uniforms, planned as one team kit",
+    "description": "Plan custom BJJ academy Rash Guards and grappling shorts with coordinated artwork, size allocation, sample checks and a clear repeat-order specification.",
+    "group": "Buyer solutions"
+  },
+  {
+    "path": "/solutions/private-label-fightwear",
+    "title": "Private-label fightwear development for your next collection",
+    "description": "Develop private-label Rash Guards and fight shorts with TONTON: product specifications, sublimation artwork, labels, sampling and quality-control planning for independent brands.",
+    "group": "Buyer solutions"
+  },
+  {
+    "path": "/factory/intelligent-garment-hanging-system",
+    "title": "Intelligent Garment Hanging System",
+    "description": "Inside TONTON’s intelligent sportswear production line: overhead garment transport, sewing workstation routing, order tracking, real factory photos and workshop videos.",
+    "group": "Factory processes"
+  },
+  {
+    "path": "/factory/rotary-heat-transfer",
+    "title": "Rotary Sublimation Heat Transfer",
+    "description": "TONTON custom sportswear factory: rotary heat transfer from printed sublimation paper to polyester fabric, roll loading, process videos and preparation for cutting and sewing.",
+    "group": "Factory processes"
+  },
+  {
+    "path": "/factory/electric-straight-knife-cutting",
+    "title": "Electric Straight Knife Fabric Cutting",
+    "description": "TONTON custom sportswear manufacturer in China: operator-guided fabric cutting, garment panel preparation, real factory photos and 720p/1080p demonstration videos.",
+    "group": "Factory processes"
+  },
+  {
+    "path": "/factory/computerized-fabric-cutting",
+    "title": "Computerized Automatic Fabric Cutting",
+    "description": "Explore TONTON’s computerized automatic cutting equipment for custom sportswear: CAD patterns, marker layouts, fabric preparation, garment panels and actual workshop videos.",
+    "group": "Factory processes"
+  },
+  {
+    "path": "/",
+    "title": "CUSTOM MMA & BJJ FIGHTWEAR MANUFACTURER",
+    "description": "TONTON Sportswear provides custom fightwear and professional sportswear manufacturing for brands, teams, clubs, and retailers.",
+    "group": "Company and project planning"
+  },
+  {
+    "path": "/collections",
+    "title": "Customization Collections",
+    "description": "Explore TONTON custom sublimated rash guards, training shorts, and BJJ/MMA shorts for brands, teams, clubs, and retailers.",
+    "group": "Company and project planning"
+  },
+  {
+    "path": "/service-support",
+    "title": "Service & Support",
+    "description": "Explore TONTON custom fightwear services—from product planning, artwork and sampling to production, quality control, packing, and delivery support.",
+    "group": "Company and project planning"
+  },
+  {
+    "path": "/factory/digital-sublimation-printing",
+    "title": "Digital Sublimation Printing for Custom Sportswear",
+    "description": "Inside TONTON’s in-house roll-to-roll sublimation printing workshop: transfer-paper printing, polyester heat transfer, personalized teamwear, real equipment photos and videos.",
+    "group": "Factory processes"
+  },
+  {
+    "path": "/factory/multi-head-embroidery",
+    "title": "Multi-Head Embroidery for Custom Teamwear",
+    "description": "Explore TONTON’s computerized multi-head embroidery workshop: JIAYU equipment, team logos and lettering, sample approval, actual machine footage and buyer preparation.",
+    "group": "Factory processes"
+  },
+  {
+    "path": "/factory",
+    "title": "Inside the TONTON Factory",
+    "description": "Explore TONTON custom teamwear manufacturing in Xiantao, China: equipment, fabrics, people, production workflow, digital tracking, quality control and factory documents.",
+    "group": "Company and project planning"
+  },
+  {
+    "path": "/about",
+    "title": "About TONTON",
+    "description": "Verified facts about TONTON Sportswear, its custom fightwear capabilities, OEM and ODM process, product focus, factory evidence, and buyer contact routes.",
+    "group": "Company and project planning"
+  },
+  {
+    "path": "/resources",
+    "title": "Build a clearer custom fightwear specification",
+    "description": "Technical buyer guides for custom Rash Guards, Training Shorts and BJJ/MMA Shorts covering fabric, seams, sublimation, construction, sampling and quality control.",
+    "group": "Company and project planning"
+  },
+  {
+    "path": "/project-builder",
+    "title": "Build a production-ready custom fightwear brief",
+    "description": "Build a structured custom fightwear specification with product, quantity, construction, artwork, size and performance requirements.",
+    "group": "Company and project planning"
+  },
+  {
+    "path": "/customization/sublimated-rash-guards",
+    "title": "Custom Sublimated Graphic Rash Guards",
+    "description": "Custom sublimated graphic Rash Guard manufacturer for BJJ, MMA and grappling brands. Inspect real fabric, mesh, flatlock seams, silicone grip and OEM options.",
+    "group": "Custom product programs"
+  },
+  {
+    "path": "/customization/sublimated-training-shorts",
+    "title": "Custom Functional Training Shorts",
+    "description": "Custom men’s functional training shorts for gym, HIIT, combat conditioning and outdoor fitness. Explore woven fabric, zip pockets, ventilation and OEM options.",
+    "group": "Custom product programs"
+  },
+  {
+    "path": "/customization/sublimated-bjj-mma-shorts",
+    "title": "Custom BJJ & MMA Shorts",
+    "description": "Custom BJJ and MMA shorts for academies, gyms and private-label brands. Low MOQ from 10 pieces; review sublimation, fit, liners and samples. Request a quote.",
+    "group": "Custom product programs"
+  },
+  {
+    "path": "/products/olive-basic-rash-guard",
+    "title": "Custom Olive Short-Sleeve Team Rash Guard",
+    "description": "Develop a clean olive short-sleeve custom Rash Guard for BJJ academies, MMA gyms and grappling teams. Review fit, seams, fabric, logos, MOQ and sample approval with TONTON.",
+    "group": "Products"
+  },
+  {
+    "path": "/products/blue-team-rash-guard",
+    "title": "Blue Elite Team Rash Guard",
+    "description": "Custom blue team Rash Guard made with 220gsm ultra-fine Lycra, 85% polyester and 15% spandex, plus a silicone anti-slip elastic band for BJJ and MMA teams.",
+    "group": "Products"
+  },
+  {
+    "path": "/products/white-logo-rash-guard",
+    "title": "White Pro Club Logo Rash Guard",
+    "description": "Custom white logo Rash Guard made with opaque 220gsm ultra-fine Lycra, 85% polyester and 15% spandex, with silicone anti-slip elastic band and OEM support.",
+    "group": "Products"
+  },
+  {
+    "path": "/products/samurai-graphic-rash-guard",
+    "title": "Samurai 220gsm Graphic Rash Guard",
+    "description": "Custom black-and-gold Samurai Rash Guard made with soft 220gsm ultra-fine Lycra for excellent elasticity and fully opaque coverage. OEM artwork and team customization available.",
+    "group": "Products"
+  },
+  {
+    "path": "/products/fuji-art-rash-guard",
+    "title": "Fuji Art Full-Sleeve Graphic Rash Guard",
+    "description": "Create a long-sleeve custom Rash Guard with complex sleeve artwork, contrast panels and private-label branding for BJJ, No-Gi and MMA collections. MOQ from 10 pieces.",
+    "group": "Products"
+  },
+  {
+    "path": "/products/black-gold-rash-guard",
+    "title": "Signature Long-Sleeve Team Rash Guard",
+    "description": "Develop a clean long-sleeve custom team Rash Guard with color-block panels, clear chest branding and OEM labels for BJJ, grappling and MMA programs. MOQ from 10 pieces.",
+    "group": "Products"
+  },
+  {
+    "path": "/products/high-split-grappling-shorts",
+    "title": "High-Split 2-in-1 Custom Grappling Shorts",
+    "description": "Custom high-split grappling shorts with a breathable quick-dry four-way stretch shell, 250gsm milk-silk liner, anti-slip waistband and reinforced stitching for combat sports brands.",
+    "group": "Products"
+  },
+  {
+    "path": "/products/custom-logo-shorts",
+    "title": "Men’s Custom MMA Fight Shorts",
+    "description": "Develop short-cut custom MMA fight shorts for BJJ, Sanda, boxing and combat training with stretch-woven fabric direction, articulated crotch construction and reinforced stitching. MOQ from 10 pieces.",
+    "group": "Products"
+  },
+  {
+    "path": "/products/pro-mma-shorts-07",
+    "title": "Men's Camo Side-Split MMA Fight Shorts",
+    "description": "Men's custom MMA fight shorts in lightweight stretch-woven fabric with an adjustable elastic waist, reinforced side split and hem, and sublimated graphics for MMA, BJJ No-Gi, grappling, kickboxing and functional training.",
+    "group": "Products"
+  },
+  {
+    "path": "/products/pro-mma-shorts-08",
+    "title": "Men's Black Combat Training Shorts",
+    "description": "Men's custom combat training shorts with a short athletic cut, broad elastic waistband, panelled crotch, reinforced hem and custom branding for MMA conditioning, boxing fitness, gym and functional training. MOQ from 10 pieces.",
+    "group": "Products"
+  },
+  {
+    "path": "/products/lightweight-quick-dry-training-shorts",
+    "title": "Lightweight Quick-Dry Training Shorts",
+    "description": "Custom lightweight quick-dry training shorts with drawcord waist, soft inner lining, curved hem, double stitching and reflective logo options. MOQ from 10 pieces.",
+    "group": "Products"
+  },
+  {
+    "path": "/products/black-white-mma-kit",
+    "title": "Classic Custom MMA Academy Team Kit",
+    "description": "Plan a coordinated custom MMA academy kit with matching Rash Guard and fight-shorts artwork, waist construction, team logos, sizes, MOQ and sample approval from TONTON.",
+    "group": "Products"
+  },
+  {
+    "path": "/resources/custom-fightwear-size-quantity-planning",
+    "title": "Custom Fightwear Size & Quantity Planning Guide",
+    "description": "Prepare separate Rash Guard and shorts size allocations, distinguish body and garment measurements, and plan adult or youth academy orders with a worked quantity example.",
+    "group": "Buyer guides"
+  },
+  {
+    "path": "/resources/custom-rash-guard-shorts-team-kit-guide",
+    "title": "Custom Rash Guard & Shorts Team Kit Buying Guide",
+    "description": "Plan a coordinated Rash Guard and shorts set: compare garment specifications, align artwork and colors, approve the worn kit and prepare a clear academy or private-label brief.",
+    "group": "Buyer guides"
+  },
+  {
+    "path": "/resources/rash-guard-fabric-construction",
+    "title": "Rash Guard Fabric & Construction Guide",
+    "description": "A buyer guide to rash guard fabric weight, composition, opacity, stretch, sublimation and silicone anti-slip hems.",
+    "group": "Buyer guides"
+  },
+  {
+    "path": "/resources/220gsm-rash-guard-fabric-guide",
+    "title": "220gsm Rash Guard Fabric: Weight, Stretch & Opacity",
+    "description": "How buyers should evaluate 220gsm Rash Guard fabric for hand feel, stretch recovery, opacity and sublimated performance wear.",
+    "group": "Buyer guides"
+  },
+  {
+    "path": "/resources/rash-guard-silicone-anti-slip-band",
+    "title": "Rash Guard Silicone Anti-Slip Band Guide",
+    "description": "A buyer guide to silicone anti-slip elastic bands, lower-hem control, placement and sample checks for custom Rash Guards.",
+    "group": "Buyer guides"
+  },
+  {
+    "path": "/resources/flatlock-vs-overlock-rash-guard-seams",
+    "title": "Flatlock vs Overlock Seams for Rash Guards",
+    "description": "Compare flatlock and overlock seam directions for custom Rash Guards, including profile, stretch, comfort, reinforcement and sample approval checks.",
+    "group": "Buyer guides"
+  },
+  {
+    "path": "/resources/rash-guard-sublimation-logo-placement",
+    "title": "Rash Guard Sublimation & Logo Placement Guide",
+    "description": "Plan custom Rash Guard panel artwork, sponsor logos, scale and placement for a cleaner sublimated sample and repeatable production brief.",
+    "group": "Buyer guides"
+  },
+  {
+    "path": "/resources/high-split-grappling-shorts-specifications",
+    "title": "High-Split Grappling Shorts Specification Guide",
+    "description": "How to specify 2-in-1 grappling shorts with an ultra-high split, four-way stretch shell and supportive compression liner.",
+    "group": "Buyer guides"
+  },
+  {
+    "path": "/resources/high-split-vs-standard-grappling-shorts",
+    "title": "High-Split vs Standard-Split Grappling Shorts",
+    "description": "Compare high-split and standard-split grappling shorts for kicking clearance, coverage, silhouette and combat-sport movement.",
+    "group": "Buyer guides"
+  },
+  {
+    "path": "/resources/2-in-1-grappling-shorts-liner-construction",
+    "title": "2-in-1 Grappling Shorts Liner Construction Guide",
+    "description": "How to specify a supportive compression liner, outer shell, coverage and custom inner artwork for 2-in-1 grappling shorts.",
+    "group": "Buyer guides"
+  },
+  {
+    "path": "/resources/grappling-shorts-waistband-silicone-grip",
+    "title": "Grappling Shorts Waistband & Silicone Grip Guide",
+    "description": "Plan drawstring adjustment, anti-slip silicone grip, waistband stability and finishing for custom grappling shorts.",
+    "group": "Buyer guides"
+  },
+  {
+    "path": "/resources/training-shorts-fabric-ventilation-pocket-guide",
+    "title": "Training Shorts Fabric, Ventilation & Pocket Guide",
+    "description": "A buyer guide to lightweight stretch woven fabric, perforated ventilation, zip pockets, adjustable waistbands and reinforced construction for functional training shorts.",
+    "group": "Buyer guides"
+  },
+  {
+    "path": "/resources/fightwear-quality-inspection-checklist",
+    "title": "Custom Fightwear Quality Inspection Checklist",
+    "description": "A practical QC checklist for custom Rash Guards and fight shorts covering material, print, measurements, seams, waist systems, labels and packing.",
+    "group": "Buyer guides"
+  },
+  {
+    "path": "/resources/prepare-artwork-for-sublimation",
+    "title": "How to Prepare Artwork for Sublimation",
+    "description": "Prepare logos, colors, panel artwork and approval notes for custom sublimated Rash Guards, fight shorts and teamwear.",
+    "group": "Buyer guides"
+  },
+  {
+    "path": "/resources/custom-fightwear-sampling-moq",
+    "title": "Custom Fightwear Sampling & MOQ Guide",
+    "description": "A practical guide to preparing artwork, specifications, samples and quantity information for a custom fightwear project.",
+    "group": "Buyer guides"
+  },
+  {
+    "path": "/fabrics/220-gsm-stretch-knit",
+    "title": "220 GSM Stretch Knit",
+    "description": "Explore TONTON 220 GSM stretch knit: 85% polyester / 15% spandex for custom rash guards and compression tops. See supplied garment photos, specifications and sample options.",
+    "group": "Materials"
+  }
+]

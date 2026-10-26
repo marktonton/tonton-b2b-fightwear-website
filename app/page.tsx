@@ -1,6 +1,9 @@
 'use client';
+import { serializeStructuredData } from '../lib/structured-data';
+
 import './home-product-media.css';
 
+import { ORGANIZATION_ID, SITE_URL } from '../lib/site-entity';
 import BuyerFacts from '../components/BuyerFacts';
 import BuyerSolutionsLinks from '../components/BuyerSolutionsLinks';
 
@@ -200,6 +203,7 @@ export default function HomePage() {
 
   return (
     <div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData({ '@context': 'https://schema.org', '@type': 'WebPage', url: SITE_URL + '/', name: 'Custom MMA & BJJ Fightwear Manufacturer', description: 'Custom sublimated rash guards, training shorts and BJJ/MMA shorts for brands, gyms and teams.', about: { '@id': ORGANIZATION_ID } }) }} />
       {/* 1. HERO SECTION - Cinematic Full Width */}
       <section className={`hero hero--${currentBanner === 0 ? 'dark' : 'light'}`} aria-labelledby="homepage-hero-title">
         <div className="banner-slider" role="region" aria-roledescription="carousel" aria-label="TONTON custom fightwear">
@@ -590,7 +594,7 @@ export default function HomePage() {
               </details>
             ))}
           </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData({
             '@context': 'https://schema.org',
             '@type': 'FAQPage',
             mainEntity: FAQ_ITEMS.map((item) => ({

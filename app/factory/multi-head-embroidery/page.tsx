@@ -1,3 +1,4 @@
+import { serializeStructuredData } from '../../../lib/structured-data';
 import Image from 'next/image';
 import FactoryVideo from '../../../components/FactoryVideo';
 import type { Metadata } from 'next';
@@ -42,7 +43,7 @@ export default function EmbroideryPage() {
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL }, { '@type': 'ListItem', position: 2, name: 'Factory', item: `${SITE_URL}/factory` }, { '@type': 'ListItem', position: 3, name: 'Multi-Head Embroidery', item: PAGE_URL }] },
   ];
   return <article className="sublimation-page embroidery-page">
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData(schema) }} />
     <nav className="sub-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/factory">Factory</a><span>/</span><span>Multi-Head Embroidery</span></nav>
     <header className="sub-hero"><div><p className="sub-kicker">INSIDE OUR FACTORY · EMBROIDERY DEPARTMENT</p><h1>Multi-Head Embroidery for Custom Teamwear</h1><p className="sub-lead">Team identity, built stitch by stitch.</p><p>Computerized embroidery turns approved artwork into stitched logos, crests and lettering. Explore TONTON’s workshop, see the JIAYU-branded machines at work and understand what to confirm before your custom sportswear order moves into production.</p><div className="sub-actions"><a className="sub-button" href="/project-builder?source=factory-embroidery">Discuss your embroidery project →</a><a className="sub-button sub-outline" href="#embroidery-videos">Watch the workshop video ↓</a></div></div><figure><Photo file="machine-line.webp" alt="JIAYU multi-head embroidery equipment with rows of colored thread cones in the TONTON workshop" priority /><figcaption>Actual workshop photograph · Multi-head embroidery equipment</figcaption></figure></header>
     <section className="sub-snapshot" aria-label="Embroidery capability summary"><div><strong>Computer-controlled</strong><span>Digitized stitch paths and color sequences</span></div><div><strong>Multiple heads</strong><span>Repeat an approved design across panels</span></div><div><strong>Thread-based branding</strong><span>Logos, crests, lettering and garment details</span></div><div><strong>Sample first</strong><span>Confirm the result on the selected fabric</span></div></section>

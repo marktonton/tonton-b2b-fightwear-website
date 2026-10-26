@@ -1,3 +1,4 @@
+import { serializeStructuredData } from '../../../lib/structured-data';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ORGANIZATION_ID } from '../../../lib/site-entity';
@@ -27,7 +28,7 @@ export default function ResourceArticlePage({ params }: PageProps) {
   ];
   return (
     <article className="resource-article">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData(schema) }} />
       <nav aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><Link href="/resources">Resources</Link><span>/</span><span>{resource.title}</span></nav>
       <header><p>{resource.eyebrow}</p><h1>{resource.title}</h1><p>{resource.description}</p><span>Reviewed {reviewed}</span></header>
       <section className="resource-direct-answer"><p>DIRECT ANSWER</p><h2>What buyers need to know</h2><p>{resource.answer}</p></section>

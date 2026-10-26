@@ -1,3 +1,4 @@
+import { serializeStructuredData } from '../../../lib/structured-data';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -240,7 +241,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
 
   return (
     <div className={`customization-page customization-page-${category.id}`}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([collectionSchema, breadcrumbSchema, faqSchema, ...(videoSchema ? [videoSchema] : []), ...(brandVideoSchema ? [brandVideoSchema] : [])]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData([collectionSchema, breadcrumbSchema, faqSchema, ...(videoSchema ? [videoSchema] : []), ...(brandVideoSchema ? [brandVideoSchema] : [])]) }} />
 
       {isTrainingShortsPage && (
         <Link className="training-shorts-banner" href={builderHref} aria-label="Start a custom functional training shorts project">

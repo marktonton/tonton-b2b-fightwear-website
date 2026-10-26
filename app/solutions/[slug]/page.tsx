@@ -1,3 +1,4 @@
+import { serializeStructuredData } from '../../../lib/structured-data';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
@@ -26,7 +27,7 @@ export default function BuyerSolutionPage({ params }: { params: { slug: string }
     { '@type': 'FAQPage', '@id': `${url}#faq`, mainEntity: item.faqs.map((faq) => ({ '@type': 'Question', name: faq.question, acceptedAnswer: { '@type': 'Answer', text: faq.answer } })) },
   ] };
   return <div className="buyer-solution-page">
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData(schema).replace(/</g, '\\u003c') }} />
     <nav className="buyer-breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><span>{item.slug === 'bjj-academy-uniforms' ? 'BJJ academy uniforms' : 'Private-label fightwear'}</span></nav>
     <header className="buyer-solution-hero"><div><p className="rg-eyebrow">{item.eyebrow}</p><h1>{item.heading}</h1><p>{item.intro}</p><Link className="buyer-primary" href={buyerBriefHref(item)}>{item.cta} →</Link><Link className="buyer-secondary" href="#project-evidence">Inspect customer project evidence ↓</Link></div><figure><img src={resolveImage(item.evidence[0].image)} alt={item.evidence[0].alt} width={800} height={1000} fetchPriority="high" /><figcaption>Original customer-supplied production reference. Artwork belongs to the customer.</figcaption></figure></header>
     <section className="buyer-answer" aria-labelledby="buyer-answer-title"><p className="rg-eyebrow">A PRACTICAL STARTING POINT</p><h2 id="buyer-answer-title">{item.slug === 'bjj-academy-uniforms' ? 'What should an academy prepare before ordering custom teamwear?' : 'What does a private-label fightwear project need?'}</h2><p>{item.answer}</p><small>Reviewed October 15, 2026 · TONTON Product Development & Quality Control Team · Based on published product specifications and customer-supplied production references.</small></section>

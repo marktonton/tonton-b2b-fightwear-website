@@ -1,3 +1,4 @@
+import { serializeStructuredData } from '../../lib/structured-data';
 import BuyerSolutionsLinks from '../../components/BuyerSolutionsLinks';
 import Link from 'next/link';
 import type { Metadata } from 'next';
@@ -15,7 +16,7 @@ export default function ResourcesPage() {
   const schema = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Custom Fightwear Buyer Resources', url: `${SITE_URL}/resources`, dateModified: '2026-10-15', hasPart: RESOURCE_PAGES.map((item) => ({ '@type': 'Article', name: item.title, url: `${SITE_URL}/resources/${item.slug}`, dateModified: item.updated })) };
   return (
     <div className="resource-page">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData(schema) }} />
       <header className="resource-hub-hero">
         <p>TECHNICAL BUYER RESOURCES</p>
         <h1>Build a clearer custom fightwear specification</h1>

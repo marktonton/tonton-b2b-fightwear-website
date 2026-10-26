@@ -1,3 +1,4 @@
+import { serializeStructuredData } from '../../lib/structured-data';
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import CertificatesSlider from './CertificatesSlider';
@@ -75,7 +76,7 @@ export default function FactoryPage() {
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL }, { '@type': 'ListItem', position: 2, name: 'Factory', item: `${SITE_URL}/factory` }] },
   ];
   return <div className="factory-overview">
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData(schema) }} />
     <section className="fo-hero"><div><p className="fo-kicker">CUSTOM SPORTSWEAR · OEM / ODM</p><h1>Inside the<br />TONTON Factory</h1><p className="fo-tagline">People. Materials. Production. Proof.</p><p>Custom teamwear manufacturing, from design and pattern development to digital printing, cutting, sewing, quality inspection and global delivery.</p><div className="fo-actions"><a className="fo-button" href="#equipment">Explore our capabilities ↓</a><a className="fo-button fo-outline" href="/project-builder?source=factory">Start your project →</a></div></div><figure><Photo src={`${NEW}factory-courtyard.webp`} alt="TONTON factory buildings and courtyard in Xiantao, Hubei, China" priority /><figcaption>Our Xiantao production base · Actual factory photograph</figcaption></figure></section>
     <nav className="fo-nav" aria-label="Factory sections">{modules.map(([id,label]) => <a key={id} href={`#${id}`}>{label}</a>)}</nav>
     <section className="fo-intro"><div><p className="fo-kicker">TONTON AT A GLANCE</p><h2>A manufacturing team behind your custom order.</h2><p>TONTON is a custom sportswear manufacturer and OEM/ODM teamwear solution provider. Our focus is small-batch orders with complex customization requirements, digital production tracking and service for global customers.</p></div><dl><div><dt>Founded</dt><dd>2004 · Shenzhen, China</dd></div><div><dt>Founder</dt><dd>Peter Hu / Hu Xinzhen</dd></div><div><dt>Production base</dt><dd>Xiantao, Hubei, China</dd></div><div><dt>Markets served</dt><dd>North America, Europe, Australia, Japan, the Middle East and other global markets</dd></div></dl></section>

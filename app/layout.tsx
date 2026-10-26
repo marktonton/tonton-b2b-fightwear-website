@@ -1,6 +1,8 @@
+import { serializeStructuredData } from '../lib/structured-data';
 import React from 'react';
 import type { Metadata } from 'next';
 import './globals.css';
+import './site-map/site-map.css';
 import { resolveImage } from '../lib/image-resolver';
 import SearchMeasurement from '../components/SearchMeasurement';
 import { BRAND_NAME, COMPANY_NAME, ORGANIZATION_SCHEMA, SITE_URL, WEBSITE_SCHEMA } from '../lib/site-entity';
@@ -16,6 +18,7 @@ export const metadata: Metadata = {
     template: '%s | TONTON Sportswear',
   },
   description: SITE_DESCRIPTION,
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-snippet': -1, 'max-image-preview': 'large', 'max-video-preview': -1 } },
   alternates: { canonical: '/' },
   icons: {
     icon: [{ url: '/icon.svg', type: 'image/svg+xml' }],
@@ -50,8 +53,9 @@ export default function RootLayout({
     <html lang="en">
       <head />
       <body>
+        <a className="skip-content" href="#main-content">Skip to page content</a>
         <SearchMeasurement />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([ORGANIZATION_SCHEMA, { ...WEBSITE_SCHEMA, description: SITE_DESCRIPTION }]) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData([ORGANIZATION_SCHEMA, { ...WEBSITE_SCHEMA, description: SITE_DESCRIPTION }]) }} />
         <div className="topbar">
           <span>Custom MMA Fightwear Factory</span>
           <span>10 PCS MOQ</span>
@@ -64,7 +68,7 @@ export default function RootLayout({
             <img src={resolveImage('/assets/logo.png')} alt="TONTON" style={{ width: '130px' }} />
             <span>OEM / ODM Manufacturer</span>
           </a>
-          <nav>
+          <nav aria-label="Main navigation">
             <a href="/">Home</a>
             <div className="nav-dropdown">
               <a href="/collections" className="nav-link">Customization ▼</a>
@@ -87,7 +91,7 @@ export default function RootLayout({
           </nav>
         </header>
 
-        <main>{children}</main>
+        <main id="main-content">{children}</main>
 
         <footer className="footer">
           <div className="footer-main" data-footer-layout="four-column">
@@ -111,7 +115,7 @@ export default function RootLayout({
               <a href="/project-builder?source=footer">Project Builder</a>
               <a href="/#products">Featured Products</a>
               <a href="/#inquiry">Send Your Inquiry</a>
-              <a href="/collections">Explore Collections</a>
+              <a href="/site-map">All Products &amp; Guides</a>
             </div>
             <div className="footer-column footer-contact">
               <h2>Contact Us</h2>

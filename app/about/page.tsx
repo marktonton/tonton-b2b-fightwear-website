@@ -1,3 +1,4 @@
+import { serializeStructuredData } from '../../lib/structured-data';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -146,7 +147,7 @@ const breadcrumbSchema = {
 export default function AboutPage() {
   return (
     <div className="entity-page">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([aboutSchema, faqSchema, breadcrumbSchema]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData([aboutSchema, faqSchema, breadcrumbSchema]) }} />
 
       <section className="entity-hero">
         <div className="entity-hero-copy">

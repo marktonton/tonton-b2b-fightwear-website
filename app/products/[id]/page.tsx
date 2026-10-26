@@ -1,3 +1,4 @@
+import { serializeStructuredData } from '../../../lib/structured-data';
 import { SILICONE_HEM_VIDEO, SILICONE_HEM_PHOTOS, SILICONE_HEM_FAQS } from '../../../lib/rash-guard-silicone-hem';
 import React from 'react';
 import productsData from '../../../data/products.json';
@@ -152,7 +153,7 @@ export default function ProductDetailPage({ params }: PageProps) {
     ] };
     const faqSchema = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: CAMO_MMA_SHORTS_FAQS.map((item) => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })) };
 
-    return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([productSchema, webPageSchema, breadcrumbSchema, faqSchema]) }} /><CamoMmaShortsLanding product={product} /></>;
+    return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData([productSchema, webPageSchema, breadcrumbSchema, faqSchema]) }} /><CamoMmaShortsLanding product={product} /></>;
   }
 
   if (isTrainingShortsLandingProduct(product.id)) {
@@ -221,7 +222,7 @@ export default function ProductDetailPage({ params }: PageProps) {
 
     return (
       <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([entitySchema, webPageSchema, breadcrumbSchema, faqSchema]) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData([entitySchema, webPageSchema, breadcrumbSchema, faqSchema]) }} />
         <TrainingShortsLanding product={product} />
       </>
     );
@@ -299,7 +300,7 @@ export default function ProductDetailPage({ params }: PageProps) {
 
     return (
       <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([productSchema, webPageSchema, breadcrumbSchema, faqSchema, videoSchema]) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData([productSchema, webPageSchema, breadcrumbSchema, faqSchema, videoSchema]) }} />
         <GrapplingShortsLanding product={product} />
       </>
     );
@@ -395,7 +396,7 @@ export default function ProductDetailPage({ params }: PageProps) {
 
     return (
       <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([productSchema, webPageSchema, breadcrumbSchema, faqSchema, ...siliconeSchemas]) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData([productSchema, webPageSchema, breadcrumbSchema, faqSchema, ...siliconeSchemas]) }} />
         <RashGuardLanding product={product} />
       </>
     );
@@ -452,7 +453,7 @@ export default function ProductDetailPage({ params }: PageProps) {
 
     return (
       <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([productSchema, webPageSchema, breadcrumbSchema, faqSchema]) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData([productSchema, webPageSchema, breadcrumbSchema, faqSchema]) }} />
         <CatalogProductLanding product={product} />
       </>
     );
@@ -495,7 +496,7 @@ export default function ProductDetailPage({ params }: PageProps) {
 
   return (
     <div className="section">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([productSchema, breadcrumbSchema]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData([productSchema, breadcrumbSchema]) }} />
       <nav aria-label="Breadcrumb" className="product-breadcrumb">
         <Link href="/">Home</Link>
         <span aria-hidden="true">/</span>

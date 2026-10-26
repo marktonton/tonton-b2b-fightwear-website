@@ -1,3 +1,4 @@
+import { serializeStructuredData } from '../../../lib/structured-data';
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import FactoryVideo from '../../../components/FactoryVideo';
@@ -29,7 +30,7 @@ export default function FabricPage(){
  {'@context':'https://schema.org','@type':'FAQPage',mainEntity:faqs.map(([q,a])=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:a}}))},
  ];
  return <article className="sublimation-page fabric-page">
- <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema).replace(/</g,'\\u003c')}} />
+ <script type="application/ld+json" dangerouslySetInnerHTML={{__html:serializeStructuredData(schema).replace(/</g,'\\u003c')}} />
  <nav className="sub-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/factory#fabrics">Fabric Library</a><span>/</span><span>220 GSM Stretch Knit</span></nav>
  <header className="sub-hero"><div><p className="sub-kicker">TONTON FABRIC LIBRARY · MAIN FABRIC</p><h1>220 GSM Stretch Knit</h1><p className="sub-lead">85% Polyester / 15% Spandex</p><p>For custom rash guards and compression tops. A smooth stretch knit for close-fitting sportswear, reviewed together with your fit, artwork and finished garment construction.</p><div className="sub-actions"><a className="sub-button" href="/project-builder?source=fabric-220gsm-stretch-knit">Discuss this fabric →</a><a className="sub-button sub-outline" href="#fabric-details">Explore fabric details ↓</a></div></div><figure><Photo name="main-fabric" alt="Owner-supplied photograph of smooth dark rash guard main fabric beside a separately constructed panel" priority/><figcaption>Supplied garment photograph · Main fabric and adjacent construction</figcaption></figure></header>
  <div className="sub-snapshot"><div><strong>220 GSM</strong><span>Nominal fabric weight</span></div><div><strong>85 / 15</strong><span>Polyester / Spandex</span></div><div><strong>Stretch knit</strong><span>Close-fitting sportswear</span></div><div><strong>OEM / ODM</strong><span>Custom garment projects</span></div></div>

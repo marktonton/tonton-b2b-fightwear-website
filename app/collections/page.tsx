@@ -1,3 +1,4 @@
+import { serializeStructuredData } from '../../lib/structured-data';
 import React from 'react';
 import BuyerFacts from '../../components/BuyerFacts';
 import './collections.css';
@@ -48,7 +49,7 @@ export default function CollectionsPage() {
 
   return (
     <div className="section collections-page">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([collectionSchema, breadcrumbSchema]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData([collectionSchema, breadcrumbSchema]) }} />
       <div className="section-head">
         <h1>Customization Collections</h1>
         <p>Explore our specialized sublimated fightwear categories.</p>
