@@ -175,11 +175,11 @@ export const customizationPageContent: Record<string, CustomizationPageContent> 
     ],
   },
   'sublimated-bjj-mma-shorts': {
-    seoDescription: 'Custom BJJ and sublimated MMA shorts manufacturer for brands and academies. Review private-label artwork, shell and liner options, samples and bulk-order checks.',
+    seoDescription: 'Custom BJJ and MMA shorts for academies, gyms and private-label brands. Low MOQ from 10 pieces; review sublimation, fit, liners and samples. Request a quote.',
     quickAnswerQuestion: 'What should buyers confirm for custom BJJ and MMA shorts?',
     quickAnswer: 'Buyers should confirm the intended combat use, shell and liner construction, split height, waistband security, fit, size range, artwork and reinforcement points. TONTON uses the product brief and physical sample to verify movement, coverage, material direction and branding before bulk production.',
     kicker: 'CUSTOM BJJ & MMA SHORTS MANUFACTURING',
-    heroLead: 'Develop custom 2-in-1 high-split fight shorts for MMA, grappling, wrestling, boxing, and high-intensity training—with mobility, inner support, waistband security, and brand artwork reviewed together.',
+    heroLead: 'Custom BJJ shorts and MMA shorts for academies, gyms and private-label brands, with projects starting from 10 pieces. Develop sublimated logos and team colors around your fit, waistband and liner requirements; approve a physical sample before bulk production.',
     heroImage: `${FIGHT_SHORTS_CATEGORY_ROOT}/hero-high-split-white-liner.webp`,
     heroAlt: 'Black 2-in-1 high-split fight shorts with a supportive white compression liner in motion',
     overviewTitle: 'Freedom outside. Support inside.',

@@ -105,6 +105,13 @@ export default function ProductLandingLinks({ productId }: { productId: string }
         </Link>
       </div>
 
+      {['high-split-grappling-shorts', 'custom-logo-shorts', 'pro-mma-shorts-07', 'black-white-mma-kit'].includes(productId) && (
+        <nav className="product-order-guides" aria-label="Custom shorts manufacturing">
+          <strong>Ordering for an academy, gym or private-label brand?</strong>
+          <Link href="/customization/sublimated-bjj-mma-shorts">Custom BJJ &amp; MMA shorts: compare fit, branding, MOQ and sampling →</Link>
+        </nav>
+      )}
+
       {relatedProducts.length > 0 && (
         <div className="product-link-hub-grid" aria-label="Similar products">
           {relatedProducts.map((item) => (

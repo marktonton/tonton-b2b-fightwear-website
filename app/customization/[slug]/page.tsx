@@ -89,7 +89,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
   const seoTitles: Record<string, string> = {
     'sublimated-rash-guards': 'Custom Sublimated Rash Guard Manufacturer | OEM',
     'sublimated-training-shorts': 'Custom Functional Training Shorts Manufacturer | OEM',
-    'sublimated-bjj-mma-shorts': 'Custom BJJ & MMA Shorts | Fightwear Manufacturer',
+    'sublimated-bjj-mma-shorts': 'Custom BJJ & MMA Shorts Manufacturer | Low MOQ | TONTON',
   };
   const title = seoTitles[category.id] ?? `${category.name} Customization | TONTON Sportswear`;
   const socialImage = category.id === 'sublimated-bjj-mma-shorts'
@@ -255,7 +255,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
               <Link href="/">Home</Link><span>/</span><Link href="/collections">Customization</Link><span>/</span><span>{category.name}</span>
             </nav>
             <p className="customization-kicker">{content.kicker}</p>
-            <h1>{isRashGuardPage ? 'Custom Sublimated Graphic Rash Guards' : isTrainingShortsPage ? 'Custom Functional Training Shorts' : `Custom ${category.name}`}</h1>
+            <h1>{isRashGuardPage ? 'Custom Sublimated Graphic Rash Guards' : isTrainingShortsPage ? 'Custom Functional Training Shorts' : isFightShortsPage ? 'Custom BJJ & MMA Shorts' : `Custom ${category.name}`}</h1>
             <p className="customization-hero-lead">{content.heroLead}</p>
             <div className="customization-hero-actions">
               <Link className="customization-button customization-button-red" href={builderHref}>Build Your Project <span aria-hidden="true">→</span></Link>
@@ -312,6 +312,30 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
             <article><span>03</span><h3>Compare the order basis</h3><p>Use the same quantity by size and color, sample requirements, destination and delivery target. Confirm project-specific MOQ, pricing and timing in the quote.</p><Link className="customization-card-link" href="/resources/custom-fightwear-sampling-moq">Review sampling and order planning →</Link></article>
           </div>
           <div className="customization-overview-copy"><p>Before bulk approval, check movement, coverage, waistband comfort, measurements, seams and artwork against the physical sample. Retain the approved specification for repeat orders.</p><Link className="customization-card-link" href={builderHref}>Request a custom fight-shorts quote →</Link></div>
+        </section>
+      )}
+
+      {isFightShortsPage && (
+        <section className="customization-overview customization-shell" aria-labelledby="fight-shorts-fit-title">
+          <div className="customization-overview-heading">
+            <p className="customization-kicker">CHOOSE YOUR CONSTRUCTION</p>
+            <h2 id="fight-shorts-fit-title">Custom shorts built around your training and brand.</h2>
+          </div>
+          <div className="customization-overview-copy">
+            <p className="customization-overview-lead">Choose the shell, coverage and waist first. Then develop the sublimated artwork around the approved pattern.</p>
+            <p>The 2-in-1 high-split sample shown here is a starting reference. Confirm other lengths, split heights and liner requirements during development. For competition orders, share the organizer’s current clothing rules before sampling; a training sample does not establish competition approval.</p>
+          </div>
+          <div className="customization-audience-grid">
+            <article><span>01</span><h3>BJJ academy shorts</h3><p>Review coverage in ground movement, a secure low-profile waistband, seam comfort and whether the intended use requires a pocket-free construction. Confirm adult and youth measurements separately.</p><Link className="customization-card-link" href="/solutions/bjj-academy-uniforms">Plan an academy uniform order →</Link></article>
+            <article><span>02</span><h3>MMA training shorts</h3><p>Compare shell stretch, side-split height and leg opening through kicks, lunges and sprawls. On a lined style, check shell and liner movement together in the intended size.</p><Link className="customization-card-link" href="/resources/high-split-vs-standard-grappling-shorts">Compare high-split and standard shorts →</Link></article>
+            <article><span>03</span><h3>Private-label fightwear</h3><p>Record panel graphics, sponsor marks, label placement, size grading and packaging. Retain the approved sample and artwork revision so repeat orders have a clear production reference.</p><Link className="customization-card-link" href="/solutions/private-label-fightwear">Develop your private-label range →</Link></article>
+          </div>
+          <div className="customization-overview-copy">
+            <h3>What determines your custom MMA shorts quote?</h3>
+            <p>Pricing depends on quantity by style, size and color; shell and liner selection; waistband construction; artwork and labels; packing; and delivery destination. Projects can start from 10 pieces, subject to the selected specification. Send a reference photo and approximate quantity even if final artwork is not ready.</p>
+            <p>Sample development targets 3–7 days after product details and available artwork are confirmed. Revisions, special materials and production scheduling can change timing; confirm the sample and bulk delivery plan with your quotation.</p>
+            <Link className="customization-card-link" href={builderHref}>Request a custom BJJ &amp; MMA shorts quote →</Link>
+          </div>
         </section>
       )}
 
