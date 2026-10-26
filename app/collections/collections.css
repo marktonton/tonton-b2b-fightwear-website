@@ -1,0 +1,7 @@
+.collections-page .collections-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.collections-page .collection-product-photo{position:relative;width:100%;aspect-ratio:1;overflow:hidden;background:#fff;padding:0;border-radius:inherit;border-bottom-left-radius:0;border-bottom-right-radius:0}
+.collections-page .collection-product-photo img{position:absolute;display:block;max-width:none;width:130%;height:auto;aspect-ratio:1;object-fit:fill;left:-15%;top:-36%;margin:0;border-radius:0}
+.collections-page .collection-product-photo-sublimated-rash-guards{background:#d1d2dc}
+.collections-page .collection-product-photo-sublimated-rash-guards img{width:160%;left:-60%;top:-45%}
+@media(max-width:900px){.collections-page .collections-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.collections-page .collections-grid{grid-template-columns:1fr}}

@@ -1,4 +1,5 @@
 import React from 'react';
+import './collections.css';
 import Link from 'next/link';
 import { resolveImage } from '../../lib/image-resolver';
 import { customizationCategories as categories } from '../../lib/customization-pages';
@@ -45,17 +46,17 @@ export default function CollectionsPage() {
   };
 
   return (
-    <div className="section">
+    <div className="section collections-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([collectionSchema, breadcrumbSchema]) }} />
       <div className="section-head">
         <h1>Customization Collections</h1>
         <p>Explore our specialized sublimated fightwear categories.</p>
       </div>
       
-      <div className="product-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px' }}>
+      <div className="product-grid collections-grid">
         {categories.map((category) => (
           <div className="product-card" key={category.id}>
-            <img src={resolveImage(category.image)} alt={category.name} />
+            <div className={`collection-product-photo collection-product-photo-${category.id}`}><img src={resolveImage(category.image)} alt={category.name} /></div>
             <div>
               <span>Collection</span>
               <h4>{category.name}</h4>
