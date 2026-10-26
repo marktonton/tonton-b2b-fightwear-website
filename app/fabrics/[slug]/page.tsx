@@ -1,5 +1,6 @@
 import { serializeStructuredData } from '../../../lib/structured-data';
 import Image from 'next/image';
+import CompressionLinerDetails from './CompressionLinerDetails';
 import WovenFabricDetails from './WovenFabricDetails';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
@@ -21,6 +22,7 @@ export function generateMetadata({ params }: Props): Metadata {
 export default function MaterialPage({ params }: Props) {
   const fabric = MATERIAL_GUIDES.find((item) => item.slug === params.slug);
   if (!fabric) notFound();
+  if (fabric.slug === 'compression-liner-knit') return <CompressionLinerDetails />;
   if (fabric.slug === 'four-way-stretch-woven') return <WovenFabricDetails />;
   const url = `${SITE_URL}/fabrics/${fabric.slug}`;
   const schema = [{ '@context': 'https://schema.org', '@type': 'WebPage', name: fabric.title, url, description: fabric.description, dateModified: '2026-10-26', publisher: { '@id': ORGANIZATION_ID } }, { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL }, { '@type': 'ListItem', position: 2, name: 'Factory Fabric Library', item: `${SITE_URL}/factory#fabrics` }, { '@type': 'ListItem', position: 3, name: fabric.title, item: url }] }];

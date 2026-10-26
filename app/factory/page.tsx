@@ -85,8 +85,8 @@ export default function FactoryPage() {
       <Heading n="02" title="Fabric Library">From rash guard knits to fight-short shells: explore materials by garment use.</Heading>
       <div className="fo-content">
         <div className="fo-fabric-grid">{FABRIC_LIBRARY.map((fabric) => <article key={fabric.slug}>
-          <a className={`fo-fabric-media fo-fabric-media-${fabric.mediaClass}`} href={`/fabrics/${fabric.slug}`} aria-label={`Explore ${fabric.title}`}><Image src={fabric.image} alt={fabric.alt} width={1000} height={1000} sizes={fabric.mediaClass === 'liner' ? '(max-width:640px) 180vw, (max-width:1100px) 90vw, 45vw' : '(max-width:640px) 100vw, (max-width:1100px) 50vw, 25vw'} /></a>
-          <div className="fo-fabric-copy"><p className="fo-kicker">{fabric.category}</p><h3>{fabric.title}</h3><p className="fo-fabric-spec">{fabric.specification}</p><p className="fo-fabric-description">{fabric.description}</p><p className="fo-fabric-caption">{fabric.caption}</p><a className="fo-button" href={`/fabrics/${fabric.slug}`}>Explore Fabric Details <span aria-hidden="true">→</span></a></div>
+          <a className={`fo-fabric-media fo-fabric-media-${fabric.mediaClass}`} href={`/fabrics/${fabric.slug}`} aria-label={`Explore ${fabric.title}`}><Image src={fabric.image} alt={fabric.alt} width={1000} height={1000} sizes="(max-width:640px) 100vw, (max-width:1100px) 50vw, 25vw" /></a>
+          <div className="fo-fabric-copy"><p className="fo-kicker">{fabric.category}</p><h3>{fabric.title}</h3><p className="fo-fabric-spec">{fabric.specification}</p><p className="fo-fabric-description">{'cardDescription' in fabric ? fabric.cardDescription : fabric.description}</p><p className="fo-fabric-caption">{fabric.caption}</p><a className="fo-button" href={`/fabrics/${fabric.slug}`}>Explore Fabric Details <span aria-hidden="true">→</span></a></div>
         </article>)}</div>
         <p className="fo-fabric-help">Material choices are confirmed by physical swatch and garment sampling. Need help choosing? <a href="/project-builder?source=factory-fabric-selection">Tell us about your product →</a></p>
       </div>

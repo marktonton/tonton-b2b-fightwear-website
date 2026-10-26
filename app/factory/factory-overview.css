@@ -39,3 +39,5 @@
 @media(max-width:640px){#fabrics .fo-fabric-grid{grid-template-columns:1fr;gap:20px}#fabrics .fo-fabric-grid h3{font-size:24px}#fabrics .fo-fabric-spec{min-height:0}#fabrics .fo-fabric-copy{padding:20px}#fabrics .fo-button{font-size:14px}}
 
 #fabrics .fo-fabric-media-woven-sample img{object-fit:cover;object-position:50% 56%}
+
+#fabrics .fo-fabric-media-liner-concept img{object-fit:contain;object-position:center;background:#edf0ee}
