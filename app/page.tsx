@@ -1,4 +1,5 @@
 'use client';
+import './home-product-media.css';
 
 import BuyerSolutionsLinks from '../components/BuyerSolutionsLinks';
 
@@ -351,7 +352,7 @@ export default function HomePage() {
 
             return (
               <article className="product-detail-card" key={entry.id}>
-                <a className="product-detail-media" href={`/products/${product.id}`} aria-label={`View ${product.name} details`}>
+                <a className={`product-detail-media${product.id === 'black-white-mma-kit' ? ' product-detail-media-clean-kit' : ''}`} href={`/products/${product.id}`} aria-label={`View ${product.name} details`}>
                   <img src={resolveImage(product.image)} alt={product.name} loading="lazy" />
                 </a>
                 <div className="product-detail-copy">

@@ -9,7 +9,7 @@ export const ROUTE_LAST_MODIFIED: Record<string, string> = {
   '/factory/rotary-heat-transfer': '2026-10-21',
   '/factory/electric-straight-knife-cutting': '2026-10-21',
   '/factory/computerized-fabric-cutting': '2026-10-21',
-  '/': '2026-10-21',
+  '/': '2026-10-26',
   '/collections': '2026-10-26',
   '/service-support': '2026-09-21',
   '/factory': '2026-10-26',
