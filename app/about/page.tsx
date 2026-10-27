@@ -4,10 +4,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { resolveImage } from '../../lib/image-resolver';
 import { ORGANIZATION_ID, SITE_URL } from '../../lib/site-entity';
+import FactoryLeadership from '../factory/FactoryLeadership';
+import { CHAIRMAN_PROFILE } from '../../lib/chairman-profile';
+import './company-profile.css';
 
 export const metadata: Metadata = {
-  title: { absolute: 'About TONTON | Custom Fightwear Manufacturer Since 2004' },
-  description: 'Verified facts about TONTON Sportswear, its custom fightwear capabilities, OEM and ODM process, product focus, factory evidence, and buyer contact routes.',
+  title: { absolute: 'TONTON Company Profile & Chairman | Custom Sportswear Since 2004' },
+  description: 'Meet TONTON Sportswear and founder Peter Hu: company background, custom sportswear manufacturing, chairman interviews, community work and original reporting.',
   alternates: { canonical: `${SITE_URL}/about` },
   robots: { index: true, follow: true },
 };
@@ -81,6 +84,8 @@ const officialReports = [
     summary: 'A report on industry-university discussions around digital transformation, smart measurement and virtual fitting technology.',
     href: 'http://www.cnxiantao.com/2026xtxw/202605/t20260519_477231.shtml',
   },
+  { source: 'Xiantao Daily · Xiantao Municipal Government', date: '26 Aug 2026', isoDate: '2026-08-26', title: 'A ten-year education support commitment', summary: 'Reporting on an RMB 1 million education support fund, committed over ten years with RMB 100,000 annually.', href: 'https://www.xiantao.gov.cn/zwgk/xtyw/202608/t20260826_6001045.shtml' },
+  { source: 'Wuhan Textile University · School of Economics', date: '3 Aug 2025', isoDate: '2025-08-03', title: 'University students and faculty visit TONTON', summary: 'A university report on enterprise visits, industry–education exchange and talent development discussions.', href: 'https://fe.wtu.edu.cn/info/1030/19529.htm' },
 ];
 
 const faqs = [
@@ -111,9 +116,9 @@ const aboutSchema = {
   '@type': 'AboutPage',
   '@id': `${SITE_URL}/about#webpage`,
   url: `${SITE_URL}/about`,
-  name: 'About TONTON Sportswear',
+  name: 'TONTON Company Profile & Chairman',
   description: 'Verified company facts, manufacturing scope, product focus, and evidence routes for TONTON Sportswear.',
-  dateModified: '2026-09-23',
+  dateModified: '2026-10-27',
   mainEntity: { '@id': ORGANIZATION_ID },
   isPartOf: { '@id': `${SITE_URL}/#website` },
   citation: officialReports.map((report) => ({
@@ -124,6 +129,8 @@ const aboutSchema = {
     publisher: { '@type': 'Organization', name: report.source },
   })),
 };
+
+const chairmanSchema = { '@context': 'https://schema.org', '@type': 'Person', '@id': `${SITE_URL}/#peter-hu`, name: 'Peter Hu', alternateName: ['Hu Xinzhen', '胡新振'], jobTitle: 'Founder and Chairman', worksFor: { '@id': ORGANIZATION_ID }, url: `${SITE_URL}/about#leadership`, description: CHAIRMAN_PROFILE.bio[0], subjectOf: CHAIRMAN_PROFILE.sources.filter(source => source.id === 'profile' || source.id === 'education').map(source => ({ '@type': 'Article', headline: source.title, url: source.url, datePublished: source.date, publisher: { '@type': 'Organization', name: source.publisher } })) };
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -146,13 +153,13 @@ const breadcrumbSchema = {
 
 export default function AboutPage() {
   return (
-    <div className="entity-page">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData([aboutSchema, faqSchema, breadcrumbSchema]) }} />
+    <div className="entity-page company-profile-page">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData([aboutSchema, chairmanSchema, faqSchema, breadcrumbSchema]) }} />
 
       <section className="entity-hero">
         <div className="entity-hero-copy">
-          <p>VERIFIED COMPANY PROFILE</p>
-          <h1>About TONTON</h1>
+          <p>ABOUT TONTON</p>
+          <h1>Company Profile<br />&amp; Chairman</h1>
           <p>TONTON is our brand. Our public-facing company name is Tontonsports (Shenzhen) Co., Ltd. Our business began in Shenzhen in 2004. We help brands, gyms, academies, clubs, teams and retailers develop products from the initial brief through sampling, production review and packing.</p>
           <div>
             <Link href="/factory">Inspect the Factory</Link>
@@ -182,7 +189,7 @@ export default function AboutPage() {
         <header>
           <p>ENTITY FACTS</p>
           <h2 id="company-facts-title">Company facts in one verifiable place</h2>
-          <p>These names and descriptions are used consistently across TONTON product, factory, resource and structured-data pages.</p>
+          <p>Shenzhen business operations connect with our production base in Xiantao, Hubei, to support custom sportswear projects.</p>
         </header>
         <div className="entity-fact-table" role="table" aria-label="TONTON company facts">
           {facts.map(([label, value]) => (
@@ -193,6 +200,8 @@ export default function AboutPage() {
           ))}
         </div>
       </section>
+
+      <section className="entity-section company-leadership" id="leadership" aria-labelledby="chairman-title"><header><p>FOUNDER &amp; CHAIRMAN</p><h2 id="chairman-title">The person behind TONTON</h2><p>Meet Peter Hu through real company photographs, interviews and published reporting.</p></header><FactoryLeadership /></section>
 
       <section className="entity-section entity-proof" aria-labelledby="entity-proof-title">
         <header>
@@ -242,7 +251,7 @@ export default function AboutPage() {
       </section>
 
       <section className="entity-section" aria-labelledby="entity-faq-title">
-        <header><p>DIRECT ANSWERS</p><h2 id="entity-faq-title">Questions buyers and AI search tools ask</h2></header>
+        <header><p>DIRECT ANSWERS</p><h2 id="entity-faq-title">Company &amp; manufacturing questions</h2></header>
         <div className="entity-faq-list">
           {faqs.map((faq) => <details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}
         </div>
