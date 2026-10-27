@@ -1,10 +1,11 @@
+import { withPageSocialMetadata } from '../../lib/page-metadata';
 import { serializeStructuredData } from '../../lib/structured-data';
 import PlanningLinks from '../../components/PlanningLinks';
 import type { Metadata } from 'next';
 import ProjectBuilderForm from './ProjectBuilderForm';
 
 const SITE_URL = 'https://www.tontongear.com';
-export const metadata: Metadata = { title: { absolute: 'Custom Fightwear Project Builder | TONTON Sportswear' }, description: 'Build a structured custom fightwear specification with product, quantity, construction, artwork, size and performance requirements.', alternates: { canonical: `${SITE_URL}/project-builder` } };
+export const metadata: Metadata = withPageSocialMetadata({ title: { absolute: 'Custom Fightwear Project Builder | TONTON Sportswear' }, description: 'Build a structured custom fightwear specification with product, quantity, construction, artwork, size and performance requirements.', alternates: { canonical: `${SITE_URL}/project-builder` } });
 
 export default function ProjectBuilderPage() {
   const schema = { '@context': 'https://schema.org', '@type': 'WebPage', name: 'Custom Fightwear Project Builder', url: `${SITE_URL}/project-builder`, dateModified: '2026-10-15', description: 'A guided specification and briefing tool for custom fightwear projects.' };

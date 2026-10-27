@@ -1,3 +1,4 @@
+import { withPageSocialMetadata } from '../../../lib/page-metadata';
 import { serializeStructuredData } from '../../../lib/structured-data';
 import Image from 'next/image';
 import type { Metadata } from 'next';
@@ -12,12 +13,12 @@ const PATH = '/factory/intelligent-garment-hanging-system';
 const URL = `${SITE_URL}${PATH}`;
 const asset = (name: string) => resolveImage(`/assets/factory/intelligent-hanging/${name}`);
 const absolute = (name: string) => new globalThis.URL(asset(name), SITE_URL).href;
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageSocialMetadata({
   title: { absolute: 'Intelligent Garment Hanging System | TONTON Sportswear Factory' },
   description: 'Inside TONTON’s intelligent sportswear production line: overhead garment transport, sewing workstation routing, order tracking, real factory photos and workshop videos.',
   alternates: { canonical: URL },
   openGraph: { title: 'Intelligent Garment Production Line at TONTON', description: 'Connect cut panels, sewing workstations and order visibility with an overhead garment hanging system.', url: URL, type: 'website', images: [{ url: absolute('hanging-workshop.webp'), alt: 'Overhead garment hanging tracks and sportswear workstations at TONTON' }] },
-};
+});
 const videos = [
   { file: 'carrier-flow', name: 'Garment carriers on the overhead line', text: 'Suspended sportswear pieces and carriers along the workshop rail system.', duration: 'PT8.43S' },
   { file: 'sewing-workshop', name: 'Sewing stations along the hanging line', text: 'Operators, numbered workstations and suspended garment components in the sewing workshop.', duration: 'PT16.83S' },

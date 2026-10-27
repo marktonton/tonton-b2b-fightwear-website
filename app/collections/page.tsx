@@ -1,3 +1,4 @@
+import { withPageSocialMetadata } from '../../lib/page-metadata';
 import { serializeStructuredData } from '../../lib/structured-data';
 import React from 'react';
 import BuyerFacts from '../../components/BuyerFacts';
@@ -9,7 +10,7 @@ import type { Metadata } from 'next';
 
 const SITE_URL = 'https://www.tontongear.com';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageSocialMetadata({
   title: { absolute: 'Custom Fightwear Collections | Rash Guards & MMA Shorts' },
   description: 'Explore TONTON custom sublimated rash guards, training shorts, and BJJ/MMA shorts for brands, teams, clubs, and retailers.',
   alternates: { canonical: `${SITE_URL}/collections` },
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/collections`,
     type: 'website',
   },
-};
+});
 
 export default function CollectionsPage() {
   const collectionSchema = {

@@ -1,3 +1,4 @@
+import { withPageSocialMetadata } from '../../lib/page-metadata';
 import { serializeStructuredData } from '../../lib/structured-data';
 import type { Metadata } from 'next';
 import Image from 'next/image';
@@ -8,12 +9,12 @@ import FactoryLeadership from '../factory/FactoryLeadership';
 import { CHAIRMAN_PROFILE } from '../../lib/chairman-profile';
 import './company-profile.css';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageSocialMetadata({
   title: { absolute: 'TONTON Company Profile & Chairman | Custom Sportswear Since 2004' },
   description: 'Meet TONTON Sportswear and founder Peter Hu: company background, custom sportswear manufacturing, chairman interviews, community work and original reporting.',
   alternates: { canonical: `${SITE_URL}/about` },
   robots: { index: true, follow: true },
-};
+});
 
 const facts = [
   ['Company', 'Tontonsports (Shenzhen) Co., Ltd.'],

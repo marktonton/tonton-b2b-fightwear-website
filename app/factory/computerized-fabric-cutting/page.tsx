@@ -1,3 +1,4 @@
+import { withPageSocialMetadata } from '../../../lib/page-metadata';
 import { serializeStructuredData } from '../../../lib/structured-data';
 import Image from 'next/image';
 import type { Metadata } from 'next';
@@ -11,12 +12,12 @@ const PATH = '/factory/computerized-fabric-cutting';
 const URL = `${SITE_URL}${PATH}`;
 const asset = (name: string) => resolveImage(`/assets/factory/computerized-cutting/${name}`);
 const absolute = (name: string) => new globalThis.URL(asset(name), SITE_URL).href;
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageSocialMetadata({
   title: { absolute: 'Computerized Automatic Fabric Cutting | TONTON Factory' },
   description: 'Explore TONTON’s computerized automatic cutting equipment for custom sportswear: CAD patterns, marker layouts, fabric preparation, garment panels and actual workshop videos.',
   alternates: { canonical: URL },
   openGraph: { title: 'Computerized Automatic Fabric Cutting at TONTON', description: 'From approved CAD patterns to garment panels ready for the next production step.', url: URL, type: 'website', images: [{ url: absolute('cad-panel-cutting.webp'), alt: 'Computerized garment cutting equipment over printed sportswear panels at TONTON' }] },
-};
+});
 const videos = [
   { file: 'panel-cutting', name: 'Printed-panel cutting', text: 'Machine movement over a printed sportswear panel layout.', duration: 'PT5.5S' },
   { file: 'head-travel', name: 'Cutting-head travel', text: 'A closer view of the moving head and garment shapes on the cutting table.', duration: 'PT6.5S' },

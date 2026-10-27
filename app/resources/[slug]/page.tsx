@@ -1,3 +1,4 @@
+import { withPageSocialMetadata } from '../../../lib/page-metadata';
 import { serializeStructuredData } from '../../../lib/structured-data';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -12,8 +13,8 @@ export function generateStaticParams() { return RESOURCE_PAGES.map((item) => ({ 
 
 export function generateMetadata({ params }: PageProps): Metadata {
   const resource = getResource(params.slug);
-  if (!resource) return { title: 'Resource Not Found', robots: { index: false } };
-  return { title: { absolute: `${resource.title} | TONTON Sportswear` }, description: resource.description, alternates: { canonical: `${SITE_URL}/resources/${resource.slug}` }, openGraph: { type: 'article', title: resource.title, description: resource.description, url: `${SITE_URL}/resources/${resource.slug}`, images: resource.media?.map((item) => ({ url: `${SITE_URL}${item.src}`, alt: item.alt })) } };
+  if (!resource) return withPageSocialMetadata({ title: 'Resource Not Found', robots: { index: false } });
+  return withPageSocialMetadata({ title: { absolute: `${resource.title} | TONTON Sportswear` }, description: resource.description, alternates: { canonical: `${SITE_URL}/resources/${resource.slug}` }, openGraph: { type: 'article', title: resource.title, description: resource.description, url: `${SITE_URL}/resources/${resource.slug}`, images: resource.media?.map((item) => ({ url: `${SITE_URL}${item.src}`, alt: item.alt })) } });
 }
 
 export default function ResourceArticlePage({ params }: PageProps) {

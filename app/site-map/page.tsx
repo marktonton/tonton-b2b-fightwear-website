@@ -1,14 +1,15 @@
+import { withPageSocialMetadata } from '../../lib/page-metadata';
 import type { Metadata } from 'next';
 import pages from '../../data/site-directory.json';
 import { SITE_URL } from '../../lib/site-entity';
 import { serializeStructuredData } from '../../lib/structured-data';
 import './site-map.css';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageSocialMetadata({
   title: { absolute: 'Products, Fabrics, Factory & Buyer Guides | TONTON Site Directory' },
   description: 'Browse every TONTON product, fabric reference, factory process and custom fightwear buying guide from one text directory.',
   alternates: { canonical: `${SITE_URL}/site-map` },
-};
+});
 
 const groups = ['Company and project planning', 'Custom product programs', 'Products', 'Materials', 'Factory processes', 'Buyer solutions', 'Buyer guides'];
 export default function SiteMapPage() {

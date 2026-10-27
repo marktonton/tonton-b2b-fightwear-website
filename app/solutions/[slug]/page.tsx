@@ -1,3 +1,4 @@
+import { withPageSocialMetadata } from '../../../lib/page-metadata';
 import { serializeStructuredData } from '../../../lib/structured-data';
 import Link from 'next/link';
 import type { Metadata } from 'next';
@@ -12,8 +13,8 @@ export const dynamicParams = false;
 export function generateStaticParams() { return BUYER_SOLUTIONS.map(({ slug }) => ({ slug })); }
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const item = getBuyerSolution(params.slug);
-  if (!item) return {};
-  return { title: { absolute: `${item.title} | TONTON` }, description: item.description, alternates: { canonical: `${SITE_URL}/solutions/${item.slug}` }, openGraph: { title: item.title, description: item.description, url: `${SITE_URL}/solutions/${item.slug}`, type: 'website', images: [{ url: `${SITE_URL}${item.evidence[0].image}`, alt: item.evidence[0].alt }] } };
+  if (!item) return withPageSocialMetadata({});
+  return withPageSocialMetadata({ title: { absolute: `${item.title} | TONTON` }, description: item.description, alternates: { canonical: `${SITE_URL}/solutions/${item.slug}` }, openGraph: { title: item.title, description: item.description, url: `${SITE_URL}/solutions/${item.slug}`, type: 'website', images: [{ url: `${SITE_URL}${item.evidence[0].image}`, alt: item.evidence[0].alt }] } });
 }
 
 export default function BuyerSolutionPage({ params }: { params: { slug: string } }) {

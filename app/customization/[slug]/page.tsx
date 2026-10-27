@@ -1,3 +1,4 @@
+import { withPageSocialMetadata } from '../../../lib/page-metadata';
 import { serializeStructuredData } from '../../../lib/structured-data';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -82,10 +83,10 @@ export function generateMetadata({ params }: PageProps): Metadata {
   const category = getCustomizationCategory(params.slug);
   const content = category ? customizationPageContent[category.id] : undefined;
   if (!category || !content) {
-    return {
+    return withPageSocialMetadata({
       title: { absolute: 'Customization Page Not Found | TONTON Sportswear' },
       robots: { index: false, follow: false },
-    };
+    });
   }
   const seoTitles: Record<string, string> = {
     'sublimated-rash-guards': 'Custom Sublimated Rash Guard Manufacturer | OEM',
@@ -96,7 +97,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
   const socialImage = category.id === 'sublimated-bjj-mma-shorts'
     ? `${SITE_URL}${content.heroImage}`
     : resolveImage(content.heroImage);
-  return {
+  return withPageSocialMetadata({
     title: { absolute: title },
     description: content.seoDescription,
     alternates: { canonical: `${SITE_URL}/customization/${category.id}` },
@@ -114,7 +115,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
       description: content.seoDescription,
       images: [socialImage],
     },
-  };
+  });
 }
 
 export default function CustomizationCategoryPage({ params }: { params: { slug: string } }) {

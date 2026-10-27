@@ -51,7 +51,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head />
+      <head><link rel="alternate" type="text/plain" href="/llms-full.txt" title="TONTON public website text" /></head>
       <body>
         <a className="skip-content" href="#main-content">Skip to page content</a>
         <SearchMeasurement />

@@ -17,7 +17,8 @@
     "seo:live-audit": "node scripts/audit-live-indexability.mjs",
     "seo:indexnow": "node scripts/submit-indexnow.mjs",
     "assets:manifest": "node scripts/build-r2-manifest.mjs",
-    "assets:verify-r2": "node scripts/verify-r2-assets.mjs"
+    "assets:verify-r2": "node scripts/verify-r2-assets.mjs",
+    "postbuild": "node scripts/generate-text-references.mjs && node scripts/audit-text-references.mjs"
   },
   "dependencies": {
     "react": "^18",

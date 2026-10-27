@@ -1,3 +1,4 @@
+import { withPageSocialMetadata } from '../../../lib/page-metadata';
 import { serializeStructuredData } from '../../../lib/structured-data';
 import Image from 'next/image';
 import type { Metadata } from 'next';
@@ -12,12 +13,12 @@ const PATH = '/factory/electric-straight-knife-cutting';
 const URL = `${SITE_URL}${PATH}`;
 const asset = (name: string) => resolveImage(`/assets/factory/straight-knife/${name}`);
 const absolute = (name: string) => new globalThis.URL(asset(name), SITE_URL).href;
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageSocialMetadata({
   title: { absolute: 'Electric Straight Knife Cutting for Sportswear | TONTON' },
   description: 'TONTON custom sportswear manufacturer in China: operator-guided fabric cutting, garment panel preparation, real factory photos and 720p/1080p demonstration videos.',
   alternates: { canonical: URL },
   openGraph: { title: 'Electric Straight Knife Fabric Cutting at TONTON', description: 'Operator-guided cutting for custom sportswear panels, from prepared fabric to sorted garment components.', url: URL, type: 'website', images: [{ url: absolute('operator-machine.webp'), alt: 'TONTON operator with an electric straight knife fabric cutting machine' }] },
-};
+});
 const videos = [
   { file: 'cutting-demonstration', name: 'Fabric cutting demonstration', text: 'An illustrative view of the cutting operation and fabric preparation.', duration: 'PT9.88S' },
   { file: 'operator-demonstration', name: 'Operator and machine demonstration', text: 'An illustrative view of an operator guiding the machine at a cutting table.', duration: 'PT11.33S' },

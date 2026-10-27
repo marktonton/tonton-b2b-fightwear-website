@@ -1,3 +1,4 @@
+import { withPageSocialMetadata } from '../../../lib/page-metadata';
 import { serializeStructuredData } from '../../../lib/structured-data';
 import { SILICONE_HEM_VIDEO, SILICONE_HEM_PHOTOS, SILICONE_HEM_FAQS } from '../../../lib/rash-guard-silicone-hem';
 import React from 'react';
@@ -75,10 +76,10 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: PageProps): Metadata {
   const product = getProduct(params.id);
   if (!product) {
-    return {
+    return withPageSocialMetadata({
       title: { absolute: 'Product Not Found | TONTON Sportswear' },
       robots: { index: false, follow: false },
-    };
+    });
   }
 
   const url = `${SITE_URL}/products/${product.id}`;
@@ -97,7 +98,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
   const description = landingContent?.seoDescription ?? getProductDescription(product);
   const image = resolveImage(product.image);
 
-  return {
+  return withPageSocialMetadata({
     title: { absolute: title },
     description,
     alternates: { canonical: url },
@@ -116,7 +117,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
       description,
       images: [image],
     },
-  };
+  });
 }
 
 export default function ProductDetailPage({ params }: PageProps) {

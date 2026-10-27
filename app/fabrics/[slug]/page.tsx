@@ -1,3 +1,4 @@
+import { withPageSocialMetadata } from '../../../lib/page-metadata';
 import StretchMeshDetails from './StretchMeshDetails';
 import CompressionLinerDetails from './CompressionLinerDetails';
 import WovenFabricDetails from './WovenFabricDetails';
@@ -14,9 +15,9 @@ export function generateStaticParams() { return MATERIAL_GUIDES.map(({ slug }) =
 export const dynamicParams = false;
 export function generateMetadata({ params }: Props): Metadata {
   const fabric = MATERIAL_GUIDES.find((item) => item.slug === params.slug);
-  if (!fabric) return { title: 'Material not found', robots: { index: false } };
+  if (!fabric) return withPageSocialMetadata({ title: 'Material not found', robots: { index: false } });
   const url = `${SITE_URL}/fabrics/${fabric.slug}`;
-  return { title: { absolute: `${fabric.title} for Custom Fightwear | TONTON` }, description: fabric.description, alternates: { canonical: url }, openGraph: { title: `${fabric.title} | TONTON Fabric Library`, description: fabric.description, url, images: [{ url: fabric.image, alt: fabric.alt }] } };
+  return withPageSocialMetadata({ title: { absolute: `${fabric.title} for Custom Fightwear | TONTON` }, description: fabric.description, alternates: { canonical: url }, openGraph: { title: `${fabric.title} | TONTON Fabric Library`, description: fabric.description, url, images: [{ url: fabric.image, alt: fabric.alt }] } });
 }
 export default function MaterialPage({ params }: Props) {
   const fabric = MATERIAL_GUIDES.find((item) => item.slug === params.slug);

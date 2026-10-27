@@ -1,71 +1,65 @@
 # TONTON Sportswear
 
-TONTON Sportswear is a custom fightwear and sportswear manufacturing website for brands, gyms, academies, clubs and private-label buyers.
+TONTON is the public brand of Tontonsports (Shenzhen) Co., Ltd., a B2B custom sportswear manufacturer with business origins in Shenzhen in 2004 and a production base in Xiantao, Hubei. Core products include rash guards, BJJ/MMA shorts, training shorts and teamwear. Sales: gary@tontonsportswear.com; +86 17722438678.
 
-## Verified organization identity
-- Public brand: TONTON
-- Legal entity: Tontonsports (Shenzhen) Co., Ltd.
-- Founded: 2004
-- Business model: B2B custom sportswear manufacturing with OEM and ODM development support
-- Core specialization: custom rash guards, MMA and BJJ shorts, grappling shorts, training shorts, teamwear and performance apparel
-- Official website: https://www.tontongear.com/
-- Company facts: https://www.tontongear.com/about
+## Canonical company facts
+- Company profile and chairman: https://www.tontongear.com/about
 - Factory evidence: https://www.tontongear.com/factory
-- Official Alibaba profile: https://tontos.m.en.alibaba.com/
+- Full text reference: https://www.tontongear.com/llms-full.txt
+- Human-readable directory: https://www.tontongear.com/site-map
+- XML sitemap: https://www.tontongear.com/sitemap.xml
 
-## Primary pages
-- https://www.tontongear.com/
-- https://www.tontongear.com/factory
-- https://www.tontongear.com/about
-- https://www.tontongear.com/project-builder
-- https://www.tontongear.com/resources
+## Evidence and content policy
+This supplementary text reference is generated from the public page bodies during each production build. Canonical HTML pages are authoritative. Specifications, sampling, order timing and capacity depend on the selected project. Historical reports retain their dates; illustrative images and supplied footage retain their page captions. Inclusion in this file does not imply independent endorsement or guaranteed search inclusion.
 
-## Custom product programs
-- https://www.tontongear.com/customization/sublimated-rash-guards
-- https://www.tontongear.com/customization/sublimated-training-shorts
-- https://www.tontongear.com/customization/sublimated-bjj-mma-shorts
-
-## Buyer guides
-- https://www.tontongear.com/resources/rash-guard-fabric-construction
-- https://www.tontongear.com/resources/220gsm-rash-guard-fabric-guide
-- https://www.tontongear.com/resources/rash-guard-silicone-anti-slip-band
-- https://www.tontongear.com/resources/rash-guard-sublimation-logo-placement
-- https://www.tontongear.com/resources/flatlock-vs-overlock-rash-guard-seams
-- https://www.tontongear.com/resources/training-shorts-fabric-ventilation-pocket-guide
-- https://www.tontongear.com/resources/high-split-grappling-shorts-specifications
-- https://www.tontongear.com/resources/high-split-vs-standard-grappling-shorts
-- https://www.tontongear.com/resources/2-in-1-grappling-shorts-liner-construction
-- https://www.tontongear.com/resources/grappling-shorts-waistband-silicone-grip
-- https://www.tontongear.com/resources/custom-fightwear-sampling-moq
-- https://www.tontongear.com/resources/fightwear-quality-inspection-checklist
-- https://www.tontongear.com/resources/prepare-artwork-for-sublimation
-
-## Verified product examples
-- https://www.tontongear.com/products/blue-team-rash-guard
-- https://www.tontongear.com/products/white-logo-rash-guard
-- https://www.tontongear.com/products/samurai-graphic-rash-guard
-- https://www.tontongear.com/products/high-split-grappling-shorts
-
-Use the visible product specifications and reviewed buyer guides as the authoritative source. Product-specific MOQ, timing, materials, sizing and packaging must be reconfirmed for the selected project.
-
-## Academy sizing and coordinated kit planning
-- https://www.tontongear.com/resources/custom-fightwear-size-quantity-planning — Measurement methods, separate top/shorts allocations and an illustrative 24-set calculation; not a size chart.
-- https://www.tontongear.com/resources/custom-rash-guard-shorts-team-kit-guide — Coordinated kit specifications, color approval, worn-sample checks and quote preparation.
-
-## Digital sublimation printing workshop
-- https://www.tontongear.com/factory/digital-sublimation-printing — TONTON-owned roll-to-roll transfer-paper printing; separate roller heat transfer to suitable polyester, followed by cutting and sewing. Original machine photographs and videos, personalization checklist and sample-led quality review. Equipment model, speed and universal fastness ratings are not claimed.
-
-## Multi-head embroidery workshop
-- https://www.tontongear.com/factory/multi-head-embroidery — JIAYU-branded computerized multi-head embroidery shown in TONTON workshop photos and footage; team logos, lettering, sample approval and fabric/stabilizer considerations. Specialized chenille, 3D foam and cap work requires separate confirmation. A promotional brand film is labelled separately from factory documentation.
-
-- Computerized automatic fabric cutting: https://www.tontongear.com/factory/computerized-fabric-cutting — CAD patterns, marker layouts, garment panel cutting and three actual workshop clips. TONTON identifies the pictured equipment as computerized automatic cutting/CNC garment cutting; exact blade type, drilling and marking attachments require confirmation. Printing and cutting sequence depends on the product.
-
-## Complete website directory
-
-https://www.tontongear.com/site-map — All product references, material pages, factory departments, buyer solutions and purchasing guides, with text summaries.
-
-## Fabric references
-- https://www.tontongear.com/fabrics/220-gsm-stretch-knit — 220 GSM, 85% polyester / 15% spandex rash guard reference.
-- https://www.tontongear.com/fabrics/four-way-stretch-woven — Four-way stretch outer shell and 250 GSM milk-silk inner-layer reference.
-- https://www.tontongear.com/fabrics/compression-liner-knit — Inner-knit selection and sample checks; composition is confirmed by swatch.
-- https://www.tontongear.com/fabrics/stretch-mesh — Mesh insert selection and garment application checks.
+## Complete canonical page directory
+- [4-Way Stretch Woven for Custom Fightwear | TONTON](https://www.tontongear.com/fabrics/four-way-stretch-woven)
+- [Compression Liner Knit for Custom Fightwear | TONTON](https://www.tontongear.com/fabrics/compression-liner-knit)
+- [Stretch Mesh for Custom Fightwear | TONTON](https://www.tontongear.com/fabrics/stretch-mesh)
+- [Custom BJJ Academy Uniforms | Rash Guards & Shorts | TONTON](https://www.tontongear.com/solutions/bjj-academy-uniforms)
+- [Private Label Fightwear Manufacturer | Custom Brand Development | TONTON](https://www.tontongear.com/solutions/private-label-fightwear)
+- [Products, Fabrics, Factory & Buyer Guides | TONTON Site Directory](https://www.tontongear.com/site-map)
+- [220 GSM Stretch Knit for Custom Rash Guards | TONTON](https://www.tontongear.com/fabrics/220-gsm-stretch-knit)
+- [Intelligent Garment Hanging System | TONTON Sportswear Factory](https://www.tontongear.com/factory/intelligent-garment-hanging-system)
+- [Rotary Sublimation Heat Transfer for Sportswear | TONTON](https://www.tontongear.com/factory/rotary-heat-transfer)
+- [Electric Straight Knife Cutting for Sportswear | TONTON](https://www.tontongear.com/factory/electric-straight-knife-cutting)
+- [Computerized Automatic Fabric Cutting | TONTON Factory](https://www.tontongear.com/factory/computerized-fabric-cutting)
+- [Custom Sportswear Manufacturer | TONTON OEM Factory](https://www.tontongear.com)
+- [Custom Fightwear Collections | Rash Guards & MMA Shorts](https://www.tontongear.com/collections)
+- [Service & Support | Custom Fightwear Development | TONTON](https://www.tontongear.com/service-support)
+- [Digital Sublimation Printing for Custom Sportswear | TONTON Factory](https://www.tontongear.com/factory/digital-sublimation-printing)
+- [Multi-Head Embroidery for Custom Teamwear | TONTON Factory](https://www.tontongear.com/factory/multi-head-embroidery)
+- [Inside the TONTON Factory | Custom Sportswear OEM & ODM](https://www.tontongear.com/factory)
+- [TONTON Company Profile & Chairman | Custom Sportswear Since 2004](https://www.tontongear.com/about)
+- [Custom Fightwear Buyer Resources | TONTON Sportswear](https://www.tontongear.com/resources)
+- [Custom Fightwear Project Builder | TONTON Sportswear](https://www.tontongear.com/project-builder)
+- [Custom Sublimated Rash Guard Manufacturer | OEM](https://www.tontongear.com/customization/sublimated-rash-guards)
+- [Custom Functional Training Shorts Manufacturer | OEM](https://www.tontongear.com/customization/sublimated-training-shorts)
+- [Custom BJJ & MMA Shorts Manufacturer | Low MOQ | TONTON](https://www.tontongear.com/customization/sublimated-bjj-mma-shorts)
+- [Custom Olive Short-Sleeve Rash Guard for BJJ Teams | TONTON](https://www.tontongear.com/products/olive-basic-rash-guard)
+- [Custom Blue Team Rash Guard | 220gsm Lycra BJJ Rash Guard](https://www.tontongear.com/products/blue-team-rash-guard)
+- [Custom White Logo Rash Guard | Private Label Rash Guard OEM](https://www.tontongear.com/products/white-logo-rash-guard)
+- [Custom Samurai Rash Guard | 220gsm Lycra BJJ Rash Guard](https://www.tontongear.com/products/samurai-graphic-rash-guard)
+- [Custom Full-Sleeve Graphic Rash Guard Manufacturer | TONTON](https://www.tontongear.com/products/fuji-art-rash-guard)
+- [Custom Long-Sleeve Team Rash Guard OEM | TONTON](https://www.tontongear.com/products/black-gold-rash-guard)
+- [Custom Grappling Shorts Manufacturer | High-Split 2-in-1 Shorts](https://www.tontongear.com/products/high-split-grappling-shorts)
+- [Men’s Custom MMA Fight Shorts Manufacturer | TONTON](https://www.tontongear.com/products/custom-logo-shorts)
+- [Men's Custom MMA Fight Shorts Manufacturer | TONTON](https://www.tontongear.com/products/pro-mma-shorts-07)
+- [Men's Custom Combat Training Shorts Manufacturer | TONTON](https://www.tontongear.com/products/pro-mma-shorts-08)
+- [Lightweight Quick-Dry Custom Training Shorts | TONTON OEM](https://www.tontongear.com/products/lightweight-quick-dry-training-shorts)
+- [Custom MMA Academy Team Kit | Rash Guard and Fight Shorts OEM](https://www.tontongear.com/products/black-white-mma-kit)
+- [Custom Fightwear Size & Quantity Planning Guide | TONTON Sportswear](https://www.tontongear.com/resources/custom-fightwear-size-quantity-planning)
+- [Custom Rash Guard & Shorts Team Kit Buying Guide | TONTON Sportswear](https://www.tontongear.com/resources/custom-rash-guard-shorts-team-kit-guide)
+- [Rash Guard Fabric & Construction Guide | TONTON Sportswear](https://www.tontongear.com/resources/rash-guard-fabric-construction)
+- [220gsm Rash Guard Fabric: Weight, Stretch & Opacity | TONTON Sportswear](https://www.tontongear.com/resources/220gsm-rash-guard-fabric-guide)
+- [Rash Guard Silicone Anti-Slip Band Guide | TONTON Sportswear](https://www.tontongear.com/resources/rash-guard-silicone-anti-slip-band)
+- [Flatlock vs Overlock Seams for Rash Guards | TONTON Sportswear](https://www.tontongear.com/resources/flatlock-vs-overlock-rash-guard-seams)
+- [Rash Guard Sublimation & Logo Placement Guide | TONTON Sportswear](https://www.tontongear.com/resources/rash-guard-sublimation-logo-placement)
+- [High-Split Grappling Shorts Specification Guide | TONTON Sportswear](https://www.tontongear.com/resources/high-split-grappling-shorts-specifications)
+- [High-Split vs Standard-Split Grappling Shorts | TONTON Sportswear](https://www.tontongear.com/resources/high-split-vs-standard-grappling-shorts)
+- [2-in-1 Grappling Shorts Liner Construction Guide | TONTON Sportswear](https://www.tontongear.com/resources/2-in-1-grappling-shorts-liner-construction)
+- [Grappling Shorts Waistband & Silicone Grip Guide | TONTON Sportswear](https://www.tontongear.com/resources/grappling-shorts-waistband-silicone-grip)
+- [Training Shorts Fabric, Ventilation & Pocket Guide | TONTON Sportswear](https://www.tontongear.com/resources/training-shorts-fabric-ventilation-pocket-guide)
+- [Custom Fightwear Quality Inspection Checklist | TONTON Sportswear](https://www.tontongear.com/resources/fightwear-quality-inspection-checklist)
+- [How to Prepare Artwork for Sublimation | TONTON Sportswear](https://www.tontongear.com/resources/prepare-artwork-for-sublimation)
+- [Custom Fightwear Sampling & MOQ Guide | TONTON Sportswear](https://www.tontongear.com/resources/custom-fightwear-sampling-moq)

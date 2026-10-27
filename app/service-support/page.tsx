@@ -1,3 +1,4 @@
+import { withPageSocialMetadata } from '../../lib/page-metadata';
 import { serializeStructuredData } from '../../lib/structured-data';
 import PlanningLinks from '../../components/PlanningLinks';
 import Image from 'next/image';
@@ -7,7 +8,7 @@ import { ORGANIZATION_ID } from '../../lib/site-entity';
 
 const SITE_URL = 'https://www.tontongear.com';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageSocialMetadata({
   title: { absolute: 'Service & Support | Custom Fightwear Development | TONTON' },
   description: 'Explore TONTON custom fightwear services—from product planning, artwork and sampling to production, quality control, packing, and delivery support.',
   alternates: { canonical: `${SITE_URL}/service-support` },
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
       alt: 'TONTON custom sportswear production support',
     }],
   },
-};
+});
 
 const services = [
   ['01', 'Product planning', 'Clarify the garment, intended use, quantity, fit, budget, and delivery priorities.'],

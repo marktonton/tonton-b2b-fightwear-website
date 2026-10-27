@@ -1,3 +1,4 @@
+import { withPageSocialMetadata } from '../../../lib/page-metadata';
 import { serializeStructuredData } from '../../../lib/structured-data';
 import Image from 'next/image';
 import type { Metadata } from 'next';
@@ -11,7 +12,7 @@ const MEDIA = '/assets/factory/digital-sublimation/';
 const asset = (name: string) => resolveImage(`${MEDIA}${name}`);
 const absoluteAsset = (name: string) => new globalThis.URL(asset(name), SITE_URL).href;
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageSocialMetadata({
   title: { absolute: 'Digital Sublimation Printing for Custom Sportswear | TONTON Factory' },
   description: 'Inside TONTON’s in-house roll-to-roll sublimation printing workshop: transfer-paper printing, polyester heat transfer, personalized teamwear, real equipment photos and videos.',
   alternates: { canonical: URL },
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [{ url: absoluteAsset('workshop.webp'), width: 2048, height: 1365, alt: 'TONTON industrial digital sublimation printing workshop' }],
   },
-};
+});
 
 const videos = [
   { file: 'printing-130.mp4', poster: 'printing-130-poster.webp', title: 'Names, numbers & panel artwork', text: 'Numbered sportswear artwork moving through the roll-to-roll printing stage.', duration: 'PT11.9S' },

@@ -1,3 +1,4 @@
+import { withPageSocialMetadata } from '../../../lib/page-metadata';
 import { serializeStructuredData } from '../../../lib/structured-data';
 import Image from 'next/image';
 import type { Metadata } from 'next';
@@ -8,12 +9,12 @@ import './fabric.css';
 const path = '/fabrics/220-gsm-stretch-knit';
 const url = `${SITE_URL}${path}`;
 const base = 'https://assets.tontongear.com/assets/fabrics/220gsm-stretch-knit/';
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageSocialMetadata({
  title: { absolute: '220 GSM Stretch Knit for Custom Rash Guards | TONTON' },
  description: 'Explore TONTON 220 GSM stretch knit: 85% polyester / 15% spandex for custom rash guards and compression tops. See supplied garment photos, specifications and sample options.',
  alternates: { canonical: url },
  openGraph: { title: '220 GSM Stretch Knit | TONTON Fabric Library', description: '85% polyester / 15% spandex for custom rash guards and compression tops.', url, images: [{ url: `${base}main-fabric.webp` }] },
-};
+});
 const faqs = [
  ['What is this 220 GSM fabric made of?', 'The confirmed main-fabric specification is 85% polyester and 15% spandex, with a nominal weight of 220 grams per square meter. The supplied garment label also shows the 85/15 composition.'],
  ['Which products is it intended for?', 'Custom rash guards and close-fitting compression tops for brands, BJJ academies, clubs and teams. Confirm fit, stretch and construction through sampling.'],

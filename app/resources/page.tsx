@@ -1,3 +1,4 @@
+import { withPageSocialMetadata } from '../../lib/page-metadata';
 import { serializeStructuredData } from '../../lib/structured-data';
 import BuyerSolutionsLinks from '../../components/BuyerSolutionsLinks';
 import Link from 'next/link';
@@ -6,11 +7,11 @@ import { RESOURCE_PAGES } from '../../lib/resource-content';
 
 const SITE_URL = 'https://www.tontongear.com';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageSocialMetadata({
   title: { absolute: 'Custom Fightwear Buyer Resources | TONTON Sportswear' },
   description: 'Technical buyer guides for custom Rash Guards, Training Shorts and BJJ/MMA Shorts covering fabric, seams, sublimation, construction, sampling and quality control.',
   alternates: { canonical: `${SITE_URL}/resources` },
-};
+});
 
 export default function ResourcesPage() {
   const schema = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Custom Fightwear Buyer Resources', url: `${SITE_URL}/resources`, dateModified: '2026-10-15', hasPart: RESOURCE_PAGES.map((item) => ({ '@type': 'Article', name: item.title, url: `${SITE_URL}/resources/${item.slug}`, dateModified: item.updated })) };

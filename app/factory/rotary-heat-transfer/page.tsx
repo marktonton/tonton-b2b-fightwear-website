@@ -1,3 +1,4 @@
+import { withPageSocialMetadata } from '../../../lib/page-metadata';
 import { serializeStructuredData } from '../../../lib/structured-data';
 import Image from 'next/image';
 import type { Metadata } from 'next';
@@ -12,12 +13,12 @@ const PATH = '/factory/rotary-heat-transfer';
 const URL = `${SITE_URL}${PATH}`;
 const asset = (name: string) => resolveImage(`/assets/factory/rotary-transfer/${name}`);
 const absolute = (name: string) => new globalThis.URL(asset(name), SITE_URL).href;
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageSocialMetadata({
   title: { absolute: 'Rotary Sublimation Heat Transfer for Sportswear | TONTON' },
   description: 'TONTON custom sportswear factory: rotary heat transfer from printed sublimation paper to polyester fabric, roll loading, process videos and preparation for cutting and sewing.',
   alternates: { canonical: URL },
   openGraph: { title: 'Rotary Heat Transfer at TONTON Sportswear Factory', description: 'See how printed transfer paper connects with polyester fabric, garment cutting and sewing.', url: URL, type: 'website', images: [{ url: absolute('fabric-paper-loading.webp'), alt: 'TONTON workers preparing fabric and transfer paper at a rotary heat transfer machine' }] },
-};
+});
 const videos = [
   { file: 'continuous-transfer', name: 'Continuous transfer demonstration', text: 'Printed material moving through the rotary transfer workstation.', duration: 'PT7.98S' },
   { file: 'printed-pattern-detail', name: 'Printed pattern detail', text: 'A closer view of the printed sportswear panel layout and material feed.', duration: 'PT18.56S' },

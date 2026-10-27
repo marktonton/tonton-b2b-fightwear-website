@@ -1,3 +1,4 @@
+import { withPageSocialMetadata } from '../../../lib/page-metadata';
 import { serializeStructuredData } from '../../../lib/structured-data';
 import Image from 'next/image';
 import FactoryVideo from '../../../components/FactoryVideo';
@@ -13,12 +14,12 @@ const MEDIA = '/assets/factory/multi-head-embroidery/';
 const asset = (name: string) => resolveImage(`${MEDIA}${name}`);
 const absoluteAsset = (name: string) => new URL(asset(name), SITE_URL).href;
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageSocialMetadata({
   title: { absolute: 'Multi-Head Embroidery for Custom Teamwear | TONTON Factory' },
   description: 'Explore TONTON’s computerized multi-head embroidery workshop: JIAYU equipment, team logos and lettering, sample approval, actual machine footage and buyer preparation.',
   alternates: { canonical: PAGE_URL },
   openGraph: { title: 'Inside TONTON’s Multi-Head Embroidery Workshop', description: 'Thread, artwork and team identity — from embroidery development to garment production.', url: PAGE_URL, type: 'website', images: [{ url: absoluteAsset('machine-line.webp'), width: 2048, height: 1365, alt: 'JIAYU multi-head embroidery machines and colored threads in the TONTON workshop' }] },
-};
+});
 
 const faqs = [
   { q: 'What does a computerized multi-head embroidery machine do?', a: 'It follows a digitized embroidery program to stitch thread into a selected fabric or garment panel. Multiple heads can repeat the same approved design in parallel, while programmed needle changes select the required thread colors.' },

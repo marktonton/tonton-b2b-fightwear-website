@@ -1,3 +1,4 @@
+import { withPageSocialMetadata } from '../../lib/page-metadata';
 import { serializeStructuredData } from '../../lib/structured-data';
 import Image from 'next/image';
 import type { Metadata } from 'next';
@@ -7,12 +8,12 @@ import { ORGANIZATION_ID, SITE_URL } from '../../lib/site-entity';
 import './factory-overview.css';
 import { FABRIC_LIBRARY } from '../../lib/fabric-library';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageSocialMetadata({
   title: { absolute: 'Inside the TONTON Factory | Custom Sportswear OEM & ODM' },
   description: 'Explore TONTON custom teamwear manufacturing in Xiantao, China: equipment, fabrics, people, production workflow, digital tracking, quality control and factory documents.',
   alternates: { canonical: `${SITE_URL}/factory` },
   openGraph: { title: 'Inside the TONTON Factory', description: 'People. Materials. Production. Proof.', url: `${SITE_URL}/factory`, type: 'website', images: [{ url: `${SITE_URL}/assets/factory/overview-2026/factory-courtyard.webp`, alt: 'TONTON factory courtyard in Xiantao, Hubei' }] },
-};
+});
 const certificates = [
   {
     type: 'QUALITY MANAGEMENT',
