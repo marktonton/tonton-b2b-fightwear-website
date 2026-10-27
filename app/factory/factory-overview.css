@@ -43,3 +43,8 @@
 #fabrics .fo-fabric-media-liner-concept img{object-fit:contain;object-position:center;background:#edf0ee}
 
 #fabrics .fo-fabric-media-mesh-sample img{object-fit:cover;object-position:46% 42%}
+
+/* Real production film: retain the complete portrait frame. */
+.fo-workflow-film{display:grid;grid-template-columns:minmax(220px,320px) minmax(0,1fr);gap:32px;align-items:center;padding:24px;background:#f3f5f3;border:1px solid #dce2df;margin-bottom:28px}
+.fo-workflow-film figure{margin:0;min-width:0}.fo-workflow-film video{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:contain;background:#111;border-radius:4px}.fo-workflow-film figcaption{font-size:12px;line-height:1.5;color:#59666a;margin-top:8px}.fo-workflow-film h3{font-size:clamp(24px,3vw,34px);line-height:1.18;margin:10px 0 16px}.fo-workflow-film p,.fo-workflow-film li{font-size:16px;line-height:1.7}.fo-workflow-film ul{padding-left:20px;margin:16px 0}.fo-workflow-film li+li{margin-top:10px}.fo-workflow-film .fo-button{margin-top:10px}
+@media(max-width:760px){.fo-workflow-film{grid-template-columns:1fr;padding:18px;gap:22px}.fo-workflow-film figure{width:100%;max-width:320px;margin:0 auto}.fo-workflow-film .fo-button{white-space:normal}}
