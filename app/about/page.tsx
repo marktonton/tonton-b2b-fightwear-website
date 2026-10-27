@@ -6,12 +6,13 @@ import Link from 'next/link';
 import { resolveImage } from '../../lib/image-resolver';
 import { ORGANIZATION_ID, SITE_URL } from '../../lib/site-entity';
 import FactoryLeadership from '../factory/FactoryLeadership';
+import CompanyStory from './CompanyStory';
 import { CHAIRMAN_PROFILE } from '../../lib/chairman-profile';
 import './company-profile.css';
 
 export const metadata: Metadata = withPageSocialMetadata({
   title: { absolute: 'TONTON Company Profile & Chairman | Custom Sportswear Since 2004' },
-  description: 'Meet TONTON Sportswear and founder Peter Hu: company background, custom sportswear manufacturing, chairman interviews, community work and original reporting.',
+  description: 'Explore TONTON’s company story since 2004: founder Peter Hu, Shenzhen operations, Xiantao manufacturing, education support, interviews and original reporting.',
   alternates: { canonical: `${SITE_URL}/about` },
   robots: { index: true, follow: true },
 });
@@ -26,14 +27,6 @@ const facts = [
   ['Typical buyers', 'Fightwear brands, gyms, academies, clubs, teams and retailers'],
   ['Manufacturing scope', 'Product development, artwork support, sampling, printing, embroidery, cutting, sewing, quality review and packing'],
   ['Sales contact', 'gary@tontonsportswear.com · +86 17722438678'],
-];
-
-const milestones = [
-  ['2004', 'TONTON began in Shenzhen with a focus on custom sportswear and international B2B orders.'],
-  ['2014', 'The team took part in the Chinese supplier network that completed 130,000 Alibaba listing commemorative garments in 12 days.'],
-  ['2023', 'TONTON established its Hubei manufacturing company and expanded production in Xiantao.'],
-  ['2025', 'Hubei Daily reported the launch of an intelligent production system using AI-assisted design, QR-tracked panels, smart sorting and hanging lines.'],
-  ['2026', 'Public reporting documented further AI-supported manufacturing development and university-industry work on smart sizing and virtual fitting.'],
 ];
 
 const officialReports = [
@@ -202,7 +195,9 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="entity-section company-leadership" id="leadership" aria-labelledby="chairman-title"><header><p>FOUNDER &amp; CHAIRMAN</p><h2 id="chairman-title">The person behind TONTON</h2><p>Meet Peter Hu through real company photographs, interviews and published reporting.</p></header><FactoryLeadership /></section>
+      <CompanyStory />
+
+      <section className="entity-section company-leadership story-interviews" id="interviews" aria-label="Chairman interviews and company archive"><FactoryLeadership /></section>
 
       <section className="entity-section entity-proof" aria-labelledby="entity-proof-title">
         <header>
@@ -213,22 +208,6 @@ export default function AboutPage() {
           <article><span>01</span><h3>Factory evidence</h3><p>Review real workshops, equipment, production flow, quality checks and source documents.</p><Link href="/factory">View Factory Evidence →</Link></article>
           <article><span>02</span><h3>Product evidence</h3><p>Compare visible construction, material notes, customization limits and sample questions on individual product pages.</p><Link href="/collections">Review Product Examples →</Link></article>
           <article><span>03</span><h3>Technical guidance</h3><p>Use reviewed buyer guides for fabric, seams, waistbands, liners, sublimation, sampling and quality inspection.</p><Link href="/resources">Read Buyer Guides →</Link></article>
-        </div>
-      </section>
-
-      <section className="entity-section entity-history" aria-labelledby="entity-history-title">
-        <header>
-          <p>COMPANY DEVELOPMENT</p>
-          <h2 id="entity-history-title">From a Shenzhen sportswear business to connected manufacturing</h2>
-          <p>A concise timeline based on company records and published reporting. It explains how TONTON's commercial operations and Hubei production base fit together.</p>
-        </header>
-        <div className="entity-timeline">
-          {milestones.map(([year, text]) => (
-            <article key={year}>
-              <strong>{year}</strong>
-              <p>{text}</p>
-            </article>
-          ))}
         </div>
       </section>
 
