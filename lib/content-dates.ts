@@ -1,10 +1,10 @@
 export const CONTENT_REVIEW_DATE = '2026-09-15';
 
 export const ROUTE_LAST_MODIFIED: Record<string, string> = {
-  '/site-map': '2026-10-26',
+  '/site-map': '2026-10-27',
   '/fabrics/four-way-stretch-woven': '2026-10-26',
   '/fabrics/compression-liner-knit': '2026-10-26',
-  '/fabrics/stretch-mesh': '2026-10-26',
+  '/fabrics/stretch-mesh': '2026-10-27',
   '/fabrics/220-gsm-stretch-knit': '2026-10-23',
   '/factory/intelligent-garment-hanging-system': '2026-10-21',
   '/factory/rotary-heat-transfer': '2026-10-21',
@@ -13,7 +13,7 @@ export const ROUTE_LAST_MODIFIED: Record<string, string> = {
   '/': '2026-10-26',
   '/collections': '2026-10-26',
   '/service-support': '2026-10-26',
-  '/factory': '2026-10-26',
+  '/factory': '2026-10-27',
   '/factory/multi-head-embroidery': '2026-10-20',
   '/factory/digital-sublimation-printing': '2026-10-21',
   '/about': '2026-10-21',
