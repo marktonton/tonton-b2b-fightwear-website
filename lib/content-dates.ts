@@ -1,6 +1,12 @@
 export const CONTENT_REVIEW_DATE = '2026-09-15';
 
 export const ROUTE_LAST_MODIFIED: Record<string, string> = {
+  '/products': '2026-10-28',
+  '/products/category/rash-guards': '2026-10-28',
+  '/products/category/mma-grappling-shorts': '2026-10-28',
+  '/products/category/training-shorts': '2026-10-28',
+  '/products/category/teamwear-sets': '2026-10-28',
+
   '/products/white-short-sleeve-compression-rash-guard': '2026-10-28',
   '/products/black-white-mma-kit': '2026-10-28',
   '/products/black-gold-rash-guard': '2026-10-28',

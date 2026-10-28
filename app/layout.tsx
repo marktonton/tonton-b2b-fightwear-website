@@ -2,6 +2,7 @@ import { serializeStructuredData } from '../lib/structured-data';
 import React from 'react';
 import type { Metadata } from 'next';
 import './globals.css';
+import '../components/product-nav.css';
 import '../components/buyer-fit.css';
 import './site-map/site-map.css';
 import { resolveImage } from '../lib/image-resolver';
@@ -71,6 +72,16 @@ export default function RootLayout({
           </a>
           <nav aria-label="Main navigation">
             <a href="/">Home</a>
+            <div className="nav-dropdown products-nav">
+              <a href="/products" className="nav-link">Products ▼</a>
+              <div className="dropdown-content">
+                <a href="/products">All Products</a>
+                <a href="/products/category/rash-guards">Rash Guards</a>
+                <a href="/products/category/mma-grappling-shorts">MMA &amp; Grappling Shorts</a>
+                <a href="/products/category/training-shorts">Training Shorts</a>
+                <a href="/products/category/teamwear-sets">Teamwear Sets</a>
+              </div>
+            </div>
             <div className="nav-dropdown">
               <a href="/collections" className="nav-link">Customization ▼</a>
               <div className="dropdown-content">
@@ -90,6 +101,7 @@ export default function RootLayout({
             <a href="/resources">Resources</a>
             <a className="nav-cta" href="/project-builder?source=global-navigation">Build Your Project</a>
           </nav>
+          <a className="mobile-products-link" href="/products">Products →</a>
         </header>
 
         <main id="main-content">{children}</main>
@@ -103,6 +115,7 @@ export default function RootLayout({
             </div>
             <div className="footer-column">
               <h2>Quick Solutions</h2>
+              <a href="/products">All Products</a>
               <a href="/collections">Product Collections</a>
               <a href="/customization/sublimated-rash-guards">Custom Rash Guards</a>
               <a href="/customization/sublimated-training-shorts">Custom Training Shorts</a>

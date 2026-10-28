@@ -298,5 +298,35 @@
     "title": "Custom White Short-Sleeve Compression Rash Guard",
     "description": "Develop custom white short-sleeve compression shirts for BJJ, MMA and gym training. Review matte fabric, flat seams, opacity checks and private-label OEM options.",
     "group": "Products"
+  },
+  {
+    "path": "/products",
+    "title": "Product Catalog",
+    "description": "Browse TONTON rash guards, MMA and grappling shorts, training shorts and teamwear sets. Compare product references and request private-label OEM/ODM development.",
+    "group": "Product catalog"
+  },
+  {
+    "path": "/products/category/rash-guards",
+    "title": "Rash Guards",
+    "description": "Short- and long-sleeve compression tops for BJJ academies, MMA gyms and private-label training collections.",
+    "group": "Product catalog"
+  },
+  {
+    "path": "/products/category/mma-grappling-shorts",
+    "title": "MMA & Grappling Shorts",
+    "description": "Fight shorts, high-split cuts and two-layer grappling references for custom development.",
+    "group": "Product catalog"
+  },
+  {
+    "path": "/products/category/training-shorts",
+    "title": "Training Shorts",
+    "description": "Training short references for gym, team and activewear projects.",
+    "group": "Product catalog"
+  },
+  {
+    "path": "/products/category/teamwear-sets",
+    "title": "Teamwear Sets",
+    "description": "Coordinated rash guard and shorts sets with shared artwork and separate garment sizing.",
+    "group": "Product catalog"
   }
 ]

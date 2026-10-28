@@ -1,0 +1,6 @@
+
+/* Additional product catalog navigation; existing customization destinations stay intact. */
+.products-nav:focus-within .dropdown-content{display:block}
+.mobile-products-link{display:none}
+@media(min-width:769px) and (max-width:1250px){.header nav{gap:14px;font-size:12px}.header .brand span{display:none}.header{padding-left:4%;padding-right:4%}}
+@media(max-width:768px){.mobile-products-link{display:block;color:#fff;font-size:13px;font-weight:800;white-space:nowrap;margin-left:16px}.header .brand span{display:none}}

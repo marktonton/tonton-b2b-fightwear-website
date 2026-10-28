@@ -12,6 +12,12 @@ const modified = (pathname: string) => new Date(`${getRouteModifiedDate(pathname
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
+    { url: `${SITE_URL}/products`, lastModified: modified('/products'), changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${SITE_URL}/products/category/rash-guards`, lastModified: modified('/products/category/rash-guards'), changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${SITE_URL}/products/category/mma-grappling-shorts`, lastModified: modified('/products/category/mma-grappling-shorts'), changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${SITE_URL}/products/category/training-shorts`, lastModified: modified('/products/category/training-shorts'), changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${SITE_URL}/products/category/teamwear-sets`, lastModified: modified('/products/category/teamwear-sets'), changeFrequency: 'weekly', priority: 0.8 },
+
     { url: `${SITE_URL}/site-map`, lastModified: modified('/site-map'), changeFrequency: 'weekly', priority: 0.6 },
     { url: `${SITE_URL}/fabrics/220-gsm-stretch-knit`, lastModified: modified('/fabrics/220-gsm-stretch-knit'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE_URL}/factory/intelligent-garment-hanging-system`, lastModified: modified('/factory/intelligent-garment-hanging-system'), changeFrequency: 'monthly', priority: 0.8 },

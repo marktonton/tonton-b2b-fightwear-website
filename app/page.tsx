@@ -394,6 +394,7 @@ export default function HomePage() {
             );
           })}
         </div>
+        <p style={{marginTop:24}}><a className="product-detail-secondary" href="/products">View All Products →</a></p>
         <p className="product-details-note">*MOQ and target sampling windows apply to selected styles and begin after product details and usable artwork are confirmed.</p>
       </section>
 
