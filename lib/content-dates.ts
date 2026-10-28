@@ -1,6 +1,7 @@
 export const CONTENT_REVIEW_DATE = '2026-09-15';
 
 export const ROUTE_LAST_MODIFIED: Record<string, string> = {
+  '/products/white-short-sleeve-compression-rash-guard': '2026-10-28',
   '/products/black-white-mma-kit': '2026-10-28',
   '/products/black-gold-rash-guard': '2026-10-28',
   '/products/fuji-art-rash-guard': '2026-10-28',
@@ -18,7 +19,7 @@ export const ROUTE_LAST_MODIFIED: Record<string, string> = {
   '/factory/electric-straight-knife-cutting': '2026-10-21',
   '/factory/computerized-fabric-cutting': '2026-10-21',
   '/': '2026-10-26',
-  '/collections': '2026-10-26',
+  '/collections': '2026-10-28',
   '/service-support': '2026-10-26',
   '/factory': '2026-10-27',
   '/factory/multi-head-embroidery': '2026-10-20',

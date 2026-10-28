@@ -1,3 +1,5 @@
+import WhiteCompressionLanding from './WhiteCompressionLanding';
+import { WHITE_COMPRESSION } from '../../../lib/white-compression-rash-guard';
 import { withPageSocialMetadata } from '../../../lib/page-metadata';
 import { serializeStructuredData } from '../../../lib/structured-data';
 import { SILICONE_HEM_VIDEO, SILICONE_HEM_PHOTOS, SILICONE_HEM_FAQS } from '../../../lib/rash-guard-silicone-hem';
@@ -83,7 +85,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
   }
 
   const url = `${SITE_URL}/products/${product.id}`;
-  const landingContent = isRashGuardLandingProduct(product.id)
+  const landingContent = product.id === WHITE_COMPRESSION.id ? WHITE_COMPRESSION : isRashGuardLandingProduct(product.id)
     ? RASH_GUARD_LANDING_CONTENT[product.id]
     : isHighSplitGrapplingShorts(product.id)
       ? HIGH_SPLIT_GRAPPLING_SHORTS_CONTENT
@@ -126,6 +128,8 @@ export default function ProductDetailPage({ params }: PageProps) {
   if (!product) {
     notFound();
   }
+
+  if (product.id === WHITE_COMPRESSION.id) return <WhiteCompressionLanding />;
 
   if (isCamoMmaShorts(product.id)) {
     const galleryImages = 'images' in product ? product.images : [product.image];

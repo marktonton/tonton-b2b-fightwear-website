@@ -21,12 +21,40 @@
   ],
   "products": [
     {
+      "id": "white-short-sleeve-compression-rash-guard",
+      "categoryId": "sublimated-rash-guards",
+      "name": "White Short-Sleeve Compression Rash Guard",
+      "image": "https://assets.tontongear.com/assets/products/white-compression-rash-guard/white-rash-guard-front.webp",
+      "images": [
+        "https://assets.tontongear.com/assets/products/white-compression-rash-guard/white-rash-guard-front.webp",
+        "https://assets.tontongear.com/assets/products/white-compression-rash-guard/white-rash-guard-collar.webp",
+        "https://assets.tontongear.com/assets/products/white-compression-rash-guard/white-rash-guard-branding.webp",
+        "https://assets.tontongear.com/assets/products/white-compression-rash-guard/white-rash-guard-flat-seam.webp",
+        "https://assets.tontongear.com/assets/products/white-compression-rash-guard/white-rash-guard-nape.webp",
+        "https://assets.tontongear.com/assets/products/white-compression-rash-guard/white-rash-guard-torso.webp",
+        "https://assets.tontongear.com/assets/products/white-compression-rash-guard/white-rash-guard-back.webp",
+        "https://assets.tontongear.com/assets/products/white-compression-rash-guard/white-rash-guard-crossed-arms.webp"
+      ],
+      "description": "Matte white compression training top with raglan sleeves and flat seams, developed for private-label BJJ, MMA and gym collections.",
+      "features": [
+        "85% Polyester / 15% Spandex Brief",
+        "220–250 GSM Development Range",
+        "Private Label OEM/ODM",
+        "Sample Opacity & Fit Checks"
+      ]
+    },
+    {
       "id": "olive-basic-rash-guard",
       "categoryId": "sublimated-rash-guards",
       "name": "Olive Short-Sleeve Team Rash Guard",
       "image": "assets/products/rashguard-olive-main.png",
       "description": "Clean olive short-sleeve Rash Guard direction for BJJ academies and MMA gyms building repeatable team uniforms.",
-      "features": ["10 PCS MOQ", "Short-Sleeve Team Fit", "Custom Colors & Logos", "Fabric Confirmed by Sample"]
+      "features": [
+        "10 PCS MOQ",
+        "Short-Sleeve Team Fit",
+        "Custom Colors & Logos",
+        "Fabric Confirmed by Sample"
+      ]
     },
     {
       "id": "blue-team-rash-guard",
@@ -40,7 +68,12 @@
         "assets/products/rash-guard-products/85-polyester-15-spandex-label-detail-v1.webp"
       ],
       "description": "220gsm ultra-fine Lycra team Rash Guard with soft hand feel, high elasticity and opaque coverage.",
-      "features": ["220gsm Ultra-Fine Lycra", "85% Polyester / 15% Spandex", "Silicone Anti-Slip Elastic Band", "10 PCS MOQ"]
+      "features": [
+        "220gsm Ultra-Fine Lycra",
+        "85% Polyester / 15% Spandex",
+        "Silicone Anti-Slip Elastic Band",
+        "10 PCS MOQ"
+      ]
     },
     {
       "id": "white-logo-rash-guard",
@@ -54,7 +87,12 @@
         "assets/products/rash-guard-products/85-polyester-15-spandex-label-detail-v1.webp"
       ],
       "description": "Clean white 220gsm Rash Guard base developed for club logos, private labels and coordinated team orders.",
-      "features": ["220gsm Ultra-Fine Lycra", "85% Polyester / 15% Spandex", "Silicone Anti-Slip Elastic Band", "10 PCS MOQ"]
+      "features": [
+        "220gsm Ultra-Fine Lycra",
+        "85% Polyester / 15% Spandex",
+        "Silicone Anti-Slip Elastic Band",
+        "10 PCS MOQ"
+      ]
     },
     {
       "id": "samurai-graphic-rash-guard",
@@ -73,7 +111,12 @@
         "assets/products/rash-guard-products/samurai-220gsm/samurai-rash-guard-back-neck-logo-v1.webp"
       ],
       "description": "220gsm ultra-fine Lycra long-sleeve Rash Guard with soft hand feel, excellent elasticity and fully opaque coverage.",
-      "features": ["220gsm Ultra-Fine Lycra", "Soft Hand Feel", "Excellent Elasticity", "Fully Opaque"]
+      "features": [
+        "220gsm Ultra-Fine Lycra",
+        "Soft Hand Feel",
+        "Excellent Elasticity",
+        "Fully Opaque"
+      ]
     },
     {
       "id": "fuji-art-rash-guard",
@@ -81,7 +124,12 @@
       "name": "Fuji Art Performance Rash Guard",
       "image": "assets/products/rashguard-long-fuji-v2.png",
       "description": "Long-sleeve custom Rash Guard direction with large-format sleeve graphics, contrast panels and private-label branding.",
-      "features": ["10 PCS MOQ", "Long-Sleeve Coverage", "Full-Sleeve Artwork", "Panel-Aware Mockup"]
+      "features": [
+        "10 PCS MOQ",
+        "Long-Sleeve Coverage",
+        "Full-Sleeve Artwork",
+        "Panel-Aware Mockup"
+      ]
     },
     {
       "id": "black-gold-rash-guard",
@@ -89,7 +137,12 @@
       "name": "Signature Long-Sleeve Team Rash Guard",
       "image": "assets/products/rashguard-long-red-v2.png",
       "description": "Clean color-block long-sleeve Rash Guard direction with direct chest branding for academies and private-label teams.",
-      "features": ["10 PCS MOQ", "Long-Sleeve Team Fit", "Color-Block Panels", "Private Label Options"]
+      "features": [
+        "10 PCS MOQ",
+        "Long-Sleeve Team Fit",
+        "Color-Block Panels",
+        "Private Label Options"
+      ]
     },
     {
       "id": "high-split-grappling-shorts",
@@ -110,7 +163,14 @@
         "assets/products/grappling-shorts-products/high-split-2-in-1/sample-details/grappling-shorts-size-chart.webp"
       ],
       "description": "Gladiator-style high-split 2-in-1 grappling shorts with a breathable quick-dry four-way stretch shell, 250gsm milk-silk liner and secure anti-slip waistband.",
-      "features": ["Ultra-High Split Cut", "Quick-Dry Four-Way Stretch Shell", "250gsm Milk-Silk Inner Liner", "Anti-Slip Silicone Waistband", "Reinforced Stitching", "Custom Inner-Layer Artwork"]
+      "features": [
+        "Ultra-High Split Cut",
+        "Quick-Dry Four-Way Stretch Shell",
+        "250gsm Milk-Silk Inner Liner",
+        "Anti-Slip Silicone Waistband",
+        "Reinforced Stitching",
+        "Custom Inner-Layer Artwork"
+      ]
     },
     {
       "id": "custom-logo-shorts",
@@ -125,7 +185,14 @@
         "assets/products/grappling-shorts-products/mma-fight-shorts/reinforced-hem-logo-detail-v1.webp"
       ],
       "description": "Short, mobility-focused outer fight shorts with a broad elastic waist, articulated front-crotch construction and reinforced stitching for MMA, BJJ, Sanda and boxing training.",
-      "features": ["10 PCS MOQ", "Short Athletic Cut", "Stretch-Woven Fabric Direction", "Articulated Front Crotch", "Reinforced Contrast Stitching", "Custom Waist & Leg Branding"]
+      "features": [
+        "10 PCS MOQ",
+        "Short Athletic Cut",
+        "Stretch-Woven Fabric Direction",
+        "Articulated Front Crotch",
+        "Reinforced Contrast Stitching",
+        "Custom Waist & Leg Branding"
+      ]
     },
     {
       "id": "pro-mma-shorts-07",
@@ -140,7 +207,14 @@
         "assets/products/grappling-shorts-products/camo-side-split/training-applications.webp"
       ],
       "description": "Men's custom MMA fight shorts in lightweight 88% polyester and 12% spandex woven performance fabric, with an adjustable elastic waist, reinforced side split, clean topstitched hem and sublimated camo graphics for MMA, BJJ No-Gi, grappling and striking training.",
-      "features": ["88% Polyester / 12% Spandex", "Lightweight Stretch-Woven Fabric", "Hook-and-Loop Waist + Drawcord", "Reinforced Side Split & Hem", "Sublimated Asymmetric Graphics", "No Exposed Pockets"]
+      "features": [
+        "88% Polyester / 12% Spandex",
+        "Lightweight Stretch-Woven Fabric",
+        "Hook-and-Loop Waist + Drawcord",
+        "Reinforced Side Split & Hem",
+        "Sublimated Asymmetric Graphics",
+        "No Exposed Pockets"
+      ]
     },
     {
       "id": "pro-mma-shorts-08",
@@ -152,7 +226,14 @@
         "assets/products/product-15.png"
       ],
       "description": "Short-cut black combat training shorts with a broad elastic waistband, panelled crotch, reinforced hem and custom logo positions for MMA conditioning, boxing fitness and functional training.",
-      "features": ["10 PCS MOQ", "Short Athletic Cut", "Elastic Waistband", "Panelled Crotch", "Reinforced Hem", "Custom Branding"]
+      "features": [
+        "10 PCS MOQ",
+        "Short Athletic Cut",
+        "Elastic Waistband",
+        "Panelled Crotch",
+        "Reinforced Hem",
+        "Custom Branding"
+      ]
     },
     {
       "id": "lightweight-quick-dry-training-shorts",
@@ -165,7 +246,13 @@
         "assets/products/lightweight-training-shorts-details.webp"
       ],
       "description": "Lightweight woven training shorts with an adjustable drawcord waist, soft inner lining, curved athletic hem, and reflective custom logo.",
-      "features": ["10 PCS MOQ", "Quick-Dry Fabric", "Custom Logo & Colors", "Soft Inner Lining", "Reinforced Double Stitching"]
+      "features": [
+        "10 PCS MOQ",
+        "Quick-Dry Fabric",
+        "Custom Logo & Colors",
+        "Soft Inner Lining",
+        "Reinforced Double Stitching"
+      ]
     },
     {
       "id": "black-white-mma-kit",
@@ -173,7 +260,12 @@
       "name": "Classic Custom MMA Team Kit",
       "image": "assets/products/kit-bw-v2.png",
       "description": "Coordinated MMA academy ordering direction for matching Rash Guard and fight shorts artwork, team sizing and repeat-order specifications.",
-      "features": ["10 SET MOQ", "Coordinated Team Artwork", "Mixed Athlete Sizing", "Sample Approval"]
+      "features": [
+        "10 SET MOQ",
+        "Coordinated Team Artwork",
+        "Mixed Athlete Sizing",
+        "Sample Approval"
+      ]
     }
   ]
 }

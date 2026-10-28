@@ -1,0 +1,140 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "@id": "https://www.tontongear.com/products/white-short-sleeve-compression-rash-guard#product",
+      "url": "https://www.tontongear.com/products/white-short-sleeve-compression-rash-guard",
+      "name": "Custom White Short-Sleeve Compression Rash Guard",
+      "description": "Develop custom white short-sleeve compression shirts for BJJ, MMA and gym training. Review matte fabric, flat seams, opacity checks and private-label OEM options.",
+      "image": [
+        "https://assets.tontongear.com/assets/products/white-compression-rash-guard/white-rash-guard-front.webp",
+        "https://assets.tontongear.com/assets/products/white-compression-rash-guard/white-rash-guard-collar.webp",
+        "https://assets.tontongear.com/assets/products/white-compression-rash-guard/white-rash-guard-branding.webp",
+        "https://assets.tontongear.com/assets/products/white-compression-rash-guard/white-rash-guard-flat-seam.webp",
+        "https://assets.tontongear.com/assets/products/white-compression-rash-guard/white-rash-guard-nape.webp",
+        "https://assets.tontongear.com/assets/products/white-compression-rash-guard/white-rash-guard-torso.webp",
+        "https://assets.tontongear.com/assets/products/white-compression-rash-guard/white-rash-guard-back.webp",
+        "https://assets.tontongear.com/assets/products/white-compression-rash-guard/white-rash-guard-crossed-arms.webp"
+      ],
+      "brand": {
+        "@type": "Brand",
+        "name": "TONTON"
+      },
+      "color": "White",
+      "material": "85% polyester / 15% spandex (supplied development brief)",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Target fabric weight",
+          "value": "220–250 GSM development range; exact weight subject to sample approval"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.tontongear.com/products/white-short-sleeve-compression-rash-guard#webpage",
+      "url": "https://www.tontongear.com/products/white-short-sleeve-compression-rash-guard",
+      "name": "Custom White Short Sleeve Rash Guard | Compression Shirt OEM",
+      "description": "Develop custom white short-sleeve compression shirts for BJJ, MMA and gym training. Review matte fabric, flat seams, opacity checks and private-label OEM options.",
+      "inLanguage": "en",
+      "dateModified": "2026-10-28",
+      "mainEntity": {
+        "@id": "https://www.tontongear.com/products/white-short-sleeve-compression-rash-guard#product"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is this white compression shirt see-through?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Opacity depends on fabric selection, fit, stretch, lighting and moisture. Approve a physical sample in dry and damp conditions, including full movement and body-contour checks. The photographs do not establish a zero-transparency guarantee."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the fabric specification?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The supplied development brief specifies 85% polyester / 15% spandex and a target range of 220–250 GSM. Confirm one exact weight, finish and fabric record before bulk production."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will the seams chafe during BJJ or gym training?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Flat seams are intended to reduce raised contact points. Check the underarm and side seams against the skin during movement; comfort depends on fit and finishing. Zero chafing is not a tested guarantee."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will the collar stretch out or the hem roll up?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check neckline recovery and hem position during overhead reaches, bends and repeated washing. Approve the binding, hem length and stitching on the sample; this reference does not establish an anti-roll or anti-deformation test result."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I order private label rash guards with my logo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Discuss chest and nape artwork, labels, fit and packaging for your OEM/ODM compression shirt project. Selected projects start at 10 pieces; confirm the minimum per style, design and colorway."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should I choose a size?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The supplied model reference is 5 ft 11 in (180 cm), 195 lb (88 kg), chest 42 in (about 107 cm), wearing MD. Approve actual garment chest, body length, sleeve measurements and tolerances; request a looser fit if needed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the video a fabric performance test?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It is a supplied promotional overview. Its stretch demonstration does not measure elastic recovery, opacity, wash durability, compression pressure or recovery benefits."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.tontongear.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Product Collections",
+          "item": "https://www.tontongear.com/collections"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "White Compression Rash Guard",
+          "item": "https://www.tontongear.com/products/white-short-sleeve-compression-rash-guard"
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "name": "White compression rash guard: supplied promotional overview",
+      "description": "Promotional styling and garment overview; not a measured performance test.",
+      "thumbnailUrl": "https://assets.tontongear.com/assets/products/white-compression-rash-guard/white-rash-guard-video-poster.jpg",
+      "contentUrl": "https://assets.tontongear.com/assets/products/white-compression-rash-guard/white-rash-guard-overview-1440p.mp4",
+      "uploadDate": "2026-10-28T00:00:00+08:00",
+      "duration": "PT15S"
+    }
+  ]
+}
