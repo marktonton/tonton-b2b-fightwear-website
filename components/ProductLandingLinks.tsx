@@ -3,20 +3,14 @@ import productsData from '../data/products.json';
 import { resolveImage } from '../lib/image-resolver';
 
 const CURATED_RELATED: Record<string, string[]> = {
-  'olive-basic-rash-guard': [
-    'blue-team-rash-guard',
-    'white-logo-rash-guard',
-    'fuji-art-rash-guard',
-  ],
   'fuji-art-rash-guard': [
     'samurai-graphic-rash-guard',
     'black-gold-rash-guard',
-    'olive-basic-rash-guard',
+    'blue-team-rash-guard',
   ],
   'black-gold-rash-guard': [
-    'olive-basic-rash-guard',
+    'blue-team-rash-guard',
     'fuji-art-rash-guard',
-    'white-logo-rash-guard',
   ],
   'black-white-mma-kit': [
     'pro-mma-shorts-07',
@@ -126,7 +120,7 @@ export default function ProductLandingLinks({ productId }: { productId: string }
         </div>
       )}
 
-      {['blue-team-rash-guard', 'white-logo-rash-guard', 'high-split-grappling-shorts'].includes(productId) && <nav className="product-order-guides" aria-label="Size and kit procurement guides"><strong>Planning an academy or brand order?</strong><Link href="/resources/custom-fightwear-size-quantity-planning">Plan sizes & quantities →</Link><Link href="/resources/custom-rash-guard-shorts-team-kit-guide">Plan a Rash Guard & shorts kit →</Link></nav>}
+      {['blue-team-rash-guard', 'blue-team-rash-guard', 'high-split-grappling-shorts'].includes(productId) && <nav className="product-order-guides" aria-label="Size and kit procurement guides"><strong>Planning an academy or brand order?</strong><Link href="/resources/custom-fightwear-size-quantity-planning">Plan sizes & quantities →</Link><Link href="/resources/custom-rash-guard-shorts-team-kit-guide">Plan a Rash Guard & shorts kit →</Link></nav>}
       <div className="product-link-hub-cta">
         <div>
           <p>PROJECT BUILDER</p>

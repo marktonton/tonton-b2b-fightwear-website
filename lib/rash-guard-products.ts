@@ -25,14 +25,14 @@ type RashGuardLandingContent = {
 export const RASH_GUARD_LANDING_CONTENT: Record<RashGuardProductId, RashGuardLandingContent> = {
   'blue-team-rash-guard': {
     eyebrow: 'Custom Team Rash Guard',
-    headline: 'Blue Elite Team Rash Guard',
-    intro: 'A premium short-sleeve Rash Guard developed for BJJ academies, MMA gyms and fight teams that need a consistent blue team identity.',
-    seoTitle: 'Custom Blue Team Rash Guard | 220gsm Lycra BJJ Rash Guard',
-    seoDescription: 'Custom blue team Rash Guard made with 220gsm ultra-fine Lycra, 85% polyester and 15% spandex, plus a silicone anti-slip elastic band for BJJ and MMA teams.',
+    headline: 'Custom Short-Sleeve Team Rash Guard',
+    intro: 'One custom short-sleeve rash guard platform with Olive, Blue and White color SKUs for BJJ academies, MMA gyms and private-label fightwear collections.',
+    seoTitle: 'Custom Short Sleeve Rash Guard | BJJ & MMA Teamwear OEM',
+    seoDescription: 'Custom short-sleeve rash guard in Olive, Blue and White color SKUs. Explore 220gsm fabric, silicone hem, private-label logos and OEM/ODM BJJ and MMA teamwear.',
     audience: 'BJJ academies, MMA gyms, grappling teams and competition programs',
     designDirection: 'Team colors, academy logos, sponsor marks, athlete names and coordinated size runs',
     material: '220gsm ultra-fine Lycra; 85% polyester, 15% spandex',
-    color: 'Blue',
+    color: 'Olive / Blue / White',
     specs: [
       { value: '220gsm', label: 'Ultra-Fine Lycra' },
       { value: '85 / 15', label: 'Polyester / Spandex' },

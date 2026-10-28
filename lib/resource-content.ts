@@ -208,7 +208,7 @@ export const RESOURCE_PAGES: ResourcePage[] = [
     notFor: ['Do not describe a silicone band as preventing all garment movement.', 'Do not choose maximum grip without considering comfort and stretch.', 'Do not assume the option is included on every style.'],
     source: 'TONTON selected Rash Guard sample details showing an interior silicone anti-slip elastic band.',
     sections: [{ heading: 'Why lower-hem control matters', paragraphs: ['Grappling, framing and repeated torso rotation can pull a close-fit top upward. An interior grip band adds contact at the hem, helping the garment remain more stable through movement.'] }, { heading: 'What to put in the product brief', bullets: ['Required band width and position', 'Preferred grip intensity and hand feel', 'Hem circumference and stretch requirement', 'Seam finish at the band edge', 'Intended sport and fit direction'] }, { heading: 'How to approve the sample', paragraphs: ['Test the hem while reaching, rotating, sprawling and returning to stance. Review stability, pressure, comfort and whether the band recovers with the surrounding fabric.'] }],
-    relatedProduct: { label: 'View a Rash Guard with anti-slip hem', href: '/products/white-logo-rash-guard' },
+    relatedProduct: { label: 'View a Rash Guard with anti-slip hem', href: '/products/blue-team-rash-guard' },
     relatedGuides: ['rash-guard-fabric-construction', '220gsm-rash-guard-fabric-guide', 'prepare-artwork-for-sublimation'],
   },
   {

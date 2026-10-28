@@ -1,3 +1,4 @@
+import TeamRashGuardColors from '../../../components/TeamRashGuardColors';
 import BuyerFitSpecification from '../../../components/BuyerFitSpecification';
 import AcademyCaseStudy from '../../../components/AcademyCaseStudy';
 import RashGuardSiliconeHem from '../../../components/RashGuardSiliconeHem';
@@ -279,7 +280,7 @@ export default function RashGuardLanding({ product }: { product: Product }) {
   const customerReview = CUSTOMER_RASH_GUARD_REVIEWS[product.id as keyof typeof CUSTOMER_RASH_GUARD_REVIEWS];
   const detailImages = isSamurai ? gallery.slice(1) : gallery.slice(1, 4);
   const detailContent = isSamurai ? SAMURAI_DETAIL_CONTENT : STANDARD_DETAIL_CONTENT;
-  const faqItems = isSamurai ? SAMURAI_FAQ_ITEMS : STANDARD_FAQ_ITEMS;
+  const faqItems = isSamurai ? SAMURAI_FAQ_ITEMS : [{ question: "Are Olive, Blue and White separate products?", answer: "They are three color SKUs of this custom short-sleeve team rash guard: Olive TT-RG-SS-01-OLV, Blue TT-RG-SS-01-BLU and White TT-RG-SS-01-WHT. Use one shared product page and specify color, sizes and quantities in your brief. The separate White Short-Sleeve Compression Rash Guard remains a different product." }, ...STANDARD_FAQ_ITEMS];
   const materialCopy = isSamurai
     ? 'This long-sleeve Rash Guard uses 220gsm ultra-fine Lycra with a soft hand feel, excellent elasticity and fully opaque coverage. The close-fit fabric supports BJJ, MMA and grappling movement while keeping the black-and-gold artwork crisp.'
     : 'The 220gsm ultra-fine Lycra uses an 85% polyester and 15% spandex composition. It combines a smooth, soft touch with high elasticity and opaque coverage for BJJ, MMA and grappling use.';
@@ -309,7 +310,7 @@ export default function RashGuardLanding({ product }: { product: Product }) {
 
       <section className="rg-product-hero">
         <div className="rg-product-hero-media">
-          <img src={resolveImage(product.image)} alt={`${product.name} on a pure white background`} />
+          {isBlueTeam ? <TeamRashGuardColors /> : <img src={resolveImage(product.image)} alt={`${product.name} on a pure white background`} />}
         </div>
         <div className="rg-product-hero-copy">
           <p className="rg-eyebrow">{content.eyebrow}</p>

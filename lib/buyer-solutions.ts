@@ -79,7 +79,7 @@ export const BUYER_SOLUTIONS = [
     followupTitle: 'Carry the approved specification into production',
     followup: 'Record the accepted sample version and any remaining changes before bulk production. Agree the inspection points for measurements, print, seams, labels and packing. For future drops, identify the approved details to repeat and review material availability and color references again. Request confidentiality arrangements before sharing sensitive designs; do not assume an NDA is already in place.',
     products: [
-      { id: 'white-logo-rash-guard', name: 'White Pro Club Logo Rash Guard', copy: 'Inspect the 220gsm product reference, private-label customer photographs and lower-hem construction.' },
+      { id: 'blue-team-rash-guard', name: 'Custom Short-Sleeve Team Rash Guard', copy: 'Inspect the 220gsm product reference, private-label customer photographs and lower-hem construction.' },
       { id: 'high-split-grappling-shorts', name: 'High-Split 2-in-1 Grappling Shorts', copy: 'Explore a distinctive shorts direction with shell, liner and waistband details for a coordinated collection.' },
     ],
     faqs: [

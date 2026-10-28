@@ -342,6 +342,15 @@ export default function ProductDetailPage({ params }: PageProps) {
         { '@type': 'PropertyValue', name: 'Decoration', value: 'Custom sublimated panel artwork' },
       ],
     };
+    if (product.id === 'blue-team-rash-guard') Object.assign(productSchema, {
+      '@type': 'ProductGroup', productGroupID: 'TT-RG-SS-01', color: 'Olive / Blue / White',
+      variesBy: ['https://schema.org/color'],
+      hasVariant: [
+        { key: 'olive', color: 'Olive', sku: 'TT-RG-SS-01-OLV', image: 'assets/products/rashguard-olive-main.png' },
+        { key: 'blue', color: 'Blue', sku: 'TT-RG-SS-01-BLU', image: product.image },
+        { key: 'white', color: 'White', sku: 'TT-RG-SS-01-WHT', image: 'assets/products/rash-guard-products/white-club-rash-guard-main-v2.webp' },
+      ].map(v => ({ '@type': 'Product', '@id': `${productUrl}#${v.sku}`, name: `${product.name} — ${v.color}`, sku: v.sku, color: v.color, image: getAbsoluteImage(v.image), url: `${productUrl}?color=${v.key}`, isVariantOf: { '@id': `${productUrl}#product` }, brand: { '@type': 'Brand', name: 'TONTON' } })),
+    });
     const webPageSchema = { '@context': 'https://schema.org', '@type': 'WebPage', name: product.name, url: productUrl, dateModified: getRouteModifiedDate(`/products/${product.id}`), reviewedBy: CONTENT_REVIEWER, mainEntity: { '@id': `${productUrl}#product` } };
     Object.assign(productSchema, { '@id': `${productUrl}#product` });
     const breadcrumbSchema = {
@@ -393,6 +402,7 @@ export default function ProductDetailPage({ params }: PageProps) {
       height: photo.height,
       about: { '@type': 'Thing', name: 'Rash Guard silicone gripper hem construction reference' },
     }))] : [];
+    if (product.id === 'blue-team-rash-guard') faqSchema.mainEntity.push({ '@type': 'Question', name: 'Are Olive, Blue and White separate products?', acceptedAnswer: { '@type': 'Answer', text: 'They are color SKUs of one custom short-sleeve team rash guard: Olive TT-RG-SS-01-OLV, Blue TT-RG-SS-01-BLU and White TT-RG-SS-01-WHT. Specify color, sizes and quantities in your project brief. The separate White Short-Sleeve Compression Rash Guard remains a different product.' } });
     if (hasSiliconeDetails) {
       faqSchema.mainEntity.push(...SILICONE_HEM_FAQS.map(({ question, answer }) => ({ '@type': 'Question', name: question, acceptedAnswer: { '@type': 'Answer', text: answer } })));
       Object.assign(productSchema, { subjectOf: { '@id': `${productUrl}#${SILICONE_HEM_VIDEO.id}` } });

@@ -18,6 +18,9 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      { source: '/products/olive-basic-rash-guard', destination: '/products/blue-team-rash-guard?color=olive', permanent: true },
+      { source: '/products/white-logo-rash-guard', destination: '/products/blue-team-rash-guard?color=white', permanent: true },
+
       {
         source: '/products/black-competition-shorts',
         destination: '/products/high-split-grappling-shorts',
