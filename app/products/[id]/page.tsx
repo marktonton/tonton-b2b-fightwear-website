@@ -1,3 +1,5 @@
+import CyberGradientShortsLanding from './CyberGradientShortsLanding';
+import CYBER_GRADIENT from '../../../data/cyber-gradient-product.json';
 import WhiteCompressionLanding from './WhiteCompressionLanding';
 import { WHITE_COMPRESSION } from '../../../lib/white-compression-rash-guard';
 import { withPageSocialMetadata } from '../../../lib/page-metadata';
@@ -85,7 +87,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
   }
 
   const url = `${SITE_URL}/products/${product.id}`;
-  const landingContent = product.id === WHITE_COMPRESSION.id ? WHITE_COMPRESSION : isRashGuardLandingProduct(product.id)
+  const landingContent = product.id === CYBER_GRADIENT.id ? CYBER_GRADIENT : product.id === WHITE_COMPRESSION.id ? WHITE_COMPRESSION : isRashGuardLandingProduct(product.id)
     ? RASH_GUARD_LANDING_CONTENT[product.id]
     : isHighSplitGrapplingShorts(product.id)
       ? HIGH_SPLIT_GRAPPLING_SHORTS_CONTENT
@@ -128,6 +130,8 @@ export default function ProductDetailPage({ params }: PageProps) {
   if (!product) {
     notFound();
   }
+
+  if (product.id === CYBER_GRADIENT.id) return <CyberGradientShortsLanding />;
 
   if (product.id === WHITE_COMPRESSION.id) return <WhiteCompressionLanding />;
 

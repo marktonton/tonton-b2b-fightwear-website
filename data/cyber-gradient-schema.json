@@ -1,0 +1,145 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "@id": "https://www.tontongear.com/products/cyber-gradient-training-fight-shorts#product",
+      "name": "Cyber-Gradient Pro Training & Fight Shorts",
+      "description": "Custom blue-purple gradient training and fight shorts with a geometric drawcord waistband, curved side openings and printed mesh trim. Private-label OEM/ODM development.",
+      "url": "https://www.tontongear.com/products/cyber-gradient-training-fight-shorts",
+      "image": [
+        "https://assets.tontongear.com/assets/products/cyber-gradient-training-shorts/cyber-gradient-shorts-front.webp",
+        "https://assets.tontongear.com/assets/products/cyber-gradient-training-shorts/cyber-gradient-shorts-waistband.webp",
+        "https://assets.tontongear.com/assets/products/cyber-gradient-training-shorts/cyber-gradient-shorts-logo-slit.webp",
+        "https://assets.tontongear.com/assets/products/cyber-gradient-training-shorts/cyber-gradient-shorts-mesh-seam.webp",
+        "https://assets.tontongear.com/assets/products/cyber-gradient-training-shorts/cyber-gradient-shorts-back.webp",
+        "https://assets.tontongear.com/assets/products/cyber-gradient-training-shorts/cyber-gradient-shorts-inner-trim.webp",
+        "https://assets.tontongear.com/assets/products/cyber-gradient-training-shorts/cyber-gradient-shorts-model-front.webp",
+        "https://assets.tontongear.com/assets/products/cyber-gradient-training-shorts/cyber-gradient-shorts-model-side.webp"
+      ],
+      "brand": {
+        "@type": "Brand",
+        "name": "TONTON"
+      },
+      "color": "Black / Cyan / Purple",
+      "material": "92% polyester / 8% spandex shell — supplied brief; printed stretch polyester mesh trim subject to confirmation",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Cut",
+          "value": "Above-knee athletic cut with curved side openings"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Specification status",
+          "value": "Supplied development brief; exact GSM, measurements and performance tests require approval"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.tontongear.com/products/cyber-gradient-training-fight-shorts#webpage",
+      "url": "https://www.tontongear.com/products/cyber-gradient-training-fight-shorts",
+      "name": "Custom Training & Fight Shorts | Cyber-Gradient | TONTON",
+      "description": "Custom blue-purple gradient training and fight shorts with a geometric drawcord waistband, curved side openings and printed mesh trim. Private-label OEM/ODM development.",
+      "inLanguage": "en",
+      "dateModified": "2026-10-28",
+      "mainEntity": {
+        "@id": "https://www.tontongear.com/products/cyber-gradient-training-fight-shorts#product"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are these custom training and fight shorts designed for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They are an OEM/ODM reference for gym training, striking workouts and fightwear collections. Confirm fit and movement on a sample; for BJJ/MMA grappling or competition, review drawcord security, pockets, hardware and event rules separately."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the shell composition?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The supplied brief specifies 92% polyester / 8% spandex stretch woven. Exact GSM and measurable stretch, drying, tear and water-resistance properties are not supplied and require a selected material record or test."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this a full two-in-one compression liner?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The images show printed mesh at the inside hem. They do not establish a full fitted compression liner. Confirm the inner panel coverage, lining construction and any required two-in-one version during sampling."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I customize the blue-purple geometric print and logos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Discuss your own colors, geometric artwork, vertical wordmark, emblem, labels and packaging. Confirm print/transfer method, artwork permissions, color matching and wash performance on the approved sample."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What sizes and quantities should I send?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send waist, hip, rise, outseam, inseam, leg opening and slit-height requirements, followed by quantities per size and colorway. Confirm actual measurements and tolerances rather than relying on a generic 5–7 inch range."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are the shorts guaranteed tear-proof, non-chafing or permanently colorfast?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No measured test is supplied for those absolute claims. Review seam strength, abrasion, colorfastness, elastic recovery and skin-contact comfort on the selected fabric and physical sample."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the minimum order and sample conditions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Selected custom projects start at 10 pieces. Confirm minimums per style, design and colorway. The advertised 3–7 day sample target begins after artwork and details are confirmed; sourcing, patterns and revisions can change timing."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "All Products",
+          "item": "https://www.tontongear.com/products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Training Shorts",
+          "item": "https://www.tontongear.com/products/category/training-shorts"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cyber-Gradient Pro Training & Fight Shorts",
+          "item": "https://www.tontongear.com/products/cyber-gradient-training-fight-shorts"
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Cyber-gradient training shorts promotional overview",
+      "description": "Supplied product visualization of the geometric waistband, branding and shorts construction; not a measured performance test.",
+      "contentUrl": "https://assets.tontongear.com/assets/products/cyber-gradient-training-shorts/cyber-gradient-shorts-overview-720p.mp4",
+      "thumbnailUrl": "https://assets.tontongear.com/assets/products/cyber-gradient-training-shorts/cyber-gradient-shorts-poster.jpg",
+      "duration": "PT15S",
+      "uploadDate": "2026-10-28T00:00:00+08:00"
+    }
+  ]
+}

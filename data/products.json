@@ -21,6 +21,29 @@
   ],
   "products": [
     {
+      "id": "cyber-gradient-training-fight-shorts",
+      "categoryId": "sublimated-training-shorts",
+      "name": "Cyber-Gradient Pro Training & Fight Shorts",
+      "image": "https://assets.tontongear.com/assets/products/cyber-gradient-training-shorts/cyber-gradient-shorts-front.webp",
+      "images": [
+        "https://assets.tontongear.com/assets/products/cyber-gradient-training-shorts/cyber-gradient-shorts-front.webp",
+        "https://assets.tontongear.com/assets/products/cyber-gradient-training-shorts/cyber-gradient-shorts-waistband.webp",
+        "https://assets.tontongear.com/assets/products/cyber-gradient-training-shorts/cyber-gradient-shorts-logo-slit.webp",
+        "https://assets.tontongear.com/assets/products/cyber-gradient-training-shorts/cyber-gradient-shorts-mesh-seam.webp",
+        "https://assets.tontongear.com/assets/products/cyber-gradient-training-shorts/cyber-gradient-shorts-back.webp",
+        "https://assets.tontongear.com/assets/products/cyber-gradient-training-shorts/cyber-gradient-shorts-inner-trim.webp",
+        "https://assets.tontongear.com/assets/products/cyber-gradient-training-shorts/cyber-gradient-shorts-model-front.webp",
+        "https://assets.tontongear.com/assets/products/cyber-gradient-training-shorts/cyber-gradient-shorts-model-side.webp"
+      ],
+      "description": "Black training and fight shorts with a blue-purple geometric waistband, cyan drawcord, curved side openings and printed mesh inner trim.",
+      "features": [
+        "92% Polyester / 8% Spandex Brief",
+        "Geometric Drawcord Waistband",
+        "Curved Side Openings",
+        "Private Label OEM/ODM"
+      ]
+    },
+    {
       "id": "white-short-sleeve-compression-rash-guard",
       "categoryId": "sublimated-rash-guards",
       "name": "White Short-Sleeve Compression Rash Guard",
