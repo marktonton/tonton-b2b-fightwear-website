@@ -309,7 +309,7 @@ export default function RashGuardLanding({ product }: { product: Product }) {
       </nav>
 
       <section className="rg-product-hero">
-        <div className="rg-product-hero-media">
+        <div className={`rg-product-hero-media${isBlueTeam ? ' rg-product-hero-variants' : ''}`}>
           {isBlueTeam ? <TeamRashGuardColors /> : <img src={resolveImage(product.image)} alt={`${product.name} on a pure white background`} />}
         </div>
         <div className="rg-product-hero-copy">
