@@ -5,4 +5,4 @@
 .catalog-image.catalog-clean-cover img,.catalog-image.catalog-clean-cover:hover img{position:absolute;height:100%;width:auto;max-width:none;aspect-ratio:1;object-fit:contain;left:50%;top:0;transform:translateX(var(--cover-offset));transition:none;clip-path:var(--cover-clip)}
 .catalog-image.cover-olive{background:#bfc0c8;--cover-offset:-67%;--cover-clip:polygon(45% 0,100% 0,100% 100%,35% 100%,35% 11%,45% 11%)}
 .catalog-image.cover-fuji{background:#d5dce1;--cover-offset:-26%;--cover-clip:inset(0 48% 0 0)}
-.catalog-image.cover-red{background:#f7f7f5;--cover-offset:-64%;--cover-clip:polygon(45% 0,100% 0,100% 100%,28% 100%,28% 55%,33% 55%,33% 11%,45% 11%)}
+.catalog-image.cover-red{background:#f7f7f5;--cover-offset:-64%;--cover-clip:polygon(45% 0,100% 0,100% 100%,28% 100%,28% 55%,34% 55%,34% 11%,45% 11%)}
