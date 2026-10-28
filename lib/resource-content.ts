@@ -476,15 +476,15 @@ export const RESOURCE_PAGES: ResourcePage[] = [
     description: 'A practical guide to preparing artwork, specifications, samples and quantity information for a custom fightwear project.',
     eyebrow: 'OEM / ODM PROJECT GUIDE',
     answer: 'Start with the product type, estimated quantity, intended use, size range, artwork status and destination market. The applicable MOQ, sample route and production timing are confirmed after the selected product, material and construction requirements are reviewed.',
-    updated: '2026-09-15',
+    updated: '2026-10-28',
     cluster: 'project',
     table: [
       ['Starting information', 'Product, quantity, use, sizes, artwork and destination'],
-      ['MOQ', 'Confirmed for the selected product, quantity and specification'],
+      ['MOQ', 'Selected custom projects from 10 pieces; confirm minimum per style, design, colorway and size allocation'],
       ['Mockup', 'Artwork, color and logo placement review'],
       ['Sample review', 'Fit, material, construction, branding and workmanship'],
       ['Bulk approval', 'Begins against the approved sample and specification'],
-      ['Schedule', 'Confirmed for the specific project after review'],
+      ['Schedule', '3–7 day sample target after confirmed details and usable artwork; sourcing, new patterns and revisions can change timing'],
     ],
     decisionRows: [
       ['Digital mockup first', 'Projects still resolving artwork, color and logo placement', 'Provide vector logos and visual references where available'],
@@ -498,6 +498,9 @@ export const RESOURCE_PAGES: ResourcePage[] = [
     ],
     source: 'TONTON OEM/ODM project briefing, mockup, sample-approval and bulk-production workflow.',
     sections: [
+      { heading: 'What from 10 pieces does and does not mean', paragraphs: ['Selected custom projects are advertised from 10 pieces. Send separate quantities for each garment, design, colorway and size. The team must confirm whether your allocation qualifies; do not assume that ten mixed products or unrelated designs share one minimum.'] },
+      { heading: 'When to request another sample', bullets: ['A different pattern, adult / youth fit or measurement chart', 'A different main fabric, liner, mesh or hem system', 'Changes to side split, pocket, waistband or seam construction', 'Artwork changes that alter panel alignment or branding positions'] },
+      { heading: 'Confirm the complete quote', bullets: ['Unit and sample charges, including any development work', 'Whether requested labels and packaging are included', 'The production schedule and shipping basis for the destination', 'Reorder availability and minimums for the approved specification'] },
       { heading: 'What to prepare before requesting a quote', bullets: ['Product type and estimated quantity', 'Target users and intended sport', 'Required sizes and fit direction', 'Vector logo or available artwork', 'Reference product and construction priorities', 'Destination country and preferred contact method'] },
       { heading: 'Why MOQ and timing are project-specific', paragraphs: ['Materials, printing method, construction, size assortment, artwork readiness and packaging can change the production route. A supplier should confirm the schedule and applicable MOQ against the actual brief instead of treating one number as universal.'] },
       { heading: 'What the approved sample controls', paragraphs: ['The approved sample is the practical reference for fit, color direction, material, artwork placement, seam construction, labels and other confirmed details before bulk work begins.'] },

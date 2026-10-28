@@ -1,3 +1,5 @@
+import BuyerFitSpecification from '../../../components/BuyerFitSpecification';
+import AcademyCaseStudy from '../../../components/AcademyCaseStudy';
 import RashGuardSiliconeHem from '../../../components/RashGuardSiliconeHem';
 import { SILICONE_HEM_FAQS } from '../../../lib/rash-guard-silicone-hem';
 import Link from 'next/link';
@@ -331,6 +333,8 @@ export default function RashGuardLanding({ product }: { product: Product }) {
         answer={`${product.name} is a custom sublimated Rash Guard reference for buyers comparing fit, performance fabric, panel construction, seams, artwork placement and hem control. The visible specification and physical sample evidence on this page provide the starting point; final measurements, colors and project-specific construction are confirmed before bulk production.`}
       />
 
+      <BuyerFitSpecification family="rashGuard" />
+
       {!isSamurai && <RashGuardSiliconeHem productName={product.name} />}
 
       <ProductSpecificationTable title="A specification buyers can compare" intro="The visible product data below matches the material and construction information used in this landing page and its structured data." rows={specificationRows} />
@@ -403,7 +407,7 @@ export default function RashGuardLanding({ product }: { product: Product }) {
         />
       )}
 
-      {customerReview && <CustomerReviewEvidence review={customerReview} />}
+      {isBlueTeam ? <AcademyCaseStudy /> : customerReview ? <CustomerReviewEvidence review={customerReview} /> : null}
 
       <section className="rg-customer-case-section" aria-labelledby="rg-customer-case-title">
         <div className="rg-section-heading">

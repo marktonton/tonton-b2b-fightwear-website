@@ -1,3 +1,5 @@
+import { getDiscoveryAttribution } from './traffic-attribution';
+
 // Only controlled event labels belong here. Never send contact details or artwork.
 const measurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 export const analyticsMeasurementId = measurementId && /^G-[A-Z0-9]+$/.test(measurementId) ? measurementId : undefined;
@@ -19,5 +21,5 @@ export function sendAnalyticsEvent(name: string, parameters: Record<string, stri
     window.gtag('js', new Date());
     window.gtag('config', analyticsMeasurementId, { send_page_view: false });
   }
-  window.gtag('event', name, parameters);
+  window.gtag('event', name, { ...getDiscoveryAttribution(), ...parameters });
 }

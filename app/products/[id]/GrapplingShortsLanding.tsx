@@ -1,3 +1,4 @@
+import BuyerFitSpecification from '../../../components/BuyerFitSpecification';
 import Link from 'next/link';
 import { resolveImage } from '../../../lib/image-resolver';
 import { HIGH_SPLIT_GRAPPLING_SHORTS_CONTENT, HIGH_SPLIT_GRAPPLING_SHORTS_FAQS, HIGH_SPLIT_SHORTS_VIDEO } from '../../../lib/grappling-shorts-product';
@@ -10,17 +11,17 @@ import CustomerProjectProof from '../../../components/CustomerProjectProof';
 type Product = { id: string; name: string; image: string; images?: string[]; description: string; features?: string[] };
 
 const DETAIL_CONTENT = [
-  { title: 'Athletic 2-in-1 construction', copy: 'A breathable four-way stretch outer short works with a soft, supportive compression liner for secure coverage.', alt: 'High-split two-in-one grappling shorts construction' },
+  { title: 'Athletic 2-in-1 construction', copy: 'A four-way stretch outer short works with a soft, supportive compression liner for secure coverage.', alt: 'High-split two-in-one grappling shorts construction' },
   { title: 'Ultra-high split mobility', copy: 'The gladiator-style side opening releases the thigh for high kicks, sprawls and wide grappling positions.', alt: 'Athlete demonstrating high-kick mobility in high-split grappling shorts' },
   { title: 'Custom printed inner liner', copy: 'The 250gsm milk-silk liner can carry approved colors, patterns, logos and team artwork.', alt: 'Custom printed inner compression layer of grappling shorts' },
-  { title: 'Quick-dry fight performance', copy: 'Breathable stretch fabric supports fast transitions and helps manage moisture through demanding training.', alt: 'High-split grappling shorts used in fight training' },
+  { title: 'Movement-oriented shell', copy: 'Review shell extension, recovery and skin-contact comfort on the worn sample. Drying and moisture-management performance require separate verification.', alt: 'High-split grappling shorts used in fight training' },
   { title: 'Coverage through every position', copy: 'The deep-cut shell maximizes leg clearance while the fitted inner layer maintains support and coverage.', alt: 'Deep side-split detail on custom grappling shorts' },
 ] as const;
 
 const PERFORMANCE_BENEFITS = [
   { title: '2-in-1 support', copy: 'A built-in compression liner adds soft support and reliable coverage beneath the high-split outer shell.' },
   { title: 'Maximum mobility', copy: 'The ultra-high gladiator split opens freely for kicks, shots, sprawls and ground transitions.' },
-  { title: 'Breathable & quick-dry', copy: 'The performance outer layer releases heat and dries quickly through high-intensity sessions.' },
+  { title: 'Shell selection and wear checks', copy: 'The outer layer provides the visible short silhouette and movement clearance. Confirm drying rate, air permeability and wash performance on the selected fabric; no measured values are supplied here.' },
   { title: 'Secure waistband', copy: 'An adjustable drawstring and anti-slip silicone grip strip help keep the shorts stable in motion.' },
   { title: 'Reinforced construction', copy: 'Reinforced stitching supports repeated pulling, rotation and contact during combat training.' },
   { title: 'Multi-sport performance', copy: 'Built for MMA, wrestling, grappling, boxing and demanding functional gym training.' },
@@ -68,12 +69,12 @@ export default function GrapplingShortsLanding({ product }: { product: Product }
           <p className="rg-lead">{content.intro}</p>
           <div className="rg-spec-strip" aria-label="Core product specifications">
             <div><strong>Ultra-High</strong><span>Gladiator Split Mobility</span></div>
-            <div><strong>4-Way</strong><span>Quick-Dry Stretch Shell</span></div>
+            <div><strong>4-Way</strong><span>Stretch Outer Shell</span></div>
             <div><strong>250gsm</strong><span>Supportive Milk-Silk Liner</span></div>
           </div>
           <ul className="rg-hero-features">
             <li>Built-in compression liner for support and coverage</li>
-            <li>Breathable, quick-dry four-way stretch outer layer</li>
+            <li>Thickened lightweight four-way stretch outer layer</li>
             <li>Drawstring waistband with anti-slip silicone grip</li>
             <li>Reinforced stitching and a tagless printed label</li>
             <li>Custom inner-layer patterns, logos and team artwork</li>
@@ -111,12 +112,14 @@ export default function GrapplingShortsLanding({ product }: { product: Product }
 
       <ProductSpecificationTable title="Fight-short construction at a glance" intro="These verified specifications match the real sample imagery and the structured product data on this page." rows={[
         ['Silhouette', 'Athletic 2-in-1 construction'],
-        ['Outer layer', 'Breathable, quick-dry four-way stretch fabric'],
+        ['Outer layer', 'Thickened lightweight four-way stretch fabric'],
         ['Inner liner', 'Soft, supportive 250gsm milk-silk compression layer'],
         ['Side cut', 'Ultra-high gladiator split'],
         ['Waistband', 'Adjustable drawstring with anti-slip silicone grip strip'],
         ['Finishing', 'Reinforced stitching and tagless printed label'],
       ]} />
+
+      <BuyerFitSpecification family="highSplit" />
 
       <section className="gs-benefits-section" aria-labelledby="gs-benefits-title">
         <div className="rg-section-heading"><p className="rg-eyebrow">Combat Performance</p><h2 id="gs-benefits-title">Engineered for movement, support and hard training</h2><p>Every element is designed to keep the athlete mobile, covered and comfortable through striking, grappling and functional training.</p></div>
@@ -128,10 +131,10 @@ export default function GrapplingShortsLanding({ product }: { product: Product }
       <section className="rg-fit-section" id="construction">
         <div><p className="rg-eyebrow">Material &amp; Construction</p><h2>Fight-ready details from waistband to liner</h2></div>
         <div className="rg-fit-copy">
-          <p>The athletic 2-in-1 construction combines a breathable quick-dry shell with a soft 250gsm milk-silk compression liner. Secure waist control and reinforced finishing support high-intensity combat movement.</p>
+          <p>The athletic 2-in-1 construction combines a four-way-stretch shell with a soft 250gsm milk-silk compression liner. Secure waist control and reinforced finishing support high-intensity combat movement.</p>
           <dl>
             <div><dt>Silhouette</dt><dd>Athletic 2-in-1 construction with a high-split outer short and fitted inner liner</dd></div>
-            <div><dt>Outer layer</dt><dd>Breathable, quick-dry four-way stretch performance fabric</dd></div>
+            <div><dt>Outer layer</dt><dd>Thickened lightweight four-way stretch performance fabric</dd></div>
             <div><dt>Inner liner</dt><dd>Soft, supportive 250gsm milk-silk with customizable graphics</dd></div>
             <div><dt>Waistband</dt><dd>Adjustable drawstring with anti-slip silicone grip strip</dd></div>
             <div><dt>Side construction</dt><dd>Ultra-high gladiator split for unrestricted leg movement</dd></div>

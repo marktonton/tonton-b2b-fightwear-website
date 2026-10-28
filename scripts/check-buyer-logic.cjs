@@ -1,0 +1,17 @@
+const assert=require('node:assert/strict');
+const fs=require('node:fs');const os=require('node:os');const path=require('node:path');const {execFileSync}=require('node:child_process');
+const compiled=fs.mkdtempSync(path.join(os.tmpdir(),'tonton-buyer-logic-'));
+process.on('exit',()=>fs.rmSync(compiled,{recursive:true,force:true}));
+execFileSync(path.resolve('node_modules/.bin/tsc'),['lib/traffic-attribution.ts','lib/structured-data.ts','--outDir',compiled,'--module','commonjs','--target','es2020','--skipLibCheck','--types','node']);
+const {discoveryFromLocation,getDiscoveryAttribution,classifyDiscovery}=require(path.join(compiled,'traffic-attribution.js'));
+const {serializeStructuredData}=require(path.join(compiled,'structured-data.js'));
+assert.equal(classifyDiscovery('chatgpt.com'),'chatgpt');assert.equal(classifyDiscovery('evilchatgpt.com'),'other');
+const a=discoveryFromLocation('https://www.tontongear.com/products/blue-team-rash-guard?utm_source=chatgpt.com&email=private@example.com','');
+assert.deepEqual(a,{discovery_source:'chatgpt',discovery_landing:'/products/blue-team-rash-guard'});assert.ok(!JSON.stringify(a).includes('private'));
+const memory=new Map();global.window={location:{href:'https://www.tontongear.com/products/blue-team-rash-guard?utm_source=chatgpt.com'},sessionStorage:{getItem:k=>memory.get(k),setItem:(k,v)=>memory.set(k,v)}};global.document={referrer:''};
+getDiscoveryAttribution();window.location.href='https://www.tontongear.com/project-builder?source=product-page';document.referrer='https://www.tontongear.com/products/blue-team-rash-guard';assert.deepEqual(getDiscoveryAttribution(),a);
+window.sessionStorage.getItem=()=>{throw Error('blocked')};assert.doesNotThrow(getDiscoveryAttribution);
+const source={'@type':'Article',url:'https://www.xiantao.gov.cn/news',publisher:{'@type':'Organization',name:'Xiantao Daily'},inLanguage:'zh-CN'};
+const external=JSON.parse(serializeStructuredData(source));assert.equal(external.isPartOf,undefined);assert.equal(external.inLanguage,'zh-CN');assert.deepEqual(external.publisher,source.publisher);
+const own=JSON.parse(serializeStructuredData({'@type':'Article',url:'https://www.tontongear.com/resources/test'}));assert.equal(own.isPartOf['@id'],'https://www.tontongear.com/#website');
+console.log('LOGIC CHECKS PASSED: source allow-list, no query/contact leakage, attribution across navigation, storage-denied fallback, external citation ownership.');

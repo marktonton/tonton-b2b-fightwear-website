@@ -2,6 +2,7 @@ import { serializeStructuredData } from '../lib/structured-data';
 import React from 'react';
 import type { Metadata } from 'next';
 import './globals.css';
+import '../components/buyer-fit.css';
 import './site-map/site-map.css';
 import { resolveImage } from '../lib/image-resolver';
 import SearchMeasurement from '../components/SearchMeasurement';

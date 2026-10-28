@@ -1,3 +1,5 @@
+import BuyerFitSpecification from '../../../components/BuyerFitSpecification';
+import { procurementFamilyForProduct } from '../../../lib/product-procurement';
 import Link from 'next/link';
 import AnswerEvidencePanel from '../../../components/AnswerEvidencePanel';
 import ProductLandingLinks from '../../../components/ProductLandingLinks';
@@ -106,6 +108,8 @@ export default function CatalogProductLanding({ product }: { product: Product })
           {content.faqs.map((item, index) => <details key={item.question} open={index === 0}><summary><span>{String(index + 1).padStart(2, '0')}</span>{item.question}</summary><p>{item.answer}</p></details>)}
         </div>
       </section>
+
+      <BuyerFitSpecification family={procurementFamilyForProduct(product.id)} />
 
       <RelatedResources slugs={content.relatedGuides} />
       <ProductLandingLinks productId={product.id} />

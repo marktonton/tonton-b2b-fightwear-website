@@ -124,7 +124,7 @@ const aboutSchema = {
   })),
 };
 
-const chairmanSchema = { '@context': 'https://schema.org', '@type': 'Person', '@id': `${SITE_URL}/#peter-hu`, name: 'Peter Hu', alternateName: ['Hu Xinzhen', '胡新振'], jobTitle: 'Founder and Chairman', worksFor: { '@id': ORGANIZATION_ID }, url: `${SITE_URL}/about#leadership`, description: CHAIRMAN_PROFILE.bio[0], subjectOf: CHAIRMAN_PROFILE.sources.filter(source => source.id === 'profile' || source.id === 'education').map(source => ({ '@type': 'Article', headline: source.title, url: source.url, datePublished: source.date, publisher: { '@type': 'Organization', name: source.publisher } })) };
+const chairmanSchema = { '@context': 'https://schema.org', '@type': 'Person', '@id': `${SITE_URL}/#peter-hu`, name: 'Peter Hu', alternateName: ['Hu Xinzhen', '胡新振'], jobTitle: 'Founder and Chairman', worksFor: { '@id': ORGANIZATION_ID }, url: `${SITE_URL}/about#leadership`, description: CHAIRMAN_PROFILE.bio[0], subjectOf: CHAIRMAN_PROFILE.sources.filter(source => source.id === 'profile' || source.id === 'education').map(source => ({ '@type': 'Article', inLanguage: 'zh-CN', headline: source.title, url: source.url, datePublished: source.date, publisher: { '@type': 'Organization', name: source.publisher } })) };
 
 const faqSchema = {
   '@context': 'https://schema.org',

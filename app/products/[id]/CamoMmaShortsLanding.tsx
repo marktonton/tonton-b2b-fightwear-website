@@ -1,3 +1,4 @@
+import BuyerFitSpecification from '../../../components/BuyerFitSpecification';
 import Link from 'next/link';
 import { resolveImage } from '../../../lib/image-resolver';
 import { CAMO_MMA_SHORTS_FAQS } from '../../../lib/camo-mma-shorts-product';
@@ -205,6 +206,8 @@ export default function CamoMmaShortsLanding({ product }: { product: Product }) 
         <div className="rg-faq-heading"><p className="rg-eyebrow">Buyer FAQ</p><h2>Custom MMA fight shorts questions</h2><p>Clear answers about fabric, waist construction, side splits, sublimation and intended use.</p></div>
         <div className="rg-faq-list">{CAMO_MMA_SHORTS_FAQS.map((item, index) => <details key={item.question} open={index === 0}><summary><span>{String(index + 1).padStart(2, '0')}</span>{item.question}</summary><p>{item.answer}</p></details>)}</div>
       </section>
+
+      <BuyerFitSpecification family={'training'} />
 
       <RelatedResources slugs={['high-split-grappling-shorts-specifications', 'high-split-vs-standard-grappling-shorts', 'custom-fightwear-sampling-moq']} />
       <ProductLandingLinks productId={product.id} />

@@ -1,3 +1,4 @@
+import { DISCOVERY_SOURCES } from '../../../lib/traffic-attribution';
 import { randomUUID } from 'node:crypto';
 import { NextResponse } from 'next/server';
 
@@ -75,6 +76,8 @@ export async function POST(request: Request) {
     notes: readText(formData, 'notes'),
     referenceProduct: readText(formData, 'referenceProduct', 240),
     entrySource: readText(formData, 'entrySource', 160),
+    discoverySource: readText(formData, 'discoverySource', 30),
+    discoveryLanding: readText(formData, 'discoveryLanding', 200),
   };
 
   if (!fields.name || !fields.email || !fields.product || !fields.quantity) {
@@ -121,6 +124,8 @@ export async function POST(request: Request) {
     ['Product', fields.product],
     ['Reference product', fields.referenceProduct || 'Not specified'],
     ['Entry source', fields.entrySource || 'Direct visit'],
+    ['Discovery source (browser-reported)', DISCOVERY_SOURCES.find(source => source === fields.discoverySource) || 'Unknown'],
+    ['Discovery landing page', /^\/[a-zA-Z0-9/_-]*$/.test(fields.discoveryLanding) ? fields.discoveryLanding : 'Unknown'],
     ['Estimated quantity', fields.quantity],
     ['Intended use', fields.intendedUse],
     ['Construction direction', fields.construction],

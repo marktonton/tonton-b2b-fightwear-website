@@ -3,6 +3,7 @@
 import Script from 'next/script';
 import { usePathname } from 'next/navigation';
 import { useEffect } from 'react';
+import { getDiscoveryAttribution } from '../lib/traffic-attribution';
 
 import { analyticsMeasurementId as measurementId, sendAnalyticsEvent as sendEvent } from '../lib/analytics';
 
@@ -10,6 +11,7 @@ function ConversionTracker() {
   const pathname = usePathname();
 
   useEffect(() => {
+    getDiscoveryAttribution();
     sendEvent('page_view', {
       page_location: window.location.href,
       page_path: pathname,
@@ -48,9 +50,8 @@ function ConversionTracker() {
 }
 
 export default function SearchMeasurement() {
-  if (!measurementId) return null;
   return <>
-    <Script src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`} strategy="afterInteractive" />
+    {measurementId && <Script src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`} strategy="afterInteractive" />}
     <ConversionTracker />
   </>;
 }

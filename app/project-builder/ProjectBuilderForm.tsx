@@ -1,5 +1,7 @@
 'use client';
 
+import { getDiscoveryAttribution } from '../../lib/traffic-attribution';
+
 import { sendAnalyticsEvent } from '../../lib/analytics';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
@@ -205,6 +207,9 @@ export default function ProjectBuilderForm() {
     payload.set('notes', form.notes.trim());
     payload.set('referenceProduct', referenceProduct);
     payload.set('entrySource', entrySource);
+    const discovery = getDiscoveryAttribution();
+    payload.set('discoverySource', discovery.discovery_source);
+    payload.set('discoveryLanding', discovery.discovery_landing);
     payload.set('summary', summary);
     if (attachment) payload.set('attachment', attachment);
 

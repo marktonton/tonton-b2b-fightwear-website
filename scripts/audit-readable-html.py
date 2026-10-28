@@ -82,6 +82,10 @@ def audit():
         page_entities = [entity for entity in entities(page.schema) if entity['@type'] in ('WebPage', 'AboutPage', 'CollectionPage', 'Article')]
         assert page_entities, f'{path}: no page/article entity'
         for entity in page_entities:
+            identity = entity.get('url') or entity.get('@id') or entity.get('mainEntityOfPage')
+            if isinstance(identity, str) and urlparse(identity).netloc not in ('', HOST):
+                assert entity.get('isPartOf', {}).get('@id') != WEBSITE_ID, f'{path}: external citation incorrectly belongs to this website'
+                continue
             assert entity.get('inLanguage') == 'en', f'{path}: missing page language'
             assert entity.get('isPartOf', {}).get('@id') == WEBSITE_ID, f'{path}: disconnected website entity'
         pages[path] = page
