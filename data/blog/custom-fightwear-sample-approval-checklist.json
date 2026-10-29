@@ -1,0 +1,244 @@
+{
+  "slug": "custom-fightwear-sample-approval-checklist",
+  "title": "Custom Rash Guard & MMA Shorts Sample Approval Checklist",
+  "category": "Sampling & Quality",
+  "description": "A practical sample approval checklist for custom rash guards and MMA shorts: materials, measurements, artwork, seams, closures, care and versioned sign-off.",
+  "answer": "Approve a custom fightwear sample against a controlled reference: material record, artwork version, measurement chart, construction notes, labels and packaging brief. Record actual observations and required corrections, then approve a named sample version. A mockup approves layout; it cannot establish fit, hand feel, seam comfort or the finished garment’s behavior.",
+  "published": "2026-10-29",
+  "updated": "2026-10-29",
+  "author": "TONTON",
+  "hero": {
+    "src": "/assets/process/03-stitching-size-inspection.webp",
+    "alt": "TONTON staff inspecting garment stitching and measurements",
+    "caption": "Production inspection photograph · sample approval should record the same measurement points used for bulk inspection."
+  },
+  "sections": [
+    {
+      "id": "reference",
+      "title": "1. Freeze the reference before checking the garment",
+      "paragraphs": [
+        "Assign a sample ID, date, style, color, size and revision number. Attach the current artwork and measurement chart. Identify which fabric, decoration and construction the sample represents, plus any substitute components that will change before production.",
+        "Separate a mockup, a fit sample, a decorated sample and a pre-production reference if they represent different stages. One sample should not silently approve a detail it does not include. List outstanding items so the buyer and factory know whether bulk production is authorized or still on hold."
+      ]
+    },
+    {
+      "id": "materials",
+      "title": "2. Check material and component identity",
+      "paragraphs": [
+        "Match the main fabric with its identified swatch and supplied composition/GSM record. Inspect color and surface, then check stretch direction, recovery, feel and coverage under the agreed conditions. Photographs and a label can support review but cannot establish every performance claim.",
+        "Record separate specifications for mesh, liner, gusset, hem elastic and closure components. For example, the rash guard’s 220 GSM main-knit brief does not identify its mesh, while a fight short’s shell composition does not identify its gusset. Note any mismatch before approving the garment."
+      ]
+    },
+    {
+      "id": "measure",
+      "title": "3. Measure consistently and record actual values",
+      "paragraphs": [
+        "Lay the garment as agreed without unintended stretching. Use a defined point-of-measure diagram so both parties measure from the same locations. Record the sample size, target, tolerance and actual measurement for each point. A photo should show the tape endpoints if it is used to resolve a discrepancy.",
+        "For rash guards, include body length, chest width, hem opening, sleeve and neck details as appropriate. For shorts, include waist, hip, rise, inseam, outseam and leg opening, with liner and split dimensions where applicable. Do not approve every graded size solely because one medium sample fits."
+      ],
+      "table": {
+        "caption": "Measurement record template",
+        "columns": [
+          "Point of measure",
+          "Target",
+          "Agreed tolerance",
+          "Actual / result"
+        ],
+        "rows": [
+          [
+            "Style / sample size / revision",
+            "Enter reference",
+            "Not applicable",
+            "Enter sample ID"
+          ],
+          [
+            "Chest or hip width",
+            "Enter value + unit",
+            "Agree before approval",
+            "Record actual"
+          ],
+          [
+            "Body length or outseam",
+            "Enter value + unit",
+            "Agree before approval",
+            "Record actual"
+          ],
+          [
+            "Waist / hem / leg opening",
+            "Specify relaxed or extended condition",
+            "Agree method and range",
+            "Record actual"
+          ],
+          [
+            "Sleeve / inseam / split / liner",
+            "Use relevant garment points",
+            "Agree before approval",
+            "Record actual"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "workmanship",
+      "title": "4. Inspect the product-specific risk points",
+      "paragraphs": [
+        "Turn the sample inside out and inspect the seam junctions, edges and attachments. For a rash guard, pay attention to underarms, neckline, sleeve joins and hem band. For shorts, inspect the crotch, gusset, side-opening apex, waist, closure and inner-layer attachment.",
+        "Wear-test the intended movements and identify the size and wearer. Record rubbing, pulling, exposed closure surfaces or distortion by location. A comfortable fit session does not prove tear resistance or long-term wash durability; formal requirements need an agreed method and evidence."
+      ],
+      "image": {
+        "src": "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-black-inner.webp",
+        "alt": "Open snake-scale MMA shorts showing hook-and-loop fly and internal drawcord",
+        "caption": "Actual snake-scale sample · inspect the closure overlap, cord routing and inside finishing."
+      }
+    },
+    {
+      "id": "artwork",
+      "title": "5. Approve artwork, labels and packing together",
+      "paragraphs": [
+        "Compare logo scale, placement, colors and spelling with the approved artwork version. Check critical panel crossings on the assembled garment. A screen mockup cannot guarantee the printed color, and a clean print swatch cannot guarantee alignment after sewing.",
+        "Check size labels, composition and care information against the actual materials and the destination brief. Confirm folding, bags, size allocation and carton requirements. Where destination-specific labeling obligations apply, assign responsibility for checking the applicable requirements rather than treating this checklist as a universal compliance certificate."
+      ]
+    },
+    {
+      "id": "checklist",
+      "title": "6. Use the approval checklist",
+      "paragraphs": [
+        "Record Pass, Revise, Not checked or Not applicable for every relevant row. Add a photograph or measurement reference and the owner of each corrective action. Resolve revisions before the final sign-off; do not leave blank fields that could be mistaken for approval."
+      ],
+      "table": {
+        "caption": "Sample approval checklist",
+        "columns": [
+          "Area",
+          "What to check",
+          "Record / outcome"
+        ],
+        "rows": [
+          [
+            "Reference control",
+            "Style, size, color, sample ID and revision",
+            "Version and date"
+          ],
+          [
+            "Materials",
+            "Main fabric and each separate component",
+            "Swatch / specification ID"
+          ],
+          [
+            "Measurements",
+            "Agreed points, method and tolerances",
+            "Targets and actual values"
+          ],
+          [
+            "Fit and movement",
+            "Representative wearer and training movements",
+            "Location of pulling or rubbing"
+          ],
+          [
+            "Coverage",
+            "Selected color, lighting and wearing stretch",
+            "Conditions and observations"
+          ],
+          [
+            "Print / logos",
+            "Artwork version, scale, position and colors",
+            "Approved reference / corrections"
+          ],
+          [
+            "Seams / edges",
+            "Skipped stitches, openings, puckering and junctions",
+            "Issue location and photos"
+          ],
+          [
+            "Waist / closure",
+            "Cord, elastic, overlap and contact surfaces",
+            "Function and fit observations"
+          ],
+          [
+            "Inner layer / gusset",
+            "Length, coverage, recovery and attachment",
+            "Component-specific result"
+          ],
+          [
+            "Care review",
+            "Agreed washing / drying and review conditions",
+            "Conditions, cycles and observations"
+          ],
+          [
+            "Labels / packing",
+            "Confirmed text, size mix and packaging",
+            "Approved files / allocation"
+          ],
+          [
+            "Final release",
+            "Corrections completed and correct version retained",
+            "Approve / hold, approver and date"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "care",
+      "title": "7. Define care checks without inventing a test result",
+      "paragraphs": [
+        "Agree washing, drying, review timing and the number of cycles before testing. Record dimensional change, appearance, color, seam condition and decoration issues. Keep the initial dimensions so the result can be compared with the same reference.",
+        "AATCC TM150 addresses garment dimensional change after home laundering, but its public scope notes limitations for some stretch fabrics. A qualified testing provider should confirm the appropriate method and acceptance criteria for the actual garment. The existence of a standard does not mean this sample has been tested or certified."
+      ]
+    },
+    {
+      "id": "signoff",
+      "title": "8. Sign off a version, then control changes",
+      "paragraphs": [
+        "The approval record should identify the accepted sample and attachments, approver, date and decision. State whether approval covers fit, decoration, all components or a limited stage. Keep one reference accessible to the buyer and the factory.",
+        "A change in fabric, artwork, fit, closure or labels after approval should trigger a documented review. Bulk QC then checks production against the accepted specification and sampling plan. Sample approval and final shipment inspection serve different purposes; keep both records."
+      ]
+    }
+  ],
+  "faqs": [
+    [
+      "Can a digital mockup replace sample approval?",
+      "It can approve layout, but it cannot confirm material feel, fit, movement or finished workmanship."
+    ],
+    [
+      "Should every sample use fixed universal tolerances?",
+      "No. Agree tolerances by measurement point, material and product before approval."
+    ],
+    [
+      "Does approving one size approve the full size range?",
+      "Not automatically. Agree the grading and which sizes need physical review."
+    ],
+    [
+      "Is this checklist a laboratory certification?",
+      "No. It is a project approval framework. Formal test claims require the applicable method and report."
+    ]
+  ],
+  "related": [
+    "mma-shorts-construction-guide",
+    "how-to-choose-fabric-for-custom-rash-guards"
+  ],
+  "links": [
+    [
+      "Review the factory and QC workflow",
+      "/factory"
+    ],
+    [
+      "Prepare artwork",
+      "/resources/prepare-artwork-for-sublimation"
+    ],
+    [
+      "Plan sampling and MOQ",
+      "/resources/custom-fightwear-sampling-moq"
+    ]
+  ],
+  "sources": [
+    {
+      "label": "AATCC TM150: garment dimensional change after laundering",
+      "url": "https://members.aatcc.org/store/tm150/556/",
+      "note": "Public scope and stretch-fabric limitation; select the appropriate method with a testing provider."
+    }
+  ],
+  "basis": "Based on TONTON supplied product specifications, garment photographs and published production workflows. Selection advice is editorial guidance; performance values apply only when supported by the selected material record or test report.",
+  "download": {
+    "href": "/blog/custom-fightwear-sample-approval-checklist#checklist",
+    "label": "Open the approval checklist"
+  }
+}

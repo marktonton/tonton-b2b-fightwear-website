@@ -1,0 +1,198 @@
+{
+  "slug": "what-affects-custom-fightwear-cost",
+  "title": "What Affects the Cost of Custom Fightwear?",
+  "category": "Cost & Procurement",
+  "description": "Understand custom rash guard and MMA shorts cost drivers: quantity allocation, fabrics, construction, decoration, labels, packaging, sampling and delivery scope.",
+  "answer": "Custom fightwear pricing depends on the complete specification and order allocation: fabric, pattern, layers, seams, waist/closure, artwork, branding, labels, packaging, development work and delivery basis. Compare quotes against the same approved requirements. A low unit price is not comparable if it excludes components, sampling or shipping included elsewhere.",
+  "published": "2026-10-29",
+  "updated": "2026-10-29",
+  "author": "TONTON",
+  "hero": {
+    "src": "/assets/process/01-requirements-confirmation.webp",
+    "alt": "TONTON team reviewing a custom sportswear project brief",
+    "caption": "A complete project brief allows materials, construction and commercial scope to be quoted together."
+  },
+  "sections": [
+    {
+      "id": "scope",
+      "title": "1. Define what the quote includes",
+      "paragraphs": [
+        "A quote should identify the style, specification version, quantity per size and color, unit currency and scope. Ask whether material, decoration, labels and packaging are included. Record sampling, development and delivery charges separately where applicable.",
+        "A price for a single-layer plain short cannot be compared directly with a two-layer garment carrying multiple logos and individual names. First normalize the specification, then compare price, timing and approval conditions. This guide explains cost drivers; it does not publish an unsupported price list."
+      ]
+    },
+    {
+      "id": "quantity",
+      "title": "2. Quantity allocation matters as much as total quantity",
+      "paragraphs": [
+        "Tell the supplier how the total divides by style, design, color and size. A single repeated artwork can require a different preparation route from multiple independent designs. Personalized names or numbers also add information that must be prepared, checked and matched to the correct garment.",
+        "Selected TONTON projects start from 10 pieces, subject to confirmation. Do not assume that ten unrelated styles or colors share one minimum. Request written confirmation of the allocation, material availability and any project-specific minimum before treating a headline MOQ as an order condition."
+      ],
+      "table": {
+        "caption": "Quantity information for a reviewable quote",
+        "columns": [
+          "Information",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "Quantity per style",
+            "Identifies separate product and pattern requirements"
+          ],
+          [
+            "Designs and colorways",
+            "Clarifies artwork, sourcing and approval work"
+          ],
+          [
+            "Sizes and wearer groups",
+            "Clarifies grading and material allocation"
+          ],
+          [
+            "Names / numbers",
+            "Clarifies variable artwork and matching work"
+          ],
+          [
+            "Repeat-order reference",
+            "Separates a confirmed specification from new development"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "materials",
+      "title": "3. Compare materials by component",
+      "paragraphs": [
+        "List the shell or main knit, then every liner, mesh, gusset, elastic and closure component. Composition, GSM, color, finish and availability can change the sourcing route. A high-split two-layer short includes material and attachment requirements absent from an outer-only short.",
+        "Use the 220 GSM 85/15 rash guard knit as an identified material reference, not a price for all compression fabrics. Similarly, the snake-scale shell and gusset have separate supplied composition briefs. A trade name such as milk silk is not enough to normalize two competing liner quotes."
+      ],
+      "image": {
+        "src": "https://assets.tontongear.com/assets/fabrics/220gsm-stretch-knit/main-fabric.webp",
+        "alt": "Dark 220 GSM stretch knit on the supplied TONTON rash guard",
+        "caption": "Supplied garment photograph · 220 GSM main knit; adjacent panels are specified separately."
+      }
+    },
+    {
+      "id": "construction",
+      "title": "4. Pattern and construction change the work content",
+      "paragraphs": [
+        "Panel count, seam paths, split shape, gusset, waistband and liner attachment affect cutting and sewing work. A new fit can require pattern development and additional samples. A familiar-looking garment may still require new specifications if the wearer group or size chart changes.",
+        "A cleaner specification can reduce avoidable revisions: identify the leg opening, rise, closure and reinforcement priorities before artwork is finalized. Do not remove a functional detail merely to reduce the headline price without reviewing the effect on the intended garment."
+      ]
+    },
+    {
+      "id": "decoration",
+      "title": "5. Artwork and branding have distinct cost drivers",
+      "paragraphs": [
+        "For sublimation, quote the artwork and panel route with the selected fabric. For applied logos, identify method, graphic size, number of placements and any special material requirements. A high-stretch rash guard logo may need a different transfer system from a low-stretch outer shell.",
+        "Separate original design work, artwork cleanup and individual personalization. Confirm what a free mockup includes and whether later revisions or new production files incur charges. Do not assume more printed colors always create the same cost change across different decoration methods."
+      ]
+    },
+    {
+      "id": "labels",
+      "title": "6. Include labels, packaging and development charges",
+      "paragraphs": [
+        "Specify neck or waist labels, composition/care labels, hangtags, bags and carton requirements. Customized components may have their own sourcing minimums. Confirm who supplies the final text and files, and whether unused components are stored for a reorder.",
+        "Sampling may include new pattern work, material sourcing, decoration preparation and courier delivery. Ask which charges are one-off, which recur and whether any sample credit applies. Free-sample or free-shipping language should not replace the written project quote."
+      ]
+    },
+    {
+      "id": "delivery",
+      "title": "7. Compare the delivery basis and schedule",
+      "paragraphs": [
+        "Ask whether the quote covers factory handover, freight or additional destination charges, and request the named delivery basis where applicable. If an Incoterms rule is used, confirm the rule, version and named place with the supplier and logistics provider. This guide does not assign contractual obligations.",
+        "Separate artwork confirmation, material availability, sampling, approval, bulk production and transit. TONTON’s advertised sample target is 3–7 days after details and usable artwork are confirmed; sourcing, patterns and revisions can extend it. A sample target is not a bulk delivery guarantee."
+      ]
+    },
+    {
+      "id": "comparison",
+      "title": "8. Compare quotes using one checklist",
+      "paragraphs": [
+        "Send the same requirement sheet to each supplier. Mark every exclusion and assumption, then ask for clarification before calculating the total. Keep currency and quote-validity dates visible. A lower initial unit price may still produce a higher project total if important scope is missing.",
+        "For a reorder, reference the approved sample, fabric record and artwork version, then list every change. Confirm whether the material and custom components remain available. Reorder pricing should follow the actual specification rather than an assumed permanent historical price."
+      ],
+      "table": {
+        "caption": "Like-for-like quote comparison",
+        "columns": [
+          "Line item",
+          "Confirm in each quotation"
+        ],
+        "rows": [
+          [
+            "Product specification",
+            "Same style, material, dimensions, construction and artwork version"
+          ],
+          [
+            "Allocation",
+            "Same quantities by size, design and colorway"
+          ],
+          [
+            "Included components",
+            "Same labels, logos, inner layers and packaging"
+          ],
+          [
+            "Development",
+            "Pattern, artwork, sampling, revisions and any credit"
+          ],
+          [
+            "Delivery",
+            "Freight scope, named basis, destination and exclusions"
+          ],
+          [
+            "Timing and validity",
+            "Approval milestones, production estimate and quote expiry"
+          ],
+          [
+            "Quality reference",
+            "Sample approval, tolerances, inspection and correction process"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "brief",
+      "title": "9. Send an RFQ that can be priced",
+      "paragraphs": [
+        "Provide product references, estimated quantities, size allocation, intended use, target market, artwork status and required timing. Add the material and construction priorities that must remain fixed and the options you are willing to compare.",
+        "If a target budget is important, state it together with the required specification and ask which alternatives are feasible. A useful supplier response should explain the trade-offs and sample plan rather than silently replacing a component to meet a number."
+      ]
+    }
+  ],
+  "faqs": [
+    [
+      "Can I get an exact price from a product photo?",
+      "A photo can start the discussion but usually leaves material, measurements, construction, quantities and delivery scope unresolved."
+    ],
+    [
+      "Does a larger order always have the same unit-price reduction?",
+      "No. Allocation, sourcing, artwork, capacity and specification affect the quotation. Request project-specific options."
+    ],
+    [
+      "Are labels and packaging automatically included?",
+      "Do not assume so. List them and confirm the scope in writing."
+    ],
+    [
+      "How can I compare two fightwear quotes fairly?",
+      "Use the same specification and allocation, then compare included components, development charges, delivery scope, quality reference and timing."
+    ]
+  ],
+  "related": [
+    "sublimation-vs-heat-transfer-for-fightwear",
+    "custom-fightwear-sample-approval-checklist"
+  ],
+  "links": [
+    [
+      "Start an organized project brief",
+      "/project-builder"
+    ],
+    [
+      "Read sampling and MOQ conditions",
+      "/resources/custom-fightwear-sampling-moq"
+    ],
+    [
+      "Plan size and quantity allocation",
+      "/resources/custom-fightwear-size-quantity-planning"
+    ]
+  ],
+  "sources": [],
+  "basis": "Based on TONTON supplied product specifications, garment photographs and published production workflows. Selection advice is editorial guidance; performance values apply only when supported by the selected material record or test report."
+}

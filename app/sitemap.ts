@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next';
 import productsData from '../data/products.json';
 import { customizationCategories } from '../lib/customization-pages';
 import { getRouteModifiedDate } from '../lib/content-dates';
+import { BLOG_POSTS } from '../lib/blog';
 import { RESOURCE_PAGES } from '../lib/resource-content';
 
 import { MATERIAL_GUIDES } from '../lib/fabric-library';
@@ -58,5 +59,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const solutionRoutes = BUYER_SOLUTIONS.map((item) => ({ url: `${SITE_URL}/solutions/${item.slug}`, lastModified: new Date('2026-10-15T00:00:00.000Z'), changeFrequency: 'monthly' as const, priority: 0.8 }));
   const fabricRoutes = MATERIAL_GUIDES.map((item) => ({ url: `${SITE_URL}/fabrics/${item.slug}`, lastModified: modified(`/fabrics/${item.slug}`), changeFrequency: 'monthly' as const, priority: 0.8 }));
-  return [...fabricRoutes, ...solutionRoutes, ...staticRoutes, ...customizationRoutes, ...productRoutes, ...resourceRoutes];
+  return [{ url: `${SITE_URL}/blog`, lastModified: new Date(`${BLOG_POSTS.reduce((latest, post) => post.updated > latest ? post.updated : latest, BLOG_POSTS[0].updated)}T00:00:00.000Z`), changeFrequency: 'weekly' as const, priority: 0.8 }, ...BLOG_POSTS.map(post => ({ url: `${SITE_URL}/blog/${post.slug}`, lastModified: new Date(`${post.updated}T00:00:00.000Z`), changeFrequency: 'monthly' as const, priority: 0.7 })), ...fabricRoutes, ...solutionRoutes, ...staticRoutes, ...customizationRoutes, ...productRoutes, ...resourceRoutes];
 }

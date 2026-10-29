@@ -1,0 +1,164 @@
+{
+  "slug": "how-to-choose-fabric-for-custom-rash-guards",
+  "title": "How to Choose Fabric for Custom Rash Guards",
+  "category": "Materials",
+  "description": "A buyer guide to rash guard fabric composition, GSM, stretch, coverage and print compatibility, using TONTON’s 220 GSM polyester/spandex reference.",
+  "answer": "Choose rash guard fabric by matching composition, weight, stretch recovery, coverage and decoration to the intended fit. TONTON’s 220 GSM, 85% polyester / 15% spandex knit is one documented starting point. Approve the actual color, printed fabric and finished garment together; GSM or spandex percentage alone cannot establish comfort, opacity or compression performance.",
+  "published": "2026-10-29",
+  "updated": "2026-10-29",
+  "author": "TONTON",
+  "hero": {
+    "src": "https://assets.tontongear.com/assets/fabrics/220gsm-stretch-knit/main-fabric.webp",
+    "alt": "Dark 220 GSM stretch knit on the supplied TONTON rash guard",
+    "caption": "Supplied garment photograph · 220 GSM main knit; adjacent panels are specified separately."
+  },
+  "sections": [
+    {
+      "id": "define-use",
+      "title": "1. Start with the wearer and intended use",
+      "paragraphs": [
+        "A BJJ academy ordering team rash guards and a brand developing a close-fitting gym top may use similar-looking fabrics but need different specifications. Before comparing swatches, identify whether the garment will be worn alone, under a gi, or as part of a matching No-Gi set. Define adult or youth sizing, sleeve length and expected fit.",
+        "Describe the movement and coverage you need in observable terms: overhead reach without excessive hem movement, comfortable neck and underarm contact, and coverage when the torso bends. These requirements turn a general request for premium fabric into sample checks. A composition label does not establish medical compression or competition eligibility."
+      ]
+    },
+    {
+      "id": "composition",
+      "title": "2. Read composition, construction and GSM separately",
+      "paragraphs": [
+        "TONTON’s documented main-knit reference is 85% polyester / 15% spandex at a nominal 220 grams per square meter. Polyester content makes it a candidate for sublimation development; the stretch component is only part of the fit equation. Knit structure, finishing, pattern dimensions and sewing also affect how the garment behaves.",
+        "GSM describes mass per unit area, not a universal quality grade. Two fabrics with the same GSM can have different thickness, surface, stretch and recovery. A heavier choice is not automatically more breathable, more opaque or more durable. Compare the selected swatches and garments instead of ranking them by weight alone."
+      ],
+      "table": {
+        "caption": "How to interpret a rash guard material specification",
+        "columns": [
+          "Field",
+          "What it tells you",
+          "What still needs checking"
+        ],
+        "rows": [
+          [
+            "Fiber ratio",
+            "The declared blend, such as 85% polyester / 15% spandex",
+            "Supplier record, label accuracy and decoration compatibility"
+          ],
+          [
+            "Nominal GSM",
+            "Fabric mass per square meter",
+            "Agreed variation, feel and suitability in the garment"
+          ],
+          [
+            "Knit construction",
+            "The material structure",
+            "Stretch direction, recovery, surface and seam behavior"
+          ],
+          [
+            "Finishing",
+            "A separately specified treatment or surface",
+            "Evidence for any claimed drying, UV or antibacterial benefit"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "stretch",
+      "title": "3. Check stretch and recovery with the actual pattern",
+      "paragraphs": [
+        "Review stretch in both principal directions and mark the orientation intended for each panel. Stretch is the ability to extend; recovery describes how well the material returns after extension. A swatch that feels very stretchy may still leave a loose neckline or bagging elbows in the finished garment.",
+        "Use a fit sample for reaching, torso rotation and the intended training movements. Check the body panels and seams together. If you need a numeric stretch or recovery requirement, agree the test method, extension, load, duration and acceptance criteria before testing. A demonstration video is not a measured result."
+      ],
+      "bullets": [
+        "Record the sample size, wearer measurements and intended fit.",
+        "Look for persistent distortion after movement and rest.",
+        "Review seam extension, neckline recovery and lower-hem attachment.",
+        "Recheck when the fabric, pattern or seam construction changes."
+      ]
+    },
+    {
+      "id": "coverage",
+      "title": "4. Assess coverage in the selected color and stretch",
+      "paragraphs": [
+        "Coverage must be checked on the finished colorway. Inspect the fabric relaxed and at representative wearing stretch, especially across the chest, shoulders and back. Use consistent lighting and a contrasting background, then repeat on the worn sample.",
+        "White, light panels and strongly stretched areas deserve separate review. Do not transfer an opacity observation from a dark sample to every color or size. Record any unacceptable show-through with the location, lighting and stretch condition so the revision can be reproduced."
+      ],
+      "image": {
+        "src": "https://assets.tontongear.com/assets/fabrics/220gsm-stretch-knit/composition-label.webp",
+        "alt": "Garment label showing 85 percent polyester and 15 percent spandex",
+        "caption": "The supplied label supports the fiber ratio. Nominal GSM comes from the product specification."
+      }
+    },
+    {
+      "id": "decoration",
+      "title": "5. Select the fabric and print route together",
+      "paragraphs": [
+        "For full-panel sublimation, review a printed strike-off on the intended material rather than approving the blank fabric alone. The base color, polyester content and heat response affect the result. Epson explains that conventional dye-sublimation is intended for polyester or prepared substrates and typically uses a light base because the system does not add an opaque white layer.",
+        "For a local transfer logo, confirm the transfer system’s compatibility with the blend and wearing stretch. Ask for the actual decoration method rather than treating every heat-applied graphic as the same process. Inspect the printed sample for feel, distorted lines and changes after the agreed care cycle."
+      ]
+    },
+    {
+      "id": "components",
+      "title": "6. Specify mesh, hem grip and seams as separate components",
+      "paragraphs": [
+        "A 220 GSM main-fabric specification does not identify the mesh insert, silicone hem band or sewing thread. Give each component its own description and placement. For a mesh panel, inspect opening size, skin contact, stretch compatibility and seam junctions.",
+        "For silicone anti-slip elastic, confirm width, position, attachment and contact comfort on the worn sample. The band should not be used to compensate for an unsuitable body length. Review seams for profile and extension; a photo of parallel stitches alone is not proof of a particular industrial stitch classification."
+      ]
+    },
+    {
+      "id": "brief",
+      "title": "7. Send a material approval brief",
+      "paragraphs": [
+        "For a first project, request an identified swatch, a printed color sample and a finished fit sample. Keep the accepted versions together. If the color, material finish, panel layout or fit changes, state which checks must be repeated.",
+        "A useful brief for this reference is: custom short-sleeve rash guard; nominal 220 GSM 85/15 polyester/spandex knit; identified color and print artwork; agreed size chart; separately specified mesh and hem band; coverage, recovery and care checks recorded before approval. Confirm availability, minimums and sample timing with the project quote."
+      ],
+      "bullets": [
+        "Specify product, quantity and size allocation.",
+        "Identify the material and approved swatch version.",
+        "Describe fit, coverage and decoration priorities.",
+        "Record acceptance conditions and unresolved items."
+      ]
+    }
+  ],
+  "faqs": [
+    [
+      "Is 220 GSM always the best rash guard fabric?",
+      "No. It is a documented TONTON reference, not a universal optimum. Select weight together with fit, coverage, feel, printing and the intended use."
+    ],
+    [
+      "Does 15% spandex prove four-way stretch or compression?",
+      "No. Fiber ratio alone does not establish stretch in each direction, recovery or pressure on the body. Confirm the fabric and finished garment."
+    ],
+    [
+      "Can the mesh insert use the main fabric specification?",
+      "No. Mesh, hem elastic and other components need their own specifications."
+    ],
+    [
+      "Can a photo prove opacity in every color?",
+      "No. Inspect the selected colorway under representative lighting and wearing stretch."
+    ]
+  ],
+  "related": [
+    "sublimation-vs-heat-transfer-for-fightwear",
+    "custom-fightwear-sample-approval-checklist"
+  ],
+  "links": [
+    [
+      "Explore the 220 GSM material",
+      "/fabrics/220-gsm-stretch-knit"
+    ],
+    [
+      "Inspect team rash guard colors",
+      "/products/blue-team-rash-guard"
+    ],
+    [
+      "Compare seam construction",
+      "/resources/flatlock-vs-overlock-rash-guard-seams"
+    ]
+  ],
+  "sources": [
+    {
+      "label": "Epson: dye-sublimation substrates and light base colors",
+      "url": "https://epson.com/sublimation-printers-for-makers",
+      "note": "General printing background; not a TONTON product test."
+    }
+  ],
+  "basis": "Based on TONTON supplied product specifications, garment photographs and published production workflows. Selection advice is editorial guidance; performance values apply only when supported by the selected material record or test report."
+}

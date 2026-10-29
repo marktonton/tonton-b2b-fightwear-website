@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ORGANIZATION_ID } from '../../../lib/site-entity';
 import type { Metadata } from 'next';
+import { BLOG_POSTS } from '../../../lib/blog';
 import { getResource, RESOURCE_PAGES } from '../../../lib/resource-content';
 
 const SITE_URL = 'https://www.tontongear.com';
@@ -49,6 +50,7 @@ export default function ResourceArticlePage({ params }: PageProps) {
       <aside className="resource-source" aria-label="Source and review note"><strong>Source basis</strong><span>{resource.source}</span><span>Reviewed by: TONTON Product Development &amp; Quality Control Team</span><span>Last reviewed: {reviewed}</span></aside>
       {resource.relatedGuides?.length ? <nav className="resource-cluster-links" aria-label="Related buyer guides"><strong>Continue this topic</strong><div>{resource.relatedGuides.map((slug) => { const item = getResource(slug); return item ? <Link href={`/resources/${item.slug}`} key={item.slug}>{item.title} <span aria-hidden="true">→</span></Link> : null; })}</div></nav> : null}
       {resource.relatedSolutions && <nav className="resource-cluster-links" aria-label="Buyer procurement routes"><strong>Choose your buying route</strong><div><Link href="/solutions/bjj-academy-uniforms">BJJ academy uniforms →</Link><Link href="/solutions/private-label-fightwear">Private-label fightwear development →</Link><Link href="/products/blue-team-rash-guard">Blue Team Rash Guard specification →</Link><Link href="/products/blue-team-rash-guard">White Pro Rash Guard specification →</Link></div></nav>}
+      <nav className="resource-cluster-links" aria-label="In-depth fightwear blog"><strong>Read the full buying guides</strong><div>{BLOG_POSTS.map(post => <Link key={post.slug} href={`/blog/${post.slug}`}>{post.title} →</Link>)}</div></nav>
       <section className="resource-article-cta"><div><p>NEXT STEP</p><h2>Turn the guide into a product brief</h2></div><div><Link href={resource.relatedProduct.href}>{resource.relatedProduct.label} <span aria-hidden="true">→</span></Link><Link href={resource.builderHref ?? '/project-builder'}>Open the Project Builder <span aria-hidden="true">→</span></Link><a href={`https://wa.me/8617722438678?text=${encodeURIComponent(`Hello TONTON, I would like to discuss a project after reading: ${resource.title}. ${url}`)}`} target="_blank" rel="noopener noreferrer">Ask on WhatsApp <span aria-hidden="true">→</span></a></div></section>
     </article>
   );

@@ -328,5 +328,41 @@
     "title": "Pro Snake-Scale MMA Fight Shorts",
     "description": "Develop custom snake-scale MMA fight shorts with a hook-and-loop fly, internal drawcord and stretch crotch gusset. Four color references, private-label logos and OEM/ODM support.",
     "group": "Products"
+  },
+  {
+    "path": "/blog",
+    "title": "Fightwear Manufacturing Blog",
+    "description": "Practical guides for custom rash guard and MMA shorts buyers: fabric selection, printing, garment construction, sample approval and cost planning.",
+    "group": "Blog articles"
+  },
+  {
+    "path": "/blog/custom-fightwear-sample-approval-checklist",
+    "title": "Custom Rash Guard & MMA Shorts Sample Approval Checklist",
+    "description": "A practical sample approval checklist for custom rash guards and MMA shorts: materials, measurements, artwork, seams, closures, care and versioned sign-off.",
+    "group": "Blog articles"
+  },
+  {
+    "path": "/blog/how-to-choose-fabric-for-custom-rash-guards",
+    "title": "How to Choose Fabric for Custom Rash Guards",
+    "description": "A buyer guide to rash guard fabric composition, GSM, stretch, coverage and print compatibility, using TONTON’s 220 GSM polyester/spandex reference.",
+    "group": "Blog articles"
+  },
+  {
+    "path": "/blog/mma-shorts-construction-guide",
+    "title": "MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist",
+    "description": "Compare MMA shorts shells, gussets, side slits, liners and closure systems with real TONTON product examples and a practical sample specification guide.",
+    "group": "Blog articles"
+  },
+  {
+    "path": "/blog/sublimation-vs-heat-transfer-for-fightwear",
+    "title": "Sublimation vs Heat Transfer for Custom Fightwear",
+    "description": "Compare dye-sublimation with applied transfer logos for rash guards and MMA shorts: fabric compatibility, artwork, stretch, dye migration and sample checks.",
+    "group": "Blog articles"
+  },
+  {
+    "path": "/blog/what-affects-custom-fightwear-cost",
+    "title": "What Affects the Cost of Custom Fightwear?",
+    "description": "Understand custom rash guard and MMA shorts cost drivers: quantity allocation, fabrics, construction, decoration, labels, packaging, sampling and delivery scope.",
+    "group": "Blog articles"
   }
 ]

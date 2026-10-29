@@ -98,10 +98,17 @@ export default function RootLayout({
                 <a href="/service-support">Service &amp; Support</a>
               </div>
             </div>
-            <a href="/resources">Resources</a>
+            <div className="nav-dropdown">
+              <a href="/blog" className="nav-link">Blog ▼</a>
+              <div className="dropdown-content">
+                <a href="/blog">All Articles</a>
+                <a href="/resources">Technical Buyer Resources</a>
+                <a href="/resources/custom-fightwear-sampling-moq">Sampling &amp; MOQ</a>
+              </div>
+            </div>
             <a className="nav-cta" href="/project-builder?source=global-navigation">Build Your Project</a>
           </nav>
-          <a className="mobile-products-link" href="/products">Products →</a>
+          <div className="mobile-quick-links"><a className="mobile-products-link" href="/products">Products →</a><a className="mobile-blog-link" href="/blog">Blog →</a></div>
         </header>
 
         <main id="main-content">{children}</main>
@@ -125,6 +132,7 @@ export default function RootLayout({
               <h2>Top Picks</h2>
               <a href="/service-support">Service &amp; Support</a>
               <a href="/about">About TONTON</a>
+              <a href="/blog">Fightwear Blog</a>
               <a href="/resources">Buyer Resources</a>
               <a href="/project-builder?source=footer">Project Builder</a>
               <a href="/#products">Featured Products</a>

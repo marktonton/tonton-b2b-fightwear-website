@@ -23,6 +23,7 @@ export default function ResourcesPage() {
         <h1>Build a clearer custom fightwear specification</h1>
         <div><p>Practical, product-linked guidance for brands, gyms, academies and private-label buyers preparing materials, artwork, samples and production requirements.</p><Link href="/project-builder">Build your project brief <span aria-hidden="true">→</span></Link></div>
       </header>
+      <aside className="resource-blog-entry"><p>THE FIGHTWEAR BLOG</p><h2>Explore the full buying guides.</h2><p>Go deeper into fabric selection, printing methods, MMA shorts construction, sample approval and cost planning.</p><Link href="/blog">Read the latest articles →</Link></aside>
       <BuyerSolutionsLinks />
       {[
         { id: 'rash-guard', title: 'Rash Guard buyer cluster', copy: 'Material, hem construction and artwork decisions linked to real Rash Guard product examples.' },

@@ -1,0 +1,205 @@
+{
+  "slug": "sublimation-vs-heat-transfer-for-fightwear",
+  "title": "Sublimation vs Heat Transfer for Custom Fightwear",
+  "category": "Printing & Craft",
+  "description": "Compare dye-sublimation with applied transfer logos for rash guards and MMA shorts: fabric compatibility, artwork, stretch, dye migration and sample checks.",
+  "answer": "For custom fightwear, full-panel dye-sublimation is a route for compatible polyester-based fabric and integrated artwork; applied heat-transfer logos add a separate decoration system at selected positions. Both use heat, but their material requirements and approval checks differ. Choose by fabric, design coverage, wearing stretch and the approved sample, not by the word transfer alone.",
+  "published": "2026-10-29",
+  "updated": "2026-10-29",
+  "author": "TONTON",
+  "hero": {
+    "src": "/assets/factory/digital-sublimation/workshop.webp",
+    "alt": "TONTON roll-to-roll digital sublimation printing workshop",
+    "caption": "Actual TONTON printing workshop · printing transfer paper and transferring the image to fabric are separate steps."
+  },
+  "sections": [
+    {
+      "id": "terminology",
+      "title": "1. Clarify what the supplier means by heat transfer",
+      "paragraphs": [
+        "Sublimation is itself a heat-transfer process: printed transfer paper is heated against a suitable substrate. In garment purchasing, heat transfer often instead means a logo or graphic applied to the surface, such as a compatible film or printed transfer. Ask the supplier to name the process and material system.",
+        "A photograph of a raised logo does not prove silicone, TPU or a particular transfer chemistry. Likewise, a detailed all-over pattern does not prove sublimation rather than another printing or textile process. Record the decoration method in the production specification."
+      ]
+    },
+    {
+      "id": "comparison",
+      "title": "2. Compare the routes against the design",
+      "paragraphs": [
+        "The decision starts with the actual garment fabric and artwork. The table describes typical development directions; it is not a universal ranking of durability or price. A transfer suitable for a low-stretch training shell may be unsuitable for a highly extended rash guard panel."
+      ],
+      "table": {
+        "caption": "Dye-sublimation and applied transfer logos",
+        "columns": [
+          "Decision",
+          "Dye-sublimation route",
+          "Applied transfer logo route"
+        ],
+        "rows": [
+          [
+            "Typical scope",
+            "Full-panel colors, gradients, names and patterns",
+            "Selected logos, names, emblems or graphic areas"
+          ],
+          [
+            "Material choice",
+            "Compatible polyester-based fabric; base color matters",
+            "Compatibility depends on transfer system, fabric, dye and finish"
+          ],
+          [
+            "Surface feel",
+            "No separate graphic film in conventional dye-sublimation",
+            "Feel depends on graphic area, thickness and transfer material"
+          ],
+          [
+            "Stretch review",
+            "Check printed fabric and garment seams",
+            "Check decoration extension, recovery and adhesion"
+          ],
+          [
+            "Main checks",
+            "Color, ghosting, alignment, heat effects and panel matching",
+            "Edges, adhesion, dye migration, stretch and heat marks"
+          ],
+          [
+            "Cost comparison",
+            "Review material, artwork, print and panel work together",
+            "Review graphic size, number, preparation and application work"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "sublimation",
+      "title": "3. When full-panel sublimation is a practical starting point",
+      "paragraphs": [
+        "A polyester-based rash guard with coordinated front, back and sleeve artwork is a candidate for full-panel sublimation. Printing before sewing allows the artwork to be planned around panel shapes. Seams and size grading still require care: a logo that fits one size may approach the seam allowance on another.",
+        "Conventional sublimation does not supply an opaque white ink layer. Light-colored compatible fabric is commonly used as the base; darker visual areas can be part of the printed design. Approve the actual printed material because base color and fiber blend affect appearance. Epson’s printing guidance supports these general substrate constraints, not a guaranteed result for every textile blend."
+      ],
+      "bullets": [
+        "Check critical colors on the intended fabric, not only on screen.",
+        "Keep small lettering clear of seams and high-distortion areas.",
+        "Confirm intended alignment across panels and realistic variation.",
+        "Review print clarity after the sample is sewn and worn."
+      ]
+    },
+    {
+      "id": "transfers",
+      "title": "4. When a local transfer logo may suit the project",
+      "paragraphs": [
+        "A plain shell with a discrete thigh emblem or a limited brand mark may be developed with an applied transfer. Confirm the decoration’s compatible fabrics and extension range, whether a dye-blocking layer is needed, and the equipment settings supplied for that system.",
+        "Performance textiles require particular attention to heat sensitivity and dye migration. STAHLS’ performance-wear handbook discusses substrate selection, application instructions and polyester dye migration. A low-temperature or blocking option is system-specific; it is not a universal solution for every fabric."
+      ],
+      "image": {
+        "src": "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-black-slit.webp",
+        "alt": "Geometric emblem and curved side opening on the black MMA shorts sample",
+        "caption": "Leg-emblem reference · approve the actual logo material and application method; appearance alone does not identify the process."
+      }
+    },
+    {
+      "id": "process",
+      "title": "5. Keep printing and fabric transfer distinct",
+      "paragraphs": [
+        "TONTON’s published workflow shows roll-to-roll digital printing and a separate rotary heat-transfer stage. The printer produces the transfer-paper output; the heated process transfers the image to suitable fabric. Cutting and sewing then turn the decorated panels into garments.",
+        "For a local transfer, confirm where in the garment route application occurs and whether the area can lie flat. Seams, waist elastic and layered panels can change pressure and contact. Do not copy one time, temperature and pressure setting across unrelated fabrics or transfer products; follow the selected system’s instructions and approve the result."
+      ]
+    },
+    {
+      "id": "approval",
+      "title": "6. Approve a decorated sample through care and movement",
+      "paragraphs": [
+        "Start with the identified fabric, dye color and decoration system. Check appearance after the recommended curing or settling period, then review normal wearing stretch and the agreed care procedure. Reinspect color change, transfer edges, surface feel and garment distortion.",
+        "Do not promise permanent color or a fixed number of washes without an appropriate report. A practical sample check can reveal a problem but is not a substitute for a specified laboratory method when a customer requires formal performance evidence."
+      ],
+      "table": {
+        "caption": "Decoration approval record",
+        "columns": [
+          "Check",
+          "Record before approval"
+        ],
+        "rows": [
+          [
+            "Material and method",
+            "Fabric reference, color, transfer/ink system and sample ID"
+          ],
+          [
+            "Artwork",
+            "Version, dimensions, position and panel alignment"
+          ],
+          [
+            "Visual result",
+            "Color reference, sharpness, heat marks and ghosting"
+          ],
+          [
+            "Movement",
+            "Intended extension and observed recovery or edge issues"
+          ],
+          [
+            "Care review",
+            "Washing/drying conditions, cycle count and observations"
+          ],
+          [
+            "Decision",
+            "Approved version, corrections, retest needs and approver"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "choose",
+      "title": "7. Choose the route by the whole garment",
+      "paragraphs": [
+        "For full-body team artwork, start by assessing sublimation on the selected polyester-based knit or woven. For a limited logo on an existing plain garment direction, review a compatible transfer system. A mixed approach is possible, but each additional process needs its own approval and cost review.",
+        "Send the supplier the garment reference, fabric, graphic files, quantity per design and intended placement. Request a process recommendation with a sample plan. This is more useful than asking which technique is always cheaper or always lasts longer."
+      ]
+    }
+  ],
+  "faqs": [
+    [
+      "Is sublimation different from heat transfer?",
+      "Sublimation uses heat transfer, but buyers often use heat transfer to mean a separate surface-applied logo. Specify the actual process."
+    ],
+    [
+      "Can I sublimate directly onto any dark rash guard?",
+      "Conventional dye-sublimation does not add an opaque white layer. Confirm the base fabric and design route rather than assuming an existing dark garment will reproduce the artwork."
+    ],
+    [
+      "Will a local transfer stretch with a rash guard?",
+      "Only if the selected system is compatible with the fabric and required extension. Approve the decorated garment through movement and care checks."
+    ],
+    [
+      "Which process costs less?",
+      "Compare the complete specification, quantities, artwork coverage and application work. There is no universal price winner."
+    ]
+  ],
+  "related": [
+    "how-to-choose-fabric-for-custom-rash-guards",
+    "what-affects-custom-fightwear-cost"
+  ],
+  "links": [
+    [
+      "See the digital printing workshop",
+      "/factory/digital-sublimation-printing"
+    ],
+    [
+      "See rotary heat transfer",
+      "/factory/rotary-heat-transfer"
+    ],
+    [
+      "Prepare panel artwork",
+      "/resources/prepare-artwork-for-sublimation"
+    ]
+  ],
+  "sources": [
+    {
+      "label": "Epson: dye-sublimation printing background",
+      "url": "https://epson.com/sublimation-printers-for-makers",
+      "note": "General substrate and base-color guidance."
+    },
+    {
+      "label": "STAHLS’: Performance Wear Handbook",
+      "url": "https://assets.stahls.com/stahls/content/pdf/ebooks/Stahls-Performance-Wear-Handbook.pdf",
+      "note": "Application compatibility and dye-migration background; not proof of TONTON test performance."
+    }
+  ],
+  "basis": "Based on TONTON supplied product specifications, garment photographs and published production workflows. Selection advice is editorial guidance; performance values apply only when supported by the selected material record or test report."
+}

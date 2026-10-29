@@ -16,6 +16,8 @@ node_modules
 !package-lock.json
 !tsconfig.json
 !data/*.json
+!data/blog/
+!data/blog/*.json
 !app/**/*.tsx
 !app/**/*.css
 !public/**/*

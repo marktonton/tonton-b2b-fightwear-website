@@ -4,3 +4,8 @@
 .mobile-products-link{display:none}
 @media(min-width:769px) and (max-width:1250px){.header nav{gap:14px;font-size:12px}.header .brand span{display:none}.header{padding-left:4%;padding-right:4%}}
 @media(max-width:768px){.mobile-products-link{display:block;color:#fff;font-size:13px;font-weight:800;white-space:nowrap;margin-left:16px}.header .brand span{display:none}}
+
+.nav-dropdown:focus-within .dropdown-content{display:block}.mobile-blog-link,.mobile-quick-links{display:none}
+@media(max-width:768px){.mobile-quick-links{display:flex;align-items:center}.mobile-blog-link{display:block;color:#fff;font-size:13px;font-weight:800;white-space:nowrap;margin-left:16px}.header .brand img{max-width:100px}}
+
+.resource-blog-entry{background:#142329;color:#fff;max-width:1220px;margin:30px auto;padding:30px}.resource-blog-entry>p:first-child{font-size:12px;letter-spacing:.15em;color:#ff8b9c;font-weight:700}.resource-blog-entry h2{font-size:30px;line-height:1.2}.resource-blog-entry a{display:inline-block;font-weight:700;text-decoration:underline;padding-top:10px}@media(max-width:768px){.resource-blog-entry{margin:20px}}
