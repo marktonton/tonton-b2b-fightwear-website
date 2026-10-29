@@ -3,6 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
   async headers() {
     return [{
+      source: '/downloads/:file',
+      headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
+    }, {
       source: '/assets/factory/straight-knife/:path*',
       headers: [{ key: 'Cache-Control', value: 'public, max-age=86400, stale-while-revalidate=604800' }],
     }, {

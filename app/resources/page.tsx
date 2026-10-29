@@ -1,5 +1,7 @@
 import { withPageSocialMetadata } from '../../lib/page-metadata';
 import { serializeStructuredData } from '../../lib/structured-data';
+import BuyerDownloads from '../../components/BuyerDownloads';
+import { BUYER_DOWNLOADS, downloadHref } from '../../lib/buyer-downloads';
 import BuyerSolutionsLinks from '../../components/BuyerSolutionsLinks';
 import Link from 'next/link';
 import type { Metadata } from 'next';
@@ -14,7 +16,7 @@ export const metadata: Metadata = withPageSocialMetadata({
 });
 
 export default function ResourcesPage() {
-  const schema = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Custom Fightwear Buyer Resources', url: `${SITE_URL}/resources`, dateModified: '2026-10-15', hasPart: RESOURCE_PAGES.map((item) => ({ '@type': 'Article', name: item.title, url: `${SITE_URL}/resources/${item.slug}`, dateModified: item.updated })) };
+  const schema = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Custom Fightwear Buyer Resources', url: `${SITE_URL}/resources`, dateModified: '2026-10-29', hasPart: [...BUYER_DOWNLOADS.map(item => ({ '@type': 'DigitalDocument', name: item.title, url: `${SITE_URL}${downloadHref(item.file)}`, encodingFormat: 'application/pdf', inLanguage: 'en', datePublished: '2026-10-29', version: '1.0' })), ...RESOURCE_PAGES.map((item) => ({ '@type': 'Article', name: item.title, url: `${SITE_URL}/resources/${item.slug}`, dateModified: item.updated }))] };
   return (
     <div className="resource-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData(schema) }} />
@@ -23,6 +25,7 @@ export default function ResourcesPage() {
         <h1>Build a clearer custom fightwear specification</h1>
         <div><p>Practical, product-linked guidance for brands, gyms, academies and private-label buyers preparing materials, artwork, samples and production requirements.</p><Link href="/project-builder">Build your project brief <span aria-hidden="true">→</span></Link></div>
       </header>
+      <BuyerDownloads />
       <aside className="resource-blog-entry"><p>THE FIGHTWEAR BLOG</p><h2>Explore the full buying guides.</h2><p>Go deeper into fabric selection, printing methods, MMA shorts construction, sample approval and cost planning.</p><Link href="/blog">Read the latest articles →</Link></aside>
       <BuyerSolutionsLinks />
       {[

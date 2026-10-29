@@ -1,3 +1,4 @@
+import BuyerDownloadLinks from '../../../components/BuyerDownloadLinks';
 import { withPageSocialMetadata } from '../../../lib/page-metadata';
 import { serializeStructuredData } from '../../../lib/structured-data';
 import Link from 'next/link';
@@ -47,6 +48,7 @@ export default function ResourceArticlePage({ params }: PageProps) {
       <div className="resource-sections">{resource.sections.map((section, index) => <section key={section.heading}><span>0{index + 1}</span><div><h2>{section.heading}</h2>{section.paragraphs?.map((text) => <p key={text}>{text}</p>)}{section.bullets && <ul>{section.bullets.map((text) => <li key={text}>{text}</li>)}</ul>}</div></section>)}</div>
       <section className="resource-boundaries"><div><p>WHEN NOT TO USE THIS DIRECTION</p><h2>Limits buyers should confirm</h2></div><ul>{resource.notFor.map((item) => <li key={item}>{item}</li>)}</ul></section>
       {resource.faqs?.length ? <section className="resource-faq" aria-labelledby="resource-faq-title"><div><p>BUYER FAQ</p><h2 id="resource-faq-title">Questions to confirm before approval</h2></div><div>{resource.faqs.map(([question, answer]) => <details key={question}><summary>{question}</summary><p>{answer}</p></details>)}</div></section> : null}
+      <BuyerDownloadLinks slug={resource.slug} kind="resource" />
       <aside className="resource-source" aria-label="Source and review note"><strong>Source basis</strong><span>{resource.source}</span><span>Reviewed by: TONTON Product Development &amp; Quality Control Team</span><span>Last reviewed: {reviewed}</span></aside>
       {resource.relatedGuides?.length ? <nav className="resource-cluster-links" aria-label="Related buyer guides"><strong>Continue this topic</strong><div>{resource.relatedGuides.map((slug) => { const item = getResource(slug); return item ? <Link href={`/resources/${item.slug}`} key={item.slug}>{item.title} <span aria-hidden="true">→</span></Link> : null; })}</div></nav> : null}
       {resource.relatedSolutions && <nav className="resource-cluster-links" aria-label="Buyer procurement routes"><strong>Choose your buying route</strong><div><Link href="/solutions/bjj-academy-uniforms">BJJ academy uniforms →</Link><Link href="/solutions/private-label-fightwear">Private-label fightwear development →</Link><Link href="/products/blue-team-rash-guard">Blue Team Rash Guard specification →</Link><Link href="/products/blue-team-rash-guard">White Pro Rash Guard specification →</Link></div></nav>}

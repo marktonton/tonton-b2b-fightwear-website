@@ -103,6 +103,7 @@ export default function RootLayout({
               <div className="dropdown-content">
                 <a href="/blog">All Articles</a>
                 <a href="/resources">Technical Buyer Resources</a>
+                <a href="/resources#downloads">Free Downloads</a>
                 <a href="/resources/custom-fightwear-sampling-moq">Sampling &amp; MOQ</a>
               </div>
             </div>

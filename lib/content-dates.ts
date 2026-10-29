@@ -35,7 +35,7 @@ export const ROUTE_LAST_MODIFIED: Record<string, string> = {
   '/factory/multi-head-embroidery': '2026-10-20',
   '/factory/digital-sublimation-printing': '2026-10-21',
   '/about': '2026-10-27',
-  '/resources': '2026-10-15',
+  '/resources': '2026-10-29',
   '/project-builder': '2026-10-28',
   '/customization/sublimated-rash-guards': '2026-10-28',
   '/customization/sublimated-training-shorts': '2026-09-22',
