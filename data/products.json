@@ -21,6 +21,32 @@
   ],
   "products": [
     {
+      "id": "jiu-jitsu-oni-long-sleeve-rash-guard",
+      "categoryId": "sublimated-rash-guards",
+      "name": "Jiu-Jitsu Oni Long-Sleeve Rash Guard",
+      "image": "https://assets.tontongear.com/assets/products/jiu-jitsu-oni-rash-guard/oni-rash-guard-front-detail.webp",
+      "images": [
+        "https://assets.tontongear.com/assets/products/jiu-jitsu-oni-rash-guard/oni-rash-guard-front-detail.webp",
+        "https://assets.tontongear.com/assets/products/jiu-jitsu-oni-rash-guard/oni-rash-guard-back-detail.webp",
+        "https://assets.tontongear.com/assets/products/jiu-jitsu-oni-rash-guard/oni-rash-guard-lotus-profile.webp",
+        "https://assets.tontongear.com/assets/products/jiu-jitsu-oni-rash-guard/oni-rash-guard-back-artwork-closeup.webp",
+        "https://assets.tontongear.com/assets/products/jiu-jitsu-oni-rash-guard/oni-rash-guard-sleeve-seam-closeup.webp",
+        "https://assets.tontongear.com/assets/products/jiu-jitsu-oni-rash-guard/oni-rash-guard-lotus-closeup.webp",
+        "https://assets.tontongear.com/assets/products/jiu-jitsu-oni-rash-guard/oni-rash-guard-model-front.webp",
+        "https://assets.tontongear.com/assets/products/jiu-jitsu-oni-rash-guard/oni-rash-guard-model-back-angle.webp",
+        "https://assets.tontongear.com/assets/products/jiu-jitsu-oni-rash-guard/oni-rash-guard-model-back.webp",
+        "https://assets.tontongear.com/assets/products/jiu-jitsu-oni-rash-guard/oni-rash-guard-model-side.webp",
+        "https://assets.tontongear.com/assets/products/jiu-jitsu-oni-rash-guard/oni-rash-guard-model-front-angle.webp",
+        "https://assets.tontongear.com/assets/products/jiu-jitsu-oni-rash-guard/oni-rash-guard-artwork-visual.webp"
+      ],
+      "description": "Oni-inspired custom long-sleeve rash guard with a 240 GSM material brief, raglan sleeves and full-panel sublimation artwork.",
+      "features": [
+        "240 GSM Material Brief",
+        "Custom Sublimated Artwork",
+        "Raglan & Flatlock Construction"
+      ]
+    },
+    {
       "id": "snake-scale-mma-fight-shorts",
       "categoryId": "sublimated-bjj-mma-shorts",
       "name": "Pro Snake-Scale MMA Fight Shorts",
