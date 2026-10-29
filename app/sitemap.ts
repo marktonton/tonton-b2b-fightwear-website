@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 import productsData from '../data/products.json';
 import { customizationCategories } from '../lib/customization-pages';
-import { getRouteModifiedDate } from '../lib/content-dates';
+import { getRouteModifiedDate, ROUTE_LAST_MODIFIED } from '../lib/content-dates';
 import { BLOG_POSTS } from '../lib/blog';
 import { RESOURCE_PAGES } from '../lib/resource-content';
 
@@ -52,7 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const resourceRoutes = RESOURCE_PAGES.map((resource) => ({
     url: `${SITE_URL}/resources/${resource.slug}`,
-    lastModified: new Date(`${resource.updated}T00:00:00.000Z`),
+    lastModified: new Date(`${[resource.updated, ROUTE_LAST_MODIFIED[`/resources/${resource.slug}`] ?? resource.updated].sort().pop()}T00:00:00.000Z`),
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));

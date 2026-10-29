@@ -4,6 +4,7 @@ import { serializeStructuredData } from '../lib/structured-data';
 import './home-product-media.css';
 
 import { ORGANIZATION_ID, SITE_URL } from '../lib/site-entity';
+import BuyerLearningPath from '../components/BuyerLearningPath';
 import BuyerFacts from '../components/BuyerFacts';
 import BuyerSolutionsLinks from '../components/BuyerSolutionsLinks';
 
@@ -203,7 +204,7 @@ export default function HomePage() {
 
   return (
     <div>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData({ '@context': 'https://schema.org', '@type': 'WebPage', url: SITE_URL + '/', name: 'Custom MMA & BJJ Fightwear Manufacturer', description: 'Custom sublimated rash guards, training shorts and BJJ/MMA shorts for brands, gyms and teams.', about: { '@id': ORGANIZATION_ID } }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData({ '@context': 'https://schema.org', '@type': 'WebPage', url: SITE_URL + '/', name: 'Custom MMA & BJJ Fightwear Manufacturer', description: 'Custom MMA and BJJ fightwear manufacturer for brands, gyms and teams. Develop sublimated rash guards, grappling shorts and training shorts with TONTON OEM/ODM support.', about: { '@id': ORGANIZATION_ID } }) }} />
       {/* 1. HERO SECTION - Cinematic Full Width */}
       <section className={`hero hero--${currentBanner === 0 ? 'dark' : 'light'}`} aria-labelledby="homepage-hero-title">
         <div className="banner-slider" role="region" aria-roledescription="carousel" aria-label="TONTON custom fightwear">
@@ -214,7 +215,7 @@ export default function HomePage() {
                 className={`slide ${i === currentBanner ? 'active' : ''}`}
                 aria-hidden={i !== currentBanner}
               >
-                <img src={resolveImage(banner.desktop)} alt="" />
+                <img src={resolveImage(banner.desktop)} alt="" loading={i === 0 ? 'eager' : 'lazy'} fetchPriority={i === 0 ? 'high' : 'low'} />
               </div>
             ))}
           </div>
@@ -562,6 +563,7 @@ export default function HomePage() {
 
       <BuyerFacts />
       <BuyerSolutionsLinks />
+      <BuyerLearningPath />
       <RelatedResources />
 
       {/* 4. SEND YOUR INQUIRY */}

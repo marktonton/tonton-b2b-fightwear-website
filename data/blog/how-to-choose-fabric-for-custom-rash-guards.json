@@ -115,6 +115,34 @@
         "Describe fit, coverage and decoration priorities.",
         "Record acceptance conditions and unresolved items."
       ]
+    },
+    {
+      "id": "compare-documentation",
+      "title": "8. Compare two documented TONTON fabric briefs",
+      "paragraphs": [
+        "The short-sleeve team rash guard and Jiu-Jitsu Oni long-sleeve rash guard illustrate why GSM belongs to an individual product brief. Both references specify an 85% polyester / 15% spandex blend, but their nominal fabric weights differ. The figures describe development requirements; they do not establish measured abrasion resistance, opacity or compression pressure.",
+        "Choose the intended sleeve length, fit and artwork first, then ask for a swatch and garment sample. Confirm the selected fabric identity and weight tolerance, compare stretch and recovery, and inspect coverage in the chosen color under realistic extension. A heavier nominal weight alone is not a pass/fail quality test."
+      ],
+      "table": {
+        "caption": "Documented rash guard references — specifications to confirm during sampling",
+        "columns": [
+          "Reference",
+          "Supplied fabric brief",
+          "Buyer confirmation"
+        ],
+        "rows": [
+          [
+            "Short-sleeve team rash guard",
+            "220 GSM; 85% polyester / 15% spandex",
+            "Selected fabric, color coverage, stretch recovery and optional hem grip"
+          ],
+          [
+            "Jiu-Jitsu Oni long-sleeve rash guard",
+            "Nominal 240 GSM; 85% polyester / 15% spandex",
+            "Actual fabric weight, raglan fit, flatlock construction and printed-panel appearance"
+          ]
+        ]
+      }
     }
   ],
   "faqs": [
@@ -151,6 +179,10 @@
     [
       "Compare seam construction",
       "/resources/flatlock-vs-overlock-rash-guard-seams"
+    ],
+    [
+      "Jiu-Jitsu Oni long-sleeve rash guard — nominal 240 GSM brief",
+      "/products/jiu-jitsu-oni-long-sleeve-rash-guard"
     ]
   ],
   "sources": [

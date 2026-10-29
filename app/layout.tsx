@@ -9,14 +9,14 @@ import { resolveImage } from '../lib/image-resolver';
 import SearchMeasurement from '../components/SearchMeasurement';
 import { BRAND_NAME, COMPANY_NAME, ORGANIZATION_SCHEMA, SITE_URL, WEBSITE_SCHEMA } from '../lib/site-entity';
 
-const SITE_DESCRIPTION = 'TONTON Sportswear provides custom fightwear and professional sportswear manufacturing for brands, teams, clubs, and retailers.';
+const SITE_DESCRIPTION = 'Custom MMA and BJJ fightwear manufacturer for brands, gyms and teams. Develop sublimated rash guards, grappling shorts and training shorts with TONTON OEM/ODM support.';
 const googleVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
 const bingVerification = process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION || 'D92B86221444C90139E4EF3FA861A265';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Custom Sportswear Manufacturer | TONTON OEM Factory',
+    default: 'Custom MMA & BJJ Fightwear Manufacturer | TONTON OEM',
     template: '%s | TONTON Sportswear',
   },
   description: SITE_DESCRIPTION,
@@ -30,13 +30,13 @@ export const metadata: Metadata = {
     type: 'website',
     url: SITE_URL,
     siteName: BRAND_NAME,
-    title: 'Custom Sportswear Manufacturer | TONTON OEM Factory',
+    title: 'Custom MMA & BJJ Fightwear Manufacturer | TONTON OEM',
     description: SITE_DESCRIPTION,
     images: [{ url: resolveImage('/assets/logo.png'), alt: 'TONTON Sportswear' }],
   },
   twitter: {
     card: 'summary',
-    title: 'Custom Sportswear Manufacturer | TONTON OEM Factory',
+    title: 'Custom MMA & BJJ Fightwear Manufacturer | TONTON OEM',
     description: SITE_DESCRIPTION,
     images: [resolveImage('/assets/logo.png')],
   },
@@ -53,7 +53,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head><link rel="alternate" type="text/plain" href="/llms-full.txt" title="TONTON public website text" /></head>
+      <head><link rel="preconnect" href="https://assets.tontongear.com" /><link rel="dns-prefetch" href="https://assets.tontongear.com" /><link rel="alternate" type="text/plain" href="/llms-full.txt" title="TONTON public website text" /></head>
       <body>
         <a className="skip-content" href="#main-content">Skip to page content</a>
         <SearchMeasurement />

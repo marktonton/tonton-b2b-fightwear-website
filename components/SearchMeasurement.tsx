@@ -26,6 +26,10 @@ function ConversionTracker() {
       const href = target.getAttribute('href') ?? '';
       const linkText = target.textContent?.trim().slice(0, 100) ?? '';
       const context = { link_text: linkText, page_path: window.location.pathname };
+      if (/^\/downloads\/[a-z0-9-]+\.pdf(?:$|[?#])/.test(href)) {
+        sendEvent('buyer_resource_download', { page_path: window.location.pathname, file_name: href.split('/').pop()!.split(/[?#]/)[0], interaction_type: target.hasAttribute('download') ? 'download' : 'open_pdf' });
+        return;
+      }
       if (href.includes('wa.me/')) sendEvent('contact_whatsapp', context);
       else if (href.startsWith('mailto:')) sendEvent('contact_email', context);
       else if (href.startsWith('tel:')) sendEvent('contact_phone', context);

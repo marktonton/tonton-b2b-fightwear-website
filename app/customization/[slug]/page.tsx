@@ -1,3 +1,4 @@
+import BuyerLearningPath from '../../../components/BuyerLearningPath';
 import BuyerFitSpecification from '../../../components/BuyerFitSpecification';
 import { withPageSocialMetadata } from '../../../lib/page-metadata';
 import { serializeStructuredData } from '../../../lib/structured-data';
@@ -90,8 +91,8 @@ export function generateMetadata({ params }: PageProps): Metadata {
     });
   }
   const seoTitles: Record<string, string> = {
-    'sublimated-rash-guards': 'Custom Sublimated Rash Guard Manufacturer | OEM',
-    'sublimated-training-shorts': 'Custom Functional Training Shorts Manufacturer | OEM',
+    'sublimated-rash-guards': 'Custom Rash Guard Manufacturer | Sublimation & OEM | TONTON',
+    'sublimated-training-shorts': 'Custom Training Shorts Manufacturer | Private Label | TONTON',
     'sublimated-bjj-mma-shorts': 'Custom BJJ & MMA Shorts Manufacturer | Low MOQ | TONTON',
   };
   const title = seoTitles[category.id] ?? `${category.name} Customization | TONTON Sportswear`;
@@ -695,6 +696,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
 
       {isRashGuardPage && <BuyerFitSpecification family="rashGuard" />}
 
+      <BuyerLearningPath family={isRashGuardPage ? 'rashGuard' : isTrainingShortsPage ? 'trainingShorts' : 'mmaShorts'} />
       <RelatedResources slugs={category.id === 'sublimated-rash-guards' ? ['rash-guard-fabric-construction', 'flatlock-vs-overlock-rash-guard-seams', 'rash-guard-sublimation-logo-placement', 'prepare-artwork-for-sublimation'] : category.id === 'sublimated-bjj-mma-shorts' ? ['high-split-grappling-shorts-specifications', 'high-split-vs-standard-grappling-shorts', '2-in-1-grappling-shorts-liner-construction', 'grappling-shorts-waistband-silicone-grip'] : ['training-shorts-fabric-ventilation-pocket-guide', 'fightwear-quality-inspection-checklist', 'prepare-artwork-for-sublimation', 'custom-fightwear-sampling-moq']} />
 
       <section className="customization-cta">
