@@ -21,6 +21,39 @@
   ],
   "products": [
     {
+      "id": "snake-scale-mma-fight-shorts",
+      "categoryId": "sublimated-bjj-mma-shorts",
+      "name": "Pro Snake-Scale MMA Fight Shorts",
+      "image": "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-black-front.webp",
+      "images": [
+        "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-black-front.webp",
+        "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-black-angle.webp",
+        "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-black-slit.webp",
+        "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-black-waist.webp",
+        "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-black-drawcord.webp",
+        "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-black-inner.webp",
+        "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-white-front.webp",
+        "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-white-angle.webp",
+        "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-white-drawcord.webp",
+        "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-white-inner.webp",
+        "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-navy-front.webp",
+        "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-navy-back.webp",
+        "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-navy-waist.webp",
+        "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-navy-drawcord.webp",
+        "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-navy-inner.webp",
+        "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-grey-waist.webp",
+        "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-grey-drawcord.webp",
+        "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-grey-inner.webp"
+      ],
+      "description": "Custom snake-scale MMA fight shorts with hook-and-loop fly, internal drawcord, stretch crotch gusset and curved side openings. Four color references in one product.",
+      "features": [
+        "4 Color Reference SKUs",
+        "Hook-and-Loop + Drawcord",
+        "Stretch Crotch Gusset",
+        "Private Label OEM/ODM"
+      ]
+    },
+    {
       "id": "cyber-gradient-training-fight-shorts",
       "categoryId": "sublimated-training-shorts",
       "name": "Cyber-Gradient Pro Training & Fight Shorts",

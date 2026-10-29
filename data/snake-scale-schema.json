@@ -1,0 +1,181 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProductGroup",
+      "@id": "https://www.tontongear.com/products/snake-scale-mma-fight-shorts#product",
+      "name": "Pro Snake-Scale MMA Fight Shorts",
+      "description": "Develop custom snake-scale MMA fight shorts with a hook-and-loop fly, internal drawcord and stretch crotch gusset. Four color references, private-label logos and OEM/ODM support.",
+      "url": "https://www.tontongear.com/products/snake-scale-mma-fight-shorts",
+      "productGroupID": "TT-MMA-SS01",
+      "variesBy": [
+        "https://schema.org/color"
+      ],
+      "brand": {
+        "@type": "Brand",
+        "name": "TONTON"
+      },
+      "image": [
+        "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-black-front.webp",
+        "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-white-front.webp",
+        "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-navy-front.webp",
+        "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-grey-waist.webp"
+      ],
+      "material": "Supplied brief: 100% micro-polyester shell; 88% polyester / 12% spandex gusset. Confirm selected fabric records.",
+      "hasVariant": [
+        {
+          "@type": "Product",
+          "@id": "https://www.tontongear.com/products/snake-scale-mma-fight-shorts#TT-MMA-SS01-BLK",
+          "name": "Pro Snake-Scale MMA Fight Shorts — Stealth Black",
+          "sku": "TT-MMA-SS01-BLK",
+          "color": "Stealth Black",
+          "image": "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-black-front.webp",
+          "url": "https://www.tontongear.com/products/snake-scale-mma-fight-shorts?color=black",
+          "isVariantOf": {
+            "@id": "https://www.tontongear.com/products/snake-scale-mma-fight-shorts#product"
+          }
+        },
+        {
+          "@type": "Product",
+          "@id": "https://www.tontongear.com/products/snake-scale-mma-fight-shorts#TT-MMA-SS01-GRY",
+          "name": "Pro Snake-Scale MMA Fight Shorts — Tactical Grey",
+          "sku": "TT-MMA-SS01-GRY",
+          "color": "Tactical Grey",
+          "image": "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-grey-waist.webp",
+          "url": "https://www.tontongear.com/products/snake-scale-mma-fight-shorts?color=grey",
+          "isVariantOf": {
+            "@id": "https://www.tontongear.com/products/snake-scale-mma-fight-shorts#product"
+          }
+        },
+        {
+          "@type": "Product",
+          "@id": "https://www.tontongear.com/products/snake-scale-mma-fight-shorts#TT-MMA-SS01-WHT",
+          "name": "Pro Snake-Scale MMA Fight Shorts — Frost White",
+          "sku": "TT-MMA-SS01-WHT",
+          "color": "Frost White",
+          "image": "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-white-front.webp",
+          "url": "https://www.tontongear.com/products/snake-scale-mma-fight-shorts?color=white",
+          "isVariantOf": {
+            "@id": "https://www.tontongear.com/products/snake-scale-mma-fight-shorts#product"
+          }
+        },
+        {
+          "@type": "Product",
+          "@id": "https://www.tontongear.com/products/snake-scale-mma-fight-shorts#TT-MMA-SS01-NVY",
+          "name": "Pro Snake-Scale MMA Fight Shorts — Midnight Navy",
+          "sku": "TT-MMA-SS01-NVY",
+          "color": "Midnight Navy",
+          "image": "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-navy-front.webp",
+          "url": "https://www.tontongear.com/products/snake-scale-mma-fight-shorts?color=navy",
+          "isVariantOf": {
+            "@id": "https://www.tontongear.com/products/snake-scale-mma-fight-shorts#product"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.tontongear.com/products/snake-scale-mma-fight-shorts#webpage",
+      "url": "https://www.tontongear.com/products/snake-scale-mma-fight-shorts",
+      "name": "Custom MMA Fight Shorts | Snake-Scale No-Gi Grappling | TONTON",
+      "description": "Develop custom snake-scale MMA fight shorts with a hook-and-loop fly, internal drawcord and stretch crotch gusset. Four color references, private-label logos and OEM/ODM support.",
+      "inLanguage": "en",
+      "dateModified": "2026-10-29",
+      "mainEntity": {
+        "@id": "https://www.tontongear.com/products/snake-scale-mma-fight-shorts#product"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the TONTON Pro Snake-Scale MMA Fight Short?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is a custom MMA and No-Gi grappling shorts development reference with a scale-pattern shell, hook-and-loop fly, internal drawcord, stretch crotch gusset and curved side openings. Buyers can develop their own colors, logo positions, sizing and labels."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which colors and SKUs are available as references?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Stealth Black: TT-MMA-SS01-BLK; Tactical Grey: TT-MMA-SS01-GRY; Frost White: TT-MMA-SS01-WHT; Midnight Navy: TT-MMA-SS01-NVY. These website reference SKUs identify color options, not ready-stock inventory. Grey currently has detail photographs rather than a complete front view."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the shell and gusset materials?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The supplied brief specifies a 100% micro-polyester shell and an 88% polyester / 12% spandex stretch-knit gusset. Confirm exact GSM, material records and performance on the selected sample before bulk production."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the snake-scale effect jacquard or sublimation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The photographs establish the visible scale-like pattern. They do not determine whether it is jacquard, sublimation or another finish. Approve the chosen material and decoration process with a swatch and sample."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can these shorts be used for MMA or No-Gi BJJ competition?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Review the actual garment against the organizer’s current equipment rules, including pockets, hardware, exposed hook-and-loop and drawcords. This product page does not certify competition approval."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are the waistband and seams guaranteed never to slip or tear?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No measured test is supplied for absolute non-slip, tear-proof or lifetime durability claims. Check closure security, elastic recovery, seam strength and mobility with a physical fit sample."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a private-label brand customize the design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Discuss colors, scale artwork, waist tab, leg emblem, inner labels, pattern dimensions and packaging. Confirm artwork permissions and the final construction before quotation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do MOQ, mixed sizes and sampling work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Selected custom projects start at 10 pieces; minimums per style, design and colorway require confirmation. Send a size allocation and measurement chart. The advertised 3–7 day sample target starts after artwork and details are confirmed; material sourcing, patterns and revisions may extend it."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "All Products",
+          "item": "https://www.tontongear.com/products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "MMA & Grappling Shorts",
+          "item": "https://www.tontongear.com/products/category/mma-grappling-shorts"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Pro Snake-Scale MMA Fight Shorts",
+          "item": "https://www.tontongear.com/products/snake-scale-mma-fight-shorts"
+        }
+      ]
+    }
+  ]
+}

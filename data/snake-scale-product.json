@@ -1,0 +1,227 @@
+{
+  "id": "snake-scale-mma-fight-shorts",
+  "name": "Pro Snake-Scale MMA Fight Shorts",
+  "seoTitle": "Custom MMA Fight Shorts | Snake-Scale No-Gi Grappling | TONTON",
+  "seoDescription": "Develop custom snake-scale MMA fight shorts with a hook-and-loop fly, internal drawcord and stretch crotch gusset. Four color references, private-label logos and OEM/ODM support.",
+  "base": "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/",
+  "variants": [
+    {
+      "key": "black",
+      "name": "Stealth Black",
+      "sku": "TT-MMA-SS01-BLK",
+      "hex": "#17191c",
+      "image": "black-front",
+      "note": "Front garment reference."
+    },
+    {
+      "key": "grey",
+      "name": "Tactical Grey",
+      "sku": "TT-MMA-SS01-GRY",
+      "hex": "#686d72",
+      "image": "grey-waist",
+      "note": "Waist and fabric detail reference; a full front photograph is not supplied."
+    },
+    {
+      "key": "white",
+      "name": "Frost White",
+      "sku": "TT-MMA-SS01-WHT",
+      "hex": "#eeeeeb",
+      "image": "white-front",
+      "note": "Front garment reference."
+    },
+    {
+      "key": "navy",
+      "name": "Midnight Navy",
+      "sku": "TT-MMA-SS01-NVY",
+      "hex": "#15243e",
+      "image": "navy-front",
+      "note": "Additional navy colorway shown in the supplied photographs."
+    }
+  ],
+  "features": [
+    [
+      "Snake-scale visual texture",
+      "A subtle scale-like pattern gives the shell a low-profile combat aesthetic. The visible pattern is a design reference; confirm whether the approved version uses print, jacquard or another process.",
+      "black-waist"
+    ],
+    [
+      "Hook-and-loop fly + internal drawcord",
+      "The supplied open-waist photographs show a hook-and-loop closure and internal cord. Review closure overlap, cord routing and security on the approved sample.",
+      "black-drawcord"
+    ],
+    [
+      "Stretch crotch gusset",
+      "A contrasting black panel is visible between the legs. The supplied gusset brief is 88% polyester / 12% spandex; confirm panel dimensions and movement during fitting.",
+      "white-front"
+    ],
+    [
+      "Curved side openings",
+      "Shaped side slits and sewn hems provide a movement-oriented cut. Agree opening height, edge finishing and seam reinforcement for the intended training use.",
+      "black-slit"
+    ]
+  ],
+  "craft": [
+    [
+      "Closure construction",
+      "Inspect hook-and-loop alignment, stitch rows, edge coverage and drawcord routing. Confirm how exposed closure surfaces are covered during contact training.",
+      "black-inner"
+    ],
+    [
+      "Rear-waist shaping",
+      "The navy rear view shows gathered elastic at the back waistband. Approve elastic tension, waistband recovery and actual waist measurements by size.",
+      "navy-back"
+    ],
+    [
+      "Gusset & panel junctions",
+      "Check the gusset and crotch seam from both sides. Record seam type, thread and stress-point reinforcement on the production specification.",
+      "white-angle"
+    ],
+    [
+      "Inside finishing & branding",
+      "Inside-waist branding and finishing are shown in the supplied close-ups. Specify your own labels and leg emblem; silicone material and retroreflective performance require separate confirmation.",
+      "white-inner"
+    ]
+  ],
+  "photos": [
+    [
+      "black-front",
+      "Stealth Black — front"
+    ],
+    [
+      "black-angle",
+      "Stealth Black — angled fit"
+    ],
+    [
+      "black-slit",
+      "Curved slit and sewn hem"
+    ],
+    [
+      "black-waist",
+      "Scale-pattern shell and waist tab"
+    ],
+    [
+      "black-drawcord",
+      "Internal drawcord and fly"
+    ],
+    [
+      "black-inner",
+      "Open waistband and inner finish"
+    ],
+    [
+      "white-front",
+      "Frost White — front and gusset"
+    ],
+    [
+      "white-angle",
+      "Frost White — angled fit"
+    ],
+    [
+      "white-drawcord",
+      "Frost White — drawcord"
+    ],
+    [
+      "white-inner",
+      "Frost White — inner waistband"
+    ],
+    [
+      "navy-front",
+      "Midnight Navy — front"
+    ],
+    [
+      "navy-back",
+      "Midnight Navy — rear waist"
+    ],
+    [
+      "navy-waist",
+      "Midnight Navy — shell and label"
+    ],
+    [
+      "navy-drawcord",
+      "Midnight Navy — drawcord"
+    ],
+    [
+      "navy-inner",
+      "Midnight Navy — inside finish"
+    ],
+    [
+      "grey-waist",
+      "Tactical Grey — scale texture"
+    ],
+    [
+      "grey-drawcord",
+      "Tactical Grey — closure detail"
+    ],
+    [
+      "grey-inner",
+      "Tactical Grey — inner waistband"
+    ]
+  ],
+  "specs": [
+    [
+      "Main shell",
+      "100% micro-polyester — supplied composition brief. Exact GSM, yarn specification and mechanical stretch require a selected fabric record."
+    ],
+    [
+      "Crotch gusset",
+      "88% polyester / 12% spandex stretch knit — supplied gusset specification; confirm panel coverage and recovery on the sample."
+    ],
+    [
+      "Waist and fly",
+      "Hook-and-loop fly with internal drawcord; gathered rear waist visible in the supplied navy reference. Confirm the selected construction by colorway."
+    ],
+    [
+      "Color SKUs",
+      "Stealth Black, Tactical Grey, Frost White and Midnight Navy. Grey is shown through detail photographs; size availability is confirmed per order."
+    ],
+    [
+      "Fit and cut",
+      "Above-knee combat silhouette with curved side openings. Approve waist, hip, rise, outseam, inseam, gusset width and slit height with numerical tolerances."
+    ],
+    [
+      "Branding",
+      "Waist tab, inner-waist branding and geometric leg emblem. Label material, logo process and reflective properties are approval items, not established by the photograph alone."
+    ],
+    [
+      "Recommended development",
+      "MMA, No-Gi BJJ, striking and functional training. Check pocket/hardware restrictions, drawcord security and event rules for the actual garment."
+    ],
+    [
+      "Care direction",
+      "Fasten hook-and-loop surfaces before washing. Wash cold inside out; hang dry preferred. Approve the final care label for the selected materials and branding."
+    ]
+  ],
+  "faqs": [
+    [
+      "What is the TONTON Pro Snake-Scale MMA Fight Short?",
+      "It is a custom MMA and No-Gi grappling shorts development reference with a scale-pattern shell, hook-and-loop fly, internal drawcord, stretch crotch gusset and curved side openings. Buyers can develop their own colors, logo positions, sizing and labels."
+    ],
+    [
+      "Which colors and SKUs are available as references?",
+      "Stealth Black: TT-MMA-SS01-BLK; Tactical Grey: TT-MMA-SS01-GRY; Frost White: TT-MMA-SS01-WHT; Midnight Navy: TT-MMA-SS01-NVY. These website reference SKUs identify color options, not ready-stock inventory. Grey currently has detail photographs rather than a complete front view."
+    ],
+    [
+      "What are the shell and gusset materials?",
+      "The supplied brief specifies a 100% micro-polyester shell and an 88% polyester / 12% spandex stretch-knit gusset. Confirm exact GSM, material records and performance on the selected sample before bulk production."
+    ],
+    [
+      "Is the snake-scale effect jacquard or sublimation?",
+      "The photographs establish the visible scale-like pattern. They do not determine whether it is jacquard, sublimation or another finish. Approve the chosen material and decoration process with a swatch and sample."
+    ],
+    [
+      "Can these shorts be used for MMA or No-Gi BJJ competition?",
+      "Review the actual garment against the organizer’s current equipment rules, including pockets, hardware, exposed hook-and-loop and drawcords. This product page does not certify competition approval."
+    ],
+    [
+      "Are the waistband and seams guaranteed never to slip or tear?",
+      "No measured test is supplied for absolute non-slip, tear-proof or lifetime durability claims. Check closure security, elastic recovery, seam strength and mobility with a physical fit sample."
+    ],
+    [
+      "Can a private-label brand customize the design?",
+      "Yes. Discuss colors, scale artwork, waist tab, leg emblem, inner labels, pattern dimensions and packaging. Confirm artwork permissions and the final construction before quotation."
+    ],
+    [
+      "How do MOQ, mixed sizes and sampling work?",
+      "Selected custom projects start at 10 pieces; minimums per style, design and colorway require confirmation. Send a size allocation and measurement chart. The advertised 3–7 day sample target starts after artwork and details are confirmed; material sourcing, patterns and revisions may extend it."
+    ]
+  ]
+}

@@ -1,6 +1,8 @@
 export const CONTENT_REVIEW_DATE = '2026-09-15';
 
 export const ROUTE_LAST_MODIFIED: Record<string, string> = {
+  '/products/snake-scale-mma-fight-shorts': '2026-10-29',
+
   '/products/cyber-gradient-training-fight-shorts': '2026-10-28',
 
   '/products': '2026-10-28',
