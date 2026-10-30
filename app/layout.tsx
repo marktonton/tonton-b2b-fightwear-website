@@ -1,8 +1,11 @@
+import HeaderContact from '../components/HeaderContact';
+import FloatingContact from '../components/FloatingContact';
 import { serializeStructuredData } from '../lib/structured-data';
 import React from 'react';
 import type { Metadata } from 'next';
 import './globals.css';
 import '../components/product-nav.css';
+import '../components/contact-access.css';
 import '../components/buyer-fit.css';
 import './site-map/site-map.css';
 import { resolveImage } from '../lib/image-resolver';
@@ -70,6 +73,7 @@ export default function RootLayout({
             <img src={resolveImage('/assets/logo.png')} alt="TONTON" style={{ width: '130px' }} />
             <span>OEM / ODM Manufacturer</span>
           </a>
+          <HeaderContact />
           <nav aria-label="Main navigation">
             <a href="/">Home</a>
             <div className="nav-dropdown products-nav">
@@ -155,6 +159,7 @@ export default function RootLayout({
             <p>Privacy Policy | Terms of Service</p>
           </div>
         </footer>
+        <FloatingContact />
       </body>
     </html>
   );

@@ -1,0 +1,5 @@
+export default function ContactIcon({ kind }: { kind: 'whatsapp' | 'email' | 'phone' | 'inquiry' | 'close' | 'contact' }) {
+  return <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    {kind === 'email' ? <><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></> : kind === 'phone' ? <path d="M8 3H5a2 2 0 0 0-2 2c0 9 7 16 16 16a2 2 0 0 0 2-2v-3l-5-2-2 2a14 14 0 0 1-6-6l2-2-2-5Z"/> : kind === 'whatsapp' ? <><path d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.6a8.5 8.5 0 1 1 16.3-3.9Z"/><path d="m9 7-1.5 1c-.8 3 2.5 6.6 5.5 7l1.5-1.5-2-1-1 1a7 7 0 0 1-3-3l1-1L9 7Z"/></> : kind === 'close' ? <path d="m6 6 12 12M6 18 18 6"/> : kind === 'inquiry' ? <><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></> : <><path d="M4 13v-1a8 8 0 0 1 16 0v1"/><rect x="3" y="11" width="4" height="7" rx="2"/><rect x="17" y="11" width="4" height="7" rx="2"/><path d="M19 18c0 2-3 3-6 3"/></>}
+  </svg>;
+}
