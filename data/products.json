@@ -316,6 +316,30 @@
         "Mixed Athlete Sizing",
         "Sample Approval"
       ]
+    },
+    {
+      "id": "samurai-kabuto-long-sleeve-rash-guard",
+      "categoryId": "sublimated-rash-guards",
+      "name": "Samurai Kabuto Long-Sleeve Rash Guard",
+      "image": "https://assets.tontongear.com/assets/products/samurai-kabuto-rash-guard/samurai-kabuto-front-fit.webp",
+      "images": [
+        "https://assets.tontongear.com/assets/products/samurai-kabuto-rash-guard/samurai-kabuto-front-fit.webp",
+        "https://assets.tontongear.com/assets/products/samurai-kabuto-rash-guard/samurai-kabuto-back-detail.webp",
+        "https://assets.tontongear.com/assets/products/samurai-kabuto-rash-guard/samurai-kabuto-artwork-closeup.webp",
+        "https://assets.tontongear.com/assets/products/samurai-kabuto-rash-guard/samurai-kabuto-sleeve-detail.webp",
+        "https://assets.tontongear.com/assets/products/samurai-kabuto-rash-guard/samurai-kabuto-hem-closeup.webp",
+        "https://assets.tontongear.com/assets/products/samurai-kabuto-rash-guard/samurai-kabuto-side-fit.webp",
+        "https://assets.tontongear.com/assets/products/samurai-kabuto-rash-guard/samurai-kabuto-crossed-arms.webp",
+        "https://assets.tontongear.com/assets/products/samurai-kabuto-rash-guard/samurai-kabuto-back-fit.webp",
+        "https://assets.tontongear.com/assets/products/samurai-kabuto-rash-guard/samurai-kabuto-chest-detail.webp",
+        "https://assets.tontongear.com/assets/products/samurai-kabuto-rash-guard/samurai-kabuto-hem-detail.webp"
+      ],
+      "description": "Custom long-sleeve BJJ and MMA rash guard with samurai Kabuto and sakura back artwork, blue labyrinth sleeves and raglan construction.",
+      "features": [
+        "Custom Sublimation Artwork",
+        "Raglan & Flatlock Construction",
+        "Private-Label Development"
+      ]
     }
   ]
 }

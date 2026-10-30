@@ -1,0 +1,50 @@
+{
+  "samurai-kabuto-artwork-closeup.webp": {
+    "bytes": 912124,
+    "sha256": "3bb478d4793e777f75086174d034e158e1442f176edb21b13c0a1db7d1f23034"
+  },
+  "samurai-kabuto-back-detail.webp": {
+    "bytes": 145920,
+    "sha256": "c77cdc76a9eec1a4608162d25f6803e0bdc797b47d43ce01b14bc760bffa75ea"
+  },
+  "samurai-kabuto-back-fit.webp": {
+    "bytes": 84042,
+    "sha256": "4b80872476f6bd04f94fbf1bae0e6650b6e6261f90c57e0d9dfe2190645e1123"
+  },
+  "samurai-kabuto-chest-detail.webp": {
+    "bytes": 32916,
+    "sha256": "ddb3d9e5e6bd644bbf27fd56ddd64519a7293c150bc2d236bac3b5ed4361c4c1"
+  },
+  "samurai-kabuto-crossed-arms.webp": {
+    "bytes": 67704,
+    "sha256": "3688fcb44668f4dc75d1d47f5eb15f24b3278f53c825564ba57ad5efb79bbff8"
+  },
+  "samurai-kabuto-film-1080.mp4": {
+    "bytes": 3690997,
+    "sha256": "5427a4a1d5e2bf705c28986d8a088a681c12d33ecf180086e8abeae16ca66484"
+  },
+  "samurai-kabuto-film-720.mp4": {
+    "bytes": 1792072,
+    "sha256": "c99ce7e17c5ec6cce81a47436670adb112fc23f60fb3482b8eaf323ec48f8cd0"
+  },
+  "samurai-kabuto-front-fit.webp": {
+    "bytes": 55832,
+    "sha256": "1868e01e8da1a18d2337cf10681875e25d1cb8a960e554d2212f53cba2fe7634"
+  },
+  "samurai-kabuto-hem-closeup.webp": {
+    "bytes": 614606,
+    "sha256": "6decadd67cb6330d1bc8bc6d29847ece7e8cb33dbaf8a105f16a05e407a23e06"
+  },
+  "samurai-kabuto-hem-detail.webp": {
+    "bytes": 108306,
+    "sha256": "b6c14a32fc2486098a816b735b9adb0ca5a0162119e28d0d4faf4e54340852d5"
+  },
+  "samurai-kabuto-side-fit.webp": {
+    "bytes": 51352,
+    "sha256": "b18c7e5c2ec34e941714ff0156777e97b925288a38c4899d8564744e82a44d42"
+  },
+  "samurai-kabuto-sleeve-detail.webp": {
+    "bytes": 77166,
+    "sha256": "c3035f4270a1efca2995bea573de3ac2daa7b3fb9323b47a0ff43d680e8a8a1a"
+  }
+}

@@ -1,3 +1,5 @@
+import KabutoRashGuardLanding from './KabutoRashGuardLanding';
+import KABUTO from '../../../data/kabuto-product.json';
 import OniRashGuardLanding from './OniRashGuardLanding';
 import ONI from '../../../data/oni-product.json';
 import SnakeScaleShortsLanding from './SnakeScaleShortsLanding';
@@ -91,7 +93,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
   }
 
   const url = `${SITE_URL}/products/${product.id}`;
-  const landingContent = product.id === ONI.id ? ONI : product.id === SNAKE_SCALE.id ? SNAKE_SCALE : product.id === CYBER_GRADIENT.id ? CYBER_GRADIENT : product.id === WHITE_COMPRESSION.id ? WHITE_COMPRESSION : isRashGuardLandingProduct(product.id)
+  const landingContent = product.id === KABUTO.id ? KABUTO : product.id === ONI.id ? ONI : product.id === SNAKE_SCALE.id ? SNAKE_SCALE : product.id === CYBER_GRADIENT.id ? CYBER_GRADIENT : product.id === WHITE_COMPRESSION.id ? WHITE_COMPRESSION : isRashGuardLandingProduct(product.id)
     ? RASH_GUARD_LANDING_CONTENT[product.id]
     : isHighSplitGrapplingShorts(product.id)
       ? HIGH_SPLIT_GRAPPLING_SHORTS_CONTENT
@@ -134,6 +136,8 @@ export default function ProductDetailPage({ params }: PageProps) {
   if (!product) {
     notFound();
   }
+
+  if (product.id === KABUTO.id) return <KabutoRashGuardLanding />;
 
   if (product.id === ONI.id) return <OniRashGuardLanding />;
 
