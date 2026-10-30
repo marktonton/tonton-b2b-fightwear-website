@@ -4,6 +4,7 @@ import { serializeStructuredData } from '../lib/structured-data';
 import React from 'react';
 import type { Metadata } from 'next';
 import './globals.css';
+import '../components/product-gallery-layout.css';
 import '../components/product-nav.css';
 import '../components/contact-access.css';
 import '../components/buyer-fit.css';
