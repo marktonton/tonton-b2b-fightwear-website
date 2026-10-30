@@ -1,3 +1,4 @@
+import CustomerCaseTeaser from '../../../components/CustomerCaseTeaser';
 import BuyerLearningPath from '../../../components/BuyerLearningPath';
 import BuyerFitSpecification from '../../../components/BuyerFitSpecification';
 import { withPageSocialMetadata } from '../../../lib/page-metadata';
@@ -696,6 +697,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
 
       {isRashGuardPage && <BuyerFitSpecification family="rashGuard" />}
 
+      {(isRashGuardPage || isFightShortsPage) && <CustomerCaseTeaser />}
       <BuyerLearningPath family={isRashGuardPage ? 'rashGuard' : isTrainingShortsPage ? 'trainingShorts' : 'mmaShorts'} />
       <RelatedResources slugs={category.id === 'sublimated-rash-guards' ? ['rash-guard-fabric-construction', 'flatlock-vs-overlock-rash-guard-seams', 'rash-guard-sublimation-logo-placement', 'prepare-artwork-for-sublimation'] : category.id === 'sublimated-bjj-mma-shorts' ? ['high-split-grappling-shorts-specifications', 'high-split-vs-standard-grappling-shorts', '2-in-1-grappling-shorts-liner-construction', 'grappling-shorts-waistband-silicone-grip'] : ['training-shorts-fabric-ventilation-pocket-guide', 'fightwear-quality-inspection-checklist', 'prepare-artwork-for-sublimation', 'custom-fightwear-sampling-moq']} />
 

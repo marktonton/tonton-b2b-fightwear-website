@@ -4,6 +4,7 @@ import { serializeStructuredData } from '../lib/structured-data';
 import './home-product-media.css';
 
 import { ORGANIZATION_ID, SITE_URL } from '../lib/site-entity';
+import CustomerCaseTeaser from '../components/CustomerCaseTeaser';
 import BuyerLearningPath from '../components/BuyerLearningPath';
 import BuyerFacts from '../components/BuyerFacts';
 import BuyerSolutionsLinks from '../components/BuyerSolutionsLinks';
@@ -563,6 +564,7 @@ export default function HomePage() {
 
       <BuyerFacts />
       <BuyerSolutionsLinks />
+      <CustomerCaseTeaser />
       <BuyerLearningPath />
       <RelatedResources />
 

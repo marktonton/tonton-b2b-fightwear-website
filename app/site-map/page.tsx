@@ -11,7 +11,7 @@ export const metadata: Metadata = withPageSocialMetadata({
   alternates: { canonical: `${SITE_URL}/site-map` },
 });
 
-const groups = ['Company and project planning', 'Custom product programs', 'Products', 'Materials', 'Factory processes', 'Buyer solutions', 'Buyer guides', 'Blog articles'];
+const groups = ['Company and project planning', 'Customer cases', 'Custom product programs', 'Products', 'Materials', 'Factory processes', 'Buyer solutions', 'Buyer guides', 'Blog articles'];
 export default function SiteMapPage() {
   const schema = { '@context': 'https://schema.org', '@type': 'CollectionPage', url: `${SITE_URL}/site-map`, name: 'TONTON products, materials and buyer guide directory', description: metadata.description, mainEntity: { '@type': 'ItemList', numberOfItems: pages.length, itemListElement: pages.map((page, index) => ({ '@type': 'ListItem', position: index + 1, item: { '@type': 'WebPage', name: page.title, description: page.description, url: `${SITE_URL}${page.path}` } })) } };
   return <article className="site-directory">

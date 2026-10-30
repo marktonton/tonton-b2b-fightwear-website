@@ -370,5 +370,17 @@
     "title": "What Affects the Cost of Custom Fightwear?",
     "description": "Understand custom rash guard and MMA shorts cost drivers: quantity allocation, fabrics, construction, decoration, labels, packaging, sampling and delivery scope.",
     "group": "Blog articles"
+  },
+  {
+    "path": "/cases",
+    "title": "Customer Cases",
+    "description": "Explore TONTON customer cases for custom rash guards, MMA shorts and fightwear, supported by anonymized order records, project communication and customer feedback.",
+    "group": "Customer cases"
+  },
+  {
+    "path": "/cases/us-repeat-customer",
+    "title": "Repeat Custom Rash Guard & Shorts Orders for a U.S. Customer",
+    "description": "An anonymized TONTON customer case with 2025–2026 Alibaba order records, repeat rash guard and shorts purchases, specification conversations and recorded customer feedback.",
+    "group": "Customer cases"
   }
 ]

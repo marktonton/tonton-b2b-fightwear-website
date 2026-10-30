@@ -1,3 +1,4 @@
+import { CUSTOMER_CASES } from '../lib/customer-cases';
 import type { MetadataRoute } from 'next';
 import productsData from '../data/products.json';
 import { customizationCategories } from '../lib/customization-pages';
@@ -13,6 +14,8 @@ const modified = (pathname: string) => new Date(`${getRouteModifiedDate(pathname
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
+    { url: `${SITE_URL}/cases`, lastModified: modified('/cases'), changeFrequency: 'monthly', priority: 0.8 },
+    ...CUSTOMER_CASES.map(item => ({ url: `${SITE_URL}/cases/${item.slug}`, lastModified: new Date(`${item.published}T00:00:00.000Z`), changeFrequency: 'monthly' as const, priority: 0.7 })),
     { url: `${SITE_URL}/products`, lastModified: modified('/products'), changeFrequency: 'weekly', priority: 0.8 },
     { url: `${SITE_URL}/products/category/rash-guards`, lastModified: modified('/products/category/rash-guards'), changeFrequency: 'weekly', priority: 0.8 },
     { url: `${SITE_URL}/products/category/mma-grappling-shorts`, lastModified: modified('/products/category/mma-grappling-shorts'), changeFrequency: 'weekly', priority: 0.8 },
