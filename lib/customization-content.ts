@@ -45,11 +45,11 @@ export type CustomizationPageContent = {
 
 export const customizationPageContent: Record<string, CustomizationPageContent> = {
   'sublimated-rash-guards': {
-    seoDescription: 'Custom sublimated graphic Rash Guard manufacturer for BJJ, MMA and grappling brands. Inspect real fabric, mesh, flatlock seams, silicone grip and OEM options.',
+    seoDescription: 'Custom BJJ rash guard manufacturer for brands and academies. Compare long and short sleeves, sublimation, fabric, flatlock seams and low-MOQ private-label OEM options.',
     quickAnswerQuestion: 'What should buyers specify for a custom sublimated Rash Guard?',
     quickAnswer: 'A custom Rash Guard brief should define the intended sport, fit, sleeve length, size range, artwork, panel layout, seam direction, fabric requirements and optional hem grip. TONTON reviews these decisions together, then confirms the final composition, weight, measurements and construction against the approved sample.',
     kicker: 'CUSTOM SUBLIMATED RASH GUARD MANUFACTURER',
-    heroLead: 'Develop custom sublimated graphic Rash Guards with your colors, all-over artwork, sponsor marks, and team identity—with fabric, mesh panels, seams, and finishing details reviewed before production.',
+    heroLead: 'TONTON manufactures custom sublimated rash guards for BJJ academies, MMA gyms and private-label brands. Develop long- or short-sleeve compression tops with your artwork, labels and fit; confirm the fabric, flatlock seams and optional hem grip on an approved sample.',
     heroImage: `${RASH_GUARD_NEW_SERIES_ROOT}/white-rash-guard-three-quarter.webp`,
     heroAlt: 'White short-sleeve custom Rash Guard shown from a three-quarter front angle',
     overviewTitle: 'Build a rash guard around the way your customers train.',
@@ -74,6 +74,8 @@ export const customizationPageContent: Record<string, CustomizationPageContent> 
     processProduct: 'rash guard style, sleeve length, fit direction, quantity, and target user',
     faqTitle: 'Custom rash guard questions buyers ask before ordering',
     faqs: [
+      { question: 'Can you develop private-label rash guards with our neck labels and packaging?', answer: 'Yes. Specify the logo method, neck-label content, hem branding, size and care labels, and individual packing requirements in your brief. Review label feel, print placement and the packing specification with your sample; these details can affect the quotation and minimum quantity.' },
+      { question: 'How should we check a rash guard sample for a repeat order?', answer: 'Approve numerical measurements and tolerances, sleeve and torso fit, fabric stretch and recovery, artwork alignment, seam comfort and any silicone hem grip. Agree wash-test requirements and keep the approved garment, artwork revision, material record and size chart as the reorder reference. Reconfirm material availability before each repeat order.' },
       { question: 'What information should I send for a custom rash guard quote?', answer: 'Send the required quantity, short- or long-sleeve preference, target users, size range, artwork or logo files, and any reference products. These details help us define the development brief and confirm the next step.' },
       { question: 'Can TONTON make rash guards for BJJ academies and MMA teams?', answer: 'Yes. We support custom rash guard programs for BJJ academies, MMA gyms, grappling teams, brands, and distributors. Team colors, sponsor marks, names, and coordinated designs can be reviewed during artwork development.' },
       { question: 'What is the MOQ for custom sublimated rash guards?', answer: 'Custom projects can start from 10 pieces. The final order structure is confirmed against the style, size breakdown, artwork, and other project requirements.' },
@@ -175,11 +177,11 @@ export const customizationPageContent: Record<string, CustomizationPageContent> 
     ],
   },
   'sublimated-bjj-mma-shorts': {
-    seoDescription: 'Custom BJJ and MMA shorts for academies, gyms and private-label brands. Low MOQ from 10 pieces; review sublimation, fit, liners and samples. Request a quote.',
+    seoDescription: 'Sublimated MMA shorts manufacturer for private-label brands and BJJ academies. Compare grappling cuts, liners, waistbands and low-MOQ OEM/ODM sample development.',
     quickAnswerQuestion: 'What should buyers confirm for custom BJJ and MMA shorts?',
     quickAnswer: 'Buyers should confirm the intended combat use, shell and liner construction, split height, waistband security, fit, size range, artwork and reinforcement points. TONTON uses the product brief and physical sample to verify movement, coverage, material direction and branding before bulk production.',
     kicker: 'CUSTOM BJJ & MMA SHORTS MANUFACTURING',
-    heroLead: 'Custom BJJ shorts and MMA shorts for academies, gyms and private-label brands, with projects starting from 10 pieces. Develop sublimated logos and team colors around your fit, waistband and liner requirements; approve a physical sample before bulk production.',
+    heroLead: 'Work with TONTON on custom sublimated MMA shorts, BJJ shorts and grappling shorts for your academy or private-label range. Compare an outer combat short with a high-split 2-in-1 construction, then approve fabric, waistband, size grading and artwork. Selected projects start from 10 pieces; confirm minimums by style and design.',
     heroImage: `${FIGHT_SHORTS_CATEGORY_ROOT}/hero-high-split-white-liner.webp`,
     heroAlt: 'Black 2-in-1 high-split fight shorts with a supportive white compression liner in motion',
     overviewTitle: 'Freedom outside. Support inside.',
@@ -204,6 +206,8 @@ export const customizationPageContent: Record<string, CustomizationPageContent> 
     processProduct: 'BJJ, MMA, or grappling use, fit, length, waistband, quantity, and artwork direction',
     faqTitle: 'Custom BJJ and MMA shorts questions buyers ask before ordering',
     faqs: [
+      { question: 'Should we order outer fight shorts or 2-in-1 lined grappling shorts?', answer: 'Choose the construction around intended use, coverage and wearer preference. An outer short has a separate shell specification; a 2-in-1 version also needs liner composition, weight, length and joining details. Compare a physical sample for movement, drying, seam comfort and shell-to-liner fit before selecting your production version.' },
+      { question: 'What quality checks should a private-label MMA shorts sample include?', answer: 'Review waist and leg measurements, closure security, drawcord finish, split reinforcement, gusset stretch, liner attachment where present, panel print alignment and required labels. Agree a measurement tolerance and wash-test plan. Record corrections on the sample specification and retain the approved version for repeat orders.' },
       { question: 'Can TONTON manufacture sublimated MMA shorts for a private-label brand?', answer: 'Yes. TONTON supports OEM and ODM development of custom sublimated MMA shorts for fightwear brands, gyms and teams. Share the shell and liner direction, fit, size range, graphics, labels and quantity. Artwork placement and material compatibility are reviewed before sampling, and bulk production follows the approved sample and specification.' },
       { question: 'What should I compare when choosing a BJJ shorts manufacturer?', answer: 'Compare intended use, outer-short length, split height, waistband closure, optional liner, fabric direction, stitching, size grading and branding. Request the same specification and quantity breakdown from each supplier, then review a physical sample. Competition requirements should be checked for the intended event rather than assumed from a product name.' },
       { question: 'What information is needed for wholesale MMA shorts pricing and repeat orders?', answer: 'Send the style reference, quantity by color and size, fabric and liner requirements, artwork status, label and packing needs, delivery destination and target date. Keep the approved artwork, size chart, construction notes and sample reference for repeat orders. MOQ, price and lead time are confirmed for the actual project.' },
