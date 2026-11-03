@@ -655,7 +655,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
         <div className="customization-faq-list">
           {content.faqs.map((faq, index) => (
             <details key={faq.question} open={index === 0}>
-              <summary><span>{isRashGuardPage || isFightShortsPage ? String(index + 1).padStart(2, '0') : `0${index + 1}`}</span>{faq.question}</summary>
+              <summary><span>{String(index + 1).padStart(2, '0')}</span>{faq.question}</summary>
               <p>{faq.answer}</p>
             </details>
           ))}
