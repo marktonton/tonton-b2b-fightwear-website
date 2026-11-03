@@ -49,7 +49,7 @@ export const ROUTE_LAST_MODIFIED: Record<string, string> = {
   '/': '2026-10-30',
   '/collections': '2026-10-28',
   '/service-support': '2026-10-26',
-  '/factory': '2026-10-27',
+  '/factory': '2026-11-03',
   '/factory/multi-head-embroidery': '2026-10-20',
   '/factory/digital-sublimation-printing': '2026-10-21',
   '/about': '2026-10-27',
