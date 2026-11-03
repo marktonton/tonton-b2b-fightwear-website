@@ -1,0 +1,133 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "@id": "https://www.tontongear.com/products/core-stealth-scallop-training-shorts#product",
+      "name": "Core Stealth Scallop Training & Fight Shorts",
+      "description": "Develop custom black training and fight shorts with scalloped side openings, pin-dot mesh lining, an elastic drawcord waist and private-label branding. TONTON OEM/ODM.",
+      "url": "https://www.tontongear.com/products/core-stealth-scallop-training-shorts",
+      "image": [
+        "https://assets.tontongear.com/assets/products/core-stealth-scallop-training-shorts/core-stealth-front.webp",
+        "https://assets.tontongear.com/assets/products/core-stealth-scallop-training-shorts/core-stealth-back.webp",
+        "https://assets.tontongear.com/assets/products/core-stealth-scallop-training-shorts/core-stealth-mesh-reveal.webp",
+        "https://assets.tontongear.com/assets/products/core-stealth-scallop-training-shorts/core-stealth-back-fit.webp",
+        "https://assets.tontongear.com/assets/products/core-stealth-scallop-training-shorts/core-stealth-drawcord-detail.webp",
+        "https://assets.tontongear.com/assets/products/core-stealth-scallop-training-shorts/core-stealth-rear-yoke-detail.webp",
+        "https://assets.tontongear.com/assets/products/core-stealth-scallop-training-shorts/core-stealth-mesh-detail.webp",
+        "https://assets.tontongear.com/assets/products/core-stealth-scallop-training-shorts/core-stealth-scallop-seam-detail.webp"
+      ],
+      "sku": "core-stealth-scallop-training-shorts",
+      "brand": {
+        "@type": "Brand",
+        "name": "TONTON"
+      },
+      "color": "Black / White",
+      "category": "Custom Training Shorts",
+      "manufacturer": {
+        "@id": "https://www.tontongear.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.tontongear.com/products/core-stealth-scallop-training-shorts#webpage",
+      "url": "https://www.tontongear.com/products/core-stealth-scallop-training-shorts",
+      "name": "Custom Black Scallop Training Shorts | Private Label | TONTON",
+      "description": "Develop custom black training and fight shorts with scalloped side openings, pin-dot mesh lining, an elastic drawcord waist and private-label branding. TONTON OEM/ODM.",
+      "inLanguage": "en",
+      "dateModified": "2026-11-03",
+      "mainEntity": {
+        "@id": "https://www.tontongear.com/products/core-stealth-scallop-training-shorts#product"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is this a full compression-lined short?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The supplied images show pin-dot mesh beneath the shell. Confirm its coverage and fit on the sample; a full compression layer must be specified separately."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I customize the logo and fit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Discuss branding positions, color, scallop depth, length, waistband, liner and private-label finishing during development."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the exact material composition?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fiber percentages and GSM have not been confirmed for this reference. Record them from the selected production swatch and approved specification."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which activities suit this reference?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use it as a starting point for gym, running, functional training and combat-sport conditioning. For MMA or no-gi BJJ competition, separately confirm event requirements, drawcord security and the selected construction."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the MOQ and sample conditions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Selected custom projects commonly start from 10 pieces, subject to construction and material availability. Confirm quantities per style and colorway. The 3–7 day sampling target starts after details and artwork are agreed; sourcing and revisions can extend it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I approve performance and care requirements?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Specify any required drying, abrasion, water-repellency, seam-strength or decoration-wash tests for the actual fabric and sample. Follow the final approved garment care label."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Products",
+          "item": "https://www.tontongear.com/products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Training Shorts",
+          "item": "https://www.tontongear.com/products/category/training-shorts"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Core Stealth Scallop Training & Fight Shorts",
+          "item": "https://www.tontongear.com/products/core-stealth-scallop-training-shorts"
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://www.tontongear.com/products/core-stealth-scallop-training-shorts#video",
+      "name": "TONTON Core Stealth Scallop Training Shorts — Product Film",
+      "description": "Supplied promotional overview of black scallop training shorts with contrast drawcord, rear yoke branding and pin-dot mesh inner construction.",
+      "thumbnailUrl": "https://assets.tontongear.com/assets/products/core-stealth-scallop-training-shorts/core-stealth-video-poster.webp",
+      "contentUrl": "https://assets.tontongear.com/assets/products/core-stealth-scallop-training-shorts/core-stealth-product-film.mp4",
+      "uploadDate": "2026-11-03T10:30:00+08:00",
+      "duration": "PT15S",
+      "isPartOf": {
+        "@id": "https://www.tontongear.com/products/core-stealth-scallop-training-shorts#webpage"
+      }
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 export const CONTENT_REVIEW_DATE = '2026-09-15';
 
 export const ROUTE_LAST_MODIFIED: Record<string, string> = {
+  '/products/core-stealth-scallop-training-shorts': '2026-11-03',
   '/products/samurai-kabuto-long-sleeve-rash-guard': '2026-10-30',
   '/cases': '2026-10-30',
   '/cases/us-repeat-customer': '2026-10-30',
@@ -23,10 +24,10 @@ export const ROUTE_LAST_MODIFIED: Record<string, string> = {
 
   '/products/cyber-gradient-training-fight-shorts': '2026-10-29',
 
-  '/products': '2026-10-30',
+  '/products': '2026-11-03',
   '/products/category/rash-guards': '2026-10-30',
   '/products/category/mma-grappling-shorts': '2026-10-28',
-  '/products/category/training-shorts': '2026-10-28',
+  '/products/category/training-shorts': '2026-11-03',
   '/products/category/teamwear-sets': '2026-10-28',
 
   '/products/white-short-sleeve-compression-rash-guard': '2026-10-29',
@@ -37,7 +38,7 @@ export const ROUTE_LAST_MODIFIED: Record<string, string> = {
   '/solutions/private-label-fightwear': '2026-10-28',
   '/solutions/bjj-academy-uniforms': '2026-10-28',
   '/resources/custom-fightwear-sampling-moq': '2026-10-29',
-  '/site-map': '2026-11-02',
+  '/site-map': '2026-11-03',
   '/fabrics/four-way-stretch-woven': '2026-10-26',
   '/fabrics/compression-liner-knit': '2026-10-26',
   '/fabrics/stretch-mesh': '2026-10-27',
