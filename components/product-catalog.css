@@ -12,3 +12,5 @@
 /* Frame the team kit below the source image's advertising strip. */
 .catalog-image.cover-team-kit{aspect-ratio:4/5;background:#fff}
 .catalog-image.cover-team-kit img,.catalog-image.cover-team-kit:hover img{position:absolute;width:125%;height:auto;max-width:none;aspect-ratio:1;object-fit:contain;left:-12.5%;top:14%;transform:translateY(-28%);clip-path:inset(28% 0 0 0);transition:none}
+
+.catalog-rash-guide details{padding:16px 0;border-bottom:1px solid #d2d8d8}.catalog-rash-guide summary{font-weight:700;cursor:pointer}.catalog-rash-guide details p{margin:12px 0 0;max-width:900px}.catalog-rash-guide summary:focus-visible{outline:3px solid #ed1535;outline-offset:4px}

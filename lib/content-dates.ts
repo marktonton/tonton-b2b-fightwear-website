@@ -25,7 +25,7 @@ export const ROUTE_LAST_MODIFIED: Record<string, string> = {
   '/products/cyber-gradient-training-fight-shorts': '2026-10-29',
 
   '/products': '2026-11-03',
-  '/products/category/rash-guards': '2026-10-30',
+  '/products/category/rash-guards': '2026-11-06',
   '/products/category/mma-grappling-shorts': '2026-10-28',
   '/products/category/training-shorts': '2026-11-03',
   '/products/category/teamwear-sets': '2026-10-28',
@@ -56,7 +56,7 @@ export const ROUTE_LAST_MODIFIED: Record<string, string> = {
   '/about': '2026-10-27',
   '/resources': '2026-10-29',
   '/project-builder': '2026-10-28',
-  '/customization/sublimated-rash-guards': '2026-11-03',
+  '/customization/sublimated-rash-guards': '2026-11-06',
   '/customization/sublimated-training-shorts': '2026-11-03',
   '/customization/sublimated-bjj-mma-shorts': '2026-11-03',
   '/products/samurai-graphic-rash-guard': '2026-10-28',
