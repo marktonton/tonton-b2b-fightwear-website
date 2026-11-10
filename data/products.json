@@ -21,6 +21,31 @@
   ],
   "products": [
     {
+      "id": "dual-tone-colorblock-rash-guard",
+      "categoryId": "sublimated-rash-guards",
+      "name": "Dual-Tone Pro Short-Sleeve Rash Guard",
+      "image": "https://assets.tontongear.com/assets/products/dual-tone-colorblock-rash-guard/tonton-dual-tone-rash-guard-front.webp",
+      "images": [
+        "https://assets.tontongear.com/assets/products/dual-tone-colorblock-rash-guard/tonton-dual-tone-rash-guard-front.webp",
+        "https://assets.tontongear.com/assets/products/dual-tone-colorblock-rash-guard/tonton-dual-tone-rash-guard-front-left.webp",
+        "https://assets.tontongear.com/assets/products/dual-tone-colorblock-rash-guard/tonton-dual-tone-rash-guard-front-right.webp",
+        "https://assets.tontongear.com/assets/products/dual-tone-colorblock-rash-guard/tonton-dual-tone-rash-guard-back-left.webp",
+        "https://assets.tontongear.com/assets/products/dual-tone-colorblock-rash-guard/tonton-dual-tone-rash-guard-back.webp",
+        "https://assets.tontongear.com/assets/products/dual-tone-colorblock-rash-guard/tonton-dual-tone-rash-guard-back-right.webp",
+        "https://assets.tontongear.com/assets/products/dual-tone-colorblock-rash-guard/tonton-dual-tone-rash-guard-cuff-detail.webp",
+        "https://assets.tontongear.com/assets/products/dual-tone-colorblock-rash-guard/tonton-dual-tone-rash-guard-side-panel-detail.webp",
+        "https://assets.tontongear.com/assets/products/dual-tone-colorblock-rash-guard/tonton-dual-tone-rash-guard-back-yoke-detail.webp",
+        "https://assets.tontongear.com/assets/products/dual-tone-colorblock-rash-guard/tonton-dual-tone-rash-guard-side-panel-macro.webp",
+        "https://assets.tontongear.com/assets/products/dual-tone-colorblock-rash-guard/tonton-dual-tone-rash-guard-cuff-macro.webp"
+      ],
+      "description": "Burgundy and black short-sleeve rash guard with raglan sleeves, contoured side panels and a contrasting back yoke for private-label fightwear development.",
+      "features": [
+        "Burgundy & Black Colorblocking",
+        "Raglan Sleeves & Contoured Panels",
+        "Private-Label OEM/ODM Development"
+      ]
+    },
+    {
       "id": "jiu-jitsu-oni-long-sleeve-rash-guard",
       "categoryId": "sublimated-rash-guards",
       "name": "Jiu-Jitsu Oni Long-Sleeve Rash Guard",
@@ -120,7 +145,7 @@
       "description": "Matte white compression training top with raglan sleeves and flat seams, developed for private-label BJJ, MMA and gym collections.",
       "features": [
         "85% Polyester / 15% Spandex Brief",
-        "220–250 GSM Development Range",
+        "220\u2013250 GSM Development Range",
         "Private Label OEM/ODM",
         "Sample Opacity & Fit Checks"
       ]
@@ -225,7 +250,7 @@
     {
       "id": "custom-logo-shorts",
       "categoryId": "sublimated-bjj-mma-shorts",
-      "name": "Men’s Custom MMA Fight Shorts",
+      "name": "Men\u2019s Custom MMA Fight Shorts",
       "image": "assets/products/grappling-shorts-products/custom-competition-shorts-main-v3.webp",
       "images": [
         "assets/products/grappling-shorts-products/custom-competition-shorts-main-v3.webp",

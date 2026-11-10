@@ -1,5 +1,11 @@
 [
   {
+    "path": "/products/dual-tone-colorblock-rash-guard",
+    "title": "Dual-Tone Pro Short-Sleeve Rash Guard",
+    "description": "Develop a burgundy and black short-sleeve rash guard with TONTON. Explore raglan sleeves, contoured panels and private-label customization options.",
+    "group": "Products"
+  },
+  {
     "path": "/products/jiu-jitsu-oni-long-sleeve-rash-guard",
     "title": "Jiu-Jitsu Oni Long-Sleeve Rash Guard",
     "description": "Develop a custom Oni long-sleeve BJJ rash guard with TONTON: 240 GSM material brief, sublimated artwork, raglan sleeves, flatlock seams and private-label sampling.",
@@ -38,7 +44,7 @@
   {
     "path": "/factory/intelligent-garment-hanging-system",
     "title": "Intelligent Garment Hanging System",
-    "description": "Inside TONTON’s intelligent sportswear production line: overhead garment transport, sewing workstation routing, order tracking, real factory photos and workshop videos.",
+    "description": "Inside TONTON\u2019s intelligent sportswear production line: overhead garment transport, sewing workstation routing, order tracking, real factory photos and workshop videos.",
     "group": "Factory processes"
   },
   {
@@ -56,7 +62,7 @@
   {
     "path": "/factory/computerized-fabric-cutting",
     "title": "Computerized Automatic Fabric Cutting",
-    "description": "Explore TONTON’s computerized automatic cutting equipment for custom sportswear: CAD patterns, marker layouts, fabric preparation, garment panels and actual workshop videos.",
+    "description": "Explore TONTON\u2019s computerized automatic cutting equipment for custom sportswear: CAD patterns, marker layouts, fabric preparation, garment panels and actual workshop videos.",
     "group": "Factory processes"
   },
   {
@@ -74,19 +80,19 @@
   {
     "path": "/service-support",
     "title": "Service & Support",
-    "description": "Explore TONTON custom fightwear services—from product planning, artwork and sampling to production, quality control, packing, and delivery support.",
+    "description": "Explore TONTON custom fightwear services\u2014from product planning, artwork and sampling to production, quality control, packing, and delivery support.",
     "group": "Company and project planning"
   },
   {
     "path": "/factory/digital-sublimation-printing",
     "title": "Digital Sublimation Printing for Custom Sportswear",
-    "description": "Inside TONTON’s in-house roll-to-roll sublimation printing workshop: transfer-paper printing, polyester heat transfer, personalized teamwear, real equipment photos and videos.",
+    "description": "Inside TONTON\u2019s in-house roll-to-roll sublimation printing workshop: transfer-paper printing, polyester heat transfer, personalized teamwear, real equipment photos and videos.",
     "group": "Factory processes"
   },
   {
     "path": "/factory/multi-head-embroidery",
     "title": "Multi-Head Embroidery for Custom Teamwear",
-    "description": "Explore TONTON’s computerized multi-head embroidery workshop: JIAYU equipment, team logos and lettering, sample approval, actual machine footage and buyer preparation.",
+    "description": "Explore TONTON\u2019s computerized multi-head embroidery workshop: JIAYU equipment, team logos and lettering, sample approval, actual machine footage and buyer preparation.",
     "group": "Factory processes"
   },
   {
@@ -98,7 +104,7 @@
   {
     "path": "/about",
     "title": "TONTON Company Profile & Chairman",
-    "description": "Explore TONTON’s company story since 2004: founder Peter Hu, Shenzhen operations, Xiantao manufacturing, education support, interviews and original reporting.",
+    "description": "Explore TONTON\u2019s company story since 2004: founder Peter Hu, Shenzhen operations, Xiantao manufacturing, education support, interviews and original reporting.",
     "group": "Company and project planning"
   },
   {
@@ -163,7 +169,7 @@
   },
   {
     "path": "/products/custom-logo-shorts",
-    "title": "Men’s Custom MMA Fight Shorts",
+    "title": "Men\u2019s Custom MMA Fight Shorts",
     "description": "Develop short-cut custom MMA fight shorts for BJJ, Sanda, boxing and combat training with stretch-woven fabric direction, articulated crotch construction and reinforced stitching. MOQ from 10 pieces.",
     "group": "Products"
   },
@@ -350,7 +356,7 @@
   {
     "path": "/blog/how-to-choose-fabric-for-custom-rash-guards",
     "title": "How to Choose Fabric for Custom Rash Guards",
-    "description": "A buyer guide to rash guard fabric composition, GSM, stretch, coverage and print compatibility, using TONTON’s 220 GSM polyester/spandex reference.",
+    "description": "A buyer guide to rash guard fabric composition, GSM, stretch, coverage and print compatibility, using TONTON\u2019s 220 GSM polyester/spandex reference.",
     "group": "Blog articles"
   },
   {
@@ -380,7 +386,7 @@
   {
     "path": "/cases/us-repeat-customer",
     "title": "Repeat Custom Rash Guard & Shorts Orders for a U.S. Customer",
-    "description": "An anonymized TONTON customer case with 2025–2026 Alibaba order records, repeat rash guard and shorts purchases, specification conversations and recorded customer feedback.",
+    "description": "An anonymized TONTON customer case with 2025\u20132026 Alibaba order records, repeat rash guard and shorts purchases, specification conversations and recorded customer feedback.",
     "group": "Customer cases"
   },
   {
