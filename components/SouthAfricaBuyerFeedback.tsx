@@ -2,9 +2,9 @@ import Link from 'next/link';
 import './south-africa-buyer-feedback.css';
 const BASE = 'https://assets.tontongear.com/assets/Feedback/';
 const photos = [
-  ['flow-rash-guard-front.webp', 'Front view of the customer-supplied black FLOW academy rash guard with blue and orange graphics', 'Front · Customer photograph'],
+  ['flow-rash-guard-side.webp', 'Front view of the customer-supplied black FLOW academy rash guard with blue and orange graphics', 'Front · Customer photograph'],
   ['flow-rash-guard-back.webp', 'Back view of the FLOW Jiu Jitsu Academy custom rash guard', 'Back · Academy artwork'],
-  ['flow-rash-guard-side.webp', 'Side panel, sleeve print and stitching on the customer-supplied rash guard', 'Side · Printed panel and seam'],
+  ['flow-rash-guard-front.webp', 'Side panel, sleeve print and stitching on the customer-supplied rash guard', 'Side · Printed panel and seam'],
   ['flow-rash-guard-hem-detail.webp', 'Inside hem showing the grip band and stitching on the customer-supplied rash guard', 'Hem · Grip band detail'],
 ];
 export default function SouthAfricaBuyerFeedback() {
