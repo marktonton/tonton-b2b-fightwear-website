@@ -26,8 +26,8 @@ export const ROUTE_LAST_MODIFIED: Record<string, string> = {
 
   '/products': '2026-11-03',
   '/products/category/rash-guards': '2026-11-06',
-  '/products/category/mma-grappling-shorts': '2026-10-28',
-  '/products/category/training-shorts': '2026-11-03',
+  '/products/category/mma-grappling-shorts': '2026-11-10',
+  '/products/category/training-shorts': '2026-11-10',
   '/products/category/teamwear-sets': '2026-10-28',
 
   '/products/white-short-sleeve-compression-rash-guard': '2026-10-29',
@@ -57,8 +57,8 @@ export const ROUTE_LAST_MODIFIED: Record<string, string> = {
   '/resources': '2026-10-29',
   '/project-builder': '2026-10-28',
   '/customization/sublimated-rash-guards': '2026-11-10',
-  '/customization/sublimated-training-shorts': '2026-11-03',
-  '/customization/sublimated-bjj-mma-shorts': '2026-11-03',
+  '/customization/sublimated-training-shorts': '2026-11-10',
+  '/customization/sublimated-bjj-mma-shorts': '2026-11-10',
   '/products/samurai-graphic-rash-guard': '2026-10-28',
   '/products/high-split-grappling-shorts': '2026-10-28',
   '/products/custom-logo-shorts': '2026-10-28',

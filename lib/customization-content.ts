@@ -145,7 +145,7 @@ export const customizationPageContent: Record<string, CustomizationPageContent> 
     ],
   },
   'sublimated-training-shorts': {
-    seoDescription: 'Custom men’s functional training shorts for gym, HIIT, combat conditioning and outdoor fitness. Explore woven fabric, zip pockets, ventilation and OEM options.',
+    seoDescription: 'Custom training shorts manufacturer for fitness brands and gyms. Compare stretch-woven fabrics, zip pockets, liners and private-label OEM/ODM sample options.',
     quickAnswerQuestion: 'What defines a custom functional training short?',
     quickAnswer: 'A functional training short combines the intended fit and length with a suitable stretch-woven fabric, secure waistband, pocket direction, ventilation, crotch mobility and reinforced finishing. TONTON confirms the final material, construction, logo method and performance checks on the approved sample instead of assuming one universal specification.',
     kicker: 'FUNCTIONAL TRAINING SHORTS MANUFACTURER',
@@ -174,6 +174,9 @@ export const customizationPageContent: Record<string, CustomizationPageContent> 
     processProduct: 'training use, preferred fit, fabric direction, waistband, pockets, ventilation, quantity, and target market',
     faqTitle: 'Custom training shorts questions buyers ask before ordering',
     faqs: [
+      { question: "What should we confirm for custom training shorts with zip pockets?", answer: "Specify what the pocket must hold, the opening direction, location and closure. Review access, seam reinforcement and comfort on the physical sample during the intended exercise. For contact training, assess exposed hardware separately and follow the activity or organizer requirements rather than assuming a gym pocket design is suitable." },
+      { question: "How should a private-label training shorts sample be approved?", answer: "Compare the sample with your measurement chart, fabric and liner specification, waist adjustment, pockets, ventilation, logo placement and labels. Record fit and finishing corrections and agree the relevant wash and movement checks. Keep the signed-off specification and sample reference for bulk production and reorders." },
+
       { question: "How do we choose between training shorts and MMA or BJJ shorts?", answer: "Start with the intended use and construction. Gym or running projects may prioritize pockets, ventilation and everyday storage; combat projects should review shell coverage, split height, liner, waistband security and exposed hardware. Product names alone do not establish competition suitability. Compare the physical sample against your movement needs and any applicable event requirements." },
       { question: "Does every training short include a compression liner?", answer: "No. Our product references include different inner constructions, including mesh trim and separate or integrated inner layers. Confirm whether you need an unlined shell, partial mesh lining or a fitted two-in-one compression short, then approve coverage, inner-leg length, seams and fit on the sample." },
 
@@ -190,7 +193,7 @@ export const customizationPageContent: Record<string, CustomizationPageContent> 
     ],
   },
   'sublimated-bjj-mma-shorts': {
-    seoDescription: 'Sublimated MMA shorts manufacturer for private-label brands and BJJ academies. Compare grappling cuts, liners, waistbands and low-MOQ OEM/ODM sample development.',
+    seoDescription: 'Custom MMA shorts manufacturer for brands and BJJ academies. Compare fight-short cuts, liners, sponsor artwork and private-label OEM/ODM sample development.',
     quickAnswerQuestion: 'What should buyers confirm for custom BJJ and MMA shorts?',
     quickAnswer: 'Buyers should confirm the intended combat use, shell and liner construction, split height, waistband security, fit, size range, artwork and reinforcement points. TONTON uses the product brief and physical sample to verify movement, coverage, material direction and branding before bulk production.',
     kicker: 'CUSTOM BJJ & MMA SHORTS MANUFACTURING',
@@ -219,6 +222,9 @@ export const customizationPageContent: Record<string, CustomizationPageContent> 
     processProduct: 'BJJ, MMA, or grappling use, fit, length, waistband, quantity, and artwork direction',
     faqTitle: 'Custom BJJ and MMA shorts questions buyers ask before ordering',
     faqs: [
+      { question: "How do we customize MMA fight shorts with several sponsor logos?", answer: "Send the logos as vector files, the placement priority and any event restrictions. We review scale, panel seams, split openings and visibility in the mockup, then check the printed sample. Confirm that you have permission to use the supplied artwork; a visual reference is not evidence of competition approval." },
+      { question: "Can we order custom MMA shorts for both an academy and a retail brand?", answer: "Yes. Academy projects may use shared colors and member size allocations; retail projects may also need a consistent fit block, private labels and packaging. List quantities by style, design, color and size separately. TONTON reviews MOQ, sampling, price and production timing against that breakdown before the order is confirmed." },
+
       { question: "Can we mix sizes within a custom order?", answer: "Mixed-size allocations can be reviewed within an agreed style, design and colorway. Send quantities for each size and identify adult or youth ranges. Confirm the minimum per style and colorway, measurement chart and any separate pattern or sampling requirements in the written quotation; a 10-piece starting quantity does not automatically apply across multiple designs." },
       { question: "What should the quotation include before we approve an order?", answer: "Confirm the garment specification, quantities by size and color, decoration method, labels, packaging, sampling charges, shipping basis and destination. Ask which items are included or priced separately, and whether duties or taxes are included in the agreed delivery terms. Production and dispatch timing should be recorded against the approved sample and project requirements." },
 
