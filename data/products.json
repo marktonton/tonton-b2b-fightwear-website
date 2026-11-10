@@ -21,6 +21,24 @@
   ],
   "products": [
     {
+      "id": "flow-wave-short-sleeve-rash-guard",
+      "categoryId": "sublimated-rash-guards",
+      "name": "FLOW Wave Short-Sleeve Academy Rash Guard",
+      "image": "https://assets.tontongear.com/assets/Feedback/flow-rash-guard-side.webp",
+      "images": [
+        "https://assets.tontongear.com/assets/Feedback/flow-rash-guard-side.webp",
+        "https://assets.tontongear.com/assets/Feedback/flow-rash-guard-back.webp",
+        "https://assets.tontongear.com/assets/Feedback/flow-rash-guard-front.webp",
+        "https://assets.tontongear.com/assets/Feedback/flow-rash-guard-hem-detail.webp"
+      ],
+      "description": "Black short-sleeve academy rash guard reference with cyan and orange wave artwork, a silicone-grip hem and multi-panel construction for private-label BJJ and MMA development.",
+      "features": [
+        "Silicone-Grip Inner Hem",
+        "Custom Academy Wave Artwork",
+        "Raglan & Multi-Panel Construction"
+      ]
+    },
+    {
       "id": "dual-tone-colorblock-rash-guard",
       "categoryId": "sublimated-rash-guards",
       "name": "Dual-Tone Pro Short-Sleeve Rash Guard",

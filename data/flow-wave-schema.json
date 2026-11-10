@@ -1,0 +1,103 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "@id": "https://www.tontongear.com/products/flow-wave-short-sleeve-rash-guard#product",
+      "name": "FLOW Wave Short-Sleeve Academy Rash Guard",
+      "description": "Explore a short-sleeve academy rash guard with wave artwork, silicone-grip hem and panel seams. Develop custom BJJ and MMA teamwear with TONTON OEM/ODM.",
+      "image": [
+        "https://assets.tontongear.com/assets/Feedback/flow-rash-guard-side.webp",
+        "https://assets.tontongear.com/assets/Feedback/flow-rash-guard-back.webp",
+        "https://assets.tontongear.com/assets/Feedback/flow-rash-guard-front.webp",
+        "https://assets.tontongear.com/assets/Feedback/flow-rash-guard-hem-detail.webp"
+      ],
+      "color": "Black / cyan / orange",
+      "url": "https://www.tontongear.com/products/flow-wave-short-sleeve-rash-guard",
+      "brand": {
+        "@type": "Brand",
+        "name": "TONTON"
+      },
+      "manufacturer": {
+        "@id": "https://www.tontongear.com/#organization"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can my academy replace the FLOW artwork with its own branding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. This garment is a customer-project reference. Develop your own academy logo, panel artwork, colors, labels and packaging with TONTON; submit artwork you are authorized to use for review."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the silicone hem do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The inner grip strip is intended to help the lower hem stay in position. Its effect depends on fit, body movement and the clothing worn underneath. Check placement, tension and comfort with a physical sample."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the fabric composition and GSM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Exact fiber percentages and fabric weight are confirmed in your approved material specification. Request a fabric swatch and fit sample before bulk production."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How are the wave graphics printed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The supplied brief specifies digital sublimation. Approve a printed fabric sample for color, stretch appearance and wash performance. No permanent no-fade or no-crack guarantee is stated."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this design competition approved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No governing-body approval is claimed. Verify your event\u2019s uniform, color and logo rules before approving the artwork."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.tontongear.com/products/flow-wave-short-sleeve-rash-guard",
+      "name": "FLOW Wave Short-Sleeve Academy Rash Guard",
+      "dateModified": "2026-11-10",
+      "mainEntity": {
+        "@id": "https://www.tontongear.com/products/flow-wave-short-sleeve-rash-guard#product"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Products",
+          "item": "https://www.tontongear.com/products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Rash Guards",
+          "item": "https://www.tontongear.com/products/category/rash-guards"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "FLOW Wave Short-Sleeve Academy Rash Guard",
+          "item": "https://www.tontongear.com/products/flow-wave-short-sleeve-rash-guard"
+        }
+      ]
+    }
+  ]
+}
