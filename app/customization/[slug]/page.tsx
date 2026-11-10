@@ -1,3 +1,4 @@
+import FrenchBuyerFeedback from '../../../components/FrenchBuyerFeedback';
 import CustomOrderDecisions from '../../../components/CustomOrderDecisions';
 import CustomerCaseTeaser from '../../../components/CustomerCaseTeaser';
 import BuyerLearningPath from '../../../components/BuyerLearningPath';
@@ -641,6 +642,8 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
           </div>
         </div>
       </section>
+
+      {isRashGuardPage && <FrenchBuyerFeedback />}
 
       <section className="customization-faq customization-shell">
         <div className="customization-faq-heading">

@@ -3,7 +3,7 @@ export const CONTENT_REVIEW_DATE = '2026-09-15';
 export const ROUTE_LAST_MODIFIED: Record<string, string> = {
   '/products/core-stealth-scallop-training-shorts': '2026-11-03',
   '/products/samurai-kabuto-long-sleeve-rash-guard': '2026-10-30',
-  '/cases': '2026-10-30',
+  '/cases': '2026-11-10',
   '/cases/us-repeat-customer': '2026-10-30',
   '/resources/prepare-artwork-for-sublimation': '2026-10-29',
   '/resources/fightwear-quality-inspection-checklist': '2026-10-29',
@@ -56,7 +56,7 @@ export const ROUTE_LAST_MODIFIED: Record<string, string> = {
   '/about': '2026-10-27',
   '/resources': '2026-10-29',
   '/project-builder': '2026-10-28',
-  '/customization/sublimated-rash-guards': '2026-11-06',
+  '/customization/sublimated-rash-guards': '2026-11-10',
   '/customization/sublimated-training-shorts': '2026-11-03',
   '/customization/sublimated-bjj-mma-shorts': '2026-11-03',
   '/products/samurai-graphic-rash-guard': '2026-10-28',
