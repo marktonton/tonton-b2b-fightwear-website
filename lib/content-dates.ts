@@ -60,7 +60,7 @@ export const ROUTE_LAST_MODIFIED: Record<string, string> = {
   '/about': '2026-10-27',
   '/resources': '2026-10-29',
   '/project-builder': '2026-10-28',
-  '/customization/sublimated-rash-guards': '2026-11-10',
+  '/customization/sublimated-rash-guards': '2026-11-11',
   '/customization/sublimated-training-shorts': '2026-11-10',
   '/customization/sublimated-bjj-mma-shorts': '2026-11-10',
   '/products/samurai-graphic-rash-guard': '2026-10-28',

@@ -574,10 +574,11 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
                 <div><dt>Hem option</dt><dd>Silicone anti-slip grip</dd></div>
               </dl>
             )}
+            {isRashGuardPage && <p>Compare actual sample details for custom BJJ rash guards: mesh panels, flatlock seams and an optional silicone gripper hem. These construction choices can be specified for private-label academy and brand orders. Click a detail photograph to inspect the full image.</p>}
             <div className="customization-detail-grid">
               {content.productDetails.map((detail, index) => (
                 <article className="customization-detail-card" key={detail.title}>
-                  <figure><Image src={resolveImage(detail.image)} alt={detail.alt} fill unoptimized sizes="(max-width: 660px) 100vw, (max-width: 1000px) 50vw, 25vw" /></figure>
+                  <figure><a href={resolveImage(detail.image)} target="_blank" rel="noopener noreferrer" aria-label={`Enlarge: ${detail.title}`}><Image src={resolveImage(detail.image)} alt={detail.alt} fill unoptimized sizes="(max-width: 660px) 100vw, (max-width: 1000px) 50vw, 25vw" /></a></figure>
                   <div><span>0{index + 1}</span><h3>{detail.title}</h3><p>{detail.text}</p></div>
                 </article>
               ))}
@@ -585,6 +586,8 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
           </div>
         </section>
       )}
+
+      {isRashGuardPage && <section className="customization-overview customization-shell" aria-labelledby="rash-construction-approval"><h2 id="rash-construction-approval">Specify the construction before approving your rash guard sample.</h2><p>Send the mesh placement, seam finish and silicone hem requirements with your artwork and size allocation. Review these details together with <Link href="/fabrics/stretch-mesh">stretch mesh options</Link>, the <Link href="/resources/rash-guard-fabric-construction">rash guard fabric and construction guide</Link> and the <Link href="/resources/custom-fightwear-sampling-moq">sampling and MOQ guide</Link>.</p><p><Link href="/project-builder?product=Rash%20Guard&source=rash-guard-construction-details&reference=Mesh%20Flatlock%20Silicone%20Hem">Request a rash guard sample with these construction details →</Link></p></section>}
 
       {content.fabricGuide && content.craftSteps && (
         <section className="customization-technical customization-shell">
