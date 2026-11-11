@@ -21,6 +21,21 @@
   ],
   "products": [
     {
+      "id": "alpine-map-short-sleeve-rash-guard",
+      "categoryId": "sublimated-rash-guards",
+      "name": "Alpine Map Short-Sleeve Academy Rash Guard",
+      "image": "https://assets.tontongear.com/assets/products/alpine-map-rash-guard/grants-pass-academy-rash-guard.webp",
+      "images": [
+        "https://assets.tontongear.com/assets/products/alpine-map-rash-guard/grants-pass-academy-rash-guard.webp"
+      ],
+      "description": "White short-sleeve academy rash guard reference with Grants Pass map lines, blue alpine scenery and gold forest artwork for custom BJJ and MMA teamwear development.",
+      "features": [
+        "Map & Alpine Forest Artwork",
+        "Raglan Short-Sleeve Reference",
+        "Private-Label Academy Teamwear"
+      ]
+    },
+    {
       "id": "flow-wave-short-sleeve-rash-guard",
       "categoryId": "sublimated-rash-guards",
       "name": "FLOW Wave Short-Sleeve Academy Rash Guard",

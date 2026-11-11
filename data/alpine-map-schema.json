@@ -1,0 +1,101 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "@id": "https://www.tontongear.com/products/alpine-map-short-sleeve-rash-guard#product",
+      "name": "Alpine Map Short-Sleeve Academy Rash Guard",
+      "description": "Explore a custom short-sleeve BJJ rash guard with map and alpine forest artwork. View customer feedback and plan academy branding, materials and sampling with TONTON.",
+      "image": [
+        "https://assets.tontongear.com/assets/products/alpine-map-rash-guard/grants-pass-academy-rash-guard.webp"
+      ],
+      "sku": "alpine-map-short-sleeve-rash-guard",
+      "url": "https://www.tontongear.com/products/alpine-map-short-sleeve-rash-guard",
+      "color": "White / blue / gold",
+      "brand": {
+        "@type": "Brand",
+        "name": "TONTON"
+      },
+      "manufacturer": {
+        "@id": "https://www.tontongear.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "name": "Alpine Map Short-Sleeve Academy Rash Guard",
+      "url": "https://www.tontongear.com/products/alpine-map-short-sleeve-rash-guard",
+      "dateModified": "2026-11-11",
+      "mainEntity": {
+        "@id": "https://www.tontongear.com/products/alpine-map-short-sleeve-rash-guard#product"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can this artwork be adapted for my academy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use this customer reference to discuss your own map, local landscape, academy logo and colors. Supply artwork you are authorized to use; final panel layouts and branding are approved before production."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this an official 10th Planet retail release?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This page presents a TONTON customer-project reference carrying the artwork shown in the supplied photograph. It does not claim an official retail release, exclusive partnership or governing-body approval."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the fabric composition and weight?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fiber percentages and GSM are confirmed against the approved material specification for your project. Request a swatch and fit sample before bulk production."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should I check the printing and seams?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Review a printed sample for map-line clarity, panel alignment, color and appearance under stretch. The construction brief specifies four-needle, six-thread flatlock stitching; confirm stitch construction and the skin-side finish on the physical sample."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What did the buyer say about this order?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The supplied Alibaba screenshot shows a five-star review from M***r, a United States repeat buyer, dated September 21, 2025: \u201cThe print looked great, high quality material and stitching. Fast shipping and attention to detail.\u201d This describes that customer\u2019s order, rather than a general delivery or quality guarantee."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Products",
+          "item": "https://www.tontongear.com/products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Rash Guards",
+          "item": "https://www.tontongear.com/products/category/rash-guards"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Alpine Map Short-Sleeve Academy Rash Guard",
+          "item": "https://www.tontongear.com/products/alpine-map-short-sleeve-rash-guard"
+        }
+      ]
+    }
+  ]
+}
