@@ -21,6 +21,22 @@
   ],
   "products": [
     {
+      "id": "cosmic-blast-short-sleeve-rash-guard",
+      "categoryId": "sublimated-rash-guards",
+      "name": "Cosmic Blast Short-Sleeve Academy Rash Guard",
+      "image": "https://assets.tontongear.com/assets/products/cosmic-blast-rash-guard/cosmic-blast-customer-front.webp",
+      "images": [
+        "https://assets.tontongear.com/assets/products/cosmic-blast-rash-guard/cosmic-blast-customer-front.webp",
+        "https://assets.tontongear.com/assets/products/cosmic-blast-rash-guard/cosmic-blast-customer-back.webp"
+      ],
+      "description": "Cosmic rocket and astronaut short-sleeve academy rash guard reference for custom BJJ and MMA teamwear, with customer photographs and repeat-buyer feedback.",
+      "features": [
+        "Cosmic Sublimation Artwork",
+        "Raglan Short-Sleeve Reference",
+        "Custom Academy Teamwear"
+      ]
+    },
+    {
       "id": "alpine-map-short-sleeve-rash-guard",
       "categoryId": "sublimated-rash-guards",
       "name": "Alpine Map Short-Sleeve Academy Rash Guard",

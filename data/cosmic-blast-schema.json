@@ -1,0 +1,97 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "@id": "https://www.tontongear.com/products/cosmic-blast-short-sleeve-rash-guard#product",
+      "name": "Cosmic Blast Short-Sleeve Academy Rash Guard",
+      "description": "Explore a custom cosmic-print BJJ rash guard with rocket and astronaut artwork, customer photos and five-star buyer feedback. Plan OEM/ODM academy teamwear with TONTON.",
+      "image": [
+        "https://assets.tontongear.com/assets/products/cosmic-blast-rash-guard/cosmic-blast-customer-front.webp",
+        "https://assets.tontongear.com/assets/products/cosmic-blast-rash-guard/cosmic-blast-customer-back.webp"
+      ],
+      "sku": "cosmic-blast-short-sleeve-rash-guard",
+      "url": "https://www.tontongear.com/products/cosmic-blast-short-sleeve-rash-guard",
+      "manufacturer": {
+        "@id": "https://www.tontongear.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "name": "Cosmic Blast Short-Sleeve Academy Rash Guard",
+      "url": "https://www.tontongear.com/products/cosmic-blast-short-sleeve-rash-guard",
+      "dateModified": "2026-11-11",
+      "mainEntity": {
+        "@id": "https://www.tontongear.com/products/cosmic-blast-short-sleeve-rash-guard#product"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can we create our own cosmic academy artwork?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Develop your own rocket, astronaut, comic or academy graphic direction. Supply authorized logos and approve the panel artwork before sampling."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What fabric composition and GSM are used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Confirm fiber percentages, weight, stretch recovery and moisture management against the approved material specification. Request a swatch and fit sample."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What construction should we approve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The supplied brief specifies four-needle, six-thread flatlock stitching, raglan sleeves and a reinforced extended hem. Verify seam finish, measurements and movement on the sample."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are the detail images production photographs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The two training-floor images are customer photographs. The three close-up illustrations and video are supplied design presentations; refer to the approved physical sample for production details."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What did the repeat buyer say?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Perfect as always. Have been using this supplier for years and will continue to do so."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Products",
+          "item": "https://www.tontongear.com/products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Rash Guards",
+          "item": "https://www.tontongear.com/products/category/rash-guards"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cosmic Blast Short-Sleeve Academy Rash Guard",
+          "item": "https://www.tontongear.com/products/cosmic-blast-short-sleeve-rash-guard"
+        }
+      ]
+    }
+  ]
+}
