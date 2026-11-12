@@ -1,13 +1,14 @@
 export const CONTENT_REVIEW_DATE = '2026-09-15';
 
 export const ROUTE_LAST_MODIFIED: Record<string, string> = {
+  '/products/yin-yang-split-combat-training-shorts': '2026-11-12',
   '/products/cosmic-blast-short-sleeve-rash-guard': '2026-11-11',
   '/products/alpine-map-short-sleeve-rash-guard': '2026-11-11',
   '/products/flow-wave-short-sleeve-rash-guard': '2026-11-10',
   '/products/dual-tone-colorblock-rash-guard': '2026-11-10',
   '/products/core-stealth-scallop-training-shorts': '2026-11-03',
   '/products/samurai-kabuto-long-sleeve-rash-guard': '2026-10-30',
-  '/cases': '2026-11-11',
+  '/cases': '2026-11-12',
   '/cases/us-repeat-customer': '2026-10-30',
   '/resources/prepare-artwork-for-sublimation': '2026-10-29',
   '/resources/fightwear-quality-inspection-checklist': '2026-10-29',
@@ -28,9 +29,9 @@ export const ROUTE_LAST_MODIFIED: Record<string, string> = {
 
   '/products/cyber-gradient-training-fight-shorts': '2026-10-29',
 
-  '/products': '2026-11-11',
+  '/products': '2026-11-12',
   '/products/category/rash-guards': '2026-11-11',
-  '/products/category/mma-grappling-shorts': '2026-11-10',
+  '/products/category/mma-grappling-shorts': '2026-11-12',
   '/products/category/training-shorts': '2026-11-10',
   '/products/category/teamwear-sets': '2026-10-28',
 

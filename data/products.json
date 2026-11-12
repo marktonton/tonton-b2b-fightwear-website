@@ -21,6 +21,22 @@
   ],
   "products": [
     {
+      "id": "yin-yang-split-combat-training-shorts",
+      "categoryId": "sublimated-bjj-mma-shorts",
+      "name": "Yin-Yang Split Combat Training Shorts",
+      "image": "https://assets.tontongear.com/assets/products/yin-yang-split-shorts/yin-yang-split-customer-front.webp",
+      "images": [
+        "https://assets.tontongear.com/assets/products/yin-yang-split-shorts/yin-yang-split-customer-front.webp",
+        "https://assets.tontongear.com/assets/products/yin-yang-split-shorts/yin-yang-split-customer-back.webp"
+      ],
+      "description": "Black-and-white geometric split-leg combat shorts reference with gathered elastic waist, side openings and documented Australian buyer feedback. Develop your private-label MMA or academy collection.",
+      "features": [
+        "Split-Leg Geometric Artwork",
+        "Gathered Elastic Waist",
+        "Private-Label Development"
+      ]
+    },
+    {
       "id": "cosmic-blast-short-sleeve-rash-guard",
       "categoryId": "sublimated-rash-guards",
       "name": "Cosmic Blast Short-Sleeve Academy Rash Guard",
@@ -194,7 +210,7 @@
       "description": "Matte white compression training top with raglan sleeves and flat seams, developed for private-label BJJ, MMA and gym collections.",
       "features": [
         "85% Polyester / 15% Spandex Brief",
-        "220\u2013250 GSM Development Range",
+        "220–250 GSM Development Range",
         "Private Label OEM/ODM",
         "Sample Opacity & Fit Checks"
       ]
@@ -299,7 +315,7 @@
     {
       "id": "custom-logo-shorts",
       "categoryId": "sublimated-bjj-mma-shorts",
-      "name": "Men\u2019s Custom MMA Fight Shorts",
+      "name": "Men’s Custom MMA Fight Shorts",
       "image": "assets/products/grappling-shorts-products/custom-competition-shorts-main-v3.webp",
       "images": [
         "assets/products/grappling-shorts-products/custom-competition-shorts-main-v3.webp",
