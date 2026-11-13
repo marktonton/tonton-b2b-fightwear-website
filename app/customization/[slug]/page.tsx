@@ -1,3 +1,4 @@
+import InternationalBuyerFeedback from '../../../components/InternationalBuyerFeedback';
 import SouthAfricaBuyerFeedback from '../../../components/SouthAfricaBuyerFeedback';
 import FrenchBuyerFeedback from '../../../components/FrenchBuyerFeedback';
 import CustomOrderDecisions from '../../../components/CustomOrderDecisions';
@@ -647,6 +648,8 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
         </div>
       </section>
 
+      {isRashGuardPage && <InternationalBuyerFeedback family="rash" />}
+      {isFightShortsPage && <InternationalBuyerFeedback family="shorts" />}
       {isRashGuardPage && <FrenchBuyerFeedback />}
       {isRashGuardPage && <SouthAfricaBuyerFeedback />}
 
