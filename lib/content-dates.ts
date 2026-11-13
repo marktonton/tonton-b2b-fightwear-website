@@ -1,6 +1,7 @@
 export const CONTENT_REVIEW_DATE = '2026-09-15';
 
 export const ROUTE_LAST_MODIFIED: Record<string, string> = {
+  '/products/midnight-navy-muay-thai-shorts': '2026-11-13',
   '/products/two-tone-long-sleeve-rash-guard': '2026-11-13',
   '/blog/how-to-choose-custom-mma-shorts': '2026-11-13',
   '/blog': '2026-11-13',

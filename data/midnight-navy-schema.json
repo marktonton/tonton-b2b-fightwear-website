@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "@id": "https://www.tontongear.com/products/midnight-navy-muay-thai-shorts#product",
+      "name": "TONTON Midnight Navy Muay Thai Shorts",
+      "description": "Develop custom navy Muay Thai shorts for brands, gyms and teams. Explore a satin-look shell, wide gathered waistband, high side slits and private-label options.",
+      "url": "https://www.tontongear.com/products/midnight-navy-muay-thai-shorts",
+      "image": [
+        "https://assets.tontongear.com/assets/products/midnight-navy-muay-thai-shorts/midnight-navy-muay-thai-shorts-front.webp",
+        "https://assets.tontongear.com/assets/products/midnight-navy-muay-thai-shorts/midnight-navy-muay-thai-shorts-back.webp",
+        "https://assets.tontongear.com/assets/products/midnight-navy-muay-thai-shorts/midnight-navy-muay-thai-shorts-model-fit.webp"
+      ],
+      "brand": {
+        "@type": "Brand",
+        "name": "TONTON"
+      },
+      "manufacturer": {
+        "@id": "https://www.tontongear.com/#organization"
+      },
+      "category": "Custom Muay Thai and kickboxing shorts",
+      "color": "Midnight navy / black / white"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.tontongear.com/products/midnight-navy-muay-thai-shorts#webpage",
+      "url": "https://www.tontongear.com/products/midnight-navy-muay-thai-shorts",
+      "name": "Midnight Navy Muay Thai & Kickboxing Shorts",
+      "dateModified": "2026-11-13",
+      "mainEntity": {
+        "@id": "https://www.tontongear.com/products/midnight-navy-muay-thai-shorts#product"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.tontongear.com/products/midnight-navy-muay-thai-shorts#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can these navy Muay Thai shorts be customized for a gym or brand?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use this design as a development reference for your own artwork, waistband label and size plan. Confirm the fabric, panel layout, decoration and measurements through a mockup and physical sample."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do Muay Thai shorts differ from 2-in-1 grappling shorts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This reference uses a wide-leg striking-short silhouette and side openings. A 2-in-1 grappling short adds a fitted inner layer. Select the construction according to coverage, movement and training requirements; no liner is confirmed for this reference."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the material and GSM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The images show a satin-look shell, but final fiber composition and GSM have not been confirmed. Request the actual fabric specification and inspect the material before approving bulk production."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I send for a custom Muay Thai shorts quotation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send artwork, estimated quantity by size, target measurements, waistband and split preferences, labels, delivery country and target timing. MOQ, sample timing and pricing depend on the confirmed brief."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the video real product test footage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The supplied video is a generated promotional visualization. Use the approved physical sample to assess fit, materials, movement and construction."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://www.tontongear.com/products/midnight-navy-muay-thai-shorts#video",
+      "name": "Midnight Navy Muay Thai Shorts \u2014 Generated Design Presentation",
+      "description": "Generated promotional visualization of a navy Muay Thai shorts design. Confirm materials and construction on the approved physical sample.",
+      "thumbnailUrl": "https://assets.tontongear.com/assets/products/midnight-navy-muay-thai-shorts/midnight-navy-muay-thai-shorts-video-poster.webp",
+      "contentUrl": "https://assets.tontongear.com/assets/products/midnight-navy-muay-thai-shorts/midnight-navy-muay-thai-shorts-video.mp4",
+      "uploadDate": "2026-11-13T15:00:00+08:00",
+      "duration": "PT15.104S"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Products",
+          "item": "https://www.tontongear.com/products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "MMA & Grappling Shorts",
+          "item": "https://www.tontongear.com/products/category/mma-grappling-shorts"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "TONTON Midnight Navy Muay Thai Shorts",
+          "item": "https://www.tontongear.com/products/midnight-navy-muay-thai-shorts"
+        }
+      ]
+    }
+  ]
+}

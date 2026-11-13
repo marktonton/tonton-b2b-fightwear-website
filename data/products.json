@@ -21,6 +21,24 @@
   ],
   "products": [
     {
+      "id": "midnight-navy-muay-thai-shorts",
+      "categoryId": "sublimated-bjj-mma-shorts",
+      "name": "Midnight Navy Muay Thai & Kickboxing Shorts",
+      "image": "https://assets.tontongear.com/assets/products/midnight-navy-muay-thai-shorts/midnight-navy-muay-thai-shorts-front.webp",
+      "images": [
+        "https://assets.tontongear.com/assets/products/midnight-navy-muay-thai-shorts/midnight-navy-muay-thai-shorts-front.webp",
+        "https://assets.tontongear.com/assets/products/midnight-navy-muay-thai-shorts/midnight-navy-muay-thai-shorts-back.webp",
+        "https://assets.tontongear.com/assets/products/midnight-navy-muay-thai-shorts/midnight-navy-muay-thai-shorts-model-fit.webp"
+      ],
+      "description": "Develop custom navy Muay Thai shorts for brands, gyms and teams. Explore a satin-look shell, wide gathered waistband, high side slits and private-label options.",
+      "features": [
+        "Wide Gathered Elastic Waist",
+        "High Side Openings",
+        "Satin-Look Navy Design",
+        "Private-Label Development"
+      ]
+    },
+    {
       "id": "two-tone-long-sleeve-rash-guard",
       "categoryId": "sublimated-rash-guards",
       "name": "Custom Two-Tone Long Sleeve BJJ Rash Guard",
@@ -250,7 +268,7 @@
       "description": "Matte white compression training top with raglan sleeves and flat seams, developed for private-label BJJ, MMA and gym collections.",
       "features": [
         "85% Polyester / 15% Spandex Brief",
-        "220–250 GSM Development Range",
+        "220\u2013250 GSM Development Range",
         "Private Label OEM/ODM",
         "Sample Opacity & Fit Checks"
       ]
@@ -355,7 +373,7 @@
     {
       "id": "custom-logo-shorts",
       "categoryId": "sublimated-bjj-mma-shorts",
-      "name": "Men’s Custom MMA Fight Shorts",
+      "name": "Men\u2019s Custom MMA Fight Shorts",
       "image": "assets/products/grappling-shorts-products/custom-competition-shorts-main-v3.webp",
       "images": [
         "assets/products/grappling-shorts-products/custom-competition-shorts-main-v3.webp",
