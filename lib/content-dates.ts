@@ -1,6 +1,8 @@
 export const CONTENT_REVIEW_DATE = '2026-09-15';
 
 export const ROUTE_LAST_MODIFIED: Record<string, string> = {
+  '/blog/how-to-choose-custom-mma-shorts': '2026-11-13',
+  '/blog': '2026-11-13',
   '/products/tactical-stripe-camo-scallop-fight-shorts': '2026-11-13',
   '/products/yin-yang-split-combat-training-shorts': '2026-11-12',
   '/products/cosmic-blast-short-sleeve-rash-guard': '2026-11-11',
