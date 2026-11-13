@@ -1,6 +1,7 @@
 export const CONTENT_REVIEW_DATE = '2026-09-15';
 
 export const ROUTE_LAST_MODIFIED: Record<string, string> = {
+  '/products/two-tone-long-sleeve-rash-guard': '2026-11-13',
   '/blog/how-to-choose-custom-mma-shorts': '2026-11-13',
   '/blog': '2026-11-13',
   '/products/tactical-stripe-camo-scallop-fight-shorts': '2026-11-13',
@@ -33,7 +34,7 @@ export const ROUTE_LAST_MODIFIED: Record<string, string> = {
   '/products/cyber-gradient-training-fight-shorts': '2026-10-29',
 
   '/products': '2026-11-13',
-  '/products/category/rash-guards': '2026-11-11',
+  '/products/category/rash-guards': '2026-11-13',
   '/products/category/mma-grappling-shorts': '2026-11-13',
   '/products/category/training-shorts': '2026-11-10',
   '/products/category/teamwear-sets': '2026-10-28',

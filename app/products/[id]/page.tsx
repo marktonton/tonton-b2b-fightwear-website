@@ -1,3 +1,5 @@
+import TwoToneLongSleeveLanding from './TwoToneLongSleeveLanding';
+import TWO_TONE_LONG_SLEEVE from '../../../data/two-tone-long-sleeve-product.json';
 import TacticalStripeLanding from './TacticalStripeLanding';
 import TACTICAL_STRIPE from '../../../data/tactical-stripe-product.json';
 import YinYangLanding from './YinYangLanding';
@@ -107,7 +109,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
   }
 
   const url = `${SITE_URL}/products/${product.id}`;
-  const landingContent = product.id === TACTICAL_STRIPE.id ? TACTICAL_STRIPE : product.id === YIN_YANG.id ? YIN_YANG : product.id === COSMIC_BLAST.id ? COSMIC_BLAST : product.id === ALPINE_MAP.id ? ALPINE_MAP : product.id === FLOW_WAVE.id ? FLOW_WAVE : product.id === DUAL_TONE.id ? DUAL_TONE : product.id === CORE_STEALTH.id ? CORE_STEALTH : product.id === KABUTO.id ? KABUTO : product.id === ONI.id ? ONI : product.id === SNAKE_SCALE.id ? SNAKE_SCALE : product.id === CYBER_GRADIENT.id ? CYBER_GRADIENT : product.id === WHITE_COMPRESSION.id ? WHITE_COMPRESSION : isRashGuardLandingProduct(product.id)
+  const landingContent = product.id === TWO_TONE_LONG_SLEEVE.id ? TWO_TONE_LONG_SLEEVE : product.id === TACTICAL_STRIPE.id ? TACTICAL_STRIPE : product.id === YIN_YANG.id ? YIN_YANG : product.id === COSMIC_BLAST.id ? COSMIC_BLAST : product.id === ALPINE_MAP.id ? ALPINE_MAP : product.id === FLOW_WAVE.id ? FLOW_WAVE : product.id === DUAL_TONE.id ? DUAL_TONE : product.id === CORE_STEALTH.id ? CORE_STEALTH : product.id === KABUTO.id ? KABUTO : product.id === ONI.id ? ONI : product.id === SNAKE_SCALE.id ? SNAKE_SCALE : product.id === CYBER_GRADIENT.id ? CYBER_GRADIENT : product.id === WHITE_COMPRESSION.id ? WHITE_COMPRESSION : isRashGuardLandingProduct(product.id)
     ? RASH_GUARD_LANDING_CONTENT[product.id]
     : isHighSplitGrapplingShorts(product.id)
       ? HIGH_SPLIT_GRAPPLING_SHORTS_CONTENT
@@ -151,6 +153,7 @@ export default function ProductDetailPage({ params }: PageProps) {
     notFound();
   }
 
+  if (product.id === TWO_TONE_LONG_SLEEVE.id) return <TwoToneLongSleeveLanding />;
   if (product.id === TACTICAL_STRIPE.id) return <TacticalStripeLanding />;
   if (product.id === YIN_YANG.id) return <YinYangLanding />;
   if (product.id === COSMIC_BLAST.id) return <CosmicBlastLanding />;

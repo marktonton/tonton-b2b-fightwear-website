@@ -1,0 +1,140 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "@id": "https://www.tontongear.com/products/two-tone-long-sleeve-rash-guard#product",
+      "name": "Custom Two-Tone Long Sleeve BJJ Rash Guard",
+      "description": "Develop custom long sleeve BJJ rash guards with two-tone sleeves, academy logos and private-label branding. Compare colorways and plan OEM/ODM sampling with TONTON.",
+      "url": "https://www.tontongear.com/products/two-tone-long-sleeve-rash-guard",
+      "image": [
+        "https://assets.tontongear.com/assets/products/two-tone-long-sleeve-rash-guard/two-tone-long-sleeve-white.webp",
+        "https://assets.tontongear.com/assets/products/two-tone-long-sleeve-rash-guard/two-tone-long-sleeve-colorways.webp",
+        "https://assets.tontongear.com/assets/products/two-tone-long-sleeve-rash-guard/two-tone-long-sleeve-blue.webp",
+        "https://assets.tontongear.com/assets/products/two-tone-long-sleeve-rash-guard/two-tone-long-sleeve-purple.webp",
+        "https://assets.tontongear.com/assets/products/two-tone-long-sleeve-rash-guard/two-tone-long-sleeve-brown.webp",
+        "https://assets.tontongear.com/assets/products/two-tone-long-sleeve-rash-guard/two-tone-long-sleeve-olive.webp"
+      ],
+      "color": [
+        "Black / White",
+        "Black / Blue",
+        "Black / Purple",
+        "Black / Brown",
+        "Black",
+        "Black / Olive"
+      ],
+      "brand": {
+        "@type": "Brand",
+        "name": "TONTON"
+      },
+      "category": "Custom long sleeve BJJ rash guards",
+      "manufacturer": {
+        "@id": "https://www.tontongear.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.tontongear.com/products/two-tone-long-sleeve-rash-guard#webpage",
+      "url": "https://www.tontongear.com/products/two-tone-long-sleeve-rash-guard",
+      "name": "Custom Two-Tone Long Sleeve BJJ Rash Guard",
+      "dateModified": "2026-11-13",
+      "mainEntity": {
+        "@id": "https://www.tontongear.com/products/two-tone-long-sleeve-rash-guard#product"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.tontongear.com/products/two-tone-long-sleeve-rash-guard#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can we customize long sleeve rash guards with our academy logo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Submit authorized chest, back and sleeve artwork, preferred colors, labels and packaging requirements. TONTON reviews the decoration method and placement with the selected fabric before sample approval."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are all displayed colors approved for ranked No-Gi competition?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No blanket competition approval is claimed. The images are colorway design references. Check the current rules for the event, belt and age division, including color coverage and front/back visibility. Olive is a custom team color rather than a belt-rank designation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What fabric composition and GSM does this rash guard use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Choose and confirm the compression-knit swatch, composition, weight, stretch recovery and opacity in the project specification. Exact percentages and GSM for this reference are confirmed during quotation and sampling."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How are the seams, collar and cuffs specified?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The development brief calls for raglan long sleeves, flatlock seam construction and elastic cuff and hem finishing. Confirm the stitch configuration, seam comfort, sleeve length and body coverage on a physical sample."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the MOQ and sample lead time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Selected TONTON projects start from 10 pieces. Confirm the applicable minimum by style, design, color and size allocation. The selected-project sample target is 3–7 days after usable artwork and product details are confirmed; request a project-specific schedule."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we order several sleeve colors as one product program?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, discuss the white, blue, purple, brown, black and olive color directions as one product development program. Send quantities by color and size so the team can confirm material availability, minimums and the quotation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are these images and video photographs of a finished sample?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The supplied visuals are product design presentations with placeholder CUSTOM LOGO artwork. The video is generated. Use a physical sample and the approved specification to confirm the final fabric, seams, fit and branding."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Two-Tone Long Sleeve Rash Guard — Generated Design Presentation",
+      "description": "Generated design presentation with placeholder logo artwork. Confirm the garment on an approved physical sample.",
+      "thumbnailUrl": "https://assets.tontongear.com/assets/products/two-tone-long-sleeve-rash-guard/two-tone-long-sleeve-video-poster.webp",
+      "contentUrl": "https://assets.tontongear.com/assets/products/two-tone-long-sleeve-rash-guard/two-tone-long-sleeve-video.mp4",
+      "uploadDate": "2026-11-13T11:00:00+08:00",
+      "duration": "PT15.104S"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Products",
+          "item": "https://www.tontongear.com/products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Rash Guards",
+          "item": "https://www.tontongear.com/products/category/rash-guards"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Custom Two-Tone Long Sleeve BJJ Rash Guard",
+          "item": "https://www.tontongear.com/products/two-tone-long-sleeve-rash-guard"
+        }
+      ]
+    }
+  ]
+}

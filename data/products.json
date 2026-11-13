@@ -21,6 +21,26 @@
   ],
   "products": [
     {
+      "id": "two-tone-long-sleeve-rash-guard",
+      "categoryId": "sublimated-rash-guards",
+      "name": "Custom Two-Tone Long Sleeve BJJ Rash Guard",
+      "image": "https://assets.tontongear.com/assets/products/two-tone-long-sleeve-rash-guard/two-tone-long-sleeve-white.webp",
+      "images": [
+        "https://assets.tontongear.com/assets/products/two-tone-long-sleeve-rash-guard/two-tone-long-sleeve-white.webp",
+        "https://assets.tontongear.com/assets/products/two-tone-long-sleeve-rash-guard/two-tone-long-sleeve-colorways.webp",
+        "https://assets.tontongear.com/assets/products/two-tone-long-sleeve-rash-guard/two-tone-long-sleeve-blue.webp",
+        "https://assets.tontongear.com/assets/products/two-tone-long-sleeve-rash-guard/two-tone-long-sleeve-purple.webp",
+        "https://assets.tontongear.com/assets/products/two-tone-long-sleeve-rash-guard/two-tone-long-sleeve-brown.webp",
+        "https://assets.tontongear.com/assets/products/two-tone-long-sleeve-rash-guard/two-tone-long-sleeve-olive.webp"
+      ],
+      "description": "Develop custom long sleeve BJJ rash guards with two-tone sleeves, academy logos and private-label branding. Compare colorways and plan OEM/ODM sampling with TONTON.",
+      "features": [
+        "Two-Tone Sleeve Colors",
+        "Raglan Long Sleeve Design",
+        "Academy & Private-Label Development"
+      ]
+    },
+    {
       "id": "tactical-stripe-camo-scallop-fight-shorts",
       "categoryId": "sublimated-bjj-mma-shorts",
       "name": "Tactical Stripe Camo Scallop Fight Shorts",
