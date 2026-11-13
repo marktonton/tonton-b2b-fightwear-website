@@ -1,6 +1,7 @@
 export const CONTENT_REVIEW_DATE = '2026-09-15';
 
 export const ROUTE_LAST_MODIFIED: Record<string, string> = {
+  '/products/tactical-stripe-camo-scallop-fight-shorts': '2026-11-13',
   '/products/yin-yang-split-combat-training-shorts': '2026-11-12',
   '/products/cosmic-blast-short-sleeve-rash-guard': '2026-11-11',
   '/products/alpine-map-short-sleeve-rash-guard': '2026-11-11',
@@ -29,9 +30,9 @@ export const ROUTE_LAST_MODIFIED: Record<string, string> = {
 
   '/products/cyber-gradient-training-fight-shorts': '2026-10-29',
 
-  '/products': '2026-11-12',
+  '/products': '2026-11-13',
   '/products/category/rash-guards': '2026-11-11',
-  '/products/category/mma-grappling-shorts': '2026-11-12',
+  '/products/category/mma-grappling-shorts': '2026-11-13',
   '/products/category/training-shorts': '2026-11-10',
   '/products/category/teamwear-sets': '2026-10-28',
 

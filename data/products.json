@@ -21,6 +21,26 @@
   ],
   "products": [
     {
+      "id": "tactical-stripe-camo-scallop-fight-shorts",
+      "categoryId": "sublimated-bjj-mma-shorts",
+      "name": "Tactical Stripe Camo Scallop Fight Shorts",
+      "image": "https://assets.tontongear.com/assets/products/tactical-stripe-camo-shorts/tactical-stripe-shorts-front.webp",
+      "images": [
+        "https://assets.tontongear.com/assets/products/tactical-stripe-camo-shorts/tactical-stripe-shorts-front.webp",
+        "https://assets.tontongear.com/assets/products/tactical-stripe-camo-shorts/tactical-stripe-shorts-back.webp",
+        "https://assets.tontongear.com/assets/products/tactical-stripe-camo-shorts/tactical-stripe-shorts-model-detail.webp",
+        "https://assets.tontongear.com/assets/products/tactical-stripe-camo-shorts/tactical-stripe-shorts-model-fit.webp",
+        "https://assets.tontongear.com/assets/products/tactical-stripe-camo-shorts/tactical-stripe-shorts-rear-waist-detail.webp"
+      ],
+      "description": "Develop custom camo MMA shorts with scallop side openings, mesh hem detail and a drawcord waist. TONTON OEM/ODM sampling for brands, gyms and academies.",
+      "features": [
+        "Scallop Leg Openings",
+        "Mesh Hem Detail",
+        "Drawcord Elastic Waist",
+        "Private-Label Development"
+      ]
+    },
+    {
       "id": "yin-yang-split-combat-training-shorts",
       "categoryId": "sublimated-bjj-mma-shorts",
       "name": "Yin-Yang Split Combat Training Shorts",

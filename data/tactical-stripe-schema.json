@@ -1,0 +1,123 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "@id": "https://www.tontongear.com/products/tactical-stripe-camo-scallop-fight-shorts#product",
+      "name": "Tactical Stripe Camo Scallop Fight Shorts",
+      "description": "Develop custom camo MMA shorts with scallop side openings, mesh hem detail and a drawcord waist. TONTON OEM/ODM sampling for brands, gyms and academies.",
+      "url": "https://www.tontongear.com/products/tactical-stripe-camo-scallop-fight-shorts",
+      "image": [
+        "https://assets.tontongear.com/assets/products/tactical-stripe-camo-shorts/tactical-stripe-shorts-front.webp",
+        "https://assets.tontongear.com/assets/products/tactical-stripe-camo-shorts/tactical-stripe-shorts-back.webp",
+        "https://assets.tontongear.com/assets/products/tactical-stripe-camo-shorts/tactical-stripe-shorts-model-fit.webp",
+        "https://assets.tontongear.com/assets/products/tactical-stripe-camo-shorts/tactical-stripe-shorts-rear-waist-detail.webp"
+      ],
+      "brand": {
+        "@type": "Brand",
+        "name": "TONTON"
+      },
+      "category": "Custom MMA and grappling shorts",
+      "color": "Olive / charcoal",
+      "manufacturer": {
+        "@id": "https://www.tontongear.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.tontongear.com/products/tactical-stripe-camo-scallop-fight-shorts#webpage",
+      "url": "https://www.tontongear.com/products/tactical-stripe-camo-scallop-fight-shorts",
+      "name": "Tactical Stripe Camo Scallop Fight Shorts",
+      "dateModified": "2026-11-13",
+      "mainEntity": {
+        "@id": "https://www.tontongear.com/products/tactical-stripe-camo-scallop-fight-shorts#product"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.tontongear.com/products/tactical-stripe-camo-scallop-fight-shorts#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can you manufacture custom camo MMA shorts with our branding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. TONTON develops OEM/ODM fight shorts for brands, academies and gyms. Submit your authorized logo, camo artwork, colors, labels and packaging brief, then approve placement and the physical sample."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes scallop fight shorts different from straight-leg shorts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Scallop shorts have curved leg openings and side cutaways. Specify the opening depth and hem finish to suit your movement and coverage requirements, then check the fit through kicking, squatting and grappling movements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can the mesh hem and drawcord waistband be customized?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Discuss mesh placement, binding, waistband width, elastic tension and drawcord construction with the development team. Confirm these details and stress-point reinforcement on your approved sample."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What fabric composition and GSM are available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Select a swatch against your required composition, GSM, stretch, opacity and drying performance. Exact fiber percentages and weight for this reference are confirmed during quotation and sampling; performance claims require agreed testing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the MOQ and how do we get a quotation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MOQ, sample cost and production lead time depend on the selected fabric, artwork, colors, sizes and branding. Send your estimated quantity, size allocation, logo or reference, delivery country and target date for a project-specific quote."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we develop a matching rash guard and shorts set?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Request coordinated camo artwork and branding across a rash guard and shorts project. The product shown here is the shorts reference; confirm both garments separately in your quotation."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Tactical Stripe Camo Shorts — Generated Design Presentation",
+      "description": "Generated product design presentation. Product photographs and an approved physical sample define actual construction.",
+      "thumbnailUrl": "https://assets.tontongear.com/assets/products/tactical-stripe-camo-shorts/tactical-stripe-shorts-video-poster.webp",
+      "contentUrl": "https://assets.tontongear.com/assets/products/tactical-stripe-camo-shorts/tactical-stripe-shorts-video.mp4",
+      "uploadDate": "2026-11-13T09:00:00+08:00",
+      "duration": "PT15.104S"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Products",
+          "item": "https://www.tontongear.com/products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "MMA & Grappling Shorts",
+          "item": "https://www.tontongear.com/products/category/mma-grappling-shorts"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tactical Stripe Camo Scallop Fight Shorts",
+          "item": "https://www.tontongear.com/products/tactical-stripe-camo-scallop-fight-shorts"
+        }
+      ]
+    }
+  ]
+}
