@@ -4,7 +4,7 @@ export const ROUTE_LAST_MODIFIED: Record<string, string> = {
   '/products/midnight-navy-muay-thai-shorts': '2026-11-13',
   '/products/two-tone-long-sleeve-rash-guard': '2026-11-13',
   '/blog/how-to-choose-custom-mma-shorts': '2026-11-13',
-  '/blog': '2026-11-13',
+  '/blog': '2026-11-14',
   '/products/tactical-stripe-camo-scallop-fight-shorts': '2026-11-13',
   '/products/yin-yang-split-combat-training-shorts': '2026-11-12',
   '/products/cosmic-blast-short-sleeve-rash-guard': '2026-11-11',

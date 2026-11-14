@@ -1,3 +1,4 @@
+import academy from '../data/blog/custom-bjj-rash-guards-academy-buying-guide.json';
 import selection from '../data/blog/how-to-choose-custom-mma-shorts.json';
 import fabric from '../data/blog/how-to-choose-fabric-for-custom-rash-guards.json';
 import printing from '../data/blog/sublimation-vs-heat-transfer-for-fightwear.json';
@@ -7,7 +8,7 @@ import cost from '../data/blog/what-affects-custom-fightwear-cost.json';
 
 export type BlogImage = { src: string; alt: string; caption: string };
 export type BlogPost = {
-  slug: string; title: string; category: string; description: string; answer: string;
+  slug: string; title: string; seoTitle?: string; builderProduct?: string; category: string; description: string; answer: string;
   published: string; updated: string; author: string; hero: BlogImage; basis: string;
   sections: Array<{ id: string; title: string; paragraphs: string[]; bullets?: string[];
     links?: string[][];
@@ -17,7 +18,7 @@ export type BlogPost = {
   download?: { href: string; label: string };
 };
 // Register one JSON content file here to publish another article. Dates live in the content.
-export const BLOG_POSTS: BlogPost[] = [selection, construction, fabric, printing, approval, cost];
+export const BLOG_POSTS: BlogPost[] = [academy, selection, construction, fabric, printing, approval, cost];
 export const getBlogPost = (slug: string) => BLOG_POSTS.find(post => post.slug === slug);
 export const blogReadTime = (post: BlogPost) => {
   const words = [post.answer, ...post.sections.flatMap(section => [
