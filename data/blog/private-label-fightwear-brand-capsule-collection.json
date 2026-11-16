@@ -1,0 +1,367 @@
+{
+  "slug": "private-label-fightwear-brand-capsule-collection",
+  "title": "How to Build a Private-Label Fightwear Brand Capsule Collection",
+  "seoTitle": "Private-Label Fightwear Brand Capsule Guide | TONTON",
+  "builderProduct": "Coordinated Team Kit",
+  "category": "Brand Planning",
+  "description": "Build a private-label fightwear capsule with the right products, fabrics, branding, sizing, samples, and launch plan for MMA and BJJ customers.",
+  "answer": "A focused private-label fightwear capsule can start with three product roles: one recognizable short, one coordinated rash guard and one everyday training piece. Choose the assortment around a defined customer use case, then align artwork, labels, sizing and sample approval before expanding. Three roles are a planning framework, not a universal minimum order or launch requirement.",
+  "published": "2026-11-16",
+  "updated": "2026-11-16",
+  "author": "TONTON",
+  "hero": {
+    "src": "assets/products/kit-bw-v2.png",
+    "alt": "Coordinated TONTON rash guard and fight shorts reference for a private-label fightwear collection",
+    "caption": "Coordinated rash guard and shorts reference · An example of shared visual identity, not a complete three-product launch assortment."
+  },
+  "basis": "Based on the supplied article, TONTON product and procurement references, and official competition and U.S. textile-labeling resources reviewed November 16, 2026. The capsule framework is planning guidance, not sales-performance evidence or a guarantee. Verify the current event rules and destination-market obligations for the exact product and launch date.",
+  "sections": [
+    {
+      "id": "capsule-products",
+      "title": "What should a private-label fightwear capsule include?",
+      "paragraphs": [
+        "A practical first capsule often contains three product roles:",
+        "The best mix depends on the business model:",
+        "This is a planning framework, not a universal product rule. Your customer profile, sales channel, size distribution, and competition requirements should determine the final assortment.",
+        "This structure is useful because each product has a different job. The hero product attracts attention, the rash guard completes the combat-sports look, and the training product broadens everyday use. It also gives a new brand a clearer merchandising story than launching many unrelated cuts and graphics at once."
+      ],
+      "table": {
+        "caption": "Plan a capsule around your business model",
+        "columns": [
+          "Brand situation",
+          "Recommended first capsule",
+          "Main decision",
+          "Less suitable starting point"
+        ],
+        "rows": [
+          [
+            "MMA gym or academy",
+            "Shorts, rash guards, team kit options",
+            "Consistent identity across members",
+            "A large retail range with many unrelated graphics"
+          ],
+          [
+            "BJJ or grappling team",
+            "No-gi rash guard, grappling shorts, training layer",
+            "Comfort and team consistency",
+            "MMA-only styling that does not fit the academy’s use"
+          ],
+          [
+            "Private-label e-commerce brand",
+            "Hero short, matching rash guard, training short",
+            "Clear product story and manageable inventory",
+            "Ten or more styles before demand is known"
+          ],
+          [
+            "Fightwear brand expanding its range",
+            "New short construction plus coordinated apparel",
+            "Differentiation from existing products",
+            "Copying a competitor’s full assortment without a clear reason"
+          ]
+        ]
+      },
+      "bullets": [
+        "A hero product: Usually a custom MMA fight short or grappling short that makes the brand recognizable.",
+        "A matching performance layer: A custom rash guard that carries the same visual identity and serves MMA, BJJ, or grappling customers.",
+        "An everyday training product: Training shorts, a team kit component, or another repeatable item that can be worn beyond competition-style sessions."
+      ]
+    },
+    {
+      "id": "customer-use",
+      "title": "How do you choose the customer and use case first?",
+      "paragraphs": [
+        "Start by writing one sentence that describes the first buyer and the moment when the product is used. For example: “Our first collection is for European no-gi academies that need coordinated apparel for training and team events.” That sentence helps prevent contradictory choices later.",
+        "Competition requirements should be checked separately from general training needs. Review the official IBJJF uniform requirements, IMMAF competition rules and protocols, or the applicable ADCC event rules. IMMAF’s current rules page links 2021 editions while also listing 2026 summaries; confirm the exact edition, event protocol and permitted apparel with the organizer before approving a competition product."
+      ],
+      "bullets": [
+        "Is the product mainly for hard training, competition, travel, team identity, or casual gym wear?",
+        "Will the buyer purchase one garment, a complete kit, or repeat orders for new members?",
+        "Is the collection sold directly to consumers, through academies, or to other brands?",
+        "Which countries will receive the products, and what labeling or event rules may apply?",
+        "Does the buyer expect a conservative team look or a more distinctive retail design?"
+      ],
+      "links": [
+        [
+          "IBJJF uniform requirements",
+          "https://ibjjf.com/uniform"
+        ],
+        [
+          "IMMAF competition rules and updates",
+          "https://immaf.org/about/what-is-mma/"
+        ],
+        [
+          "ADCC rules and regulations",
+          "https://adcombat.com/adcc-rules-regulations/"
+        ]
+      ]
+    },
+    {
+      "id": "brand-identity",
+      "title": "Which products should carry the brand identity?",
+      "paragraphs": [
+        "A capsule feels intentional when the same brand system appears across different garments without forcing every item to look identical. Decide the following before final artwork:",
+        "TONTON’s custom sublimated BJJ and MMA shorts page is a useful reference point when comparing outer shorts and 2-in-1 constructions, artwork placement, waist details, and size grading. Treat those published configurations as product references to review, not as a substitute for approving your own sample.",
+        "For a private-label brand, the goal is not to put the logo everywhere. The goal is to make the product identifiable while keeping the design readable at retail scale and on a moving athlete."
+      ],
+      "bullets": [
+        "Primary brand mark: Where is the logo most visible when the athlete is standing, moving, or photographed?",
+        "Graphic language: Will the collection use a geometric pattern, a restrained wordmark, a team crest, or a stronger all-over print?",
+        "Color system: Select one base color, one main accent, and one supporting neutral. This makes later replenishment easier.",
+        "Product hierarchy: Reserve the most detailed artwork for the hero product and simplify secondary pieces.",
+        "Label and packaging treatment: Decide whether the launch needs woven labels, printed labels, hangtags, polybags, or team-specific packing."
+      ],
+      "links": [
+        [
+          "Custom BJJ and MMA shorts development",
+          "/customization/sublimated-bjj-mma-shorts"
+        ]
+      ]
+    },
+    {
+      "id": "shorts-construction",
+      "title": "How should you compare outer shorts, 2-in-1 shorts, and training shorts?",
+      "paragraphs": [
+        "The right construction depends on how the customer trains and what level of coverage or layering they prefer.",
+        "TONTON’s high-split grappling shorts reference describes a style-specific construction with a stretch shell, compression liner, high split, drawstring, and anti-slip grip detail. These are useful checkpoints for a development brief, but the material and construction should remain SKU-specific rather than being generalized across every short."
+      ],
+      "table": {
+        "caption": "Compare shorts construction before approving a collection",
+        "columns": [
+          "Construction",
+          "Strengths",
+          "Check before approval",
+          "Best fit"
+        ],
+        "rows": [
+          [
+            "Outer fight shorts",
+            "Flexible layering and a familiar MMA silhouette",
+            "Waist stability, rise, split, seam comfort, and whether a separate compression layer is expected",
+            "MMA training, striking, and customers who choose their own base layer"
+          ],
+          [
+            "2-in-1 grappling shorts",
+            "Integrated compression layer and a complete training outfit",
+            "Liner coverage, stretch recovery, leg grip, split height, and heat management",
+            "Grappling customers who want built-in support and coverage"
+          ],
+          [
+            "Training shorts",
+            "Broader everyday use and easier cross-training positioning",
+            "Pocket policy, waistband comfort, fabric hand feel, and branding durability",
+            "Gym training, warm-ups, and lifestyle-adjacent use"
+          ]
+        ]
+      },
+      "links": [
+        [
+          "High-split 2-in-1 grappling shorts reference",
+          "/products/high-split-grappling-shorts"
+        ],
+        [
+          "How to choose custom MMA shorts",
+          "/blog/how-to-choose-custom-mma-shorts"
+        ]
+      ],
+      "bullets": []
+    },
+    {
+      "id": "development-brief",
+      "title": "What should you include in a private-label fightwear development brief?",
+      "paragraphs": [
+        "A useful brief turns an idea into decisions a manufacturer can review. Include:",
+        "TONTON’s custom sublimated rash guard service shows why a rash guard brief should cover sleeve length, panel layout, seam construction, hem control, decoration, labels, and packaging—not just a front logo. For U.S. sales, review the FTC Textile Fiber Rule and the FTC Care Labeling Rule with your compliance adviser before finalizing private-label labels."
+      ],
+      "bullets": [
+        "Product category and intended sport or training use",
+        "Outer-only or 2-in-1 construction",
+        "Preferred fit, length, split height, and waistband direction",
+        "Fabric priorities, such as stretch, opacity, drying, hand feel, or recovery",
+        "Artwork files, logo files, color references, and placement notes",
+        "Size range and estimated quantity by size",
+        "Whether the order contains one design, several colorways, or team personalization",
+        "Labels, packaging, destination market, and target launch date",
+        "Competition rules that must be checked, if the product is intended for an event"
+      ],
+      "links": [
+        [
+          "Custom rash guard development",
+          "/customization/sublimated-rash-guards"
+        ],
+        [
+          "FTC Textile Fiber Rule",
+          "https://www.ftc.gov/legal-library/browse/rules/textile-fiber-rule"
+        ],
+        [
+          "FTC care-labeling guidance",
+          "https://www.ftc.gov/business-guidance/resources/clothes-captioning-complying-care-labeling-rule"
+        ]
+      ]
+    },
+    {
+      "id": "launch-sequence",
+      "title": "How many products should a new brand launch?",
+      "paragraphs": [
+        "Launch enough products to tell a complete story, but few enough to sample and replenish responsibly. For many new brands, three core product roles are easier to manage than a broad first catalog. The final number should be based on available development budget, expected demand, size breadth, and whether the products share patterns or materials.",
+        "A practical launch sequence is:",
+        "This staged approach reduces the risk of tying up cash in too many graphics, sizes, and low-volume variants."
+      ],
+      "bullets": [
+        "Validate the hero product. Approve the primary short silhouette, artwork, fit, and size grading.",
+        "Add the matching layer. Develop the rash guard or compression layer with a coordinated visual system.",
+        "Add the training product. Use it to reach gym members who want the brand for regular sessions.",
+        "Measure demand by size and use case. Record which colors, cuts, and sizes create repeat requests.",
+        "Expand only where the data supports it. Add a new construction, team colorway, or seasonal design rather than duplicating the entire range."
+      ]
+    },
+    {
+      "id": "sample-approval",
+      "title": "Why is sampling essential for a private-label fightwear brand?",
+      "paragraphs": [
+        "A digital mockup can confirm the concept, but only a physical sample can reveal how the garment behaves on a body. Check the sample while standing, squatting, stretching, drilling, and moving through the sport-specific range of motion.",
+        "Use this approval checklist:",
+        "TONTON’s sampling and MOQ guide states that selected custom projects can start from 10 pieces and that a physical sample is needed to assess fit, hand feel, opacity, stretch, seams, and workmanship. The same guide distinguishes a digital mockup from a physical sample and says that price, sample charges, packaging, shipping, and timing should be confirmed in a written quote. Treat “from 10 pieces” and a target sample window as project-dependent, not as universal guarantees."
+      ],
+      "bullets": [
+        "Fit and size grading across the smallest and largest planned sizes",
+        "Waistband tension, rise, drawstring position, and stability",
+        "Split height, liner coverage, and freedom of movement",
+        "Seam comfort at the crotch, side split, armhole, or waistband",
+        "Opacity and recovery after stretching",
+        "Color appearance under indoor lighting and daylight",
+        "Logo scale, placement, and legibility in photos",
+        "Label position, care information, packaging, and final presentation",
+        "Any sport- or event-specific restrictions"
+      ],
+      "links": [
+        [
+          "Sampling and MOQ guide",
+          "/resources/custom-fightwear-sampling-moq"
+        ],
+        [
+          "Sample approval checklist",
+          "/blog/custom-fightwear-sample-approval-checklist"
+        ]
+      ]
+    },
+    {
+      "id": "supplier-questions",
+      "title": "What should you ask an OEM/ODM fightwear supplier before placing an order?",
+      "paragraphs": [
+        "Ask for written answers to these questions:",
+        "A supplier’s published material or performance description should be read as style-specific unless the written quotation confirms otherwise. The same principle applies to fabric weight, fiber composition, construction, MOQ, and delivery timing."
+      ],
+      "bullets": [
+        "Which details are confirmed for this exact style and which are development options?",
+        "What is the minimum quantity by style, colorway, and size allocation?",
+        "What is included in the sample fee and what counts as a revision?",
+        "Which artwork formats are accepted, and who checks production files?",
+        "What labels and packaging can be added for private-label sales?",
+        "What is the quoted production schedule after sample approval?",
+        "How are inspection, packing, shipping, taxes, and duties handled?",
+        "Which details need separate confirmation for different destination markets?"
+      ]
+    },
+    {
+      "id": "key-takeaways",
+      "title": "Key takeaways",
+      "paragraphs": [],
+      "bullets": [
+        "A focused private-label fightwear capsule is usually easier to brand, sample, explain, and replenish than a large disconnected catalog.",
+        "Choose the first products around a defined MMA, BJJ, academy, team, or retail use case.",
+        "Treat outer shorts, 2-in-1 grappling shorts, rash guards, and training shorts as different product decisions.",
+        "Confirm style-specific materials, construction, MOQ, labels, packaging, and timing in writing.",
+        "Use a digital mockup for artwork direction and a physical sample for fit and workmanship approval.",
+        "Check the latest competition rules and destination-market labeling obligations separately from general product development."
+      ]
+    }
+  ],
+  "faqs": [
+    [
+      "What is private-label fightwear?",
+      "Private-label fightwear is combat-sports apparel produced for a brand that sells it under its own name, labels, packaging, and visual identity. The buyer still needs to define the intended use, product construction, artwork, size range, and compliance requirements."
+    ],
+    [
+      "How do I start a private-label fightwear brand?",
+      "Start with one customer use case and a focused capsule, then prepare a development brief and approve physical samples before placing a broader order. The first step is assortment clarity, not a large product count."
+    ],
+    [
+      "Is a private-label MMA collection suitable for BJJ customers?",
+      "Sometimes, but not automatically. MMA and BJJ customers can share training products, while competition rules, preferred coverage, fit, and visual expectations may differ. Check the exact use case and applicable event rules before combining the categories."
+    ],
+    [
+      "Should I launch custom shorts or rash guards first?",
+      "Choose the product that best expresses your customer’s main use case. Shorts may be the stronger hero product for an MMA-focused brand, while a no-gi academy may need a rash guard and grappling short as a coordinated pair."
+    ],
+    [
+      "Is a low MOQ the same as a low-risk launch?",
+      "No. A low starting MOQ can reduce the initial quantity, but development costs, size fragmentation, revisions, shipping, labels, and unsold variants still affect risk. Confirm the minimum by style and design in writing."
+    ],
+    [
+      "Do digital mockups replace physical fightwear samples?",
+      "No. A mockup checks the visual concept; a physical sample checks fit, stretch, opacity, seam comfort, construction, and workmanship. Approve both before bulk production."
+    ],
+    [
+      "Can I use the same fabric specification for every fightwear product?",
+      "No. Fabric weight and fiber composition are product- and style-specific. Confirm the exact material, recovery, opacity, and construction for each SKU instead of transferring a specification from one garment to another."
+    ],
+    [
+      "What information should I send to a private-label fightwear manufacturer?",
+      "Ask for the product category, intended sport, estimated quantity, size range, artwork status, destination market, performance priorities, and target date. TONTON’s Project Builder organizes these inputs for an initial project review."
+    ]
+  ],
+  "related": [
+    "custom-bjj-rash-guards-academy-buying-guide",
+    "how-to-choose-custom-mma-shorts",
+    "custom-fightwear-sample-approval-checklist"
+  ],
+  "links": [
+    [
+      "Custom rash guards",
+      "/customization/sublimated-rash-guards"
+    ],
+    [
+      "Custom BJJ and MMA shorts",
+      "/customization/sublimated-bjj-mma-shorts"
+    ],
+    [
+      "Custom training shorts",
+      "/customization/sublimated-training-shorts"
+    ],
+    [
+      "Private-label fightwear development",
+      "/solutions/private-label-fightwear"
+    ],
+    [
+      "Sampling and MOQ guide",
+      "/resources/custom-fightwear-sampling-moq"
+    ]
+  ],
+  "sources": [
+    {
+      "label": "IBJJF uniform requirements",
+      "url": "https://ibjjf.com/uniform",
+      "note": "Official uniform reference; verify the edition and event requirements."
+    },
+    {
+      "label": "IMMAF competition rules",
+      "url": "https://immaf.org/about/what-is-mma/",
+      "note": "Current official entry point links 2021 rule editions and 2026 summaries; confirm applicable event protocols."
+    },
+    {
+      "label": "ADCC rules and regulations",
+      "url": "https://adcombat.com/adcc-rules-regulations/",
+      "note": "Official event rules reference; confirm the particular competition requirements."
+    },
+    {
+      "label": "FTC Textile Fiber Rule",
+      "url": "https://www.ftc.gov/legal-library/browse/rules/textile-fiber-rule",
+      "note": "U.S. textile-labeling reference for destination-market review."
+    },
+    {
+      "label": "FTC care-labeling guidance",
+      "url": "https://www.ftc.gov/business-guidance/resources/clothes-captioning-complying-care-labeling-rule",
+      "note": "Official guidance for reviewing garment care information."
+    }
+  ]
+}

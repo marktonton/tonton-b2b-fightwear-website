@@ -1,3 +1,4 @@
+import capsule from '../data/blog/private-label-fightwear-brand-capsule-collection.json';
 import academy from '../data/blog/custom-bjj-rash-guards-academy-buying-guide.json';
 import selection from '../data/blog/how-to-choose-custom-mma-shorts.json';
 import fabric from '../data/blog/how-to-choose-fabric-for-custom-rash-guards.json';
@@ -18,7 +19,7 @@ export type BlogPost = {
   download?: { href: string; label: string };
 };
 // Register one JSON content file here to publish another article. Dates live in the content.
-export const BLOG_POSTS: BlogPost[] = [academy, selection, construction, fabric, printing, approval, cost];
+export const BLOG_POSTS: BlogPost[] = [capsule, academy, selection, construction, fabric, printing, approval, cost];
 export const getBlogPost = (slug: string) => BLOG_POSTS.find(post => post.slug === slug);
 export const blogReadTime = (post: BlogPost) => {
   const words = [post.answer, ...post.sections.flatMap(section => [
