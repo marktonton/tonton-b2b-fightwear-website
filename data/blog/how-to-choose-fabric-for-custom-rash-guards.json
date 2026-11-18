@@ -5,7 +5,7 @@
   "description": "A buyer guide to rash guard fabric composition, GSM, stretch, coverage and print compatibility, using TONTON’s 220 GSM polyester/spandex reference.",
   "answer": "Choose rash guard fabric by matching composition, weight, stretch recovery, coverage and decoration to the intended fit. TONTON’s 220 GSM, 85% polyester / 15% spandex knit is one documented starting point. Approve the actual color, printed fabric and finished garment together; GSM or spandex percentage alone cannot establish comfort, opacity or compression performance.",
   "published": "2026-10-29",
-  "updated": "2026-10-29",
+  "updated": "2026-11-18",
   "author": "TONTON",
   "hero": {
     "src": "https://assets.tontongear.com/assets/fabrics/220gsm-stretch-knit/main-fabric.webp",
@@ -164,9 +164,9 @@
     ]
   ],
   "related": [
+    "custom-mma-bjj-fightwear-fabric-fit-guide",
     "custom-bjj-rash-guards-academy-buying-guide",
-    "sublimation-vs-heat-transfer-for-fightwear",
-    "custom-fightwear-sample-approval-checklist"
+    "sublimation-vs-heat-transfer-for-fightwear"
   ],
   "links": [
     [

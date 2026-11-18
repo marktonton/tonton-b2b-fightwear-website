@@ -5,7 +5,7 @@
   "description": "Compare MMA shorts shells, gussets, side slits, liners and closure systems with real TONTON product examples and a practical sample specification guide.",
   "answer": "Specify MMA shorts as a complete construction: shell, crotch gusset, leg opening, waist/closure and any liner. A high side split does not replace crotch flexibility, and visible inner mesh does not establish a full compression liner. Select the components for the intended training use, then approve movement, contact surfaces and measurements on the finished sample.",
   "published": "2026-10-29",
-  "updated": "2026-10-29",
+  "updated": "2026-11-18",
   "author": "TONTON",
   "hero": {
     "src": "https://assets.tontongear.com/assets/products/snake-scale-mma-shorts/snake-scale-black-inner.webp",
@@ -138,9 +138,9 @@
     ]
   ],
   "related": [
+    "custom-mma-bjj-fightwear-fabric-fit-guide",
     "how-to-choose-custom-mma-shorts",
-    "custom-fightwear-sample-approval-checklist",
-    "what-affects-custom-fightwear-cost"
+    "custom-fightwear-sample-approval-checklist"
   ],
   "links": [
     [
