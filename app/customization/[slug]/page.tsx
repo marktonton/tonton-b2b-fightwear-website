@@ -1,3 +1,4 @@
+import ProcurementEvidence from '../../../components/ProcurementEvidence';
 import InternationalBuyerFeedback from '../../../components/InternationalBuyerFeedback';
 import SouthAfricaBuyerFeedback from '../../../components/SouthAfricaBuyerFeedback';
 import FrenchBuyerFeedback from '../../../components/FrenchBuyerFeedback';
@@ -627,6 +628,8 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
           </div>
         </div>
       </section>
+
+      <ProcurementEvidence slug={category.id} />
 
       <section className="customization-proof customization-shell">
         <figure className="customization-proof-media">
