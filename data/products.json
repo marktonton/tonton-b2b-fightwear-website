@@ -21,6 +21,32 @@
   ],
   "products": [
     {
+      "id": "tactical-python-camo-rash-guard",
+      "categoryId": "sublimated-rash-guards",
+      "name": "Custom Tactical Python Camo Short-Sleeve Rash Guard",
+      "image": "https://assets.tontongear.com/assets/products/tactical-python-camo-rash-guard/python-camo-front.webp",
+      "images": [
+        "https://assets.tontongear.com/assets/products/tactical-python-camo-rash-guard/python-camo-front.webp",
+        "https://assets.tontongear.com/assets/products/tactical-python-camo-rash-guard/python-camo-three-quarter.webp",
+        "https://assets.tontongear.com/assets/products/tactical-python-camo-rash-guard/python-camo-back.webp",
+        "https://assets.tontongear.com/assets/products/tactical-python-camo-rash-guard/python-camo-model-fit.webp",
+        "https://assets.tontongear.com/assets/products/tactical-python-camo-rash-guard/python-camo-front-detail.webp",
+        "https://assets.tontongear.com/assets/products/tactical-python-camo-rash-guard/python-camo-sleeve-detail.webp",
+        "https://assets.tontongear.com/assets/products/tactical-python-camo-rash-guard/python-camo-rear-seam-detail.webp",
+        "https://assets.tontongear.com/assets/products/tactical-python-camo-rash-guard/python-camo-rear-neck-detail.webp",
+        "https://assets.tontongear.com/assets/products/tactical-python-camo-rash-guard/python-camo-side-logo-detail.webp",
+        "https://assets.tontongear.com/assets/products/tactical-python-camo-rash-guard/python-camo-side-fit-detail.webp",
+        "https://assets.tontongear.com/assets/products/tactical-python-camo-rash-guard/python-camo-back-detail.webp"
+      ],
+      "description": "Develop custom camo rash guards for BJJ academies, MMA gyms and private-label brands. Compare raglan fit, seam details, artwork, labels and sample requirements.",
+      "features": [
+        "Short Raglan Sleeves",
+        "Earth-Tone Camo Artwork",
+        "Contrast Seam Direction",
+        "Private-Label Sampling"
+      ]
+    },
+    {
       "id": "midnight-navy-muay-thai-shorts",
       "categoryId": "sublimated-bjj-mma-shorts",
       "name": "Midnight Navy Muay Thai & Kickboxing Shorts",
@@ -268,7 +294,7 @@
       "description": "Matte white compression training top with raglan sleeves and flat seams, developed for private-label BJJ, MMA and gym collections.",
       "features": [
         "85% Polyester / 15% Spandex Brief",
-        "220\u2013250 GSM Development Range",
+        "220–250 GSM Development Range",
         "Private Label OEM/ODM",
         "Sample Opacity & Fit Checks"
       ]
@@ -373,7 +399,7 @@
     {
       "id": "custom-logo-shorts",
       "categoryId": "sublimated-bjj-mma-shorts",
-      "name": "Men\u2019s Custom MMA Fight Shorts",
+      "name": "Men’s Custom MMA Fight Shorts",
       "image": "assets/products/grappling-shorts-products/custom-competition-shorts-main-v3.webp",
       "images": [
         "assets/products/grappling-shorts-products/custom-competition-shorts-main-v3.webp",

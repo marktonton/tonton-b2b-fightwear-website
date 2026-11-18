@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "@id": "https://www.tontongear.com/products/tactical-python-camo-rash-guard#product",
+      "name": "Custom Tactical Python Camo Short-Sleeve Rash Guard",
+      "description": "Develop custom camo rash guards for BJJ academies, MMA gyms and private-label brands. Compare raglan fit, seam details, artwork, labels and sample requirements.",
+      "url": "https://www.tontongear.com/products/tactical-python-camo-rash-guard",
+      "image": [
+        "https://assets.tontongear.com/assets/products/tactical-python-camo-rash-guard/python-camo-front.webp",
+        "https://assets.tontongear.com/assets/products/tactical-python-camo-rash-guard/python-camo-back.webp"
+      ],
+      "category": "Custom short-sleeve rash guard development reference",
+      "manufacturer": {
+        "@id": "https://www.tontongear.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.tontongear.com/products/tactical-python-camo-rash-guard#webpage",
+      "url": "https://www.tontongear.com/products/tactical-python-camo-rash-guard",
+      "name": "Custom Tactical Python Camo Short-Sleeve Rash Guard",
+      "dateModified": "2026-11-18",
+      "mainEntity": {
+        "@id": "https://www.tontongear.com/products/tactical-python-camo-rash-guard#product"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Products",
+          "item": "https://www.tontongear.com/products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Rash Guards",
+          "item": "https://www.tontongear.com/products/category/rash-guards"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Custom Tactical Python Camo Short-Sleeve Rash Guard",
+          "item": "https://www.tontongear.com/products/tactical-python-camo-rash-guard"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can TONTON develop custom camo rash guards with our brand artwork?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Send your authorized artwork, preferred colors, logo map, sleeve direction and quantities by size. Confirm panel alignment, print color, private labels and packaging on the approved sample."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does this page establish an official KRYPTEK collaboration?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No affiliation or licensing claim is made. Supplied reference images contain existing third-party marks and pattern names. Your order uses the artwork and rights approved for that project; the reference does not establish permission to reproduce third-party branding."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What fabric composition and GSM does this reference use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Confirm the selected compression-knit swatch, fiber composition, GSM, stretch recovery and opacity during quotation and sampling. No exact blend or weight is established for this reference by the supplied images."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are the seams four-needle six-thread flatlock?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The references show contrasting black seam lines and raglan panel joins. Request the four-needle six-thread flatlock direction if required, then confirm the actual stitch construction and skin-side finish on the physical sample."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can this camo rash guard be used in No-Gi competition?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is presented as a training and custom-development reference. Check the relevant event, rank, division and date before approving colors, graphics and coverage for competition. No blanket competition approval is claimed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the MOQ, size range and sample timing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Selected projects start from 10 pieces. Confirm minimums per style, design and colorway, the size chart and quantity allocation. The selected-project sample target is 3–7 days after usable artwork and details are confirmed; sourcing and revisions can change the schedule."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Tactical python camo rash guard design presentation",
+      "description": "Generated 15-second product design presentation, not a physical performance test.",
+      "thumbnailUrl": "https://assets.tontongear.com/assets/products/tactical-python-camo-rash-guard/python-camo-video-poster.webp",
+      "contentUrl": "https://assets.tontongear.com/assets/products/tactical-python-camo-rash-guard/python-camo-video.mp4",
+      "uploadDate": "2026-11-18T00:00:00+08:00",
+      "duration": "PT15S"
+    }
+  ]
+}
