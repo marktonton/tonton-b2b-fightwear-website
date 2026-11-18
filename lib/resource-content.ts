@@ -31,10 +31,10 @@ export const RESOURCE_PAGES: ResourcePage[] = [
   {
     slug: 'custom-fightwear-size-quantity-planning',
     title: 'Custom Fightwear Size & Quantity Planning Guide',
-    description: 'Prepare separate Rash Guard and shorts size allocations, distinguish body and garment measurements, and plan adult or youth academy orders with a worked quantity example.',
+    description: 'Use the free team quantity planner to total rash guards and shorts by size, download a CSV and prepare a custom fightwear quote brief.',
     eyebrow: 'TEAMWEAR SIZE & ORDER PLANNING',
     answer: 'Plan custom fightwear quantities from a confirmed member or customer list, not a universal size ratio. Record Rash Guard and shorts sizes separately, distinguish body measurements from finished-garment measurements, and check the selected pattern on a fit sample. Adult and youth fits need separate review. Any spare stock is an explicit purchasing decision, not an assumed allowance.',
-    updated: '2026-10-15', cluster: 'project',
+    updated: '2026-11-18', cluster: 'project',
     snapshotHeading: 'Prepare the size information before ordering',
     table: [
       ['Body measurements', 'Measurements taken on the wearer; identify the measuring points and units'],
@@ -65,6 +65,8 @@ export const RESOURCE_PAGES: ResourcePage[] = [
       { heading: 'Keep a clear record for new members and reorders', paragraphs: ['Retain the approved measurement chart, fit sample, style reference and artwork version. A reorder should specify what stays the same and which quantities or sizes change. Confirm material availability, color references, MOQ and schedule again rather than assuming an earlier order automatically sets the new terms.'] },
     ],
     faqs: [
+      ['Can I download a team size allocation and use it in a quote request?', 'Yes. Enter rash guard and shorts quantities separately in the planner, download the CSV or copy the quantity brief, then continue to an editable Project Builder with the allocation included. This does not submit an order or confirm MOQ.'],
+      ['Does the planner select garment sizes for athletes?', 'No. It adds quantities entered against planning labels. Confirm the actual style size chart, available sizes, adult or youth pattern and sample fit before assigning a size to each wearer.'],
       ['Should Rash Guards and shorts use the same size allocation?', 'Not automatically. Collect the top and shorts sizes separately because fit preferences and body proportions can differ. If you are ordering one set per member, both garment totals should match the member count, even when the size distribution differs.'],
       ['Can I use another brand’s size chart?', 'Use it as a clearly identified reference only. Confirm the actual TONTON pattern, measuring method and sample fit before selecting order sizes; size labels are not universal.'],
       ['Does this guide provide a TONTON size chart?', 'No. It explains measurement and quantity planning. Request the approved chart for the selected style, adult or youth fit and sample version before committing to dimensions or sizes.'],

@@ -1,5 +1,7 @@
 'use client';
 
+import { parseAllocation, allocationSummary, allocationTotals } from '../../lib/size-allocation';
+
 import { getDiscoveryAttribution } from '../../lib/traffic-attribution';
 
 import { sendAnalyticsEvent } from '../../lib/analytics';
@@ -125,6 +127,11 @@ export default function ProjectBuilderForm() {
         construction: productConfigs[requestedProduct].constructionOptions[0],
         priorities: [],
       }));
+    }
+    const allocation = parseAllocation(params.get('allocation'));
+    if (params.get('source') === 'size-quantity-planner' && allocation.length) {
+      const units = allocationTotals(allocation).units;
+      if (units > 0) setForm(current => ({ ...current, notes: allocationSummary(allocation), sizes: allocation.filter(row => row.tops || row.shorts).map(row => row.size).join(', '), quantity: units < 50 ? 'Under 50 PCS' : units < 100 ? '50–99 PCS' : units < 300 ? '100–299 PCS' : '300+ PCS' }));
     }
     setReferenceProduct(reference);
     setEntrySource(source);

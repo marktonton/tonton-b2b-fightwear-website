@@ -1,3 +1,4 @@
+import SizeQuantityPlanner from '../../../components/SizeQuantityPlanner';
 import BuyerLearningPath, { buyerFamilyForResource } from '../../../components/BuyerLearningPath';
 import BuyerDownloadLinks from '../../../components/BuyerDownloadLinks';
 import { withPageSocialMetadata } from '../../../lib/page-metadata';
@@ -36,6 +37,7 @@ export default function ResourceArticlePage({ params }: PageProps) {
       <nav aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><Link href="/resources">Resources</Link><span>/</span><span>{resource.title}</span></nav>
       <header><p>{resource.eyebrow}</p><h1>{resource.title}</h1><p>{resource.description}</p><span>Reviewed {reviewed}</span></header>
       <section className="resource-direct-answer"><p>DIRECT ANSWER</p><h2>What buyers need to know</h2><p>{resource.answer}</p></section>
+      {resource.slug === 'custom-fightwear-size-quantity-planning' && <SizeQuantityPlanner />}
       {resource.media?.length ? <section className="resource-evidence" aria-labelledby="resource-evidence-title">
         <div><p>REAL PRODUCT & PROCESS EVIDENCE</p><h2 id="resource-evidence-title">Inspect the material, construction and workflow</h2><p>Original product or production photos support the specification. No generated product imagery is used.</p></div>
         <div className="resource-evidence-grid">{resource.media.map((item, index) => <figure key={item.src}><div><img src={item.src} alt={item.alt} width="1152" height="2048" loading="lazy" /></div><figcaption><span>{String(index + 1).padStart(2, '0')}</span><p>{item.caption}</p></figcaption></figure>)}</div>

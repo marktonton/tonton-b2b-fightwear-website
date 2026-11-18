@@ -283,7 +283,7 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
         </div>
       </section>
 
-      <AnswerEvidencePanel question={content.quickAnswerQuestion} answer={content.quickAnswer} />
+      <AnswerEvidencePanel question={content.quickAnswerQuestion} answer={content.quickAnswer} reviewedDate="November 18, 2026" sourceNote="Based on published TONTON garment references, actual sample-detail photographs and the documented sample-approval workflow. Performance tests, commercial terms and event eligibility require project-specific confirmation." quoteHref={`/project-builder?product=${encodeURIComponent(builderProduct)}&source=customization-answer`} planningHref="/resources/custom-fightwear-size-quantity-planning#quantity-planner" />
 
       <section className="customization-overview customization-shell">
         <div className="customization-overview-heading">

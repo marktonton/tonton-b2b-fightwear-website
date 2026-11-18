@@ -46,8 +46,8 @@ export type CustomizationPageContent = {
 export const customizationPageContent: Record<string, CustomizationPageContent> = {
   'sublimated-rash-guards': {
     seoDescription: 'Custom BJJ rash guard manufacturer for brands and academies. Compare long and short sleeves, sublimation, fabric, flatlock seams and low-MOQ private-label OEM options.',
-    quickAnswerQuestion: 'What should buyers specify for a custom sublimated Rash Guard?',
-    quickAnswer: 'A custom Rash Guard brief should define the intended sport, fit, sleeve length, size range, artwork, panel layout, seam direction, fabric requirements and optional hem grip. TONTON reviews these decisions together, then confirms the final composition, weight, measurements and construction against the approved sample.',
+    quickAnswerQuestion: 'Does TONTON manufacture custom rash guards for brands and academies?',
+    quickAnswer: 'TONTON is a custom rash guard manufacturer supporting BJJ academies, MMA gyms and private-label brands. Review short or long sleeves, sublimation artwork, labels, fabric, flatlock seams and optional silicone hem grip. Selected projects start from 10 pieces; confirm MOQ by style, design and colorway, size allocation and physical sample approval before bulk production.',
     kicker: 'CUSTOM SUBLIMATED RASH GUARD MANUFACTURER',
     heroLead: 'TONTON manufactures custom sublimated rash guards for BJJ academies, MMA gyms and private-label brands. Develop long- or short-sleeve compression tops with your artwork, labels and fit; confirm the fabric, flatlock seams and optional hem grip on an approved sample.',
     heroImage: `${RASH_GUARD_NEW_SERIES_ROOT}/white-rash-guard-three-quarter.webp`,
@@ -149,8 +149,8 @@ export const customizationPageContent: Record<string, CustomizationPageContent> 
   },
   'sublimated-training-shorts': {
     seoDescription: 'Custom training shorts manufacturer for fitness brands and gyms. Compare stretch-woven fabrics, zip pockets, liners and private-label OEM/ODM sample options.',
-    quickAnswerQuestion: 'What defines a custom functional training short?',
-    quickAnswer: 'A functional training short combines the intended fit and length with a suitable stretch-woven fabric, secure waistband, pocket direction, ventilation, crotch mobility and reinforced finishing. TONTON confirms the final material, construction, logo method and performance checks on the approved sample instead of assuming one universal specification.',
+    quickAnswerQuestion: 'Can TONTON manufacture private-label training shorts?',
+    quickAnswer: 'TONTON develops custom training shorts for fitness brands, gyms and team programs, with private-label artwork and finishing. Specify woven shell or lined construction, waistband, pockets, ventilation, fit and quantity by size. Selected projects start from 10 pieces; materials, sample timing, branding, packaging and delivery terms are confirmed for the actual project.',
     kicker: 'FUNCTIONAL TRAINING SHORTS MANUFACTURER',
     heroLead: 'Develop versatile men’s training shorts with lightweight woven performance fabric, an adjustable waistband, a secure zip pocket, perforated ventilation, and reinforced construction.',
     heroImage: 'assets/products/grappling-shorts-products/home-training-shorts-model-v2.webp',
@@ -197,8 +197,8 @@ export const customizationPageContent: Record<string, CustomizationPageContent> 
   },
   'sublimated-bjj-mma-shorts': {
     seoDescription: 'Custom MMA shorts manufacturer for brands and BJJ academies. Compare fight-short cuts, liners, sponsor artwork and private-label OEM/ODM sample development.',
-    quickAnswerQuestion: 'What should buyers confirm for custom BJJ and MMA shorts?',
-    quickAnswer: 'Buyers should confirm the intended combat use, shell and liner construction, split height, waistband security, fit, size range, artwork and reinforcement points. TONTON uses the product brief and physical sample to verify movement, coverage, material direction and branding before bulk production.',
+    quickAnswerQuestion: 'Can TONTON make custom MMA fight shorts and BJJ grappling shorts?',
+    quickAnswer: 'TONTON manufactures custom MMA fight shorts and BJJ grappling shorts for brands, gyms and teams. Compare outer-shell and 2-in-1 constructions, then specify side split, liner, waistband, sublimated logos, labels and size allocation. Selected projects start from 10 pieces; confirm minimums per style, design and colorway. Event uniform requirements must be checked separately before sample approval.',
     kicker: 'CUSTOM BJJ & MMA SHORTS MANUFACTURING',
     heroLead: 'Work with TONTON on custom sublimated MMA shorts, BJJ shorts and grappling shorts for your academy or private-label range. Compare an outer combat short with a high-split 2-in-1 construction, then approve fabric, waistband, size grading and artwork. Selected projects start from 10 pieces; confirm minimums by style and design.',
     heroImage: `${FIGHT_SHORTS_CATEGORY_ROOT}/hero-high-split-white-liner.webp`,

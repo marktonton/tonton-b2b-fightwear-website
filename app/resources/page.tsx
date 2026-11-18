@@ -16,7 +16,7 @@ export const metadata: Metadata = withPageSocialMetadata({
 });
 
 export default function ResourcesPage() {
-  const schema = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Custom Fightwear Buyer Resources', url: `${SITE_URL}/resources`, dateModified: '2026-10-29', hasPart: [...BUYER_DOWNLOADS.map(item => ({ '@type': 'DigitalDocument', name: item.title, url: `${SITE_URL}${downloadHref(item.file)}`, encodingFormat: 'application/pdf', inLanguage: 'en', datePublished: '2026-10-29', version: '1.0' })), ...RESOURCE_PAGES.map((item) => ({ '@type': 'Article', name: item.title, url: `${SITE_URL}/resources/${item.slug}`, dateModified: item.updated }))] };
+  const schema = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Custom Fightwear Buyer Resources', url: `${SITE_URL}/resources`, dateModified: '2026-11-18', hasPart: [...BUYER_DOWNLOADS.map(item => ({ '@type': 'DigitalDocument', name: item.title, url: `${SITE_URL}${downloadHref(item.file)}`, encodingFormat: 'application/pdf', inLanguage: 'en', datePublished: '2026-10-29', version: '1.0' })), ...RESOURCE_PAGES.map((item) => ({ '@type': 'Article', name: item.title, url: `${SITE_URL}/resources/${item.slug}`, dateModified: item.updated }))] };
   return (
     <div className="resource-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData(schema) }} />
@@ -25,6 +25,7 @@ export default function ResourcesPage() {
         <h1>Build a clearer custom fightwear specification</h1>
         <div><p>Practical, product-linked guidance for brands, gyms, academies and private-label buyers preparing materials, artwork, samples and production requirements.</p><Link href="/project-builder">Build your project brief <span aria-hidden="true">→</span></Link></div>
       </header>
+      <aside className="resource-blog-entry"><p>FREE TEAM ORDER TOOL</p><h2>Turn your size list into a quantity brief.</h2><p>Total rash guards and shorts separately, export a CSV and carry the allocation into an editable project brief. No fixed size ratio or unverified garment measurements.</p><Link href="/resources/custom-fightwear-size-quantity-planning#quantity-planner">Open the size &amp; quantity planner →</Link></aside>
       <BuyerDownloads />
       <aside className="resource-blog-entry"><p>THE FIGHTWEAR BLOG</p><h2>Explore the full buying guides.</h2><p>Go deeper into fabric selection, printing methods, MMA shorts construction, sample approval and cost planning.</p><Link href="/blog">Read the latest articles →</Link></aside>
       <BuyerSolutionsLinks />
