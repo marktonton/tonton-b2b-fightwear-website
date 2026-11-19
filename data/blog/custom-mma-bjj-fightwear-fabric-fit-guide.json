@@ -7,7 +7,7 @@
   "description": "Learn how to choose custom MMA and BJJ fightwear by comparing fabric, fit, construction, competition requirements and sample checks.",
   "answer": "Custom MMA and BJJ fightwear should be selected by intended use, fabric behavior, fit, coverage, closure security, construction and event requirements. Compare rash guards, unlined shorts and lined shorts separately. Approve a physical sample, measurement chart, artwork version and project-specific quote before bulk production; a digital mockup cannot verify comfort, opacity or movement.",
   "published": "2026-11-18",
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "author": "TONTON",
   "hero": {
     "src": "assets/products/kit-bw-v2.png",
@@ -236,9 +236,9 @@
     ]
   ],
   "related": [
+    "custom-mma-bjj-fightwear-sizing-guide",
     "how-to-choose-fabric-for-custom-rash-guards",
-    "mma-shorts-construction-guide",
-    "custom-fightwear-sample-approval-checklist"
+    "mma-shorts-construction-guide"
   ],
   "links": [
     [

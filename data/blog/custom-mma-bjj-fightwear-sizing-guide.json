@@ -1,0 +1,340 @@
+{
+  "slug": "custom-mma-bjj-fightwear-sizing-guide",
+  "title": "Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set",
+  "seoTitle": "Custom MMA and BJJ Fightwear Sizing Guide | TONTON",
+  "builderProduct": "Coordinated Team Kit",
+  "category": "Fightwear Buying Guide",
+  "description": "Build a reliable custom MMA and BJJ fightwear sizing system with measurement points, size grading, team allocation, sample checks and production tips.",
+  "answer": "The best approach is to build the size system around the garment’s use, not around labels such as S, M or L. Measure the intended customer group, separate rash guard and short requirements, define consistent measurement points, create a size chart, and test representative samples before bulk production. For a team order, collect quantities by product, colorway, adult or youth range and size rather than using one shared chart for every garment.",
+  "published": "2026-11-19",
+  "updated": "2026-11-19",
+  "author": "TONTON",
+  "hero": {
+    "src": "assets/products/kit-bw-v2.png",
+    "alt": "TONTON coordinated black and white rash guard and fight shorts product reference",
+    "caption": "TONTON product reference: approve a separate measurement chart for the rash guard and the shorts."
+  },
+  "basis": "Based on TONTON manufacturing and sampling references and official IMMAF, AATCC and EUR-Lex sources checked November 19, 2026. Sample planning suggestions should be adapted to the garment, size range and order.",
+  "sections": [
+    {
+      "id": "what-is-the-best-way-to-plan-custom-mma-and-bjj-fightwear-sizing",
+      "title": "What is the best way to plan custom MMA and BJJ fightwear sizing?",
+      "paragraphs": [
+        "A size label is only a shorthand. The useful information is the measurement behind it, the fit intention and the tolerance the manufacturer will follow."
+      ]
+    },
+    {
+      "id": "why-can-t-one-size-chart-be-used-for-every-fightwear-product",
+      "title": "Why can’t one size chart be used for every fightwear product?",
+      "paragraphs": [
+        "A compression rash guard and an MMA short solve different fit problems. A rash guard needs close torso coverage, controlled stretch and comfortable sleeve and neck dimensions. Shorts need secure waist retention, usable leg opening, appropriate coverage and freedom through kicks, sprawls, shots and ground movement.",
+        "The same athlete may choose different labelled sizes in the two products. This is not automatically a problem; it is a reason to publish clear, product-specific measurements."
+      ],
+      "table": {
+        "caption": "Why can’t one size chart be used for every fightwear product?",
+        "columns": [
+          "Product",
+          "Main sizing priority",
+          "Measurements to define",
+          "Sample movement check"
+        ],
+        "rows": [
+          [
+            "Close-fit rash guard",
+            "Controlled compression and torso coverage",
+            "Chest, waist, body length, shoulder, sleeve length and hem circumference",
+            "Reach, rotation, hand-fighting and repeated raising of the arms"
+          ],
+          [
+            "Outer MMA fight shorts",
+            "Waist security and leg mobility",
+            "Waist, hip, outseam, leg opening, side split and rise",
+            "Kicks, sprawls, shots and stance changes"
+          ],
+          [
+            "2-in-1 grappling shorts",
+            "Shell mobility plus inner-layer coverage",
+            "Waist, hip, outseam, liner length, leg opening and split height",
+            "Scrambles, seated guard, bridges and hip rotation"
+          ],
+          [
+            "Training shorts",
+            "Daily comfort and repeat wear",
+            "Waist, hip, outseam, rise and leg opening",
+            "Warm-up, conditioning and normal gym movement"
+          ],
+          [
+            "Team kit",
+            "Consistency across a group",
+            "Product-specific chart plus adult/youth separation",
+            "Fit review on more than one representative body type"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "how-do-you-create-a-custom-fightwear-size-chart",
+      "title": "How do you create a custom MMA and BJJ fightwear size chart?",
+      "paragraphs": [
+        "Use five steps: define the fit, choose measurement points, agree size grading, match the chart to the market, and approve representative physical samples. Keep each product’s measurement method and tolerance with its final size chart."
+      ]
+    },
+    {
+      "id": "1-define-the-fit-direction",
+      "title": "1. Define the fit direction",
+      "paragraphs": [
+        "Write down whether the garment should be close fit, athletic fit or relaxed fit. “Performance fit” is too vague on its own. For a rash guard, state whether the torso should sit close to the body and whether the hem should be extended or use an optional grip. For shorts, state the preferred waist feel, leg length, side opening and coverage.",
+        "Separate adult and youth requirements. A youth team range should not be created by simply scaling down an adult garment without checking proportions, movement and safety requirements."
+      ]
+    },
+    {
+      "id": "2-choose-body-measurements-and-garment-measurements",
+      "title": "2. Choose body measurements and garment measurements",
+      "paragraphs": [
+        "Body measurements help a wearer select a size. Garment measurements help the buyer and manufacturer control the finished product. A practical chart should identify both where possible.",
+        "For a rash guard, start with chest, waist, shoulder width, sleeve length and center-back length. For shorts, start with relaxed waist, extended waist, hip, outseam, rise, leg opening and side-split height. Identify how each point is measured—for example, whether the waist is measured relaxed, stretched or at a specified point on the garment.",
+        "Define whether each garment value is a flat half-width or a full circumference. For raglan sleeves, specify the sleeve-length starting point because a conventional shoulder seam may be absent. For elastic waists, agree the relaxed and extended measurement procedure rather than comparing measurements taken under different tension.",
+        "Do not mix inches and centimeters in the same approval sheet without clearly labelling the unit. Use one primary unit for production and provide a conversion only for customer convenience."
+      ]
+    },
+    {
+      "id": "3-build-grading-between-sizes",
+      "title": "3. Build grading between sizes",
+      "paragraphs": [
+        "Size grading is the planned change from one size to the next. It should not be treated as a guess or as a universal industry formula. The grading direction depends on the pattern, fabric stretch, fit, product category and target market.",
+        "For a private-label range, ask for a full chart rather than only one sample size. Review whether chest, waist, hip, length and opening changes remain proportionate across the range. A size chart that works at the middle size may create tight armholes at the top size or excessive body length at the smaller size."
+      ]
+    },
+    {
+      "id": "4-match-the-chart-to-the-target-market",
+      "title": "4. Match the chart to the target market",
+      "paragraphs": [
+        "North American and European customers may use different expectations for labels, units and fit. Choose the primary market before finalizing the chart. Display body-measurement guidance in the customer-facing size chart, while keeping detailed garment measurements in the technical specification.",
+        "For an online seller, include a clear instruction such as “measure around the fullest part of the chest” or “measure the waist where the waistband will sit.” Avoid telling a buyer to choose their usual size without showing the measurement basis."
+      ]
+    },
+    {
+      "id": "5-test-representative-sizes-physically",
+      "title": "5. Test representative sizes physically",
+      "paragraphs": [
+        "A digital mockup can confirm artwork and layout, but it cannot confirm fit, stretch recovery, hand feel, seam comfort or finished dimensions. TONTON’s sampling guidance also separates mockup review from physical sample review and recommends confirming the approved sample and specification before bulk work.",
+        "For a new product, consider testing a middle size and one size near each end of the intended range. For a team kit, include representative members with different heights, builds and fit preferences rather than asking one athlete to approve the entire range."
+      ]
+    },
+    {
+      "id": "what-should-a-gym-collect-before-ordering-a-team-size-set",
+      "title": "What should a gym collect before ordering a team size set?",
+      "paragraphs": [
+        "A gym or academy should collect the following information in a simple spreadsheet:",
+        "Flag uncertain sizes for a try-on or measurement review. Separate “size selected from chart” from “size confirmed after sample” so the buyer can record what changed and why."
+      ],
+      "bullets": [
+        "Athlete or member reference, if needed for internal allocation",
+        "Product type: rash guard, MMA shorts, grappling shorts or training shorts",
+        "Adult or youth range",
+        "Preferred size based on the approved chart",
+        "Chest, waist, hip or other required measurement where the fit is uncertain",
+        "Quantity by size, colorway and product",
+        "Competition or training use",
+        "Notes about unusually long torso, larger thigh, broad shoulder or preferred ease"
+      ],
+      "links": [
+        [
+          "Allocate quantities by garment and size",
+          "/resources/custom-fightwear-size-quantity-planning#quantity-planner"
+        ]
+      ]
+    },
+    {
+      "id": "which-is-better-for-a-private-label-brand-body-sizing-or-garment-sizing",
+      "title": "Which is better for a private-label brand: body sizing or garment sizing?",
+      "paragraphs": [
+        "A private-label brand needs both, but they serve different purposes. Body sizing is easier for the shopper to understand. Garment sizing is more useful for product development, quality control and repeat orders.",
+        "The most dependable system connects the two. If a private-label brand changes the fabric, liner, waistband, sleeve length or pattern, it should review the chart again rather than assuming the old size information still applies."
+      ],
+      "table": {
+        "caption": "Which is better for a private-label brand: body sizing or garment sizing?",
+        "columns": [
+          "Use case",
+          "Primary reference",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "Online product page",
+            "Body measurements plus fit notes",
+            "Helps a customer choose a size without handling the garment"
+          ],
+          [
+            "Factory specification",
+            "Garment measurements and tolerances",
+            "Creates a measurable production reference"
+          ],
+          [
+            "Team order",
+            "Body measurements and quantity allocation",
+            "Reduces mismatches across different body types"
+          ],
+          [
+            "Reorder",
+            "Approved garment chart and sample",
+            "Preserves continuity with the previous production"
+          ],
+          [
+            "New fabric or pattern",
+            "Body chart plus new garment measurements",
+            "Confirms that a material or construction change has not altered fit"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "what-should-be-checked-on-a-fightwear-sizing-sample",
+      "title": "What should be checked on a fightwear sizing sample?",
+      "paragraphs": [
+        "Use a written checklist, not only a visual impression:",
+        "AATCC’s official standards directory lists methods covering areas such as colorfastness to perspiration, crocking and laundering. These are testing references, not automatic claims that a particular custom garment has passed a test. If testing is required, specify the method, sample, laboratory and acceptance criteria in writing."
+      ],
+      "bullets": [
+        "Measurements: Check every agreed point against the chart and tolerance.",
+        "Fit: Try the garment in a neutral stance and in sport-specific movement.",
+        "Coverage: Check torso, waistband, liner and leg coverage during movement.",
+        "Security: Confirm the waistband, drawcord, hem or optional grip remains comfortable and stable.",
+        "Seams: Inspect seam placement, stretch, thread ends and skin contact.",
+        "Artwork: Check graphics, logos and labels after the garment is worn and stretched.",
+        "Wash and care direction: Confirm the final care copy matches the approved material and intended market.",
+        "Record keeping: Save the approved chart, sample photos, measurement points, tolerance, artwork version and revision date."
+      ],
+      "links": [
+        [
+          "Use the sample approval checklist",
+          "/blog/custom-fightwear-sample-approval-checklist#checklist"
+        ]
+      ]
+    },
+    {
+      "id": "how-should-competition-requirements-affect-a-custom-size-set",
+      "title": "How should competition requirements affect a custom size set?",
+      "paragraphs": [
+        "Competition use should be treated as a separate approval track. A training garment that fits well may still require review against the rules of a specific event, federation or host authority. IMMAF states that national federations may use their own rule sets, while world-championship competition follows IMMAF rules and protocols. Use the official rules entry point to find the current documents for the intended competition.",
+        "Before approving a competition-oriented design, confirm the current official requirements for garment type, branding, colors, closure, coverage and permitted equipment with the relevant organizer. Do not describe a custom garment as competition-approved unless that approval is documented for the applicable event and version of the rules.",
+        "For European private-label sales, also review textile labelling obligations. Regulation (EU) No 1007/2011 addresses textile fibre names and fibre-composition labelling for products made available on the EU market. Final labels should be checked for the destination market and product configuration rather than copied from an unrelated sample."
+      ]
+    },
+    {
+      "id": "what-should-be-included-in-a-manufacturer-brief",
+      "title": "What should be included in a manufacturer brief?",
+      "paragraphs": [
+        "A production-ready custom MMA and BJJ fightwear sizing brief should include:",
+        "TONTON’s project form asks buyers to provide the product, estimated quantity and intended use, with size range and destination country available as additional project information. TONTON’s custom shorts and rash guard pages also state that selected projects start from 10 pieces, while the applicable minimum should be confirmed by style, design, colorway and size allocation."
+      ],
+      "bullets": [
+        "Product category and intended sport",
+        "Fit direction and target customer",
+        "Target market and measurement units",
+        "Body size chart and garment measurement chart",
+        "Measurement method and tolerances",
+        "Adult/youth and men’s/women’s requirements where applicable",
+        "Quantity by product, colorway and size",
+        "Fabric, liner, waistband, sleeve, hem and split requirements",
+        "Artwork version, label copy and packaging direction",
+        "Sample sizes to be reviewed",
+        "Required delivery country and target date",
+        "Competition-use notes and the rule source to be checked"
+      ],
+      "links": [
+        [
+          "Prepare your sizing brief",
+          "/project-builder?source=sizing-guide&reference=custom-mma-bjj-fightwear-sizing-guide&product=Coordinated%20Team%20Kit"
+        ]
+      ]
+    },
+    {
+      "id": "key-takeaways",
+      "title": "Key takeaways",
+      "paragraphs": [],
+      "bullets": [
+        "Custom MMA and BJJ fightwear sizing should be built by product type, fit direction and target market—not by labels alone.",
+        "Rash guards, MMA shorts, 2-in-1 grappling shorts and training shorts need different measurement points.",
+        "A team size allocation should separate adult/youth, product, colorway and size quantities.",
+        "A physical sample is required to confirm fit, movement, coverage, seams and finished measurements.",
+        "Competition rules, textile labelling and testing requirements must be checked against current official sources and the destination market.",
+        "Keep the approved chart, tolerances, sample, artwork version and quote together for repeat orders."
+      ]
+    }
+  ],
+  "faqs": [
+    [
+      "Should MMA shorts and BJJ rash guards use the same size chart?",
+      "No. Use separate product-specific charts because shorts and close-fit rash guards have different construction and movement requirements. They can share a label system, but the measurement points and fit notes should remain distinct."
+    ],
+    [
+      "What is the most important measurement for a rash guard?",
+      "Chest is a key starting measurement, but it is not enough by itself. Check waist, body length, shoulder, sleeve length, hem and torso coverage on the physical sample."
+    ],
+    [
+      "What is the most important measurement for fight shorts?",
+      "Waist security is usually the first check, followed by hip, rise, outseam, leg opening and side-split height. The correct priority depends on the product construction and intended movement."
+    ],
+    [
+      "Can a digital mockup confirm fightwear sizing?",
+      "No. A digital mockup can help confirm artwork and layout, but it cannot confirm stretch, recovery, hand feel, seam comfort, opacity or finished measurements. Use a physical sample for sizing approval."
+    ],
+    [
+      "How many sizes should a team sample before a bulk order?",
+      "Sample a representative middle size and sizes near the ends of the planned range; add more fit checks when the team includes adult and youth members or a wide range of body types. The exact sample plan should follow the product and order risk."
+    ],
+    [
+      "Should private-label brands publish body measurements or garment measurements?",
+      "Publish body measurements with clear measuring instructions for shoppers, and retain garment measurements with tolerances in the technical file. Using both creates a bridge between customer selection and production control."
+    ],
+    [
+      "Are TONTON’s advertised minimums universal for every size set?",
+      "No. TONTON states that selected custom projects start from 10 pieces, but the applicable minimum depends on the agreed style, design, colorway, size allocation and project requirements. Confirm the project-specific quotation before planning inventory."
+    ]
+  ],
+  "related": [
+    "custom-mma-bjj-fightwear-fabric-fit-guide",
+    "custom-fightwear-sample-approval-checklist",
+    "custom-mma-team-kits-buying-guide"
+  ],
+  "links": [
+    [
+      "Custom sublimated BJJ and MMA shorts",
+      "/customization/sublimated-bjj-mma-shorts"
+    ],
+    [
+      "Custom sublimated rash guards",
+      "/customization/sublimated-rash-guards"
+    ],
+    [
+      "High-split 2-in-1 grappling shorts",
+      "/products/high-split-grappling-shorts"
+    ],
+    [
+      "Custom fightwear sampling and MOQ guide",
+      "/resources/custom-fightwear-sampling-moq"
+    ],
+    [
+      "Size and quantity planning tool",
+      "/resources/custom-fightwear-size-quantity-planning#quantity-planner"
+    ]
+  ],
+  "sources": [
+    {
+      "label": "IMMAF competition rules and national rule variation",
+      "url": "https://immaf.org/about/what-is-mma/",
+      "note": "Official rules entry point; current page distinguishes national rules and World Championships. Check the applicable event and edition. Accessed November 19, 2026."
+    },
+    {
+      "label": "AATCC Standard Test Methods and Procedures",
+      "url": "https://www.aatcc.org/testing/standards",
+      "note": "Official textile test-method directory. A method listing does not certify a garment. Accessed November 19, 2026."
+    },
+    {
+      "label": "EUR-Lex: Regulation (EU) No 1007/2011",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1007/oj/eng",
+      "note": "Official textile fibre names and fibre-composition labelling text, with a link to the current consolidated version. Accessed November 19, 2026."
+    }
+  ]
+}

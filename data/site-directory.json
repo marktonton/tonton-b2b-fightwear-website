@@ -1,5 +1,11 @@
 [
   {
+    "path": "/blog/custom-mma-bjj-fightwear-sizing-guide",
+    "title": "Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set",
+    "description": "Build a reliable custom MMA and BJJ fightwear sizing system with measurement points, size grading, team allocation, sample checks and production tips.",
+    "group": "Blog articles"
+  },
+  {
     "path": "/products/two-tone-long-sleeve-rash-guard",
     "title": "Custom Two-Tone Long Sleeve BJJ Rash Guard",
     "description": "Develop custom long sleeve BJJ rash guards with two-tone sleeves, academy logos and private-label branding. Compare colorways and plan OEM/ODM sampling with TONTON.",
@@ -242,7 +248,7 @@
   {
     "path": "/resources/custom-fightwear-size-quantity-planning",
     "title": "Custom Fightwear Size & Quantity Planning Guide",
-    "description": "Prepare separate Rash Guard and shorts size allocations, distinguish body and garment measurements, and plan adult or youth academy orders with a worked quantity example.",
+    "description": "Use the free team quantity planner to total rash guards and shorts by size, download a CSV and prepare a custom fightwear quote brief.",
     "group": "Buyer guides"
   },
   {
@@ -441,6 +447,42 @@
     "path": "/products/core-stealth-scallop-training-shorts",
     "title": "Core Stealth Scallop Training & Fight Shorts",
     "description": "Develop custom black training and fight shorts with scalloped side openings, pin-dot mesh lining, an elastic drawcord waist and private-label branding. TONTON OEM/ODM.",
+    "group": "Products"
+  },
+  {
+    "path": "/blog/custom-mma-bjj-fightwear-fabric-fit-guide",
+    "title": "How to Choose Custom MMA and BJJ Fightwear Fabric and Fit",
+    "description": "Learn how to choose custom MMA and BJJ fightwear by comparing fabric, fit, construction, competition requirements and sample checks.",
+    "group": "Blog articles"
+  },
+  {
+    "path": "/blog/custom-mma-team-kits-buying-guide",
+    "title": "Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands",
+    "description": "Plan custom MMA team kits with practical guidance on shorts, rash guards, rules, artwork, sizing, samples, MOQ and OEM/ODM production.",
+    "group": "Blog articles"
+  },
+  {
+    "path": "/blog/private-label-fightwear-brand-capsule-collection",
+    "title": "How to Build a Private-Label Fightwear Brand Capsule Collection",
+    "description": "Build a private-label fightwear capsule with the right products, fabrics, branding, sizing, samples, and launch plan for MMA and BJJ customers.",
+    "group": "Blog articles"
+  },
+  {
+    "path": "/blog/custom-bjj-rash-guards-academy-buying-guide",
+    "title": "How to Plan Custom BJJ Rash Guards for an Academy Team",
+    "description": "Plan custom BJJ rash guards for an academy or private-label brand with a practical guide to fit, fabric, seams, artwork, sizing, MOQ and samples.",
+    "group": "Blog articles"
+  },
+  {
+    "path": "/products/tactical-python-camo-rash-guard",
+    "title": "Custom Tactical Python Camo Short-Sleeve Rash Guard",
+    "description": "Develop custom camo rash guards for BJJ academies, MMA gyms and private-label brands. Compare raglan fit, seam details, artwork, labels and sample requirements.",
+    "group": "Products"
+  },
+  {
+    "path": "/products/midnight-navy-muay-thai-shorts",
+    "title": "Midnight Navy Muay Thai & Kickboxing Shorts",
+    "description": "Develop custom navy Muay Thai shorts for brands, gyms and teams. Explore a satin-look shell, wide gathered waistband, high side slits and private-label options.",
     "group": "Products"
   }
 ]
