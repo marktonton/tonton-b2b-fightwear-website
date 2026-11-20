@@ -7,7 +7,7 @@
   "description": "Plan custom BJJ rash guards for an academy or private-label brand with a practical guide to fit, fabric, seams, artwork, sizing, MOQ and samples.",
   "answer": "Custom BJJ rash guards should be specified around the wearer, fit, sleeve length, fabric, seam construction, artwork, size range and intended order—not selected from a graphic mockup alone. Define use, compare construction options, confirm the written size and material specification, approve a physical sample, then finalize quantities, labels and packaging.",
   "published": "2026-11-14",
-  "updated": "2026-11-14",
+  "updated": "2026-11-20",
   "author": "TONTON",
   "hero": {
     "src": "https://assets.tontongear.com/assets/products/cosmic-blast-rash-guard/cosmic-blast-customer-front.webp",
@@ -276,9 +276,9 @@
     ]
   ],
   "related": [
+    "custom-no-gi-bjj-uniform-specification-guide",
     "private-label-fightwear-brand-capsule-collection",
-    "how-to-choose-fabric-for-custom-rash-guards",
-    "custom-fightwear-sample-approval-checklist"
+    "how-to-choose-fabric-for-custom-rash-guards"
   ],
   "links": [
     [

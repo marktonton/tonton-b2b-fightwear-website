@@ -1,3 +1,4 @@
+import nogi from '../data/blog/custom-no-gi-bjj-uniform-specification-guide.json';
 import sizing from '../data/blog/custom-mma-bjj-fightwear-sizing-guide.json';
 import fabricFit from '../data/blog/custom-mma-bjj-fightwear-fabric-fit-guide.json';
 import teamKits from '../data/blog/custom-mma-team-kits-buying-guide.json';
@@ -22,7 +23,7 @@ export type BlogPost = {
   download?: { href: string; label: string };
 };
 // Register one JSON content file here to publish another article. Dates live in the content.
-export const BLOG_POSTS: BlogPost[] = [sizing, fabricFit, teamKits, capsule, academy, selection, construction, fabric, printing, approval, cost];
+export const BLOG_POSTS: BlogPost[] = [nogi, sizing, fabricFit, teamKits, capsule, academy, selection, construction, fabric, printing, approval, cost];
 export const getBlogPost = (slug: string) => BLOG_POSTS.find(post => post.slug === slug);
 export const blogReadTime = (post: BlogPost) => {
   const words = [post.answer, ...post.sections.flatMap(section => [
