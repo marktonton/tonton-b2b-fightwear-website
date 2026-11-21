@@ -5,7 +5,7 @@
   "description": "Compare dye-sublimation with applied transfer logos for rash guards and MMA shorts: fabric compatibility, artwork, stretch, dye migration and sample checks.",
   "answer": "For custom fightwear, full-panel dye-sublimation is a route for compatible polyester-based fabric and integrated artwork; applied heat-transfer logos add a separate decoration system at selected positions. Both use heat, but their material requirements and approval checks differ. Choose by fabric, design coverage, wearing stretch and the approved sample, not by the word transfer alone.",
   "published": "2026-10-29",
-  "updated": "2026-10-29",
+  "updated": "2026-11-21",
   "author": "TONTON",
   "hero": {
     "src": "/assets/factory/digital-sublimation/workshop.webp",
@@ -172,6 +172,7 @@
     ]
   ],
   "related": [
+    "custom-fightwear-artwork-production-guide",
     "how-to-choose-fabric-for-custom-rash-guards",
     "what-affects-custom-fightwear-cost"
   ],

@@ -1,0 +1,317 @@
+{
+  "slug": "custom-fightwear-artwork-production-guide",
+  "title": "Custom Fightwear Artwork: MMA and BJJ Production Guide",
+  "seoTitle": "Custom Fightwear Artwork: MMA & BJJ Production Guide",
+  "builderProduct": "Coordinated Team Kit",
+  "category": "Printing & Craft",
+  "description": "Prepare custom fightwear artwork for MMA shorts, BJJ rash guards and team kits with file formats, logo placement, seam checks, color approval and a supplier-ready checklist.",
+  "answer": "Custom fightwear artwork is production-ready when the supplier has editable logos, defined colors, a panel-by-panel placement map, seam and safe-zone instructions, label requirements, and a final revision number. Buyers should approve both the digital mockup and a physical sample because screen color, artwork scale and seam alignment do not prove how the finished MMA shorts or BJJ rash guard will look. TONTON’s official artwork guidance recommends vector files where available, panel placement instructions, and mockup plus sample approval before bulk production.",
+  "published": "2026-11-21",
+  "updated": "2026-11-21",
+  "author": "TONTON",
+  "hero": {
+    "src": "/assets/factory/computerized-cutting/printed-panel-layout.webp",
+    "alt": "Printed garment panels laid out on a computerized cutting table at the TONTON factory",
+    "caption": "Printed panel layout at the TONTON factory. Panel boundaries, orientation and seam allowances belong in the production artwork review."
+  },
+  "basis": "Based on TONTON artwork and sampling resources, with official Adobe, IBJJF, USPTO and U.S. Copyright Office references checked on November 21, 2026. Requirements depend on the garment, factory workflow and relevant event rules.",
+  "sections": [
+    {
+      "id": "what-should-a-custom-fightwear-artwork-package-include",
+      "title": "What should a custom fightwear artwork package include?",
+      "paragraphs": [
+        "A supplier-ready package should contain more than one logo file. Send a structured folder with:",
+        "TONTON’s artwork-for-sublimation resource lists vector AI, EPS, SVG or editable PDF as preferred logo inputs where available. It also recommends identifying panel placement, color references, safe zones and seam alignment before the final production file is approved."
+      ],
+      "bullets": [
+        "Product direction: MMA fight shorts, 2-in-1 grappling shorts, rash guard, training shorts or team kit.",
+        "Intended use: training, academy membership, competition, retail, private label or a mixed program.",
+        "Editable artwork: vector logos and editable files where available.",
+        "Color direction: brand references, named colors and any non-negotiable color requirements.",
+        "Placement map: front, back, sleeve, side panel, waistband, liner and label positions.",
+        "Hierarchy: primary logo, secondary mark, sponsor marks and optional graphics.",
+        "Technical notes: seam alignment, bleed, safe zones, repeat elements and areas where text must not be distorted.",
+        "Size and quantity plan: styles, colorways, adult/youth ranges and quantities by size.",
+        "Labels and packaging: neck label, care label, hangtag, barcode, polybag or other packing requirements.",
+        "Revision control: approved artwork version, date and person responsible for sign-off."
+      ],
+      "links": [
+        [
+          "artwork-for-sublimation resource",
+          "/resources/prepare-artwork-for-sublimation"
+        ]
+      ]
+    },
+    {
+      "id": "which-file-format-is-best-for-sublimated-mma-shorts-and-bjj-rash-guards",
+      "title": "Which file format is best for sublimated MMA shorts and BJJ rash guards?",
+      "paragraphs": [
+        "Vector artwork is usually the best starting point for logos, lettering and simple marks because it can be resized without becoming pixelated. Adobe describes vector artwork as scalable for logos and brand graphics. A file extension alone does not establish that artwork is vector or editable; confirm the actual objects, embedded images, fonts and linked assets. For textures or photographic-style graphics, use a high-resolution raster file at the intended production size.",
+        "Do not enlarge a small screenshot and assume it is production-ready. A low-resolution file may show jagged edges or lose detail when placed across a large short panel. If the original artwork is unavailable, ask the designer to rebuild the important logo elements as editable vector artwork rather than relying on a blurry reference."
+      ],
+      "table": {
+        "caption": "Which file format is best for sublimated MMA shorts and BJJ rash guards?",
+        "columns": [
+          "Artwork type",
+          "Useful input",
+          "Main check before production"
+        ],
+        "rows": [
+          [
+            "Brand or sponsor logo",
+            "AI, EPS, SVG or editable PDF",
+            "Confirm fonts, outlines, transparency, colors and permission to use the mark."
+          ],
+          [
+            "Pattern or texture",
+            "High-resolution raster or editable layered file",
+            "Confirm resolution at final size, repeat direction and panel bleed."
+          ],
+          [
+            "Team name and numbers",
+            "Editable text or outlined vector",
+            "Check spelling, font ownership, minimum size and distortion across seams."
+          ],
+          [
+            "Photo-based graphic",
+            "High-resolution raster",
+            "Check resolution, contrast and whether the image is licensed for apparel use."
+          ],
+          [
+            "Mixed design",
+            "Organized layered source file plus exported preview",
+            "Label layers and identify which elements are mandatory, optional or reference-only."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "how-should-you-map-logos-onto-mma-shorts-and-bjj-rash-guards",
+      "title": "How should you map logos onto MMA shorts and BJJ rash guards?",
+      "paragraphs": [
+        "Start with the garment pattern, not a blank rectangle. Production artwork must follow the garment panel layout. Confirm the factory’s printing, transfer and cutting sequence; a graphic can change when it crosses a side seam, waistband, sleeve join or high-stretch area.",
+        "Use a panel map with these fields:",
+        "For a rash guard, inspect the chest, upper back, sleeves, side panels, neckline and lower hem. For fight shorts, inspect the front panels, back rise, side split, waistband, gusset, liner and any hook-and-loop or drawcord area. Keep small sponsor logos away from locations where a seam or fold could make them unreadable.",
+        "The custom sublimated rash guard page and custom BJJ and MMA shorts page are useful starting points for separating artwork decisions from fit, fabric, waistband, liner and size-grading decisions. A graphic mockup does not replace a garment specification."
+      ],
+      "bullets": [
+        "Panel name: front left, front right, back, side, sleeve, waistband or liner.",
+        "Artwork element: academy crest, sponsor logo, team name, number or pattern.",
+        "Priority: must appear, may appear or reference only.",
+        "Orientation: upright when worn, repeated, mirrored or continuous.",
+        "Safe zone: minimum distance from seams, hems, openings and closures.",
+        "Scale rule: fixed size, proportional size or size-grade adjustment.",
+        "Approval note: what must be checked on the mockup and physical sample."
+      ],
+      "links": [
+        [
+          "custom sublimated rash guard page",
+          "/customization/sublimated-rash-guards"
+        ],
+        [
+          "custom BJJ and MMA shorts page",
+          "/customization/sublimated-bjj-mma-shorts"
+        ]
+      ]
+    },
+    {
+      "id": "how-do-you-design-artwork-for-team-kits-and-private-label-collections",
+      "title": "How do you design artwork for team kits and private-label collections?",
+      "paragraphs": [
+        "Build a visual system that survives more than one order. Define the core logo, team identifier, sponsor zone, approved colors, graphic style and label system. Keep these rules consistent when the garment changes from a rash guard to fight shorts or a high-split 2-in-1 style.",
+        "For private-label collections, separate the permanent brand identity from seasonal graphics. The high-split 2-in-1 grappling shorts reference can help buyers discuss shell, liner, side-split and waistband decisions before placing final artwork."
+      ],
+      "links": [
+        [
+          "high-split 2-in-1 grappling shorts reference",
+          "/products/high-split-grappling-shorts"
+        ]
+      ]
+    },
+    {
+      "id": "what-competition-and-permissions-should-you-check-before-approval",
+      "title": "What competition and permissions should you check before approval?",
+      "paragraphs": [
+        "Separate artwork approval from competition approval. The IBJJF uniform requirements state that no-gi shirts and rash guards must be skin-tight, cover the torso to the shorts’ waistband and follow specified color directions. The page also gives requirements for shorts, including length, pockets, drawstrings, zippers and potentially risky plastic or metal elements. These are event-specific rules, not universal approval for every organization or division, so recheck the relevant organizer before bulk production.",
+        "Permissions matter too. The U.S. Copyright Office distinguishes copyright in creative works from trademark protection for words, symbols and designs identifying goods or services. The USPTO explains that a business name or logo may function as a trademark. Confirm that the gym, sponsor, artist or brand has authorized the artwork for production and resale.",
+        "Do not call a kit “competition legal,” “official” or “approved” without support from the exact garment, division and event rule set."
+      ],
+      "links": [
+        [
+          "IBJJF uniform requirements",
+          "https://ibjjf.com/uniform"
+        ],
+        [
+          "U.S. Copyright Office",
+          "https://www.copyright.gov/help/faq/faq-general.html"
+        ],
+        [
+          "USPTO",
+          "https://www.uspto.gov/trademarks/basics"
+        ]
+      ]
+    },
+    {
+      "id": "how-do-you-approve-color-scale-and-the-physical-sample",
+      "title": "How do you approve color, scale and the physical sample?",
+      "paragraphs": [
+        "Use two stages:",
+        "1. Approve the digital mockup",
+        "Check spelling, hierarchy, orientation, panel placement, color references, sponsor order, labels and the relationship between garments. Record the revision number.",
+        "2. Approve the physical sample",
+        "Check the worn garment under normal lighting and realistic movement. Review color, logo scale, seam and stretch interaction, rash guard coverage, shorts waistband and liner, labels, packaging, measurements and tolerances.",
+        "A monitor is not proof of printed color. TONTON’s artwork guidance recommends physical sample confirmation because color, scale and seam interaction can differ from a screen mockup. Save the sample photos, measurement chart, material record and final artwork for repeat orders."
+      ]
+    },
+    {
+      "id": "custom-fightwear-artwork-checklist-for-a-supplier-quote",
+      "title": "Custom fightwear artwork checklist for a supplier quote",
+      "paragraphs": [
+        "Before requesting a quote, confirm the following:",
+        "TONTON’s sampling and MOQ guide explains that selected custom projects start from 10 pieces, while the applicable minimum depends on style, design, colorway, size allocation and project requirements. Use the written quotation and approved specification as the commercial reference."
+      ],
+      "table": {
+        "caption": "Custom fightwear artwork checklist for a supplier quote",
+        "columns": [
+          "Question",
+          "Buyer decision"
+        ],
+        "rows": [
+          [
+            "Garment and use?",
+            "Product type, construction and intended use."
+          ],
+          [
+            "Quantity?",
+            "Total units plus style, color and size breakdown."
+          ],
+          [
+            "Mandatory artwork?",
+            "Primary logo, team name, sponsors and labels."
+          ],
+          [
+            "Editable files?",
+            "AI, EPS, SVG, editable PDF or suitable raster."
+          ],
+          [
+            "Placement?",
+            "Panel map, safe zones and orientation."
+          ],
+          [
+            "Approval record?",
+            "Final mockup, physical sample, revision number and sign-off."
+          ]
+        ]
+      },
+      "links": [
+        [
+          "sampling and MOQ guide",
+          "/resources/custom-fightwear-sampling-moq"
+        ]
+      ]
+    },
+    {
+      "id": "key-takeaways",
+      "title": "Key takeaways",
+      "paragraphs": [],
+      "bullets": [
+        "Custom fightwear artwork is a production specification, not only a logo or digital mockup.",
+        "Send editable artwork, color references, panel placement, safe zones, labels, quantities and a revision number.",
+        "Design around seams, side splits, waistbands, sleeves and stretch zones before approving the graphic.",
+        "Approve both the digital layout and a physical sample.",
+        "Check current event rules separately from brand design approval.",
+        "Confirm permission to use every sponsor, academy, artist and brand mark.",
+        "Keep the approved sample and specification as the reorder reference."
+      ]
+    }
+  ],
+  "faqs": [
+    [
+      "What is the best file format for custom fightwear artwork?",
+      "Vector artwork such as AI, EPS, SVG or a genuinely editable PDF is generally preferred for logos and text. Check that the file contains editable vector objects, with fonts outlined or supplied as agreed. High-resolution raster artwork can work for textures or photographs at the intended production size."
+    ],
+    [
+      "Do I need final artwork before requesting a quote?",
+      "No. A supplier can usually discuss a product direction using logos, references and a placement idea. Final production artwork is needed before print and bulk approval, so identify what is confirmed and what is still exploratory."
+    ],
+    [
+      "How should sponsor logos be placed on MMA shorts?",
+      "Create a panel-by-panel map with sponsor priority, orientation, scale and safe zones. Keep small marks away from side splits, seams, folds and high-stretch areas, then confirm readability on the physical sample."
+    ],
+    [
+      "Can I use a screenshot of my logo?",
+      "A screenshot may help communicate the design direction, but it is not always production-ready. Ask for the original editable or vector file, or have the logo rebuilt before approval."
+    ],
+    [
+      "Does a mockup prove that the final color will be correct?",
+      "No. A mockup controls layout and hierarchy, but screen color is not proof of printed color. Approve important colors on the physical sample under normal viewing conditions."
+    ],
+    [
+      "Can one artwork file be used for both a rash guard and fight shorts?",
+      "The brand system can be shared, but the production files usually need separate panel layouts. Rash guards and shorts have different seams, stretch directions, openings, labels and size grading."
+    ],
+    [
+      "Can custom fightwear artwork be used in competition?",
+      "Only after the exact garment is checked against the current rules of the relevant organization, event, division and category. Training or retail artwork should not automatically be described as competition-approved."
+    ],
+    [
+      "What should a private-label seller keep for repeat orders?",
+      "Keep the approved artwork version, editable source files, color references, measurement chart, tolerances, material and construction notes, labels, packaging details, sample images and written sign-off. This reduces ambiguity when a style is reordered."
+    ]
+  ],
+  "related": [
+    "sublimation-vs-heat-transfer-for-fightwear",
+    "custom-fightwear-sample-approval-checklist",
+    "custom-mma-team-kits-buying-guide"
+  ],
+  "links": [
+    [
+      "Prepare sublimation artwork",
+      "/resources/prepare-artwork-for-sublimation"
+    ],
+    [
+      "Custom BJJ and MMA shorts",
+      "/customization/sublimated-bjj-mma-shorts"
+    ],
+    [
+      "Custom rash guards",
+      "/customization/sublimated-rash-guards"
+    ],
+    [
+      "Sampling and MOQ guide",
+      "/resources/custom-fightwear-sampling-moq"
+    ]
+  ],
+  "sources": [
+    {
+      "label": "TONTON artwork preparation",
+      "url": "/resources/prepare-artwork-for-sublimation",
+      "note": "File, placement, color and sample approval guidance."
+    },
+    {
+      "label": "TONTON sampling and MOQ",
+      "url": "/resources/custom-fightwear-sampling-moq",
+      "note": "Project-specific sampling and quantity planning."
+    },
+    {
+      "label": "Adobe Illustrator",
+      "url": "https://www.adobe.com/products/illustrator.html",
+      "note": "Scalable vector logos and brand graphics."
+    },
+    {
+      "label": "IBJJF Uniform Requirements",
+      "url": "https://ibjjf.com/uniform",
+      "note": "Check the applicable event rules before production."
+    },
+    {
+      "label": "USPTO Trademark Basics",
+      "url": "https://www.uspto.gov/trademarks/basics",
+      "note": "Names and logos used to identify goods and services."
+    },
+    {
+      "label": "U.S. Copyright Office: Copyright in General",
+      "url": "https://www.copyright.gov/help/faq/faq-general.html",
+      "note": "Copyright and trademark distinction."
+    }
+  ]
+}
