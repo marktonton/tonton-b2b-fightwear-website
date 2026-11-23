@@ -7,7 +7,7 @@
   "description": "Learn how to specify a custom no-gi BJJ uniform, from IBJJF checks and rash guard fit to shorts, artwork, sampling, care labels and reorder control.",
   "answer": "A custom no-gi BJJ uniform combines a rash guard and grappling shorts with coordinated artwork and separate garment specifications. Define the intended event and rule edition first, then approve fit, materials, seams, measurements, labels and a physical sample. Keep the approved size chart, artwork revision and quantity allocation for bulk production and reorders.",
   "published": "2026-11-20",
-  "updated": "2026-11-20",
+  "updated": "2026-11-23",
   "author": "TONTON",
   "hero": {
     "src": "/assets/products/customer-production-proof/customer-kuzushi-rash-guard-event-wear.webp",
@@ -311,9 +311,9 @@
     ]
   ],
   "related": [
+    "custom-no-gi-grappling-shorts-competition-guide",
     "custom-mma-bjj-fightwear-sizing-guide",
-    "custom-bjj-rash-guards-academy-buying-guide",
-    "custom-fightwear-sample-approval-checklist"
+    "custom-bjj-rash-guards-academy-buying-guide"
   ],
   "links": [
     [
