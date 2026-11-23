@@ -21,6 +21,29 @@
   ],
   "products": [
     {
+      "id": "dazzle-vector-combat-training-shorts",
+      "categoryId": "sublimated-bjj-mma-shorts",
+      "name": "Dazzle Vector Combat Training Shorts",
+      "image": "https://assets.tontongear.com/assets/products/dazzle-vector-combat-shorts/dazzle-vector-front.webp",
+      "images": [
+        "https://assets.tontongear.com/assets/products/dazzle-vector-combat-shorts/dazzle-vector-front.webp",
+        "https://assets.tontongear.com/assets/products/dazzle-vector-combat-shorts/dazzle-vector-back.webp",
+        "https://assets.tontongear.com/assets/products/dazzle-vector-combat-shorts/dazzle-vector-model-front.webp",
+        "https://assets.tontongear.com/assets/products/dazzle-vector-combat-shorts/dazzle-vector-model-side.webp",
+        "https://assets.tontongear.com/assets/products/dazzle-vector-combat-shorts/dazzle-vector-mesh-lining.webp",
+        "https://assets.tontongear.com/assets/products/dazzle-vector-combat-shorts/dazzle-vector-waist-detail.webp",
+        "https://assets.tontongear.com/assets/products/dazzle-vector-combat-shorts/dazzle-vector-slit-detail.webp",
+        "https://assets.tontongear.com/assets/products/dazzle-vector-combat-shorts/dazzle-vector-print-detail.webp"
+      ],
+      "description": "Develop custom geometric MMA training shorts with a red drawcord, scalloped side openings and mesh lining. TONTON OEM/ODM sampling for brands, gyms and teams.",
+      "features": [
+        "Geometric Sublimation Artwork",
+        "Contrast Red Drawcord",
+        "Scallop Side Openings",
+        "Mesh Inner Layer"
+      ]
+    },
+    {
       "id": "tactical-python-camo-rash-guard",
       "categoryId": "sublimated-rash-guards",
       "name": "Custom Tactical Python Camo Short-Sleeve Rash Guard",

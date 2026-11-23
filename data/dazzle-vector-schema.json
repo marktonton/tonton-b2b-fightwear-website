@@ -1,0 +1,114 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "@id": "https://www.tontongear.com/products/dazzle-vector-combat-training-shorts#product",
+      "name": "Dazzle Vector Combat Training Shorts",
+      "description": "Develop custom geometric MMA training shorts with a red drawcord, scalloped side openings and mesh lining. TONTON OEM/ODM sampling for brands, gyms and teams.",
+      "url": "https://www.tontongear.com/products/dazzle-vector-combat-training-shorts",
+      "image": [
+        "https://assets.tontongear.com/assets/products/dazzle-vector-combat-shorts/dazzle-vector-front.webp",
+        "https://assets.tontongear.com/assets/products/dazzle-vector-combat-shorts/dazzle-vector-back.webp",
+        "https://assets.tontongear.com/assets/products/dazzle-vector-combat-shorts/dazzle-vector-mesh-lining.webp",
+        "https://assets.tontongear.com/assets/products/dazzle-vector-combat-shorts/dazzle-vector-waist-detail.webp"
+      ],
+      "brand": {
+        "@type": "Brand",
+        "name": "TONTON"
+      },
+      "manufacturer": {
+        "@id": "https://www.tontongear.com/#organization"
+      },
+      "category": "Custom MMA and grappling training shorts",
+      "color": "Black / white with red drawcord"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.tontongear.com/products/dazzle-vector-combat-training-shorts#webpage",
+      "url": "https://www.tontongear.com/products/dazzle-vector-combat-training-shorts",
+      "name": "Dazzle Vector Combat Training Shorts",
+      "dateModified": "2026-11-23",
+      "mainEntity": {
+        "@id": "https://www.tontongear.com/products/dazzle-vector-combat-training-shorts#product"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.tontongear.com/products/dazzle-vector-combat-training-shorts#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can you customize the stripe design and red drawcord?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Send authorized logos, geometric artwork, team colors, cord color, labels and packaging requirements. Approve panel placement and a physical sample before bulk production."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the fabric composition and weight?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The reference is supplied as a lightweight stretch shell with a micro-dot mesh inner layer. Exact shell and mesh fiber percentages, GSM and stretch requirements are confirmed in the project specification; 92% polyester / 8% spandex and 140–160 GSM are not confirmed specifications for this item."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the mesh form a compression liner?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The supplied images show a mesh inner layer and mesh at the hem. They do not establish a fitted compression-short liner. Confirm liner coverage, stretch and finish on the selected sample."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can these shorts be used for competition?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This is a training and product-development reference. External drawcords, split height, coverage and other details must be checked against the named event rules. Request a separate competition specification when needed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we order matching rash guards?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Coordinated team-kit artwork can be developed with separate sizing and specifications for the rash guard and shorts. The top shown in model imagery is a styling reference and is not included in this shorts specification."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the MOQ and sampling process?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Selected custom projects start from 10 pieces; the applicable minimum depends on style, fabric, artwork, colorway and size allocation. Send your quantity, sizes, delivery country and target date for a written quotation and sample plan."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Products",
+          "item": "https://www.tontongear.com/products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "MMA & Grappling Shorts",
+          "item": "https://www.tontongear.com/products/category/mma-grappling-shorts"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Dazzle Vector Combat Training Shorts",
+          "item": "https://www.tontongear.com/products/dazzle-vector-combat-training-shorts"
+        }
+      ]
+    }
+  ]
+}
