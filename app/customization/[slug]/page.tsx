@@ -286,6 +286,22 @@ export default function CustomizationCategoryPage({ params }: { params: { slug: 
 
       <AnswerEvidencePanel question={content.quickAnswerQuestion} answer={content.quickAnswer} reviewedDate="November 18, 2026" sourceNote="Based on published TONTON garment references, actual sample-detail photographs and the documented sample-approval workflow. Performance tests, commercial terms and event eligibility require project-specific confirmation." quoteHref={`/project-builder?product=${encodeURIComponent(builderProduct)}&source=customization-answer`} planningHref="/resources/custom-fightwear-size-quantity-planning#quantity-planner" />
 
+      {isRashGuardPage && (
+        <section className="customization-overview customization-shell" aria-labelledby="rash-guard-order-route">
+          <div className="customization-overview-heading">
+            <p className="customization-kicker">ACADEMY ORDERS / PRIVATE LABEL</p>
+            <h2 id="rash-guard-order-route">Custom jiu jitsu rash guards: choose your order brief.</h2>
+          </div>
+          <div className="customization-overview-copy"><p className="customization-overview-lead">Start with your team or brand requirements. Each route keeps the artwork, fit, sample and quantity decisions together.</p></div>
+          <div className="customization-audience-grid">
+            <article><span>01</span><h3>BJJ academy and team orders</h3><p>Send the academy logo, sleeve choice and quantity by size. Identify any youth fits, athlete names or rank-color variants separately so each pattern and artwork version can be reviewed.</p><Link className="customization-card-link" href="/project-builder?product=Rash%20Guard&amp;use=Team%20%2F%20academy%20uniform&amp;source=rash-guard-academy-route&amp;reference=Academy%20rash%20guard%20order">Plan academy rash guards →</Link></article>
+            <article><span>02</span><h3>Private-label rash guard collections</h3><p>Define the target customer, fit, brand colors, labels and packaging. Approve a material and finished sample before committing to a retail size range or repeat-order specification.</p><Link className="customization-card-link" href="/project-builder?product=Rash%20Guard&amp;use=Retail%20%2F%20private%20label&amp;source=rash-guard-brand-route&amp;reference=Private-label%20rash%20guard%20collection">Brief your private-label collection →</Link></article>
+            <article><span>03</span><h3>Matching rash guard and shorts kits</h3><p>Coordinate the artwork while specifying tops and shorts separately. List quantities for each garment, size and colorway; do not assume one combined minimum covers every style.</p><Link className="customization-card-link" href="/project-builder?product=Coordinated%20Team%20Kit&amp;use=Team%20%2F%20academy%20uniform&amp;source=rash-guard-kit-route&amp;reference=Matching%20rash%20guard%20and%20shorts%20kit">Plan a coordinated team kit →</Link></article>
+          </div>
+          <div className="customization-overview-copy"><h3>Confirm the order basis before comparing prices.</h3><p>Selected projects start from 10 pieces. Ask how the minimum applies to sleeve length, design, colorway and size allocation. The written quote should identify materials, labels, packaging, sample charges, shipping basis and timing.</p><Link className="customization-card-link" href="/resources/custom-fightwear-size-quantity-planning#quantity-planner">Prepare quantities by garment and size →</Link><Link className="customization-card-link" href="/blog/sublimated-fightwear-printing-and-durability-guide">Review print color and durability approval →</Link></div>
+        </section>
+      )}
+
       <section className="customization-overview customization-shell">
         <div className="customization-overview-heading">
           <p className="customization-kicker">PRODUCT DIRECTION</p>
