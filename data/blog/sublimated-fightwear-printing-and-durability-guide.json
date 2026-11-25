@@ -1,0 +1,376 @@
+{
+  "slug": "sublimated-fightwear-printing-and-durability-guide",
+  "title": "Sublimated Fightwear: Printing, Durability and Procurement Guide",
+  "seoTitle": "Sublimated Fightwear: Printing & Durability Guide | TONTON",
+  "builderProduct": "Coordinated Team Kit",
+  "category": "Printing & Craft",
+  "description": "Specify sublimated fightwear with practical fabric, color, artwork and durability checks. Plan rash guard and MMA shorts samples before bulk production.",
+  "answer": "Sublimated fightwear uses heat to transfer dye from printed paper into suitable polyester-based fabric. It supports all-over graphics without a separate printed film, but it does not guarantee permanent color, unchanged stretch or universal competition approval. For a gym or private-label order, approve the fabric, a transferred fabric color sample and a finished garment, then record test requirements and reorder references before bulk production.",
+  "published": "2026-11-25",
+  "updated": "2026-11-25",
+  "author": "TONTON",
+  "hero": {
+    "src": "/assets/factory/rotary-transfer/printed-panel-transfer.webp",
+    "alt": "Printed sportswear panels moving through TONTON rotary sublimation transfer equipment",
+    "caption": "Actual TONTON factory process photograph. The image shows production equipment and printed panels; it is not a colorfastness or performance test."
+  },
+  "basis": "Based on TONTON manufacturing, material and sampling references, with Epson, Sawgrass, AATCC and IBJJF sources checked November 25, 2026. Procurement checklists are practical development guidance. No laboratory results, universal pass grades or guaranteed product lifespan are claimed.",
+  "sections": [
+    {
+      "id": "what-is-sublimated-fightwear",
+      "title": "What is sublimated fightwear?",
+      "paragraphs": [
+        "Sublimated fightwear includes custom rash guards, MMA shorts and other combat-sports garments decorated through dye sublimation on compatible fabric. In a transfer workflow, the printer puts the design on transfer paper; controlled heat transfers the dye into the polyester material. The printed fabric then follows the agreed cutting and assembly route.",
+        "Epson’s textile-printing guidance identifies white or light polyester and primarily polyester blends as suitable starting materials. A fabric’s fiber percentage alone does not approve it: review its construction, finish, heat response and printed sample.",
+        "TONTON shows digital paper printing and rotary paper-to-fabric transfer as separate factory operations. The production photos explain the workflow; they do not establish the settings or test results for your order."
+      ],
+      "links": [
+        [
+          "See TONTON digital sublimation printing",
+          "/factory/digital-sublimation-printing"
+        ],
+        [
+          "See rotary heat transfer and process videos",
+          "/factory/rotary-heat-transfer"
+        ],
+        [
+          "Epson digital textile printing primer",
+          "https://blog.epson.com/a-digital-printing-primer/"
+        ]
+      ]
+    },
+    {
+      "id": "choose-printing-route",
+      "title": "When should a buyer choose sublimation?",
+      "paragraphs": [
+        "Full-panel sublimation is a useful starting route for compatible polyester fightwear with gradients, illustrations or coordinated team graphics. Applied logos and screen printing remain options for other materials, effects and order structures. Compare the actual decoration system on the intended fabric rather than assuming every alternative will crack or peel.",
+        "The existing printing-method guide covers that selection in detail. This article focuses on the approvals needed after you choose a sublimated product."
+      ],
+      "table": {
+        "caption": "Choose a decoration route by the product brief",
+        "columns": [
+          "Buying requirement",
+          "Starting direction",
+          "Approval point"
+        ],
+        "rows": [
+          [
+            "All-over rash guard or shorts artwork",
+            "Sublimation on compatible polyester-based fabric",
+            "Transferred color, stretch appearance, seams and heat response"
+          ],
+          [
+            "Small logo on an existing garment",
+            "A compatible applied transfer or screen-print system",
+            "Adhesion or cure, stretch, dye migration and care"
+          ],
+          [
+            "Cotton lifestyle range",
+            "A decoration system designed for cotton",
+            "Hand feel, image quality and washing on the actual garment"
+          ],
+          [
+            "Raised or tactile brand mark",
+            "A separate compatible logo system",
+            "Placement, skin contact, attachment and event restrictions"
+          ]
+        ]
+      },
+      "links": [
+        [
+          "Compare sublimation and applied heat-transfer logos",
+          "/blog/sublimation-vs-heat-transfer-for-fightwear"
+        ]
+      ]
+    },
+    {
+      "id": "fabric-stretch-and-opacity",
+      "title": "Does sublimation preserve stretch and breathability?",
+      "paragraphs": [
+        "Sublimation does not add a separate transfer film over the artwork area. That is useful for close-fitting garments, but it is not evidence that the finished fabric retains exactly 100% of its original stretch, airflow or moisture transport. Heat processing and the selected fabric still require review.",
+        "Check printed fabric and the assembled sample for hand feel, dimensions, stretch recovery and coverage at realistic wearing extension. A rash guard should be assessed across the shoulders and chest; shorts need hip, leg-opening and liner checks appropriate to their construction.",
+        "For one TONTON rash guard reference, the supplied material is 220 GSM stretch knit with 85% polyester and 15% spandex. This is a specific reference, not a mandatory weight or blend for all fightwear. A heavier fabric does not by itself guarantee opacity or eliminate white show-through.",
+        "If moisture transport is a selling point, agree a relevant measurement. AATCC TM197 evaluates vertical liquid transport in fabric specimens; its existence does not prove a garment has been tested, and it is not a blanket test of breathability."
+      ],
+      "links": [
+        [
+          "Explore the 220 GSM stretch knit reference",
+          "/fabrics/220-gsm-stretch-knit"
+        ],
+        [
+          "AATCC TM197 scope",
+          "https://members.aatcc.org/store/tm197/617/"
+        ]
+      ],
+      "image": {
+        "src": "/assets/factory/digital-sublimation/color-output.webp",
+        "alt": "Color artwork output at TONTON digital sublimation printing workstation",
+        "caption": "Production color output is a workflow reference. Approve color after transfer onto the selected fabric."
+      }
+    },
+    {
+      "id": "durability-and-test-evidence",
+      "title": "How should you check fading, rubbing and white show-through?",
+      "paragraphs": [
+        "A dye-sublimated graphic has no separate printed film to peel away, but fabric wear and color change remain possible. Avoid lifetime promises such as never fades. Ask what was tested, on which sample, under which conditions and against what agreed acceptance criteria.",
+        "White show-through under extension should be evaluated on the actual dark design and selected fit. Knit opening, yarn visibility, material selection, print penetration and the amount of stretch may affect appearance. Do not prescribe a universal GSM or press temperature as the solution.",
+        "AATCC TM61 provides accelerated laundering methods for assessing textile colorfastness. A test-method name is not a certificate or a universal passing score. Ask the lab to identify the method edition, procedure, conditioning and assessment basis, and match the report to your material or sample revision."
+      ],
+      "table": {
+        "caption": "Turn a durability claim into an approval record",
+        "columns": [
+          "Question",
+          "Evidence to request",
+          "Record before bulk approval"
+        ],
+        "rows": [
+          [
+            "Will colors change after washing?",
+            "An agreed laundering evaluation and representative sample or lab report",
+            "Procedure, care conditions, color change and staining criteria"
+          ],
+          [
+            "Will color transfer under rubbing or perspiration?",
+            "Relevant rubbing or perspiration assessment where required",
+            "Method, conditions, acceptance criteria and sample identity"
+          ],
+          [
+            "Will a dark print look pale under stretch?",
+            "Wearing-extension review on the selected fabric and garment",
+            "Fit, extension, lighting and accepted visual reference"
+          ],
+          [
+            "Will fit or seams change?",
+            "Measurements and garment inspection before and after agreed care cycles",
+            "Dimensional tolerance, seam appearance and waistband behavior"
+          ]
+        ]
+      },
+      "links": [
+        [
+          "AATCC TM61 laundering colorfastness scope",
+          "https://members.aatcc.org/store/tm61/495/"
+        ],
+        [
+          "Fightwear quality inspection checklist",
+          "/resources/fightwear-quality-inspection-checklist"
+        ]
+      ]
+    },
+    {
+      "id": "artwork-and-color-approval",
+      "title": "What artwork and color references should you provide?",
+      "paragraphs": [
+        "Send editable vector logos where available, readable fonts or outlined text, panel placement instructions and the approved artwork revision. For photographic elements, agree the required effective resolution at final print size with the production team; enlarging a low-resolution file does not restore detail.",
+        "Ask which file color space and profile the supplier’s workflow expects. A CMYK printer does not mean every input file must be converted to CMYK without discussion. Provide critical brand-color references, then approve a transferred fabric sample under agreed lighting. A Pantone reference communicates a target; it does not guarantee an exact match on every fabric.",
+        "The transfer-paper image and a screen preview are not final fabric color proofs. Keep the accepted fabric color sample with the artwork file, material identification and revision date. Sawgrass troubleshooting guidance emphasizes evaluating the transferred result and the complete color-management workflow."
+      ],
+      "bullets": [
+        "Mark chest, back, sleeve, waistband and side-panel logo positions with dimensions.",
+        "Use the supplier’s actual pattern template, bleed and safe zones; do not impose a generic seam allowance on every style.",
+        "Check design continuity at assembled seams and across the proposed size range.",
+        "Separate print artwork from neck labels, care labels, packaging and any applied trims."
+      ],
+      "links": [
+        [
+          "Prepare production artwork",
+          "/blog/custom-fightwear-artwork-production-guide"
+        ],
+        [
+          "Sawgrass color troubleshooting",
+          "https://www.sawgrassink.com/blog/tech-tip-troubleshooting-color-issues/"
+        ]
+      ]
+    },
+    {
+      "id": "sampling-and-procurement",
+      "title": "What should the sampling and purchasing workflow include?",
+      "paragraphs": [
+        "Build the approval around three different questions: Does the artwork communicate the design? Does transferred fabric show acceptable color and material behavior? Does the finished garment fit and perform as required for the intended use? A digital mockup answers only part of the first question.",
+        "Use the sequence below as a buying checklist. The number of trial garments, wear sessions and care cycles should reflect your product risk and agreed test plan. Informal gym use is useful feedback, but it is not a standardized laboratory result.",
+        "TONTON’s sampling guide describes selected projects starting from 10 pieces and a target sample window of 3–7 days after usable artwork and product details are confirmed. Confirm the applicable MOQ, fees, materials, size mix and schedule in the written quotation."
+      ],
+      "table": {
+        "caption": "Sublimated fightwear approval sequence",
+        "columns": [
+          "Stage",
+          "Buyer approval",
+          "Keep for reorders"
+        ],
+        "rows": [
+          [
+            "1. Product brief",
+            "Use, construction, fabric direction, quantities and destination",
+            "Product specification and quantity by size"
+          ],
+          [
+            "2. Digital artwork",
+            "Panel layout, logo size, colors and labels",
+            "Approved artwork revision"
+          ],
+          [
+            "3. Transferred fabric sample",
+            "Color target, hand feel and stretch appearance",
+            "Accepted fabric color sample and material identity"
+          ],
+          [
+            "4. Finished garment",
+            "Fit, movement, seams, opacity and care behavior",
+            "Approved sample, measurements and revision notes"
+          ],
+          [
+            "5. Bulk release",
+            "Final specifications, test criteria, price and delivery scope",
+            "Signed approval record and reorder references"
+          ]
+        ]
+      },
+      "links": [
+        [
+          "Sampling and MOQ guide",
+          "/resources/custom-fightwear-sampling-moq"
+        ],
+        [
+          "Physical sample approval checklist",
+          "/blog/custom-fightwear-sample-approval-checklist"
+        ],
+        [
+          "Choose MMA outer shorts or 2-in-1 shorts",
+          "/blog/custom-mma-fight-shorts-vs-2-in-1-grappling-shorts"
+        ]
+      ]
+    },
+    {
+      "id": "competition-and-care",
+      "title": "Do sublimation and a care label guarantee competition suitability?",
+      "paragraphs": [
+        "No. Sublimation is a decoration method, not event certification. Check the named organizer, division and rule edition for colors, coverage, shorts length, pockets, drawcords and hardware. IBJJF’s uniform page specifies garment requirements independently of the print method.",
+        "Likewise, approve care instructions for the finished garment, including elastane, seams, grip bands and applied labels. Do not infer that a high printing temperature makes hot washing or high-heat drying safe. Follow the approved garment care label and verify any commercial laundering requirement before ordering."
+      ],
+      "links": [
+        [
+          "IBJJF official uniform requirements",
+          "https://ibjjf.com/uniform"
+        ],
+        [
+          "Custom no-gi uniform specification guide",
+          "/blog/custom-no-gi-bjj-uniform-specification-guide"
+        ]
+      ]
+    },
+    {
+      "id": "buying-checklist",
+      "title": "Before you request a sublimated fightwear quote",
+      "paragraphs": [
+        "Send a brief that lets the supplier quote the same product you intend to approve. For a coordinated kit, keep separate rash guard and shorts specifications while sharing the brand-color and artwork system."
+      ],
+      "bullets": [
+        "Identify the garment, fit, intended use and any named competition.",
+        "Provide material priorities, artwork status and critical color references.",
+        "List quantity by style, colorway and size, plus labels and packaging.",
+        "Specify fabric color approval, finished sample requirements and any laboratory testing.",
+        "Confirm the delivery country, target date and sample revision plan.",
+        "Save the final artwork, accepted sample, measurements and care instructions for repeat orders."
+      ],
+      "links": [
+        [
+          "Custom sublimated rash guards",
+          "/customization/sublimated-rash-guards"
+        ],
+        [
+          "Custom sublimated BJJ and MMA shorts",
+          "/customization/sublimated-bjj-mma-shorts"
+        ],
+        [
+          "Build your project brief",
+          "/project-builder"
+        ]
+      ]
+    }
+  ],
+  "faqs": [
+    [
+      "What is sublimated fightwear?",
+      "It is combat-sports apparel decorated by transferring dye into compatible polyester-based fabric using heat. All-over graphics are possible without a separate printed film. Final color and garment performance still depend on the material, process and approved sample."
+    ],
+    [
+      "Is there a universal minimum polyester percentage?",
+      "No single percentage approves every sublimation project. Polyester-rich white or light fabric is a common starting point. Confirm the blend, finish, heat compatibility and transferred print on the actual material; do not assume every synthetic fiber behaves like polyester."
+    ],
+    [
+      "Will sublimated logos crack or peel?",
+      "The dye-sublimated image is not a separate surface film, so it does not peel like an applied film. This does not prevent fabric damage, fading or changes caused by wear, care or unsuitable processing. Review the finished garment and any separately applied logos."
+    ],
+    [
+      "Can you sublimate a gold logo onto a black rash guard?",
+      "Conventional dye sublimation has no opaque white underbase to cover a dark fabric. For an all-over black-and-gold design, a light polyester base is a typical starting route. Confirm the exact design and material with the supplier."
+    ],
+    [
+      "Does 220 GSM prevent white show-through?",
+      "Not by itself. Weight, knit structure, yarn, print penetration, color and wearing extension affect appearance. Approve the actual garment at realistic stretch and do not treat GSM as an opacity certification."
+    ],
+    [
+      "Must artwork always be CMYK with Pantone Solid Coated codes?",
+      "Ask which input color space and profile the supplier expects. Provide critical color references and approve a transferred fabric sample. A Pantone code helps communicate the target but does not guarantee identical output across different materials or production runs."
+    ],
+    [
+      "Which tests should a buyer request?",
+      "Choose tests around the claims and intended use, such as laundering colorfastness, rubbing, perspiration, dimensional change or liquid transport. Agree methods and acceptance criteria in advance. A reference to AATCC or ISO does not mean a garment passed a test."
+    ],
+    [
+      "Are sublimated rash guards automatically competition approved?",
+      "No. Check the current rules for the named organizer, event date and division, including colors, coverage, construction and trims. The printing method alone does not establish eligibility."
+    ]
+  ],
+  "related": [
+    "sublimation-vs-heat-transfer-for-fightwear",
+    "custom-fightwear-artwork-production-guide",
+    "custom-fightwear-sample-approval-checklist"
+  ],
+  "links": [
+    [
+      "TONTON rotary transfer evidence",
+      "/factory/rotary-heat-transfer"
+    ],
+    [
+      "TONTON rash guard material reference",
+      "/fabrics/220-gsm-stretch-knit"
+    ],
+    [
+      "TONTON sampling and MOQ guide",
+      "/resources/custom-fightwear-sampling-moq"
+    ]
+  ],
+  "sources": [
+    {
+      "label": "Epson: digital textile printing primer",
+      "url": "https://blog.epson.com/a-digital-printing-primer/",
+      "note": "Manufacturer explanation of printing routes and compatible textile directions."
+    },
+    {
+      "label": "Sawgrass: heat-press settings",
+      "url": "https://care.sawgrassink.com/hc/en-us/articles/10587333978011-Sublimation-Heat-Press-Settings",
+      "note": "Starting guidance only; settings depend on substrate, equipment and testing."
+    },
+    {
+      "label": "Sawgrass: color troubleshooting",
+      "url": "https://www.sawgrassink.com/blog/tech-tip-troubleshooting-color-issues/",
+      "note": "Color workflow and transferred-output checks."
+    },
+    {
+      "label": "AATCC TM61",
+      "url": "https://members.aatcc.org/store/tm61/495/",
+      "note": "Accelerated laundering colorfastness scope; not a TONTON test report."
+    },
+    {
+      "label": "AATCC TM197",
+      "url": "https://members.aatcc.org/store/tm197/617/",
+      "note": "Vertical liquid-transport scope; not a garment performance result."
+    },
+    {
+      "label": "IBJJF uniform requirements",
+      "url": "https://ibjjf.com/uniform",
+      "note": "Check the applicable event and division requirements before competition."
+    }
+  ]
+}
