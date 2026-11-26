@@ -1,0 +1,123 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "@id": "https://www.tontongear.com/products/tactical-olive-short-sleeve-rash-guard#product",
+      "name": "Tactical Olive Short-Sleeve Compression Rash Guard",
+      "description": "Develop custom olive short-sleeve rash guards with a satin-look finish, raglan sleeves and minimalist branding. TONTON OEM/ODM for BJJ gyms and fightwear brands.",
+      "url": "https://www.tontongear.com/products/tactical-olive-short-sleeve-rash-guard",
+      "image": [
+        "https://assets.tontongear.com/assets/products/tactical-olive-short-sleeve-rash-guard/tactical-olive-front-v1.webp",
+        "https://assets.tontongear.com/assets/products/tactical-olive-short-sleeve-rash-guard/tactical-olive-back-v1.webp",
+        "https://assets.tontongear.com/assets/products/tactical-olive-short-sleeve-rash-guard/tactical-olive-sleeve-detail-v1.webp",
+        "https://assets.tontongear.com/assets/products/tactical-olive-short-sleeve-rash-guard/tactical-olive-chest-detail-v1.webp",
+        "https://assets.tontongear.com/assets/products/tactical-olive-short-sleeve-rash-guard/tactical-olive-back-logo-detail-v1.webp"
+      ],
+      "brand": {
+        "@type": "Brand",
+        "name": "TONTON"
+      },
+      "manufacturer": {
+        "@id": "https://www.tontongear.com/#organization"
+      },
+      "category": "Custom short-sleeve rash guard",
+      "color": "Olive green"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.tontongear.com/products/tactical-olive-short-sleeve-rash-guard#webpage",
+      "url": "https://www.tontongear.com/products/tactical-olive-short-sleeve-rash-guard",
+      "name": "Tactical Olive Short-Sleeve Compression Rash Guard",
+      "dateModified": "2026-11-26",
+      "mainEntity": {
+        "@id": "https://www.tontongear.com/products/tactical-olive-short-sleeve-rash-guard#product"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.tontongear.com/products/tactical-olive-short-sleeve-rash-guard#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I customize this olive rash guard for my brand or academy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Share your authorized logos, color direction, size allocation, labels and packaging requirements. TONTON will review the decoration method, material and physical sample route for your project."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the fabric composition and GSM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The supplied brief describes a four-way-stretch compression knit. Exact fiber percentages and fabric weight are confirmed against the selected swatch and approved specification; illustrative percentages and GSM ranges are not confirmed values for this reference."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the chest logo a raised silicone print?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The chest artwork has a shadow-style appearance in the supplied images. Its physical height and decoration method require sample confirmation. Discuss the desired finish when sending your artwork."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What sizes should I order?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Confirm a finished-garment chart and size grading for your target market. Check chest, waist, body length, sleeve opening and shoulder movement on representative fit samples."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this olive colorway competition approved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No universal competition approval is claimed. Check the current organizer and division requirements for colors, rank identification and garment fit before placing an event order."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the minimum order and sample timing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Selected TONTON custom projects start from 10 pieces, with a target sample window of 3\u20137 days after usable artwork and product details are confirmed. Final minimums and timing depend on materials, construction and quantities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the video prove fit or performance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The supplied video is a design presentation. Use a physical sample to approve fabric feel, fit, seams, print and wash care before bulk production."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Products",
+          "item": "https://www.tontongear.com/products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Rash Guards",
+          "item": "https://www.tontongear.com/products/category/rash-guards"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tactical Olive Short-Sleeve Compression Rash Guard",
+          "item": "https://www.tontongear.com/products/tactical-olive-short-sleeve-rash-guard"
+        }
+      ]
+    }
+  ]
+}

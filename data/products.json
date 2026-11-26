@@ -21,6 +21,30 @@
   ],
   "products": [
     {
+      "id": "tactical-olive-short-sleeve-rash-guard",
+      "categoryId": "sublimated-rash-guards",
+      "name": "Tactical Olive Short-Sleeve Compression Rash Guard",
+      "image": "https://assets.tontongear.com/assets/products/tactical-olive-short-sleeve-rash-guard/tactical-olive-front-v1.webp",
+      "images": [
+        "https://assets.tontongear.com/assets/products/tactical-olive-short-sleeve-rash-guard/tactical-olive-front-v1.webp",
+        "https://assets.tontongear.com/assets/products/tactical-olive-short-sleeve-rash-guard/tactical-olive-front-side-v1.webp",
+        "https://assets.tontongear.com/assets/products/tactical-olive-short-sleeve-rash-guard/tactical-olive-back-v1.webp",
+        "https://assets.tontongear.com/assets/products/tactical-olive-short-sleeve-rash-guard/tactical-olive-back-side-v1.webp",
+        "https://assets.tontongear.com/assets/products/tactical-olive-short-sleeve-rash-guard/tactical-olive-model-fit-v1.webp",
+        "https://assets.tontongear.com/assets/products/tactical-olive-short-sleeve-rash-guard/tactical-olive-sleeve-detail-v1.webp",
+        "https://assets.tontongear.com/assets/products/tactical-olive-short-sleeve-rash-guard/tactical-olive-chest-detail-v1.webp",
+        "https://assets.tontongear.com/assets/products/tactical-olive-short-sleeve-rash-guard/tactical-olive-back-logo-detail-v1.webp",
+        "https://assets.tontongear.com/assets/products/tactical-olive-short-sleeve-rash-guard/tactical-olive-rear-three-quarter-v1.webp"
+      ],
+      "description": "Develop custom olive short-sleeve rash guards with a satin-look finish, raglan sleeves and minimalist branding. TONTON OEM/ODM for BJJ gyms and fightwear brands.",
+      "features": [
+        "Solid Olive Satin-Look Finish",
+        "Raglan Short Sleeves",
+        "Minimalist Branding",
+        "OEM / ODM Development"
+      ]
+    },
+    {
       "id": "dazzle-vector-combat-training-shorts",
       "categoryId": "sublimated-bjj-mma-shorts",
       "name": "Dazzle Vector Combat Training Shorts",
@@ -317,7 +341,7 @@
       "description": "Matte white compression training top with raglan sleeves and flat seams, developed for private-label BJJ, MMA and gym collections.",
       "features": [
         "85% Polyester / 15% Spandex Brief",
-        "220–250 GSM Development Range",
+        "220\u2013250 GSM Development Range",
         "Private Label OEM/ODM",
         "Sample Opacity & Fit Checks"
       ]
@@ -422,7 +446,7 @@
     {
       "id": "custom-logo-shorts",
       "categoryId": "sublimated-bjj-mma-shorts",
-      "name": "Men’s Custom MMA Fight Shorts",
+      "name": "Men\u2019s Custom MMA Fight Shorts",
       "image": "assets/products/grappling-shorts-products/custom-competition-shorts-main-v3.webp",
       "images": [
         "assets/products/grappling-shorts-products/custom-competition-shorts-main-v3.webp",
