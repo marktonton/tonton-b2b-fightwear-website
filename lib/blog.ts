@@ -1,3 +1,4 @@
+import highsplit from '../data/blog/custom-high-split-grappling-shorts-guide.json';
 import sublimated from '../data/blog/sublimated-fightwear-printing-and-durability-guide.json';
 import comparison from '../data/blog/custom-mma-fight-shorts-vs-2-in-1-grappling-shorts.json';
 import grappling from '../data/blog/custom-no-gi-grappling-shorts-competition-guide.json';
@@ -27,7 +28,7 @@ export type BlogPost = {
   download?: { href: string; label: string };
 };
 // Register one JSON content file here to publish another article. Dates live in the content.
-export const BLOG_POSTS: BlogPost[] = [sublimated, comparison, grappling, artwork, nogi, sizing, fabricFit, teamKits, capsule, academy, selection, construction, fabric, printing, approval, cost];
+export const BLOG_POSTS: BlogPost[] = [highsplit, sublimated, comparison, grappling, artwork, nogi, sizing, fabricFit, teamKits, capsule, academy, selection, construction, fabric, printing, approval, cost];
 export const getBlogPost = (slug: string) => BLOG_POSTS.find(post => post.slug === slug);
 export const blogReadTime = (post: BlogPost) => {
   const words = [post.answer, ...post.sections.flatMap(section => [
