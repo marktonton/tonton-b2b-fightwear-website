@@ -21,6 +21,30 @@
   ],
   "products": [
     {
+      "id": "urban-shadow-short-sleeve-rash-guard",
+      "categoryId": "sublimated-rash-guards",
+      "name": "Urban Shadow Short-Sleeve Rash Guard",
+      "image": "https://assets.tontongear.com/assets/products/urban-shadow-short-sleeve-rash-guard/urban-shadow-front-v1.webp",
+      "images": [
+        "https://assets.tontongear.com/assets/products/urban-shadow-short-sleeve-rash-guard/urban-shadow-front-v1.webp",
+        "https://assets.tontongear.com/assets/products/urban-shadow-short-sleeve-rash-guard/urban-shadow-back-v1.webp",
+        "https://assets.tontongear.com/assets/products/urban-shadow-short-sleeve-rash-guard/urban-shadow-model-front-v1.webp",
+        "https://assets.tontongear.com/assets/products/urban-shadow-short-sleeve-rash-guard/urban-shadow-arm-view-v1.webp",
+        "https://assets.tontongear.com/assets/products/urban-shadow-short-sleeve-rash-guard/urban-shadow-model-back-v1.webp",
+        "https://assets.tontongear.com/assets/products/urban-shadow-short-sleeve-rash-guard/urban-shadow-mobility-view-v1.webp",
+        "https://assets.tontongear.com/assets/products/urban-shadow-short-sleeve-rash-guard/urban-shadow-sleeve-22-detail-v1.webp",
+        "https://assets.tontongear.com/assets/products/urban-shadow-short-sleeve-rash-guard/urban-shadow-hazard-detail-v1.webp",
+        "https://assets.tontongear.com/assets/products/urban-shadow-short-sleeve-rash-guard/urban-shadow-back-logo-detail-v1.webp"
+      ],
+      "description": "Develop custom black-grey camo rash guards with raglan sleeves and white industrial-style graphics. TONTON OEM/ODM sample planning for BJJ gyms and fightwear brands.",
+      "features": [
+        "Urban Shadow Camo and Industrial-Style Graphics",
+        "Raglan Short Sleeves",
+        "Visible Flat Seam Construction",
+        "OEM / ODM Sample Development"
+      ]
+    },
+    {
       "id": "spec-ops-jungle-short-sleeve-rash-guard",
       "categoryId": "sublimated-rash-guards",
       "name": "Spec-Ops Jungle Short-Sleeve Rash Guard",
