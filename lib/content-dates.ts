@@ -1,6 +1,7 @@
 export const CONTENT_REVIEW_DATE = '2026-09-15';
 
 export const ROUTE_LAST_MODIFIED: Record<string, string> = {
+  '/products/spec-ops-jungle-short-sleeve-rash-guard': '2026-11-27',
   '/products/concrete-grey-combat-training-shorts': '2026-11-27',
   '/products/tactical-olive-short-sleeve-rash-guard': '2026-11-26',
   '/products/dazzle-vector-combat-training-shorts': '2026-11-23',
@@ -39,7 +40,7 @@ export const ROUTE_LAST_MODIFIED: Record<string, string> = {
   '/products/cyber-gradient-training-fight-shorts': '2026-10-29',
 
   '/products': '2026-11-27',
-  '/products/category/rash-guards': '2026-11-26',
+  '/products/category/rash-guards': '2026-11-27',
   '/products/category/mma-grappling-shorts': '2026-11-27',
   '/products/category/training-shorts': '2026-11-10',
   '/products/category/teamwear-sets': '2026-10-28',

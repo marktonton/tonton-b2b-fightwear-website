@@ -1,0 +1,118 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "@id": "https://www.tontongear.com/products/spec-ops-jungle-short-sleeve-rash-guard#product",
+      "name": "Spec-Ops Jungle Short-Sleeve Rash Guard",
+      "description": "Develop custom jungle camo rash guards with raglan sleeves and yellow industrial-style graphics. TONTON OEM/ODM sample planning for BJJ gyms and fightwear brands.",
+      "url": "https://www.tontongear.com/products/spec-ops-jungle-short-sleeve-rash-guard",
+      "image": [
+        "https://assets.tontongear.com/assets/products/spec-ops-jungle-short-sleeve-rash-guard/spec-ops-jungle-front-v1.webp",
+        "https://assets.tontongear.com/assets/products/spec-ops-jungle-short-sleeve-rash-guard/spec-ops-jungle-back-v1.webp",
+        "https://assets.tontongear.com/assets/products/spec-ops-jungle-short-sleeve-rash-guard/spec-ops-jungle-model-front-v1.webp",
+        "https://assets.tontongear.com/assets/products/spec-ops-jungle-short-sleeve-rash-guard/spec-ops-jungle-arm-view-v1.webp",
+        "https://assets.tontongear.com/assets/products/spec-ops-jungle-short-sleeve-rash-guard/spec-ops-jungle-model-fit-v1.webp",
+        "https://assets.tontongear.com/assets/products/spec-ops-jungle-short-sleeve-rash-guard/spec-ops-jungle-mobility-view-v1.webp",
+        "https://assets.tontongear.com/assets/products/spec-ops-jungle-short-sleeve-rash-guard/spec-ops-jungle-sleeve-22-detail-v1.webp",
+        "https://assets.tontongear.com/assets/products/spec-ops-jungle-short-sleeve-rash-guard/spec-ops-jungle-hazard-detail-v1.webp"
+      ],
+      "brand": {
+        "@type": "Brand",
+        "name": "TONTON"
+      },
+      "manufacturer": {
+        "@id": "https://www.tontongear.com/#organization"
+      },
+      "category": "Custom short-sleeve BJJ and MMA rash guard",
+      "color": "Jungle green / charcoal / pale yellow"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.tontongear.com/products/spec-ops-jungle-short-sleeve-rash-guard#webpage",
+      "url": "https://www.tontongear.com/products/spec-ops-jungle-short-sleeve-rash-guard",
+      "name": "Spec-Ops Jungle Short-Sleeve Rash Guard",
+      "dateModified": "2026-11-27",
+      "mainEntity": {
+        "@id": "https://www.tontongear.com/products/spec-ops-jungle-short-sleeve-rash-guard#product"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.tontongear.com/products/spec-ops-jungle-short-sleeve-rash-guard#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can the camouflage and industrial-style graphics be customized?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Provide authorized artwork, color references, logo placements and label requirements. Approve the camouflage scale, sleeve layout and chest graphics on an artwork proof and physical sample."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the fabric composition and GSM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Final fiber composition, GSM, stretch and recovery are confirmed for the selected fabric. The supplied brief includes example values rather than a confirmed production specification."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the tactical design indicate military or protective certification?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Tactical and Spec-Ops describe the visual theme. This training garment is not presented as protective equipment or as military-certified apparel. Abrasion, moisture-management and durability requirements need agreed tests."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are matching shorts included?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This product reference covers the short-sleeve rash guard. Matching shorts shown in styling photographs are a separate garment and require their own construction, sizing, quotation and sample approval."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can it be used for No-Gi BJJ competitions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Confirm the organizer’s current color, coverage, branding and garment rules before specifying a competition version. This reference does not establish event approval."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I request MOQ, pricing and a sample?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send quantity by size, target market, delivery destination, artwork status and required date through the project builder. Confirm MOQ, sample costs, fabric, branding, lead time and packaging against the project brief."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Products",
+          "item": "https://www.tontongear.com/products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Rash Guards",
+          "item": "https://www.tontongear.com/products/category/rash-guards"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Spec-Ops Jungle Short-Sleeve Rash Guard",
+          "item": "https://www.tontongear.com/products/spec-ops-jungle-short-sleeve-rash-guard"
+        }
+      ]
+    }
+  ]
+}
