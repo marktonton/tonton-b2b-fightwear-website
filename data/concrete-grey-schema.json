@@ -1,0 +1,119 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "@id": "https://www.tontongear.com/products/concrete-grey-combat-training-shorts#product",
+      "name": "Concrete Grey Combat Training Shorts",
+      "description": "Develop custom grey MMA and Muay Thai training shorts with curved side splits, tonal drawcord and charcoal mesh details. TONTON OEM/ODM sample planning.",
+      "url": "https://www.tontongear.com/products/concrete-grey-combat-training-shorts",
+      "image": [
+        "https://assets.tontongear.com/assets/products/concrete-grey-combat-training-shorts/concrete-grey-front-v1.webp",
+        "https://assets.tontongear.com/assets/products/concrete-grey-combat-training-shorts/concrete-grey-back-v1.webp",
+        "https://assets.tontongear.com/assets/products/concrete-grey-combat-training-shorts/concrete-grey-model-back-v1.webp",
+        "https://assets.tontongear.com/assets/products/concrete-grey-combat-training-shorts/concrete-grey-model-side-v1.webp",
+        "https://assets.tontongear.com/assets/products/concrete-grey-combat-training-shorts/concrete-grey-front-open-v1.webp",
+        "https://assets.tontongear.com/assets/products/concrete-grey-combat-training-shorts/concrete-grey-mesh-lining-v1.webp",
+        "https://assets.tontongear.com/assets/products/concrete-grey-combat-training-shorts/concrete-grey-mesh-detail-v1.webp",
+        "https://assets.tontongear.com/assets/products/concrete-grey-combat-training-shorts/concrete-grey-side-detail-v1.webp",
+        "https://assets.tontongear.com/assets/products/concrete-grey-combat-training-shorts/concrete-grey-yoke-detail-v1.webp"
+      ],
+      "brand": {
+        "@type": "Brand",
+        "name": "TONTON"
+      },
+      "manufacturer": {
+        "@id": "https://www.tontongear.com/#organization"
+      },
+      "category": "Custom MMA and grappling training shorts",
+      "color": "Concrete grey / charcoal"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.tontongear.com/products/concrete-grey-combat-training-shorts#webpage",
+      "url": "https://www.tontongear.com/products/concrete-grey-combat-training-shorts",
+      "name": "Concrete Grey Combat Training Shorts",
+      "dateModified": "2026-11-27",
+      "mainEntity": {
+        "@id": "https://www.tontongear.com/products/concrete-grey-combat-training-shorts#product"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.tontongear.com/products/concrete-grey-combat-training-shorts#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can these shorts be customized for a gym or private-label brand?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send your authorized logo, color references, size range, quantity by size, labels and packaging brief. Confirm branding method and panel placement with an artwork proof and physical sample."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the fabric composition and GSM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Composition, GSM, stretch direction and any ripstop or water-repellent specification require confirmation against the selected fabric and approved sample. The reference photographs do not establish these values."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the mesh layer a compression liner?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The reference shows a charcoal micro-dot mesh inner layer. Do not treat it as a fitted compression liner or a two-in-one construction without checking the full liner pattern and sample."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are these shorts approved for No-Gi BJJ competitions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Competition acceptance depends on the event rules and approved garment construction. The reference has a visible external drawcord. Check cord exposure, openings, branding, fit and other event requirements before ordering competition garments."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I request MOQ, pricing and lead time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Submit your quantity by size, destination, target delivery date and customization brief through the project builder. MOQ, sample cost, production price and lead time are confirmed after the project specification is reviewed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should be checked before bulk production?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Approve a physical sample for waist fit, drawcord retention, split height, mesh coverage, seam comfort, movement and laundering. Confirm fabric composition, GSM, decoration durability and the final care label before bulk approval."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Products",
+          "item": "https://www.tontongear.com/products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "MMA & Grappling Shorts",
+          "item": "https://www.tontongear.com/products/category/mma-grappling-shorts"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Concrete Grey Combat Training Shorts",
+          "item": "https://www.tontongear.com/products/concrete-grey-combat-training-shorts"
+        }
+      ]
+    }
+  ]
+}
