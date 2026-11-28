@@ -35,8 +35,14 @@ THE ARTICLE LIBRARY
 
 Search articles
 
-All articlesTeamwear Buying GuideFightwear Buying GuidePrinting & CraftAcademy Buying GuideBrand PlanningConstructionMaterialsSampling & QualityCost & Procurement
-18 articles
+All articlesSampling & QualityTeamwear Buying GuideFightwear Buying GuidePrinting & CraftAcademy Buying GuideBrand PlanningConstructionMaterialsCost & Procurement
+19 articles
+Sampling & Quality · 9 min read
+
+### Custom Fightwear Quality Control Checklist: What to Inspect Before Bulk Production
+Use this custom fightwear quality control checklist to inspect MMA shorts, BJJ rash guards, team kits, artwork, sizing, samples and bulk-order documents.
+2026-11-28Read the guide →
+
 Teamwear Buying Guide · 9 min read
 
 ### How to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide
@@ -151,6 +157,232 @@ FROM READING TO SPECIFYING
 Choose a product reference, collect your priorities, then share artwork, quantities and the size allocation for review.
 
 Build your project brief →Compare product references →
+
+---
+
+Canonical URL: https://www.tontongear.com/blog/custom-fightwear-quality-control-checklist
+Page title: Custom Fightwear Quality Control Checklist | TONTON
+
+Home/Blog/Sampling & QualitySampling & Quality
+
+# Custom Fightwear Quality Control Checklist: What to Inspect Before Bulk Production
+Use this custom fightwear quality control checklist to inspect MMA shorts, BJJ rash guards, team kits, artwork, sizing, samples and bulk-order documents.
+By TONTON · Published November 28, 2026 · 9 min read
+IN THIS GUIDE
+Why a sample-first quality control checklist mattersWhat are the five sections of a custom fightwear quality control checklist?How do you inspect custom MMA shorts and grappling shorts?How do you test a custom BJJ rash guard sample?Which artwork and branding checks belong in the checklist?How should competition requirements be handled?What documents should a supplier and buyer approve together?Who is this checklist for—and who needs a stricter version?Key takeawaysBuyer questionsDiscuss your specification →THE SHORT ANSWER
+
+## What buyers need to know
+Before approving custom fightwear, inspect the physical sample for measurements, movement, seam quality, waistband or hem security, artwork placement, labels, and intended-use requirements. Compare it with a written specification, record corrections, and approve one controlled version before bulk production. A digital mockup can confirm layout, but it cannot prove fit, stretch, opacity, comfort, or workmanship.
+
+TONTON production inspection reference. Record the approved measurement points and inspection findings for your own order.
+
+## Why a sample-first quality control checklist matters
+Custom MMA and BJJ apparel is not only a graphic product. The same logo can be printed on garments with different cuts, waist systems, liners, seams, and size grading. A team may need mobility and repeat-training comfort; a private-label brand may also need consistent labeling, packaging, and reorder control.
+A useful checklist turns subjective comments such as “make it more comfortable” into checks that a supplier can act on: finished waist measurement, side-split height, liner length, sleeve fit, seam placement, print alignment, and approved tolerances.
+TONTON’s published sampling guidance says buyers should provide the product type, quantity, intended use, size range, artwork status, and destination. It also states that selected custom projects start from 10 pieces, while the applicable MOQ and sample route are confirmed by the actual style, design, colorway, and size allocation. Treat those as project conditions, not a universal promise for every product.
+
+## What are the five sections of a custom fightwear quality control checklist?
+This structure works for custom MMA fight shorts, 2-in-1 grappling shorts, rash guards, training shorts, and coordinated team kits. It is a procurement framework, not a substitute for the latest event rulebook or laboratory testing where a buyer requires it.
+Five-part custom fightwear quality control checklistChecklist section | What to inspect | Evidence to retain |
+Construction | Fabric record, liner, gusset, side split, seams, waistband, hem, closure, labels | Approved sample, material record, construction notes |
+Fit and movement | Waist, outseam, sleeve length, body length, liner coverage, mobility and skin comfort | Measurement chart, tolerance, wear-test notes |
+Artwork and branding | Logo scale, panel alignment, color reference, sponsor placement, labels and packaging | Final artwork file, color approval, label proof |
+Intended use and rules | Training requirements, event requirements, pockets, cords, hardware, coverage and corner colors where applicable | Event rule link, buyer sign-off, pre-event check |
+Production control | Quantity by size and color, sample version, inspection points, packing and reorder notes | Purchase specification, inspection report, approved version history |
+
+## How do you inspect custom MMA shorts and grappling shorts?
+Start with the parts most affected by combat movement.
+TONTON’s high-split grappling-short reference combines a four-way-stretch outer layer, a supportive 250gsm inner layer, an ultra-high split, reinforced stitching, and an adjustable drawstring with an anti-slip silicone grip strip. These are product-page facts for that reference style; they should not be assumed for every custom short.
+
+- Measure the finished garment. Record waist, outseam, leg opening, liner length, and side-split height. Use the same measuring method for the sample and any future production inspection.
+
+- Check the closure. Pull the drawcord, test the elastic recovery, and inspect the cord exit and finish. The waistband should stay secure without creating avoidable pressure or loose hardware.
+
+- Inspect the gusset and split. Look for smooth movement through kicks, sprawls, guard work, and wide stances. Examine reinforcement at the highest-stress points.
+
+- Check the liner separately. For a 2-in-1 garment, inspect liner composition, weight, length, attachment, opacity, and comfort. TONTON’s published high-split reference identifies a 250gsm milk-silk compression liner, but the page also notes that the trade name is not a verified fiber composition. Request the selected material record rather than inferring fiber content from a product name.
+
+- Look for construction consistency. Check skipped stitches, uneven topstitching, loose threads, puckering, seam irritation, and panel mismatch.
+
+- /products/high-split-grappling-shorts →
+
+- /products/concrete-grey-combat-training-shorts →
+
+## How do you test a custom BJJ rash guard sample?
+A rash guard inspection should combine a measurement check with a short wear trial. Confirm shoulder reach, chest fit, sleeve length, torso coverage, neckline comfort, and hem position. Then inspect flatlock seams, underarm or side-body mesh if specified, panel joining, print coverage, and label placement.
+Use the following sample questions:
+TONTON’s rash-guard page describes short- and long-sleeve development, sublimation artwork, labels, fabric, flatlock seams, and optional silicone hem grip. It also presents a 220 GSM, 85% polyester / 15% spandex reference, but other weights and blends require separate confirmation. Record the exact material and finished measurements for the selected project.
+
+- Does the shirt remain body-fitting without restricting breathing or shoulder movement?
+
+- Does the torso still cover the waistband during stance changes and grappling movement?
+
+- Does the hem stay in place if an anti-slip band was requested?
+
+- Does the artwork remain visually balanced across raglan sleeves, side panels, and the back?
+
+- Does the fabric become too transparent when stretched?
+
+- Are seam transitions smooth at the underarm, neck, and side body?
+
+- /customization/sublimated-rash-guards →
+
+- /products/urban-shadow-short-sleeve-rash-guard →
+
+## Which artwork and branding checks belong in the checklist?
+Artwork approval should happen at full garment level, not only on a flat front panel. Check every seam, side split, sleeve join, waistband, liner panel, and label position. Confirm that sponsor marks remain readable after the garment is worn and that the approved color reference is identified in writing.
+For a private-label order, add these checks:
+Intertek explains that colorfastness testing evaluates fading and color transfer under conditions such as washing, light, rubbing, and perspiration. For sportswear, perspiration testing is directly relevant, but a general explanation of a test is not evidence that a particular garment has passed it. Ask for the actual test scope and report when numerical claims are needed.
+
+- Brand label name, size label, care information, and country-of-origin requirements where applicable.
+
+- Packaging language, barcode or SKU information, and size-color allocation.
+
+- Artwork version number and final file date.
+
+- Written permission to use every logo, sponsor mark, photograph, or reference graphic.
+
+- Whether colorfastness, wash, rubbing, or perspiration testing is required for the target market.
+
+- https://www.intertek.com/textiles-apparel/colorfastness-testing/ →
+
+- /resources/prepare-artwork-for-sublimation →
+
+## How should competition requirements be handled?
+Treat competition compliance as a separate approval gate. The event, association, division, gender category, belt or rank, and date can change the requirements. The IBJJF uniform page describes no-gi shirt and shorts conditions including body-fitting coverage, color restrictions, and the absence of pockets or hazardous closures. IBJJF’s published 2027 no-gi photo guide also provides future-facing examples for belt-color and shorts rules.
+For amateur MMA, the official IMMAF 2026 Adult MMA Rules and Procedures summary lists approved gloves, shin guards, rash guard, shorts, hand wraps, and a mouthguard, and states that rash guards and shorts must match the assigned red or blue corner. The same document says it is a non-controlling summary and that the full rules or authorized procedure prevail.
+Use these sources as an inspection prompt, not as a blanket approval. Before ordering competition garments, confirm the latest official rules with the event organizer or association and document the relevant requirement in the purchase brief.
+
+- https://ibjjf.com/uniform →
+
+- https://ibjjf.com/rule-changes-2027/no-gi-uniform →
+
+- https://immaf.org/wp-content/uploads/2026/10/ENG_2026_IMMAF_Adult_MMA_Rules_Summary.pdf →
+
+## What documents should a supplier and buyer approve together?
+At minimum, keep one controlled specification containing:
+TONTON’s project-builder page asks buyers to send the product, estimated quantity, intended use, contact details, size range, delivery country, and target date when known. Its sampling guide states that a physical sample should be used to review fit, material, construction, branding, and workmanship before bulk approval. This record-based workflow is more reliable than approving from a product name or a single render.
+Agree with the supplier when checks happen: material confirmation before cutting, panel and print review before sewing, construction checks during assembly, and finished-garment inspection before packing. Record who checks, which sizes and colors are covered, the agreed defect acceptance criteria, correction actions and the buyer’s release decision. Do not substitute photographs of a single approved sample for evidence about a completed production lot.
+
+- Product name and construction version.
+
+- Fabric, liner, GSM or composition records where confirmed.
+
+- Finished measurements, size grading, and tolerances.
+
+- Artwork file, color references, label proof, and packaging instructions.
+
+- Quantity by product, color, and size.
+
+- Sample photographs and written correction history.
+
+- Inspection points and any requested wash, colorfastness, or chemical testing.
+
+- Shipping basis, destination, target date, and reorder notes.
+
+- /blog/custom-fightwear-sample-approval-checklist#checklist →
+
+- /resources/fightwear-quality-inspection-checklist →
+
+## Who is this checklist for—and who needs a stricter version?
+A lower-cost training order may not need the same documentation as a retail private-label range. Conversely, a small competition order still deserves a strict rules and hardware check because a garment that fails inspection can affect the athlete’s participation.
+
+- Gyms and academies: prioritize member size allocation, movement comfort, repeat wear, team identity, and event-specific requirements.
+
+- Fight teams: add corner-color, athlete-name, sponsor-placement, and competition inspection checks.
+
+- Private-label brands: add fabric documentation, care labels, packaging, SKU control, testing requests, and reorder consistency.
+
+- E-commerce sellers: add product photography accuracy, size-chart consistency, packaging, defect thresholds, and customer-return risk checks.
+
+- Event or competition buyers: use the strictest rule source from the relevant organizer and complete a pre-event garment inspection.
+
+## Key takeaways
+A custom fightwear quality control checklist should connect the garment, the athlete, the artwork, the event requirement, and the written production record. Approve one physical sample against a measurement chart and final artwork version; do not treat a digital mockup as proof of fit or workmanship. Then retain the approved specification so a team kit, private-label range, or reorder can be compared against the same reference.
+For a project brief, TONTON buyers can use the custom BJJ and MMA shorts manufacturing page, the custom sublimated rash-guard page, and the project builder to organize product type, quantities, artwork, sampling, and next steps.
+
+- /customization/sublimated-bjj-mma-shorts →
+
+- /customization/sublimated-rash-guards →
+
+- /project-builder →
+
+BUYER QUESTIONS
+
+## Before you approve the next step
+What should you check before approving custom fightwear?
+Check the physical sample against measurements, construction notes, artwork, labels, intended use, and any relevant event rules. Record corrections and approve one controlled version before bulk production.
+Can a digital mockup replace a physical fightwear sample?
+No. A mockup can confirm layout, color direction, and logo placement, but it cannot prove fit, stretch, opacity, seam comfort, material hand feel, or workmanship.
+How do you inspect custom MMA shorts before bulk production?
+Measure the waist, outseam, leg opening, liner length, and side split; test the waistband and drawcord; inspect gussets and reinforcement; and review movement in kicks, sprawls, and grappling positions.
+What should a BJJ gym ask a private-label fightwear supplier?
+Ask for the exact material record, size chart, tolerances, artwork version, sample route, MOQ by style and colorway, labels, packaging, inspection points, and reorder conditions. Ask separately about any testing or competition requirements.
+How many quality-control checks should a custom rash guard have?
+At least five groups should be covered: measurements and fit, seams and panel joining, fabric opacity and recovery, artwork and labels, and hem or neckline finishing. Add testing requirements if the project needs documented performance or compliance evidence.
+Does a supplier’s advertised MOQ apply to every design?
+No. MOQ is project-specific. TONTON’s published guidance says selected projects start from 10 pieces, while the final minimum must be confirmed by style, design, colorway, size allocation, and construction.
+Should competition rules be checked before or after sampling?
+Before artwork and sample approval. Rules can affect color, length, pockets, closures, hardware, coverage, and corner identification. Confirm the latest official rules with the relevant organizer before bulk production.
+
+PRODUCTS · MATERIALS · SAMPLE APPROVAL
+
+## Next steps for your order
+Connect product choices with material decisions, production evidence and practical documents for your buying team.
+
+### Custom rash guards
+Start with fabric, compression fit, sleeve length and artwork placement.
+Rash guard manufacturing and customization →How to choose rash guard fabric →
+
+### Custom MMA and BJJ shorts
+Compare shells, gussets, liners, side openings and closure systems.
+BJJ and MMA shorts manufacturing →MMA shorts construction guide →
+
+### Custom training shorts
+Plan functional details, logo methods and a complete quote brief.
+Training shorts manufacturing →What affects custom fightwear cost? →
+
+Inspect factory equipment and production evidence →Browse buyer downloads →
+
+## Sources & product references
+A procurement checklist based on TONTON product and sampling records, official IBJJF uniform guidance, the separately dated 2027 no-gi guide, the non-controlling IMMAF 2026 adult rules summary and Intertek testing definitions, checked November 28, 2026. No product testing or event approval is implied.
+
+- /customization/sublimated-bjj-mma-shorts →
+
+- /customization/sublimated-rash-guards →
+
+- /resources/custom-fightwear-sampling-moq →
+
+- IBJJF uniform requirements ↗Official current no-gi shirt and shorts conditions; checked November 28, 2026. Confirm applicability with the organizer.
+
+- IBJJF 2027 no-gi uniform photo guide ↗Separately published future-facing 2027 changes; do not apply them automatically to a 2026 event.
+
+- IMMAF 2026 Adult MMA Rules and Procedures summary ↗Official non-controlling summary; the full rules or authorized procedure prevail. Equipment color requirements checked November 28, 2026.
+
+- Intertek colorfastness testing ↗Definitions of washing, rubbing, light and perspiration tests, not evidence that a TONTON garment passed testing.
+YOUR NEXT FIGHTWEAR PROJECT
+
+## Turn these decisions into a clear brief.
+Send your product reference, quantity, artwork status, sizes and the details that matter most. We will review the material, construction and sample route with your project.
+Request a Quote →WhatsApp Us →
+
+CONTINUE READING
+
+## Connect the next decision.
+Sampling & Quality
+
+### Custom Rash Guard & MMA Shorts Sample Approval Checklist
+A practical sample approval checklist for custom rash guards and MMA shorts: materials, measurements, artwork, seams, closures, care and versioned sign-off.
+Read the guide →Fightwear Buying Guide
+
+### Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set
+Build a reliable custom MMA and BJJ fightwear sizing system with measurement points, size grading, team allocation, sample checks and production tips.
+Read the guide →Printing & Craft
+
+### Sublimated Fightwear: Printing, Durability and Procurement Guide
+Specify sublimated fightwear with practical fabric, color, artwork and durability checks. Plan rash guard and MMA shorts samples before bulk production.
+Read the guide →
+← All articles
 
 ---
 
@@ -5537,6 +5769,11 @@ Prepare logos, colors, panel artwork and approval notes for custom sublimated Ra
 A practical guide to preparing artwork, specifications, samples and quantity information for a custom fightwear project.
 
 ## Blog articles
+
+-
+
+### Custom Fightwear Quality Control Checklist: What to Inspect Before Bulk Production
+Use this custom fightwear quality control checklist to inspect MMA shorts, BJJ rash guards, team kits, artwork, sizing, samples and bulk-order documents.
 
 -
 
@@ -14543,7 +14780,7 @@ DOWNLOAD & USE WITH YOUR TEAM
 - Download Custom Fightwear Project Brief ↓Fillable PDF · 2 pages · English · v1.0
 Browse all downloadable resources →Source basisTONTON project-brief fields and sample-review workflow. The 24-member allocation is a clearly labeled illustrative calculation; no unverified body or garment dimensions are published.Reviewed by: TONTON Product Development & Quality Control TeamLast reviewed: November 18, 2026Continue this topicCustom Rash Guard & Shorts Team Kit Buying Guide →Custom Fightwear Sampling & MOQ Guide →Custom Fightwear Quality Inspection Checklist →
 Choose your buying routeBJJ academy uniforms →Private-label fightwear development →Blue Team Rash Guard specification →White Pro Rash Guard specification →
-Read the full buying guidesHow to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
+Read the full buying guidesCustom Fightwear Quality Control Checklist: What to Inspect Before Bulk Production →How to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
 NEXT STEP
 
 ## Turn the guide into a product brief
@@ -14678,7 +14915,7 @@ Inspect factory equipment and production evidence →Browse buyer downloads →
 
 Source basisTONTON published Blue Team and White Pro Rash Guard references, High-Split 2-in-1 Grappling Shorts product evidence, and the existing sampling and QC workflow. Kit pairings remain subject to project-specific sample review.Reviewed by: TONTON Product Development & Quality Control TeamLast reviewed: October 15, 2026Continue this topicCustom Fightwear Size & Quantity Planning Guide →Rash Guard Fabric & Construction Guide →High-Split Grappling Shorts Specification Guide →How to Prepare Artwork for Sublimation →
 Choose your buying routeBJJ academy uniforms →Private-label fightwear development →Blue Team Rash Guard specification →White Pro Rash Guard specification →
-Read the full buying guidesHow to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
+Read the full buying guidesCustom Fightwear Quality Control Checklist: What to Inspect Before Bulk Production →How to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
 NEXT STEP
 
 ## Turn the guide into a product brief
@@ -14790,7 +15027,7 @@ DOWNLOAD & USE WITH YOUR TEAM
 
 - Download Fabric & Construction Selection Guide ↓PDF Guide · 4 pages · English · v1.0
 Browse all downloadable resources →Source basisTONTON approved product specifications for selected 220gsm Rash Guard styles and physical sample review criteria.Reviewed by: TONTON Product Development & Quality Control TeamLast reviewed: September 15, 2026Continue this topic220gsm Rash Guard Fabric: Weight, Stretch & Opacity →Flatlock vs Overlock Seams for Rash Guards →Rash Guard Silicone Anti-Slip Band Guide →Rash Guard Sublimation & Logo Placement Guide →
-Read the full buying guidesHow to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
+Read the full buying guidesCustom Fightwear Quality Control Checklist: What to Inspect Before Bulk Production →How to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
 NEXT STEP
 
 ## Turn the guide into a product brief
@@ -14889,7 +15126,7 @@ DOWNLOAD & USE WITH YOUR TEAM
 
 - Download Fabric & Construction Selection Guide ↓PDF Guide · 4 pages · English · v1.0
 Browse all downloadable resources →Source basisTONTON selected 220gsm Rash Guard specifications and physical-sample evaluation criteria.Reviewed by: TONTON Product Development & Quality Control TeamLast reviewed: September 15, 2026Continue this topicRash Guard Fabric & Construction Guide →Rash Guard Silicone Anti-Slip Band Guide →
-Read the full buying guidesHow to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
+Read the full buying guidesCustom Fightwear Quality Control Checklist: What to Inspect Before Bulk Production →How to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
 NEXT STEP
 
 ## Turn the guide into a product brief
@@ -14985,7 +15222,7 @@ Sample approval checklist guide →Download the sample approval PDF →
 Inspect factory equipment and production evidence →Browse buyer downloads →
 
 Source basisTONTON selected Rash Guard sample details showing an interior silicone anti-slip elastic band.Reviewed by: TONTON Product Development & Quality Control TeamLast reviewed: September 15, 2026Continue this topicRash Guard Fabric & Construction Guide →220gsm Rash Guard Fabric: Weight, Stretch & Opacity →How to Prepare Artwork for Sublimation →
-Read the full buying guidesHow to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
+Read the full buying guidesCustom Fightwear Quality Control Checklist: What to Inspect Before Bulk Production →How to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
 NEXT STEP
 
 ## Turn the guide into a product brief
@@ -15099,7 +15336,7 @@ Sample approval checklist guide →Download the sample approval PDF →
 Inspect factory equipment and production evidence →Browse buyer downloads →
 
 Source basisTONTON physical Rash Guard sample review and production checks for stretch seams, panel junctions and close-contact construction.Reviewed by: TONTON Product Development & Quality Control TeamLast reviewed: September 22, 2026Continue this topicRash Guard Fabric & Construction Guide →220gsm Rash Guard Fabric: Weight, Stretch & Opacity →Custom Fightwear Quality Inspection Checklist →
-Read the full buying guidesHow to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
+Read the full buying guidesCustom Fightwear Quality Control Checklist: What to Inspect Before Bulk Production →How to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
 NEXT STEP
 
 ## Turn the guide into a product brief
@@ -15195,7 +15432,7 @@ Sample approval checklist guide →Download the sample approval PDF →
 Inspect factory equipment and production evidence →Browse buyer downloads →
 
 Source basisTONTON Rash Guard mockup workflow and real sample review of chest, sleeve, back and neck branding positions.Reviewed by: TONTON Product Development & Quality Control TeamLast reviewed: September 15, 2026Continue this topicRash Guard Fabric & Construction Guide →220gsm Rash Guard Fabric: Weight, Stretch & Opacity →
-Read the full buying guidesHow to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
+Read the full buying guidesCustom Fightwear Quality Control Checklist: What to Inspect Before Bulk Production →How to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
 NEXT STEP
 
 ## Turn the guide into a product brief
@@ -15296,7 +15533,7 @@ DOWNLOAD & USE WITH YOUR TEAM
 
 - Download Fabric & Construction Selection Guide ↓PDF Guide · 4 pages · English · v1.0
 Browse all downloadable resources →Source basisTONTON High-Split 2-in-1 Grappling Shorts approved construction brief and real sample-detail review.Reviewed by: TONTON Product Development & Quality Control TeamLast reviewed: September 15, 2026Continue this topicHigh-Split vs Standard-Split Grappling Shorts →2-in-1 Grappling Shorts Liner Construction Guide →Grappling Shorts Waistband & Silicone Grip Guide →
-Read the full buying guidesHow to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
+Read the full buying guidesCustom Fightwear Quality Control Checklist: What to Inspect Before Bulk Production →How to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
 NEXT STEP
 
 ## Turn the guide into a product brief
@@ -15397,7 +15634,7 @@ DOWNLOAD & USE WITH YOUR TEAM
 
 - Download Fabric & Construction Selection Guide ↓PDF Guide · 4 pages · English · v1.0
 Browse all downloadable resources →Source basisTONTON high-split 2-in-1 sample construction and movement review criteria.Reviewed by: TONTON Product Development & Quality Control TeamLast reviewed: September 15, 2026Continue this topicHigh-Split Grappling Shorts Specification Guide →2-in-1 Grappling Shorts Liner Construction Guide →
-Read the full buying guidesHow to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
+Read the full buying guidesCustom Fightwear Quality Control Checklist: What to Inspect Before Bulk Production →How to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
 NEXT STEP
 
 ## Turn the guide into a product brief
@@ -15498,7 +15735,7 @@ DOWNLOAD & USE WITH YOUR TEAM
 
 - Download Fabric & Construction Selection Guide ↓PDF Guide · 4 pages · English · v1.0
 Browse all downloadable resources →Source basisTONTON High-Split 2-in-1 Grappling Shorts sample with verified 250gsm milk-silk liner.Reviewed by: TONTON Product Development & Quality Control TeamLast reviewed: September 15, 2026Continue this topicHigh-Split Grappling Shorts Specification Guide →Grappling Shorts Waistband & Silicone Grip Guide →
-Read the full buying guidesHow to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
+Read the full buying guidesCustom Fightwear Quality Control Checklist: What to Inspect Before Bulk Production →How to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
 NEXT STEP
 
 ## Turn the guide into a product brief
@@ -15596,7 +15833,7 @@ What affects custom fightwear cost? →Download the project brief PDF →
 Inspect factory equipment and production evidence →Browse buyer downloads →
 
 Source basisTONTON high-split grappling shorts waistband sample showing drawstring adjustment and an interior silicone grip strip.Reviewed by: TONTON Product Development & Quality Control TeamLast reviewed: September 15, 2026Continue this topicHigh-Split Grappling Shorts Specification Guide →2-in-1 Grappling Shorts Liner Construction Guide →
-Read the full buying guidesHow to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
+Read the full buying guidesCustom Fightwear Quality Control Checklist: What to Inspect Before Bulk Production →How to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
 NEXT STEP
 
 ## Turn the guide into a product brief
@@ -15714,7 +15951,7 @@ Sublimation versus heat transfer →Download the fabric and construction PDF →
 Inspect factory equipment and production evidence →Browse buyer downloads →
 
 Source basisTONTON functional training shorts sample details covering ventilation, zip-pocket, waistband and reinforced construction review.Reviewed by: TONTON Product Development & Quality Control TeamLast reviewed: September 22, 2026Continue this topicCustom Fightwear Quality Inspection Checklist →Custom Fightwear Sampling & MOQ Guide →
-Read the full buying guidesHow to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
+Read the full buying guidesCustom Fightwear Quality Control Checklist: What to Inspect Before Bulk Production →How to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
 NEXT STEP
 
 ## Turn the guide into a product brief
@@ -15837,7 +16074,7 @@ DOWNLOAD & USE WITH YOUR TEAM
 
 - Download Sample Approval Checklist ↓Fillable PDF · 3 pages · English · v1.0
 Browse all downloadable resources →Source basisTONTON production workflow covering print, stitching, measurement, finished-garment QC and packing review.Reviewed by: TONTON Product Development & Quality Control TeamLast reviewed: September 22, 2026Continue this topicCustom Fightwear Sampling & MOQ Guide →How to Prepare Artwork for Sublimation →Flatlock vs Overlock Seams for Rash Guards →
-Read the full buying guidesHow to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
+Read the full buying guidesCustom Fightwear Quality Control Checklist: What to Inspect Before Bulk Production →How to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
 NEXT STEP
 
 ## Turn the guide into a product brief
@@ -15955,7 +16192,7 @@ Training shorts manufacturing →What affects custom fightwear cost? →
 Inspect factory equipment and production evidence →Browse buyer downloads →
 
 Source basisTONTON design-confirmation and sublimation workflow from project brief through artwork layout, print and sample review.Reviewed by: TONTON Product Development & Quality Control TeamLast reviewed: September 22, 2026Continue this topicRash Guard Sublimation & Logo Placement Guide →Custom Fightwear Sampling & MOQ Guide →Custom Fightwear Quality Inspection Checklist →
-Read the full buying guidesHow to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
+Read the full buying guidesCustom Fightwear Quality Control Checklist: What to Inspect Before Bulk Production →How to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
 NEXT STEP
 
 ## Turn the guide into a product brief
@@ -16100,7 +16337,7 @@ DOWNLOAD & USE WITH YOUR TEAM
 
 - Download Sample Approval Checklist ↓Fillable PDF · 3 pages · English · v1.0
 Browse all downloadable resources →Source basisTONTON OEM/ODM project briefing, mockup, sample-approval and bulk-production workflow.Reviewed by: TONTON Product Development & Quality Control TeamLast reviewed: October 28, 2026Continue this topicHow to Prepare Artwork for Sublimation →Custom Fightwear Quality Inspection Checklist →Training Shorts Fabric, Ventilation & Pocket Guide →
-Read the full buying guidesHow to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
+Read the full buying guidesCustom Fightwear Quality Control Checklist: What to Inspect Before Bulk Production →How to Build a Custom MMA Gym Fightwear Line: Training, Team and Retail Planning Guide →Custom High-Split Grappling Shorts: Design, Sizing and Sample Approval Guide →Sublimated Fightwear: Printing, Durability and Procurement Guide →Custom MMA Fight Shorts vs 2-in-1 Grappling Shorts: How to Choose the Right Product →Custom No-Gi Grappling Shorts: Competition Rules, Fit, and Sample Approval Guide →Custom Fightwear Artwork: MMA and BJJ Production Guide →Custom No-Gi BJJ Uniform: A Competition Specification Guide for Gyms and Brands →Custom MMA and BJJ Fightwear Sizing: How to Build a Reliable Size Set →How to Choose Custom MMA and BJJ Fightwear Fabric and Fit →Custom MMA Team Kits: A Buying Guide for Gyms, Academies and Fightwear Brands →How to Build a Private-Label Fightwear Brand Capsule Collection →How to Plan Custom BJJ Rash Guards for an Academy Team →How to Choose Custom MMA Shorts for Your Brand, Gym, or Team →MMA Shorts Construction Guide: Shell, Gusset, Liner & Waist →How to Choose Fabric for Custom Rash Guards →Sublimation vs Heat Transfer for Custom Fightwear →Custom Rash Guard & MMA Shorts Sample Approval Checklist →What Affects the Cost of Custom Fightwear? →
 NEXT STEP
 
 ## Turn the guide into a product brief

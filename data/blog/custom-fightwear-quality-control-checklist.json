@@ -1,0 +1,308 @@
+{
+  "slug": "custom-fightwear-quality-control-checklist",
+  "title": "Custom Fightwear Quality Control Checklist: What to Inspect Before Bulk Production",
+  "seoTitle": "Custom Fightwear Quality Control Checklist | TONTON",
+  "builderProduct": "Coordinated Team Kit",
+  "category": "Sampling & Quality",
+  "description": "Use this custom fightwear quality control checklist to inspect MMA shorts, BJJ rash guards, team kits, artwork, sizing, samples and bulk-order documents.",
+  "answer": "Before approving custom fightwear, inspect the physical sample for measurements, movement, seam quality, waistband or hem security, artwork placement, labels, and intended-use requirements. Compare it with a written specification, record corrections, and approve one controlled version before bulk production. A digital mockup can confirm layout, but it cannot prove fit, stretch, opacity, comfort, or workmanship.",
+  "published": "2026-11-28",
+  "updated": "2026-11-28",
+  "author": "TONTON",
+  "hero": {
+    "src": "/assets/process/03-stitching-size-inspection.webp",
+    "alt": "TONTON staff inspecting garment stitching and measurements",
+    "caption": "TONTON production inspection reference. Record the approved measurement points and inspection findings for your own order."
+  },
+  "basis": "A procurement checklist based on TONTON product and sampling records, official IBJJF uniform guidance, the separately dated 2027 no-gi guide, the non-controlling IMMAF 2026 adult rules summary and Intertek testing definitions, checked November 28, 2026. No product testing or event approval is implied.",
+  "sections": [
+    {
+      "id": "why-checklist",
+      "title": "Why a sample-first quality control checklist matters",
+      "paragraphs": [
+        "Custom MMA and BJJ apparel is not only a graphic product. The same logo can be printed on garments with different cuts, waist systems, liners, seams, and size grading. A team may need mobility and repeat-training comfort; a private-label brand may also need consistent labeling, packaging, and reorder control.",
+        "A useful checklist turns subjective comments such as “make it more comfortable” into checks that a supplier can act on: finished waist measurement, side-split height, liner length, sleeve fit, seam placement, print alignment, and approved tolerances.",
+        "TONTON’s published sampling guidance says buyers should provide the product type, quantity, intended use, size range, artwork status, and destination. It also states that selected custom projects start from 10 pieces, while the applicable MOQ and sample route are confirmed by the actual style, design, colorway, and size allocation. Treat those as project conditions, not a universal promise for every product."
+      ]
+    },
+    {
+      "id": "five-part-checklist",
+      "title": "What are the five sections of a custom fightwear quality control checklist?",
+      "paragraphs": [
+        "This structure works for custom MMA fight shorts, 2-in-1 grappling shorts, rash guards, training shorts, and coordinated team kits. It is a procurement framework, not a substitute for the latest event rulebook or laboratory testing where a buyer requires it."
+      ],
+      "table": {
+        "caption": "Five-part custom fightwear quality control checklist",
+        "columns": [
+          "Checklist section",
+          "What to inspect",
+          "Evidence to retain"
+        ],
+        "rows": [
+          [
+            "Construction",
+            "Fabric record, liner, gusset, side split, seams, waistband, hem, closure, labels",
+            "Approved sample, material record, construction notes"
+          ],
+          [
+            "Fit and movement",
+            "Waist, outseam, sleeve length, body length, liner coverage, mobility and skin comfort",
+            "Measurement chart, tolerance, wear-test notes"
+          ],
+          [
+            "Artwork and branding",
+            "Logo scale, panel alignment, color reference, sponsor placement, labels and packaging",
+            "Final artwork file, color approval, label proof"
+          ],
+          [
+            "Intended use and rules",
+            "Training requirements, event requirements, pockets, cords, hardware, coverage and corner colors where applicable",
+            "Event rule link, buyer sign-off, pre-event check"
+          ],
+          [
+            "Production control",
+            "Quantity by size and color, sample version, inspection points, packing and reorder notes",
+            "Purchase specification, inspection report, approved version history"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "mma-shorts-inspection",
+      "title": "How do you inspect custom MMA shorts and grappling shorts?",
+      "paragraphs": [
+        "Start with the parts most affected by combat movement.",
+        "TONTON’s high-split grappling-short reference combines a four-way-stretch outer layer, a supportive 250gsm inner layer, an ultra-high split, reinforced stitching, and an adjustable drawstring with an anti-slip silicone grip strip. These are product-page facts for that reference style; they should not be assumed for every custom short."
+      ],
+      "bullets": [
+        "Measure the finished garment. Record waist, outseam, leg opening, liner length, and side-split height. Use the same measuring method for the sample and any future production inspection.",
+        "Check the closure. Pull the drawcord, test the elastic recovery, and inspect the cord exit and finish. The waistband should stay secure without creating avoidable pressure or loose hardware.",
+        "Inspect the gusset and split. Look for smooth movement through kicks, sprawls, guard work, and wide stances. Examine reinforcement at the highest-stress points.",
+        "Check the liner separately. For a 2-in-1 garment, inspect liner composition, weight, length, attachment, opacity, and comfort. TONTON’s published high-split reference identifies a 250gsm milk-silk compression liner, but the page also notes that the trade name is not a verified fiber composition. Request the selected material record rather than inferring fiber content from a product name.",
+        "Look for construction consistency. Check skipped stitches, uneven topstitching, loose threads, puckering, seam irritation, and panel mismatch."
+      ],
+      "links": [
+        [
+          "/products/high-split-grappling-shorts",
+          "Inspect the high-split construction reference"
+        ],
+        [
+          "/products/concrete-grey-combat-training-shorts",
+          "Compare the mesh-lined Concrete Grey reference"
+        ]
+      ]
+    },
+    {
+      "id": "rash-guard-inspection",
+      "title": "How do you test a custom BJJ rash guard sample?",
+      "paragraphs": [
+        "A rash guard inspection should combine a measurement check with a short wear trial. Confirm shoulder reach, chest fit, sleeve length, torso coverage, neckline comfort, and hem position. Then inspect flatlock seams, underarm or side-body mesh if specified, panel joining, print coverage, and label placement.",
+        "Use the following sample questions:",
+        "TONTON’s rash-guard page describes short- and long-sleeve development, sublimation artwork, labels, fabric, flatlock seams, and optional silicone hem grip. It also presents a 220 GSM, 85% polyester / 15% spandex reference, but other weights and blends require separate confirmation. Record the exact material and finished measurements for the selected project."
+      ],
+      "bullets": [
+        "Does the shirt remain body-fitting without restricting breathing or shoulder movement?",
+        "Does the torso still cover the waistband during stance changes and grappling movement?",
+        "Does the hem stay in place if an anti-slip band was requested?",
+        "Does the artwork remain visually balanced across raglan sleeves, side panels, and the back?",
+        "Does the fabric become too transparent when stretched?",
+        "Are seam transitions smooth at the underarm, neck, and side body?"
+      ],
+      "links": [
+        [
+          "/customization/sublimated-rash-guards",
+          "Custom rash guard construction options"
+        ],
+        [
+          "/products/urban-shadow-short-sleeve-rash-guard",
+          "Urban Shadow raglan and seam reference"
+        ]
+      ]
+    },
+    {
+      "id": "artwork-branding",
+      "title": "Which artwork and branding checks belong in the checklist?",
+      "paragraphs": [
+        "Artwork approval should happen at full garment level, not only on a flat front panel. Check every seam, side split, sleeve join, waistband, liner panel, and label position. Confirm that sponsor marks remain readable after the garment is worn and that the approved color reference is identified in writing.",
+        "For a private-label order, add these checks:",
+        "Intertek explains that colorfastness testing evaluates fading and color transfer under conditions such as washing, light, rubbing, and perspiration. For sportswear, perspiration testing is directly relevant, but a general explanation of a test is not evidence that a particular garment has passed it. Ask for the actual test scope and report when numerical claims are needed."
+      ],
+      "bullets": [
+        "Brand label name, size label, care information, and country-of-origin requirements where applicable.",
+        "Packaging language, barcode or SKU information, and size-color allocation.",
+        "Artwork version number and final file date.",
+        "Written permission to use every logo, sponsor mark, photograph, or reference graphic.",
+        "Whether colorfastness, wash, rubbing, or perspiration testing is required for the target market."
+      ],
+      "links": [
+        [
+          "https://www.intertek.com/textiles-apparel/colorfastness-testing/",
+          "Intertek colorfastness testing overview"
+        ],
+        [
+          "/resources/prepare-artwork-for-sublimation",
+          "Prepare approved sublimation artwork"
+        ]
+      ]
+    },
+    {
+      "id": "competition-requirements",
+      "title": "How should competition requirements be handled?",
+      "paragraphs": [
+        "Treat competition compliance as a separate approval gate. The event, association, division, gender category, belt or rank, and date can change the requirements. The IBJJF uniform page describes no-gi shirt and shorts conditions including body-fitting coverage, color restrictions, and the absence of pockets or hazardous closures. IBJJF’s published 2027 no-gi photo guide also provides future-facing examples for belt-color and shorts rules.",
+        "For amateur MMA, the official IMMAF 2026 Adult MMA Rules and Procedures summary lists approved gloves, shin guards, rash guard, shorts, hand wraps, and a mouthguard, and states that rash guards and shorts must match the assigned red or blue corner. The same document says it is a non-controlling summary and that the full rules or authorized procedure prevail.",
+        "Use these sources as an inspection prompt, not as a blanket approval. Before ordering competition garments, confirm the latest official rules with the event organizer or association and document the relevant requirement in the purchase brief."
+      ],
+      "links": [
+        [
+          "https://ibjjf.com/uniform",
+          "IBJJF uniform page"
+        ],
+        [
+          "https://ibjjf.com/rule-changes-2027/no-gi-uniform",
+          "2027 no-gi photo guide"
+        ],
+        [
+          "https://immaf.org/wp-content/uploads/2026/10/ENG_2026_IMMAF_Adult_MMA_Rules_Summary.pdf",
+          "IMMAF 2026 Adult MMA Rules and Procedures summary"
+        ]
+      ]
+    },
+    {
+      "id": "production-records",
+      "title": "What documents should a supplier and buyer approve together?",
+      "paragraphs": [
+        "At minimum, keep one controlled specification containing:",
+        "TONTON’s project-builder page asks buyers to send the product, estimated quantity, intended use, contact details, size range, delivery country, and target date when known. Its sampling guide states that a physical sample should be used to review fit, material, construction, branding, and workmanship before bulk approval. This record-based workflow is more reliable than approving from a product name or a single render.",
+        "Agree with the supplier when checks happen: material confirmation before cutting, panel and print review before sewing, construction checks during assembly, and finished-garment inspection before packing. Record who checks, which sizes and colors are covered, the agreed defect acceptance criteria, correction actions and the buyer’s release decision. Do not substitute photographs of a single approved sample for evidence about a completed production lot."
+      ],
+      "bullets": [
+        "Product name and construction version.",
+        "Fabric, liner, GSM or composition records where confirmed.",
+        "Finished measurements, size grading, and tolerances.",
+        "Artwork file, color references, label proof, and packaging instructions.",
+        "Quantity by product, color, and size.",
+        "Sample photographs and written correction history.",
+        "Inspection points and any requested wash, colorfastness, or chemical testing.",
+        "Shipping basis, destination, target date, and reorder notes."
+      ],
+      "links": [
+        [
+          "/blog/custom-fightwear-sample-approval-checklist#checklist",
+          "Use the existing sample approval checklist"
+        ],
+        [
+          "/resources/fightwear-quality-inspection-checklist",
+          "Detailed fightwear inspection reference"
+        ]
+      ]
+    },
+    {
+      "id": "buyer-checks",
+      "title": "Who is this checklist for—and who needs a stricter version?",
+      "paragraphs": [
+        "A lower-cost training order may not need the same documentation as a retail private-label range. Conversely, a small competition order still deserves a strict rules and hardware check because a garment that fails inspection can affect the athlete’s participation."
+      ],
+      "bullets": [
+        "Gyms and academies: prioritize member size allocation, movement comfort, repeat wear, team identity, and event-specific requirements.",
+        "Fight teams: add corner-color, athlete-name, sponsor-placement, and competition inspection checks.",
+        "Private-label brands: add fabric documentation, care labels, packaging, SKU control, testing requests, and reorder consistency.",
+        "E-commerce sellers: add product photography accuracy, size-chart consistency, packaging, defect thresholds, and customer-return risk checks.",
+        "Event or competition buyers: use the strictest rule source from the relevant organizer and complete a pre-event garment inspection."
+      ]
+    },
+    {
+      "id": "key-takeaways",
+      "title": "Key takeaways",
+      "paragraphs": [
+        "A custom fightwear quality control checklist should connect the garment, the athlete, the artwork, the event requirement, and the written production record. Approve one physical sample against a measurement chart and final artwork version; do not treat a digital mockup as proof of fit or workmanship. Then retain the approved specification so a team kit, private-label range, or reorder can be compared against the same reference.",
+        "For a project brief, TONTON buyers can use the custom BJJ and MMA shorts manufacturing page, the custom sublimated rash-guard page, and the project builder to organize product type, quantities, artwork, sampling, and next steps."
+      ],
+      "links": [
+        [
+          "/customization/sublimated-bjj-mma-shorts",
+          "custom BJJ and MMA shorts manufacturing page"
+        ],
+        [
+          "/customization/sublimated-rash-guards",
+          "custom sublimated rash-guard page"
+        ],
+        [
+          "/project-builder",
+          "project builder"
+        ]
+      ]
+    }
+  ],
+  "faqs": [
+    [
+      "What should you check before approving custom fightwear?",
+      "Check the physical sample against measurements, construction notes, artwork, labels, intended use, and any relevant event rules. Record corrections and approve one controlled version before bulk production."
+    ],
+    [
+      "Can a digital mockup replace a physical fightwear sample?",
+      "No. A mockup can confirm layout, color direction, and logo placement, but it cannot prove fit, stretch, opacity, seam comfort, material hand feel, or workmanship."
+    ],
+    [
+      "How do you inspect custom MMA shorts before bulk production?",
+      "Measure the waist, outseam, leg opening, liner length, and side split; test the waistband and drawcord; inspect gussets and reinforcement; and review movement in kicks, sprawls, and grappling positions."
+    ],
+    [
+      "What should a BJJ gym ask a private-label fightwear supplier?",
+      "Ask for the exact material record, size chart, tolerances, artwork version, sample route, MOQ by style and colorway, labels, packaging, inspection points, and reorder conditions. Ask separately about any testing or competition requirements."
+    ],
+    [
+      "How many quality-control checks should a custom rash guard have?",
+      "At least five groups should be covered: measurements and fit, seams and panel joining, fabric opacity and recovery, artwork and labels, and hem or neckline finishing. Add testing requirements if the project needs documented performance or compliance evidence."
+    ],
+    [
+      "Does a supplier’s advertised MOQ apply to every design?",
+      "No. MOQ is project-specific. TONTON’s published guidance says selected projects start from 10 pieces, while the final minimum must be confirmed by style, design, colorway, size allocation, and construction."
+    ],
+    [
+      "Should competition rules be checked before or after sampling?",
+      "Before artwork and sample approval. Rules can affect color, length, pockets, closures, hardware, coverage, and corner identification. Confirm the latest official rules with the relevant organizer before bulk production."
+    ]
+  ],
+  "related": [
+    "custom-fightwear-sample-approval-checklist",
+    "custom-mma-bjj-fightwear-sizing-guide",
+    "sublimated-fightwear-printing-and-durability-guide"
+  ],
+  "links": [
+    [
+      "/customization/sublimated-bjj-mma-shorts",
+      "Custom BJJ and MMA shorts manufacturing"
+    ],
+    [
+      "/customization/sublimated-rash-guards",
+      "Custom sublimated rash guards"
+    ],
+    [
+      "/resources/custom-fightwear-sampling-moq",
+      "Sampling and MOQ planning"
+    ]
+  ],
+  "sources": [
+    {
+      "label": "IBJJF uniform requirements",
+      "url": "https://ibjjf.com/uniform",
+      "note": "Official current no-gi shirt and shorts conditions; checked November 28, 2026. Confirm applicability with the organizer."
+    },
+    {
+      "label": "IBJJF 2027 no-gi uniform photo guide",
+      "url": "https://ibjjf.com/rule-changes-2027/no-gi-uniform",
+      "note": "Separately published future-facing 2027 changes; do not apply them automatically to a 2026 event."
+    },
+    {
+      "label": "IMMAF 2026 Adult MMA Rules and Procedures summary",
+      "url": "https://immaf.org/wp-content/uploads/2026/10/ENG_2026_IMMAF_Adult_MMA_Rules_Summary.pdf",
+      "note": "Official non-controlling summary; the full rules or authorized procedure prevail. Equipment color requirements checked November 28, 2026."
+    },
+    {
+      "label": "Intertek colorfastness testing",
+      "url": "https://www.intertek.com/textiles-apparel/colorfastness-testing/",
+      "note": "Definitions of washing, rubbing, light and perspiration tests, not evidence that a TONTON garment passed testing."
+    }
+  ]
+}
